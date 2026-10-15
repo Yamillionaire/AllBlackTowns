@@ -30,8 +30,9 @@ nav {
   border-bottom: 1px solid var(--line);
 }
 .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 68px; }
-.brand { font-family: 'Playfair Display', serif; font-size: 1.25rem; letter-spacing: 0.04em; color: var(--cream); text-decoration: none; }
+.brand { font-family: 'Playfair Display', serif; font-size: 1.25rem; letter-spacing: 0.04em; color: var(--cream); text-decoration: none; display: inline-flex; align-items: center; }
 .brand span { color: var(--gold); }
+.brand-logo { height: 38px; width: 38px; object-fit: cover; border-radius: 50%; margin-right: 10px; border: 1px solid var(--gold); }
 .nav-links { display: flex; gap: 28px; }
 .nav-links a { color: var(--cream-dim); text-decoration: none; font-size: 0.92rem; letter-spacing: 0.06em; text-transform: uppercase; }
 .nav-links a:hover, .nav-links a.active { color: var(--gold); }
