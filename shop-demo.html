@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Buy Button Demo — All Black Towns</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  body{margin:0;background:#faf6ef;color:#1d1a16;font-family:'Inter',sans-serif}
+  .wrap{max-width:1060px;margin:0 auto;padding:32px 20px 64px}
+  .logo{display:block;width:120px;height:auto;margin:8px auto 4px}
+  h1{font-family:'Playfair Display',serif;text-align:center;font-size:34px;margin:10px 0 4px}
+  .sub{text-align:center;color:#6b6257;margin:0 0 28px}
+  .banner{background:#7a1f1f;color:#fff;border-radius:10px;padding:14px 18px;font-weight:600;text-align:center;margin-bottom:28px;line-height:1.5}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px}
+  .card{background:#fff;border:1px solid #e5dcc9;border-radius:14px;padding:22px;box-shadow:0 4px 18px rgba(60,45,20,.08);display:flex;flex-direction:column}
+  .art{border-radius:10px;height:170px;display:flex;align-items:center;justify-content:center;margin-bottom:16px;background:#1d1a16}
+  .art img{width:110px;height:auto}
+  .art .star{color:#d9a441;font-size:64px;font-family:'Playfair Display',serif}
+  .card h2{font-family:'Playfair Display',serif;margin:0 0 6px;font-size:22px;line-height:1.25}
+  .card p{color:#4c463d;line-height:1.55;margin:0 0 10px;font-size:15px}
+  .price{font-size:19px;font-weight:700;margin:6px 0 14px}
+  .buy{display:block;text-align:center;background:#1d1a16;color:#faf6ef;text-decoration:none;font-weight:700;font-size:17px;padding:14px 18px;border-radius:10px;margin-top:auto;border:0;cursor:pointer;width:100%;box-sizing:border-box}
+  .buy:hover{background:#7a1f1f}
+  .buy.off{background:#b9b0a0;cursor:default}
+  .buy.off:hover{background:#b9b0a0}
+  .tag{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.08em;padding:4px 9px;border-radius:20px;margin-bottom:10px;align-self:flex-start}
+  .tag.live{background:#e7f0e2;color:#2e5b23}
+  .tag.concept{background:#f3e8d2;color:#7a5a17}
+  .note{color:#6b6257;font-size:15px;line-height:1.6;margin-top:30px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <img class="logo" src="logo.jpg" alt="All Black Towns: The Living Record">
+  <h1>All Black Towns</h1>
+  <p class="sub">One town. One song. One story at a time.</p>
+  <div class="banner">BUY BUTTON DEMO: this page shows how products with Buy buttons would look on the All Black Towns site. Only the $1 test item is a real, working button.</div>
+
+  <div class="grid">
+    <div class="card">
+      <span class="tag live">LIVE BUTTON</span>
+      <div class="art"><img src="logo.jpg" alt="All Black Towns logo"></div>
+      <h2>All Black Towns: Checkout Test</h2>
+      <p>A one dollar test item standing in for a song download. Digital, no shipping, set up the way a real All Black Towns product would be.</p>
+      <div class="price">$1.00</div>
+      <a class="buy" href="https://www.theelementsofhiphop.co/cart/67705935003949:1">Buy Now</a>
+    </div>
+
+    <div class="card">
+      <span class="tag concept">CONCEPT SLOT</span>
+      <div class="art"><span class="star">&#9733;</span></div>
+      <h2>All Black Towns, Vol. 1 (Digital Album)</h2>
+      <p>Concept slot showing where the first album release would sit: cover art, a one line description, and its Buy button under the price.</p>
+      <div class="price">Price to come</div>
+      <button class="buy off" disabled>Buy Now</button>
+    </div>
+
+    <div class="card">
+      <span class="tag concept">CONCEPT SLOT</span>
+      <div class="art"><span class="star">&#9733;</span></div>
+      <h2>Single Song Download</h2>
+      <p>Concept slot for selling one town's song on its own, the way each town page could carry a button for its own track.</p>
+      <div class="price">Price to come</div>
+      <button class="buy off" disabled>Buy Now</button>
+    </div>
+  </div>
+
+  <p class="note">How the buttons behave: the live button takes the buyer to checkout on The Elements of Hip Hop store, so the store name and web address change at checkout. That is the tradeoff of selling through the existing store. A slide-out cart that stays on this site is also possible; it needs a Buy Button code generated inside Shopify Admin, which is a two minute step whenever you want it. Nothing on this demo page is linked from the public site menu.</p>
+</div>
+</body>
+</html>
