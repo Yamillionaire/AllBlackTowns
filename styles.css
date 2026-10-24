@@ -125,3 +125,29 @@ footer .brand { font-size: 1.05rem; }
   .nav-links a { font-size: 0.78rem; }
   .stats { gap: 32px; }
 }
+
+/* Motion layer (2026-10-24): reveals, counters, card entrances. Reduced-motion safe. */
+html.js [data-rv]{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
+html.js [data-rv].in{opacity:1;transform:none}
+.town-grid.anim .town-card{animation:cardIn .45s ease both;animation-delay:calc(var(--i,0)*45ms)}
+@keyframes cardIn{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+.hero h1,.hero p,.hero .stats{animation:rise .8s ease both}
+.hero p{animation-delay:.12s}.hero .stats{animation-delay:.24s}
+@keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion: reduce){
+  html.js [data-rv]{opacity:1;transform:none;transition:none}
+  .town-grid.anim .town-card,.hero h1,.hero p,.hero .stats{animation:none}
+}
+
+/* Town map (2026-10-24) */
+.townmap{height:70vh;min-height:420px;border:2px solid var(--gold);border-radius:8px;z-index:0;background:#101018}
+.map-note{margin-top:12px;font-size:.85rem;opacity:.65}
+.town-dot{display:block;width:14px;height:14px;border-radius:50%;background:var(--gold);border:2px solid #14161f;box-shadow:0 0 0 2px rgba(0,0,0,.15)}
+.town-dot-wrap{background:none;border:none}
+.leaflet-popup-content{font-family:'Inter',sans-serif}
+.pop h3{font-family:'Playfair Display',serif;margin:0 0 2px;font-size:1.05rem}
+.pop .pstate{text-transform:uppercase;letter-spacing:.14em;font-size:.72rem;color:#8a6d1f;margin-bottom:6px}
+.pop p{margin:0 0 6px;font-size:.88rem;line-height:1.45}
+.pop .psong{font-weight:600;font-size:.88rem}
+.marker-cluster-small,.marker-cluster-medium,.marker-cluster-large{background:rgba(20,22,31,.28)}
+.marker-cluster-small div,.marker-cluster-medium div,.marker-cluster-large div{background:#14161f;color:var(--gold-soft);font-weight:700}

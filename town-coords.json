@@ -1,0 +1,442 @@
+{
+ "Africatown|Alabama": [
+  30.7349516,
+  -88.0587736
+ ],
+ "Allensworth|California": [
+  35.8635518,
+  -119.3905252
+ ],
+ "Antioch Colony|Texas": [
+  30.0856668,
+  -97.8539911
+ ],
+ "Armstrong Colony|Texas": [
+  33.1037806,
+  -96.9271166
+ ],
+ "Bagley Park, Buckhead, Atlanta|Georgia": [
+  33.8352817,
+  -84.3725817
+ ],
+ "Barrett Station|Texas": [
+  29.8735015,
+  -95.0499791
+ ],
+ "Barrier Island|South Carolina": [
+  32.8611645,
+  -79.7636754
+ ],
+ "Bobtown|Louisiana": [
+  29.4738287,
+  -90.7009231
+ ],
+ "Boley|Oklahoma": [
+  35.493489,
+  -96.4836113
+ ],
+ "Bookertee|Oklahoma": [
+  35.3673195,
+  -96.083335
+ ],
+ "Bowles|California": [
+  36.609505,
+  -119.7525905
+ ],
+ "Bronzeville|Illinois": [
+  41.8238533,
+  -87.6169814
+ ],
+ "Brooklyn|Illinois": [
+  38.657181,
+  -90.1670585
+ ],
+ "Brooksville|Oklahoma": [
+  35.20895,
+  -96.9608164
+ ],
+ "Brookville|Maryland": [
+  38.9990727,
+  -77.0593899
+ ],
+ "Buxton|Iowa": [
+  41.1583384,
+  -92.8213083
+ ],
+ "Cascades|Florida": [
+  26.1374496,
+  -81.7211163
+ ],
+ "Cedar Branch|Texas": [
+  32.2642287,
+  -96.1047934
+ ],
+ "Centerville|Maryland": [
+  39.5245453,
+  -77.2716494
+ ],
+ "Clarksville|Texas": [
+  33.6105525,
+  -95.0529374
+ ],
+ "Collier Heights|Georgia": [
+  33.7762651,
+  -84.4859316
+ ],
+ "Cologne|Texas": [
+  28.7055484,
+  -97.1816567
+ ],
+ "Cozy Corner|Texas": [
+  29.8596718,
+  -96.8474796
+ ],
+ "Dearfield|Colorado": [
+  40.2905364,
+  -104.2593953
+ ],
+ "Deep Ellum|Texas": [
+  32.7842977,
+  -96.7804594
+ ],
+ "East Brooklyn|New York": [
+  40.7659877,
+  -73.8927713
+ ],
+ "Eatonville|Florida": [
+  28.6182634,
+  -81.3828884
+ ],
+ "Five Points|New York": [
+  40.7157115,
+  -73.9990284
+ ],
+ "Fodice|Texas": [
+  31.1729607,
+  -95.3018845
+ ],
+ "Fort Mose|Florida": [
+  29.9302651,
+  -81.3224768
+ ],
+ "Fountain Mills|Maryland": [
+  39.3414927,
+  -77.2680392
+ ],
+ "Freedmen's Town|Texas": [
+  29.7558426,
+  -95.3810741
+ ],
+ "Grambling|Louisiana": [
+  32.5276503,
+  -92.7140403
+ ],
+ "Grant's Colony|Texas": [
+  29.5843954,
+  -95.6156371
+ ],
+ "Grayson|Oklahoma": [
+  35.5031598,
+  -95.8727725
+ ],
+ "Greenfield|Maryland": [
+  39.712323,
+  -77.0024817
+ ],
+ "Gum Springs|Virginia": [
+  38.7403923,
+  -77.0822003
+ ],
+ "Halltown|West Virginia": [
+  39.3139899,
+  -77.7977719
+ ],
+ "Hobson City|Alabama": [
+  33.6214934,
+  -85.8441318
+ ],
+ "Hogansville|Georgia": [
+  33.1731769,
+  -84.914936
+ ],
+ "Hope Hill|Maryland": [
+  39.3334362,
+  -77.3963744
+ ],
+ "Hunter Street, Atlanta|Georgia": [
+  33.7474087,
+  -84.3716672
+ ],
+ "Independence Heights|Texas": [
+  29.8283961,
+  -95.3973771
+ ],
+ "Indian Spring|Maryland": [
+  39.6105942,
+  -76.2602652
+ ],
+ "Jackson Ward|Virginia": [
+  37.5486107,
+  -77.4418647
+ ],
+ "James City|North Carolina": [
+  35.0559366,
+  -77.0048778
+ ],
+ "Jonesville|Virginia": [
+  36.6889777,
+  -83.1110047
+ ],
+ "Joppa|Maryland": [
+  39.433719,
+  -76.3577373
+ ],
+ "Jugtown|Maryland": [
+  39.6148225,
+  -77.5943323
+ ],
+ "Kendleton|Texas": [
+  29.4507991,
+  -95.9946785
+ ],
+ "Kowaliga|Alabama": [
+  32.7401287,
+  -85.9691293
+ ],
+ "Langston City|Oklahoma": [
+  35.4899138,
+  -97.5006912
+ ],
+ "Lightning|Georgia": [
+  33.9917325,
+  -83.7167346
+ ],
+ "Lincolnville|Florida": [
+  29.8863344,
+  -81.3150637
+ ],
+ "Mitchelville|South Carolina": [
+  32.2428445,
+  -80.6859407
+ ],
+ "Mossville|Louisiana": [
+  30.2477051,
+  -93.309044
+ ],
+ "Mound Bayou|Mississippi": [
+  33.8781674,
+  -90.7273204
+ ],
+ "Mount Olive|Maryland": [
+  38.3087292,
+  -75.5032543
+ ],
+ "Muchakinock|Iowa": [
+  41.4021428,
+  -92.8798383
+ ],
+ "New Brooklyn|New Jersey": [
+  39.6931712,
+  -74.9426662
+ ],
+ "New Monrovia|Florida": [
+  27.1361977,
+  -80.1939485
+ ],
+ "New Philadelphia|Illinois": [
+  39.6940411,
+  -90.9580794
+ ],
+ "Newtown, Sarasota|Florida": [
+  27.3609052,
+  -82.5231935
+ ],
+ "Nicodemus|Kansas": [
+  39.3925947,
+  -99.6178816
+ ],
+ "Oscarville|Georgia": [
+  34.2483624,
+  -83.9748616
+ ],
+ "Overtown, Miami|Florida": [
+  25.7847021,
+  -80.1989275
+ ],
+ "Paradise Valley|Michigan": [
+  43.4561577,
+  -86.2278596
+ ],
+ "Phillips|South Carolina": [
+  32.2859264,
+  -80.5994306
+ ],
+ "Piney Grove-Buckhead|Georgia": [
+  33.829813,
+  -84.3588869
+ ],
+ "Pleasant View|Maryland": [
+  39.6681645,
+  -76.1157842
+ ],
+ "Pleasantville|Texas": [
+  29.7705242,
+  -95.2729227
+ ],
+ "Pontchartrain Park|Louisiana": [
+  30.0236132,
+  -90.0410738
+ ],
+ "Princeville|North Carolina": [
+  35.8896947,
+  -77.5304714
+ ],
+ "Quakertown, Denton|Texas": [
+  33.2175488,
+  -97.1291175
+ ],
+ "Rentiesville|Oklahoma": [
+  35.5214881,
+  -95.4949781
+ ],
+ "Rosewood|Florida": [
+  29.2391314,
+  -82.9320641
+ ],
+ "Rossville|Maryland": [
+  39.35476,
+  -76.4765473
+ ],
+ "Saint Johns Colony|Texas": [
+  29.9710533,
+  -97.5583308
+ ],
+ "Sandy Grove|North Carolina": [
+  35.7901375,
+  -80.2158825
+ ],
+ "Sandy Spring|Maryland": [
+  39.1495517,
+  -77.0269221
+ ],
+ "Scanlonville|South Carolina": [
+  32.8118426,
+  -79.8975862
+ ],
+ "Scotlandville|Louisiana": [
+  30.5204668,
+  -91.1787186
+ ],
+ "Seneca Village|New York": [
+  40.7841633,
+  -73.9684586
+ ],
+ "Shankleville|Texas": [
+  30.9715117,
+  -93.7063039
+ ],
+ "Shoe Lane|Virginia": [
+  37.0581867,
+  -76.4978196
+ ],
+ "Soul City|North Carolina": [
+  36.4105153,
+  -78.2644713
+ ],
+ "Sugarland|Maryland": [
+  39.0995516,
+  -77.3910974
+ ],
+ "Summerhill, Atlanta|Georgia": [
+  33.7368253,
+  -84.3855228
+ ],
+ "Summit|Oklahoma": [
+  35.6659324,
+  -95.4227504
+ ],
+ "Sweet Auburn, Atlanta|Georgia": [
+  33.7555022,
+  -84.3802129
+ ],
+ "Taft|Oklahoma": [
+  35.7617667,
+  -95.5463665
+ ],
+ "Tatums|Oklahoma": [
+  34.4828626,
+  -97.4616917
+ ],
+ "Timbuctoo|New Jersey": [
+  40.0031675,
+  -74.8140522
+ ],
+ "Trem\u00e9|Louisiana": [
+  29.966746,
+  -90.0681068
+ ],
+ "Tullahassee|Oklahoma": [
+  35.8418905,
+  -95.4405089
+ ],
+ "Tuskegee|Alabama": [
+  32.4240535,
+  -85.6908715
+ ],
+ "Upshaw|Texas": [
+  29.9377935,
+  -95.3005447
+ ],
+ "Vernon|Oklahoma": [
+  35.2156532,
+  -95.9258318
+ ],
+ "Victorville|California": [
+  34.5361067,
+  -117.2911565
+ ],
+ "Vine City, Atlanta|Georgia": [
+  33.7587482,
+  -84.4106071
+ ],
+ "Wallace|Louisiana": [
+  30.0301895,
+  -90.6527237
+ ],
+ "Washington|Louisiana": [
+  30.8337523,
+  -90.0721467
+ ],
+ "Weeksville, Brooklyn|New York": [
+  40.6742273,
+  -73.9252335
+ ],
+ "West End, Atlanta|Georgia": [
+  33.7360535,
+  -84.4136642
+ ],
+ "Wheatville|Texas": [
+  33.2291461,
+  -94.6972188
+ ],
+ "Whitesboro|New Jersey": [
+  39.0422145,
+  -74.8653927
+ ],
+ "Yarrowsburg|Maryland": [
+  39.3771855,
+  -77.6859459
+ ],
+ "Della|Maryland": [
+  48.0577281,
+  -0.8775093
+ ],
+ "Nanny Town|Jamaica": [
+  18.0595736,
+  -76.5076572
+ ],
+ "Soweto|South Africa": [
+  -26.2227778,
+  27.89
+ ]
+}
