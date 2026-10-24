@@ -21,7 +21,7 @@ HEAD = """<!DOCTYPE html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>{title} — All Black Towns</title>
+<title>{title} - All Black Towns</title>
 <meta name="description" content="{desc}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -45,7 +45,7 @@ FOOT = """
 <section class="block alt newsletter" id="newsletter"><div class="wrap">
 <div class="rule" style="margin:0 auto 26px"></div>
 <h2>Hear every town's song first.</h2>
-<p>Join the list for new releases, town histories, and the stories behind the music. One email when it matters — never noise.</p>
+<p>Join the list for new releases, town histories, and the stories behind the music. One email when it matters - never noise.</p>
 <form class="nl-form" action="https://formsubmit.co/REPLACE_WITH_YOUR_EMAIL" method="POST">
 <input type="email" name="email" placeholder="Your email address" required>
 <input type="hidden" name="_subject" value="New All Black Towns subscriber">
@@ -55,7 +55,7 @@ FOOT = """
 </div></section>
 <footer><div class="wrap">
 <a class="brand" href="index.html">All <span>Black</span> Towns</a>
-<p style="margin-top:12px">A music project honoring the historic Black towns of America —<br>one town, one song, one story at a time.</p>
+<p style="margin-top:12px">A music project honoring the historic Black towns of America -<br>one town, one song, one story at a time.</p>
 <p style="margin-top:14px; opacity:.6">&copy; 2026 All Black Towns. All rights reserved.</p>
 </div></footer>
 
@@ -112,7 +112,7 @@ index_body = f"""
 <header class="hero"><div class="wrap">
 <div class="kicker">A music project &middot; {len(towns)} towns &middot; {len(songs)} original songs</div>
 <h1>Every Black town<br>has a <em>song.</em></h1>
-<p class="lede">From Boley to Blackdom, Rosewood to Seneca Village — All Black Towns is a growing musical archive honoring the historic Black towns and neighborhoods of America, one town and one story at a time.</p>
+<p class="lede">From Boley to Blackdom, Rosewood to Seneca Village - All Black Towns is a growing musical archive honoring the historic Black towns and neighborhoods of America, one town and one story at a time.</p>
 <a class="btn" href="towns.html">Explore the towns</a>
 <a class="btn ghost" href="music.html">Hear the music</a>
 <div class="stats">
@@ -124,7 +124,7 @@ index_body = f"""
 <section class="block"><div class="wrap">
 <div class="rule"></div>
 <h2 class="section-title">Towns they tried to erase.</h2>
-<p class="section-sub">Thriving Black municipalities, districts, and settlements — built from nothing after Emancipation, many destroyed by violence, policy, or "progress." Each one gets its name sung back into history.</p>
+<p class="section-sub">Thriving Black municipalities, districts, and settlements - built from nothing after Emancipation, many destroyed by violence, policy, or "progress." Each one gets its name sung back into history.</p>
 <div class="town-grid">{cards}</div>
 <p style="margin-top:34px"><a class="btn ghost" style="margin-left:0" href="towns.html">See all {len(towns)} towns</a></p>
 </div></section>
@@ -132,7 +132,7 @@ index_body = f"""
 <section class="block alt"><div class="wrap">
 <div class="rule"></div>
 <h2 class="section-title">The music</h2>
-<p class="section-sub">{len(songs)} original songs and counting — each written for a specific town, carrying its history in the lyrics. Human-written words, composed with AI instruments, sung so the names are never forgotten.</p>
+<p class="section-sub">{len(songs)} original songs and counting - each written for a specific town, carrying its history in the lyrics. Human-written words, composed with AI instruments, sung so the names are never forgotten.</p>
 <a class="btn ghost" style="margin-left:0" href="music.html">Browse the catalog</a>
 </div></section>
 """
@@ -146,7 +146,7 @@ towns_body = f"""
 <section class="block"><div class="wrap">
 <div class="rule"></div>
 <h2 class="section-title">The towns</h2>
-<p class="section-sub">{len(towns)} historic Black towns, districts, and settlements — each with its own song. Search by name or filter by state.</p>
+<p class="section-sub">{len(towns)} historic Black towns, districts, and settlements - each with its own song. Search by name or filter by state.</p>
 <div class="tools">
 <input id="q" type="text" placeholder="Search towns…" oninput="filterTowns()">
 <select id="st" onchange="filterTowns()"><option value="">All states</option>{state_opts}</select>
@@ -184,7 +184,7 @@ music_body = f"""
 <section class="block"><div class="wrap">
 <div class="rule"></div>
 <h2 class="section-title">The music</h2>
-<p class="section-sub">{len(songs)} original songs — one per town. Every lyric is human-written from historical research; the music is composed with AI instruments. The catalog keeps growing.</p>
+<p class="section-sub">{len(songs)} original songs - one per town. Every lyric is human-written from historical research; the music is composed with AI instruments. The catalog keeps growing.</p>
 <div class="song-list">{song_rows}</div>
 </div></section>
 
@@ -192,9 +192,9 @@ music_body = f"""
 <div class="rule"></div>
 <h2 class="section-title">How it's made</h2>
 <div class="prose">
-<p><strong>Research first.</strong> Each song starts with the real history of a Black town — its founding, its people, what it built, and what happened to it.</p>
+<p><strong>Research first.</strong> Each song starts with the real history of a Black town - its founding, its people, what it built, and what happened to it.</p>
 <p><strong>Human words.</strong> The lyrics are written by hand from that research, carrying names, dates, and details the history books left out.</p>
-<p><strong>New instruments.</strong> The music is composed with AI tools — a new instrument for an old mission: making sure these names are sung, remembered, and never erased.</p>
+<p><strong>New instruments.</strong> The music is composed with AI tools - a new instrument for an old mission: making sure these names are sung, remembered, and never erased.</p>
 </div></div></section>
 """
 
@@ -204,10 +204,10 @@ about_body = """
 <div class="rule"></div>
 <h2 class="section-title">About the project</h2>
 <div class="prose">
-<p>After Emancipation, Black Americans built <strong>hundreds of their own towns</strong> — municipalities, districts, and settlements across the country, founded on the belief that freedom should come with land, self-rule, and a future.</p>
-<p>Many thrived. Boley, Oklahoma. Nicodemus, Kansas. Blackdom, New Mexico. Mound Bayou, Mississippi. Then came the violence, the policy, the highways, the "urban renewal" — and town after town was destroyed, dispersed, or paved over.</p>
+<p>After Emancipation, Black Americans built <strong>hundreds of their own towns</strong> - municipalities, districts, and settlements across the country, founded on the belief that freedom should come with land, self-rule, and a future.</p>
+<p>Many thrived. Boley, Oklahoma. Nicodemus, Kansas. Blackdom, New Mexico. Mound Bayou, Mississippi. Then came the violence, the policy, the highways, the "urban renewal" - and town after town was destroyed, dispersed, or paved over.</p>
 <div class="quote">"They tried to bury the towns. We're singing their names back."</div>
-<p><strong>All Black Towns</strong> is a music project to honor every one of them — one town, one song, one story at a time. Each song carries the town's real history in its lyrics, so the names live in melody even where the buildings are gone.</p>
+<p><strong>All Black Towns</strong> is a music project to honor every one of them - one town, one song, one story at a time. Each song carries the town's real history in its lyrics, so the names live in melody even where the buildings are gone.</p>
 <p>The project is also a living archive: the lyrics are documented, the research is sourced, and the catalog grows as more towns are found and more songs are written.</p>
 <p>This is history you can hear.</p>
 </div></div></section>
@@ -257,13 +257,13 @@ except FileNotFoundError:
 
 pages = {
     "index.html": page("h", "Home",
-        "All Black Towns — a music project honoring historic Black towns, one song per town.", index_body),
+        "All Black Towns - a music project honoring historic Black towns, one song per town.", index_body),
     "towns.html": page("t", "Towns",
         "Explore the historic Black towns honored by the All Black Towns music project.", towns_body),
     "music.html": page("m", "Music",
-        "The All Black Towns song catalog — original songs honoring historic Black towns.", music_body),
+        "The All Black Towns song catalog - original songs honoring historic Black towns.", music_body),
     "about.html": page("a", "About",
-        "About All Black Towns — a music project honoring historic Black towns of America.", about_body),
+        "About All Black Towns - a music project honoring historic Black towns of America.", about_body),
 }
 if map_body:
     pages["map.html"] = page("mp", "Map",
