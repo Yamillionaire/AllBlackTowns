@@ -420,8 +420,42 @@ share_body = f"""
 <p><strong>How you know it:</strong> family history, a story passed down, documents, photographs, a place you have stood. Tell us plainly; it helps us search the right way.</p>
 <p><strong>How to reach you:</strong> your name and an email, so we can send the readout.</p>
 </div>
-<p style="margin-top:28px"><a class="btn" href="{share_mailto}">Send what you know</a></p>
-<p class="section-sub" style="margin-top:18px">The button opens your email, addressed to info@allblacktowns.com, with the questions above already in it. Nothing is published from a submission without research, and your email stays between you and the project.</p>
+<form class="share-form" id="shareForm" style="margin-top:28px">
+<label>Town name <span class="req">(required)</span><input type="text" name="Town name" required></label>
+<label>State and county<input type="text" name="State and county"></label>
+<label>What you know about it <span class="req">(required)</span><textarea name="What they know" rows="5" required></textarea></label>
+<label>How you know it: family story, records, photos, a place you can point to<textarea name="How they know it" rows="3"></textarea></label>
+<label>Names, dates, churches, schools, or cemeteries that could help the search<textarea name="Leads for the search" rows="3"></textarea></label>
+<label>Your name<input type="text" name="Submitter name"></label>
+<label>Your email, only if you want the readout sent to you<input type="email" name="Submitter email"></label>
+<input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+<p style="margin:6px 0 18px"><button class="btn" type="submit" id="shareBtn">Send what you know</button></p>
+<p class="form-note" id="shareNote">Submissions go straight to the project inbox at info@allblacktowns.com. You do not need to leave an email: anonymous submissions are welcome, we just cannot write back to them. Nothing is published from a submission without research.</p>
+</form>
+<script>
+document.getElementById('shareForm').addEventListener('submit', async function (e) {{
+  e.preventDefault();
+  const btn = document.getElementById('shareBtn');
+  const note = document.getElementById('shareNote');
+  btn.disabled = true; btn.textContent = 'Sending...';
+  const data = {{}};
+  new FormData(e.target).forEach((v, k) => {{ data[k] = v; }});
+  data._subject = 'A Black town to share: ' + (data['Town name'] || '');
+  data._template = 'table';
+  try {{
+    const r = await fetch('https://formsubmit.co/ajax/info@allblacktowns.com', {{
+      method: 'POST',
+      headers: {{ 'Content-Type': 'application/json', 'Accept': 'application/json' }},
+      body: JSON.stringify(data)
+    }});
+    if (!r.ok) throw new Error('send failed');
+    e.target.innerHTML = '<div class="form-done"><h3>Thank you. It is in.</h3><p>What you sent will be researched against the internet, public libraries and archives, and historical databases. If you left an email, the readout comes back to you there: what we could confirm, what we could not, and an honest answer either way.</p></div>';
+  }} catch (err) {{
+    btn.disabled = false; btn.textContent = 'Send what you know';
+    note.textContent = 'The form could not send just now. Please try again, or write to us directly at info@allblacktowns.com.';
+  }}
+}});
+</script>
 </div></section>
 """
 
