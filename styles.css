@@ -20,6 +20,7 @@ body {
 }
 h1, h2, h3, .serif { font-family: 'Playfair Display', Georgia, serif; font-weight: 700; }
 a { color: var(--gold-soft); }
+img { max-width: 100%; height: auto; }
 .wrap { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
 
 /* Nav */
@@ -68,7 +69,7 @@ h2.section-title { font-size: clamp(1.8rem, 3.5vw, 2.6rem); margin-bottom: 14px;
 .rule { width: 64px; height: 3px; background: var(--gold); margin-bottom: 26px; }
 
 /* Town cards */
-.town-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 22px; }
+.town-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(280px, 100%), 1fr)); gap: 22px; }
 .town-card {
   background: var(--ink-soft); border: 1px solid var(--line); border-radius: 14px;
   padding: 26px; transition: transform .15s ease, border-color .15s ease;
@@ -120,10 +121,45 @@ h2.section-title { font-size: clamp(1.8rem, 3.5vw, 2.6rem); margin-bottom: 14px;
 footer { border-top: 1px solid var(--line); padding: 44px 0; text-align: center; color: var(--cream-dim); font-size: 0.88rem; }
 footer .brand { font-size: 1.05rem; }
 
-@media (max-width: 640px) {
-  .nav-links { gap: 16px; }
-  .nav-links a { font-size: 0.78rem; }
-  .stats { gap: 32px; }
+/* Responsive system (2026-10-26) */
+@media (max-width: 900px) {
+  section.block { padding: 64px 0; }
+  .hero { padding: 84px 0 72px; }
+  .newsletter { padding: 72px 0; }
+}
+@media (max-width: 720px) {
+  .nav-inner { flex-wrap: wrap; height: auto; padding: 10px 0 12px; row-gap: 8px; }
+  .brand { font-size: 1.08rem; }
+  .brand-logo { height: 32px; width: 32px; margin-right: 8px; }
+  .nav-links { order: 2; width: 100%; flex-wrap: wrap; gap: 6px 18px; }
+  .nav-links a { font-size: 0.8rem; padding: 6px 0; display: inline-block; }
+  .stats { gap: 30px; margin-top: 48px; }
+  .stat .num { font-size: 2rem; }
+}
+@media (max-width: 560px) {
+  .wrap { padding: 0 16px; }
+  .hero { padding: 60px 0 54px; }
+  .kicker { letter-spacing: 0.22em; font-size: 0.72rem; }
+  .lede { font-size: 1.06rem; margin-bottom: 32px; }
+  .btn { display: block; max-width: 340px; margin: 0 auto; text-align: center; }
+  .btn.ghost { margin: 12px auto 0; }
+  .stats { gap: 22px 26px; }
+  section.block { padding: 54px 0; }
+  .section-sub { margin-bottom: 32px; }
+  .tools { gap: 10px; }
+  .tools input, .tools select { flex: 1 1 100%; min-width: 0; width: 100%; }
+  .tools input[type="search"], .tools input:not([type]) { flex: 1 1 100%; }
+  .song-row { flex-direction: column; align-items: flex-start; gap: 4px; padding: 14px 16px; }
+  .song-row .s { white-space: normal; }
+  .song-card .song-actions { flex-wrap: wrap; }
+  .townmap { height: 54vh; min-height: 320px; }
+  .leaflet-popup-content { max-width: 74vw; }
+  .quote { font-size: 1.18rem; padding-left: 18px; margin: 28px 0; }
+  .prose p { font-size: 1rem; }
+  .nl-form input { min-width: 0; flex: 1 1 100%; }
+  .newsletter { padding: 60px 0; }
+  footer { padding: 36px 0; }
+  .disc { width: 44px; height: 44px; }
 }
 
 /* Motion layer (2026-10-24): reveals, counters, card entrances. Reduced-motion safe. */
