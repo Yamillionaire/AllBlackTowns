@@ -427,10 +427,10 @@ share_body = f"""
 <label>How you know it: family story, records, photos, a place you can point to<textarea name="How they know it" rows="3"></textarea></label>
 <label>Names, dates, churches, schools, or cemeteries that could help the search<textarea name="Leads for the search" rows="3"></textarea></label>
 <label>Your name<input type="text" name="Submitter name"></label>
-<label>Your email, only if you want the readout sent to you<input type="email" name="Submitter email"></label>
+<label>Your email <span class="req">(required, so we can send you the readout)</span><input type="email" name="Submitter email" required></label>
 <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
 <p style="margin:6px 0 18px"><button class="btn" type="submit" id="shareBtn">Send what you know</button></p>
-<p class="form-note" id="shareNote">Submissions go straight to the project inbox at info@allblacktowns.com. You do not need to leave an email: anonymous submissions are welcome, we just cannot write back to them. Nothing is published from a submission without research.</p>
+<p class="form-note" id="shareNote">Submissions go straight to the project inbox at info@allblacktowns.com. Your email is required so the readout can come back to you; it stays between you and the project and is never published. Nothing is published from a submission without research.</p>
 </form>
 <script>
 document.getElementById('shareForm').addEventListener('submit', async function (e) {{
@@ -449,7 +449,7 @@ document.getElementById('shareForm').addEventListener('submit', async function (
       body: JSON.stringify(data)
     }});
     if (!r.ok) throw new Error('send failed');
-    e.target.innerHTML = '<div class="form-done"><h3>Thank you. It is in.</h3><p>What you sent will be researched against the internet, public libraries and archives, and historical databases. If you left an email, the readout comes back to you there: what we could confirm, what we could not, and an honest answer either way.</p></div>';
+    e.target.innerHTML = '<div class="form-done"><h3>Thank you. It is in.</h3><p>What you sent will be researched against the internet, public libraries and archives, and historical databases. The readout comes back to the email you gave: what we could confirm, what we could not, and an honest answer either way.</p></div>';
   }} catch (err) {{
     btn.disabled = false; btn.textContent = 'Send what you know';
     note.textContent = 'The form could not send just now. Please try again, or write to us directly at info@allblacktowns.com.';
