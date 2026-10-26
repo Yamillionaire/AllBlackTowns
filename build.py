@@ -211,6 +211,15 @@ about_body = """
 <p>The project is also a living archive: the lyrics are documented, the research is sourced, and the catalog grows as more towns are found and more songs are written.</p>
 <p>This is history you can hear.</p>
 </div></div></section>
+
+<section class="block"><div class="wrap">
+<div class="rule"></div>
+<h2 class="section-title">About the creator</h2>
+<div class="prose">
+<p><strong>Yamil Little</strong> is an Atlanta-based creative director and the founder of The Elements of Hip Hop (Power For Us, LLC), the company behind HipHopolis, a superhero universe powered by the elements of hip hop. He created All Black Towns to put the names of America's historic Black towns back into the culture, as songs people can carry with them.</p>
+<p>His career moves between music, media, and community work. He served as Chief Operating Officer of Bridge DA Gap, the nonprofit that uses hip hop to connect generations, and as Director of Social Media for KHAO Music Group, and he founded Georgia's first GRAMMY U student chapter while studying audio and video production. He holds an MBA in Marketing from Strayer University and a B.A. in Audio/Video Production from the Art Institute of Atlanta.</p>
+<p>The project is personal. Little's grandparents came from Alabama, and the towns in these songs are the kind of places his own family's story runs through. All Black Towns is his way of keeping the record alive: researched from the sources, written town by town, and sung back into memory.</p>
+</div></div></section>
 """
 
 # ---------- MAP ----------
