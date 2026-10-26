@@ -40,6 +40,7 @@ HEAD = """<!DOCTYPE html>
 <a href="music.html" class="{m}">Music</a>
 <a href="education.html" class="{ed}">Education</a>
 <a href="about.html" class="{a}">About</a>
+<a href="share.html" class="{sh}">Share a Town</a>
 </div></div></nav>
 """
 
@@ -94,7 +95,8 @@ def page(active, title, desc, body):
                     mp="active" if active == "mp" else "",
                     m="active" if active == "m" else "",
                     ed="active" if active == "ed" else "",
-                    a="active" if active == "a" else "")
+                    a="active" if active == "a" else "",
+                    sh="active" if active == "sh" else "")
     body = (body.replace('<h2 class="section-title">', '<h2 class="section-title" data-rv>')
                 .replace('<p class="section-sub">', '<p class="section-sub" data-rv>')
                 .replace('<div class="quote">', '<div class="quote" data-rv>')
@@ -156,6 +158,12 @@ towns_body = f"""
 </div>
 <div class="count-note" id="count"></div>
 <div class="town-grid" id="grid"></div>
+</div></section>
+<section class="block alt"><div class="wrap">
+<div class="rule"></div>
+<h2 class="section-title">Know a town that is not here?</h2>
+<p class="section-sub">Some Black towns were never written into the record, and the record that exists is incomplete. If you know one, through records or through your family's telling, send it in. Every submission is researched, and you will get an honest answer about what we find.</p>
+<p><a class="btn" href="share.html">Share a town</a></p>
 </div></section>
 <script>
 const TOWNS = {town_data};
@@ -364,6 +372,59 @@ wmap.addLayer(icluster);
 except FileNotFoundError:
     print("town-coords.json missing: map page skipped")
 
+# ---------- SHARE A TOWN (community intake) ----------
+import urllib.parse as _up
+_share_subject = _up.quote("A Black town to share")
+_share_lines = [
+    "Town name:",
+    "State and county:",
+    "",
+    "What I know about it:",
+    "",
+    "How I know it (family story, records, photos, a place I can point to):",
+    "",
+    "Names, dates, churches, schools, or cemeteries that could help the search:",
+    "",
+    "My name:",
+    "Best email to reach me:",
+]
+share_mailto = ("mailto:info@allblacktowns.com?subject=" + _share_subject
+                + "&body=" + _up.quote("\n".join(_share_lines)))
+
+share_body = f"""
+<section class="block"><div class="wrap">
+<div class="rule"></div>
+<h2 class="section-title">Know a town we have not found?</h2>
+<p class="section-sub">This record is built from what can be found. You may know a piece of it that was never written down. Send it in.</p>
+<div class="prose">
+<p>The official record of Black towns is incomplete, and everyone who works in this history knows why. Records were never kept, or were lost, burned, flooded, or thrown away when a town was taken. A town can be missing from every book and database and still have been real, with families, a church, a school, and a cemetery.</p>
+<p>So this project listens two ways: to the written record, and to the people who carry the story. If your family comes from a Black town that is not on this site, or you know something about one that is, we want to hear it: a name, a place, a story passed down, a photograph, a headstone. Family tellings count here. They are often the only record a town ever got.</p>
+</div>
+</div></section>
+<section class="block alt"><div class="wrap">
+<div class="rule"></div>
+<h2 class="section-title">What happens when you send it</h2>
+<p class="section-sub">Every submission is researched before anything changes on the site.</p>
+<div class="prose">
+<p>We run what you send through everything we can search: the open internet, public libraries and archives, historical databases, maps, and records. Then we write back with an honest readout: what we could confirm, what we could not, and where that leaves the town.</p>
+<p>If we cannot find a town in the searchable record, we will tell you exactly that: we do not know. Not finding a town in the record is not the same as your information being wrong, and we will never tell you it is. Some towns will stand on community memory, credited as such, while the search continues.</p>
+</div>
+</div></section>
+<section class="block"><div class="wrap">
+<div class="rule"></div>
+<h2 class="section-title">What to send</h2>
+<p class="section-sub">As much or as little as you have. Even a name and a county is a start.</p>
+<div class="prose">
+<p><strong>The town:</strong> its name, the state and county, and where it stood if you can point to it on a map.</p>
+<p><strong>What you know:</strong> when it was founded or lived in, who lived there, what stood there: homes, a church, a school, a store, a cemetery.</p>
+<p><strong>How you know it:</strong> family history, a story passed down, documents, photographs, a place you have stood. Tell us plainly; it helps us search the right way.</p>
+<p><strong>How to reach you:</strong> your name and an email, so we can send the readout.</p>
+</div>
+<p style="margin-top:28px"><a class="btn" href="{share_mailto}">Send what you know</a></p>
+<p class="section-sub" style="margin-top:18px">The button opens your email, addressed to info@allblacktowns.com, with the questions above already in it. Nothing is published from a submission without research, and your email stays between you and the project.</p>
+</div></section>
+"""
+
 pages = {
     "index.html": page("h", "Home",
         "All Black Towns - a creative universe built on the true history of America's Black towns, told first in song.", index_body),
@@ -375,6 +436,8 @@ pages = {
         "About All Black Towns - a creative universe built on the true history of America's Black towns.", about_body),
     "education.html": page("ed", "Education",
         "The All Black Towns curriculum - Town Dossiers and lesson plans built on the true history of America's Black towns.", education_body),
+    "share.html": page("sh", "Share a Town",
+        "Know a Black town that is not on this site? Send in what you know. Every submission is researched, and family tellings count.", share_body),
 }
 if map_body:
     pages["map.html"] = page("mp", "Map",

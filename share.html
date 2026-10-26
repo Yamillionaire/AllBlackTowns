@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Share a Town - All Black Towns</title>
+<meta name="description" content="Know a Black town that is not on this site? Send in what you know. Every submission is researched, and family tellings count.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+<div class="logo-bg" aria-hidden="true"></div>
+<nav><div class="wrap nav-inner">
+<a class="brand" href="index.html"><img class="brand-logo" src="logo-nav.jpg" alt="All Black Towns logo">All <span>Black</span> Towns</a>
+<div class="nav-links">
+<a href="index.html" class="">Home</a>
+<a href="towns.html" class="">Towns</a>
+<a href="map.html" class="">Map</a>
+<a href="music.html" class="">Music</a>
+<a href="education.html" class="">Education</a>
+<a href="about.html" class="">About</a>
+<a href="share.html" class="active">Share a Town</a>
+</div></div></nav>
+
+<section class="block"><div class="wrap">
+<div class="rule"></div>
+<h2 class="section-title" data-rv>Know a town we have not found?</h2>
+<p class="section-sub" data-rv>This record is built from what can be found. You may know a piece of it that was never written down. Send it in.</p>
+<div class="prose">
+<p>The official record of Black towns is incomplete, and everyone who works in this history knows why. Records were never kept, or were lost, burned, flooded, or thrown away when a town was taken. A town can be missing from every book and database and still have been real, with families, a church, a school, and a cemetery.</p>
+<p>So this project listens two ways: to the written record, and to the people who carry the story. If your family comes from a Black town that is not on this site, or you know something about one that is, we want to hear it: a name, a place, a story passed down, a photograph, a headstone. Family tellings count here. They are often the only record a town ever got.</p>
+</div>
+</div></section>
+<section class="block alt"><div class="wrap">
+<div class="rule"></div>
+<h2 class="section-title" data-rv>What happens when you send it</h2>
+<p class="section-sub" data-rv>Every submission is researched before anything changes on the site.</p>
+<div class="prose">
+<p>We run what you send through everything we can search: the open internet, public libraries and archives, historical databases, maps, and records. Then we write back with an honest readout: what we could confirm, what we could not, and where that leaves the town.</p>
+<p>If we cannot find a town in the searchable record, we will tell you exactly that: we do not know. Not finding a town in the record is not the same as your information being wrong, and we will never tell you it is. Some towns will stand on community memory, credited as such, while the search continues.</p>
+</div>
+</div></section>
+<section class="block"><div class="wrap">
+<div class="rule"></div>
+<h2 class="section-title" data-rv>What to send</h2>
+<p class="section-sub" data-rv>As much or as little as you have. Even a name and a county is a start.</p>
+<div class="prose">
+<p><strong>The town:</strong> its name, the state and county, and where it stood if you can point to it on a map.</p>
+<p><strong>What you know:</strong> when it was founded or lived in, who lived there, what stood there: homes, a church, a school, a store, a cemetery.</p>
+<p><strong>How you know it:</strong> family history, a story passed down, documents, photographs, a place you have stood. Tell us plainly; it helps us search the right way.</p>
+<p><strong>How to reach you:</strong> your name and an email, so we can send the readout.</p>
+</div>
+<p style="margin-top:28px"><a class="btn" href="mailto:info@allblacktowns.com?subject=A%20Black%20town%20to%20share&body=Town%20name%3A%0AState%20and%20county%3A%0A%0AWhat%20I%20know%20about%20it%3A%0A%0AHow%20I%20know%20it%20%28family%20story%2C%20records%2C%20photos%2C%20a%20place%20I%20can%20point%20to%29%3A%0A%0ANames%2C%20dates%2C%20churches%2C%20schools%2C%20or%20cemeteries%20that%20could%20help%20the%20search%3A%0A%0AMy%20name%3A%0ABest%20email%20to%20reach%20me%3A">Send what you know</a></p>
+<p class="section-sub" style="margin-top:18px">The button opens your email, addressed to info@allblacktowns.com, with the questions above already in it. Nothing is published from a submission without research, and your email stays between you and the project.</p>
+</div></section>
+
+<section class="block alt newsletter" id="newsletter"><div class="wrap">
+<div class="rule" style="margin:0 auto 26px"></div>
+<h2>Hear every town's song first.</h2>
+<p>Join the list for new releases, town histories, and the stories behind the music. One email when it matters - never noise.</p>
+<form class="nl-form" action="https://formsubmit.co/REPLACE_WITH_YOUR_EMAIL" method="POST">
+<input type="email" name="email" placeholder="Your email address" required>
+<input type="hidden" name="_subject" value="New All Black Towns subscriber">
+<button class="btn" type="submit">Join the list</button>
+</form>
+<p class="nl-note">Free forever. Unsubscribe anytime.</p>
+</div></section>
+<footer><div class="wrap">
+<a class="brand" href="index.html"><img class="brand-logo" src="logo-nav.jpg" alt="All Black Towns logo">All <span>Black</span> Towns</a>
+<p style="margin-top:12px">A creative universe built on the true history of America's Black towns -<br>one town, one song, one story at a time.</p>
+<p style="margin-top:14px; opacity:.6">&copy; 2026 All Black Towns. All rights reserved.</p>
+</div></footer>
+
+<script>
+(function(){
+  var RM = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var els = document.querySelectorAll('[data-rv]');
+  if (RM || !('IntersectionObserver' in window)) { els.forEach(function(e){ e.classList.add('in'); }); }
+  else {
+    var io = new IntersectionObserver(function(es){ es.forEach(function(en){ if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } }); }, {threshold: .12});
+    els.forEach(function(e){ io.observe(e); });
+  }
+  function countUp(el){
+    var target = parseInt(el.textContent, 10); if (isNaN(target)) return;
+    if (RM) { el.textContent = target; return; }
+    var t0 = null;
+    function step(ts){ if (!t0) t0 = ts; var pr = Math.min((ts - t0) / 1300, 1); el.textContent = Math.round(target * (1 - Math.pow(1 - pr, 3))); if (pr < 1) requestAnimationFrame(step); }
+    requestAnimationFrame(step);
+  }
+  var nums = document.querySelectorAll('.stat .num');
+  if ('IntersectionObserver' in window && !RM) {
+    var io2 = new IntersectionObserver(function(es){ es.forEach(function(en){ if (en.isIntersecting) { countUp(en.target); io2.unobserve(en.target); } }); }, {threshold: .4});
+    nums.forEach(function(n){ io2.observe(n); });
+  }
+})();
+</script>
+</body></html>
