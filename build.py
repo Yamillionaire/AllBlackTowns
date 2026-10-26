@@ -349,7 +349,7 @@ map.addLayer(cluster);
 <section class="block"><div class="wrap">
 <div class="rule"></div>
 <h2 class="section-title">The international Black towns map</h2>
-<p class="section-sub">The story does not stop at the border. Wherever colonialism carried Black people (the Caribbean, the Virgin Islands, the Americas, and the ports of Europe), they did what they did here: fought for ground and built towns of their own. Maroon republics, quilombos, palenques, Garifuna towns, and free Black settlements, each pinned where it stood or still stands. The songs have not reached these towns yet; the record starts here.</p>
+<p class="section-sub">The story does not stop at the border. Wherever colonialism carried Black people (the Caribbean, the Virgin Islands, the Americas, and the ports of Europe), they did what they did here: fought for ground and built towns of their own. And in Africa itself, communities broke colonial control and governed themselves: freed people's towns that became capitals, maroon towns and refuges, and a town where a liberation republic was declared. Maroon republics, quilombos, palenques, Garifuna towns, and free Black settlements, each pinned where it stood or still stands. The songs have not reached these towns yet; the record starts here.</p>
 <div id="worldmap" class="townmap" data-rv></div>
 <p class="map-note">{len(intl)} places on this map. Entries the record supports only as a district or a territory are labeled as such: the record stays honest. Map data &copy; OpenStreetMap contributors.</p>
 </div></section>
