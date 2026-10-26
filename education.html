@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Education - All Black Towns</title>
+<meta name="description" content="The All Black Towns curriculum - Town Dossiers and lesson plans built on the true history of America's Black towns.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+<div class="logo-bg" aria-hidden="true"></div>
+<nav><div class="wrap nav-inner">
+<a class="brand" href="index.html"><img class="brand-logo" src="logo-nav.jpg" alt="All Black Towns logo">All <span>Black</span> Towns</a>
+<div class="nav-links">
+<a href="index.html" class="">Home</a>
+<a href="towns.html" class="">Towns</a>
+<a href="map.html" class="">Map</a>
+<a href="music.html" class="">Music</a>
+<a href="education.html" class="active">Education</a>
+<a href="about.html" class="">About</a>
+</div></div></nav>
+
+<section class="block"><div class="wrap">
+<div class="rule"></div>
+<h2 class="section-title" data-rv>Learn the towns</h2>
+<p class="section-sub" data-rv>The songs open the door. The curriculum walks through it - the full, sourced history of every town, built for learners, families, and classrooms.</p>
+<div class="prose">
+<p>Every All Black Towns song starts as research. The <strong>Town Dossiers</strong> are where that research lives in full: each one tells a town's complete story - its founding and founders, its churches, schools, and businesses, the turning point that changed everything, and what stands there today - with a timeline, a key facts box, primary sources, and the song's lyrics annotated line by line.</p>
+<p><strong>Lesson plans</strong> turn each dossier into teaching: a lesson opens with the song, moves into the documents, and closes with discussion and a hands-on task. The pilot lesson, built on Sweet Auburn in Atlanta, is complete; the full curriculum grows town by town from the dossiers, toward every town on the master list.</p>
+</div></div></section>
+
+<section class="block alt"><div class="wrap">
+<div class="rule"></div>
+<h2 class="section-title" data-rv>The pilot collection</h2>
+<p class="section-sub" data-rv>Five towns, five complete dossiers - the first set, finished and verified against the sources.</p>
+<div class="town-grid">
+<div class="town-card"><h3>Sweet Auburn</h3><div class="state">Atlanta, Georgia</div><p>The historic Black business district once called the richest Negro street in the world - and the home of the pilot lesson plan.</p></div>
+<div class="town-card"><h3>Boley</h3><div class="state">Oklahoma</div><p>One of the largest and most famous all-Black towns of the West, founded in 1903 and still an incorporated town today.</p></div>
+<div class="town-card"><h3>Nicodemus</h3><div class="state">Kansas</div><p>Founded in 1877 by Black settlers from Kentucky; the oldest surviving all-Black town west of the Mississippi, now a National Historic Site.</p></div>
+<div class="town-card"><h3>Eatonville</h3><div class="state">Florida</div><p>Incorporated in 1887, among the first self-governing all-Black towns in America - and the hometown of Zora Neale Hurston.</p></div>
+<div class="town-card"><h3>Rosewood</h3><div class="state">Florida</div><p>A thriving town destroyed by racial violence in 1923. Its dossier keeps the full record of what was lost.</p></div>
+</div>
+</div></section>
+
+<section class="block"><div class="wrap">
+<div class="rule"></div>
+<h2 class="section-title" data-rv>Free to explore, deeper for members</h2>
+<div class="prose">
+<p>The map, the songs, and every town's story stay <strong>free for everyone</strong> - that is the discovery engine, and it is not going anywhere. The dossiers and lesson plans are the members' layer: the full record, kept growing.</p>
+<p>The membership opens soon, with classroom and school licenses for teachers and institutions alongside individual memberships. Join the list and you will hear about it first.</p>
+<p style="margin-top:26px"><a class="btn" href="#newsletter">Join the list</a></p>
+</div></div></section>
+
+<section class="block alt newsletter" id="newsletter"><div class="wrap">
+<div class="rule" style="margin:0 auto 26px"></div>
+<h2>Hear every town's song first.</h2>
+<p>Join the list for new releases, town histories, and the stories behind the music. One email when it matters - never noise.</p>
+<form class="nl-form" action="https://formsubmit.co/REPLACE_WITH_YOUR_EMAIL" method="POST">
+<input type="email" name="email" placeholder="Your email address" required>
+<input type="hidden" name="_subject" value="New All Black Towns subscriber">
+<button class="btn" type="submit">Join the list</button>
+</form>
+<p class="nl-note">Free forever. Unsubscribe anytime.</p>
+</div></section>
+<footer><div class="wrap">
+<a class="brand" href="index.html"><img class="brand-logo" src="logo-nav.jpg" alt="All Black Towns logo">All <span>Black</span> Towns</a>
+<p style="margin-top:12px">A creative universe built on the true history of America's Black towns -<br>one town, one song, one story at a time.</p>
+<p style="margin-top:14px; opacity:.6">&copy; 2026 All Black Towns. All rights reserved.</p>
+</div></footer>
+
+<script>
+(function(){
+  var RM = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var els = document.querySelectorAll('[data-rv]');
+  if (RM || !('IntersectionObserver' in window)) { els.forEach(function(e){ e.classList.add('in'); }); }
+  else {
+    var io = new IntersectionObserver(function(es){ es.forEach(function(en){ if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } }); }, {threshold: .12});
+    els.forEach(function(e){ io.observe(e); });
+  }
+  function countUp(el){
+    var target = parseInt(el.textContent, 10); if (isNaN(target)) return;
+    if (RM) { el.textContent = target; return; }
+    var t0 = null;
+    function step(ts){ if (!t0) t0 = ts; var pr = Math.min((ts - t0) / 1300, 1); el.textContent = Math.round(target * (1 - Math.pow(1 - pr, 3))); if (pr < 1) requestAnimationFrame(step); }
+    requestAnimationFrame(step);
+  }
+  var nums = document.querySelectorAll('.stat .num');
+  if ('IntersectionObserver' in window && !RM) {
+    var io2 = new IntersectionObserver(function(es){ es.forEach(function(en){ if (en.isIntersecting) { countUp(en.target); io2.unobserve(en.target); } }); }, {threshold: .4});
+    nums.forEach(function(n){ io2.observe(n); });
+  }
+})();
+</script>
+</body></html>

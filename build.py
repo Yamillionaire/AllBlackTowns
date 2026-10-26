@@ -30,13 +30,15 @@ HEAD = """<!DOCTYPE html>
 <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
+<div class="logo-bg" aria-hidden="true"></div>
 <nav><div class="wrap nav-inner">
-<a class="brand" href="index.html">All <span>Black</span> Towns</a>
+<a class="brand" href="index.html"><img class="brand-logo" src="logo-nav.jpg" alt="All Black Towns logo">All <span>Black</span> Towns</a>
 <div class="nav-links">
 <a href="index.html" class="{h}">Home</a>
 <a href="towns.html" class="{t}">Towns</a>
 <a href="map.html" class="{mp}">Map</a>
 <a href="music.html" class="{m}">Music</a>
+<a href="education.html" class="{ed}">Education</a>
 <a href="about.html" class="{a}">About</a>
 </div></div></nav>
 """
@@ -54,8 +56,8 @@ FOOT = """
 <p class="nl-note">Free forever. Unsubscribe anytime.</p>
 </div></section>
 <footer><div class="wrap">
-<a class="brand" href="index.html">All <span>Black</span> Towns</a>
-<p style="margin-top:12px">A music project honoring the historic Black towns of America -<br>one town, one song, one story at a time.</p>
+<a class="brand" href="index.html"><img class="brand-logo" src="logo-nav.jpg" alt="All Black Towns logo">All <span>Black</span> Towns</a>
+<p style="margin-top:12px">A creative universe built on the true history of America's Black towns -<br>one town, one song, one story at a time.</p>
 <p style="margin-top:14px; opacity:.6">&copy; 2026 All Black Towns. All rights reserved.</p>
 </div></footer>
 
@@ -91,6 +93,7 @@ def page(active, title, desc, body):
                     t="active" if active == "t" else "",
                     mp="active" if active == "mp" else "",
                     m="active" if active == "m" else "",
+                    ed="active" if active == "ed" else "",
                     a="active" if active == "a" else "")
     body = (body.replace('<h2 class="section-title">', '<h2 class="section-title" data-rv>')
                 .replace('<p class="section-sub">', '<p class="section-sub" data-rv>')
@@ -110,14 +113,14 @@ cards = "\n".join(
 
 index_body = f"""
 <header class="hero"><div class="wrap">
-<div class="kicker">A music project &middot; {len(towns)} towns &middot; {len(songs)} original songs</div>
+<div class="kicker">A creative universe built on true history &middot; {len(towns)} towns &middot; {len(towns)} original songs</div>
 <h1>Every Black town<br>has a <em>song.</em></h1>
-<p class="lede">From Boley to Blackdom, Rosewood to Seneca Village - All Black Towns is a growing musical archive honoring the historic Black towns and neighborhoods of America, one town and one story at a time.</p>
+<p class="lede">From Boley to Blackdom, Rosewood to Seneca Village - All Black Towns is a creative universe built on the true history of America's Black towns and neighborhoods. Every town is real, and every story really happened - told first in song, and growing into film, story, and study.</p>
 <a class="btn" href="towns.html">Explore the towns</a>
 <a class="btn ghost" href="music.html">Hear the music</a>
 <div class="stats">
 <div class="stat"><div class="num">{len(towns)}</div><div class="lbl">Towns honored</div></div>
-<div class="stat"><div class="num">{len(songs)}</div><div class="lbl">Original songs</div></div>
+<div class="stat"><div class="num">{len(towns)}</div><div class="lbl">Original songs</div></div>
 <div class="stat"><div class="num">50</div><div class="lbl">States &amp; territories</div></div>
 </div></div></header>
 
@@ -132,7 +135,7 @@ index_body = f"""
 <section class="block alt"><div class="wrap">
 <div class="rule"></div>
 <h2 class="section-title">The music</h2>
-<p class="section-sub">{len(songs)} original songs and counting - each written for a specific town, carrying its history in the lyrics. Human-written words, composed with AI instruments, sung so the names are never forgotten.</p>
+<p class="section-sub">{len(towns)} original songs and counting - each written for a specific town, carrying its history in the lyrics. Human-written words, composed with AI instruments, sung so the names are never forgotten.</p>
 <a class="btn ghost" style="margin-left:0" href="music.html">Browse the catalog</a>
 </div></section>
 """
@@ -177,16 +180,42 @@ filterTowns();
 """
 
 # ---------- MUSIC ----------
-song_rows = "\n".join(
-    f'<div class="song-row" data-rv><span class="t">{esc(s)}</span></div>' for s in sorted(songs))
+music_data = json.dumps([{"song": t["song"], "town": t["town"], "state": t["state"],
+                          "about": t["about"]} for t in sorted(towns, key=lambda x: x["song"].lower())])
+music_state_opts = "\n".join(f'<option value="{esc(s)}">{esc(s)}</option>' for s in states)
 
 music_body = f"""
 <section class="block"><div class="wrap">
 <div class="rule"></div>
 <h2 class="section-title">The music</h2>
-<p class="section-sub">{len(songs)} original songs - one per town. Every lyric is human-written from historical research; the music is composed with AI instruments. The catalog keeps growing.</p>
-<div class="song-list">{song_rows}</div>
+<p class="section-sub">{len(towns)} original songs - one for every town. Search the catalog by song, town, or state. Every lyric is human-written from historical research; the music is composed with AI instruments. Streaming and downloads open with the store - join the list below to hear each song first.</p>
+<div class="tools">
+<input id="mq" type="text" placeholder="Search songs or towns..." oninput="filterMusic()">
+<select id="mst" onchange="filterMusic()"><option value="">All states</option>{music_state_opts}</select>
+</div>
+<div class="count-note" id="mcount"></div>
+<div class="town-grid" id="mgrid"></div>
 </div></section>
+<script>
+const MUSIC = {music_data};
+const mgrid = document.getElementById('mgrid');
+const mcount = document.getElementById('mcount');
+function mcard(t, i) {{
+  const about = t.about ? `<p>${{t.about.substring(0, 240)}}${{t.about.length > 240 ? '...' : ''}}</p>` : '';
+  return `<div class="town-card song-card" style="--i:${{Math.min(i || 0, 10)}}"><div class="disc" aria-hidden="true"></div><h3>${{t.song}}</h3><div class="state">${{t.town}} &middot; ${{t.state}}</div>${{about}}<div class="song-actions"><a class="mini-btn" href="#newsletter">Hear it first</a><a class="mini-link" href="towns.html">The town</a></div></div>`;
+}}
+function filterMusic() {{
+  const q = document.getElementById('mq').value.toLowerCase();
+  const st = document.getElementById('mst').value;
+  const list = MUSIC.filter(t =>
+    (!q || t.song.toLowerCase().includes(q) || t.town.toLowerCase().includes(q)) &&
+    (!st || t.state === st));
+  mgrid.innerHTML = list.map((t, i) => mcard(t, i)).join('');
+  mgrid.classList.add('anim');
+  mcount.textContent = `Showing ${{list.length}} of ${{MUSIC.length}} songs`;
+}}
+filterMusic();
+</script>
 
 <section class="block alt"><div class="wrap">
 <div class="rule"></div>
@@ -207,7 +236,7 @@ about_body = """
 <p>After Emancipation, Black Americans built <strong>hundreds of their own towns</strong> - municipalities, districts, and settlements across the country, founded on the belief that freedom should come with land, self-rule, and a future.</p>
 <p>Many thrived. Boley, Oklahoma. Nicodemus, Kansas. Blackdom, New Mexico. Mound Bayou, Mississippi. Then came the violence, the policy, the highways, the "urban renewal" - and town after town was destroyed, dispersed, or paved over.</p>
 <div class="quote">"They tried to bury the towns. We're singing their names back."</div>
-<p><strong>All Black Towns</strong> is a music project to honor every one of them - one town, one song, one story at a time. Each song carries the town's real history in its lyrics, so the names live in melody even where the buildings are gone.</p>
+<p><strong>All Black Towns</strong> is a creative universe built on true stories, honoring every one of them - one town, one song, one story at a time. Each song carries the town's real history in its lyrics, so the names live in melody even where the buildings are gone.</p>
 <p>The project is also a living archive: the lyrics are documented, the research is sourced, and the catalog grows as more towns are found and more songs are written.</p>
 <p>This is history you can hear.</p>
 </div></div></section>
@@ -216,9 +245,43 @@ about_body = """
 <div class="rule"></div>
 <h2 class="section-title">About the creator</h2>
 <div class="prose">
-<p><strong>Yamil Little</strong> is an Atlanta-based creative director and the founder of The Elements of Hip Hop (Power For Us, LLC), the company behind HipHopolis, a superhero universe powered by the elements of hip hop. He created All Black Towns to put the names of America's historic Black towns back into the culture, as songs people can carry with them.</p>
-<p>His career moves between music, media, and community work. He served as Chief Operating Officer of Bridge DA Gap, the nonprofit that uses hip hop to connect generations, and as Director of Social Media for KHAO Music Group, and he founded Georgia's first GRAMMY U student chapter while studying audio and video production. He holds an MBA in Marketing from Strayer University and a B.A. in Audio/Video Production from the Art Institute of Atlanta.</p>
+<p><strong>Yamil Little</strong> is an Atlanta-based creative director and the co-founder of The Elements of Hip Hop, the company behind HipHopolis, a superhero universe powered by the elements of hip hop. He created All Black Towns to put the names of America's historic Black towns back into the culture, as songs people can carry with them.</p>
+<p>His career moves between music, media, and community work.</p>
 <p>The project is personal. Little's grandparents came from Alabama, and the towns in these songs are the kind of places his own family's story runs through. All Black Towns is his way of keeping the record alive: researched from the sources, written town by town, and sung back into memory.</p>
+</div></div></section>
+"""
+
+# ---------- EDUCATION ----------
+education_body = """
+<section class="block"><div class="wrap">
+<div class="rule"></div>
+<h2 class="section-title">Learn the towns</h2>
+<p class="section-sub">The songs open the door. The curriculum walks through it - the full, sourced history of every town, built for learners, families, and classrooms.</p>
+<div class="prose">
+<p>Every All Black Towns song starts as research. The <strong>Town Dossiers</strong> are where that research lives in full: each one tells a town's complete story - its founding and founders, its churches, schools, and businesses, the turning point that changed everything, and what stands there today - with a timeline, a key facts box, primary sources, and the song's lyrics annotated line by line.</p>
+<p><strong>Lesson plans</strong> turn each dossier into teaching: a lesson opens with the song, moves into the documents, and closes with discussion and a hands-on task. The pilot lesson, built on Sweet Auburn in Atlanta, is complete; the full curriculum grows town by town from the dossiers, toward every town on the master list.</p>
+</div></div></section>
+
+<section class="block alt"><div class="wrap">
+<div class="rule"></div>
+<h2 class="section-title">The pilot collection</h2>
+<p class="section-sub">Five towns, five complete dossiers - the first set, finished and verified against the sources.</p>
+<div class="town-grid">
+<div class="town-card"><h3>Sweet Auburn</h3><div class="state">Atlanta, Georgia</div><p>The historic Black business district once called the richest Negro street in the world - and the home of the pilot lesson plan.</p></div>
+<div class="town-card"><h3>Boley</h3><div class="state">Oklahoma</div><p>One of the largest and most famous all-Black towns of the West, founded in 1903 and still an incorporated town today.</p></div>
+<div class="town-card"><h3>Nicodemus</h3><div class="state">Kansas</div><p>Founded in 1877 by Black settlers from Kentucky; the oldest surviving all-Black town west of the Mississippi, now a National Historic Site.</p></div>
+<div class="town-card"><h3>Eatonville</h3><div class="state">Florida</div><p>Incorporated in 1887, among the first self-governing all-Black towns in America - and the hometown of Zora Neale Hurston.</p></div>
+<div class="town-card"><h3>Rosewood</h3><div class="state">Florida</div><p>A thriving town destroyed by racial violence in 1923. Its dossier keeps the full record of what was lost.</p></div>
+</div>
+</div></section>
+
+<section class="block"><div class="wrap">
+<div class="rule"></div>
+<h2 class="section-title">Free to explore, deeper for members</h2>
+<div class="prose">
+<p>The map, the songs, and every town's story stay <strong>free for everyone</strong> - that is the discovery engine, and it is not going anywhere. The dossiers and lesson plans are the members' layer: the full record, kept growing.</p>
+<p>The membership opens soon, with classroom and school licenses for teachers and institutions alongside individual memberships. Join the list and you will hear about it first.</p>
+<p style="margin-top:26px"><a class="btn" href="#newsletter">Join the list</a></p>
 </div></div></section>
 """
 
@@ -266,13 +329,15 @@ except FileNotFoundError:
 
 pages = {
     "index.html": page("h", "Home",
-        "All Black Towns - a music project honoring historic Black towns, one song per town.", index_body),
+        "All Black Towns - a creative universe built on the true history of America's Black towns, told first in song.", index_body),
     "towns.html": page("t", "Towns",
         "Explore the historic Black towns honored by the All Black Towns music project.", towns_body),
     "music.html": page("m", "Music",
         "The All Black Towns song catalog - original songs honoring historic Black towns.", music_body),
     "about.html": page("a", "About",
-        "About All Black Towns - a music project honoring historic Black towns of America.", about_body),
+        "About All Black Towns - a creative universe built on the true history of America's Black towns.", about_body),
+    "education.html": page("ed", "Education",
+        "The All Black Towns curriculum - Town Dossiers and lesson plans built on the true history of America's Black towns.", education_body),
 }
 if map_body:
     pages["map.html"] = page("mp", "Map",

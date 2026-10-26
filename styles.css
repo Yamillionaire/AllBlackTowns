@@ -151,3 +151,13 @@ html.js [data-rv].in{opacity:1;transform:none}
 .pop .psong{font-weight:600;font-size:.88rem}
 .marker-cluster-small,.marker-cluster-medium,.marker-cluster-large{background:rgba(20,22,31,.28)}
 .marker-cluster-small div,.marker-cluster-medium div,.marker-cluster-large div{background:#14161f;color:var(--gold-soft);font-weight:700}
+
+/* Logo watermark + music/education build (2026-10-26) */
+.logo-bg{position:fixed;inset:0;background:url('logo-watermark.png') center / min(96vmin,1000px) no-repeat;opacity:.13;z-index:1;pointer-events:none}
+.wrap{position:relative;z-index:2}
+.disc{width:52px;height:52px;border-radius:50%;margin-bottom:16px;background:radial-gradient(circle at center,#0e0c09 0 26%,#c9a227 27% 33%,#241f16 34% 100%);border:1px solid var(--line)}
+.song-card .song-actions{margin-top:16px;display:flex;gap:14px;align-items:center}
+.mini-btn{display:inline-block;padding:8px 18px;border-radius:999px;background:var(--gold);color:var(--ink);font-weight:700;font-size:.82rem;text-decoration:none}
+.mini-btn:hover{background:var(--gold-soft)}
+.mini-link{font-size:.85rem;color:var(--gold-soft)}
+footer .brand-logo{height:30px;width:30px}
