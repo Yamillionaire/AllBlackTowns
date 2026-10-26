@@ -296,6 +296,21 @@ try:
             pins.append({"town": t["town"], "state": t["state"], "song": t["song"],
                          "about": (t["about"] or "")[:180], "lat": coords[k][0], "lon": coords[k][1]})
     pin_data = json.dumps(pins)
+    intl = []
+    try:
+        for e in json.load(open(f"{SITE}/international-towns.json")):
+            intl.append({"town": e["town"], "country": e["country"], "about": e["about"],
+                         "lat": e["lat"], "lon": e["lon"], "song": ""})
+    except FileNotFoundError:
+        pass
+    for t in towns:
+        if t["town"] == "Nanny Town":
+            k = f"{t['town']}|{t['state']}"
+            if k in coords:
+                intl.append({"town": t["town"], "country": t["state"],
+                             "about": (t["about"] or "")[:235],
+                             "lat": coords[k][0], "lon": coords[k][1], "song": t["song"]})
+    intl_data = json.dumps(intl)
     map_body = f"""
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css">
@@ -322,6 +337,28 @@ PINS.forEach(p => {{
   cluster.addLayer(m);
 }});
 map.addLayer(cluster);
+</script>
+<section class="block"><div class="wrap">
+<div class="rule"></div>
+<h2 class="section-title">The international Black towns map</h2>
+<p class="section-sub">The story does not stop at the border. Wherever colonialism carried Black people (the Caribbean, the Virgin Islands, the Americas, and the ports of Europe), they did what they did here: fought for ground and built towns of their own. Maroon republics, quilombos, palenques, Garifuna towns, and free Black settlements, each pinned where it stood or still stands. The songs have not reached these towns yet; the record starts here.</p>
+<div id="worldmap" class="townmap" data-rv></div>
+<p class="map-note">{len(intl)} places on this map. Entries the record supports only as a district or a territory are labeled as such: the record stays honest. Map data &copy; OpenStreetMap contributors.</p>
+</div></section>
+<script>
+const IPINS = {intl_data};
+const wmap = L.map('worldmap').setView([14, -35], 3);
+L.tileLayer('https://tile.openstreetmap.org/{{z}}/{{x}}/{{y}}.png', {{ maxZoom: 18, attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors' }}).addTo(wmap);
+const icluster = L.markerClusterGroup();
+const idot = L.divIcon({{ className: 'town-dot-wrap', html: '<span class="town-dot"></span>', iconSize: [16, 16], iconAnchor: [8, 8] }});
+IPINS.forEach(p => {{
+  const m = L.marker([p.lat, p.lon], {{ icon: idot }});
+  const about = p.about ? `<p>${{p.about}}</p>` : '';
+  const song = p.song ? `<div class="psong">\u266a ${{p.song}}</div>` : '';
+  m.bindPopup(`<div class="pop"><h3>${{p.town}}</h3><div class="pstate">${{p.country}}</div>${{about}}${{song}}</div>`);
+  icluster.addLayer(m);
+}});
+wmap.addLayer(icluster);
 </script>
 """
 except FileNotFoundError:
