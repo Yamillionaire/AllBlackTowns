@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Boley, Oklahoma - All Black Towns - All Black Towns</title>
+<meta name="description" content="Boley, founded in 1903, became one of the most prominent of Oklahoma's more than 50 all-Black towns, a self-governing Black municipality in the Jim Crow era. In">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css?v=20261026-beta">
+<style>
+.dossier h2{font-family:'Playfair Display',serif;font-size:1.55rem;margin:36px 0 12px;color:#f5efe0}
+.dossier h3{font-size:1.15rem;margin:24px 0 8px;color:#e3c76a}
+.dossier p{margin:0 0 14px;line-height:1.68}
+.dossier ul,.dossier ol{margin:0 0 16px 24px;line-height:1.62}
+.dossier li{margin-bottom:7px}
+.facts{background:#1a1712;border:1px solid rgba(201,162,39,.22);border-left:5px solid #c9a227;border-radius:8px;padding:20px 24px 8px;margin:10px 0 14px;color:#f5efe0}
+.facts h2{color:#e3c76a;margin-top:0}
+.beta-banner{background:#1a1712;border:1px solid rgba(201,162,39,.22);border-radius:8px;padding:16px 20px;margin:0 0 26px;line-height:1.55;color:#f5efe0}
+.doss-end{background:#1a1712;border:1px solid rgba(201,162,39,.22);border-radius:8px;padding:20px 24px 8px;margin:34px 0 10px;color:#f5efe0}
+.backlink{display:inline-block;margin:0 0 18px;font-weight:600}
+#progress-bar{position:fixed;top:0;left:0;height:3px;background:#c9a227;width:0;z-index:999}
+.orient{background:#1a1712;border:1px solid #c9a227;color:#f5efe0;border-radius:10px;padding:24px 26px;margin:0 0 22px}
+.orient .meta{font-size:.92rem;letter-spacing:.04em;text-transform:uppercase;color:#e3c76a;margin-bottom:10px}
+.orient .eq{font-family:'Playfair Display',serif;font-size:1.3rem;line-height:1.45;margin:0 0 10px}
+.orient p{line-height:1.6;margin:0 0 14px}
+.orient .fork{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
+.orient .fork a,.orient .fork button{background:#c9a227;color:#0e0c09;border:0;border-radius:6px;padding:10px 16px;font-weight:700;cursor:pointer;text-decoration:none;font-size:.95rem}
+.orient .fork button.ghost{background:transparent;color:#f5efe0;border:1px solid #c9a227}
+#resume-chip{display:none;background:rgba(201,162,39,.14);border:1px solid rgba(201,162,39,.22);color:#f5efe0;border-radius:6px;padding:10px 14px;margin-top:14px;font-size:.95rem}
+#teacher-panel{display:none;background:#1a1712;border:1px solid rgba(201,162,39,.22);border-left:5px solid #c9a227;border-radius:8px;padding:18px 22px 6px;margin:0 0 22px;line-height:1.6;color:#f5efe0}
+.layout{display:grid;grid-template-columns:230px 1fr;gap:34px;align-items:start}
+.rail{position:sticky;top:88px;font-size:.93rem}
+.rail h4{font-size:.78rem;letter-spacing:.09em;text-transform:uppercase;color:#c9a227;margin:0 0 10px}
+.rail a{display:block;padding:7px 10px 7px 12px;color:#d8cdb4;text-decoration:none;border-left:3px solid rgba(201,162,39,.22);line-height:1.35}
+.rail a.active{border-left-color:#c9a227;background:rgba(201,162,39,.12);color:#f5efe0;font-weight:700}
+.rail a .tick{display:inline-block;width:1.1em;color:#c9a227;font-weight:700}
+.rail .rail-tools{margin-top:14px}
+.rail .rail-tools button{background:none;border:1px solid #c9a227;color:#e3c76a;border-radius:6px;padding:6px 10px;cursor:pointer;font-size:.85rem}
+#chapter-bar{display:none}
+.chapter{scroll-margin-top:92px}
+details.deep{scroll-margin-top:92px}
+.chapter > h2{border-bottom:2px solid rgba(201,162,39,.22);padding-bottom:8px}
+.recall{background:rgba(201,162,39,.10);border:1px solid rgba(201,162,39,.22);border-radius:8px;padding:14px 18px;margin:20px 0 6px;line-height:1.55;font-size:.97rem;color:#f5efe0}
+.recall strong{color:#e3c76a}
+.chap-nav{display:flex;justify-content:space-between;gap:12px;margin:22px 0 4px;font-weight:600}
+.chap-nav a{color:#e3c76a}
+details.deep{border:1px solid rgba(201,162,39,.22);border-radius:8px;background:#1a1712;margin:26px 0 10px}
+details.deep > summary{font-family:'Playfair Display',serif;font-size:1.3rem;color:#f5efe0;cursor:pointer;padding:16px 20px;list-style:none}
+details.deep > summary::-webkit-details-marker{display:none}
+details.deep > summary::after{content:"+";float:right;color:#c9a227;font-weight:700}
+details.deep[open] > summary::after{content:"\2212"}
+details.deep .deep-body{padding:0 20px 8px}
+details.inline{margin:14px 0}
+details.inline > summary{cursor:pointer;font-weight:700;color:#e3c76a;list-style:none}
+details.inline > summary::-webkit-details-marker{display:none}
+details.inline > summary::after{content:" +";color:#c9a227}
+details.inline[open] > summary::after{content:" \2212"}
+@media (max-width:900px){
+  .layout{grid-template-columns:1fr}
+  .rail{display:none}
+  #chapter-bar{display:flex;position:sticky;top:0;z-index:60;background:#1a1712;border:1px solid rgba(201,162,39,.22);color:#f5efe0;padding:10px 14px;border-radius:6px;justify-content:space-between;align-items:center;margin-bottom:16px}
+  #chapter-bar button{background:#c9a227;color:#0e0c09;border:0;border-radius:5px;padding:6px 12px;font-weight:700;cursor:pointer}
+  #chapter-sheet{display:none;background:#1a1712;border:1px solid rgba(201,162,39,.22);border-radius:8px;padding:10px 16px;margin:-8px 0 16px}
+  #chapter-sheet.open{display:block}
+  #chapter-sheet a{display:block;padding:8px 4px;color:#d8cdb4;text-decoration:none;border-bottom:1px solid rgba(201,162,39,.22)}
+}
+@media print{
+  #progress-bar,.rail,#chapter-bar,#chapter-sheet,.orient .fork,.recall,.chap-nav,.backlink,nav,footer{display:none !important}
+  .layout{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<div class="logo-bg" aria-hidden="true"></div>
+<nav><div class="wrap nav-inner">
+<a class="brand" href="../index.html"><img class="brand-logo" src="../logo-nav.jpg" alt="All Black Towns logo">All <span>Black</span> Towns</a>
+<div class="nav-links">
+<a href="../index.html">Home</a>
+<a href="../towns.html" class="active">Towns</a>
+<a href="../map.html">Map</a>
+<a href="../music.html">Music</a>
+<a href="../education.html">Education</a>
+<a href="../about.html">About</a>
+<a href="../share.html">Share a Town</a>
+</div></div></nav>
+<section class="block"><div class="wrap">
+<a class="backlink" href="../towns.html">&larr; Back to Towns</a>
+<div class="rule"></div>
+<div id="progress-bar"></div>
+<h2 class="section-title">Boley, Oklahoma - All Black Towns</h2>
+<div class="beta-banner">One town, one song. Boley, Oklahoma is one of the 120 towns of the All Black Towns collection.</div>
+<div class="orient"><div class="meta">Oklahoma &middot; One of 120 towns &middot; Song: IRON TRACKS TO BOLEY</div><p>Every town page follows the same path: the story so far, the song, the map, and the full dossier as the research lands.</p><div class="fork"><a href="#story">Read the story</a><button type="button" class="ghost" onclick="window.print()">Print / save PDF</button></div><div id="resume-chip"></div></div>
+<div class="facts"><h3>Key Facts</h3><table><tr><th>Town</th><td>Boley</td></tr><tr><th>State</th><td>Oklahoma</td></tr><tr><th>Song</th><td>IRON TRACKS TO BOLEY</td></tr><tr><th>Map pin</th><td>Placed</td></tr></table></div>
+<div id="chapter-bar"><span id="chapter-bar-label">The Story So Far</span><button type="button" id="chapter-sheet-btn">Contents</button></div><div id="chapter-sheet"><a href="#story">The Story So Far</a><a href="#song">The Song</a><a href="#map">On the Map</a><a href="#dossier">The Full Dossier</a></div>
+<div class="layout"><aside class="rail"><h4>Chapters</h4><a href="#story" data-ch="story"><span class="tick"></span>The Story So Far</a><a href="#song" data-ch="song"><span class="tick"></span>The Song</a><a href="#map" data-ch="map"><span class="tick"></span>On the Map</a><a href="#dossier" data-ch="dossier"><span class="tick"></span>The Full Dossier</a></aside><div class="dossier"><section class="chapter" id="story" data-label="The Story So Far"><p>Boley, founded in 1903, became one of the most prominent of Oklahoma&#x27;s more than 50 all-Black towns, a self-governing Black municipality in the Jim Crow era. Incorporated in 1905, it held banks, schools, and its own electric company.</p><p>This page grows as the research lands: the full dossier, the song's annotated lyrics, and the primary sources behind the record are added town by town.</p><div class="chap-nav"><span></span><a href="#song">Next: The Song &rarr;</a></div></section>
+<section class="chapter" id="song" data-label="The Song"><p><strong>IRON TRACKS TO BOLEY</strong> is Boley's song in the All Black Towns collection.</p><p>Every song in the collection was written for a specific town, carrying its history in the lyrics: human-written words, composed with AI instruments, sung so the names are never forgotten. The full lyric annotation for this song arrives with its dossier.</p><p><a href="../music.html">Browse the full catalog of 120 songs</a></p><div class="chap-nav"><a href="#story">&larr; The Story So Far</a><a href="#map">Next: On the Map &rarr;</a></div></section>
+<section class="chapter" id="map" data-label="On the Map"><p>Boley is placed on the project map at 35.4935, -96.4836.</p><p><a href="../map.html">Find Boley on the map</a>. Locations are town-level approximations for a historical archive, not surveyed boundaries.</p><div class="chap-nav"><a href="#song">&larr; The Song</a><a href="#dossier">Next: The Full Dossier &rarr;</a></div></section>
+<section class="chapter" id="dossier" data-label="The Full Dossier"><p>The Boley dossier is one of the five pilot dossiers of the education beta.</p><p><a href="../dossiers/boley.html">Read the Boley extract</a>, the complete dossier is part of the Pilot Collection.</p><div class="chap-nav"><a href="#map">&larr; On the Map</a><span></span></div></section></div></div>
+<div class="doss-end"><strong>Keep traveling.</strong><p><a href="bobtown-louisiana.html">&larr; Bobtown, Louisiana</a> &middot; <a href="bookertee-oklahoma.html">Bookertee, Oklahoma &rarr;</a></p></div>
+</div></section>
+<footer><div class="wrap">
+<a class="brand" href="../index.html"><img class="brand-logo" src="../logo-nav.jpg" alt="All Black Towns logo">All <span>Black</span> Towns</a>
+<p style="margin-top:12px">A creative universe built on the true history of America's Black towns -<br>one town, one song, one story at a time.</p>
+<p style="margin-top:14px; opacity:.6">&copy; 2026 All Black Towns. All rights reserved.</p>
+</div></footer>
+
+<script>
+(function(){
+  var KEY = 'abt-town-boley-oklahoma';
+  var state = {done: []};
+  try { state = JSON.parse(localStorage.getItem(KEY)) || state; } catch(e) {}
+  var chapters = Array.prototype.slice.call(document.querySelectorAll('.chapter'));
+  var railLinks = {};
+  document.querySelectorAll('.rail a[data-ch]').forEach(function(a){ railLinks[a.getAttribute('data-ch')] = a; });
+  function save(){ try { localStorage.setItem(KEY, JSON.stringify(state)); } catch(e) {} }
+  function paintTicks(){
+    chapters.forEach(function(ch){
+      var a = railLinks[ch.id];
+      if (a) { var t = a.querySelector('.tick'); if (t) t.textContent = state.done.indexOf(ch.id) >= 0 ? '\u2713' : ''; }
+    });
+  }
+  var chip = document.getElementById('resume-chip');
+  if (chip && state.done.length) {
+    var next = chapters.filter(function(c){ return state.done.indexOf(c.id) < 0; })[0];
+    if (next) {
+      var label = next.getAttribute('data-label');
+      chip.style.display = 'block';
+      chip.innerHTML = 'Welcome back. You left off at <strong>' + label + '</strong>. <a href="#' + next.id + '">Continue there \u2192</a>';
+    }
+  }
+  paintTicks();
+  var bar = document.getElementById('progress-bar');
+  var active = null;
+  var spy = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){
+      if (en.isIntersecting) {
+        if (active && railLinks[active]) railLinks[active].classList.remove('active');
+        active = en.target.id;
+        if (railLinks[active]) railLinks[active].classList.add('active');
+        var sheetLabel = document.getElementById('chapter-bar-label');
+        if (sheetLabel) sheetLabel.textContent = en.target.getAttribute('data-label');
+      }
+      var rect = en.target.getBoundingClientRect();
+      if (rect.bottom < window.innerHeight * 0.55 && state.done.indexOf(en.target.id) < 0) {
+        state.done.push(en.target.id); save(); paintTicks();
+      }
+    });
+  }, {rootMargin: '-30% 0px -55% 0px'});
+  chapters.forEach(function(ch){ spy.observe(ch); });
+  window.addEventListener('scroll', function(){
+    var h = document.documentElement;
+    var max = h.scrollHeight - h.clientHeight;
+    if (bar && max > 0) bar.style.width = (h.scrollTop / max * 100) + '%';
+  }, {passive: true});
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){
+    a.addEventListener('click', function(){
+      var t = document.querySelector(a.getAttribute('href'));
+      if (t && t.tagName === 'DETAILS') t.open = true;
+      var sheet = document.getElementById('chapter-sheet');
+      if (sheet) sheet.classList.remove('open');
+    });
+  });
+  var tp = document.getElementById('teacher-panel');
+  var tbtn = document.getElementById('teach-btn');
+  if (tbtn && tp) tbtn.addEventListener('click', function(){ tp.style.display = tp.style.display === 'block' ? 'none' : 'block'; if (tp.style.display === 'block') tp.scrollIntoView({behavior:'smooth', block:'start'}); });
+  var ex = document.getElementById('expand-all');
+  if (ex) ex.addEventListener('click', function(){
+    var dets = document.querySelectorAll('details');
+    var anyClosed = Array.prototype.some.call(dets, function(d){ return !d.open; });
+    dets.forEach(function(d){ d.open = anyClosed; });
+    ex.textContent = anyClosed ? 'Collapse all sections' : 'Expand all sections';
+  });
+  var sheetBtn = document.getElementById('chapter-sheet-btn');
+  var sheet = document.getElementById('chapter-sheet');
+  if (sheetBtn && sheet) sheetBtn.addEventListener('click', function(){ sheet.classList.toggle('open'); });
+  window.addEventListener('beforeprint', function(){ document.querySelectorAll('details').forEach(function(d){ d.open = true; }); });
+})();
+</script>
+</body></html>
