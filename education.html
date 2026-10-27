@@ -65,6 +65,7 @@
 <input type="hidden" name="_subject" value="New All Black Towns subscriber">
 <button class="btn" type="submit">Join the list</button>
 </form>
+<p class="nl-status" role="status" style="min-height:1.2em;margin-top:10px"></p>
 <p class="nl-note">Free forever. Unsubscribe anytime.</p>
 </div></section>
 <footer><div class="wrap">
@@ -93,6 +94,22 @@
   if ('IntersectionObserver' in window && !RM) {
     var io2 = new IntersectionObserver(function(es){ es.forEach(function(en){ if (en.isIntersecting) { countUp(en.target); io2.unobserve(en.target); } }); }, {threshold: .4});
     nums.forEach(function(n){ io2.observe(n); });
+  }
+  var nlForm = document.querySelector('.nl-form');
+  if (nlForm) {
+    nlForm.addEventListener('submit', function(ev){
+      ev.preventDefault();
+      var status = document.querySelector('.nl-status');
+      var email = nlForm.querySelector('input[name="email"]').value;
+      if (status) status.textContent = 'Joining...';
+      fetch('https://formsubmit.co/ajax/info@allblacktowns.com', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json', 'Accept': 'application/json'},
+        body: JSON.stringify({email: email, _subject: 'New All Black Towns subscriber'})
+      }).then(function(r){ if (!r.ok) throw new Error('send failed'); return r.json(); })
+        .then(function(){ if (status) status.textContent = 'You are on the list. Watch your inbox - the next town is coming.'; nlForm.reset(); })
+        .catch(function(){ if (status) status.textContent = 'That did not go through. Please try again, or write to us at info@allblacktowns.com.'; });
+    });
   }
 })();
 </script>
