@@ -20,6 +20,56 @@
 .beta-banner{background:#1a1712;border:1px solid rgba(201,162,39,.22);border-radius:8px;padding:16px 20px;margin:0 0 26px;line-height:1.55;color:#f5efe0}
 .doss-end{background:#1a1712;border:1px solid rgba(201,162,39,.22);border-radius:8px;padding:20px 24px 8px;margin:34px 0 10px;color:#f5efe0}
 .backlink{display:inline-block;margin:0 0 18px;font-weight:600}
+#progress-bar{position:fixed;top:0;left:0;height:3px;background:#c9a227;width:0;z-index:999}
+.orient{background:#1a1712;border:1px solid #c9a227;color:#f5efe0;border-radius:10px;padding:24px 26px;margin:0 0 22px}
+.orient .meta{font-size:.92rem;letter-spacing:.04em;text-transform:uppercase;color:#e3c76a;margin-bottom:10px}
+.orient .eq{font-family:'Playfair Display',serif;font-size:1.3rem;line-height:1.45;margin:0 0 10px}
+.orient p{line-height:1.6;margin:0 0 14px}
+.orient .fork{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
+.orient .fork a,.orient .fork button{background:#c9a227;color:#0e0c09;border:0;border-radius:6px;padding:10px 16px;font-weight:700;cursor:pointer;text-decoration:none;font-size:.95rem}
+.orient .fork button.ghost{background:transparent;color:#f5efe0;border:1px solid #c9a227}
+#resume-chip{display:none;background:rgba(201,162,39,.14);border:1px solid rgba(201,162,39,.22);color:#f5efe0;border-radius:6px;padding:10px 14px;margin-top:14px;font-size:.95rem}
+#teacher-panel{display:none;background:#1a1712;border:1px solid rgba(201,162,39,.22);border-left:5px solid #c9a227;border-radius:8px;padding:18px 22px 6px;margin:0 0 22px;line-height:1.6;color:#f5efe0}
+.layout{display:grid;grid-template-columns:230px 1fr;gap:34px;align-items:start}
+.rail{position:sticky;top:88px;font-size:.93rem}
+.rail h4{font-size:.78rem;letter-spacing:.09em;text-transform:uppercase;color:#c9a227;margin:0 0 10px}
+.rail a{display:block;padding:7px 10px 7px 12px;color:#d8cdb4;text-decoration:none;border-left:3px solid rgba(201,162,39,.22);line-height:1.35}
+.rail a.active{border-left-color:#c9a227;background:rgba(201,162,39,.12);color:#f5efe0;font-weight:700}
+.rail a .tick{display:inline-block;width:1.1em;color:#c9a227;font-weight:700}
+.rail .rail-tools{margin-top:14px}
+.rail .rail-tools button{background:none;border:1px solid #c9a227;color:#e3c76a;border-radius:6px;padding:6px 10px;cursor:pointer;font-size:.85rem}
+#chapter-bar{display:none}
+.chapter{scroll-margin-top:92px}
+details.deep{scroll-margin-top:92px}
+.chapter > h2{border-bottom:2px solid rgba(201,162,39,.22);padding-bottom:8px}
+.recall{background:rgba(201,162,39,.10);border:1px solid rgba(201,162,39,.22);border-radius:8px;padding:14px 18px;margin:20px 0 6px;line-height:1.55;font-size:.97rem;color:#f5efe0}
+.recall strong{color:#e3c76a}
+.chap-nav{display:flex;justify-content:space-between;gap:12px;margin:22px 0 4px;font-weight:600}
+.chap-nav a{color:#e3c76a}
+details.deep{border:1px solid rgba(201,162,39,.22);border-radius:8px;background:#1a1712;margin:26px 0 10px}
+details.deep > summary{font-family:'Playfair Display',serif;font-size:1.3rem;color:#f5efe0;cursor:pointer;padding:16px 20px;list-style:none}
+details.deep > summary::-webkit-details-marker{display:none}
+details.deep > summary::after{content:"+";float:right;color:#c9a227;font-weight:700}
+details.deep[open] > summary::after{content:"\2212"}
+details.deep .deep-body{padding:0 20px 8px}
+details.inline{margin:14px 0}
+details.inline > summary{cursor:pointer;font-weight:700;color:#e3c76a;list-style:none}
+details.inline > summary::-webkit-details-marker{display:none}
+details.inline > summary::after{content:" +";color:#c9a227}
+details.inline[open] > summary::after{content:" \2212"}
+@media (max-width:900px){
+  .layout{grid-template-columns:1fr}
+  .rail{display:none}
+  #chapter-bar{display:flex;position:sticky;top:0;z-index:60;background:#1a1712;border:1px solid rgba(201,162,39,.22);color:#f5efe0;padding:10px 14px;border-radius:6px;justify-content:space-between;align-items:center;margin-bottom:16px}
+  #chapter-bar button{background:#c9a227;color:#0e0c09;border:0;border-radius:5px;padding:6px 12px;font-weight:700;cursor:pointer}
+  #chapter-sheet{display:none;background:#1a1712;border:1px solid rgba(201,162,39,.22);border-radius:8px;padding:10px 16px;margin:-8px 0 16px}
+  #chapter-sheet.open{display:block}
+  #chapter-sheet a{display:block;padding:8px 4px;color:#d8cdb4;text-decoration:none;border-bottom:1px solid rgba(201,162,39,.22)}
+}
+@media print{
+  #progress-bar,.rail,#chapter-bar,#chapter-sheet,.orient .fork,.recall,.chap-nav,.backlink,nav,footer{display:none !important}
+  .layout{grid-template-columns:1fr}
+}
 </style>
 </head>
 <body>
@@ -38,15 +88,10 @@
 <section class="block"><div class="wrap">
 <a class="backlink" href="../education.html">&larr; Back to Education</a>
 <div class="rule"></div>
+<div id="progress-bar"></div>
 <h2 class="section-title">Eatonville, Florida - Town Dossier (Sample Extract)</h2>
 <div class="beta-banner"><strong>Beta sample extract.</strong> The opening of the Eatonville, Florida dossier: its header, key facts, and founding story. The full dossier is part of the Pilot Collection.</div>
-<div class="dossier"><h2>Header</h2>
-<ul>
-<li>Town name, State: Eatonville, Florida</li>
-<li>County: Orange County</li>
-<li>Status: still incorporated and self-governing (mayor-council). One of the first self-governing all-Black municipalities in the United States, and the town Zora Neale Hurston grew up in and carried into literature. Town motto: "The Town That Freedom Built."</li>
-<li>Dossier version: pilot draft v0.1, 2026-10-26</li>
-</ul>
+<div class="orient"><div class="meta">About 4 min read &middot; Sample extract &middot; Free beta sample</div><p>This is the opening of the Eatonville, Florida dossier: where the town came from, its key facts, and its founding story. The complete dossier, with the full timeline, the turning point, the town today, and the song with its lyrics annotated, is part of the Pilot Collection.</p><div class="fork"><a href="#ch1">Start reading</a><button type="button" class="ghost" onclick="window.print()">Print / save PDF</button></div><div id="resume-chip"></div></div>
 <div class="facts"><h2>Key Facts Box</h2>
 <ul>
 <li>Founded: the settlement began about 1880-1881 on land Lewis Lawrence bought from Captain Josiah C. Eaton west of Maitland; the Town of Eatonville was incorporated on August 15, 1887 (Town of Eatonville official history; BlackPast). See conflict 2 for a source giving August 18.</li>
@@ -56,17 +101,99 @@
 <li>Population today: 2,349 (2020 U.S. Census).</li>
 <li>Known for: among the first self-governing all-Black incorporated towns in America; Zora Neale Hurston's hometown; the ZORA! Festival of the Arts and Humanities, held every winter since 1990.</li>
 <li>The song: "Eatonville, Florida" (see Section 7).</li>
-</ul>
-</div><h2>1. Founding</h2>
+</ul></div>
+<div id="chapter-bar"><span id="chapter-bar-label">Introduction</span><button type="button" id="chapter-sheet-btn">Contents</button></div><div id="chapter-sheet"><a href="#intro">Introduction</a><a href="#ch1">1. Founding</a><a href="#full">Inside the full dossier</a></div>
+<div class="layout"><aside class="rail"><h4>Chapters</h4><a href="#intro" data-ch="intro"><span class="tick"></span>Introduction</a><a href="#ch1" data-ch="ch1"><span class="tick"></span>1. Founding</a><a href="#full" data-ch="full"><span class="tick"></span>Inside the full dossier</a></aside><div class="dossier"><section class="chapter" id="intro" data-label="Introduction"><h2>Introduction</h2>
+<ul>
+<li>Town name, State: Eatonville, Florida</li>
+<li>County: Orange County</li>
+<li>Status: still incorporated and self-governing (mayor-council). One of the first self-governing all-Black municipalities in the United States, and the town Zora Neale Hurston grew up in and carried into literature. Town motto: "The Town That Freedom Built."</li>
+<li>Dossier version: pilot draft v0.1, 2026-10-26</li>
+</ul><div class="chap-nav"><span></span><a href="#ch1">Next: 1. Founding &rarr;</a></div></section>
+<section class="chapter" id="ch1" data-label="1. Founding"><h2>1. Founding</h2>
 <p>Eatonville stands six miles north of Orlando, in what was the citrus country of Orange County. After Emancipation, formerly enslaved people migrated into central Florida and found work clearing land, planting citrus groves, and building the houses, hotels, and railroad of the new town of Maitland (Town of Eatonville official history). Some of them rose quickly: the Maitland town marshal was Joe Clarke, a Black man, and Black voters were part of Maitland's civic life from its start (Town of Eatonville official history; Florida Backroads Travel summary of the town record).</p>
 <p>The town exists because those settlers wanted a government of their own, and because two white men would sell them land when others would not. Joseph E. Clarke and several friends first tried to buy a block of land for what Clarke himself called a "colony for colored people," and, in Clarke's own words as carried in the town's history, "so great was the prejudice then existing against the Negro that no one would sell them land for such a purpose." In 1881, Lewis Lawrence, originally from Utica, New York, agreed to help. Lawrence persuaded his neighbor and friend Captain Josiah C. Eaton, a former Union officer and Maitland landowner, to sell him 22 acres, which Lawrence subdivided into 48 lots priced from $19 to $30 and offered only to Black buyers (Town of Eatonville official history, quoting the Tallahassee Weekly Floridian, 1881). Lawrence had a framed church built on the land, and the deeds carried a temperance covenant: no liquor was ever to be sold or given away on the ground, and no gambling or disreputable house allowed, under forfeiture of the purchase (Weekly Floridian, 1881, as quoted in the town history). The St. Lawrence African Methodist Episcopal Church, founded in 1881 on the settlement's first land, is counted the first African American church in the area, and it still stands and serves the town (BlackPast).</p>
 <p>The settlement was at first called Lawrence, after its founder on the ground. In 1884, the Orange County Reporter described the "colored village at Maitland sometimes known as Lawrence, the name of its worthy founder," and Lawrence himself requested that the settlement take the name Eatonville, in honor of Eaton (Town of Eatonville official history). The push for a separate town hardened after Maitland incorporated in 1885: Maitland's incorporation used Black votes, and at least one Black man was elected a town officer, yet within a year there were formal "discussions of separation" as a mutually beneficial answer to the "race problem" (Town of Eatonville official history). Clarke kept buying. One account dates an initial 12-acre purchase by Clarke to November 18, 1885, with his holdings growing over time (James Madison Institute history, via MadameNoire), and by incorporation the town comprised 112 acres (Town of Eatonville official history; BlackPast).</p>
-<p>On August 15, 1887, 27 registered Black electors gathered at the town hall and voted to incorporate the Town of Eatonville. They elected the Reverend Columbus H. Boger as the town's first mayor, and Joseph Clarke, Matthew Brazell, David Yelder, E. L. Horn, and E. J. Shines as aldermen, with an entirely Black slate of town officers (Town of Eatonville official history). The claim made for that day needs care, and this dossier makes it carefully: Brooklyn, Illinois had incorporated in 1873 and Princeville, North Carolina was chartered in 1885, so Eatonville was not the first Black town to incorporate in the United States. What Eatonville's own record and most modern accounts support is narrower and still remarkable: it is among the first self-governing all-Black municipalities in the nation, it was incorporated by Black citizens themselves, and it has remained incorporated and self-governing ever since, which is the basis of its standing description as the oldest incorporated African American municipality in America (Town of Eatonville; Association to Preserve the Eatonville Community; see conflict 1).</p></div>
-<div class="doss-end"><h3>Inside the full dossier</h3><ul><li>2. Building the Town</li><li>3. Peak Years</li><li>4. The Turning Point</li><li>5. Survival, Decline, or Destruction</li><li>6. The Town Today</li><li>7. The Song</li><li>8. Primary Sources</li><li>9. Sources and Bibliography</li></ul><p>The complete dossier, with the full timeline, the turning point, the town today, the song's lyrics annotated line by line, and primary sources, is part of the All Black Towns Pilot Collection. Membership opens soon - <a href="../education.html#newsletter">join the list</a> to hear about it first.</p></div>
+<p>On August 15, 1887, 27 registered Black electors gathered at the town hall and voted to incorporate the Town of Eatonville. They elected the Reverend Columbus H. Boger as the town's first mayor, and Joseph Clarke, Matthew Brazell, David Yelder, E. L. Horn, and E. J. Shines as aldermen, with an entirely Black slate of town officers (Town of Eatonville official history). The claim made for that day needs care, and this dossier makes it carefully: Brooklyn, Illinois had incorporated in 1873 and Princeville, North Carolina was chartered in 1885, so Eatonville was not the first Black town to incorporate in the United States. What Eatonville's own record and most modern accounts support is narrower and still remarkable: it is among the first self-governing all-Black municipalities in the nation, it was incorporated by Black citizens themselves, and it has remained incorporated and self-governing ever since, which is the basis of its standing description as the oldest incorporated African American municipality in America (Town of Eatonville; Association to Preserve the Eatonville Community; see conflict 1).</p><div class="recall"><strong>Quick recall.</strong> Before you move on, say it back without scrolling up: which people, places, or decisions from this chapter matter most, and why? Then glance back and check yourself.</div><div class="chap-nav"><a href="#intro">&larr; Introduction</a><a href="#full">Next: Inside the full dossier &rarr;</a></div></section>
+<section class="chapter" id="full" data-label="Inside the full dossier"><h2>Inside the full dossier</h2><ul><li>2. Building the Town</li><li>3. Peak Years</li><li>4. The Turning Point</li><li>5. Survival, Decline, or Destruction</li><li>6. The Town Today</li><li>7. The Song</li><li>8. Primary Sources</li><li>9. Sources and Bibliography</li></ul><p>The complete dossier, with the full timeline, the turning point, the town today, the song's lyrics annotated line by line, and primary sources, is part of the All Black Towns Pilot Collection. Membership opens soon - <a href="../education.html#newsletter">join the list</a> to hear about it first.</p><div class="chap-nav"><a href="#ch1">&larr; 1. Founding</a><span></span></div></section></div></div>
+
 </div></section>
 <footer><div class="wrap">
 <a class="brand" href="../index.html"><img class="brand-logo" src="../logo-nav.jpg" alt="All Black Towns logo">All <span>Black</span> Towns</a>
 <p style="margin-top:12px">A creative universe built on the true history of America's Black towns -<br>one town, one song, one story at a time.</p>
 <p style="margin-top:14px; opacity:.6">&copy; 2026 All Black Towns. All rights reserved.</p>
 </div></footer>
+
+<script>
+(function(){
+  var KEY = 'abt-v2-eatonville';
+  var state = {done: []};
+  try { state = JSON.parse(localStorage.getItem(KEY)) || state; } catch(e) {}
+  var chapters = Array.prototype.slice.call(document.querySelectorAll('.chapter'));
+  var railLinks = {};
+  document.querySelectorAll('.rail a[data-ch]').forEach(function(a){ railLinks[a.getAttribute('data-ch')] = a; });
+  function save(){ try { localStorage.setItem(KEY, JSON.stringify(state)); } catch(e) {} }
+  function paintTicks(){
+    chapters.forEach(function(ch){
+      var a = railLinks[ch.id];
+      if (a) { var t = a.querySelector('.tick'); if (t) t.textContent = state.done.indexOf(ch.id) >= 0 ? '\u2713' : ''; }
+    });
+  }
+  var chip = document.getElementById('resume-chip');
+  if (chip && state.done.length) {
+    var next = chapters.filter(function(c){ return state.done.indexOf(c.id) < 0; })[0];
+    if (next) {
+      var label = next.getAttribute('data-label');
+      chip.style.display = 'block';
+      chip.innerHTML = 'Welcome back. You left off at <strong>' + label + '</strong>. <a href="#' + next.id + '">Continue there \u2192</a>';
+    }
+  }
+  paintTicks();
+  var bar = document.getElementById('progress-bar');
+  var active = null;
+  var spy = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){
+      if (en.isIntersecting) {
+        if (active && railLinks[active]) railLinks[active].classList.remove('active');
+        active = en.target.id;
+        if (railLinks[active]) railLinks[active].classList.add('active');
+        var sheetLabel = document.getElementById('chapter-bar-label');
+        if (sheetLabel) sheetLabel.textContent = en.target.getAttribute('data-label');
+      }
+      var rect = en.target.getBoundingClientRect();
+      if (rect.bottom < window.innerHeight * 0.55 && state.done.indexOf(en.target.id) < 0) {
+        state.done.push(en.target.id); save(); paintTicks();
+      }
+    });
+  }, {rootMargin: '-30% 0px -55% 0px'});
+  chapters.forEach(function(ch){ spy.observe(ch); });
+  window.addEventListener('scroll', function(){
+    var h = document.documentElement;
+    var max = h.scrollHeight - h.clientHeight;
+    if (bar && max > 0) bar.style.width = (h.scrollTop / max * 100) + '%';
+  }, {passive: true});
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){
+    a.addEventListener('click', function(){
+      var t = document.querySelector(a.getAttribute('href'));
+      if (t && t.tagName === 'DETAILS') t.open = true;
+      var sheet = document.getElementById('chapter-sheet');
+      if (sheet) sheet.classList.remove('open');
+    });
+  });
+  var tp = document.getElementById('teacher-panel');
+  var tbtn = document.getElementById('teach-btn');
+  if (tbtn && tp) tbtn.addEventListener('click', function(){ tp.style.display = tp.style.display === 'block' ? 'none' : 'block'; if (tp.style.display === 'block') tp.scrollIntoView({behavior:'smooth', block:'start'}); });
+  var ex = document.getElementById('expand-all');
+  if (ex) ex.addEventListener('click', function(){
+    var dets = document.querySelectorAll('details');
+    var anyClosed = Array.prototype.some.call(dets, function(d){ return !d.open; });
+    dets.forEach(function(d){ d.open = anyClosed; });
+    ex.textContent = anyClosed ? 'Collapse all sections' : 'Expand all sections';
+  });
+  var sheetBtn = document.getElementById('chapter-sheet-btn');
+  var sheet = document.getElementById('chapter-sheet');
+  if (sheetBtn && sheet) sheetBtn.addEventListener('click', function(){ sheet.classList.toggle('open'); });
+  window.addEventListener('beforeprint', function(){ document.querySelectorAll('details').forEach(function(d){ d.open = true; }); });
+})();
+</script>
 </body></html>

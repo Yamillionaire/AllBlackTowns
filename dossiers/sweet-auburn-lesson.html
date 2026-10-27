@@ -20,6 +20,56 @@
 .beta-banner{background:#1a1712;border:1px solid rgba(201,162,39,.22);border-radius:8px;padding:16px 20px;margin:0 0 26px;line-height:1.55;color:#f5efe0}
 .doss-end{background:#1a1712;border:1px solid rgba(201,162,39,.22);border-radius:8px;padding:20px 24px 8px;margin:34px 0 10px;color:#f5efe0}
 .backlink{display:inline-block;margin:0 0 18px;font-weight:600}
+#progress-bar{position:fixed;top:0;left:0;height:3px;background:#c9a227;width:0;z-index:999}
+.orient{background:#1a1712;border:1px solid #c9a227;color:#f5efe0;border-radius:10px;padding:24px 26px;margin:0 0 22px}
+.orient .meta{font-size:.92rem;letter-spacing:.04em;text-transform:uppercase;color:#e3c76a;margin-bottom:10px}
+.orient .eq{font-family:'Playfair Display',serif;font-size:1.3rem;line-height:1.45;margin:0 0 10px}
+.orient p{line-height:1.6;margin:0 0 14px}
+.orient .fork{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
+.orient .fork a,.orient .fork button{background:#c9a227;color:#0e0c09;border:0;border-radius:6px;padding:10px 16px;font-weight:700;cursor:pointer;text-decoration:none;font-size:.95rem}
+.orient .fork button.ghost{background:transparent;color:#f5efe0;border:1px solid #c9a227}
+#resume-chip{display:none;background:rgba(201,162,39,.14);border:1px solid rgba(201,162,39,.22);color:#f5efe0;border-radius:6px;padding:10px 14px;margin-top:14px;font-size:.95rem}
+#teacher-panel{display:none;background:#1a1712;border:1px solid rgba(201,162,39,.22);border-left:5px solid #c9a227;border-radius:8px;padding:18px 22px 6px;margin:0 0 22px;line-height:1.6;color:#f5efe0}
+.layout{display:grid;grid-template-columns:230px 1fr;gap:34px;align-items:start}
+.rail{position:sticky;top:88px;font-size:.93rem}
+.rail h4{font-size:.78rem;letter-spacing:.09em;text-transform:uppercase;color:#c9a227;margin:0 0 10px}
+.rail a{display:block;padding:7px 10px 7px 12px;color:#d8cdb4;text-decoration:none;border-left:3px solid rgba(201,162,39,.22);line-height:1.35}
+.rail a.active{border-left-color:#c9a227;background:rgba(201,162,39,.12);color:#f5efe0;font-weight:700}
+.rail a .tick{display:inline-block;width:1.1em;color:#c9a227;font-weight:700}
+.rail .rail-tools{margin-top:14px}
+.rail .rail-tools button{background:none;border:1px solid #c9a227;color:#e3c76a;border-radius:6px;padding:6px 10px;cursor:pointer;font-size:.85rem}
+#chapter-bar{display:none}
+.chapter{scroll-margin-top:92px}
+details.deep{scroll-margin-top:92px}
+.chapter > h2{border-bottom:2px solid rgba(201,162,39,.22);padding-bottom:8px}
+.recall{background:rgba(201,162,39,.10);border:1px solid rgba(201,162,39,.22);border-radius:8px;padding:14px 18px;margin:20px 0 6px;line-height:1.55;font-size:.97rem;color:#f5efe0}
+.recall strong{color:#e3c76a}
+.chap-nav{display:flex;justify-content:space-between;gap:12px;margin:22px 0 4px;font-weight:600}
+.chap-nav a{color:#e3c76a}
+details.deep{border:1px solid rgba(201,162,39,.22);border-radius:8px;background:#1a1712;margin:26px 0 10px}
+details.deep > summary{font-family:'Playfair Display',serif;font-size:1.3rem;color:#f5efe0;cursor:pointer;padding:16px 20px;list-style:none}
+details.deep > summary::-webkit-details-marker{display:none}
+details.deep > summary::after{content:"+";float:right;color:#c9a227;font-weight:700}
+details.deep[open] > summary::after{content:"\2212"}
+details.deep .deep-body{padding:0 20px 8px}
+details.inline{margin:14px 0}
+details.inline > summary{cursor:pointer;font-weight:700;color:#e3c76a;list-style:none}
+details.inline > summary::-webkit-details-marker{display:none}
+details.inline > summary::after{content:" +";color:#c9a227}
+details.inline[open] > summary::after{content:" \2212"}
+@media (max-width:900px){
+  .layout{grid-template-columns:1fr}
+  .rail{display:none}
+  #chapter-bar{display:flex;position:sticky;top:0;z-index:60;background:#1a1712;border:1px solid rgba(201,162,39,.22);color:#f5efe0;padding:10px 14px;border-radius:6px;justify-content:space-between;align-items:center;margin-bottom:16px}
+  #chapter-bar button{background:#c9a227;color:#0e0c09;border:0;border-radius:5px;padding:6px 12px;font-weight:700;cursor:pointer}
+  #chapter-sheet{display:none;background:#1a1712;border:1px solid rgba(201,162,39,.22);border-radius:8px;padding:10px 16px;margin:-8px 0 16px}
+  #chapter-sheet.open{display:block}
+  #chapter-sheet a{display:block;padding:8px 4px;color:#d8cdb4;text-decoration:none;border-bottom:1px solid rgba(201,162,39,.22)}
+}
+@media print{
+  #progress-bar,.rail,#chapter-bar,#chapter-sheet,.orient .fork,.recall,.chap-nav,.backlink,nav,footer{display:none !important}
+  .layout{grid-template-columns:1fr}
+}
 </style>
 </head>
 <body>
@@ -38,9 +88,12 @@
 <section class="block"><div class="wrap">
 <a class="backlink" href="../education.html">&larr; Back to Education</a>
 <div class="rule"></div>
+<div id="progress-bar"></div>
 <h2 class="section-title">Lesson Plan (Pilot): The Richest Street in the World</h2>
 <div class="beta-banner"><strong>Free beta sample.</strong> The pilot lesson plan for the All Black Towns curriculum, built on the <a href="sweet-auburn.html"><strong>Sweet Auburn dossier</strong></a>. It opens with the song, moves into the documents, and closes with discussion and a hands-on task.</div>
-<div class="dossier"><h2>Header</h2>
+<div class="orient"><div class="meta">Pilot lesson plan &middot; Grades 9-12 &middot; Two 50-minute periods &middot; Free beta sample</div><p class="eq">How did one Atlanta street become "the richest Negro street in the world," and why did the forces that concentrated its wealth later scatter it?</p><p>Built entirely from the Sweet Auburn dossier. Every part of the plan is a chapter below: the background brief, vocabulary, the song opening, the primary source activity, lyric analysis, discussion, the performance task, and assessment, with standards alignment and adaptation notes at the end.</p><div class="fork"><a href="#background-brief">Start the plan</a><a href="sweet-auburn.html">Open the dossier</a><button type="button" class="ghost" onclick="window.print()">Print / save PDF</button></div><div id="resume-chip"></div></div>
+<div id="chapter-bar"><span id="chapter-bar-label">Introduction</span><button type="button" id="chapter-sheet-btn">Contents</button></div><div id="chapter-sheet"><a href="#intro">Introduction</a><a href="#background-brief">Background Brief</a><a href="#vocabulary">Vocabulary</a><a href="#opening-the-song">Opening: The Song</a><a href="#primary-source-activity">Primary Source Activity</a><a href="#lyric-analysis">Lyric Analysis</a><a href="#discussion">Discussion</a><a href="#performance-task">Performance Task</a><a href="#assessment">Assessment</a><a href="#standards-alignment">Standards Alignment</a><a href="#trauma-informed-teaching-note">Trauma-Informed Teaching Note</a><a href="#teacher-assets">Teacher Assets</a><a href="#grade-band-adaptation-notes">Grade-Band Adaptation Notes</a></div>
+<div class="layout"><aside class="rail"><h4>Chapters</h4><a href="#intro" data-ch="intro"><span class="tick"></span>Introduction</a><a href="#background-brief" data-ch="background-brief"><span class="tick"></span>Background Brief</a><a href="#vocabulary" data-ch="vocabulary"><span class="tick"></span>Vocabulary</a><a href="#opening-the-song" data-ch="opening-the-song"><span class="tick"></span>Opening: The Song</a><a href="#primary-source-activity" data-ch="primary-source-activity"><span class="tick"></span>Primary Source Activity</a><a href="#lyric-analysis" data-ch="lyric-analysis"><span class="tick"></span>Lyric Analysis</a><a href="#discussion" data-ch="discussion"><span class="tick"></span>Discussion</a><a href="#performance-task" data-ch="performance-task"><span class="tick"></span>Performance Task</a><a href="#assessment" data-ch="assessment"><span class="tick"></span>Assessment</a><a href="#standards-alignment" data-ch="standards-alignment"><span class="tick"></span>Standards Alignment</a><a href="#trauma-informed-teaching-note" data-ch="trauma-informed-teaching-note"><span class="tick"></span>Trauma-Informed Teaching Note</a><a href="#teacher-assets" data-ch="teacher-assets"><span class="tick"></span>Teacher Assets</a><a href="#grade-band-adaptation-notes" data-ch="grade-band-adaptation-notes"><span class="tick"></span>Grade-Band Adaptation Notes</a></aside><div class="dossier"><section class="chapter" id="intro" data-label="Introduction"><h2>Introduction</h2>
 <ul>
 <li>Lesson title: The Richest Street in the World: How Sweet Auburn Built a Black Economic Capital, and What Threatened It</li>
 <li>Town(s) covered, State(s): Sweet Auburn historic district, centered on Auburn Avenue, Atlanta, Fulton County, Georgia. Honest fit note, carried from the dossier: Sweet Auburn is a street and district inside Atlanta's Old Fourth Ward, never an incorporated town. This lesson teaches it as what it is, a district that functioned as a civic and economic capital, and that distinction is itself part of the lesson.</li>
@@ -48,16 +101,14 @@
 <li>Grade band: 9-12 (flagship band). Adaptation notes for 6-8 and for adult self-guided learners appear at the end of this plan.</li>
 <li>Estimated time: two class periods of about 50 minutes, plus performance task completion time. Self-paced equivalent: about two hours.</li>
 <li>Materials needed: the Sweet Auburn song (audio, 3:11, from the All Black Towns site or teacher-provided file); printed annotated lyric sheet; printed primary source handout (nomination form excerpts, see Primary Source Activity); claim-checker graphic organizer; timeline event cards (see Performance Task); access to the Sweet Auburn Town Dossier for members who want the full record.</li>
-</ul>
-<h2>Essential Question</h2>
-<p>How did one Atlanta street become "the richest Negro street in the world," and why did the forces that concentrated its wealth later scatter it?</p>
-<h2>Background Brief</h2>
+</ul><div class="chap-nav"><span></span><a href="#background-brief">Next: Background Brief &rarr;</a></div></section>
+<section class="chapter" id="background-brief" data-label="Background Brief"><h2>Background Brief</h2>
 <p>Sweet Auburn is the historic Black commercial and cultural district centered on Auburn Avenue, just east of downtown Atlanta, Georgia. It was never an incorporated town. It is a street that became a world.</p>
 <p>The avenue began as Wheat Street. In 1893 it was renamed Auburn Avenue, at the request of white petitioners who thought the new name sounded more cosmopolitan. The district's roots are older than the name. Big Bethel AME Church traces its congregation to 1847, organized by enslaved members of a white church, and it is carried in the record as the oldest African American congregation in Atlanta. As Jim Crow law hardened in the 1890s and 1900s, Black Atlantans and their businesses were pushed into the corridor east of downtown, and Auburn Avenue became its anchor. By 1900, ten Black businesses and two Black physicians operated on the street.</p>
 <p>Builders followed. In 1904, Henry A. Rucker built the Rucker Building, Atlanta's first Black-owned office building. In 1905, Alonzo Herndon, born enslaved in Walton County, by then the owner of a successful barbershop business, founded an insurance company, the seed of Atlanta Life. In September 1906, white mobs inflamed by inflammatory, unverified newspaper reports attacked Black residents and businesses across Atlanta. At least 25 Black Atlantans were killed and more than 70 people injured. Casualty counts vary by source. Black businesses that had operated in a substantially integrated downtown relocated to Auburn Avenue for safety. Segregation then concentrated a captive Black market on the avenue for half a century.</p>
 <p>What rose there was a complete civic and economic capital. Citizens Trust Bank opened on August 16, 1921, founded by five men remembered as the Fervent Five. The Atlanta Daily World, founded on August 5, 1928, became the first successful Black daily newspaper in the United States by 1932. Civic leader John Wesley Dobbs coined the name "Sweet Auburn" and served as the avenue's unofficial "Mayor," organizing voter registration. The Reverend A. D. Williams bought the house at 501 Auburn Avenue in 1909; his grandson, Martin Luther King, Jr., was born there on January 15, 1929. In the peak decades, the avenue's finance rested on what historian Gary Pomerantz calls the "three-legged stool of Black finance": Atlanta Life Insurance, Standard Life Insurance, and Citizens Trust Bank. In 1956, Fortune magazine called Auburn Avenue "the richest Negro street in the world."</p>
-<p>The turning came from two directions. The Downtown Connector highway, built through Atlanta's core in the 1950s and early 1960s, divided the district and took its western blocks. Then, from the mid-1960s, as legal segregation fell, shopkeepers and residents dispersed to other parts of the city, and disinvestment followed. The district was designated a National Historic Landmark in 1976, but a 2021 National Park Service assessment found that 47 percent of its historic buildings had been lost since that designation. The churches still worship, the Curb Market still trades, and preservation organizations still work the avenue.</p>
-<h2>Vocabulary</h2>
+<p>The turning came from two directions. The Downtown Connector highway, built through Atlanta's core in the 1950s and early 1960s, divided the district and took its western blocks. Then, from the mid-1960s, as legal segregation fell, shopkeepers and residents dispersed to other parts of the city, and disinvestment followed. The district was designated a National Historic Landmark in 1976, but a 2021 National Park Service assessment found that 47 percent of its historic buildings had been lost since that designation. The churches still worship, the Curb Market still trades, and preservation organizations still work the avenue.</p><div class="chap-nav"><a href="#intro">&larr; Introduction</a><a href="#vocabulary">Next: Vocabulary &rarr;</a></div></section>
+<section class="chapter" id="vocabulary" data-label="Vocabulary"><h2>Vocabulary</h2>
 <ol>
 <li>Jim Crow: the system of laws and customs that enforced racial segregation in the American South. In this lesson, the force that pushed Black businesses and institutions into the Auburn Avenue corridor.</li>
 <li>Segregation: the enforced separation of people by race in business, housing, schooling, and public life.</li>
@@ -66,16 +117,16 @@
 <li>National Historic Landmark: a place designated by the Secretary of the Interior for exceptional significance in the nation's history. Sweet Auburn received the designation in 1976.</li>
 <li>Primary source: a record created at the time, by people who were there, or an official record of the thing itself. The 1976 landmark nomination form used in this lesson is a primary source for the case its writers made.</li>
 <li>Compression: in a song or a story, the folding together of events, or the tightening of a sequence, so the telling fits the form. Compression is honest when it is flagged; it misleads when it silently changes the chronology.</li>
-</ol>
-<h2>Opening: The Song</h2>
+</ol><div class="chap-nav"><a href="#background-brief">&larr; Background Brief</a><a href="#opening-the-song">Next: Opening: The Song &rarr;</a></div></section>
+<section class="chapter" id="opening-the-song" data-label="Opening: The Song"><h2>Opening: The Song</h2>
 <p>Play "Sweet Auburn, Atlanta, Georgia" (3:11) in full, once, with no introduction beyond its title. About the song, stated plainly for students: it is the All Black Towns project's own work. The lyrics were written by Yamil Little; the music and arrangement were generated with the Suno tool. Three recorded versions exist (a studio original and two later remasters) with identical lyrics; this lesson uses the lyrics, which do not change between versions. Like any source, the song gets both respect and checking.</p>
 <p>Two guided prompts, on the claim-checker organizer:</p>
 <ol>
 <li>What did you hear? List every checkable claim the song makes: every name, date, building, business, and "first" you can catch. Do not worry about order; get them down.</li>
 <li>What do you want to check? Star the claims that sound too neat, too big, or out of order. Those stars are the lesson's agenda.</li>
 </ol>
-<p>Expected catch list (teacher reference): Dobbs and the "richest" line; 1906 and the Wheat Street renaming in the same breath; Herndon "from slavery" to Atlanta Life; the Rucker Building, 1904; Standard Life; Citizens Trust Bank; the Daily World as "first daily"; Big Bethel, 1847; Dobbs as "mayor"; the King house; the Royal Peacock; decline and vacancies; the national landmark.</p>
-<h2>Primary Source Activity</h2>
+<p>Expected catch list (teacher reference): Dobbs and the "richest" line; 1906 and the Wheat Street renaming in the same breath; Herndon "from slavery" to Atlanta Life; the Rucker Building, 1904; Standard Life; Citizens Trust Bank; the Daily World as "first daily"; Big Bethel, 1847; Dobbs as "mayor"; the King house; the Royal Peacock; decline and vacancies; the national landmark.</p><div class="chap-nav"><a href="#vocabulary">&larr; Vocabulary</a><a href="#primary-source-activity">Next: Primary Source Activity &rarr;</a></div></section>
+<section class="chapter" id="primary-source-activity" data-label="Primary Source Activity"><h2>Primary Source Activity</h2>
 <p>The document: National Register of Historic Places Inventory, Nomination Form: Sweet Auburn Historic District (1976). National Archives Catalog, Record Group 079, National Register number 76000631. The dossier's conflict log dates the nomination file to December 8, 1976. Rights: a federal document, public domain, free to print and hand out. Full text: https://catalog.archives.gov/medialz/electronic-records/rg-079/NPS_GA/76000631_NHL.pdf</p>
 <p>Handout: the form's description and significance excerpts (teacher selects two to three pages), with the dossier's one-line sourcing note printed on the sheet: what the document is, who produced it, when, and its rights status.</p>
 <p>Structured analysis (observe, question, connect):</p>
@@ -83,8 +134,8 @@
 <li>Observe. What kind of document is this, who wrote it, and for what purpose? List three buildings, businesses, or facts the form names. What year is the form itself arguing from, and what is it asking the federal government to do?</li>
 <li>Question. The form was written to make a case. What does it emphasize, and what does it leave out? Does it discuss the 1906 massacre? The highway that had already cut the district? The decline already underway? What can a document written in 1976 not yet know?</li>
 <li>Connect. Take one claim from the form and check it against the dossier timeline and against the song. Then read the update the form's writers could not have imagined: a 2021 National Park Service assessment found the district had lost 47 percent of its historic buildings since the 1976 designation, with the Atlanta Life Insurance Company building, the Butler Street YMCA, and the Walden Building standing vacant and at risk. What changed between the form's Auburn Avenue and today's, and what did the designation protect, and fail to protect?</li>
-</ul>
-<h2>Lyric Analysis</h2>
+</ul><div class="chap-nav"><a href="#opening-the-song">&larr; Opening: The Song</a><a href="#lyric-analysis">Next: Lyric Analysis &rarr;</a></div></section>
+<section class="chapter" id="lyric-analysis" data-label="Lyric Analysis"><h2>Lyric Analysis</h2>
 <p>Return to the song with the dossier in hand. Students work down the annotated lyric sheet and mark each line: Verified, Verified with a nuance, Compression, Attribution shifted, or Not yet verified. The verdicts below are the answer guidance; every one of them comes from the dossier's lyric annotation (Dossier Section 7) and conflict log (Dossier Section 9).</p>
 <ol>
 <li>Intro: "Dobbs called it honey, richest Black vein in the South." Attribution shifted, and the song corrects itself. Dobbs coined the name "Sweet Auburn." The "richest" wording belongs to Fortune magazine, 1956, as Verse 2 itself says ("Fortune call it the richest strip"). One secondary source (a photo caption) reverses the attribution, and one encyclopedia summary muddles it; the dossier follows the New Georgia Encyclopedia: Dobbs coined the name, Fortune printed "richest." Teaching point: even a songwriter compressing for rhyme leaves the correction in the record, if you read the whole song against the documents.</li>
@@ -99,21 +150,21 @@
 <li>Verse 2: "SCLC plan marches right off Auburn stone." Verified anchor. The Prince Hall Masonic Temple on Auburn Avenue later housed the Southern Christian Leadership Conference (National Park Service, per the dossier).</li>
 <li>Verse 2, the decline passage: "progress pull people, suburbs call 'em away, vacants creep in," and "National landmark stand." Verified arc. From the mid-1960s, as legal barriers fell, avenue shopkeepers moved their businesses elsewhere in the city and residents migrated to Atlanta's west side; the Downtown Connector had already divided the district; disinvestment followed. The National Historic Landmark designation came in 1976, and the 2021 assessment's 47 percent loss figure closes the arc the verse sketches.</li>
 <li>Flagged lines, named honestly. "Perry drop Standard Life": Standard Life Insurance belongs to the avenue's documented insurance cluster, one leg of the three-legged stool, but the dossier's annotation flags this line as not separately source-checked in the dossier pass, and students should leave its founding details marked pending. The same annotation flag covers the "Morris Brown College birth," "WERD radio wave," and "Tiger Flowers" lines: all consistent with the district's standard record, not separately verified in the dossier pass. (The dossier's timeline does separately record Morris Brown College's first classes, held at Big Bethel in 1881, which is the documented anchor nearest the song's "birth" line.) A curriculum that teaches sourcing has to show its own seams; these lines are where this one shows them.</li>
-</ol>
-<h2>Discussion</h2>
+</ol><div class="chap-nav"><a href="#primary-source-activity">&larr; Primary Source Activity</a><a href="#discussion">Next: Discussion &rarr;</a></div></section>
+<section class="chapter" id="discussion" data-label="Discussion"><h2>Discussion</h2>
 <ol>
 <li>The record says the 1906 massacre terrorized Black Atlanta and, at the same time, concentrated the district that became Sweet Auburn. How can both be true? What role did the captive market play, and what does that teach about how segregation shaped Black economic life?</li>
 <li>John Wesley Dobbs held no office, yet the avenue called him its mayor, and the record credits his registration work with real political weight. Where did his authority come from, and what work did it do that an office could not?</li>
 <li>Fortune's praise came in 1956. Within a generation, the avenue was thinning. The dossier gives two causes: a highway built through the district, and dispersal after legal segregation fell. Why would winning the end of segregation weaken the street segregation built? Keep the two causes separate in your answer; which one was a policy choice made about the district, and which was a consequence of freedom of movement?</li>
 <li>The landmark designation came in 1976. By 2021, 47 percent of the historic buildings were gone. What does a designation actually protect, and what does it leave unprotected? Who has done the protecting that got done (the dossier names the National Park Service, HDDC, Sweet Auburn Works, the Atlanta Preservation Center, the APEX Museum, and the Auburn Avenue Research Library)?</li>
 <li>The song compresses thirteen years into two lines and merges two attributions into one, then corrects one of them three verses later. When is compression honest storytelling, and when does it become misinformation? Who should get to decide, the songwriter, the historian, or the listener with the documents in hand?</li>
-</ol>
-<h2>Performance Task</h2>
+</ol><div class="chap-nav"><a href="#lyric-analysis">&larr; Lyric Analysis</a><a href="#performance-task">Next: Performance Task &rarr;</a></div></section>
+<section class="chapter" id="performance-task" data-label="Performance Task"><h2>Performance Task</h2>
 <p>The 1976 Brief, with a 2026 Addendum. Three parts, all evidence drawn from the dossier and the lesson's primary source.</p>
 <p>Part 1, Timeline rebuild. In teams, students receive a shuffled set of event cards and must order them and caption each with its source type (marker, encyclopedia, federal form, assessment, newspaper history). The card set: 1847, Big Bethel congregation organized; 1893, Wheat Street renamed Auburn Avenue; 1900, ten Black businesses and two Black physicians on the street; 1904, Rucker Building; 1905, Herndon founds his insurance company; 1906, the Atlanta Race Massacre (September); 1921, Citizens Trust Bank opens (August 16); 1928, the Atlanta World founded (August 5); 1929, Martin Luther King, Jr. born at 501 Auburn Avenue (January 15); 1932, the Daily World becomes the first successful Black daily in the United States; 1956, Fortune's "richest Negro street in the world"; 1950s to early 1960s, the Downtown Connector divides the district; mid-1960s onward, dispersal and disinvestment; 1976, National Historic Landmark designation; 2021, the NPS assessment finds 47 percent of historic buildings lost since 1976.</p>
 <p>Part 2, The brief. Each student (or team) writes a one-page landmark brief in the dossier's own format: a key facts box (district, county, status, known for), a significance argument built on at least three dated pieces of evidence from the timeline, and one line labeled "Not established in the record," naming something the dossier could not verify (examples: a district-level population figure, peak or today, which the dossier marks NOT ESTABLISHED; the original corporate name of Herndon's 1905 company). The brief may argue for the whole district or for a single institution on the avenue (a church, the bank, the newspaper, the Rucker Building).</p>
-<p>Part 3, The addendum. One paragraph, dated today: given the 47 percent loss figure, what should preservation do next on Auburn Avenue, and which of the keeping organizations named in the dossier is best placed to do it? Argue from the record, not from sentiment.</p>
-<h2>Assessment</h2>
+<p>Part 3, The addendum. One paragraph, dated today: given the 47 percent loss figure, what should preservation do next on Auburn Avenue, and which of the keeping organizations named in the dossier is best placed to do it? Argue from the record, not from sentiment.</p><div class="chap-nav"><a href="#discussion">&larr; Discussion</a><a href="#assessment">Next: Assessment &rarr;</a></div></section>
+<section class="chapter" id="assessment" data-label="Assessment"><h2>Assessment</h2>
 <p>Rubric notes for the teacher, four criteria:</p>
 <ul>
 <li>Evidence use. Claims are tied to dated items from the dossier or the nomination form. The strongest work quotes the record's own qualifiers ("first successful," "at least 25") instead of upgrading them.</li>
@@ -129,8 +180,8 @@
 <li>I can say what the word "successful" is doing in "first successful Black daily."</li>
 <li>I can name one thing the record has not established about Sweet Auburn, and say why the dossier refuses to guess at it.</li>
 <li>I can say what the 1976 designation protected and what it did not.</li>
-</ul>
-<h2>Standards Alignment</h2>
+</ul><div class="chap-nav"><a href="#performance-task">&larr; Performance Task</a><a href="#standards-alignment">Next: Standards Alignment &rarr;</a></div></section>
+<section class="chapter" id="standards-alignment" data-label="Standards Alignment"><h2>Standards Alignment</h2>
 <p>C3 Framework (College, Career, and Civic Life), Dimension 2, History, and Dimensions 3 and 4, grades 9-12. Indicator summaries below are paraphrased; verify exact codes and wording against the C3 Framework document at adoption, and claim in print only what the adopted version supports.</p>
 <ul>
 <li>D2.His.2.9-12, change and continuity over time: the district's formation, peak, dispersal, and preservation across 1847 to today.</li>
@@ -140,8 +191,8 @@
 <li>D2.His.16.9-12, integrating evidence from multiple sources into a reasoned argument: the Part 2 landmark brief.</li>
 <li>D4.2.9-12, constructing explanations with correct sequence and evidence while acknowledging strengths and weaknesses: the timeline rebuild plus the brief's "not established" line.</li>
 </ul>
-<p>State standards: not mapped in this pilot and not claimed. Georgia is the natural first state mapping for a Georgia district; the curriculum concept's Oklahoma-first note reflects the national town density, not this lesson. Map at adoption, per district requirements.</p>
-<h2>Trauma-Informed Teaching Note</h2>
+<p>State standards: not mapped in this pilot and not claimed. Georgia is the natural first state mapping for a Georgia district; the curriculum concept's Oklahoma-first note reflects the national town density, not this lesson. Map at adoption, per district requirements.</p><div class="chap-nav"><a href="#assessment">&larr; Assessment</a><a href="#trauma-informed-teaching-note">Next: Trauma-Informed Teaching Note &rarr;</a></div></section>
+<section class="chapter" id="trauma-informed-teaching-note" data-label="Trauma-Informed Teaching Note"><h2>Trauma-Informed Teaching Note</h2>
 <p>Required for this lesson: it contains the September 1906 Atlanta Race Massacre, in which white mobs killed at least 25 Black Atlantans and injured more than 70 people, on the dossier's conservative sourced figures.</p>
 <ul>
 <li>Preview, do not surprise. Tell students before the song and the brief that the lesson includes a massacre, what it was, and the figures the lesson will use. The same preview heads the self-guided version, in print, before the Background Brief.</li>
@@ -150,8 +201,8 @@
 <li>No reenactment, no role-play of the violence, no debate format on whether it happened or what it meant. Discussion stays analytical, and Question 1 routes the emotion where it belongs: into what the community built in answer.</li>
 <li>Opt-out with dignity. A student who needs to step back from the massacre segment can work the finance-and-institutions track instead (the three-legged stool and the timeline cards) and rejoin for the landmark and preservation segments. Same performance task, no public explanation required.</li>
 <li>End on the keeping, not the killing. Close with the district today, from the dossier: the churches still worship, the Curb Market still trades, the King birth home and Ebenezer stand inside a National Historical Park, the Sweet Auburn Festival runs each year, and named organizations are doing named preservation work. The last word of the lesson is survival with an address.</li>
-</ul>
-<h2>Teacher Assets</h2>
+</ul><div class="chap-nav"><a href="#standards-alignment">&larr; Standards Alignment</a><a href="#teacher-assets">Next: Teacher Assets &rarr;</a></div></section>
+<section class="chapter" id="teacher-assets" data-label="Teacher Assets"><h2>Teacher Assets</h2>
 <ul>
 <li>Source sheet (printable): the nomination form excerpts with the sourcing and rights note, from the Dossier Section 8 source pack. Public domain; safe to copy.</li>
 <li>Lyric sheet (printable): the full lyrics as archived in suno-lyrics-sweet-auburn-2026-10-25.md, with the dossier's annotations condensed into margin verdicts. The song is the project's own work (lyrics by Yamil Little; music and arrangement generated with Suno), so the curriculum holds the rights it needs.</li>
@@ -159,8 +210,8 @@
 <li>Timeline card set (printable): the fifteen Part 1 events, one card each, date side and caption side separated for the rebuild.</li>
 <li>Slide deck: a deck is a production asset and is specified here as an outline only, not built in this draft. Outline: title and essential question; the avenue today (one linked image, rights noted); the timeline spine; the three-legged stool; the song's claim list; the nomination form; the 47 percent update; the keeping organizations; the performance task.</li>
 <li>Answer guidance: the Lyric Analysis verdicts are the answer key. Two cautions for grading: accept the 10,000-voter figure only with its "reported, not primary-verified" flag attached, and treat any population figure for the district as an error, because the dossier marks district population NOT ESTABLISHED at peak and today.</li>
-</ul>
-<h2>Grade-Band Adaptation Notes</h2>
+</ul><div class="chap-nav"><a href="#trauma-informed-teaching-note">&larr; Trauma-Informed Teaching Note</a><a href="#grade-band-adaptation-notes">Next: Grade-Band Adaptation Notes &rarr;</a></div></section>
+<section class="chapter" id="grade-band-adaptation-notes" data-label="Grade-Band Adaptation Notes"><h2>Grade-Band Adaptation Notes</h2>
 <h3>Grades 6-8</h3>
 <ul>
 <li>Background Brief: read aloud in three chunks (the street forms; the builders; the turning), pausing on the timeline strip. Keep the same facts; shorten by dropping the Fervent Five roster and the Daily World's growth steps, not by simplifying the causation.</li>
@@ -177,7 +228,7 @@
 <li>Replace Discussion with written responses to the same five questions; the Self-Check List in Assessment is your assessment.</li>
 <li>Performance Task: do all three parts in writing; the brief format is the dossier's, so a strong brief doubles as a model of the membership's core product.</li>
 <li>Extensions, all from the dossier's own source pack: read the National Park Service's "The Sweet Auburn Community" page (public domain text; its images are licensed, link only); compare the short Sweet Auburn blurb on the All Black Towns site against the dossier and find the compression the dossier's conflict log flags (the blurb's "rose after the 1906 Atlanta Race Massacre" against businesses on the street by 1900); and note the dossier's open questions (district population not established; Herndon Building construction year not verified; the original name of Herndon's company) as the project's honesty standard in action.</li>
-</ul></div>
+</ul><div class="chap-nav"><a href="#teacher-assets">&larr; Teacher Assets</a><span></span></div></section></div></div>
 
 </div></section>
 <footer><div class="wrap">
@@ -185,4 +236,77 @@
 <p style="margin-top:12px">A creative universe built on the true history of America's Black towns -<br>one town, one song, one story at a time.</p>
 <p style="margin-top:14px; opacity:.6">&copy; 2026 All Black Towns. All rights reserved.</p>
 </div></footer>
+
+<script>
+(function(){
+  var KEY = 'abt-v2-sweet-auburn-lesson';
+  var state = {done: []};
+  try { state = JSON.parse(localStorage.getItem(KEY)) || state; } catch(e) {}
+  var chapters = Array.prototype.slice.call(document.querySelectorAll('.chapter'));
+  var railLinks = {};
+  document.querySelectorAll('.rail a[data-ch]').forEach(function(a){ railLinks[a.getAttribute('data-ch')] = a; });
+  function save(){ try { localStorage.setItem(KEY, JSON.stringify(state)); } catch(e) {} }
+  function paintTicks(){
+    chapters.forEach(function(ch){
+      var a = railLinks[ch.id];
+      if (a) { var t = a.querySelector('.tick'); if (t) t.textContent = state.done.indexOf(ch.id) >= 0 ? '\u2713' : ''; }
+    });
+  }
+  var chip = document.getElementById('resume-chip');
+  if (chip && state.done.length) {
+    var next = chapters.filter(function(c){ return state.done.indexOf(c.id) < 0; })[0];
+    if (next) {
+      var label = next.getAttribute('data-label');
+      chip.style.display = 'block';
+      chip.innerHTML = 'Welcome back. You left off at <strong>' + label + '</strong>. <a href="#' + next.id + '">Continue there \u2192</a>';
+    }
+  }
+  paintTicks();
+  var bar = document.getElementById('progress-bar');
+  var active = null;
+  var spy = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){
+      if (en.isIntersecting) {
+        if (active && railLinks[active]) railLinks[active].classList.remove('active');
+        active = en.target.id;
+        if (railLinks[active]) railLinks[active].classList.add('active');
+        var sheetLabel = document.getElementById('chapter-bar-label');
+        if (sheetLabel) sheetLabel.textContent = en.target.getAttribute('data-label');
+      }
+      var rect = en.target.getBoundingClientRect();
+      if (rect.bottom < window.innerHeight * 0.55 && state.done.indexOf(en.target.id) < 0) {
+        state.done.push(en.target.id); save(); paintTicks();
+      }
+    });
+  }, {rootMargin: '-30% 0px -55% 0px'});
+  chapters.forEach(function(ch){ spy.observe(ch); });
+  window.addEventListener('scroll', function(){
+    var h = document.documentElement;
+    var max = h.scrollHeight - h.clientHeight;
+    if (bar && max > 0) bar.style.width = (h.scrollTop / max * 100) + '%';
+  }, {passive: true});
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){
+    a.addEventListener('click', function(){
+      var t = document.querySelector(a.getAttribute('href'));
+      if (t && t.tagName === 'DETAILS') t.open = true;
+      var sheet = document.getElementById('chapter-sheet');
+      if (sheet) sheet.classList.remove('open');
+    });
+  });
+  var tp = document.getElementById('teacher-panel');
+  var tbtn = document.getElementById('teach-btn');
+  if (tbtn && tp) tbtn.addEventListener('click', function(){ tp.style.display = tp.style.display === 'block' ? 'none' : 'block'; if (tp.style.display === 'block') tp.scrollIntoView({behavior:'smooth', block:'start'}); });
+  var ex = document.getElementById('expand-all');
+  if (ex) ex.addEventListener('click', function(){
+    var dets = document.querySelectorAll('details');
+    var anyClosed = Array.prototype.some.call(dets, function(d){ return !d.open; });
+    dets.forEach(function(d){ d.open = anyClosed; });
+    ex.textContent = anyClosed ? 'Collapse all sections' : 'Expand all sections';
+  });
+  var sheetBtn = document.getElementById('chapter-sheet-btn');
+  var sheet = document.getElementById('chapter-sheet');
+  if (sheetBtn && sheet) sheetBtn.addEventListener('click', function(){ sheet.classList.toggle('open'); });
+  window.addEventListener('beforeprint', function(){ document.querySelectorAll('details').forEach(function(d){ d.open = true; }); });
+})();
+</script>
 </body></html>

@@ -20,6 +20,56 @@
 .beta-banner{background:#1a1712;border:1px solid rgba(201,162,39,.22);border-radius:8px;padding:16px 20px;margin:0 0 26px;line-height:1.55;color:#f5efe0}
 .doss-end{background:#1a1712;border:1px solid rgba(201,162,39,.22);border-radius:8px;padding:20px 24px 8px;margin:34px 0 10px;color:#f5efe0}
 .backlink{display:inline-block;margin:0 0 18px;font-weight:600}
+#progress-bar{position:fixed;top:0;left:0;height:3px;background:#c9a227;width:0;z-index:999}
+.orient{background:#1a1712;border:1px solid #c9a227;color:#f5efe0;border-radius:10px;padding:24px 26px;margin:0 0 22px}
+.orient .meta{font-size:.92rem;letter-spacing:.04em;text-transform:uppercase;color:#e3c76a;margin-bottom:10px}
+.orient .eq{font-family:'Playfair Display',serif;font-size:1.3rem;line-height:1.45;margin:0 0 10px}
+.orient p{line-height:1.6;margin:0 0 14px}
+.orient .fork{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
+.orient .fork a,.orient .fork button{background:#c9a227;color:#0e0c09;border:0;border-radius:6px;padding:10px 16px;font-weight:700;cursor:pointer;text-decoration:none;font-size:.95rem}
+.orient .fork button.ghost{background:transparent;color:#f5efe0;border:1px solid #c9a227}
+#resume-chip{display:none;background:rgba(201,162,39,.14);border:1px solid rgba(201,162,39,.22);color:#f5efe0;border-radius:6px;padding:10px 14px;margin-top:14px;font-size:.95rem}
+#teacher-panel{display:none;background:#1a1712;border:1px solid rgba(201,162,39,.22);border-left:5px solid #c9a227;border-radius:8px;padding:18px 22px 6px;margin:0 0 22px;line-height:1.6;color:#f5efe0}
+.layout{display:grid;grid-template-columns:230px 1fr;gap:34px;align-items:start}
+.rail{position:sticky;top:88px;font-size:.93rem}
+.rail h4{font-size:.78rem;letter-spacing:.09em;text-transform:uppercase;color:#c9a227;margin:0 0 10px}
+.rail a{display:block;padding:7px 10px 7px 12px;color:#d8cdb4;text-decoration:none;border-left:3px solid rgba(201,162,39,.22);line-height:1.35}
+.rail a.active{border-left-color:#c9a227;background:rgba(201,162,39,.12);color:#f5efe0;font-weight:700}
+.rail a .tick{display:inline-block;width:1.1em;color:#c9a227;font-weight:700}
+.rail .rail-tools{margin-top:14px}
+.rail .rail-tools button{background:none;border:1px solid #c9a227;color:#e3c76a;border-radius:6px;padding:6px 10px;cursor:pointer;font-size:.85rem}
+#chapter-bar{display:none}
+.chapter{scroll-margin-top:92px}
+details.deep{scroll-margin-top:92px}
+.chapter > h2{border-bottom:2px solid rgba(201,162,39,.22);padding-bottom:8px}
+.recall{background:rgba(201,162,39,.10);border:1px solid rgba(201,162,39,.22);border-radius:8px;padding:14px 18px;margin:20px 0 6px;line-height:1.55;font-size:.97rem;color:#f5efe0}
+.recall strong{color:#e3c76a}
+.chap-nav{display:flex;justify-content:space-between;gap:12px;margin:22px 0 4px;font-weight:600}
+.chap-nav a{color:#e3c76a}
+details.deep{border:1px solid rgba(201,162,39,.22);border-radius:8px;background:#1a1712;margin:26px 0 10px}
+details.deep > summary{font-family:'Playfair Display',serif;font-size:1.3rem;color:#f5efe0;cursor:pointer;padding:16px 20px;list-style:none}
+details.deep > summary::-webkit-details-marker{display:none}
+details.deep > summary::after{content:"+";float:right;color:#c9a227;font-weight:700}
+details.deep[open] > summary::after{content:"\2212"}
+details.deep .deep-body{padding:0 20px 8px}
+details.inline{margin:14px 0}
+details.inline > summary{cursor:pointer;font-weight:700;color:#e3c76a;list-style:none}
+details.inline > summary::-webkit-details-marker{display:none}
+details.inline > summary::after{content:" +";color:#c9a227}
+details.inline[open] > summary::after{content:" \2212"}
+@media (max-width:900px){
+  .layout{grid-template-columns:1fr}
+  .rail{display:none}
+  #chapter-bar{display:flex;position:sticky;top:0;z-index:60;background:#1a1712;border:1px solid rgba(201,162,39,.22);color:#f5efe0;padding:10px 14px;border-radius:6px;justify-content:space-between;align-items:center;margin-bottom:16px}
+  #chapter-bar button{background:#c9a227;color:#0e0c09;border:0;border-radius:5px;padding:6px 12px;font-weight:700;cursor:pointer}
+  #chapter-sheet{display:none;background:#1a1712;border:1px solid rgba(201,162,39,.22);border-radius:8px;padding:10px 16px;margin:-8px 0 16px}
+  #chapter-sheet.open{display:block}
+  #chapter-sheet a{display:block;padding:8px 4px;color:#d8cdb4;text-decoration:none;border-bottom:1px solid rgba(201,162,39,.22)}
+}
+@media print{
+  #progress-bar,.rail,#chapter-bar,#chapter-sheet,.orient .fork,.recall,.chap-nav,.backlink,nav,footer{display:none !important}
+  .layout{grid-template-columns:1fr}
+}
 </style>
 </head>
 <body>
@@ -38,15 +88,10 @@
 <section class="block"><div class="wrap">
 <a class="backlink" href="../education.html">&larr; Back to Education</a>
 <div class="rule"></div>
+<div id="progress-bar"></div>
 <h2 class="section-title">Nicodemus, Kansas - Town Dossier (Sample Extract)</h2>
 <div class="beta-banner"><strong>Beta sample extract.</strong> The opening of the Nicodemus, Kansas dossier: its header, key facts, and founding story. The full dossier is part of the Pilot Collection.</div>
-<div class="dossier"><h2>Header</h2>
-<ul>
-<li>Town name, State: Nicodemus, Kansas (site and song usage: "Nicodemus, Kansas")</li>
-<li>County: Graham County</li>
-<li>Status: still inhabited, unincorporated community and census-designated place (CDP) in northwestern Kansas, on the Solomon River. Never incorporated as a municipality; civil government is Nicodemus Township. The townsite is the Nicodemus National Historic Site (National Park Service, established 1996) and a National Historic Landmark district (1976).</li>
-<li>Dossier version: pilot draft v0.1, 2026-10-26</li>
-</ul>
+<div class="orient"><div class="meta">About 5 min read &middot; Sample extract &middot; Free beta sample</div><p>This is the opening of the Nicodemus, Kansas dossier: where the town came from, its key facts, and its founding story. The complete dossier, with the full timeline, the turning point, the town today, and the song with its lyrics annotated, is part of the Pilot Collection.</p><div class="fork"><a href="#ch1">Start reading</a><button type="button" class="ghost" onclick="window.print()">Print / save PDF</button></div><div id="resume-chip"></div></div>
 <div class="facts"><h2>Key Facts Box</h2>
 <ul>
 <li>Founded: 1877. The Nicodemus Town Company was organized in April 1877; the first settler is reported to have arrived June 18, 1877, and the main recruited party from Kentucky arrived in September 1877 (NPS park brochure; BlackPast; town histories summarized in Section 9).</li>
@@ -56,18 +101,100 @@
 <li>Population today: 14 (Nicodemus CDP, 2020 federal census, via Wikipedia's census citation). Nicodemus Township, which includes the surrounding farm families, counted 43 in the 2020 census (Wikipedia township summary). The project's outreach plan carries "about 14 to 25 residents," consistent with the CDP figure plus nearby households.</li>
 <li>Known for: the oldest and only remaining Black town west of the Mississippi River founded by formerly enslaved settlers in the Reconstruction era; an Exoduster colony that predates and helped inspire the 1879 Exoduster migration; the Emancipation and Homecoming Celebration held since 1878; a National Historic Site preserving five historic buildings.</li>
 <li>The song: "Nicodemus, Kansas" (see Section 7).</li>
-</ul>
-</div><h2>1. Founding</h2>
+</ul></div>
+<div id="chapter-bar"><span id="chapter-bar-label">Introduction</span><button type="button" id="chapter-sheet-btn">Contents</button></div><div id="chapter-sheet"><a href="#intro">Introduction</a><a href="#ch1">1. Founding</a><a href="#full">Inside the full dossier</a></div>
+<div class="layout"><aside class="rail"><h4>Chapters</h4><a href="#intro" data-ch="intro"><span class="tick"></span>Introduction</a><a href="#ch1" data-ch="ch1"><span class="tick"></span>1. Founding</a><a href="#full" data-ch="full"><span class="tick"></span>Inside the full dossier</a></aside><div class="dossier"><section class="chapter" id="intro" data-label="Introduction"><h2>Introduction</h2>
+<ul>
+<li>Town name, State: Nicodemus, Kansas (site and song usage: "Nicodemus, Kansas")</li>
+<li>County: Graham County</li>
+<li>Status: still inhabited, unincorporated community and census-designated place (CDP) in northwestern Kansas, on the Solomon River. Never incorporated as a municipality; civil government is Nicodemus Township. The townsite is the Nicodemus National Historic Site (National Park Service, established 1996) and a National Historic Landmark district (1976).</li>
+<li>Dossier version: pilot draft v0.1, 2026-10-26</li>
+</ul><div class="chap-nav"><span></span><a href="#ch1">Next: 1. Founding &rarr;</a></div></section>
+<section class="chapter" id="ch1" data-label="1. Founding"><h2>1. Founding</h2>
 <p>Nicodemus was a planned colony, not an accident of migration. As Reconstruction collapsed in the South, a group of Black men from Lexington, Kentucky, together with a white land promoter, organized the Nicodemus Town Company in April 1877 to found an all-Black town on the Kansas plains, where Black settlers could own land, vote, and govern themselves (NPS; BlackPast). W. H. Smith, a Black minister who had already homesteaded in the area, served as company president; W. R. Hill, a white land developer from Indiana, served as treasurer (town histories via Legends of America; Kansas City Public Library). The company platted a townsite in the Solomon Valley of Graham County, in northwestern Kansas, and recruited settlers in Kentucky and Tennessee with circulars and church visits; the Reverend Simon P. Roundtree recruited in Kentucky, and Benjamin "Pap" Singleton, the Nashville organizer later called the Moses of the Colored Exodus, also distributed the company's circulars (Legends of America, summarizing the standard histories).</p>
 <p>The name carried the founding argument. The founders named the town for Nicodemus, remembered in Black tradition as a legendary African slave prince who purchased his freedom (BlackPast; Encyclopedia.com), and Angela Bates, the town historian and a descendant, adds the biblical Nicodemus and the plantation song line "Wake Nicodemus" for the day of Jubilee as the name's other roots (Kansas City Public Library). Both derivations circulate; see conflict 2.</p>
 <p>Settlement came in stages, and the sources do not agree on the numbers (conflict 3). Roundtree is reported as the first settler, arriving June 18, 1877 (town histories). Zachary T. Fletcher and his wife Jenny Smith Fletcher, the Reverend Smith's daughter, arrived in July 1877; Fletcher became company secretary, then the town's first postmaster and its first entrepreneur (BlackPast; town histories). One encyclopedia account counts the first thirty colonists in July 1877 and 150 more in March 1878 (Encyclopedia.com). The National Park Service brochure gives the main arrival as some 300 settlers recruited from Kentucky in September 1877, and records that sixty of them, shaken by the dugout dwellings, returned to Kentucky immediately (NPS park brochure).</p>
 <p>What the September party found was a plat on paper and a prairie in fact: no houses, no trees, no shade, only tall grass (NPS-derived family guide). Families wintered in dugouts, pits dug into the earth and roofed over, along the Solomon River draws. Williana Hickman, who arrived with her husband the Reverend Daniel Hickman in the spring of 1878, remembered being told the smoke rising from the ground was Nicodemus, and crying at the sight (her later account, quoted in town histories). Settlers took up homestead claims of 160 acres around the townsite under the Homestead Act of 1862 while the company sold town lots; the legal title to the townsite itself was later challenged by land speculator Henry Miller, and the town received its official title on June 6, 1886 (Wikipedia history summary; flagged in Section 9 as needing a primary-source check).</p>
-<p>The first winter nearly broke the colony. Through the winter of 1878-79 the settlers depended in part on relief supplies solicited by agents such as the Reverend Silas M. Lee, shipped free by the Kansas Pacific railroad and issued from a commissary by town officers; in April 1879 the Nicodemus Town Company was abolished and each man left to, in the period phrase, hoe his own row (Kansas Historical Society digital collections, historical article on the colony). The town survived the aid winter, and its timing mattered: Nicodemus was founded in 1877, two years before the great Exoduster migration of 1879, and its circulars and example helped draw that later wave toward Kansas (Kansas Historical Society, Kansapedia; Kansas City Public Library).</p></div>
-<div class="doss-end"><h3>Inside the full dossier</h3><ul><li>2. Building the Town</li><li>3. Peak Years</li><li>4. The Turning Point</li><li>5. Survival, Decline, or Destruction</li><li>6. The Town Today</li><li>7. The Song</li><li>8. Primary Sources</li><li>9. Sources and Bibliography</li></ul><p>The complete dossier, with the full timeline, the turning point, the town today, the song's lyrics annotated line by line, and primary sources, is part of the All Black Towns Pilot Collection. Membership opens soon - <a href="../education.html#newsletter">join the list</a> to hear about it first.</p></div>
+<p>The first winter nearly broke the colony. Through the winter of 1878-79 the settlers depended in part on relief supplies solicited by agents such as the Reverend Silas M. Lee, shipped free by the Kansas Pacific railroad and issued from a commissary by town officers; in April 1879 the Nicodemus Town Company was abolished and each man left to, in the period phrase, hoe his own row (Kansas Historical Society digital collections, historical article on the colony). The town survived the aid winter, and its timing mattered: Nicodemus was founded in 1877, two years before the great Exoduster migration of 1879, and its circulars and example helped draw that later wave toward Kansas (Kansas Historical Society, Kansapedia; Kansas City Public Library).</p><div class="recall"><strong>Quick recall.</strong> Before you move on, say it back without scrolling up: which people, places, or decisions from this chapter matter most, and why? Then glance back and check yourself.</div><div class="chap-nav"><a href="#intro">&larr; Introduction</a><a href="#full">Next: Inside the full dossier &rarr;</a></div></section>
+<section class="chapter" id="full" data-label="Inside the full dossier"><h2>Inside the full dossier</h2><ul><li>2. Building the Town</li><li>3. Peak Years</li><li>4. The Turning Point</li><li>5. Survival, Decline, or Destruction</li><li>6. The Town Today</li><li>7. The Song</li><li>8. Primary Sources</li><li>9. Sources and Bibliography</li></ul><p>The complete dossier, with the full timeline, the turning point, the town today, the song's lyrics annotated line by line, and primary sources, is part of the All Black Towns Pilot Collection. Membership opens soon - <a href="../education.html#newsletter">join the list</a> to hear about it first.</p><div class="chap-nav"><a href="#ch1">&larr; 1. Founding</a><span></span></div></section></div></div>
+
 </div></section>
 <footer><div class="wrap">
 <a class="brand" href="../index.html"><img class="brand-logo" src="../logo-nav.jpg" alt="All Black Towns logo">All <span>Black</span> Towns</a>
 <p style="margin-top:12px">A creative universe built on the true history of America's Black towns -<br>one town, one song, one story at a time.</p>
 <p style="margin-top:14px; opacity:.6">&copy; 2026 All Black Towns. All rights reserved.</p>
 </div></footer>
+
+<script>
+(function(){
+  var KEY = 'abt-v2-nicodemus';
+  var state = {done: []};
+  try { state = JSON.parse(localStorage.getItem(KEY)) || state; } catch(e) {}
+  var chapters = Array.prototype.slice.call(document.querySelectorAll('.chapter'));
+  var railLinks = {};
+  document.querySelectorAll('.rail a[data-ch]').forEach(function(a){ railLinks[a.getAttribute('data-ch')] = a; });
+  function save(){ try { localStorage.setItem(KEY, JSON.stringify(state)); } catch(e) {} }
+  function paintTicks(){
+    chapters.forEach(function(ch){
+      var a = railLinks[ch.id];
+      if (a) { var t = a.querySelector('.tick'); if (t) t.textContent = state.done.indexOf(ch.id) >= 0 ? '\u2713' : ''; }
+    });
+  }
+  var chip = document.getElementById('resume-chip');
+  if (chip && state.done.length) {
+    var next = chapters.filter(function(c){ return state.done.indexOf(c.id) < 0; })[0];
+    if (next) {
+      var label = next.getAttribute('data-label');
+      chip.style.display = 'block';
+      chip.innerHTML = 'Welcome back. You left off at <strong>' + label + '</strong>. <a href="#' + next.id + '">Continue there \u2192</a>';
+    }
+  }
+  paintTicks();
+  var bar = document.getElementById('progress-bar');
+  var active = null;
+  var spy = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){
+      if (en.isIntersecting) {
+        if (active && railLinks[active]) railLinks[active].classList.remove('active');
+        active = en.target.id;
+        if (railLinks[active]) railLinks[active].classList.add('active');
+        var sheetLabel = document.getElementById('chapter-bar-label');
+        if (sheetLabel) sheetLabel.textContent = en.target.getAttribute('data-label');
+      }
+      var rect = en.target.getBoundingClientRect();
+      if (rect.bottom < window.innerHeight * 0.55 && state.done.indexOf(en.target.id) < 0) {
+        state.done.push(en.target.id); save(); paintTicks();
+      }
+    });
+  }, {rootMargin: '-30% 0px -55% 0px'});
+  chapters.forEach(function(ch){ spy.observe(ch); });
+  window.addEventListener('scroll', function(){
+    var h = document.documentElement;
+    var max = h.scrollHeight - h.clientHeight;
+    if (bar && max > 0) bar.style.width = (h.scrollTop / max * 100) + '%';
+  }, {passive: true});
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){
+    a.addEventListener('click', function(){
+      var t = document.querySelector(a.getAttribute('href'));
+      if (t && t.tagName === 'DETAILS') t.open = true;
+      var sheet = document.getElementById('chapter-sheet');
+      if (sheet) sheet.classList.remove('open');
+    });
+  });
+  var tp = document.getElementById('teacher-panel');
+  var tbtn = document.getElementById('teach-btn');
+  if (tbtn && tp) tbtn.addEventListener('click', function(){ tp.style.display = tp.style.display === 'block' ? 'none' : 'block'; if (tp.style.display === 'block') tp.scrollIntoView({behavior:'smooth', block:'start'}); });
+  var ex = document.getElementById('expand-all');
+  if (ex) ex.addEventListener('click', function(){
+    var dets = document.querySelectorAll('details');
+    var anyClosed = Array.prototype.some.call(dets, function(d){ return !d.open; });
+    dets.forEach(function(d){ d.open = anyClosed; });
+    ex.textContent = anyClosed ? 'Collapse all sections' : 'Expand all sections';
+  });
+  var sheetBtn = document.getElementById('chapter-sheet-btn');
+  var sheet = document.getElementById('chapter-sheet');
+  if (sheetBtn && sheet) sheetBtn.addEventListener('click', function(){ sheet.classList.toggle('open'); });
+  window.addEventListener('beforeprint', function(){ document.querySelectorAll('details').forEach(function(d){ d.open = true; }); });
+})();
+</script>
 </body></html>

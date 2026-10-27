@@ -69,7 +69,6 @@ details.inline[open] > summary::after{content:" \2212"}
 @media print{
   #progress-bar,.rail,#chapter-bar,#chapter-sheet,.orient .fork,.recall,.chap-nav,.backlink,nav,footer{display:none !important}
   .layout{grid-template-columns:1fr}
-  details.deep .deep-body,details.inline > *{display:block}
 }
 </style>
 </head>
@@ -262,7 +261,6 @@ details.inline[open] > summary::after{content:" \2212"}
       if (a) { var t = a.querySelector('.tick'); if (t) t.textContent = state.done.indexOf(ch.id) >= 0 ? '\u2713' : ''; }
     });
   }
-  // resume chip
   var chip = document.getElementById('resume-chip');
   if (chip && state.done.length) {
     var next = chapters.filter(function(c){ return state.done.indexOf(c.id) < 0; })[0];
@@ -273,7 +271,6 @@ details.inline[open] > summary::after{content:" \2212"}
     }
   }
   paintTicks();
-  // scrollspy + done tracking + progress bar
   var bar = document.getElementById('progress-bar');
   var active = null;
   var spy = new IntersectionObserver(function(entries){
@@ -297,8 +294,7 @@ details.inline[open] > summary::after{content:" \2212"}
     var max = h.scrollHeight - h.clientHeight;
     if (bar && max > 0) bar.style.width = (h.scrollTop / max * 100) + '%';
   }, {passive: true});
-  // open details chapters when navigated to
-  document.querySelectorAll('a[href^="#ch"]').forEach(function(a){
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){
     a.addEventListener('click', function(){
       var t = document.querySelector(a.getAttribute('href'));
       if (t && t.tagName === 'DETAILS') t.open = true;
@@ -306,11 +302,9 @@ details.inline[open] > summary::after{content:" \2212"}
       if (sheet) sheet.classList.remove('open');
     });
   });
-  // teacher fork
   var tp = document.getElementById('teacher-panel');
   var tbtn = document.getElementById('teach-btn');
   if (tbtn && tp) tbtn.addEventListener('click', function(){ tp.style.display = tp.style.display === 'block' ? 'none' : 'block'; if (tp.style.display === 'block') tp.scrollIntoView({behavior:'smooth', block:'start'}); });
-  // expand/collapse all
   var ex = document.getElementById('expand-all');
   if (ex) ex.addEventListener('click', function(){
     var dets = document.querySelectorAll('details');
@@ -318,11 +312,9 @@ details.inline[open] > summary::after{content:" \2212"}
     dets.forEach(function(d){ d.open = anyClosed; });
     ex.textContent = anyClosed ? 'Collapse all sections' : 'Expand all sections';
   });
-  // mobile contents sheet
   var sheetBtn = document.getElementById('chapter-sheet-btn');
   var sheet = document.getElementById('chapter-sheet');
   if (sheetBtn && sheet) sheetBtn.addEventListener('click', function(){ sheet.classList.toggle('open'); });
-  // print: expand everything
   window.addEventListener('beforeprint', function(){ document.querySelectorAll('details').forEach(function(d){ d.open = true; }); });
 })();
 </script>
