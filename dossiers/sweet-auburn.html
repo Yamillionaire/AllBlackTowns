@@ -10,15 +10,67 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../styles.css?v=20261026-beta">
 <style>
-.dossier h2{font-family:'Playfair Display',serif;font-size:1.55rem;margin:36px 0 12px;color:#221d12}
-.dossier h3{font-size:1.15rem;margin:24px 0 8px}
+.dossier h2{font-family:'Playfair Display',serif;font-size:1.55rem;margin:36px 0 12px;color:#f5efe0}
+.dossier h3{font-size:1.15rem;margin:24px 0 8px;color:#e3c76a}
 .dossier p{margin:0 0 14px;line-height:1.68}
 .dossier ul,.dossier ol{margin:0 0 16px 24px;line-height:1.62}
 .dossier li{margin-bottom:7px}
-.facts{background:#fffdf6;border:1px solid #e4ddcb;border-left:5px solid #c9a227;border-radius:8px;padding:20px 24px 8px;margin:10px 0 14px}
-.beta-banner{background:#f7efdb;border:1px solid #e0d3a8;border-radius:8px;padding:16px 20px;margin:0 0 26px;line-height:1.55}
-.doss-end{background:#fffdf6;border:1px solid #e4ddcb;border-radius:8px;padding:20px 24px 8px;margin:34px 0 10px}
+.facts{background:#1a1712;border:1px solid rgba(201,162,39,.22);border-left:5px solid #c9a227;border-radius:8px;padding:20px 24px 8px;margin:10px 0 14px;color:#f5efe0}
+.facts h2{color:#e3c76a;margin-top:0}
+.beta-banner{background:#1a1712;border:1px solid rgba(201,162,39,.22);border-radius:8px;padding:16px 20px;margin:0 0 26px;line-height:1.55;color:#f5efe0}
+.doss-end{background:#1a1712;border:1px solid rgba(201,162,39,.22);border-radius:8px;padding:20px 24px 8px;margin:34px 0 10px;color:#f5efe0}
 .backlink{display:inline-block;margin:0 0 18px;font-weight:600}
+#progress-bar{position:fixed;top:0;left:0;height:3px;background:#c9a227;width:0;z-index:999}
+.orient{background:#1a1712;border:1px solid #c9a227;color:#f5efe0;border-radius:10px;padding:24px 26px;margin:0 0 22px}
+.orient .meta{font-size:.92rem;letter-spacing:.04em;text-transform:uppercase;color:#e3c76a;margin-bottom:10px}
+.orient .eq{font-family:'Playfair Display',serif;font-size:1.3rem;line-height:1.45;margin:0 0 10px}
+.orient p{line-height:1.6;margin:0 0 14px}
+.orient .fork{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
+.orient .fork a,.orient .fork button{background:#c9a227;color:#0e0c09;border:0;border-radius:6px;padding:10px 16px;font-weight:700;cursor:pointer;text-decoration:none;font-size:.95rem}
+.orient .fork button.ghost{background:transparent;color:#f5efe0;border:1px solid #c9a227}
+#resume-chip{display:none;background:rgba(201,162,39,.14);border:1px solid rgba(201,162,39,.22);color:#f5efe0;border-radius:6px;padding:10px 14px;margin-top:14px;font-size:.95rem}
+#teacher-panel{display:none;background:#1a1712;border:1px solid rgba(201,162,39,.22);border-left:5px solid #c9a227;border-radius:8px;padding:18px 22px 6px;margin:0 0 22px;line-height:1.6;color:#f5efe0}
+.layout{display:grid;grid-template-columns:230px 1fr;gap:34px;align-items:start}
+.rail{position:sticky;top:88px;font-size:.93rem}
+.rail h4{font-size:.78rem;letter-spacing:.09em;text-transform:uppercase;color:#c9a227;margin:0 0 10px}
+.rail a{display:block;padding:7px 10px 7px 12px;color:#d8cdb4;text-decoration:none;border-left:3px solid rgba(201,162,39,.22);line-height:1.35}
+.rail a.active{border-left-color:#c9a227;background:rgba(201,162,39,.12);color:#f5efe0;font-weight:700}
+.rail a .tick{display:inline-block;width:1.1em;color:#c9a227;font-weight:700}
+.rail .rail-tools{margin-top:14px}
+.rail .rail-tools button{background:none;border:1px solid #c9a227;color:#e3c76a;border-radius:6px;padding:6px 10px;cursor:pointer;font-size:.85rem}
+#chapter-bar{display:none}
+.chapter{scroll-margin-top:92px}
+details.deep{scroll-margin-top:92px}
+.chapter > h2{border-bottom:2px solid rgba(201,162,39,.22);padding-bottom:8px}
+.recall{background:rgba(201,162,39,.10);border:1px solid rgba(201,162,39,.22);border-radius:8px;padding:14px 18px;margin:20px 0 6px;line-height:1.55;font-size:.97rem;color:#f5efe0}
+.recall strong{color:#e3c76a}
+.chap-nav{display:flex;justify-content:space-between;gap:12px;margin:22px 0 4px;font-weight:600}
+.chap-nav a{color:#e3c76a}
+details.deep{border:1px solid rgba(201,162,39,.22);border-radius:8px;background:#1a1712;margin:26px 0 10px}
+details.deep > summary{font-family:'Playfair Display',serif;font-size:1.3rem;color:#f5efe0;cursor:pointer;padding:16px 20px;list-style:none}
+details.deep > summary::-webkit-details-marker{display:none}
+details.deep > summary::after{content:"+";float:right;color:#c9a227;font-weight:700}
+details.deep[open] > summary::after{content:"\2212"}
+details.deep .deep-body{padding:0 20px 8px}
+details.inline{margin:14px 0}
+details.inline > summary{cursor:pointer;font-weight:700;color:#e3c76a;list-style:none}
+details.inline > summary::-webkit-details-marker{display:none}
+details.inline > summary::after{content:" +";color:#c9a227}
+details.inline[open] > summary::after{content:" \2212"}
+@media (max-width:900px){
+  .layout{grid-template-columns:1fr}
+  .rail{display:none}
+  #chapter-bar{display:flex;position:sticky;top:0;z-index:60;background:#1a1712;border:1px solid rgba(201,162,39,.22);color:#f5efe0;padding:10px 14px;border-radius:6px;justify-content:space-between;align-items:center;margin-bottom:16px}
+  #chapter-bar button{background:#c9a227;color:#0e0c09;border:0;border-radius:5px;padding:6px 12px;font-weight:700;cursor:pointer}
+  #chapter-sheet{display:none;background:#1a1712;border:1px solid rgba(201,162,39,.22);border-radius:8px;padding:10px 16px;margin:-8px 0 16px}
+  #chapter-sheet.open{display:block}
+  #chapter-sheet a{display:block;padding:8px 4px;color:#d8cdb4;text-decoration:none;border-bottom:1px solid rgba(201,162,39,.22)}
+}
+@media print{
+  #progress-bar,.rail,#chapter-bar,#chapter-sheet,.orient .fork,.recall,.chap-nav,.backlink,nav,footer{display:none !important}
+  .layout{grid-template-columns:1fr}
+  details.deep .deep-body,details.inline > *{display:block}
+}
 </style>
 </head>
 <body>
@@ -37,16 +89,11 @@
 <section class="block"><div class="wrap">
 <a class="backlink" href="../education.html">&larr; Back to Education</a>
 <div class="rule"></div>
+<div id="progress-bar"></div>
 <h2 class="section-title">Sweet Auburn, Georgia - Town Dossier</h2>
 <div class="beta-banner"><strong>Free beta sample.</strong> This is the complete Sweet Auburn dossier, published as the sample for the All Black Towns curriculum beta. The pilot lesson plan built on it is here: <a href="sweet-auburn-lesson.html"><strong>Sweet Auburn Lesson Plan</strong></a>.</div>
-<div class="dossier"><h2>Header</h2>
-<ul>
-<li>Town name, State: Sweet Auburn, Georgia (site and song usage: "Sweet Auburn, Atlanta, Georgia")</li>
-<li>County: Fulton County</li>
-<li>Status: neighborhood / historic district within the City of Atlanta (Old Fourth Ward). Never an incorporated town. A National Historic Landmark district within and beside the Martin Luther King, Jr. National Historical Park.</li>
-<li>Dossier version: pilot draft v0.1, 2026-10-25</li>
-</ul>
-<p>A note on fit: the dossier template was written for towns. Sweet Auburn is a street and district, not a municipality, so the "founded" and "incorporated" fields below are answered honestly for a district rather than forced into town language.</p>
+<div class="orient"><div class="meta">About 24 min read &middot; 10 chapters &middot; Free beta sample</div><p class="eq">How did one Atlanta street become "the richest Negro street in the world," and why did the forces that concentrated its wealth later scatter it?</p><p>This dossier follows the district in order: how it was founded, how it was built, its peak years, the turning point, and the Sweet Auburn of today, ending with its song and the primary sources behind the record. Read it straight through, or jump by chapter.</p><div class="fork"><a href="#ch1">Start reading</a><button type="button" id="teach-btn">Teach this town</button><button type="button" class="ghost" onclick="window.print()">Print / save PDF</button></div><div id="resume-chip"></div></div>
+<div id="teacher-panel"><h3 style="margin-top:0">For teachers</h3><p><strong>Lesson:</strong> "The Richest Street in the World" &middot; <strong>Grade band:</strong> 9-12 (adaptations for 6-8 and adult self-guided learners included) &middot; <strong>Time:</strong> two class periods of about 50 minutes, or about two hours self-paced.</p><p><strong>Essential question:</strong> How did one Atlanta street become "the richest Negro street in the world," and why did the forces that concentrated its wealth later scatter it?</p><p>The full lesson plan, with materials, the primary source activity, and the performance task, is here: <a href="sweet-auburn-lesson.html"><strong>Sweet Auburn Lesson Plan</strong></a>. Use Print / save PDF above to take this dossier into the classroom on paper.</p></div>
 <div class="facts"><h2>Key Facts Box</h2>
 <ul>
 <li>Founded: no single founding date. The street was renamed Auburn Avenue in 1893; the Black commercial district formed across the late 1800s and early 1900s and accelerated sharply after 1906 (New Georgia Encyclopedia; NPS).</li>
@@ -56,12 +103,21 @@
 <li>Population today: NOT ESTABLISHED for the district itself, for the same reason.</li>
 <li>Known for: Fortune magazine's 1956 description, "the richest Negro street in the world"; the center of Black finance, faith, press, and civil rights organizing in Atlanta; the birthplace neighborhood of Martin Luther King, Jr.</li>
 <li>The song: "Sweet Auburn, Atlanta, Georgia" (see Section 7).</li>
+</ul></div>
+<div id="chapter-bar"><span id="chapter-bar-label">Introduction</span><button type="button" id="chapter-sheet-btn">Contents</button></div><div id="chapter-sheet"><a href="#intro">Introduction</a><a href="#ch1">1. Founding</a><a href="#ch2">2. Building the Town</a><a href="#ch3">3. Peak Years</a><a href="#ch4">4. The Turning Point</a><a href="#ch5">5. Survival, Decline, or Destruction</a><a href="#ch6">6. The Town Today</a><a href="#ch7">7. The Song</a><a href="#ch8">8. Primary Sources</a><a href="#ch9">9. Sources and Bibliography</a></div>
+<div class="layout"><aside class="rail"><h4>Chapters</h4><a href="#intro" data-ch="intro"><span class="tick"></span>Introduction</a><a href="#ch1" data-ch="ch1"><span class="tick"></span>1. Founding</a><a href="#ch2" data-ch="ch2"><span class="tick"></span>2. Building the Town</a><a href="#ch3" data-ch="ch3"><span class="tick"></span>3. Peak Years</a><a href="#ch4" data-ch="ch4"><span class="tick"></span>4. The Turning Point</a><a href="#ch5" data-ch="ch5"><span class="tick"></span>5. Survival, Decline, or Destruction</a><a href="#ch6" data-ch="ch6"><span class="tick"></span>6. The Town Today</a><a href="#ch7" data-ch="ch7"><span class="tick"></span>7. The Song</a><a href="#ch8" data-ch="ch8"><span class="tick"></span>8. Primary Sources</a><a href="#ch9" data-ch="ch9"><span class="tick"></span>9. Sources and Bibliography</a><div class="rail-tools"><button type="button" id="expand-all">Expand all sections</button></div></aside><div class="dossier"><section class="chapter" id="intro" data-label="Introduction"><h2>Introduction</h2>
+<ul>
+<li>Town name, State: Sweet Auburn, Georgia (site and song usage: "Sweet Auburn, Atlanta, Georgia")</li>
+<li>County: Fulton County</li>
+<li>Status: neighborhood / historic district within the City of Atlanta (Old Fourth Ward). Never an incorporated town. A National Historic Landmark district within and beside the Martin Luther King, Jr. National Historical Park.</li>
+<li>Dossier version: pilot draft v0.1, 2026-10-25</li>
 </ul>
-</div><h2>1. Founding</h2>
+<p>A note on fit: the dossier template was written for towns. Sweet Auburn is a street and district, not a municipality, so the "founded" and "incorporated" fields below are answered honestly for a district rather than forced into town language.</p><div class="chap-nav"><span></span><a href="#ch1">Next: 1. Founding &rarr;</a></div></section>
+<section class="chapter" id="ch1" data-label="1. Founding"><h2>1. Founding</h2>
 <p>Sweet Auburn is the historic Black commercial and cultural district centered on Auburn Avenue, just east of downtown Atlanta. The avenue began as Wheat Street and was renamed Auburn Avenue in 1893, at the request of white petitioners who thought the new name sounded more cosmopolitan (New Georgia Encyclopedia). The surrounding settlement predates the name: the first settlement in the area stood on land formerly occupied by Union troops and was called Shermantown for many years (Sweet Auburn history summarized from NPS-derived text, Wikipedia).</p>
 <p>The district has no founder in the town sense. What it had was a convergence: as Jim Crow law hardened in the 1890s and 1900s, Atlanta's Black population and businesses were pushed into the corridor east of downtown and toward the Atlanta University campuses on the west side, and Auburn Avenue became the east-side anchor (New Georgia Encyclopedia). The church roots go deeper than the business district. Big Bethel AME Church traces its congregation to 1847, organized by enslaved members of the white Union Church, making it the oldest African American congregation in Atlanta (Georgia Historical Society marker, erected 2023; see conflict note in Section 9 about one source giving 1840).</p>
-<p>The name came later and came from one man. John Wesley Dobbs, a civic and political leader, coined "Sweet Auburn" in reference to the prosperity and opportunity the neighborhood afforded, and served as the avenue's unofficial mayor (NPS NHL assessment; New Georgia Encyclopedia). The phrase is widely reported to borrow from Oliver Goldsmith's poem The Deserted Village ("Sweet Auburn, loveliest village of the plain"), a derivation repeated in several secondary sources (Wikipedia, citing the poem).</p>
-<h2>2. Building the Town</h2>
+<p>The name came later and came from one man. John Wesley Dobbs, a civic and political leader, coined "Sweet Auburn" in reference to the prosperity and opportunity the neighborhood afforded, and served as the avenue's unofficial mayor (NPS NHL assessment; New Georgia Encyclopedia). The phrase is widely reported to borrow from Oliver Goldsmith's poem The Deserted Village ("Sweet Auburn, loveliest village of the plain"), a derivation repeated in several secondary sources (Wikipedia, citing the poem).</p><div class="recall"><strong>Quick recall.</strong> Before you move on, say it back without scrolling up: which people, places, or decisions from this chapter matter most, and why? Then glance back and check yourself.</div><div class="chap-nav"><a href="#intro">&larr; Introduction</a><a href="#ch2">Next: 2. Building the Town &rarr;</a></div></section>
+<section class="chapter" id="ch2" data-label="2. Building the Town"><h2>2. Building the Town</h2>
 <p>Institutions came first, then finance, then national fame. A dated spine:</p>
 <ul>
 <li>1847: Big Bethel congregation organized within Union Church (Georgia Historical Society marker).</li>
@@ -82,16 +138,16 @@
 <li>1929 (January 15): Martin Luther King, Jr. is born at 501 Auburn Avenue (NPS).</li>
 <li>1932: the Atlanta Daily World becomes the first successful African American daily newspaper in the United States, having grown from weekly to semi-weekly to triweekly to daily (University of West Georgia; Georgia State University Library / ProQuest).</li>
 </ul>
-<p>Government and civic life: the district was never self-governing as a town, but it functioned as a civic capital. The NAACP, the National Urban League, the Masons, and the Odd Fellows all kept offices or halls on the avenue (New Georgia Encyclopedia; Main Street America). Dobbs organized voter registration from the avenue; a Georgia State University account drawing on an Atlanta History Center podcast reports that his drives helped register more than 10,000 Black voters in the 1930s (GSU student blog, 2020; treat the figure as reported, not yet primary-verified). The Prince Hall Masonic Temple on Auburn later housed the Southern Christian Leadership Conference (NPS).</p>
-<h2>3. Peak Years</h2>
+<p>Government and civic life: the district was never self-governing as a town, but it functioned as a civic capital. The NAACP, the National Urban League, the Masons, and the Odd Fellows all kept offices or halls on the avenue (New Georgia Encyclopedia; Main Street America). Dobbs organized voter registration from the avenue; a Georgia State University account drawing on an Atlanta History Center podcast reports that his drives helped register more than 10,000 Black voters in the 1930s (GSU student blog, 2020; treat the figure as reported, not yet primary-verified). The Prince Hall Masonic Temple on Auburn later housed the Southern Christian Leadership Conference (NPS).</p><div class="recall"><strong>Quick recall.</strong> Before you move on, say it back without scrolling up: which people, places, or decisions from this chapter matter most, and why? Then glance back and check yourself.</div><div class="chap-nav"><a href="#ch1">&larr; 1. Founding</a><a href="#ch3">Next: 3. Peak Years &rarr;</a></div></section>
+<section class="chapter" id="ch3" data-label="3. Peak Years"><h2>3. Peak Years</h2>
 <p>The peak runs roughly from the 1920s through the 1950s. Historian Gary Pomerantz's phrase for the avenue's financial core, the "three-legged stool of Black finance," names the structure: Atlanta Life Insurance, Standard Life Insurance, and Citizens Trust Bank (New Georgia Encyclopedia; Atlanta History Center). Atlanta Life's Beaux-Arts headquarters building facing Auburn Avenue was completed in 1920, and the company is described in National Park Service derived material as the second largest Black insurance company in the United States (Modern Cities, drawing on NPS district text; date and ranking as reported there).</p>
 <p>Around the stool stood a full commercial street: lawyers' and doctors' offices, restaurants, drugstores, funeral homes, shoeshine stands, clubs, and lodges (Atlanta History Center). The Atlanta Daily World, headquartered at 145 Auburn Avenue, grew under the Scott family into a syndicate of some fifty newspapers, one of the largest Black-owned businesses in the nation (Atlanta History Center; University of West Georgia). In entertainment, the Top Hat Club, opened in 1937 (ASALH timeline; Bounce TV) or 1938 (Modern Cities; conflict flagged), was renamed the Royal Peacock in 1949 and hosted acts including Dizzy Gillespie, Louis Armstrong, Aretha Franklin, Ray Charles, Gladys Knight, and B. B. King (SAH Archipedia).</p>
-<p>The capstone of the peak is a single sentence. In 1956, Fortune magazine described Auburn Avenue as "the richest Negro street in the world" (New Georgia Encyclopedia; Main Street America; the attribution is discussed in Section 9).</p>
-<h2>4. The Turning Point</h2>
+<p>The capstone of the peak is a single sentence. In 1956, Fortune magazine described Auburn Avenue as "the richest Negro street in the world" (New Georgia Encyclopedia; Main Street America; the attribution is discussed in Section 9).</p><div class="recall"><strong>Quick recall.</strong> Before you move on, say it back without scrolling up: which people, places, or decisions from this chapter matter most, and why? Then glance back and check yourself.</div><div class="chap-nav"><a href="#ch2">&larr; 2. Building the Town</a><a href="#ch4">Next: 4. The Turning Point &rarr;</a></div></section>
+<section class="chapter" id="ch4" data-label="4. The Turning Point"><h2>4. The Turning Point</h2>
 <p>There are two turning points, one violent and one structural, and the dossier keeps them separate.</p>
 <p>The violent one came first and, paradoxically, built the district. In September 1906, Atlanta's newspapers published inflammatory, unverified claims of assaults on white women; white mobs attacked Black residents and businesses over several days. The standard summaries report at least 27 people dead, 25 of them Black, and more than 70 injured (Wikipedia summary; casualty counts differ across sources and modern scholarship often gives higher Black death tolls, so the dossier carries the conservative sourced figure and flags the variance). Before 1906, Black businesses operated in a substantially integrated downtown; after the massacre, they relocated for safety to Auburn Avenue and to the west side near the Atlanta University Center (Wikipedia; New Georgia Encyclopedia). Segregation then did the rest: a captive Black market concentrated its spending on the avenue for half a century.</p>
-<p>The structural turning point was the avenue's own success at ending segregation. From the mid-1960s, as legal barriers fell, Auburn Avenue shopkeepers moved their businesses to other parts of the city and residents migrated to Atlanta's west side (New Georgia Encyclopedia). At the same time, construction of the Downtown Connector (Interstates 75/85), built through Atlanta's core in the 1950s and early 1960s, divided the district and took its western blocks (SAH Archipedia; NPS-derived summaries). The 1917 fire and the 1922 zoning ordinance had already reshaped the street once (National Register nomination form). What followed the 1960s was disinvestment: population loss, housing decay, and neglect (SAH Archipedia; New Georgia Encyclopedia).</p>
-<h2>5. Survival, Decline, or Destruction</h2>
+<p>The structural turning point was the avenue's own success at ending segregation. From the mid-1960s, as legal barriers fell, Auburn Avenue shopkeepers moved their businesses to other parts of the city and residents migrated to Atlanta's west side (New Georgia Encyclopedia). At the same time, construction of the Downtown Connector (Interstates 75/85), built through Atlanta's core in the 1950s and early 1960s, divided the district and took its western blocks (SAH Archipedia; NPS-derived summaries). The 1917 fire and the 1922 zoning ordinance had already reshaped the street once (National Register nomination form). What followed the 1960s was disinvestment: population loss, housing decay, and neglect (SAH Archipedia; New Georgia Encyclopedia).</p><div class="recall"><strong>Quick recall.</strong> Before you move on, say it back without scrolling up: which people, places, or decisions from this chapter matter most, and why? Then glance back and check yourself.</div><div class="chap-nav"><a href="#ch3">&larr; 3. Peak Years</a><a href="#ch5">Next: 5. Survival, Decline, or Destruction &rarr;</a></div></section>
+<section class="chapter" id="ch5" data-label="5. Survival, Decline, or Destruction"><h2>5. Survival, Decline, or Destruction</h2>
 <p>Sweet Auburn declined but was not destroyed, and the record of its survival is specific.</p>
 <ul>
 <li>1976: the Secretary of the Interior designates the Sweet Auburn Historic District a National Historic Landmark (NPS NHL assessment). One secondary summary gives May 5, 1977; the conflict is recorded in Section 9, and 1976 is the date NPS, the National Trust, and SAH Archipedia all carry.</li>
@@ -104,14 +160,14 @@
 <li>2014: the Atlanta Streetcar is completed, running through the district along Auburn and Edgewood Avenues (SAH Archipedia; Wikipedia).</li>
 <li>2018: the King site is redesignated the Martin Luther King, Jr. National Historical Park (NPS-derived summaries).</li>
 <li>2021: an NPS assessment of the landmark district finds that Sweet Auburn has lost 47 percent of its historic buildings since the 1976 designation, with the Atlanta Life Insurance Company building, the Butler Street YMCA, and the Walden Building standing vacant and at risk (NPS NHL assessment reporting, via the Atlanta Preservation Center and Georgia Historic Newspapers / GALILEO).</li>
-</ul>
-<h2>6. The Town Today</h2>
+</ul><div class="recall"><strong>Quick recall.</strong> Before you move on, say it back without scrolling up: which people, places, or decisions from this chapter matter most, and why? Then glance back and check yourself.</div><div class="chap-nav"><a href="#ch4">&larr; 4. The Turning Point</a><a href="#ch6">Next: 6. The Town Today &rarr;</a></div></section>
+<section class="chapter" id="ch6" data-label="6. The Town Today"><h2>6. The Town Today</h2>
 <p>A visitor today finds a working historic district, not a reconstruction. The Martin Luther King, Jr. National Historical Park anchors the east end: the Birth Home at 501 Auburn Avenue (built 1895, purchased by A. D. Williams in 1909), the historic Ebenezer Baptist Church (congregation founded 1886; the Gothic Revival building raised 1914-1922, where King and his father preached and where King's funeral was held in 1968), Fire Station No. 6 (1894), and the King Center, where Dr. and Mrs. King are entombed (NPS). West along the avenue stand Big Bethel AME (220 Auburn, its steeple carrying the "Jesus Saves" sign), the Odd Fellows Building, the Herndon Building, the Royal Peacock (still a nightclub, per SAH Archipedia), the Atlanta Daily World Building at 145 Auburn (rehabilitated after 2008 tornado damage; a demolition permit was denied in 2012 after community petition, and the building was restored for retail and residential use by 2014, per the building's preservation account), and the Sweet Auburn Curb Market at 209 Edgewood Avenue (NPS NHL assessment; Gene Kansas project history; Modern Cities).</p>
 <p>The keeping organizations, with their roles: the National Park Service (the King park and the landmark assessment), the King Center, HDDC (residential revitalization since 1980), Sweet Auburn Works (commercial district revitalization since 2012), the Atlanta Preservation Center, the APEX Museum, and the Auburn Avenue Research Library, which reopened in 2016 after a $20 million renovation and in 2026 received a $220,000 Getty grant to preserve and digitize Black art and archives (UATL / Atlanta Journal-Constitution reporting). The district hosts the annual Sweet Auburn Festival and the Sweet Auburn Music and Heritage Festival each fall (SAH Archipedia; festival sources).</p>
-<p>The honest summary for a visitor: the landmarks are real and visitable, the churches still worship, the market still trades, and the commercial street between the landmarks remains thinner than its history deserves, with landmark buildings vacant and nearly half the historic fabric gone since 1976 (NPS NHL assessment).</p>
-<h2>7. The Song</h2>
+<p>The honest summary for a visitor: the landmarks are real and visitable, the churches still worship, the market still trades, and the commercial street between the landmarks remains thinner than its history deserves, with landmark buildings vacant and nearly half the historic fabric gone since 1976 (NPS NHL assessment).</p><div class="recall"><strong>Quick recall.</strong> Before you move on, say it back without scrolling up: which people, places, or decisions from this chapter matter most, and why? Then glance back and check yourself.</div><div class="chap-nav"><a href="#ch5">&larr; 5. Survival, Decline, or Destruction</a><a href="#ch7">Next: 7. The Song &rarr;</a></div></section>
+<section class="chapter" id="ch7" data-label="7. The Song"><h2>7. The Song</h2>
 <p>The song exists in three versions in the user's Suno library (account "hiphopolis"), all 3:11, all carrying identical lyrics. The original is a STUDIO version created June 12, 2026, and the Drive master MP3 (modified June 12, 2026) matches its date; the audio currently on file is that STUDIO original. Two V6 remasters, a paired generation created September 14, 2026, carry the style tag "Black Legacy Paradox"; the STUDIO page shows no style prompt. The user confirmed on 2026-10-25 that V6 is the newest version of the work. Full lyrics and version data are archived at suno-lyrics-sweet-auburn-2026-10-25.md. Correction to the local record: the project's duplicates map calls this song a "V4.5/STUDIO original" and the 2026-10-15 library capture lists no V6 remaster; live Suno shows STUDIO and V6. The map and capture are stale on this entry.</p>
-<p>Lyric annotation (written 2026-10-25, from the archived lyrics; each entry ties the line to this dossier's verified record, and compressions are named rather than hidden):</p>
+<details class="inline"><summary>Lyric annotations, line by line</summary><p>Lyric annotation (written 2026-10-25, from the archived lyrics; each entry ties the line to this dossier's verified record, and compressions are named rather than hidden):</p>
 <ul>
 <li>Intro, "Dobbs called it honey, richest Black vein in the South": a merge of two attributions. Dobbs coined the name "Sweet Auburn"; the "richest" wording is Fortune magazine's, 1956 (conflict 2). Verse 2 assigns the richest line to Fortune correctly; the intro compresses both onto Dobbs.</li>
 <li>Verse 1, "1906 riots scatter seeds in the soil" and "Wheat Street flip to Auburn": the 1906 massacre did concentrate Black business on the avenue, but the renaming of Wheat Street to Auburn Avenue dates to 1893, and Black businesses stood on the street by 1900 (conflict 10). The song's sequence is a compression, not the chronology.</li>
@@ -127,8 +183,8 @@
 <li>Verse 2, the decline passage ("progress pull people, suburbs call 'em away, vacants creep in") and "gentrify whispers": matches the dossier's turning point record: highway construction, desegregation-era dispersal, and disinvestment, with 47 percent of historic buildings lost since 1976 (NPS 2021 assessment).</li>
 <li>Verse 2, "National landmark stand": verified, National Historic Landmark designation 1976.</li>
 <li>Chorus and bridge: thematic, not factual claims; the barbers, insurers, churches, and banks they celebrate are the institutions documented in sections 2 and 3.</li>
-</ul>
-<h2>8. Primary Sources</h2>
+</ul></details><div class="chap-nav"><a href="#ch6">&larr; 6. The Town Today</a><a href="#ch8">Next: 8. Primary Sources &rarr;</a></div></section>
+<details class="deep chapter" id="ch8" data-label="8. Primary Sources"><summary>8. Primary Sources</summary><div class="deep-body">
 <p>Public domain, licensed, or linked only. Nothing below is reproduced past its rights status.</p>
 <ul>
 <li>National Register of Historic Places Inventory, Nomination Form: Sweet Auburn Historic District (1976). National Archives Catalog, Record Group 079, National Register number 76000631. Federal document, public domain. https://catalog.archives.gov/medialz/electronic-records/rg-079/NPS_GA/76000631_NHL.pdf</li>
@@ -140,8 +196,8 @@
 <li>Atlanta Daily World records, University of West Georgia Special Collections, Ingram Library. Archival collection, research access. https://uwg.galileo.usg.edu/repositories/2/resources/483</li>
 <li>Georgia Historical Society historical markers: Citizens Trust Bank (erected 2025) and Big Bethel African Methodist Episcopal Church. Public markers; text published online by GHS. https://www.georgiahistory.com/ghmi_marker_updated/citizens-trust-bank/</li>
 <li>Samuel W. Williams Collection on Black America, Auburn Avenue Research Library on African American Culture and History, Atlanta-Fulton Public Library System. Research access by appointment.</li>
-</ul>
-<h2>9. Sources and Bibliography</h2>
+</ul></div></details><div class="chap-nav"><a href="#ch7">&larr; 7. The Song</a><a href="#ch9">Next: 9. Sources and Bibliography &rarr;</a></div>
+<details class="deep chapter" id="ch9" data-label="9. Sources and Bibliography"><summary>9. Sources and Bibliography</summary><div class="deep-body">
 <p>In protocol order.</p>
 <p>Perplexity library thread: checked live 2026-10-26 (signed in as Yamil Little, Pro). No standalone Sweet Auburn thread exists. The master thread "Every city or state in America founded by a black man or woman" (https://www.perplexity.ai/search/1c272bba-00cb-42dd-b26a-ef8c34c6022f) contains a Sweet Auburn segment dated June 12, 2026, 1:11 AM, the same timestamp as the STUDIO song's creation, and its short answer is the apparent source of the site blurb: it calls the district the city's Black "commercial, cultural, and spiritual center," says it "emerged after the 1906 Atlanta Race Massacre" (the compression flagged in conflict 10), uses the "richest Negro street in the world" nickname without attribution or date, and notes the King birth home and pulpit and the National Historic Landmark status. It names no firm, bank, or date, so it confirms nothing specific and contradicts nothing in this dossier; 15 sources are shown, headed by Wikipedia. A second thread (a CNN Center proposal thread, February 2026) mentions Sweet Auburn only inside a proposed museum list and names the Auburn Avenue Research Library as an existing archive.</p>
 <p>ChatGPT history: checked live 2026-10-26 (signed in as Yamil Little, Plus). Two hits. "Black-Founded Towns List" (June 11, 2025, https://chatgpt.com/c/68499110-3668-800d-84be-f1261865ab00), a user-supplied national list, carries Sweet Auburn three times with no date, founder, or source ("Developed by Black entrepreneurs"; "the most famous historic Black business and cultural district, centered on Auburn Avenue"), alongside an Atlanta neighborhood cluster (Summerhill, Vine City, West End, Lightning, Johnsontown, Bagley Park, Piney Grove, Willistown, Savagetown, Oscarville, Collier Heights, Hunter Street). The list files a district among founded towns; this dossier follows the master list classification (historic Black district), and no dossier claim depends on the ChatGPT list. "The Elements of HipHopolis" (February 2024) is a caption chat about a February 17, 2024 "Classic Rap Videos &amp; Convos" event at the Auburn Avenue Research Library, not district history. No song content exists in either chat. Nothing found confirms or contradicts any dated claim in this dossier.</p>
@@ -182,7 +238,7 @@
 <li>The site blurb's compression. The project's own blurb says the district "rose after the 1906 Atlanta Race Massacre." The record shows Black businesses on the street by 1900 and Atlanta Life founded in 1905, before the massacre; 1906 accelerated and concentrated the district rather than starting it. The blurb is quoted as-is in the local record; whether to revise it is the user's call, flagged here rather than silently changed.</li>
 <li>Festival founding. SAH Archipedia: the Sweet Auburn Festival, founded by Hosea Williams, held annually since 1984. A Wikipedia-derived passage separately credits Charles Johnson with founding a Sweet Auburn Heritage Festival in 1994. The dossier carries both names with their own dates and flags the overlap.</li>
 <li>Standard Life founding year (internal, resolved). This dossier originally carried 1911 in the Section 2 timeline and 1913 in the Section 7 annotation. The lesson-plan researcher caught the inconsistency on 2026-10-26. Verified the same day: UGA Special Collections Libraries (Heman Perry exhibit) gives "Founded in 1913," and the TSHA Handbook of Texas entry on Perry records the charter reissued March 22, 1913 with operations beginning June 1913. The dossier now carries 1913 in both places.</li>
-</ol></div>
+</ol></div></details><div class="chap-nav"><a href="#ch8">&larr; 8. Primary Sources</a><span></span></div></div></div>
 <div class="doss-end"><p><strong>Teach it:</strong> the pilot lesson plan built on this dossier is free with it - <a href="sweet-auburn-lesson.html">open the Sweet Auburn lesson plan</a>.</p></div>
 </div></section>
 <footer><div class="wrap">
@@ -190,4 +246,84 @@
 <p style="margin-top:12px">A creative universe built on the true history of America's Black towns -<br>one town, one song, one story at a time.</p>
 <p style="margin-top:14px; opacity:.6">&copy; 2026 All Black Towns. All rights reserved.</p>
 </div></footer>
+
+<script>
+(function(){
+  var KEY = 'abt-proto-sweet-auburn';
+  var state = {done: []};
+  try { state = JSON.parse(localStorage.getItem(KEY)) || state; } catch(e) {}
+  var chapters = Array.prototype.slice.call(document.querySelectorAll('.chapter'));
+  var railLinks = {};
+  document.querySelectorAll('.rail a[data-ch]').forEach(function(a){ railLinks[a.getAttribute('data-ch')] = a; });
+  function save(){ try { localStorage.setItem(KEY, JSON.stringify(state)); } catch(e) {} }
+  function paintTicks(){
+    chapters.forEach(function(ch){
+      var a = railLinks[ch.id];
+      if (a) { var t = a.querySelector('.tick'); if (t) t.textContent = state.done.indexOf(ch.id) >= 0 ? '\u2713' : ''; }
+    });
+  }
+  // resume chip
+  var chip = document.getElementById('resume-chip');
+  if (chip && state.done.length) {
+    var next = chapters.filter(function(c){ return state.done.indexOf(c.id) < 0; })[0];
+    if (next) {
+      var label = next.getAttribute('data-label');
+      chip.style.display = 'block';
+      chip.innerHTML = 'Welcome back. You left off at <strong>' + label + '</strong>. <a href="#' + next.id + '">Continue there \u2192</a>';
+    }
+  }
+  paintTicks();
+  // scrollspy + done tracking + progress bar
+  var bar = document.getElementById('progress-bar');
+  var active = null;
+  var spy = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){
+      if (en.isIntersecting) {
+        if (active && railLinks[active]) railLinks[active].classList.remove('active');
+        active = en.target.id;
+        if (railLinks[active]) railLinks[active].classList.add('active');
+        var sheetLabel = document.getElementById('chapter-bar-label');
+        if (sheetLabel) sheetLabel.textContent = en.target.getAttribute('data-label');
+      }
+      var rect = en.target.getBoundingClientRect();
+      if (rect.bottom < window.innerHeight * 0.55 && state.done.indexOf(en.target.id) < 0) {
+        state.done.push(en.target.id); save(); paintTicks();
+      }
+    });
+  }, {rootMargin: '-30% 0px -55% 0px'});
+  chapters.forEach(function(ch){ spy.observe(ch); });
+  window.addEventListener('scroll', function(){
+    var h = document.documentElement;
+    var max = h.scrollHeight - h.clientHeight;
+    if (bar && max > 0) bar.style.width = (h.scrollTop / max * 100) + '%';
+  }, {passive: true});
+  // open details chapters when navigated to
+  document.querySelectorAll('a[href^="#ch"]').forEach(function(a){
+    a.addEventListener('click', function(){
+      var t = document.querySelector(a.getAttribute('href'));
+      if (t && t.tagName === 'DETAILS') t.open = true;
+      var sheet = document.getElementById('chapter-sheet');
+      if (sheet) sheet.classList.remove('open');
+    });
+  });
+  // teacher fork
+  var tp = document.getElementById('teacher-panel');
+  var tbtn = document.getElementById('teach-btn');
+  if (tbtn && tp) tbtn.addEventListener('click', function(){ tp.style.display = tp.style.display === 'block' ? 'none' : 'block'; if (tp.style.display === 'block') tp.scrollIntoView({behavior:'smooth', block:'start'}); });
+  // expand/collapse all
+  var ex = document.getElementById('expand-all');
+  if (ex) ex.addEventListener('click', function(){
+    var dets = document.querySelectorAll('details');
+    var anyClosed = Array.prototype.some.call(dets, function(d){ return !d.open; });
+    dets.forEach(function(d){ d.open = anyClosed; });
+    ex.textContent = anyClosed ? 'Collapse all sections' : 'Expand all sections';
+  });
+  // mobile contents sheet
+  var sheetBtn = document.getElementById('chapter-sheet-btn');
+  var sheet = document.getElementById('chapter-sheet');
+  if (sheetBtn && sheet) sheetBtn.addEventListener('click', function(){ sheet.classList.toggle('open'); });
+  // print: expand everything
+  window.addEventListener('beforeprint', function(){ document.querySelectorAll('details').forEach(function(d){ d.open = true; }); });
+})();
+</script>
 </body></html>
