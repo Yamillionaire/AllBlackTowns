@@ -270,5 +270,149 @@
   "lon": -14.217,
   "about": "Madina do Boe, Guinea-Bissau: PAIGC fighters expelled the Portuguese garrison in 1969. In 1973 the elected People's National Assembly declared independence here.",
   "source": "Wikipedia entries for Boe and the Guinea-Bissau War of Independence for the 1969 expulsion and the September 1973 assembly and declaration; coordinates from the same reference."
+ },
+ {
+  "town": "North Buxton",
+  "country": "Canada",
+  "lat": 42.3057,
+  "lon": -82.2204,
+  "about": "North Buxton, Ontario. Founded in 1849 as the Elgin Settlement, a planned community for and by formerly enslaved people and free Black settlers. It grew past 2,000 residents and still stands today.",
+  "source": "Wikipedia and Parks Canada (Buxton National Historic Site) for the 1849 Elgin Settlement founding; coordinates from the same listing."
+ },
+ {
+  "town": "East Preston",
+  "country": "Canada",
+  "lat": 44.7219,
+  "lon": -63.4198,
+  "about": "East Preston, Nova Scotia. Settled by Black Loyalist families moved here by the Crown after the American Revolutionary War. It remains a historic African Nova Scotian community today.",
+  "source": "Wikipedia and the African Nova Scotian Directory for the Black Loyalist settlement; Mapcarta (GeoNames, Wikidata) for coordinates."
+ },
+ {
+  "town": "Oro Settlement",
+  "country": "Canada",
+  "lat": 44.5023,
+  "lon": -79.6363,
+  "about": "Oro Settlement, Ontario. From 1819, Black veterans of the War of 1812 took up land grants here, the only government sponsored Black settlement in Upper Canada. The 1849 log church still stands.",
+  "source": "Parks Canada and the Ontario Heritage Trust for the settlement and the 1849 AME church National Historic Site; tourism GPS listing for coordinates."
+ },
+ {
+  "town": "Queen's Bush Settlement",
+  "country": "Canada",
+  "lat": 43.5633,
+  "lon": -80.6392,
+  "about": "Queen's Bush Settlement, Ontario. Beginning in the 1830s, more than 1,500 Black settlers cleared farms on unsurveyed Crown land here. Most lost the land after the official survey in the late 1840s. Anchor pin at Hawkesville.",
+  "source": "Ontario Heritage Trust background paper for the settlement; Wikipedia (Hawkesville) for the anchor coordinates."
+ },
+ {
+  "town": "Dawn Settlement",
+  "country": "Canada",
+  "lat": 42.5903,
+  "lon": -82.1817,
+  "about": "Dawn Settlement, Ontario. Founded in 1841 by Josiah Henson and other freedom seekers. Its British American Institute anchored a self reliant Black farming community near present day Dresden.",
+  "source": "Ontario Heritage Trust for the 1841 founding and the British American Institute; Wikipedia (Dresden, Ontario) for coordinates."
+ },
+ {
+  "town": "Wilberforce Settlement",
+  "country": "Canada",
+  "lat": 43.1879,
+  "lon": -81.4015,
+  "about": "Wilberforce Settlement, Ontario. Founded in 1829 near present day Lucan by free Black families from Cincinnati, Ohio, fleeing Ohio's Black Laws. One of the first Black settlements in Canada.",
+  "source": "Ontario Heritage Foundation plaque record (via The Clio) and Pier 21 for the 1829 founding; Canadian Geographical Names Data Base for the Lucan coordinates."
+ },
+ {
+  "town": "Curiepe",
+  "country": "Venezuela",
+  "lat": 10.4747,
+  "lon": -66.1697,
+  "about": "Curiepe, Venezuela. Established in 1721 under Captain Juan del Rosario Blanco, the only legally founded town of free Black people in colonial Venezuela.",
+  "source": "Wikipedia (Afro-Venezuelans), Encyclopedia.com, and EveryCulture, citing Rout (1976), for the 1721 free Black founding; coordinates from the same reference."
+ },
+ {
+  "town": "Cahuita",
+  "country": "Costa Rica",
+  "lat": 9.7378,
+  "lon": -82.8404,
+  "about": "Cahuita, Costa Rica. Settled in 1828 by William Smith, an Afro Caribbean turtle fisherman from Panama, and other Afro Caribbean families. The village moved to its present site in 1915.",
+  "source": "Cahuita National Park Site Report (2017), citing IDRC and Palmer, for the 1828 settlement; GeoNames via Falling Rain for coordinates."
+ },
+ {
+  "town": "Bocas Town",
+  "country": "Panama",
+  "lat": 9.3403,
+  "lon": -82.2418,
+  "about": "Bocas Town, Panama. Founded in 1826 by West Indian immigrants on Isla Colon. Afro Caribbean settlers and Jamaican workers built the town and its Creole culture.",
+  "source": "Rough Guides and Island Profiles (University of the Virgin Islands) for the 1826 West Indian founding; Mapcarta (GeoNames) for coordinates."
+ },
+ {
+  "town": "Ivaporunduva",
+  "country": "Brazil",
+  "lat": -24.5644,
+  "lon": -48.3928,
+  "about": "Ivaporunduva, Brazil. The oldest quilombo community in the Ribeira Valley, settled in the early 1800s by free Black people and maroons. Its families still hold the land their ancestors received.",
+  "source": "SciELO study table for the quilombo history and coordinates; additional quilombo scholarship for the land history."
+ },
+ {
+  "town": "Conceicao das Crioulas",
+  "country": "Brazil",
+  "lat": -8.3167,
+  "lon": -38.9333,
+  "about": "Conceicao das Crioulas, Brazil. Founded in 1802 by six Black women who planted cotton, sold the crop, and bought three leagues of land. About 4,000 quilombola descendants live here today.",
+  "source": "Community site, National Geographic quilombos feature, and SciELO for the 1802 founding by six Black women; GeoNames via IndexMundi for coordinates."
+ },
+ {
+  "town": "San Jose de Ure",
+  "country": "Colombia",
+  "lat": 7.7533,
+  "lon": -75.5659,
+  "about": "San Jose de Ure, Colombia. One of Colombia's four recognized palenques, founded by enslaved Africans who freed themselves. Its oral traditions keep the history of revolt alive.",
+  "source": "Minority Rights Group for the recognized palenque status; Mapcarta (GeoNames, Wikidata) for coordinates."
+ },
+ {
+  "town": "Murud-Janjira",
+  "country": "India",
+  "lat": 18.2996,
+  "lon": 72.9644,
+  "about": "Murud-Janjira, India. A sea fortress built in 1567 and ruled for centuries by Siddi kings of African descent. No empire, Mughal, Maratha, Portuguese, or British, ever conquered it. A territory anchor, not a town.",
+  "source": "Wikipedia and academic studies of Janjira Fort for the Siddi ruled state; coordinates from the same reference."
+ },
+ {
+  "town": "Jambur",
+  "country": "India",
+  "lat": 21.1353,
+  "lon": 70.8675,
+  "about": "Jambur, India. A village of Siddi people, descendants of Africans brought to Gujarat centuries ago. One of the few exclusively Siddi settlements in India, near the Gir forest.",
+  "source": "BBC Focus on Africa, The Hindu, and Wikipedia for the Siddi village; coordinates from the same reference."
+ },
+ {
+  "town": "Sirambiadiya",
+  "country": "Sri Lanka",
+  "lat": 8.0509,
+  "lon": 79.8749,
+  "about": "Sirambiadiya, Sri Lanka. Home to Sri Lanka's Kaffir community, descendants of Africans brought by the Portuguese about 500 years ago. Their music and dance keep African roots alive.",
+  "source": "SAARC Culture study and University of Peradeniya research for the Kaffir community; Mapcarta (GeoNames) for coordinates."
+ },
+ {
+  "town": "Village of Peace, Dimona",
+  "country": "Israel",
+  "lat": 31.0708,
+  "lon": 35.0327,
+  "about": "Village of Peace, Dimona, Israel. The African Hebrew Israelites arrived from America in 1969 led by Ben Ammi Ben Israel. About 3,000 members live in this self governing village today.",
+  "source": "Village of Peace official history and reference works for the 1969 arrival and the 1980 village; GeoNames (Dimona) for coordinates."
+ },
+ {
+  "town": "St Pauls, Bristol",
+  "country": "United Kingdom",
+  "lat": 51.466,
+  "lon": -2.5781,
+  "about": "St Pauls, Bristol, England. The Afro Caribbean community built its life here from the 1950s. It led the 1963 Bristol Bus Boycott and founded the St Pauls Carnival in 1968. A district, not a town.",
+  "source": "Historic England and the St Pauls Carnival official history; UK postcode gazetteer point for coordinates."
+ },
+ {
+  "town": "Kampung Afrika, Purworejo",
+  "country": "Indonesia",
+  "lat": -7.7223,
+  "lon": 110.0304,
+  "about": "Kampung Afrika, Purworejo, Indonesia. African soldiers recruited in the Gold Coast served the Dutch army from 1831. Their veteran families founded this Africa Village community in Purworejo. A historic district.",
+  "source": "Peer-reviewed research by Ineke van Kessel (African and Asian Studies, 2007) on the Belanda Hitam settlements; Wikipedia (Purworejo) for coordinates."
  }
 ]
