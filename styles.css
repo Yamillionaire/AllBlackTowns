@@ -215,3 +215,6 @@ html.js [data-rv].in{opacity:1;transform:none}
 .mini-btn:hover{background:var(--gold-soft)}
 .mini-link{font-size:.85rem;color:var(--gold-soft)}
 footer .brand-logo{height:30px;width:30px}
+
+a.town-card{display:block;text-decoration:none;color:inherit;cursor:pointer}
+.town-card .sample-link{display:inline-block;margin-top:10px;color:var(--gold);font-weight:700;font-size:.92rem;letter-spacing:.02em}
