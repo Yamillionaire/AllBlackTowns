@@ -207,7 +207,7 @@ html.js [data-rv].in{opacity:1;transform:none}
 .marker-cluster-small div,.marker-cluster-medium div,.marker-cluster-large div{background:#14161f;color:var(--gold-soft);font-weight:700}
 
 /* Logo watermark + music/education build (2026-10-26) */
-.logo-bg{position:fixed;inset:0;background:url('logo-watermark.png') center / cover no-repeat;opacity:.18;z-index:1;pointer-events:none}
+.logo-bg{position:fixed;inset:0;background:url('logo-watermark.png?v=20261026') center / cover no-repeat;opacity:.18;z-index:1;pointer-events:none}
 .wrap{position:relative;z-index:2}
 .disc{width:52px;height:52px;border-radius:50%;margin-bottom:16px;background:radial-gradient(circle at center,#0e0c09 0 26%,#c9a227 27% 33%,#241f16 34% 100%);border:1px solid var(--line)}
 .song-card .song-actions{margin-top:16px;display:flex;gap:14px;align-items:center}
