@@ -57,6 +57,41 @@ details.inline > summary{cursor:pointer;font-weight:700;color:#e3c76a;list-style
 details.inline > summary::-webkit-details-marker{display:none}
 details.inline > summary::after{content:" +";color:#c9a227}
 details.inline[open] > summary::after{content:" \2212"}
+.chapter[hidden]{display:none}
+.cfu{border:1px solid rgba(201,162,39,.22);border-left:5px solid #c9a227;background:rgba(201,162,39,.07);border-radius:8px;padding:16px 20px 10px;margin:26px 0 8px;color:#f5efe0}
+.cfu h3{font-family:'Playfair Display',serif;font-size:1.25rem;margin:0 0 6px;color:#e3c76a}
+.cfu .cfu-intro{color:#d8cdb4;font-size:.95rem;margin:0 0 6px;line-height:1.55}
+.cfu-q{margin:14px 0 6px}
+.cfu-q .qtext{font-weight:700;margin:0 0 8px;line-height:1.5}
+.cfu .opt{display:block;width:100%;text-align:left;background:rgba(245,239,224,.05);border:1px solid rgba(201,162,39,.35);color:#f5efe0;border-radius:6px;padding:9px 12px;margin:6px 0;font:inherit;font-size:.97rem;line-height:1.45;cursor:pointer}
+.cfu .opt:hover{border-color:#c9a227}
+.cfu .opt.picked-right{border-color:#8fbf6a;background:rgba(143,191,106,.16)}
+.cfu .opt.picked-wrong{border-color:#c96a4a;background:rgba(201,106,74,.13);opacity:.8}
+.cfu .opt[disabled]{cursor:default}
+.cfu .feedback{font-size:.95rem;line-height:1.55;margin:8px 0 2px}
+.cfu .feedback.good{color:#c4e2a6}
+.cfu .feedback.try{color:#eec39b}
+.cfu .done-note{margin:12px 0 6px;padding:10px 14px;border:1px dashed #c9a227;border-radius:6px;color:#e3c76a;font-size:.97rem}
+.cfu-key{display:none}
+.rail a.locked{opacity:.48}
+.rail a .lk{float:right;font-size:.8rem}
+#chapter-sheet a.locked{opacity:.55}
+.chap-nav a.locked{opacity:.5}
+#lock-note{background:rgba(201,162,39,.12);border:1px solid #c9a227;border-radius:8px;color:#f5efe0;padding:12px 16px;margin:0 0 18px;line-height:1.55}
+#teacher-controls{display:none;background:#1a1712;border:1px solid rgba(201,162,39,.22);border-left:5px solid #c9a227;border-radius:8px;padding:16px 22px 12px;margin:0 0 22px;line-height:1.6;color:#f5efe0}
+#teacher-controls h3{margin:0 0 6px;font-family:'Playfair Display',serif;color:#e3c76a}
+#teacher-controls p{color:#d8cdb4;font-size:.95rem;margin:0 0 10px}
+#teacher-controls .row{display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+#teacher-controls label{font-size:.97rem;cursor:pointer}
+#teacher-controls button{background:none;border:1px solid #c9a227;color:#e3c76a;border-radius:6px;padding:7px 14px;font:inherit;font-size:.9rem;cursor:pointer}
+.timeline{border-left:2px solid #c9a227;margin:28px 0 10px 4px;padding:2px 0 2px 22px}
+.timeline h3{font-family:'Playfair Display',serif;color:#e3c76a;font-size:1.25rem;margin:0 0 14px}
+.tl-item{position:relative;margin:0 0 13px;line-height:1.5}
+.tl-item::before{content:"";position:absolute;left:-27.5px;top:7px;width:9px;height:9px;border-radius:50%;background:#c9a227}
+.tl-year{font-family:'Playfair Display',serif;font-weight:700;color:#e3c76a;margin-right:9px}
+.tl-text{color:#f5efe0;font-size:.98rem}
+.orient .map-link{margin-top:12px}
+.orient .map-link a{color:#e3c76a;font-weight:600}
 @media (max-width:900px){
   .layout{grid-template-columns:1fr}
   .rail{display:none}
@@ -69,6 +104,10 @@ details.inline[open] > summary::after{content:" \2212"}
 @media print{
   #progress-bar,.rail,#chapter-bar,#chapter-sheet,.orient .fork,.recall,.chap-nav,.backlink,nav,footer{display:none !important}
   .layout{grid-template-columns:1fr}
+  .chapter[hidden]{display:block !important}
+  #lock-note,#teacher-controls,.cfu .feedback{display:none !important}
+  .cfu-key{display:block !important}
+  .cfu .opt{display:block;width:100%;background:none;border:0;color:#000;text-align:left;padding:2px 0}
 }
 </style>
 </head>
@@ -91,7 +130,8 @@ details.inline[open] > summary::after{content:" \2212"}
 <div id="progress-bar"></div>
 <h2 class="section-title">Nicodemus, Kansas - Town Dossier</h2>
 <div class="beta-banner"><strong>Free beta sample.</strong> This is the complete Nicodemus, Kansas dossier, one of the five pilot dossiers published free as samples for the All Black Towns curriculum beta.</div>
-<div class="orient"><div class="meta">About 30 min read &middot; 10 chapters &middot; Free beta sample</div><p>This dossier follows Nicodemus, Kansas in order: how it was founded, how it was built, its peak years, the turning point, and the town today, ending with its song and the primary sources behind the record. Read it straight through, or jump by chapter.</p><div class="fork"><a href="#ch1">Start reading</a><button type="button" class="ghost" onclick="window.print()">Print / save PDF</button></div><div id="resume-chip"></div></div>
+<div class="orient"><div class="meta">About 30 min read &middot; 10 chapters &middot; Free beta sample</div><p>This dossier follows Nicodemus, Kansas in order: how it was founded, how it was built, its peak years, the turning point, and the town today, ending with its song and the primary sources behind the record. Work through it one chapter at a time: a short check for understanding at the end of each chapter unlocks the next, and the contents rail maps where you are.</p><div class="fork"><a href="#intro">Start reading</a><button type="button" id="teach-btn">Teach this town</button><button type="button" class="ghost" onclick="window.print()">Print / save PDF</button></div><p class="map-link"><a href="../map.html">Find Nicodemus on the map</a></p><div id="resume-chip"></div></div>
+<div id="teacher-controls"><h3>Teacher controls</h3><p>For classroom use on this device. Unlocking opens every chapter for this reader; resetting clears the saved progress and check-for-understanding answers stored on this device.</p><div class="row"><label><input type="checkbox" id="unlock-all"> Unlock all chapters (teacher)</label><button type="button" id="reset-progress">Reset progress</button></div></div>
 <div class="facts"><h2>Key Facts Box</h2>
 <ul>
 <li>Founded: 1877. The Nicodemus Town Company was organized in April 1877; the first settler is reported to have arrived June 18, 1877, and the main recruited party from Kentucky arrived in September 1877 (NPS park brochure; BlackPast; town histories summarized in Section 9).</li>
@@ -102,6 +142,7 @@ details.inline[open] > summary::after{content:" \2212"}
 <li>Known for: the oldest and only remaining Black town west of the Mississippi River founded by formerly enslaved settlers in the Reconstruction era; an Exoduster colony that predates and helped inspire the 1879 Exoduster migration; the Emancipation and Homecoming Celebration held since 1878; a National Historic Site preserving five historic buildings.</li>
 <li>The song: "Nicodemus, Kansas" (see Section 7).</li>
 </ul></div>
+<div id="lock-note" style="display:none"></div>
 <div id="chapter-bar"><span id="chapter-bar-label">Introduction</span><button type="button" id="chapter-sheet-btn">Contents</button></div><div id="chapter-sheet"><a href="#intro">Introduction</a><a href="#ch1">1. Founding</a><a href="#ch2">2. Building the Town</a><a href="#ch3">3. Peak Years</a><a href="#ch4">4. The Turning Point</a><a href="#ch5">5. Survival, Decline, or Destruction</a><a href="#ch6">6. The Town Today</a><a href="#ch7">7. The Song</a><a href="#ch8">8. Primary Sources</a><a href="#ch9">9. Sources and Bibliography</a></div>
 <div class="layout"><aside class="rail"><h4>Chapters</h4><a href="#intro" data-ch="intro"><span class="tick"></span>Introduction</a><a href="#ch1" data-ch="ch1"><span class="tick"></span>1. Founding</a><a href="#ch2" data-ch="ch2"><span class="tick"></span>2. Building the Town</a><a href="#ch3" data-ch="ch3"><span class="tick"></span>3. Peak Years</a><a href="#ch4" data-ch="ch4"><span class="tick"></span>4. The Turning Point</a><a href="#ch5" data-ch="ch5"><span class="tick"></span>5. Survival, Decline, or Destruction</a><a href="#ch6" data-ch="ch6"><span class="tick"></span>6. The Town Today</a><a href="#ch7" data-ch="ch7"><span class="tick"></span>7. The Song</a><a href="#ch8" data-ch="ch8"><span class="tick"></span>8. Primary Sources</a><a href="#ch9" data-ch="ch9"><span class="tick"></span>9. Sources and Bibliography</a><div class="rail-tools"><button type="button" id="expand-all">Expand all sections</button></div></aside><div class="dossier"><section class="chapter" id="intro" data-label="Introduction"><h2>Introduction</h2>
 <ul>
@@ -109,13 +150,13 @@ details.inline[open] > summary::after{content:" \2212"}
 <li>County: Graham County</li>
 <li>Status: still inhabited, unincorporated community and census-designated place (CDP) in northwestern Kansas, on the Solomon River. Never incorporated as a municipality; civil government is Nicodemus Township. The townsite is the Nicodemus National Historic Site (National Park Service, established 1996) and a National Historic Landmark district (1976).</li>
 <li>Dossier version: pilot draft v0.1, 2026-10-26</li>
-</ul><div class="chap-nav"><span></span><a href="#ch1">Next: 1. Founding &rarr;</a></div></section>
+</ul><div class="cfu" data-chapter="intro"><h3>Check for understanding</h3><p class="cfu-intro">Answer every question correctly to unlock the next chapter. A wrong answer is fine: re-read the chapter and try again.</p><div class="cfu-q" data-q="0"><p class="qtext">How is Nicodemus governed today?</p><button type="button" class="opt" data-o="0">By a mayor and town council, like Eatonville</button><button type="button" class="opt" data-o="1">It was never incorporated; it is an unincorporated community governed through Nicodemus Township in Graham County, and the townsite is a National Historic Site</button><button type="button" class="opt" data-o="2">Directly by the National Park Service</button><button type="button" class="opt" data-o="3">It is not governed; the site is abandoned</button><p class="feedback" hidden></p></div><div class="done-note" hidden></div><div class="cfu-key"><h4>Answer key</h4><ol><li><strong>How is Nicodemus governed today?</strong> Correct answer: It was never incorporated; it is an unincorporated community governed through Nicodemus Township in Graham County, and the townsite is a National Historic Site. The header carries the never-incorporated fact plainly: township government, a resident community, and a National Historic Site established in November 1996.</li></ol></div></div><div class="chap-nav"><span></span><a href="#ch1">Next: 1. Founding &rarr;</a></div></section>
 <section class="chapter" id="ch1" data-label="1. Founding"><h2>1. Founding</h2>
 <p>Nicodemus was a planned colony, not an accident of migration. As Reconstruction collapsed in the South, a group of Black men from Lexington, Kentucky, together with a white land promoter, organized the Nicodemus Town Company in April 1877 to found an all-Black town on the Kansas plains, where Black settlers could own land, vote, and govern themselves (NPS; BlackPast). W. H. Smith, a Black minister who had already homesteaded in the area, served as company president; W. R. Hill, a white land developer from Indiana, served as treasurer (town histories via Legends of America; Kansas City Public Library). The company platted a townsite in the Solomon Valley of Graham County, in northwestern Kansas, and recruited settlers in Kentucky and Tennessee with circulars and church visits; the Reverend Simon P. Roundtree recruited in Kentucky, and Benjamin "Pap" Singleton, the Nashville organizer later called the Moses of the Colored Exodus, also distributed the company's circulars (Legends of America, summarizing the standard histories).</p>
 <p>The name carried the founding argument. The founders named the town for Nicodemus, remembered in Black tradition as a legendary African slave prince who purchased his freedom (BlackPast; Encyclopedia.com), and Angela Bates, the town historian and a descendant, adds the biblical Nicodemus and the plantation song line "Wake Nicodemus" for the day of Jubilee as the name's other roots (Kansas City Public Library). Both derivations circulate; see conflict 2.</p>
 <p>Settlement came in stages, and the sources do not agree on the numbers (conflict 3). Roundtree is reported as the first settler, arriving June 18, 1877 (town histories). Zachary T. Fletcher and his wife Jenny Smith Fletcher, the Reverend Smith's daughter, arrived in July 1877; Fletcher became company secretary, then the town's first postmaster and its first entrepreneur (BlackPast; town histories). One encyclopedia account counts the first thirty colonists in July 1877 and 150 more in March 1878 (Encyclopedia.com). The National Park Service brochure gives the main arrival as some 300 settlers recruited from Kentucky in September 1877, and records that sixty of them, shaken by the dugout dwellings, returned to Kentucky immediately (NPS park brochure).</p>
 <p>What the September party found was a plat on paper and a prairie in fact: no houses, no trees, no shade, only tall grass (NPS-derived family guide). Families wintered in dugouts, pits dug into the earth and roofed over, along the Solomon River draws. Williana Hickman, who arrived with her husband the Reverend Daniel Hickman in the spring of 1878, remembered being told the smoke rising from the ground was Nicodemus, and crying at the sight (her later account, quoted in town histories). Settlers took up homestead claims of 160 acres around the townsite under the Homestead Act of 1862 while the company sold town lots; the legal title to the townsite itself was later challenged by land speculator Henry Miller, and the town received its official title on June 6, 1886 (Wikipedia history summary; flagged in Section 9 as needing a primary-source check).</p>
-<p>The first winter nearly broke the colony. Through the winter of 1878-79 the settlers depended in part on relief supplies solicited by agents such as the Reverend Silas M. Lee, shipped free by the Kansas Pacific railroad and issued from a commissary by town officers; in April 1879 the Nicodemus Town Company was abolished and each man left to, in the period phrase, hoe his own row (Kansas Historical Society digital collections, historical article on the colony). The town survived the aid winter, and its timing mattered: Nicodemus was founded in 1877, two years before the great Exoduster migration of 1879, and its circulars and example helped draw that later wave toward Kansas (Kansas Historical Society, Kansapedia; Kansas City Public Library).</p><div class="recall"><strong>Quick recall.</strong> Before you move on, say it back without scrolling up: which people, places, or decisions from this chapter matter most, and why? Then glance back and check yourself.</div><div class="chap-nav"><a href="#intro">&larr; Introduction</a><a href="#ch2">Next: 2. Building the Town &rarr;</a></div></section>
+<p>The first winter nearly broke the colony. Through the winter of 1878-79 the settlers depended in part on relief supplies solicited by agents such as the Reverend Silas M. Lee, shipped free by the Kansas Pacific railroad and issued from a commissary by town officers; in April 1879 the Nicodemus Town Company was abolished and each man left to, in the period phrase, hoe his own row (Kansas Historical Society digital collections, historical article on the colony). The town survived the aid winter, and its timing mattered: Nicodemus was founded in 1877, two years before the great Exoduster migration of 1879, and its circulars and example helped draw that later wave toward Kansas (Kansas Historical Society, Kansapedia; Kansas City Public Library).</p><div class="recall"><strong>Quick recall.</strong> Before you move on, say it back without scrolling up: which people, places, or decisions from this chapter matter most, and why? Then glance back and check yourself.</div><div class="cfu" data-chapter="ch1"><h3>Check for understanding</h3><p class="cfu-intro">Answer every question correctly to unlock the next chapter. A wrong answer is fine: re-read the chapter and try again.</p><div class="cfu-q" data-q="0"><p class="qtext">Why was the Nicodemus Town Company organized in April 1877?</p><button type="button" class="opt" data-o="0">To build a railroad station for the Kansas Pacific</button><button type="button" class="opt" data-o="1">So Black settlers, mostly from Kentucky, could own land, vote, and govern themselves at the moment Reconstruction was collapsing</button><button type="button" class="opt" data-o="2">To recruit labor for Graham County wheat farms</button><button type="button" class="opt" data-o="3">To found a college on the plains</button><p class="feedback" hidden></p></div><div class="cfu-q" data-q="1"><p class="qtext">What did the main Kentucky party find when it arrived in September 1877?</p><button type="button" class="opt" data-o="0">A built town with a hotel and stores</button><button type="button" class="opt" data-o="1">A paper plat and open prairie: no houses, no trees; families wintered in dugouts, and about sixty of some three hundred settlers returned to Kentucky at once</button><button type="button" class="opt" data-o="2">A railroad depot and a stocked warehouse</button><button type="button" class="opt" data-o="3">A fortified settlement of sod houses</button><p class="feedback" hidden></p></div><div class="done-note" hidden></div><div class="cfu-key"><h4>Answer key</h4><ol><li><strong>Why was the Nicodemus Town Company organized in April 1877?</strong> Correct answer: So Black settlers, mostly from Kentucky, could own land, vote, and govern themselves at the moment Reconstruction was collapsing. The chapter ties the founding to the end of Reconstruction: the company, led by the Reverend W. H. Smith and Benjamin Carr, offered land ownership and self-government in Kansas.</li><li><strong>What did the main Kentucky party find when it arrived in September 1877?</strong> Correct answer: A paper plat and open prairie: no houses, no trees; families wintered in dugouts, and about sixty of some three hundred settlers returned to Kentucky at once. The chapter records the gap between promotion and fact: a surveyed townsite on treeless prairie, a winter of dugouts, and roughly a fifth of the party turning back.</li></ol></div></div><div class="chap-nav"><a href="#intro">&larr; Introduction</a><a href="#ch2">Next: 2. Building the Town &rarr;</a></div></section>
 <section class="chapter" id="ch2" data-label="2. Building the Town"><h2>2. Building the Town</h2>
 <p>Government came early and ran through county and township offices, because Nicodemus was never incorporated. Graham County was organized on April 1, 1880, when Governor John P. St. John proclaimed its organization and appointed Nicodemus resident Edwin P. McCabe temporary county clerk (Erbschloe chronology, drawn from the NPS historic resource study). In the June 1, 1880 county election, John DePrad of Nicodemus was elected county clerk, and other Black residents won township offices including justice of the peace, township clerk, and road overseer (Erbschloe chronology). In 1880 Nicodemus also lost the vote for county seat to Millbrook (Wikipedia history summary). McCabe, who had arrived in 1878 and worked as a land agent and attorney, was elected county clerk in November 1881 and then, in 1882, was elected state auditor of Kansas, at the time the highest elective office held by a Black man outside the South (BlackPast; Encyclopedia.com).</p>
 <p>Institutions, in a dated spine:</p>
@@ -129,15 +170,15 @@ details.inline[open] > summary::after{content:" \2212"}
 <li>May 13, 1886: the Western Cyclone, the town's first newspaper, publishes its first issue under editor Arthur G. Tallman (Annals of Kansas, 1886; Erbschloe chronology). A second paper, the Nicodemus Enterprise, follows in 1887 (BlackPast; Encyclopedia.com).</li>
 <li>1887: the Bank of Nicodemus opens under A. L. McPherson (Erbschloe chronology). A freestanding School District No. 1 schoolhouse is erected in 1887, with two teachers employed for a nine-month term (Erbschloe chronology; HistoryNet).</li>
 </ul>
-<p>The economy was farming first and town commerce second. The 1881 township statistics in the NPS-drawn chronology count an average of 12 acres per homestead in cultivation, with corn, millet, and sorghum as the listed crops, and livestock in modest numbers (Erbschloe chronology). R. B. Scruggs, an early colonist who freighted wagons to Stockton and worked railroad towns across western Kansas, built his holding to 720 acres over time, an example the colony's historians used of how Nicodemus men combined wage work off the claim with proving up their own land (Kansas Historical Society digital collections).</p><div class="recall"><strong>Quick recall.</strong> Before you move on, say it back without scrolling up: which people, places, or decisions from this chapter matter most, and why? Then glance back and check yourself.</div><div class="chap-nav"><a href="#ch1">&larr; 1. Founding</a><a href="#ch3">Next: 3. Peak Years &rarr;</a></div></section>
+<p>The economy was farming first and town commerce second. The 1881 township statistics in the NPS-drawn chronology count an average of 12 acres per homestead in cultivation, with corn, millet, and sorghum as the listed crops, and livestock in modest numbers (Erbschloe chronology). R. B. Scruggs, an early colonist who freighted wagons to Stockton and worked railroad towns across western Kansas, built his holding to 720 acres over time, an example the colony's historians used of how Nicodemus men combined wage work off the claim with proving up their own land (Kansas Historical Society digital collections).</p><div class="timeline"><h3>Timeline: the story at a glance</h3><div class="tl-item"><span class="tl-year">1877</span><span class="tl-text">The Nicodemus Town Company is organized in April; settlers arrive from June, the main Kentucky party in September</span></div><div class="tl-item"><span class="tl-year">1878</span><span class="tl-text">First Emancipation Day celebration on August 1; the post office opens with Z. T. Fletcher as first postmaster</span></div><div class="tl-item"><span class="tl-year">1879</span><span class="tl-text">The Town Company is abolished in April; the Exoduster migration follows</span></div><div class="tl-item"><span class="tl-year">1880</span><span class="tl-text">Graham County is organized (April 1) with John DePrad as county clerk</span></div><div class="tl-item"><span class="tl-year">1882</span><span class="tl-text">Edward P. McCabe is elected Kansas state auditor</span></div><div class="tl-item"><span class="tl-year">1886</span><span class="tl-text">The Western Cyclone publishes its first issue (May 13); the town receives title to its site (June 6); an Emancipation crowd of 4,000 to 5,000 is reported</span></div><div class="tl-item"><span class="tl-year">1887</span><span class="tl-text">The Bank of Nicodemus is established and the stone schoolhouse (District No. 1) is built</span></div><div class="tl-item"><span class="tl-year">1888</span><span class="tl-text">The Union Pacific builds through Bogue, miles south, and the railroad bypass becomes final</span></div><div class="tl-item"><span class="tl-year">1935</span><span class="tl-text">The Dust Bowl reaches the plains settlements</span></div><div class="tl-item"><span class="tl-year">1953</span><span class="tl-text">The Nicodemus post office is discontinued</span></div><div class="tl-item"><span class="tl-year">1976</span><span class="tl-text">The Nicodemus Historic District is designated a National Historic Landmark</span></div><div class="tl-item"><span class="tl-year">1988</span><span class="tl-text">Angela Bates founds the Nicodemus Historical Society</span></div><div class="tl-item"><span class="tl-year">1996</span><span class="tl-text">Congress establishes Nicodemus National Historic Site (November), preserving the five structures</span></div></div><div class="recall"><strong>Quick recall.</strong> Before you move on, say it back without scrolling up: which people, places, or decisions from this chapter matter most, and why? Then glance back and check yourself.</div><div class="cfu" data-chapter="ch2"><h3>Check for understanding</h3><p class="cfu-intro">Answer every question correctly to unlock the next chapter. A wrong answer is fine: re-read the chapter and try again.</p><div class="cfu-q" data-q="0"><p class="qtext">What did Edward P. McCabe's 1882 election say about Nicodemus at its strongest?</p><button type="button" class="opt" data-o="0">He became the town's first mayor</button><button type="button" class="opt" data-o="1">He was elected Kansas state auditor, the highest elective office then held by a Black man in any state outside the South</button><button type="button" class="opt" data-o="2">He was appointed postmaster by the governor</button><button type="button" class="opt" data-o="3">He won a seat in the U.S. Congress</button><p class="feedback" hidden></p></div><div class="cfu-q" data-q="1"><p class="qtext">Why does August 1, 1878 matter in Nicodemus?</p><button type="button" class="opt" data-o="0">The town company was abolished that day</button><button type="button" class="opt" data-o="1">The first Emancipation Day celebration was held then, an observance the community has carried every year since (today's Homecoming)</button><button type="button" class="opt" data-o="2">The railroad arrived that day</button><button type="button" class="opt" data-o="3">Graham County was organized that day</button><p class="feedback" hidden></p></div><div class="done-note" hidden></div><div class="cfu-key"><h4>Answer key</h4><ol><li><strong>What did Edward P. McCabe's 1882 election say about Nicodemus at its strongest?</strong> Correct answer: He was elected Kansas state auditor, the highest elective office then held by a Black man in any state outside the South. The political spine runs from John Niles in 1877 to McCabe's 1882 state auditor win, alongside the township offices and DePrad's county clerkship.</li><li><strong>Why does August 1, 1878 matter in Nicodemus?</strong> Correct answer: The first Emancipation Day celebration was held then, an observance the community has carried every year since (today's Homecoming). Emancipation Day began August 1, 1878, the same summer the post office opened; the chapter calls it the community institution rather than a town business.</li></ol></div></div><div class="chap-nav"><a href="#ch1">&larr; 1. Founding</a><a href="#ch3">Next: 3. Peak Years &rarr;</a></div></section>
 <section class="chapter" id="ch3" data-label="3. Peak Years"><h2>3. Peak Years</h2>
 <p>The peak runs from about 1886 through the first decade of the 1900s (University of Kansas Libraries: the town reached its most prosperous years by 1886 with the maturation of area agriculture). By 1886 Nicodemus had two newspapers, a bank, a drugstore, a schoolhouse, three churches, three general stores in the NPS brochure's count, small hotels, an ice cream parlor, and a livery (BlackPast; NPS park brochure; Trust for Public Land). The town billed itself in promotion as "the Largest Colored Colony in America" (as carried in town history accounts).</p>
 <p>The August 1 Emancipation celebration was the peak made visible: on August 1, 1886, a reported four to five thousand people descended on Nicodemus for the barbecue and watermelon feast, with visitors from across Kansas and from Oklahoma and Missouri (community history document hosted by the Nicodemus Historical Society; the figure is reported, not independently verified, and is flagged in Section 9).</p>
 <p>Population at the peak is the dossier's least settled number, because the counts mix townsite, township, and county and disagree with each other (conflicts 4 and 5). The February 1880 Kansas census counted 700 Black residents in Graham County, about 20 percent of the county; the June 1880 federal census counted 484 Black residents in the county, 260 of them in Nicodemus Township (Erbschloe chronology, noting the two reports conflict). A standard encyclopedia gives 258 Black and 58 white residents in the town and surrounding township by 1880, and about 600 residents in the farming community in the first decade of the 1900s (Encyclopedia.com; Contemporary Black Biography entry). The University of Kansas Libraries summary reports the population peaked in 1910 at 595 by the federal census; a park guide instead gives 400 in 1910 (KU Libraries; parkrangerjohn park guide). The dossier therefore carries peak population as NOT ESTABLISHED rather than choosing among incompatible geographies.</p>
-<p>Veryl Switzer belongs to the town's later fame but his roots are in the peak-era farm families: born in Nicodemus in 1932, he became an All-American halfback at Kansas State and was picked fourth overall by the Green Bay Packers in the 1954 NFL draft, played two seasons, served in the Air Force, and returned to farm the land his family had held for generations (NPS-derived family guide).</p><div class="recall"><strong>Quick recall.</strong> Before you move on, say it back without scrolling up: which people, places, or decisions from this chapter matter most, and why? Then glance back and check yourself.</div><div class="chap-nav"><a href="#ch2">&larr; 2. Building the Town</a><a href="#ch4">Next: 4. The Turning Point &rarr;</a></div></section>
+<p>Veryl Switzer belongs to the town's later fame but his roots are in the peak-era farm families: born in Nicodemus in 1932, he became an All-American halfback at Kansas State and was picked fourth overall by the Green Bay Packers in the 1954 NFL draft, played two seasons, served in the Air Force, and returned to farm the land his family had held for generations (NPS-derived family guide).</p><div class="recall"><strong>Quick recall.</strong> Before you move on, say it back without scrolling up: which people, places, or decisions from this chapter matter most, and why? Then glance back and check yourself.</div><div class="cfu" data-chapter="ch3"><h3>Check for understanding</h3><p class="cfu-intro">Answer every question correctly to unlock the next chapter. A wrong answer is fine: re-read the chapter and try again.</p><div class="cfu-q" data-q="0"><p class="qtext">Why does the dossier refuse to print a single peak population for Nicodemus?</p><button type="button" class="opt" data-o="0">No census was ever taken in Kansas</button><button type="button" class="opt" data-o="1">The surviving counts measure different things (townsite, township, and county) and still conflict, 700 reported for 1880 against a census reading of 484 in the county and 260 in the township, so the peak population is carried as NOT ESTABLISHED</button><button type="button" class="opt" data-o="2">The records were destroyed in the Dust Bowl</button><button type="button" class="opt" data-o="3">The town company hid the figures from recruiters</button><p class="feedback" hidden></p></div><div class="cfu-q" data-q="1"><p class="qtext">When does the chapter place Nicodemus's peak era?</p><button type="button" class="opt" data-o="0">1877 to 1879, the founding winters</button><button type="button" class="opt" data-o="1">Roughly 1886 through the first decade of the 1900s</button><button type="button" class="opt" data-o="2">The Dust Bowl years</button><button type="button" class="opt" data-o="3">After the 1996 historic site designation</button><p class="feedback" hidden></p></div><div class="done-note" hidden></div><div class="cfu-key"><h4>Answer key</h4><ol><li><strong>Why does the dossier refuse to print a single peak population for Nicodemus?</strong> Correct answer: The surviving counts measure different things (townsite, township, and county) and still conflict, 700 reported for 1880 against a census reading of 484 in the county and 260 in the township, so the peak population is carried as NOT ESTABLISHED. Conflict 1 in Section 9 is the stated reason: the numbers rest on different units and different political incentives, so the dossier carries no single peak figure.</li><li><strong>When does the chapter place Nicodemus's peak era?</strong> Correct answer: Roughly 1886 through the first decade of the 1900s. The chapter dates the fullest documented life, two newspapers, the bank, the stone schoolhouse, to the mid-1880s through the 1900s, before the bypass drained the trade.</li></ol></div></div><div class="chap-nav"><a href="#ch2">&larr; 2. Building the Town</a><a href="#ch4">Next: 4. The Turning Point &rarr;</a></div></section>
 <section class="chapter" id="ch4" data-label="4. The Turning Point"><h2>4. The Turning Point</h2>
 <p>The turning point was a railroad decision, and it was about money, not a single act of exclusion, which makes it more instructive, not less. Lasting prosperity on the Great Plains depended on a rail line (NPS park brochure). Nicodemus campaigned hard: the town voted $16,000 in bonds to attract a line, and courted three companies, the Missouri Pacific, the Union Pacific, and the Santa Fe (NPS-derived family guide; Wikipedia history summary). The effort failed on terms. A community history account puts it plainly: the Missouri Pacific did not come because the people could not raise the necessary funds to grade the difficult terrain the town sat on (community history document). In 1888 the Union Pacific built its line through Bogue, several miles south of Nicodemus (University of Kansas Libraries; NPS park brochure: "the nearest railroad ran several miles south").</p>
-<p>The damage compounded earlier blows. An 1885 blizzard had destroyed 40 percent of the wheat crop and prompted a first exodus from the area (Encyclopedia.com). Poor harvests through the 1880s had already thinned the townsite; one history notes that by 1884 less than 50 people remained in the town itself, though the surrounding farm families persisted and the town's booster campaign of 1886 revived the townsite (Wikipedia history summary). After 1888, businesses moved toward the rail towns and the townsite population drained away, while Black farm families stayed on the surrounding township land, so Nicodemus became a community of primarily Black farm families centered on a shrinking townsite (NPS). At the end of the decade, Oklahoma Territory opened as a competing draw and pulled prospective Black homesteaders away from Kansas (Encyclopedia.com).</p><div class="recall"><strong>Quick recall.</strong> Before you move on, say it back without scrolling up: which people, places, or decisions from this chapter matter most, and why? Then glance back and check yourself.</div><div class="chap-nav"><a href="#ch3">&larr; 3. Peak Years</a><a href="#ch5">Next: 5. Survival, Decline, or Destruction &rarr;</a></div></section>
+<p>The damage compounded earlier blows. An 1885 blizzard had destroyed 40 percent of the wheat crop and prompted a first exodus from the area (Encyclopedia.com). Poor harvests through the 1880s had already thinned the townsite; one history notes that by 1884 less than 50 people remained in the town itself, though the surrounding farm families persisted and the town's booster campaign of 1886 revived the townsite (Wikipedia history summary). After 1888, businesses moved toward the rail towns and the townsite population drained away, while Black farm families stayed on the surrounding township land, so Nicodemus became a community of primarily Black farm families centered on a shrinking townsite (NPS). At the end of the decade, Oklahoma Territory opened as a competing draw and pulled prospective Black homesteaders away from Kansas (Encyclopedia.com).</p><div class="recall"><strong>Quick recall.</strong> Before you move on, say it back without scrolling up: which people, places, or decisions from this chapter matter most, and why? Then glance back and check yourself.</div><div class="cfu" data-chapter="ch4"><h3>Check for understanding</h3><p class="cfu-intro">Answer every question correctly to unlock the next chapter. A wrong answer is fine: re-read the chapter and try again.</p><div class="cfu-q" data-q="0"><p class="qtext">Why was the railroad bypass of 1888 important in causing Nicodemus's decline?</p><button type="button" class="opt" data-o="0">The town refused a depot on principle and trade simply followed the refusal</button><button type="button" class="opt" data-o="1">Plains prosperity ran on rail access: the town voted $16,000 in bonds and courted three companies, but the Union Pacific built through Bogue instead, and businesses and the county's trade drained to the rail towns</button><button type="button" class="opt" data-o="2">The bypass happened after the town had already emptied</button><button type="button" class="opt" data-o="3">The railroad arrived but refused to stop for freight</button><p class="feedback" hidden></p></div><div class="cfu-q" data-q="1"><p class="qtext">What earlier blow had already thinned the settler base before the bypass?</p><button type="button" class="opt" data-o="0">The post office closure</button><button type="button" class="opt" data-o="1">The winter blizzard of 1885 destroyed about 40 percent of the wheat crop and started an exodus by settlers who had arrived expecting more</button><button type="button" class="opt" data-o="2">The abolition of the Town Company</button><button type="button" class="opt" data-o="3">A tornado destroyed the schoolhouse</button><p class="feedback" hidden></p></div><div class="done-note" hidden></div><div class="cfu-key"><h4>Answer key</h4><ol><li><strong>Why was the railroad bypass of 1888 important in causing Nicodemus's decline?</strong> Correct answer: Plains prosperity ran on rail access: the town voted $16,000 in bonds and courted three companies, but the Union Pacific built through Bogue instead, and businesses and the county's trade drained to the rail towns. The chapter is explicit that the failure was not effort: bonds were voted and companies courted, and when the line ran through Bogue in 1888 the commercial future moved with it.</li><li><strong>What earlier blow had already thinned the settler base before the bypass?</strong> Correct answer: The winter blizzard of 1885 destroyed about 40 percent of the wheat crop and started an exodus by settlers who had arrived expecting more. The chapter pairs the two blows: the 1885 blizzard began the defections, and the 1888 bypass made the decline permanent.</li></ol></div></div><div class="chap-nav"><a href="#ch3">&larr; 3. Peak Years</a><a href="#ch5">Next: 5. Survival, Decline, or Destruction &rarr;</a></div></section>
 <section class="chapter" id="ch5" data-label="5. Survival, Decline, or Destruction"><h2>5. Survival, Decline, or Destruction</h2>
 <p>Nicodemus declined for a century and was never destroyed, and the record of the decline is specific:</p>
 <ul>
@@ -150,7 +191,7 @@ details.inline[open] > summary::after{content:" \2212"}
 <li>1988: Angela Bates, a descendant of the 1877 settlers, founds the Nicodemus Historical Society and begins collecting photographs and documents from descendants nationwide, later placing the collection with the University of Kansas Spencer Research Library (Bates's own accounts: Daily Yonder; Humanities Kansas; the founding year is disputed, see conflict 9). Bates had been handed what she calls the preservation baton by her cousin Veryl Switzer (Daily Yonder).</li>
 <li>1996: after six years of work by Bates, the Historical Society, the community, and Senators Robert Dole and Pat Roberts with the National Park Service, Congress establishes Nicodemus National Historic Site in November 1996 (NPS; Northeastern University Impact Engines profile of the Historical Society). The site preserves five structures: the St. Francis Hotel, the African Methodist Episcopal Church, the First Baptist Church, the Nicodemus School District No. 1 building, and Nicodemus Township Hall (NPS).</li>
 <li>2024: Bates retires after decades as the Historical Society's founding president and executive director (Great Bend Tribune).</li>
-</ul><div class="recall"><strong>Quick recall.</strong> Before you move on, say it back without scrolling up: which people, places, or decisions from this chapter matter most, and why? Then glance back and check yourself.</div><div class="chap-nav"><a href="#ch4">&larr; 4. The Turning Point</a><a href="#ch6">Next: 6. The Town Today &rarr;</a></div></section>
+</ul><div class="recall"><strong>Quick recall.</strong> Before you move on, say it back without scrolling up: which people, places, or decisions from this chapter matter most, and why? Then glance back and check yourself.</div><div class="cfu" data-chapter="ch5"><h3>Check for understanding</h3><p class="cfu-intro">Answer every question correctly to unlock the next chapter. A wrong answer is fine: re-read the chapter and try again.</p><div class="cfu-q" data-q="0"><p class="qtext">What did Angela Bates's six years of work produce in November 1996?</p><button type="button" class="opt" data-o="0">A rebuilt railroad spur to Bogue</button><button type="button" class="opt" data-o="1">Congress established Nicodemus National Historic Site, protecting the townsite and its five structures as a unit of the National Park System</button><button type="button" class="opt" data-o="2">Reincorporation of the town</button><button type="button" class="opt" data-o="3">A state park at the townsite</button><p class="feedback" hidden></p></div><div class="cfu-q" data-q="1"><p class="qtext">When and why did the Nicodemus post office close?</p><button type="button" class="opt" data-o="0">It closed in 1888 when the railroad bypassed the town</button><button type="button" class="opt" data-o="1">It was discontinued in 1953, an economic decision from Washington that the chapter treats as a later chapter of the same decline</button><button type="button" class="opt" data-o="2">It never closed; it still operates daily</button><button type="button" class="opt" data-o="3">It closed when the Bank of Nicodemus failed</button><p class="feedback" hidden></p></div><div class="done-note" hidden></div><div class="cfu-key"><h4>Answer key</h4><ol><li><strong>What did Angela Bates's six years of work produce in November 1996?</strong> Correct answer: Congress established Nicodemus National Historic Site, protecting the townsite and its five structures as a unit of the National Park System. The chapter dates the designation campaign from Bates's 1988 Historical Society to the November 1996 act of Congress, the institutional form survival takes for an unincorporated town.</li><li><strong>When and why did the Nicodemus post office close?</strong> Correct answer: It was discontinued in 1953, an economic decision from Washington that the chapter treats as a later chapter of the same decline. The post office that opened in 1878 was discontinued in 1953; the chapter names the closure a bookend of decline, not a founding-era event.</li></ol></div></div><div class="chap-nav"><a href="#ch4">&larr; 4. The Turning Point</a><a href="#ch6">Next: 6. The Town Today &rarr;</a></div></section>
 <section class="chapter" id="ch6" data-label="6. The Town Today"><h2>6. The Town Today</h2>
 <p>A visitor today finds a living community of 14 residents in the CDP (2020 census), descendants of the original settlers among them (NPS; Wikipedia census citation), inside a township of 43 (2020 census). The National Park Service and the residents work together to preserve the five historic structures (NPS park brochure), which NPS interpretation maps to the town's five pillars: the A. M. E. Church (religion), the St. Francis Hotel and Switzer Residence (commerce), School District No. 1 (education), Township Hall (community), and the First Baptist Church (family) (NPS interpretation, summarized in site accounts). The visitor center operates from Township Hall (HistoryNet; Trust for Public Land). The five buildings, as dated by NPS and site histories:</p>
 <ul>
@@ -160,7 +201,7 @@ details.inline[open] > summary::after{content:" \2212"}
 <li>Nicodemus School District No. 1 building: built 1918, replacing the 1887 freestanding schoolhouse (HistoryNet; NPS).</li>
 <li>Nicodemus Township Hall: built 1939, limestone, WPA-assisted; now the visitor center (HistoryNet; NPS).</li>
 </ul>
-<p>The keeping organizations: the Nicodemus Historical Society (museum and archives; collection at the University of Kansas Spencer Research Library, https://digital.lib.ku.edu/ku-nicodemus/root), the National Park Service (https://home.nps.gov/places/nicodemus-national-historic-site.htm, park phone (785) 839-4233 per the project's outreach plan), and the township's own residents and descendants. The anchor event is the Emancipation and Homecoming Celebration, held the last weekend of July every year since 1878 by the community's account (project outreach plan; HistoryNet), drawing descendants and former residents from across the country; the 2027 celebration will be billed as the 149th annual (project outreach plan). Contact points from the project record: Nicodemus Historical Society, https://www.nicodemushistoricalsociety.org, (785) 839-4280; NPS site, 304 Washington Avenue, Nicodemus, Kansas.</p><div class="recall"><strong>Quick recall.</strong> Before you move on, say it back without scrolling up: which people, places, or decisions from this chapter matter most, and why? Then glance back and check yourself.</div><div class="chap-nav"><a href="#ch5">&larr; 5. Survival, Decline, or Destruction</a><a href="#ch7">Next: 7. The Song &rarr;</a></div></section>
+<p>The keeping organizations: the Nicodemus Historical Society (museum and archives; collection at the University of Kansas Spencer Research Library, https://digital.lib.ku.edu/ku-nicodemus/root), the National Park Service (https://home.nps.gov/places/nicodemus-national-historic-site.htm, park phone (785) 839-4233 per the project's outreach plan), and the township's own residents and descendants. The anchor event is the Emancipation and Homecoming Celebration, held the last weekend of July every year since 1878 by the community's account (project outreach plan; HistoryNet), drawing descendants and former residents from across the country; the 2027 celebration will be billed as the 149th annual (project outreach plan). Contact points from the project record: Nicodemus Historical Society, https://www.nicodemushistoricalsociety.org, (785) 839-4280; NPS site, 304 Washington Avenue, Nicodemus, Kansas.</p><div class="recall"><strong>Quick recall.</strong> Before you move on, say it back without scrolling up: which people, places, or decisions from this chapter matter most, and why? Then glance back and check yourself.</div><div class="cfu" data-chapter="ch6"><h3>Check for understanding</h3><p class="cfu-intro">Answer every question correctly to unlock the next chapter. A wrong answer is fine: re-read the chapter and try again.</p><div class="cfu-q" data-q="0"><p class="qtext">The Park Service pairs each of the five preserved buildings with a theme. Which pairing is correct?</p><button type="button" class="opt" data-o="0">First Baptist Church = government</button><button type="button" class="opt" data-o="1">School District No. 1 = education</button><button type="button" class="opt" data-o="2">The St. Francis Hotel = religion</button><button type="button" class="opt" data-o="3">Township Hall = commerce</button><p class="feedback" hidden></p></div><div class="done-note" hidden></div><div class="cfu-key"><h4>Answer key</h4><ol><li><strong>The Park Service pairs each of the five preserved buildings with a theme. Which pairing is correct?</strong> Correct answer: School District No. 1 = education. The pairings run: AME Church, religion; St. Francis Hotel, commerce; Township Hall, community; First Baptist Church, family; School District No. 1, education.</li></ol></div></div><div class="chap-nav"><a href="#ch5">&larr; 5. Survival, Decline, or Destruction</a><a href="#ch7">Next: 7. The Song &rarr;</a></div></section>
 <section class="chapter" id="ch7" data-label="7. The Song"><h2>7. The Song</h2>
 <p>Authorship framing, per project record: the lyrics are human-written by the user; the music and arrangement are Suno-generated. The local archive's record of this song was thin (a catalog line and summaries, no verbatim lyrics); the live browser pass of 2026-10-26 closed the gap, and this section now works from the live record.</p>
 <p>What the live record establishes about the town's song:</p>
@@ -187,7 +228,7 @@ details.inline[open] > summary::after{content:" \2212"}
 <li>"Depression hit hard, Dust Bowl threw shade": documented (Section 5): farm prices fell in the Great Depression and a three-year drought culminated in the Kansas Dust Bowl of 1935; the township population dropped to 76 in that decade. Supported.</li>
 <li>"But we held homecomings like parades of brave" and "every summer we sing, every name we say": the Emancipation and Homecoming Celebration, held since 1878 and now the last weekend of July, is the town's anchor event and its descendant roll call (Sections 2 and 6). Supported.</li>
 </ul>
-<p>Context note, shortened from the earlier draft of this section: the overview song "Land Lines: The Homestead Cipher" (archived as style prompt and summary only, batch 2b, entry 11) also names Nicodemus. Its Homestead Act framing is accurate at the general level, with the compression that Nicodemus was a company-platted townsite ringed by homesteads, not a spontaneous homestead gathering; its "Exodusters" shorthand carries the chronology note from Section 1 (founded 1877, before the 1879 wave). The live pass located the "From Nicodemus to Bowles, Boley to Mound" line in the user's ChatGPT "OSINT Investigation Request" piece (June 22, 2025); Boley and Mound Bayou are documented towns in the project's master list, and "Bowles" remains unmatched to any documented town. The site's own blurb (town-blurbs-batch-2.md) was checked in full against this dossier in the earlier draft and every element held: the superlative, the 1877 date, Graham County, the Kentucky origin, and the Town Company, with "Exoduster farm colony" carrying the same shorthand.</p></details><div class="chap-nav"><a href="#ch6">&larr; 6. The Town Today</a><a href="#ch8">Next: 8. Primary Sources &rarr;</a></div></section>
+<p>Context note, shortened from the earlier draft of this section: the overview song "Land Lines: The Homestead Cipher" (archived as style prompt and summary only, batch 2b, entry 11) also names Nicodemus. Its Homestead Act framing is accurate at the general level, with the compression that Nicodemus was a company-platted townsite ringed by homesteads, not a spontaneous homestead gathering; its "Exodusters" shorthand carries the chronology note from Section 1 (founded 1877, before the 1879 wave). The live pass located the "From Nicodemus to Bowles, Boley to Mound" line in the user's ChatGPT "OSINT Investigation Request" piece (June 22, 2025); Boley and Mound Bayou are documented towns in the project's master list, and "Bowles" remains unmatched to any documented town. The site's own blurb (town-blurbs-batch-2.md) was checked in full against this dossier in the earlier draft and every element held: the superlative, the 1877 date, Graham County, the Kentucky origin, and the Town Company, with "Exoduster farm colony" carrying the same shorthand.</p></details><div class="cfu" data-chapter="ch7"><h3>Check for understanding</h3><p class="cfu-intro">Answer every question correctly to unlock the next chapter. A wrong answer is fine: re-read the chapter and try again.</p><div class="cfu-q" data-q="0"><p class="qtext">The annotation flags the lyric "Prayin' with the Osage." Why?</p><button type="button" class="opt" data-o="0">The Osage are documented as the town's founders</button><button type="button" class="opt" data-o="1">No source in the dossier mentions the Osage in connection with Nicodemus; the documented help was Kansas Pacific relief supplies shipped free in 1878 to 1879, so the line is carried as unverified</button><button type="button" class="opt" data-o="2">The line misdates the first winter</button><button type="button" class="opt" data-o="3">The Osage objected to the song in writing</button><p class="feedback" hidden></p></div><div class="cfu-q" data-q="1"><p class="qtext">The song says "we flipped Graham County." What does the annotation say actually happened?</p><button type="button" class="opt" data-o="0">Black voters held every county office by 1882</button><button type="button" class="opt" data-o="1">Specific offices were won inside a majority-white county (convention delegate, county clerk, justices of the peace, state auditor), and the 1880 county-seat vote was lost to Millbrook, so the phrase overstates a real record</button><button type="button" class="opt" data-o="2">The county was never contested at any level</button><button type="button" class="opt" data-o="3">The phrase refers to a land purchase, not politics</button><p class="feedback" hidden></p></div><div class="done-note" hidden></div><div class="cfu-key"><h4>Answer key</h4><ol><li><strong>The annotation flags the lyric "Prayin' with the Osage." Why?</strong> Correct answer: No source in the dossier mentions the Osage in connection with Nicodemus; the documented help was Kansas Pacific relief supplies shipped free in 1878 to 1879, so the line is carried as unverified. Under the dossier's rule that religious and descriptive color cannot be presented as history without a source, the Osage line is flagged rather than repeated as fact.</li><li><strong>The song says "we flipped Graham County." What does the annotation say actually happened?</strong> Correct answer: Specific offices were won inside a majority-white county (convention delegate, county clerk, justices of the peace, state auditor), and the 1880 county-seat vote was lost to Millbrook, so the phrase overstates a real record. The annotation keeps the achievements and corrects the scale: real offices won, a real county-seat loss, inside a county whose population was majority white.</li></ol></div></div><div class="chap-nav"><a href="#ch6">&larr; 6. The Town Today</a><a href="#ch8">Next: 8. Primary Sources &rarr;</a></div></section>
 <details class="deep chapter" id="ch8" data-label="8. Primary Sources"><summary>8. Primary Sources</summary><div class="deep-body">
 <p>Public domain, licensed, or linked only. Nothing below is reproduced past its rights status.</p>
 <ul>
@@ -199,7 +240,7 @@ details.inline[open] > summary::after{content:" \2212"}
 <li>Federal census records: 1880 federal census (Graham County and Nicodemus Township counts), 1910 federal census, and the 2020 census figures for the Nicodemus CDP (14) and Nicodemus Township (43), as cited through the Wikipedia community and township summaries. Public records; figures used here are as reported by the citing sources (see conflicts 4 and 5).</li>
 <li>The town's newspapers: the Western Cyclone (from May 13, 1886) and the Nicodemus Enterprise (from 1887), surviving issues held by the Kansas Historical Society newspaper collection. Linked only through KSHS.</li>
 <li>NPS site brochure, Nicodemus National Historic Site (2006 edition, npshistory.com): the park's own summary of founding, decline, the 1976 landmark listing, the 1996 site establishment, and the five structures with their brochure dates. Federal publication, public domain. https://npshistory.com/publications/nico/brochures/2006.pdf</li>
-</ul></div></details><div class="chap-nav"><a href="#ch7">&larr; 7. The Song</a><a href="#ch9">Next: 9. Sources and Bibliography &rarr;</a></div>
+</ul><div class="cfu" data-chapter="ch8"><h3>Check for understanding</h3><p class="cfu-intro">Answer every question correctly to unlock the next chapter. A wrong answer is fine: re-read the chapter and try again.</p><div class="cfu-q" data-q="0"><p class="qtext">Which account does the chapter treat as the standard first-person record of the settlers' arrival?</p><button type="button" class="opt" data-o="0">The Nicodemus Western Cyclone's first issue</button><button type="button" class="opt" data-o="1">Mrs. Williana Hickman's 1878 account, "That is Nicodemus," preserved in The Black West (1971)</button><button type="button" class="opt" data-o="2">W. R. Hill's 1877 promotional circular</button><button type="button" class="opt" data-o="3">The 1890 Kansas state census</button><p class="feedback" hidden></p></div><div class="done-note" hidden></div><div class="cfu-key"><h4>Answer key</h4><ol><li><strong>Which account does the chapter treat as the standard first-person record of the settlers' arrival?</strong> Correct answer: Mrs. Williana Hickman's 1878 account, "That is Nicodemus," preserved in The Black West (1971). Hickman's testimony of the September 1877 arrival was first printed for a general reader in William Loren Katz's The Black West in 1971 and is the standard arrival account.</li></ol></div></div></div></details><div class="chap-nav" data-for="ch8"><a href="#ch7">&larr; 7. The Song</a><a href="#ch9">Next: 9. Sources and Bibliography &rarr;</a></div>
 <details class="deep chapter" id="ch9" data-label="9. Sources and Bibliography"><summary>9. Sources and Bibliography</summary><div class="deep-body">
 <p>In protocol order.</p>
 <p>Perplexity library: checked live 2026-10-26 (signed in as Yamil Little, Pro). Only two results touch Nicodemus. (1) The master thread "Every city or state in America founded by a black man or woman" (https://www.perplexity.ai/search/1c272bba-00cb-42dd-b26a-ef8c34c6022f), the documented source of the site blurb (town-blurb-research-batch-2.md): it calls Nicodemus the oldest surviving Black town west of the Mississippi and an "Exoduster farm colony." The library snippet is partly garbled and truncated, flagged here as displayed. Two compressions flagged: "oldest surviving" tracks NPS's "oldest and only remaining" framing in the Key Facts Box, and "Exoduster farm colony" carries the standing chronology note, since the dossier dates the founding to 1877, two years before the 1879 Exoduster wave the term usually names (Section 1). (2) A list mention in "Where is simmonsville" (https://www.perplexity.ai/search/9b398db9-4f5b-419d-b1d3-be34c6f8af0e), no substantive content. No Perplexity material contradicts any dated dossier claim.</p>
@@ -241,7 +282,7 @@ details.inline[open] > summary::after{content:" \2212"}
 <li>Historical Society founding year. Bates's own accounts: 1988 (Daily Yonder: "I started the historical society in 1988"; Humanities Kansas: founder, 1988). Northeastern University profile: founded 1989 (possibly an incorporation or formalization date). Great Bend Tribune: founded 1986. The dossier carries 1988 on the founder's own word and flags the others.</li>
 <li>National Historic Site date. NPS: Congress established the site in November 1996; the park place page says the legislation was enacted in November 1996. Several park sources give November 12, 1996. The dossier carries November 1996, with November 12 noted as the commonly given day.</li>
 <li>Population today. 2020 census: CDP 14; township 43 (both via census-citing summaries). One park guide gives "25 in 2020," which matches neither census unit and appears to be an error or an informal area count. A 2014 account says "just a dozen residents." The dossier carries the CDP figure of 14 (2020) in the Key Facts Box and notes the township figure.</li>
-</ol></div></details><div class="chap-nav"><a href="#ch8">&larr; 8. Primary Sources</a><span></span></div></div></div>
+</ol><div class="cfu" data-chapter="ch9"><h3>Check for understanding</h3><p class="cfu-intro">Answer every question correctly to unlock the next chapter. A wrong answer is fine: re-read the chapter and try again.</p><div class="cfu-q" data-q="0"><p class="qtext">Why does Section 9 flag the description "Exoduster farm colony" for the 1877 founding?</p><button type="button" class="opt" data-o="0">The Exodusters settled in Oklahoma, not Kansas</button><button type="button" class="opt" data-o="1">The 1877 founding predates the 1879 Exoduster wave by two years; the Exodusters are part of the town's growth story, not its origin event</button><button type="button" class="opt" data-o="2">No Nicodemus settler ever farmed</button><button type="button" class="opt" data-o="3">The term Exoduster was invented by the Park Service</button><p class="feedback" hidden></p></div><div class="done-note" hidden></div><div class="cfu-key"><h4>Answer key</h4><ol><li><strong>Why does Section 9 flag the description "Exoduster farm colony" for the 1877 founding?</strong> Correct answer: The 1877 founding predates the 1879 Exoduster wave by two years; the Exodusters are part of the town's growth story, not its origin event. Conflict 7 states the standing rule: two years is two years, and the label moves the founding into a migration it preceded.</li></ol></div></div></div></details><div class="chap-nav" data-for="ch9"><a href="#ch8">&larr; 8. Primary Sources</a><span></span></div></div></div>
 <div class="doss-end"><p><strong>The five free samples:</strong> this dossier is one of the five pilot dossiers published free during the curriculum beta. Read the others on the <a href="../education.html">Education page</a>.</p></div>
 </div></section>
 <footer><div class="wrap">
@@ -249,12 +290,23 @@ details.inline[open] > summary::after{content:" \2212"}
 <p style="margin-top:12px">A creative universe built on the true history of America's Black towns -<br>one town, one song, one story at a time.</p>
 <p style="margin-top:14px; opacity:.6">&copy; 2026 All Black Towns. All rights reserved.</p>
 </div></footer>
+<script>window.ABT_CFU = {"chapters": {"intro": {"questions": [{"answer": 1, "explain": "The header carries the never-incorporated fact plainly: township government, a resident community, and a National Historic Site established in November 1996."}]}, "ch1": {"questions": [{"answer": 1, "explain": "The chapter ties the founding to the end of Reconstruction: the company, led by the Reverend W. H. Smith and Benjamin Carr, offered land ownership and self-government in Kansas."}, {"answer": 1, "explain": "The chapter records the gap between promotion and fact: a surveyed townsite on treeless prairie, a winter of dugouts, and roughly a fifth of the party turning back."}]}, "ch2": {"questions": [{"answer": 1, "explain": "The political spine runs from John Niles in 1877 to McCabe's 1882 state auditor win, alongside the township offices and DePrad's county clerkship."}, {"answer": 1, "explain": "Emancipation Day began August 1, 1878, the same summer the post office opened; the chapter calls it the community institution rather than a town business."}]}, "ch3": {"questions": [{"answer": 1, "explain": "Conflict 1 in Section 9 is the stated reason: the numbers rest on different units and different political incentives, so the dossier carries no single peak figure."}, {"answer": 1, "explain": "The chapter dates the fullest documented life, two newspapers, the bank, the stone schoolhouse, to the mid-1880s through the 1900s, before the bypass drained the trade."}]}, "ch4": {"questions": [{"answer": 1, "explain": "The chapter is explicit that the failure was not effort: bonds were voted and companies courted, and when the line ran through Bogue in 1888 the commercial future moved with it."}, {"answer": 1, "explain": "The chapter pairs the two blows: the 1885 blizzard began the defections, and the 1888 bypass made the decline permanent."}]}, "ch5": {"questions": [{"answer": 1, "explain": "The chapter dates the designation campaign from Bates's 1988 Historical Society to the November 1996 act of Congress, the institutional form survival takes for an unincorporated town."}, {"answer": 1, "explain": "The post office that opened in 1878 was discontinued in 1953; the chapter names the closure a bookend of decline, not a founding-era event."}]}, "ch6": {"questions": [{"answer": 1, "explain": "The pairings run: AME Church, religion; St. Francis Hotel, commerce; Township Hall, community; First Baptist Church, family; School District No. 1, education."}]}, "ch7": {"questions": [{"answer": 1, "explain": "Under the dossier's rule that religious and descriptive color cannot be presented as history without a source, the Osage line is flagged rather than repeated as fact."}, {"answer": 1, "explain": "The annotation keeps the achievements and corrects the scale: real offices won, a real county-seat loss, inside a county whose population was majority white."}]}, "ch8": {"questions": [{"answer": 1, "explain": "Hickman's testimony of the September 1877 arrival was first printed for a general reader in William Loren Katz's The Black West in 1971 and is the standard arrival account."}]}, "ch9": {"questions": [{"answer": 1, "explain": "Conflict 7 states the standing rule: two years is two years, and the label moves the founding into a migration it preceded."}]}}};</script>
 
 <script>
 (function(){
   var KEY = 'abt-v2-nicodemus-full';
+  var CFU = window.ABT_CFU || null;
   var state = {done: []};
-  try { state = JSON.parse(localStorage.getItem(KEY)) || state; } catch(e) {}
+  try {
+    var stored = JSON.parse(localStorage.getItem(KEY));
+    if (stored) { for (var k in stored) state[k] = stored[k]; }
+  } catch(e) {}
+  if (!state.done) state.done = [];
+  if (CFU) {
+    if (!state.cfu) state.cfu = {};
+    state.teacherUnlock = !!state.teacherUnlock;
+    if (!('current' in state)) state.current = null;
+  }
   var chapters = Array.prototype.slice.call(document.querySelectorAll('.chapter'));
   var railLinks = {};
   document.querySelectorAll('.rail a[data-ch]').forEach(function(a){ railLinks[a.getAttribute('data-ch')] = a; });
@@ -265,8 +317,89 @@ details.inline[open] > summary::after{content:" \2212"}
       if (a) { var t = a.querySelector('.tick'); if (t) t.textContent = state.done.indexOf(ch.id) >= 0 ? '\u2713' : ''; }
     });
   }
+  function cfuPassed(cid){
+    if (!CFU) return false;
+    var c = CFU.chapters[cid];
+    if (!c) return true;
+    var got = state.cfu[cid] || [];
+    return c.questions.every(function(q, i){ return got[i] === true; });
+  }
+  function isUnlocked(i){
+    if (!CFU) return true;
+    if (state.teacherUnlock) return true;
+    if (i <= 0) return true;
+    return cfuPassed(chapters[i - 1].id);
+  }
+  function chapterIndex(el){ return chapters.indexOf(el); }
+  var note = document.getElementById('lock-note');
+  function hideNote(){ if (note) note.style.display = 'none'; }
+  function showNote(target){
+    if (!note) return;
+    var label = target.getAttribute('data-label') || target.id;
+    note.innerHTML = '<strong>' + label + ' is locked for now.</strong> Answer the check for understanding questions at the end of the previous chapter to unlock it.';
+    note.style.display = 'block';
+    note.scrollIntoView({behavior: 'smooth', block: 'center'});
+  }
+  function paintLocks(){
+    if (!CFU) return;
+    document.querySelectorAll('a[href^="#"]').forEach(function(a){
+      var t = document.querySelector(a.getAttribute('href'));
+      if (t && t.classList.contains('chapter')) {
+        var locked = !isUnlocked(chapterIndex(t));
+        a.classList.toggle('locked', locked);
+        if (a.hasAttribute('data-ch')) {
+          var lk = a.querySelector('.lk');
+          if (locked && !lk) { lk = document.createElement('span'); lk.className = 'lk'; lk.textContent = '\uD83D\uDD12'; a.appendChild(lk); }
+          if (!locked && lk) lk.remove();
+        }
+      }
+    });
+  }
+  function setActive(id){
+    chapters.forEach(function(ch){
+      var a = railLinks[ch.id];
+      if (a) a.classList.toggle('active', ch.id === id);
+    });
+    var sheetLabel = document.getElementById('chapter-bar-label');
+    var target = document.getElementById(id);
+    if (sheetLabel && target) sheetLabel.textContent = target.getAttribute('data-label');
+  }
+  function showChapter(id, scroll){
+    var target = document.getElementById(id);
+    if (!target) return;
+    chapters.forEach(function(ch){
+      if (ch.id === id) {
+        ch.removeAttribute('hidden');
+        if (ch.tagName === 'DETAILS') ch.open = true;
+      } else {
+        ch.setAttribute('hidden', '');
+      }
+    });
+    document.querySelectorAll('.chap-nav[data-for]').forEach(function(n){
+      if (n.getAttribute('data-for') === id) n.removeAttribute('hidden');
+      else n.setAttribute('hidden', '');
+    });
+    state.current = id; save();
+    setActive(id);
+    hideNote();
+    if (scroll !== false) {
+      var layout = document.querySelector('.layout');
+      if (layout) {
+        var y = layout.getBoundingClientRect().top + window.pageYOffset - 84;
+        window.scrollTo(0, Math.max(0, y));
+      }
+    }
+  }
   var chip = document.getElementById('resume-chip');
-  if (chip && state.done.length) {
+  if (chip && CFU) {
+    var passedCount = chapters.filter(function(c){ return cfuPassed(c.id); }).length;
+    var nextU = null;
+    chapters.forEach(function(c, i){ if (!nextU && isUnlocked(i) && !cfuPassed(c.id)) nextU = c; });
+    if (passedCount > 0 && nextU) {
+      chip.style.display = 'block';
+      chip.innerHTML = 'Welcome back. You left off at <strong>' + nextU.getAttribute('data-label') + '</strong>. <a href="#' + nextU.id + '">Continue there \u2192</a>';
+    }
+  } else if (chip && state.done.length) {
     var next = chapters.filter(function(c){ return state.done.indexOf(c.id) < 0; })[0];
     if (next) {
       var label = next.getAttribute('data-label');
@@ -274,41 +407,65 @@ details.inline[open] > summary::after{content:" \2212"}
       chip.innerHTML = 'Welcome back. You left off at <strong>' + label + '</strong>. <a href="#' + next.id + '">Continue there \u2192</a>';
     }
   }
-  paintTicks();
-  var bar = document.getElementById('progress-bar');
-  var active = null;
-  var spy = new IntersectionObserver(function(entries){
-    entries.forEach(function(en){
-      if (en.isIntersecting) {
-        if (active && railLinks[active]) railLinks[active].classList.remove('active');
-        active = en.target.id;
-        if (railLinks[active]) railLinks[active].classList.add('active');
-        var sheetLabel = document.getElementById('chapter-bar-label');
-        if (sheetLabel) sheetLabel.textContent = en.target.getAttribute('data-label');
-      }
-      var rect = en.target.getBoundingClientRect();
-      if (rect.bottom < window.innerHeight * 0.55 && state.done.indexOf(en.target.id) < 0) {
-        state.done.push(en.target.id); save(); paintTicks();
-      }
+  if (CFU) {
+    chapters.forEach(function(ch){
+      if (cfuPassed(ch.id) && state.done.indexOf(ch.id) < 0) state.done.push(ch.id);
     });
-  }, {rootMargin: '-30% 0px -55% 0px'});
-  chapters.forEach(function(ch){ spy.observe(ch); });
+    save();
+  }
+  paintTicks();
+  paintLocks();
+  var bar = document.getElementById('progress-bar');
+  if (!CFU) {
+    var active = null;
+    var spy = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if (en.isIntersecting) {
+          if (active && railLinks[active]) railLinks[active].classList.remove('active');
+          active = en.target.id;
+          if (railLinks[active]) railLinks[active].classList.add('active');
+          var sheetLabel = document.getElementById('chapter-bar-label');
+          if (sheetLabel) sheetLabel.textContent = en.target.getAttribute('data-label');
+        }
+        var rect = en.target.getBoundingClientRect();
+        if (rect.bottom < window.innerHeight * 0.55 && state.done.indexOf(en.target.id) < 0) {
+          state.done.push(en.target.id); save(); paintTicks();
+        }
+      });
+    }, {rootMargin: '-30% 0px -55% 0px'});
+    chapters.forEach(function(ch){ spy.observe(ch); });
+  }
   window.addEventListener('scroll', function(){
     var h = document.documentElement;
     var max = h.scrollHeight - h.clientHeight;
     if (bar && max > 0) bar.style.width = (h.scrollTop / max * 100) + '%';
   }, {passive: true});
   document.querySelectorAll('a[href^="#"]').forEach(function(a){
-    a.addEventListener('click', function(){
+    a.addEventListener('click', function(ev){
       var t = document.querySelector(a.getAttribute('href'));
-      if (t && t.tagName === 'DETAILS') t.open = true;
       var sheet = document.getElementById('chapter-sheet');
       if (sheet) sheet.classList.remove('open');
+      if (CFU && t && t.classList.contains('chapter')) {
+        ev.preventDefault();
+        if (isUnlocked(chapterIndex(t))) showChapter(t.id);
+        else showNote(t);
+        return;
+      }
+      if (t && t.tagName === 'DETAILS') t.open = true;
     });
   });
   var tp = document.getElementById('teacher-panel');
+  var tc = document.getElementById('teacher-controls');
   var tbtn = document.getElementById('teach-btn');
-  if (tbtn && tp) tbtn.addEventListener('click', function(){ tp.style.display = tp.style.display === 'block' ? 'none' : 'block'; if (tp.style.display === 'block') tp.scrollIntoView({behavior:'smooth', block:'start'}); });
+  if (tbtn && (tp || tc)) tbtn.addEventListener('click', function(){
+    var opened = null;
+    [tp, tc].forEach(function(el){
+      if (!el) return;
+      el.style.display = el.style.display === 'block' ? 'none' : 'block';
+      if (el.style.display === 'block') opened = el;
+    });
+    if (opened) opened.scrollIntoView({behavior:'smooth', block:'start'});
+  });
   var ex = document.getElementById('expand-all');
   if (ex) ex.addEventListener('click', function(){
     var dets = document.querySelectorAll('details');
@@ -319,7 +476,111 @@ details.inline[open] > summary::after{content:" \2212"}
   var sheetBtn = document.getElementById('chapter-sheet-btn');
   var sheet = document.getElementById('chapter-sheet');
   if (sheetBtn && sheet) sheetBtn.addEventListener('click', function(){ sheet.classList.toggle('open'); });
-  window.addEventListener('beforeprint', function(){ document.querySelectorAll('details').forEach(function(d){ d.open = true; }); });
+  if (CFU) {
+    function markCorrect(qEl, cid, qi){
+      var q = CFU.chapters[cid].questions[qi];
+      qEl.querySelectorAll('.opt').forEach(function(b){
+        b.disabled = true;
+        if (+b.getAttribute('data-o') === q.answer) b.classList.add('picked-right');
+      });
+      var fb = qEl.querySelector('.feedback');
+      fb.hidden = false; fb.className = 'feedback good'; fb.textContent = q.explain;
+    }
+    function refreshDone(block, cid){
+      var dn = block.querySelector('.done-note');
+      if (!dn) return;
+      if (cfuPassed(cid)) {
+        var idx = -1;
+        chapters.forEach(function(c, i){ if (c.id === cid) idx = i; });
+        dn.hidden = false;
+        dn.textContent = (idx === chapters.length - 1)
+          ? 'Chapter complete. That was the final chapter of this dossier.'
+          : 'Chapter complete. The next chapter is now unlocked.';
+      } else {
+        dn.hidden = true;
+      }
+    }
+    document.querySelectorAll('.cfu').forEach(function(block){
+      var cid = block.getAttribute('data-chapter');
+      var got = state.cfu[cid] || [];
+      block.querySelectorAll('.cfu-q').forEach(function(qEl){
+        var qi = +qEl.getAttribute('data-q');
+        if (got[qi]) markCorrect(qEl, cid, qi);
+      });
+      refreshDone(block, cid);
+    });
+    document.querySelectorAll('.cfu .opt').forEach(function(btn){
+      btn.addEventListener('click', function(){
+        var qEl = btn.closest('.cfu-q');
+        var block = btn.closest('.cfu');
+        var cid = block.getAttribute('data-chapter');
+        var qi = +qEl.getAttribute('data-q');
+        var oi = +btn.getAttribute('data-o');
+        var q = CFU.chapters[cid].questions[qi];
+        if (!state.cfu[cid]) state.cfu[cid] = [];
+        if (state.cfu[cid][qi]) return;
+        var fb = qEl.querySelector('.feedback');
+        if (oi === q.answer) {
+          state.cfu[cid][qi] = true;
+          if (cfuPassed(cid) && state.done.indexOf(cid) < 0) state.done.push(cid);
+          save();
+          markCorrect(qEl, cid, qi);
+          paintTicks(); paintLocks();
+          refreshDone(block, cid);
+        } else {
+          btn.classList.add('picked-wrong');
+          btn.disabled = true;
+          fb.hidden = false; fb.className = 'feedback try';
+          fb.textContent = 'Not quite. Re-read this chapter and try again: the answer is in the text above.';
+        }
+      });
+    });
+    var uc = document.getElementById('unlock-all');
+    if (uc) {
+      uc.checked = !!state.teacherUnlock;
+      uc.addEventListener('change', function(){ state.teacherUnlock = uc.checked; save(); paintLocks(); });
+    }
+    var rp = document.getElementById('reset-progress');
+    if (rp) rp.addEventListener('click', function(){
+      if (window.confirm('Reset all reading progress and check-for-understanding answers on this device?')) {
+        try { localStorage.removeItem(KEY); } catch(e) {}
+        location.reload();
+      }
+    });
+    var startId = null;
+    if (state.current) {
+      var cur = document.getElementById(state.current);
+      if (cur && isUnlocked(chapterIndex(cur))) startId = state.current;
+    }
+    if (!startId) {
+      var firstOpen = null;
+      chapters.forEach(function(c, i){ if (!firstOpen && isUnlocked(i) && !cfuPassed(c.id)) firstOpen = c; });
+      startId = firstOpen ? firstOpen.id : chapters[chapters.length - 1].id;
+    }
+    showChapter(startId, false);
+  }
+  var hiddenBeforePrint = [];
+  window.addEventListener('beforeprint', function(){
+    document.querySelectorAll('details').forEach(function(d){ d.open = true; });
+    if (CFU) {
+      hiddenBeforePrint = [];
+      chapters.forEach(function(ch){
+        if (ch.hasAttribute('hidden')) { hiddenBeforePrint.push(ch.id); ch.removeAttribute('hidden'); }
+      });
+      document.querySelectorAll('.chap-nav[data-for]').forEach(function(n){ n.removeAttribute('hidden'); });
+    }
+  });
+  window.addEventListener('afterprint', function(){
+    if (CFU) {
+      hiddenBeforePrint.forEach(function(id){
+        var el = document.getElementById(id);
+        if (el && id !== state.current) el.setAttribute('hidden', '');
+      });
+      document.querySelectorAll('.chap-nav[data-for]').forEach(function(n){
+        if (n.getAttribute('data-for') !== state.current) n.setAttribute('hidden', '');
+      });
+    }
+  });
 })();
 </script>
 </body></html>
