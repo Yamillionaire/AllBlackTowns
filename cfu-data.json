@@ -1,0 +1,1456 @@
+{
+  "sweet-auburn": {
+    "name": "Sweet Auburn",
+    "timelineChapter": "ch2",
+    "timeline": [
+      {
+        "year": "1847",
+        "label": "Big Bethel congregation organized, the oldest African American congregation in Atlanta"
+      },
+      {
+        "year": "1869",
+        "label": "Wheat Street Baptist Church founded"
+      },
+      {
+        "year": "1886",
+        "label": "Ebenezer Baptist Church founded"
+      },
+      {
+        "year": "1893",
+        "label": "Wheat Street renamed Auburn Avenue"
+      },
+      {
+        "year": "1904",
+        "label": "Henry A. Rucker builds the Rucker Building, Atlanta's first Black-owned office building"
+      },
+      {
+        "year": "1905",
+        "label": "Alonzo Herndon founds the insurance company that became Atlanta Life"
+      },
+      {
+        "year": "1906",
+        "label": "The Atlanta Race Riot erupts in September; Black businesses relocate to Auburn Avenue for safety"
+      },
+      {
+        "year": "1913",
+        "label": "Heman E. Perry founds Standard Life Insurance"
+      },
+      {
+        "year": "1921",
+        "label": "Citizens Trust Bank opens on Auburn Avenue (August 16)"
+      },
+      {
+        "year": "1928",
+        "label": "W. A. Scott II founds the Atlanta World (August 5); it becomes the Atlanta Daily World, the first successful Black daily, by 1932"
+      },
+      {
+        "year": "1929",
+        "label": "Martin Luther King, Jr. is born at 501 Auburn Avenue (January 15)"
+      },
+      {
+        "year": "1956",
+        "label": "Fortune magazine calls Auburn Avenue \"the richest Negro street in the world\""
+      },
+      {
+        "year": "1976",
+        "label": "Sweet Auburn Historic District designated a National Historic Landmark"
+      },
+      {
+        "year": "1980",
+        "label": "The King National Historic Site is established and HDDC is founded"
+      },
+      {
+        "year": "2021",
+        "label": "An NPS assessment finds 47 percent of the district's historic buildings lost since 1976"
+      }
+    ],
+    "chapters": {
+      "intro": {
+        "title": "Introduction",
+        "questions": [
+          {
+            "q": "Which statement about Sweet Auburn is accurate?",
+            "options": [
+              "It was an incorporated Black town with its own mayor and council",
+              "It is a historic district and neighborhood within Atlanta that was never an incorporated town",
+              "It was founded by John Wesley Dobbs in 1893",
+              "It became a National Historic Landmark in 1956"
+            ],
+            "answer": 1,
+            "explain": "The dossier answers the town fields honestly for a district: Sweet Auburn was never incorporated and sits inside Atlanta's Old Fourth Ward."
+          }
+        ]
+      },
+      "ch1": {
+        "title": "1. Founding",
+        "questions": [
+          {
+            "q": "Why did Auburn Avenue become the anchor of Black business in Atlanta?",
+            "options": [
+              "The city government designated it a Black business zone",
+              "As Jim Crow law hardened, Atlanta's Black population and businesses were pushed into the corridor east of downtown",
+              "John Wesley Dobbs bought most of the street's property",
+              "A fire destroyed every other Black business district in the city"
+            ],
+            "answer": 1,
+            "explain": "The chapter says that as Jim Crow hardened in the 1890s and 1900s, Black residents and businesses were pushed into the corridor east of downtown, and Auburn Avenue became its east-side anchor."
+          },
+          {
+            "q": "Who coined the name \"Sweet Auburn\"?",
+            "options": [
+              "Alonzo Herndon",
+              "John Wesley Dobbs",
+              "Henry A. Rucker",
+              "Adam Daniel Williams"
+            ],
+            "answer": 1,
+            "explain": "Civic leader John Wesley Dobbs coined \"Sweet Auburn,\" in reference to the prosperity and opportunity the neighborhood afforded, and served as the avenue's unofficial mayor."
+          }
+        ]
+      },
+      "ch2": {
+        "title": "2. Building the Town",
+        "questions": [
+          {
+            "q": "According to the chapter's dated spine, what set off the September 1906 Atlanta Race Riot?",
+            "options": [
+              "A dispute over the renaming of Wheat Street",
+              "Newspaper reports that inflamed white mobs",
+              "The opening of a competing bank on the avenue",
+              "The Great Atlanta Fire of 1917"
+            ],
+            "answer": 1,
+            "explain": "The spine records that the riot erupted after newspaper reports inflamed white mobs; at least 25 Black Atlantans were killed and more than 70 people injured."
+          },
+          {
+            "q": "What did Alonzo Herndon found in 1905?",
+            "options": [
+              "Citizens Trust Bank",
+              "Standard Life Insurance",
+              "The insurance company that became Atlanta Life",
+              "The Atlanta Daily World"
+            ],
+            "answer": 2,
+            "explain": "Herndon, born enslaved and by then a successful barbershop owner, founded his insurance company in 1905, the seed of Atlanta Life Insurance Company."
+          }
+        ]
+      },
+      "ch3": {
+        "title": "3. Peak Years",
+        "questions": [
+          {
+            "q": "Historian Gary Pomerantz gave the avenue's financial core a name. What did he call Atlanta Life Insurance, Standard Life Insurance, and Citizens Trust Bank together?",
+            "options": [
+              "The Fervent Five",
+              "The three-legged stool of Black finance",
+              "The richest street in the world",
+              "The civic capital of Atlanta"
+            ],
+            "answer": 1,
+            "explain": "Pomerantz's phrase for the avenue's financial core is the \"three-legged stool of Black finance,\" naming the two insurance companies and the bank."
+          },
+          {
+            "q": "In 1956, Fortune magazine described Auburn Avenue as what?",
+            "options": [
+              "\"the richest Negro street in the world\"",
+              "\"the capital of Black America\"",
+              "\"the loveliest village of the plain\"",
+              "\"the most interesting Negro town in the United States\""
+            ],
+            "answer": 0,
+            "explain": "Fortune's 1956 description, the capstone of the peak years, called Auburn Avenue \"the richest Negro street in the world.\""
+          }
+        ]
+      },
+      "ch4": {
+        "title": "4. The Turning Point",
+        "questions": [
+          {
+            "q": "Why was the 1906 massacre important in causing Auburn Avenue's rise as a Black business district?",
+            "options": [
+              "It destroyed the avenue itself, which was then rebuilt with federal landmark money",
+              "Before 1906, Black businesses operated in a substantially integrated downtown; after the massacre they relocated to Auburn Avenue for safety, and segregation concentrated Black spending there for half a century",
+              "It led directly to the founding of Citizens Trust Bank that same year",
+              "It persuaded Fortune magazine to praise the street"
+            ],
+            "answer": 1,
+            "explain": "The chapter keeps the paradox plain: the violence pushed Black businesses out of the integrated downtown, and segregation then held a captive market's spending on the avenue."
+          },
+          {
+            "q": "What structural change from the mid-1960s drained the avenue?",
+            "options": [
+              "The Great Atlanta Fire of 1917",
+              "As legal barriers fell, shopkeepers and residents moved to other parts of the city, while construction of the Downtown Connector divided the district",
+              "The Atlanta Daily World closed its offices",
+              "The Sweet Auburn Festival was cancelled"
+            ],
+            "answer": 1,
+            "explain": "Desegregation let businesses and residents disperse across the city, the Downtown Connector (Interstates 75/85) took the district's western blocks, and disinvestment followed."
+          }
+        ]
+      },
+      "ch5": {
+        "title": "5. Survival, Decline, or Destruction",
+        "questions": [
+          {
+            "q": "What did the 2021 National Park Service assessment find about the district's historic buildings?",
+            "options": [
+              "Nearly all of them survived intact",
+              "Sweet Auburn had lost 47 percent of its historic buildings since the 1976 landmark designation",
+              "The district had doubled its historic building stock",
+              "Every landmark building was occupied and in use"
+            ],
+            "answer": 1,
+            "explain": "The 2021 assessment found 47 percent of historic buildings lost since 1976, with the Atlanta Life building, the Butler Street YMCA, and the Walden Building vacant and at risk."
+          },
+          {
+            "q": "Which pair of events does the chapter date to 1980?",
+            "options": [
+              "The first Sweet Auburn Festival and the founding of the APEX Museum",
+              "The Martin Luther King, Jr. National Historic Site was established, and HDDC was founded by Coretta Scott King and Christine King Farris",
+              "The Atlanta Streetcar was completed and the research library opened",
+              "The landmark designation and the founding of Sweet Auburn Works"
+            ],
+            "answer": 1,
+            "explain": "In 1980 the King historic site was established on October 10, and the Historic District Development Corporation was founded the same year to revitalize the residential area."
+          }
+        ]
+      },
+      "ch6": {
+        "title": "6. The Town Today",
+        "questions": [
+          {
+            "q": "At what address stands the Birth Home of Martin Luther King, Jr.?",
+            "options": [
+              "145 Auburn Avenue",
+              "501 Auburn Avenue",
+              "220 Auburn Avenue",
+              "101 Auburn Avenue"
+            ],
+            "answer": 1,
+            "explain": "The Birth Home at 501 Auburn Avenue was built in 1895 and purchased by the Reverend A. D. Williams in 1909."
+          },
+          {
+            "q": "What is the chapter's honest summary of the district today?",
+            "options": [
+              "A fully restored reconstruction of the peak years",
+              "The landmarks are real and visitable and the churches still worship, but the commercial street between the landmarks remains thinner than its history deserves",
+              "The district is closed to visitors pending restoration",
+              "The Curb Market no longer trades"
+            ],
+            "answer": 1,
+            "explain": "The chapter closes on that balance: working landmarks and living churches, with landmark buildings vacant and nearly half the historic fabric gone since 1976."
+          }
+        ]
+      },
+      "ch7": {
+        "title": "7. The Song",
+        "questions": [
+          {
+            "q": "The song's intro credits Dobbs with the street being the \"richest.\" What does the annotation say is the accurate record?",
+            "options": [
+              "Dobbs coined both the name \"Sweet Auburn\" and the \"richest\" line",
+              "Dobbs coined the name \"Sweet Auburn\"; the \"richest\" wording is Fortune magazine's, from 1956",
+              "Fortune coined the name and Dobbs wrote the \"richest\" line",
+              "Neither attribution can be checked against any source"
+            ],
+            "answer": 1,
+            "explain": "The annotation calls the intro line a merge of two attributions: Dobbs coined \"Sweet Auburn,\" Fortune printed the \"richest\" wording in 1956, and verse 2 assigns each correctly."
+          },
+          {
+            "q": "The lyric runs \"1906 riots scatter seeds\" together with \"Wheat Street flip to Auburn.\" What does the annotation say about that sequence?",
+            "options": [
+              "Both events happened in 1906, so the line is exact",
+              "The renaming dates to 1893 and Black businesses stood on the street by 1900, so the song compresses the sequence rather than stating the chronology",
+              "The renaming never actually happened",
+              "The riot happened in 1893, the year of the renaming"
+            ],
+            "answer": 1,
+            "explain": "The massacre did concentrate Black business on the avenue, but the renaming was 1893 and businesses were present by 1900; the annotation names the line a compression, not the chronology."
+          }
+        ]
+      },
+      "ch8": {
+        "title": "8. Primary Sources",
+        "questions": [
+          {
+            "q": "Which source in this chapter is a federal document in the public domain?",
+            "options": [
+              "The Atlanta Daily World run in the ProQuest database",
+              "The National Register of Historic Places nomination form for the Sweet Auburn Historic District (1976)",
+              "The circa 1945 photograph held by the Atlanta History Center",
+              "The Samuel W. Williams Collection at the research library"
+            ],
+            "answer": 1,
+            "explain": "The chapter lists the 1976 National Register nomination form as a federal document in the public domain; the photograph is copyrighted and linked only."
+          }
+        ]
+      },
+      "ch9": {
+        "title": "9. Sources and Bibliography",
+        "questions": [
+          {
+            "q": "Why does this dossier end with a section headed \"Conflicts between sources, recorded not smoothed\"?",
+            "options": [
+              "To make the dossier longer for the curriculum",
+              "Because where sources disagree, the dossier carries both versions and flags the variance instead of quietly picking one",
+              "Because no two sources agree on anything in the district's history",
+              "Because the bibliography was left unfinished"
+            ],
+            "answer": 1,
+            "explain": "From the landmark year to the casualty counts, the dossier records disagreements openly, with the sources named, rather than smoothing them into a single claim."
+          }
+        ]
+      }
+    }
+  },
+  "boley": {
+    "name": "Boley",
+    "timelineChapter": "ch2",
+    "timeline": [
+      {
+        "year": "1903",
+        "label": "Townsite established in August; opened for settlement September 26"
+      },
+      {
+        "year": "1904",
+        "label": "Formal opening of the townsite (September 22)"
+      },
+      {
+        "year": "1905",
+        "label": "Boley incorporated (May 11); the Boley Progress newspaper begins publication"
+      },
+      {
+        "year": "1906",
+        "label": "Farmers and Merchants Bank organized"
+      },
+      {
+        "year": "1907",
+        "label": "Oklahoma statehood; Boley counts 824 residents"
+      },
+      {
+        "year": "1908",
+        "label": "Booker T. Washington publishes his account of Boley in The Outlook (January 4)"
+      },
+      {
+        "year": "1911",
+        "label": "A booster pamphlet advertises the town; its 4,000 figure counts the surrounding farm trade territory"
+      },
+      {
+        "year": "1912",
+        "label": "The three-story Masonic Temple is completed by about this year"
+      },
+      {
+        "year": "1921",
+        "label": "First National Bank of Boley opens, the first Black-owned bank to hold a national charter"
+      },
+      {
+        "year": "1922",
+        "label": "Bill Pickett, the famous Black cowboy, films at Boley"
+      },
+      {
+        "year": "1932",
+        "label": "The Pretty Boy Floyd gang's robbery of the Farmers and Merchants Bank fails (November 23); D. J. Turner is killed"
+      },
+      {
+        "year": "1939",
+        "label": "The railroad through Boley is dissolved and the line dismantled (1939 to 1940)"
+      },
+      {
+        "year": "1975",
+        "label": "Boley Historic District added to the National Register and designated a National Historic Landmark (May 15)"
+      },
+      {
+        "year": "1983",
+        "label": "The John H. Lilley Correctional Center opens"
+      }
+    ],
+    "chapters": {
+      "intro": {
+        "title": "Introduction",
+        "questions": [
+          {
+            "q": "Which statement about Boley today is accurate?",
+            "options": [
+              "It was never incorporated and no longer exists",
+              "It is still an incorporated town, one of thirteen surviving Oklahoma Black towns out of more than fifty founded; its historic district is a National Historic Landmark",
+              "It is now a neighborhood inside Oklahoma City",
+              "It was destroyed and never rebuilt"
+            ],
+            "answer": 1,
+            "explain": "The header records Boley as a still-incorporated town, one of thirteen survivors of Oklahoma's more than fifty Black towns, with its district a National Historic Landmark since 1975."
+          }
+        ]
+      },
+      "ch1": {
+        "title": "1. Founding",
+        "questions": [
+          {
+            "q": "On whose land did Boley's townsite stand?",
+            "options": [
+              "Land leased from the Choctaw Nation",
+              "The Creek freedwoman allotment of Abigail Barnett",
+              "A railroad land grant sold to the founders",
+              "Homestead claims filed by the town company"
+            ],
+            "answer": 1,
+            "explain": "The townsite stood on the Creek freedwoman allotment of Abigail Barnett, daughter of James Barnett, in what was then Indian Territory."
+          },
+          {
+            "q": "What was J. B. Boley's founding argument for the town?",
+            "options": [
+              "That Oklahoma's oil would make Black settlers rich",
+              "That Black people were generally convinced they were incapable of self-government but had never had a fair chance to prove themselves",
+              "That the town should copy Tulsa's Greenwood district",
+              "That farming should be replaced by industry"
+            ],
+            "answer": 1,
+            "explain": "Washington preserved the argument: Boley and his backers founded the town to demonstrate Black self-government, on land allotted to Creek freedmen."
+          }
+        ]
+      },
+      "ch2": {
+        "title": "2. Building the Town",
+        "questions": [
+          {
+            "q": "What distinguished the First National Bank of Boley, organized in 1921?",
+            "options": [
+              "It was the largest bank in Oklahoma",
+              "It was the first Black-owned bank in the United States to hold a national charter",
+              "It was the only bank Booker T. Washington ever visited",
+              "It survived the 1932 robbery without any loss"
+            ],
+            "answer": 1,
+            "explain": "The chapter records the First National Bank of Boley as the first Black-owned bank in the country carrying a national charter."
+          },
+          {
+            "q": "The chapter calls the Boley Progress (1905 to 1916) more than a newspaper. What was its second role?",
+            "options": [
+              "It was the town's official census record",
+              "It was the recruiting engine whose reports and photographs of Black prosperity drew settlers from across the South",
+              "It printed the town's bank notes",
+              "It served as the railroad's advertising sheet"
+            ],
+            "answer": 1,
+            "explain": "The Progress was both chronicle and recruiter: its issues carried the town's story and images of Black prosperity to prospective settlers in the South."
+          }
+        ]
+      },
+      "ch3": {
+        "title": "3. Peak Years",
+        "questions": [
+          {
+            "q": "How did Booker T. Washington describe Boley in The Outlook in 1908?",
+            "options": [
+              "\"the richest Negro street in the world\"",
+              "\"the loveliest village of the plain\"",
+              "\"the most enterprising, and in many ways the most interesting, of the Negro towns in the United States\"",
+              "\"the first Black-incorporated town in America\""
+            ],
+            "answer": 2,
+            "explain": "Washington's January 4, 1908 account called Boley \"the most enterprising, and in many ways the most interesting, of the Negro towns in the United States.\""
+          },
+          {
+            "q": "The booster figure of about 4,000 people by 1911 is often quoted as Boley's peak population. What does the chapter say it actually counted?",
+            "options": [
+              "The town's official census count",
+              "The town plus its surrounding farm trade territory; the highest census count inside the town itself was 1,334 in 1910",
+              "Visitors at the annual reunion",
+              "Residents of all thirteen Oklahoma Black towns combined"
+            ],
+            "answer": 1,
+            "explain": "The 4,000 figure belongs to the town with its trade territory; counted on their own terms, federal censuses give 824 in 1907 and a high of 1,334 in 1910."
+          }
+        ]
+      },
+      "ch4": {
+        "title": "4. The Turning Point",
+        "questions": [
+          {
+            "q": "Boley's economy rested on a single architecture. What was it, and how did it fail?",
+            "options": [
+              "Oil and tourism; the wells ran dry in the 1920s",
+              "Cotton farming served by one railroad; farm prices fell through the 1920s, the Depression finished the banks, and the railroad was dissolved in 1939",
+              "Banking and insurance; federal regulation closed the banks",
+              "Ranching and rodeos; the rodeo was banned in 1930"
+            ],
+            "answer": 1,
+            "explain": "The chapter says cotton prices, the Depression, and the 1939 loss of the railroad formed one squeeze on a farm-and-rail town, and Boley shrank with the countryside around it."
+          },
+          {
+            "q": "Why did the November 23, 1932 robbery of the Farmers and Merchants Bank fail completely?",
+            "options": [
+              "The vault was empty that day",
+              "Cashier D. J. Turner sounded the alarm as he was killed, H. C. McCormick shot George Birdwell dead from inside the vault, and armed townspeople stopped the rest; Charles \"Pretty Boy\" Floyd had warned his men to stay away from Boley",
+              "Federal agents happened to be in town",
+              "The gang surrendered when the bank president negotiated with them"
+            ],
+            "answer": 1,
+            "explain": "The chapter records that the robbery failed completely: Turner died raising the alarm, McCormick fired from the vault, and the town's armed response did the rest."
+          }
+        ]
+      },
+      "ch5": {
+        "title": "5. Survival, Decline, or Destruction",
+        "questions": [
+          {
+            "q": "By what hard measures does the chapter say Boley survived?",
+            "options": [
+              "It kept a railroad station and a daily newspaper",
+              "It stayed incorporated and self-governing, kept electing its own town government, and is one of only thirteen Oklahoma all-Black towns still existing",
+              "Its population returned to the 1910 peak",
+              "It annexed neighboring towns to stay viable"
+            ],
+            "answer": 1,
+            "explain": "Survival here is institutional: same town, same charter, same self-government, one of thirteen survivors of the more than fifty that were founded."
+          },
+          {
+            "q": "How does the dossier say Boley's post-1980 census rebounds must be read?",
+            "options": [
+              "As families returning to farm",
+              "As an artifact: the roughly 800 inmates of the John H. Lilley Correctional Center, opened in 1983, are counted as Boley residents",
+              "As growth from the rodeo's popularity",
+              "As a counting error in the 1990 census only"
+            ],
+            "answer": 1,
+            "explain": "The chapter warns that the rebound is the prison population inside the town limits, not civilians moving back; the honest civilian figure stays small."
+          }
+        ]
+      },
+      "ch6": {
+        "title": "6. The Town Today",
+        "questions": [
+          {
+            "q": "What is Boley's signature gathering?",
+            "options": [
+              "The Boley Rodeo and Bar-B-Que Festival, held each Memorial Day weekend and billed as the nation's oldest African American community-based rodeo",
+              "An annual reenactment of the 1932 bank robbery",
+              "The Oklahoma Black Towns reunion in Oklahoma City",
+              "A Booker T. Washington birthday pageant each January"
+            ],
+            "answer": 0,
+            "explain": "The rodeo, run since 1961 by the Boley Chamber of Commerce, is the town's signature gathering and its most legible claim on the present tense."
+          }
+        ]
+      },
+      "ch7": {
+        "title": "7. The Song",
+        "questions": [
+          {
+            "q": "The lyric names a \"Farmers and Teachers State Bank.\" What does the annotation say?",
+            "options": [
+              "The name is accurate and appears in the bank's charter",
+              "No such institution appears in any source; the documented name is the Farmers and Merchants Bank, and the lyric line is flagged as an uncorrected error left in the shipped record",
+              "The name was the bank's name after 1932",
+              "The bank was renamed by the town council in 1921"
+            ],
+            "answer": 1,
+            "explain": "Section 2 documents the Farmers and Merchants Bank; the annotation marks the lyric's bank name as an error and carries the correction rather than silently rewriting the record."
+          },
+          {
+            "q": "Which decline cause in the song is NOT supported by the dossier's record?",
+            "options": [
+              "Collapsed farm prices",
+              "Dried-up oil",
+              "The railroad's abandonment in 1939",
+              "The Great Depression"
+            ],
+            "answer": 1,
+            "explain": "The annotation marks \"dried-up oil\" poetic but not documented; Sections 4 and 5 record the farm economy's collapse, the Depression, and the 1939 rail abandonment."
+          }
+        ]
+      },
+      "ch8": {
+        "title": "8. Primary Sources",
+        "questions": [
+          {
+            "q": "Which source does the chapter call \"the single most important contemporary account\" of Boley?",
+            "options": [
+              "Booker T. Washington, \"Boley, a Negro Town in the West,\" The Outlook, January 4, 1908",
+              "The 1911 booster pamphlet, \"Boley, Indian Territory Oklahoma\"",
+              "The Oklahoma Historical Society encyclopedia entry",
+              "Norman L. Crockett's 1979 scholarly history"
+            ],
+            "answer": 0,
+            "explain": "Washington's Outlook article, reporting his 1905 visit, is the chapter's first-listed primary source: the founding argument, the population figures, and the cotton-gin description all come from it."
+          }
+        ]
+      },
+      "ch9": {
+        "title": "9. Sources and Bibliography",
+        "questions": [
+          {
+            "q": "What did the Perplexity library search establish about Boley?",
+            "options": [
+              "It produced Boley-specific facts not found anywhere else",
+              "Boley appears only as list mentions inside two broader town threads; the library added no Boley-specific dated facts, and the audit caught one misfiling under Boley's name",
+              "It contradicted the town's founding date",
+              "It held the only copy of the Boley Progress"
+            ],
+            "answer": 1,
+            "explain": "The dossier states the gap plainly: Boley's dated facts come from Washington, the Oklahoma Historical Society, and NPS records, not from the Perplexity library."
+          }
+        ]
+      }
+    }
+  },
+  "nicodemus": {
+    "name": "Nicodemus",
+    "timelineChapter": "ch2",
+    "timeline": [
+      {
+        "year": "1877",
+        "label": "The Nicodemus Town Company is organized in April; settlers arrive from June, the main Kentucky party in September"
+      },
+      {
+        "year": "1878",
+        "label": "First Emancipation Day celebration on August 1; the post office opens with Z. T. Fletcher as first postmaster"
+      },
+      {
+        "year": "1879",
+        "label": "The Town Company is abolished in April; the Exoduster migration follows"
+      },
+      {
+        "year": "1880",
+        "label": "Graham County is organized (April 1) with John DePrad as county clerk"
+      },
+      {
+        "year": "1882",
+        "label": "Edward P. McCabe is elected Kansas state auditor"
+      },
+      {
+        "year": "1886",
+        "label": "The Western Cyclone publishes its first issue (May 13); the town receives title to its site (June 6); an Emancipation crowd of 4,000 to 5,000 is reported"
+      },
+      {
+        "year": "1887",
+        "label": "The Bank of Nicodemus is established and the stone schoolhouse (District No. 1) is built"
+      },
+      {
+        "year": "1888",
+        "label": "The Union Pacific builds through Bogue, miles south, and the railroad bypass becomes final"
+      },
+      {
+        "year": "1935",
+        "label": "The Dust Bowl reaches the plains settlements"
+      },
+      {
+        "year": "1953",
+        "label": "The Nicodemus post office is discontinued"
+      },
+      {
+        "year": "1976",
+        "label": "The Nicodemus Historic District is designated a National Historic Landmark"
+      },
+      {
+        "year": "1988",
+        "label": "Angela Bates founds the Nicodemus Historical Society"
+      },
+      {
+        "year": "1996",
+        "label": "Congress establishes Nicodemus National Historic Site (November), preserving the five structures"
+      }
+    ],
+    "chapters": {
+      "intro": {
+        "title": "Introduction",
+        "questions": [
+          {
+            "q": "How is Nicodemus governed today?",
+            "options": [
+              "By a mayor and town council, like Eatonville",
+              "It was never incorporated; it is an unincorporated community governed through Nicodemus Township in Graham County, and the townsite is a National Historic Site",
+              "Directly by the National Park Service",
+              "It is not governed; the site is abandoned"
+            ],
+            "answer": 1,
+            "explain": "The header carries the never-incorporated fact plainly: township government, a resident community, and a National Historic Site established in November 1996."
+          }
+        ]
+      },
+      "ch1": {
+        "title": "1. Founding",
+        "questions": [
+          {
+            "q": "Why was the Nicodemus Town Company organized in April 1877?",
+            "options": [
+              "To build a railroad station for the Kansas Pacific",
+              "So Black settlers, mostly from Kentucky, could own land, vote, and govern themselves at the moment Reconstruction was collapsing",
+              "To recruit labor for Graham County wheat farms",
+              "To found a college on the plains"
+            ],
+            "answer": 1,
+            "explain": "The chapter ties the founding to the end of Reconstruction: the company, led by the Reverend W. H. Smith and Benjamin Carr, offered land ownership and self-government in Kansas."
+          },
+          {
+            "q": "What did the main Kentucky party find when it arrived in September 1877?",
+            "options": [
+              "A built town with a hotel and stores",
+              "A paper plat and open prairie: no houses, no trees; families wintered in dugouts, and about sixty of some three hundred settlers returned to Kentucky at once",
+              "A railroad depot and a stocked warehouse",
+              "A fortified settlement of sod houses"
+            ],
+            "answer": 1,
+            "explain": "The chapter records the gap between promotion and fact: a surveyed townsite on treeless prairie, a winter of dugouts, and roughly a fifth of the party turning back."
+          }
+        ]
+      },
+      "ch2": {
+        "title": "2. Building the Town",
+        "questions": [
+          {
+            "q": "What did Edward P. McCabe's 1882 election say about Nicodemus at its strongest?",
+            "options": [
+              "He became the town's first mayor",
+              "He was elected Kansas state auditor, the highest elective office then held by a Black man in any state outside the South",
+              "He was appointed postmaster by the governor",
+              "He won a seat in the U.S. Congress"
+            ],
+            "answer": 1,
+            "explain": "The political spine runs from John Niles in 1877 to McCabe's 1882 state auditor win, alongside the township offices and DePrad's county clerkship."
+          },
+          {
+            "q": "Why does August 1, 1878 matter in Nicodemus?",
+            "options": [
+              "The town company was abolished that day",
+              "The first Emancipation Day celebration was held then, an observance the community has carried every year since (today's Homecoming)",
+              "The railroad arrived that day",
+              "Graham County was organized that day"
+            ],
+            "answer": 1,
+            "explain": "Emancipation Day began August 1, 1878, the same summer the post office opened; the chapter calls it the community institution rather than a town business."
+          }
+        ]
+      },
+      "ch3": {
+        "title": "3. Peak Years",
+        "questions": [
+          {
+            "q": "Why does the dossier refuse to print a single peak population for Nicodemus?",
+            "options": [
+              "No census was ever taken in Kansas",
+              "The surviving counts measure different things (townsite, township, and county) and still conflict, 700 reported for 1880 against a census reading of 484 in the county and 260 in the township, so the peak population is carried as NOT ESTABLISHED",
+              "The records were destroyed in the Dust Bowl",
+              "The town company hid the figures from recruiters"
+            ],
+            "answer": 1,
+            "explain": "Conflict 1 in Section 9 is the stated reason: the numbers rest on different units and different political incentives, so the dossier carries no single peak figure."
+          },
+          {
+            "q": "When does the chapter place Nicodemus's peak era?",
+            "options": [
+              "1877 to 1879, the founding winters",
+              "Roughly 1886 through the first decade of the 1900s",
+              "The Dust Bowl years",
+              "After the 1996 historic site designation"
+            ],
+            "answer": 1,
+            "explain": "The chapter dates the fullest documented life, two newspapers, the bank, the stone schoolhouse, to the mid-1880s through the 1900s, before the bypass drained the trade."
+          }
+        ]
+      },
+      "ch4": {
+        "title": "4. The Turning Point",
+        "questions": [
+          {
+            "q": "Why was the railroad bypass of 1888 important in causing Nicodemus's decline?",
+            "options": [
+              "The town refused a depot on principle and trade simply followed the refusal",
+              "Plains prosperity ran on rail access: the town voted $16,000 in bonds and courted three companies, but the Union Pacific built through Bogue instead, and businesses and the county's trade drained to the rail towns",
+              "The bypass happened after the town had already emptied",
+              "The railroad arrived but refused to stop for freight"
+            ],
+            "answer": 1,
+            "explain": "The chapter is explicit that the failure was not effort: bonds were voted and companies courted, and when the line ran through Bogue in 1888 the commercial future moved with it."
+          },
+          {
+            "q": "What earlier blow had already thinned the settler base before the bypass?",
+            "options": [
+              "The post office closure",
+              "The winter blizzard of 1885 destroyed about 40 percent of the wheat crop and started an exodus by settlers who had arrived expecting more",
+              "The abolition of the Town Company",
+              "A tornado destroyed the schoolhouse"
+            ],
+            "answer": 1,
+            "explain": "The chapter pairs the two blows: the 1885 blizzard began the defections, and the 1888 bypass made the decline permanent."
+          }
+        ]
+      },
+      "ch5": {
+        "title": "5. Survival, Decline, or Destruction",
+        "questions": [
+          {
+            "q": "What did Angela Bates's six years of work produce in November 1996?",
+            "options": [
+              "A rebuilt railroad spur to Bogue",
+              "Congress established Nicodemus National Historic Site, protecting the townsite and its five structures as a unit of the National Park System",
+              "Reincorporation of the town",
+              "A state park at the townsite"
+            ],
+            "answer": 1,
+            "explain": "The chapter dates the designation campaign from Bates's 1988 Historical Society to the November 1996 act of Congress, the institutional form survival takes for an unincorporated town."
+          },
+          {
+            "q": "When and why did the Nicodemus post office close?",
+            "options": [
+              "It closed in 1888 when the railroad bypassed the town",
+              "It was discontinued in 1953, an economic decision from Washington that the chapter treats as a later chapter of the same decline",
+              "It never closed; it still operates daily",
+              "It closed when the Bank of Nicodemus failed"
+            ],
+            "answer": 1,
+            "explain": "The post office that opened in 1878 was discontinued in 1953; the chapter names the closure a bookend of decline, not a founding-era event."
+          }
+        ]
+      },
+      "ch6": {
+        "title": "6. The Town Today",
+        "questions": [
+          {
+            "q": "The Park Service pairs each of the five preserved buildings with a theme. Which pairing is correct?",
+            "options": [
+              "First Baptist Church = government",
+              "School District No. 1 = education",
+              "The St. Francis Hotel = religion",
+              "Township Hall = commerce"
+            ],
+            "answer": 1,
+            "explain": "The pairings run: AME Church, religion; St. Francis Hotel, commerce; Township Hall, community; First Baptist Church, family; School District No. 1, education."
+          }
+        ]
+      },
+      "ch7": {
+        "title": "7. The Song",
+        "questions": [
+          {
+            "q": "The annotation flags the lyric \"Prayin' with the Osage.\" Why?",
+            "options": [
+              "The Osage are documented as the town's founders",
+              "No source in the dossier mentions the Osage in connection with Nicodemus; the documented help was Kansas Pacific relief supplies shipped free in 1878 to 1879, so the line is carried as unverified",
+              "The line misdates the first winter",
+              "The Osage objected to the song in writing"
+            ],
+            "answer": 1,
+            "explain": "Under the dossier's rule that religious and descriptive color cannot be presented as history without a source, the Osage line is flagged rather than repeated as fact."
+          },
+          {
+            "q": "The song says \"we flipped Graham County.\" What does the annotation say actually happened?",
+            "options": [
+              "Black voters held every county office by 1882",
+              "Specific offices were won inside a majority-white county (convention delegate, county clerk, justices of the peace, state auditor), and the 1880 county-seat vote was lost to Millbrook, so the phrase overstates a real record",
+              "The county was never contested at any level",
+              "The phrase refers to a land purchase, not politics"
+            ],
+            "answer": 1,
+            "explain": "The annotation keeps the achievements and corrects the scale: real offices won, a real county-seat loss, inside a county whose population was majority white."
+          }
+        ]
+      },
+      "ch8": {
+        "title": "8. Primary Sources",
+        "questions": [
+          {
+            "q": "Which account does the chapter treat as the standard first-person record of the settlers' arrival?",
+            "options": [
+              "The Nicodemus Western Cyclone's first issue",
+              "Mrs. Williana Hickman's 1878 account, \"That is Nicodemus,\" preserved in The Black West (1971)",
+              "W. R. Hill's 1877 promotional circular",
+              "The 1890 Kansas state census"
+            ],
+            "answer": 1,
+            "explain": "Hickman's testimony of the September 1877 arrival was first printed for a general reader in William Loren Katz's The Black West in 1971 and is the standard arrival account."
+          }
+        ]
+      },
+      "ch9": {
+        "title": "9. Sources and Bibliography",
+        "questions": [
+          {
+            "q": "Why does Section 9 flag the description \"Exoduster farm colony\" for the 1877 founding?",
+            "options": [
+              "The Exodusters settled in Oklahoma, not Kansas",
+              "The 1877 founding predates the 1879 Exoduster wave by two years; the Exodusters are part of the town's growth story, not its origin event",
+              "No Nicodemus settler ever farmed",
+              "The term Exoduster was invented by the Park Service"
+            ],
+            "answer": 1,
+            "explain": "Conflict 7 states the standing rule: two years is two years, and the label moves the founding into a migration it preceded."
+          }
+        ]
+      }
+    }
+  },
+  "eatonville": {
+    "name": "Eatonville",
+    "timelineChapter": "ch2",
+    "timeline": [
+      {
+        "year": "1881",
+        "label": "Joseph C. Clarke persuades Josiah Eaton to sell 22 acres; the land is cut into 48 lots offered only to Black buyers, and St. Lawrence AME is founded"
+      },
+      {
+        "year": "1884",
+        "label": "The settlement is renamed Eatonville"
+      },
+      {
+        "year": "1887",
+        "label": "Eatonville incorporates on August 15; 27 registered Black electors vote it in and elect an all-Black slate, Joseph E. Boger as first mayor"
+      },
+      {
+        "year": "1889",
+        "label": "The post office opens; the Eatonville Speaker advertises \"a Negro City Governed by Negroes\""
+      },
+      {
+        "year": "1894",
+        "label": "The Hurston family arrives; Zora Neale Hurston is three years old"
+      },
+      {
+        "year": "1902",
+        "label": "John Hurston is called as pastor of Macedonia Missionary Baptist Church"
+      },
+      {
+        "year": "1935",
+        "label": "Hurston publishes Mules and Men, her folklore collection rooted in the town"
+      },
+      {
+        "year": "1937",
+        "label": "Their Eyes Were Watching God is published"
+      },
+      {
+        "year": "1950",
+        "label": "The county takes control of the Hungerford campus (1950 to 1951) under an education deed restriction"
+      },
+      {
+        "year": "1987",
+        "label": "The Association to Preserve the Eatonville Community (P.E.C.) is organized against the Kennedy Boulevard widening"
+      },
+      {
+        "year": "1990",
+        "label": "The first ZORA! Festival is held and the Zora Neale Hurston National Museum of Fine Arts opens"
+      },
+      {
+        "year": "1998",
+        "label": "The Eatonville Historic District is listed on the National Register (February 3)"
+      },
+      {
+        "year": "2009",
+        "label": "Hungerford Preparatory closes; the school buildings are later demolished"
+      },
+      {
+        "year": "2024",
+        "label": "The National Trust names Eatonville one of America's 11 Most Endangered Historic Places (May 1)"
+      },
+      {
+        "year": "2026",
+        "label": "The Orange County School Board votes to sell the Hungerford land to Dr. Phillips Charities (January 13)"
+      }
+    ],
+    "chapters": {
+      "intro": {
+        "title": "Introduction",
+        "questions": [
+          {
+            "q": "Which statement describes Eatonville as the dossier carries it?",
+            "options": [
+              "An unincorporated neighborhood of Orlando",
+              "A still-incorporated town with a mayor-council government, whose motto is \"The Town That Freedom Built\"",
+              "A town destroyed in the 1920s and later rebuilt as a museum",
+              "A district administered by Orange County since 1951"
+            ],
+            "answer": 1,
+            "explain": "The header records continuous incorporation: mayor-council government today, building permits and its own police department, under the motto \"The Town That Freedom Built.\""
+          }
+        ]
+      },
+      "ch1": {
+        "title": "1. Founding",
+        "questions": [
+          {
+            "q": "Why did Eatonville's land become available to Black buyers in 1881?",
+            "options": [
+              "A federal land grant reserved it for freedmen",
+              "At Orlando realtor Joseph C. Clarke's urging, Union veteran Josiah Eaton sold 22 acres that were surveyed into 48 lots offered only to Black buyers, at a moment when prejudice was blocking Clarke's other sales",
+              "The town won the land in a court settlement",
+              "Zora Neale Hurston's father purchased the tract"
+            ],
+            "answer": 1,
+            "explain": "The chapter is plain that the founding was a real-estate transaction across the color line: Eaton sold, Clarke subdivided, and the lots were offered only to Black buyers under a temperance covenant."
+          },
+          {
+            "q": "What happened on August 15, 1887?",
+            "options": [
+              "The Hungerford school opened its doors",
+              "The town's 27 registered Black electors voted to incorporate and elected an all-Black slate of officers, Joseph E. Boger as first mayor",
+              "The post office opened under an Eatonville name",
+              "The first ZORA! Festival was held"
+            ],
+            "answer": 1,
+            "explain": "Peacemaking judge E. K. Foster supervised the vote and swore the officers in; the chapter notes the incorporation certified Black men voting and governing under Florida law in 1887."
+          }
+        ]
+      },
+      "ch2": {
+        "title": "2. Building the Town",
+        "questions": [
+          {
+            "q": "What kind of institution was the Hungerford school?",
+            "options": [
+              "A one-room county elementary school",
+              "A private boarding school modeled on Tuskegee, which by 1927 housed more than 100 boarding students alongside day and night students",
+              "A seminary for training ministers only",
+              "A Rosenwald elementary school for the town's children"
+            ],
+            "answer": 1,
+            "explain": "Russell C. Calhoun and his wife Mary, Tuskegee graduates, ran Hungerford on the Tuskegee model: academic and industrial courses, a working campus, and service to a region, not just a town."
+          },
+          {
+            "q": "How did the Eatonville Speaker advertise the town in 1889?",
+            "options": [
+              "\"The Town That Freedom Built\"",
+              "\"a Negro City Governed by Negroes\"",
+              "\"the richest Negro street in the world\"",
+              "\"the most enterprising Negro town in the United States\""
+            ],
+            "answer": 1,
+            "explain": "The 1889 advertisement in the town's own newspaper is quoted in the chapter as the founders writing their own description of what they had made."
+          }
+        ]
+      },
+      "ch3": {
+        "title": "3. Peak Years",
+        "questions": [
+          {
+            "q": "Which statement about Zora Neale Hurston and Eatonville is accurate?",
+            "options": [
+              "She was born in Eatonville in 1891",
+              "She was born in Notasulga, Alabama, on January 7, 1891, and arrived in Eatonville in 1894 at age three; the town became the raw material for Mules and Men (1935) and Their Eyes Were Watching God (1937)",
+              "She moved to Eatonville as an adult to research folklore",
+              "She served as the town's mayor in the 1930s"
+            ],
+            "answer": 1,
+            "explain": "The chapter corrects the compressed version: Alabama-born, Eatonville-raised from age three, and the town's talk, church, and school became the substance of her major work."
+          },
+          {
+            "q": "What was Eatonville's demographic peak, and when?",
+            "options": [
+              "824 residents at statehood in 1907",
+              "2,432 residents in the 2000 census, the highest modern count before two decades of drift downward",
+              "About 4,000 in the 1911 booster years",
+              "The town has never been counted by the census"
+            ],
+            "answer": 1,
+            "explain": "The decennial series in Section 9 peaks at 2,432 in 2000; later counts settle near 2,300, which the chapter frames as community stability rather than growth."
+          }
+        ]
+      },
+      "ch4": {
+        "title": "4. The Turning Point",
+        "questions": [
+          {
+            "q": "Why was the fight over widening Kennedy Boulevard important in causing the ZORA! Festival?",
+            "options": [
+              "The festival was the county's apology for the widening",
+              "Residents organized P.E.C. in 1987 against a five-lane widening meant to erase the historic corridor; the widening was cancelled, and the festival was launched in 1990 as the winning side's awareness campaign",
+              "The widening was completed and the festival marks its route",
+              "Alice Walker proposed the festival at a town council meeting in 1980"
+            ],
+            "answer": 1,
+            "explain": "The chapter calls the festival a defensive weapon that outlived the fight: organized against the road in 1987, cancelled road, first festival in 1990, Hurston reframed from local memory to the town's public argument."
+          },
+          {
+            "q": "What is the Hungerford land's history in one line?",
+            "options": [
+              "It was sold to developers in 1887 and built over",
+              "The county took the campus in 1950 to 1951 for about $16,000 under a deed restriction for education; the school closed in 2009, the buildings were demolished, and about 100 acres of restricted land remain",
+              "It is still operated by Tuskegee graduates",
+              "It became the site of the Zora Neale Hurston museum"
+            ],
+            "answer": 1,
+            "explain": "The chapter traces the tract from private Black boarding school to county hands under trust terms, to a closed school and a vacant, deed-restricted parcel at the town's edge."
+          }
+        ]
+      },
+      "ch5": {
+        "title": "5. Survival, Decline, or Destruction",
+        "questions": [
+          {
+            "q": "What did the Eatonville Town Council do on February 7, 2023?",
+            "options": [
+              "It approved the developer's rezoning of the Hungerford land",
+              "It rejected the developer's requested plan amendments and zoning changes for the Hungerford land, a decision P.E.C. later cited when it sued the School Board",
+              "It voted to sell the land to Dr. Phillips Charities",
+              "It dissolved the town government"
+            ],
+            "answer": 1,
+            "explain": "The chapter records the 2023 rejection as the town keeping its side of the argument, even as the School Board, which owns the land, moved toward its own disposition."
+          },
+          {
+            "q": "What did the Orange County School Board vote on January 13, 2026?",
+            "options": [
+              "To rebuild Hungerford Preparatory on the site",
+              "To sell about 117 acres to Dr. Phillips Charities for $14 million, with up to $13 million forgiven against community milestones; the chapter notes the closing itself is not verified in its sources",
+              "To return the land to the town without conditions",
+              "To list the land on the National Register"
+            ],
+            "answer": 1,
+            "explain": "The vote is recorded with its terms and its caveat: a purchase-and-sale agreement approved, a closing not verified, and the land's future still argued from several sides."
+          }
+        ]
+      },
+      "ch6": {
+        "title": "6. The Town Today",
+        "questions": [
+          {
+            "q": "What does the chapter say about the Hurston museum and the Moseley House?",
+            "options": [
+              "Both closed when Hungerford shut in 2009",
+              "The Zora Neale Hurston National Museum of Fine Arts opened in 1990 on Kennedy Boulevard, and the Moseley House (1888) is the town's second-oldest structure, home of Hurston's best friend Matilda Moseley",
+              "The museum is located in Orlando, not Eatonville",
+              "The Moseley House was demolished for the road widening"
+            ],
+            "answer": 1,
+            "explain": "The chapter places the museum on East Kennedy Boulevard in the historic district and the Moseley House on Calhoun Avenue, both visitable anchors of the town Hurston described."
+          }
+        ]
+      },
+      "ch7": {
+        "title": "7. The Song",
+        "questions": [
+          {
+            "q": "The lyric calls Eatonville \"the first Black-incorporated town.\" What does the annotation say?",
+            "options": [
+              "The claim is exact; no earlier example exists",
+              "It is an overclaim: Brooklyn, Illinois (1873) and Princeville, North Carolina (1885) predate it; the supported claim is among the first self-governing all-Black municipalities in the United States, continuously incorporated since 1887",
+              "The claim fails because Eatonville never incorporated",
+              "The annotation removes the line from the song"
+            ],
+            "answer": 1,
+            "explain": "The annotation adjudicates the superlative with the counterexamples and keeps the narrower, documented claim; the correction is carried in print rather than by rewriting the master."
+          },
+          {
+            "q": "\"Twenty-seven men bought land.\" What does the annotation say that line compresses?",
+            "options": [
+              "Nothing; 27 men jointly bought the original tract",
+              "It merges the August 15, 1887 incorporation vote, at which 27 registered Black electors voted and elected officers, with the separate land purchases: Clarke's 22 acres from Eaton and a jurisdiction of 112 acres by incorporation",
+              "The 27 were the Hungerford trustees",
+              "The 27 refers to the town council of 1902"
+            ],
+            "answer": 1,
+            "explain": "The annotation untangles the compression: 27 electors casting a vote is one documented event, buying land is another, and the line blends them."
+          }
+        ]
+      },
+      "ch8": {
+        "title": "8. Primary Sources",
+        "questions": [
+          {
+            "q": "How are Hurston's books handled in this chapter's source list?",
+            "options": [
+              "Quoted in full as public domain texts",
+              "Listed as primary literary sources (among them Mules and Men and Their Eyes Were Watching God) and noted as copyrighted, since Hurston died in 1960, so they are used as summary and brief quotation only",
+              "Excluded because fiction cannot be a source",
+              "Cited only through the festival's retellings"
+            ],
+            "answer": 1,
+            "explain": "The copyright and attribution notes state the handling rule plainly: copyrighted primary sources are summarized and briefly quoted, and photographs are linked, not reproduced."
+          }
+        ]
+      },
+      "ch9": {
+        "title": "9. Sources and Bibliography",
+        "questions": [
+          {
+            "q": "What flag does Section 9 raise about the Perplexity master thread's Eatonville segment?",
+            "options": [
+              "It gives the wrong incorporation date",
+              "It carries the strong form of the first-town claim, \"oldest self-governing Black town in the United States,\" which conflict 1 narrows; the dossier treats it as evidence of how the claim circulates, not as support for the broad form",
+              "It attributes the founding to the wrong Eaton",
+              "It omits the Hungerford school entirely"
+            ],
+            "answer": 1,
+            "explain": "Section 9 agrees with the thread on the date, the 27 voters, Hungerford, and Hurston, and flags the one point where its language outruns the narrowed claim."
+          }
+        ]
+      }
+    }
+  },
+  "rosewood": {
+    "name": "Rosewood",
+    "timelineChapter": "ch2",
+    "timeline": [
+      {
+        "year": "1845 or 1847",
+        "label": "Rosewood is settled in Levy County; sources divide between the two years, and the dossier chooses neither"
+      },
+      {
+        "year": "1870",
+        "label": "A post office and a Florida Railroad depot are established"
+      },
+      {
+        "year": "1878",
+        "label": "The first church (white) is built"
+      },
+      {
+        "year": "1883",
+        "label": "The AME church is established; Pleasant Hill AME follows in 1886"
+      },
+      {
+        "year": "1890",
+        "label": "By about this year the red cedar is exhausted, the Cedar Key pencil mills close, and most white families leave"
+      },
+      {
+        "year": "1900",
+        "label": "The Black community is the majority in Rosewood"
+      },
+      {
+        "year": "1915",
+        "label": "The state census counts 355 Black and 345 white residents in the Rosewood voting precinct"
+      },
+      {
+        "year": "1916",
+        "label": "The Goins family has wound down its Levy County operation and moved to Gainesville"
+      },
+      {
+        "year": "1923",
+        "label": "January 1 to 7: mob violence destroys Rosewood; the official record documents eight deaths"
+      },
+      {
+        "year": "1982",
+        "label": "The story returns to the public record through newspaper reporting in the early 1980s, notably Gary Moore's"
+      },
+      {
+        "year": "1993",
+        "label": "The state-commissioned historians' report is delivered (December 22)"
+      },
+      {
+        "year": "1994",
+        "label": "The Rosewood claims bill (House Bill 591) passes in April: $150,000 to each living survivor"
+      },
+      {
+        "year": "2004",
+        "label": "Rosewood is designated a Florida Heritage Landmark and the state marker is placed on State Road 24"
+      },
+      {
+        "year": "2018",
+        "label": "Mary Hall Daniels, the last known survivor, dies on May 2 at 98"
+      }
+    ],
+    "chapters": {
+      "intro": {
+        "title": "Introduction",
+        "questions": [
+          {
+            "q": "Which statement about Rosewood is accurate?",
+            "options": [
+              "It was incorporated in 1870 and still has a town government",
+              "It was a predominantly Black, unincorporated community destroyed in January 1923 and never rebuilt; the site is now a Florida Heritage Landmark",
+              "It survives today as a small town near Cedar Key",
+              "It was relocated to Gainesville after 1923"
+            ],
+            "answer": 1,
+            "explain": "The header records Rosewood as destroyed: burned and abandoned in January 1923, never resettled, and designated a Florida Heritage Landmark in 2004."
+          }
+        ]
+      },
+      "ch1": {
+        "title": "1. Founding",
+        "questions": [
+          {
+            "q": "Why did Rosewood's population become predominantly Black by 1900?",
+            "options": [
+              "The state ordered white families to leave Levy County",
+              "By about 1890 the red cedar was exhausted and the Cedar Key pencil mills closed, so most white families moved out, selling or leasing their land to Black buyers",
+              "A new railroad brought Black settlers in 1900",
+              "The town voted to exclude white residents"
+            ],
+            "answer": 1,
+            "explain": "The chapter ties the shift to the cedar economy's end: the mills closed, white families left, and land passed to the Black families who stayed and bought."
+          },
+          {
+            "q": "When were Rosewood's post office and railroad depot established?",
+            "options": [
+              "1845",
+              "1870",
+              "1900",
+              "1916"
+            ],
+            "answer": 1,
+            "explain": "The hamlet had a post office and a Florida Railroad depot from 1870, and the county opened a one-room school in the same era."
+          }
+        ]
+      },
+      "ch2": {
+        "title": "2. Building the Town",
+        "questions": [
+          {
+            "q": "What role did the Goins family play in Rosewood's economy?",
+            "options": [
+              "They ran the white-owned general store on the railroad line",
+              "Their naval stores company distilled turpentine and rosin, they owned or leased several thousand acres, and they became the second largest landowners in Levy County",
+              "They owned the Florida Railroad depot",
+              "They founded all three of the town's churches"
+            ],
+            "answer": 1,
+            "explain": "The chapter credits M. Goins and Brothers with the turpentine enterprise, the landholdings, and housing in the section called Goins' Quarters."
+          },
+          {
+            "q": "Why must the 1915 census figure of 355 Black residents be repeated with care?",
+            "options": [
+              "It was a journalist's estimate, not a census",
+              "It counts the Rosewood voting precinct, an area larger than the village, so it must not be published as the village's own population",
+              "It was taken after the town was destroyed",
+              "It includes the population of Sumner"
+            ],
+            "answer": 1,
+            "explain": "The chapter repeats the caveat each time the figure appears: precinct numbers describe a larger area than the village of Rosewood itself."
+          }
+        ]
+      },
+      "ch3": {
+        "title": "3. Peak Years",
+        "questions": [
+          {
+            "q": "What does the chapter say is the honest summary of Rosewood's peak?",
+            "options": [
+              "A wealthy boomtown rivaling Greenwood",
+              "A rural Black community where families owned land, ran businesses, worshiped in their own churches, and schooled their own children; the ordinariness is the point",
+              "A company town owned by the pencil mills",
+              "A peak that cannot be described in any respect"
+            ],
+            "answer": 1,
+            "explain": "The chapter deliberately resists boomtown language: Rosewood's height was self-sufficient, landowning, institutionally complete rural life."
+          }
+        ]
+      },
+      "ch4": {
+        "title": "4. The Turning Point",
+        "questions": [
+          {
+            "q": "Why was Fannie Taylor's January 1, 1923 accusation important in causing Rosewood's destruction?",
+            "options": [
+              "It was proven in court within days",
+              "The accusation was never substantiated, but suspicion fixed on an escaped convict and armed posses began searching; the search escalated into a week of killings and the burning of the town",
+              "It brought federal troops who burned the town",
+              "It persuaded residents to abandon the town voluntarily"
+            ],
+            "answer": 1,
+            "explain": "The chapter states the sequence plainly: an unsubstantiated accusation, a posse search, the siege at the Carrier house, and by January 7 the remaining Black-owned buildings burned."
+          },
+          {
+            "q": "What did the state's own record later show about the official response?",
+            "options": [
+              "Sheriff Walker controlled the mob and arrests followed",
+              "Sheriff Robert Elias Walker did not control the mob, Governor Cary Hardee took no forceful action, a special grand jury indicted no one, and no one was ever prosecuted",
+              "The governor sent the militia on January 2",
+              "The 1923 grand jury convicted the mob's leaders"
+            ],
+            "answer": 1,
+            "explain": "The chapter records the failure of protection as part of the event itself, closing with the February 1923 grand jury that found insufficient evidence to indict anyone."
+          }
+        ]
+      },
+      "ch5": {
+        "title": "5. Survival, Decline, or Destruction",
+        "questions": [
+          {
+            "q": "What did Florida's 1994 Rosewood claims bill do, and why was it a first?",
+            "options": [
+              "It apologized but appropriated nothing",
+              "It appropriated $2.1 million, including $150,000 to each living survivor, and was the first time a U.S. state legislature compensated survivors of racial violence",
+              "It rebuilt the town on its original site",
+              "It created a state park at Rosewood"
+            ],
+            "answer": 1,
+            "explain": "House Bill 591, signed by Governor Lawton Chiles in April 1994, paid nine or more identified survivors (the count conflicts across accounts) and funded descendant property claims and scholarships."
+          },
+          {
+            "q": "How did Rosewood's story survive the decades of silence after 1923?",
+            "options": [
+              "In Florida school textbooks of the 1930s",
+              "Mainly inside the families, until newspaper reporting in the early 1980s, notably by Gary Moore, returned it to the public record",
+              "Through the 1923 grand jury's published findings",
+              "The story never went silent"
+            ],
+            "answer": 1,
+            "explain": "The chapter says the survivors scattered and often never spoke of Rosewood even at home; journalism in the 1980s, then the 1993 state report, restored the record."
+          }
+        ]
+      },
+      "ch6": {
+        "title": "6. The Town Today",
+        "questions": [
+          {
+            "q": "What physically remains of the 1923 town today?",
+            "options": [
+              "The full historic district, fenced and interpreted",
+              "One surviving house, the John Wright house, privately owned, and the state historical marker on State Road 24",
+              "The Masonic Hall and two of the churches",
+              "A rebuilt village center on the original streets"
+            ],
+            "answer": 1,
+            "explain": "The chapter is plain about the absence: the Wright house and the 2004 marker are what stand, and the emptiness of the site is itself part of the record."
+          }
+        ]
+      },
+      "ch7": {
+        "title": "7. The Song",
+        "questions": [
+          {
+            "q": "How does the annotation characterize the Rosewood song?",
+            "options": [
+              "A detailed chronicle naming the victims and dates",
+              "An elegy, not a chronicle: it names no person, gives no date, and states no death toll, so nothing in it can conflict with the record",
+              "A protest song demanding prosecution of the mob",
+              "A summary of the 1994 claims bill"
+            ],
+            "answer": 1,
+            "explain": "The annotation says the song mourns the silence around Rosewood rather than attempting its history, and is therefore treated as an elegy on its own terms."
+          },
+          {
+            "q": "The lyric \"Families scattered, erased from the map\" matches which documented fact?",
+            "options": [
+              "Survivors rebuilt together elsewhere in Levy County",
+              "Survivors left by train and on foot, settled in Gainesville, Tampa, Jacksonville, and elsewhere, and never returned to live in Rosewood",
+              "The state removed Rosewood from its maps in 1924",
+              "The families moved as one group to Tulsa"
+            ],
+            "answer": 1,
+            "explain": "Section 5 documents the permanent dispersal the line describes: evacuation by the Bryce brothers' train, shelter at the Wright house, and no return."
+          }
+        ]
+      },
+      "ch8": {
+        "title": "8. Primary Sources",
+        "questions": [
+          {
+            "q": "Which document does the chapter call the controlling official account of January 1923?",
+            "options": [
+              "The Literary Digest's February 1923 coverage",
+              "\"A Documented History of the Incident Which Occurred at Rosewood, Florida, in January 1923,\" the 1993 report to the Florida Board of Regents",
+              "Wilson Hall's 1994 testimony",
+              "The 2004 historical marker text"
+            ],
+            "answer": 1,
+            "explain": "The chapter identifies the state-commissioned 1993 report as the controlling official account, the document on which the 1994 claims bill rested."
+          }
+        ]
+      },
+      "ch9": {
+        "title": "9. Sources and Bibliography",
+        "questions": [
+          {
+            "q": "How does this dossier handle the disputed death toll?",
+            "options": [
+              "It adopts the highest survivor figure",
+              "It carries the documented eight deaths, names the higher survivor claims (up to 27) as claims, and adopts no higher figure as fact",
+              "It declines to mention deaths at all",
+              "It averages the documented and claimed figures"
+            ],
+            "answer": 1,
+            "explain": "Conflict 3 records the toll openly: eight documented in the 1993 report, higher figures present in testimony and retelling, none of them adopted."
+          }
+        ]
+      }
+    }
+  }
+}
