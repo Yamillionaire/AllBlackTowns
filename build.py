@@ -341,10 +341,17 @@ education_body = """
 map_body = ""
 try:
     coords = json.load(open(f"{SITE}/town-coords.json"))
+    # Kept off the U.S. map by the owner's direction (2026-10-28): Nanny Town
+    # stays in the catalog (towns.json) but appears only on the international
+    # map below. Its coordinates stay in town-coords.json on purpose: the town
+    # pages (build_towns.py) draw each town's own location pin from the same
+    # file, so deleting them there (the Marshalltown mechanism) would strip
+    # the pin from Nanny Town's own page too.
+    MAP_EXCLUDE = {"Nanny Town|Jamaica"}
     pins = []
     for t in towns:
         k = f"{t['town']}|{t['state']}"
-        if k in coords:
+        if k in coords and k not in MAP_EXCLUDE:
             pins.append({"town": t["town"], "state": t["state"], "slug": slugify_town(t["town"], t["state"]), "song": t["song"],
                          "about": (t["about"] or "")[:180], "lat": coords[k][0], "lon": coords[k][1]})
     pin_data = json.dumps(pins)
@@ -386,7 +393,7 @@ map.addLayer(cluster);
 <section class="block"><div class="wrap">
 <div class="rule"></div>
 <h2 class="section-title">The international Black towns map</h2>
-<p class="section-sub">The story does not stop at the border. Wherever colonialism carried Black people (the Caribbean, the Virgin Islands, the Americas, and the ports of Europe), they did what they did here: fought for ground and built towns of their own. And in Africa itself, communities broke colonial control and governed themselves: freed people's towns that became capitals, maroon towns and refuges, and a town where a liberation republic was declared. Maroon republics, quilombos, palenques, Garifuna towns, and free Black settlements, each pinned where it stood or still stands. One of these towns already has its song: Nanny Town, Jamaica, the only town that stands on both maps.</p>
+<p class="section-sub">The story does not stop at the border. Wherever colonialism carried Black people (the Caribbean, the Virgin Islands, the Americas, and the ports of Europe), they did what they did here: fought for ground and built towns of their own. And in Africa itself, communities broke colonial control and governed themselves: freed people's towns that became capitals, maroon towns and refuges, and a town where a liberation republic was declared. Maroon republics, quilombos, palenques, Garifuna towns, and free Black settlements, each pinned where it stood or still stands. One of these towns already has its song: Nanny Town, Jamaica.</p>
 <div id="worldmap" class="townmap" data-rv></div>
 <p class="map-note">{len(intl)} places on this map. Entries the record supports only as a district or a territory are labeled as such: the record stays honest. Map data &copy; OpenStreetMap contributors.</p>
 </div></section>
