@@ -1,0 +1,32 @@
+# All Black Towns
+
+> All Black Towns documents 120 historic Black towns in the United States: where each town is, how it was founded, what happened to it, and the original song written for it. The site carries a page for every town, an interactive map, in-depth research dossiers with lessons for teachers, and a growing international map of Black towns beyond the United States. It is an education and preservation project by The Elements of Hip Hop.
+
+## Towns and map
+
+- [Interactive map](https://www.allblacktowns.com/map.html): all 120 towns placed, plus 53 international places
+- [Town index](https://www.allblacktowns.com/towns.html): every town page, searchable by state and name
+
+## Dossiers (free pilot set)
+
+- [Sweet Auburn, Atlanta, Georgia](https://www.allblacktowns.com/dossiers/sweet-auburn.html): how one Atlanta street became known as the richest Negro street in the world
+- [Boley, Oklahoma](https://www.allblacktowns.com/dossiers/boley.html)
+- [Nicodemus, Kansas](https://www.allblacktowns.com/dossiers/nicodemus.html)
+- [Eatonville, Florida](https://www.allblacktowns.com/dossiers/eatonville.html)
+- [Rosewood, Florida](https://www.allblacktowns.com/dossiers/rosewood.html)
+
+Each dossier is a full chaptered history with a timeline, check-for-understanding questions for classroom use, and the town's original song.
+
+## Music
+
+- [Music](https://www.allblacktowns.com/music.html): every town has an original song; song links are also on each town's page and in Chapter 7 of its dossier.
+
+## For teachers
+
+- [Education](https://www.allblacktowns.com/education.html): the classroom layer: chaptered reading, timelines, and questions with an answer key in the print view. The curriculum is in beta and all five pilot dossiers are free in full.
+- [Pilot lesson plan: Sweet Auburn](https://www.allblacktowns.com/dossiers/sweet-auburn-lesson.html): the free sample lesson, "The Richest Street in the World."
+
+## Join and contribute
+
+- [Share a Town](https://www.allblacktowns.com/share.html): suggest a town for the record. Join the List signup is on the site; both deliver to info@allblacktowns.com.
+- Contact: info@allblacktowns.com
