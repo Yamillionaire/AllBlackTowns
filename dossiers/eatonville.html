@@ -57,6 +57,41 @@ details.inline > summary{cursor:pointer;font-weight:700;color:#e3c76a;list-style
 details.inline > summary::-webkit-details-marker{display:none}
 details.inline > summary::after{content:" +";color:#c9a227}
 details.inline[open] > summary::after{content:" \2212"}
+.chapter[hidden]{display:none}
+.cfu{border:1px solid rgba(201,162,39,.22);border-left:5px solid #c9a227;background:rgba(201,162,39,.07);border-radius:8px;padding:16px 20px 10px;margin:26px 0 8px;color:#f5efe0}
+.cfu h3{font-family:'Playfair Display',serif;font-size:1.25rem;margin:0 0 6px;color:#e3c76a}
+.cfu .cfu-intro{color:#d8cdb4;font-size:.95rem;margin:0 0 6px;line-height:1.55}
+.cfu-q{margin:14px 0 6px}
+.cfu-q .qtext{font-weight:700;margin:0 0 8px;line-height:1.5}
+.cfu .opt{display:block;width:100%;text-align:left;background:rgba(245,239,224,.05);border:1px solid rgba(201,162,39,.35);color:#f5efe0;border-radius:6px;padding:9px 12px;margin:6px 0;font:inherit;font-size:.97rem;line-height:1.45;cursor:pointer}
+.cfu .opt:hover{border-color:#c9a227}
+.cfu .opt.picked-right{border-color:#8fbf6a;background:rgba(143,191,106,.16)}
+.cfu .opt.picked-wrong{border-color:#c96a4a;background:rgba(201,106,74,.13);opacity:.8}
+.cfu .opt[disabled]{cursor:default}
+.cfu .feedback{font-size:.95rem;line-height:1.55;margin:8px 0 2px}
+.cfu .feedback.good{color:#c4e2a6}
+.cfu .feedback.try{color:#eec39b}
+.cfu .done-note{margin:12px 0 6px;padding:10px 14px;border:1px dashed #c9a227;border-radius:6px;color:#e3c76a;font-size:.97rem}
+.cfu-key{display:none}
+.rail a.locked{opacity:.48}
+.rail a .lk{float:right;font-size:.8rem}
+#chapter-sheet a.locked{opacity:.55}
+.chap-nav a.locked{opacity:.5}
+#lock-note{background:rgba(201,162,39,.12);border:1px solid #c9a227;border-radius:8px;color:#f5efe0;padding:12px 16px;margin:0 0 18px;line-height:1.55}
+#teacher-controls{display:none;background:#1a1712;border:1px solid rgba(201,162,39,.22);border-left:5px solid #c9a227;border-radius:8px;padding:16px 22px 12px;margin:0 0 22px;line-height:1.6;color:#f5efe0}
+#teacher-controls h3{margin:0 0 6px;font-family:'Playfair Display',serif;color:#e3c76a}
+#teacher-controls p{color:#d8cdb4;font-size:.95rem;margin:0 0 10px}
+#teacher-controls .row{display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+#teacher-controls label{font-size:.97rem;cursor:pointer}
+#teacher-controls button{background:none;border:1px solid #c9a227;color:#e3c76a;border-radius:6px;padding:7px 14px;font:inherit;font-size:.9rem;cursor:pointer}
+.timeline{border-left:2px solid #c9a227;margin:28px 0 10px 4px;padding:2px 0 2px 22px}
+.timeline h3{font-family:'Playfair Display',serif;color:#e3c76a;font-size:1.25rem;margin:0 0 14px}
+.tl-item{position:relative;margin:0 0 13px;line-height:1.5}
+.tl-item::before{content:"";position:absolute;left:-27.5px;top:7px;width:9px;height:9px;border-radius:50%;background:#c9a227}
+.tl-year{font-family:'Playfair Display',serif;font-weight:700;color:#e3c76a;margin-right:9px}
+.tl-text{color:#f5efe0;font-size:.98rem}
+.orient .map-link{margin-top:12px}
+.orient .map-link a{color:#e3c76a;font-weight:600}
 @media (max-width:900px){
   .layout{grid-template-columns:1fr}
   .rail{display:none}
@@ -69,6 +104,10 @@ details.inline[open] > summary::after{content:" \2212"}
 @media print{
   #progress-bar,.rail,#chapter-bar,#chapter-sheet,.orient .fork,.recall,.chap-nav,.backlink,nav,footer{display:none !important}
   .layout{grid-template-columns:1fr}
+  .chapter[hidden]{display:block !important}
+  #lock-note,#teacher-controls,.cfu .feedback{display:none !important}
+  .cfu-key{display:block !important}
+  .cfu .opt{display:block;width:100%;background:none;border:0;color:#000;text-align:left;padding:2px 0}
 }
 </style>
 </head>
@@ -91,7 +130,8 @@ details.inline[open] > summary::after{content:" \2212"}
 <div id="progress-bar"></div>
 <h2 class="section-title">Eatonville, Florida - Town Dossier</h2>
 <div class="beta-banner"><strong>Free beta sample.</strong> This is the complete Eatonville, Florida dossier, one of the five pilot dossiers published free as samples for the All Black Towns curriculum beta.</div>
-<div class="orient"><div class="meta">About 36 min read &middot; 10 chapters &middot; Free beta sample</div><p>This dossier follows Eatonville, Florida in order: how it was founded, how it was built, its peak years, the turning point, and the town today, ending with its song and the primary sources behind the record. Read it straight through, or jump by chapter.</p><div class="fork"><a href="#ch1">Start reading</a><button type="button" class="ghost" onclick="window.print()">Print / save PDF</button></div><div id="resume-chip"></div></div>
+<div class="orient"><div class="meta">About 36 min read &middot; 10 chapters &middot; Free beta sample</div><p>This dossier follows Eatonville, Florida in order: how it was founded, how it was built, its peak years, the turning point, and the town today, ending with its song and the primary sources behind the record. Work through it one chapter at a time: a short check for understanding at the end of each chapter unlocks the next, and the contents rail maps where you are.</p><div class="fork"><a href="#intro">Start reading</a><button type="button" id="teach-btn">Teach this town</button><button type="button" class="ghost" onclick="window.print()">Print / save PDF</button></div><p class="map-link"><a href="../map.html">Find Eatonville on the map</a></p><div id="resume-chip"></div></div>
+<div id="teacher-controls"><h3>Teacher controls</h3><p>For classroom use on this device. Unlocking opens every chapter for this reader; resetting clears the saved progress and check-for-understanding answers stored on this device.</p><div class="row"><label><input type="checkbox" id="unlock-all"> Unlock all chapters (teacher)</label><button type="button" id="reset-progress">Reset progress</button></div></div>
 <div class="facts"><h2>Key Facts Box</h2>
 <ul>
 <li>Founded: the settlement began about 1880-1881 on land Lewis Lawrence bought from Captain Josiah C. Eaton west of Maitland; the Town of Eatonville was incorporated on August 15, 1887 (Town of Eatonville official history; BlackPast). See conflict 2 for a source giving August 18.</li>
@@ -102,6 +142,7 @@ details.inline[open] > summary::after{content:" \2212"}
 <li>Known for: among the first self-governing all-Black incorporated towns in America; Zora Neale Hurston's hometown; the ZORA! Festival of the Arts and Humanities, held every winter since 1990.</li>
 <li>The song: "Eatonville, Florida" (see Section 7).</li>
 </ul></div>
+<div id="lock-note" style="display:none"></div>
 <div id="chapter-bar"><span id="chapter-bar-label">Introduction</span><button type="button" id="chapter-sheet-btn">Contents</button></div><div id="chapter-sheet"><a href="#intro">Introduction</a><a href="#ch1">1. Founding</a><a href="#ch2">2. Building the Town</a><a href="#ch3">3. Peak Years</a><a href="#ch4">4. The Turning Point</a><a href="#ch5">5. Survival, Decline, or Destruction</a><a href="#ch6">6. The Town Today</a><a href="#ch7">7. The Song</a><a href="#ch8">8. Primary Sources</a><a href="#ch9">9. Sources and Bibliography</a></div>
 <div class="layout"><aside class="rail"><h4>Chapters</h4><a href="#intro" data-ch="intro"><span class="tick"></span>Introduction</a><a href="#ch1" data-ch="ch1"><span class="tick"></span>1. Founding</a><a href="#ch2" data-ch="ch2"><span class="tick"></span>2. Building the Town</a><a href="#ch3" data-ch="ch3"><span class="tick"></span>3. Peak Years</a><a href="#ch4" data-ch="ch4"><span class="tick"></span>4. The Turning Point</a><a href="#ch5" data-ch="ch5"><span class="tick"></span>5. Survival, Decline, or Destruction</a><a href="#ch6" data-ch="ch6"><span class="tick"></span>6. The Town Today</a><a href="#ch7" data-ch="ch7"><span class="tick"></span>7. The Song</a><a href="#ch8" data-ch="ch8"><span class="tick"></span>8. Primary Sources</a><a href="#ch9" data-ch="ch9"><span class="tick"></span>9. Sources and Bibliography</a><div class="rail-tools"><button type="button" id="expand-all">Expand all sections</button></div></aside><div class="dossier"><section class="chapter" id="intro" data-label="Introduction"><h2>Introduction</h2>
 <ul>
@@ -109,28 +150,28 @@ details.inline[open] > summary::after{content:" \2212"}
 <li>County: Orange County</li>
 <li>Status: still incorporated and self-governing (mayor-council). One of the first self-governing all-Black municipalities in the United States, and the town Zora Neale Hurston grew up in and carried into literature. Town motto: "The Town That Freedom Built."</li>
 <li>Dossier version: pilot draft v0.1, 2026-10-26</li>
-</ul><div class="chap-nav"><span></span><a href="#ch1">Next: 1. Founding &rarr;</a></div></section>
+</ul><div class="cfu" data-chapter="intro"><h3>Check for understanding</h3><p class="cfu-intro">Answer every question correctly to unlock the next chapter. A wrong answer is fine: re-read the chapter and try again.</p><div class="cfu-q" data-q="0"><p class="qtext">Which statement describes Eatonville as the dossier carries it?</p><button type="button" class="opt" data-o="0">An unincorporated neighborhood of Orlando</button><button type="button" class="opt" data-o="1">A still-incorporated town with a mayor-council government, whose motto is "The Town That Freedom Built"</button><button type="button" class="opt" data-o="2">A town destroyed in the 1920s and later rebuilt as a museum</button><button type="button" class="opt" data-o="3">A district administered by Orange County since 1951</button><p class="feedback" hidden></p></div><div class="done-note" hidden></div><div class="cfu-key"><h4>Answer key</h4><ol><li><strong>Which statement describes Eatonville as the dossier carries it?</strong> Correct answer: A still-incorporated town with a mayor-council government, whose motto is "The Town That Freedom Built". The header records continuous incorporation: mayor-council government today, building permits and its own police department, under the motto "The Town That Freedom Built."</li></ol></div></div><div class="chap-nav"><span></span><a href="#ch1">Next: 1. Founding &rarr;</a></div></section>
 <section class="chapter" id="ch1" data-label="1. Founding"><h2>1. Founding</h2>
 <p>Eatonville stands six miles north of Orlando, in what was the citrus country of Orange County. After Emancipation, formerly enslaved people migrated into central Florida and found work clearing land, planting citrus groves, and building the houses, hotels, and railroad of the new town of Maitland (Town of Eatonville official history). Some of them rose quickly: the Maitland town marshal was Joe Clarke, a Black man, and Black voters were part of Maitland's civic life from its start (Town of Eatonville official history; Florida Backroads Travel summary of the town record).</p>
 <p>The town exists because those settlers wanted a government of their own, and because two white men would sell them land when others would not. Joseph E. Clarke and several friends first tried to buy a block of land for what Clarke himself called a "colony for colored people," and, in Clarke's own words as carried in the town's history, "so great was the prejudice then existing against the Negro that no one would sell them land for such a purpose." In 1881, Lewis Lawrence, originally from Utica, New York, agreed to help. Lawrence persuaded his neighbor and friend Captain Josiah C. Eaton, a former Union officer and Maitland landowner, to sell him 22 acres, which Lawrence subdivided into 48 lots priced from $19 to $30 and offered only to Black buyers (Town of Eatonville official history, quoting the Tallahassee Weekly Floridian, 1881). Lawrence had a framed church built on the land, and the deeds carried a temperance covenant: no liquor was ever to be sold or given away on the ground, and no gambling or disreputable house allowed, under forfeiture of the purchase (Weekly Floridian, 1881, as quoted in the town history). The St. Lawrence African Methodist Episcopal Church, founded in 1881 on the settlement's first land, is counted the first African American church in the area, and it still stands and serves the town (BlackPast).</p>
 <p>The settlement was at first called Lawrence, after its founder on the ground. In 1884, the Orange County Reporter described the "colored village at Maitland sometimes known as Lawrence, the name of its worthy founder," and Lawrence himself requested that the settlement take the name Eatonville, in honor of Eaton (Town of Eatonville official history). The push for a separate town hardened after Maitland incorporated in 1885: Maitland's incorporation used Black votes, and at least one Black man was elected a town officer, yet within a year there were formal "discussions of separation" as a mutually beneficial answer to the "race problem" (Town of Eatonville official history). Clarke kept buying. One account dates an initial 12-acre purchase by Clarke to November 18, 1885, with his holdings growing over time (James Madison Institute history, via MadameNoire), and by incorporation the town comprised 112 acres (Town of Eatonville official history; BlackPast).</p>
-<p>On August 15, 1887, 27 registered Black electors gathered at the town hall and voted to incorporate the Town of Eatonville. They elected the Reverend Columbus H. Boger as the town's first mayor, and Joseph Clarke, Matthew Brazell, David Yelder, E. L. Horn, and E. J. Shines as aldermen, with an entirely Black slate of town officers (Town of Eatonville official history). The claim made for that day needs care, and this dossier makes it carefully: Brooklyn, Illinois had incorporated in 1873 and Princeville, North Carolina was chartered in 1885, so Eatonville was not the first Black town to incorporate in the United States. What Eatonville's own record and most modern accounts support is narrower and still remarkable: it is among the first self-governing all-Black municipalities in the nation, it was incorporated by Black citizens themselves, and it has remained incorporated and self-governing ever since, which is the basis of its standing description as the oldest incorporated African American municipality in America (Town of Eatonville; Association to Preserve the Eatonville Community; see conflict 1).</p><div class="recall"><strong>Quick recall.</strong> Before you move on, say it back without scrolling up: which people, places, or decisions from this chapter matter most, and why? Then glance back and check yourself.</div><div class="chap-nav"><a href="#intro">&larr; Introduction</a><a href="#ch2">Next: 2. Building the Town &rarr;</a></div></section>
+<p>On August 15, 1887, 27 registered Black electors gathered at the town hall and voted to incorporate the Town of Eatonville. They elected the Reverend Columbus H. Boger as the town's first mayor, and Joseph Clarke, Matthew Brazell, David Yelder, E. L. Horn, and E. J. Shines as aldermen, with an entirely Black slate of town officers (Town of Eatonville official history). The claim made for that day needs care, and this dossier makes it carefully: Brooklyn, Illinois had incorporated in 1873 and Princeville, North Carolina was chartered in 1885, so Eatonville was not the first Black town to incorporate in the United States. What Eatonville's own record and most modern accounts support is narrower and still remarkable: it is among the first self-governing all-Black municipalities in the nation, it was incorporated by Black citizens themselves, and it has remained incorporated and self-governing ever since, which is the basis of its standing description as the oldest incorporated African American municipality in America (Town of Eatonville; Association to Preserve the Eatonville Community; see conflict 1).</p><div class="recall"><strong>Quick recall.</strong> Before you move on, say it back without scrolling up: which people, places, or decisions from this chapter matter most, and why? Then glance back and check yourself.</div><div class="cfu" data-chapter="ch1"><h3>Check for understanding</h3><p class="cfu-intro">Answer every question correctly to unlock the next chapter. A wrong answer is fine: re-read the chapter and try again.</p><div class="cfu-q" data-q="0"><p class="qtext">Why did Eatonville's land become available to Black buyers in 1881?</p><button type="button" class="opt" data-o="0">A federal land grant reserved it for freedmen</button><button type="button" class="opt" data-o="1">At Orlando realtor Joseph C. Clarke's urging, Union veteran Josiah Eaton sold 22 acres that were surveyed into 48 lots offered only to Black buyers, at a moment when prejudice was blocking Clarke's other sales</button><button type="button" class="opt" data-o="2">The town won the land in a court settlement</button><button type="button" class="opt" data-o="3">Zora Neale Hurston's father purchased the tract</button><p class="feedback" hidden></p></div><div class="cfu-q" data-q="1"><p class="qtext">What happened on August 15, 1887?</p><button type="button" class="opt" data-o="0">The Hungerford school opened its doors</button><button type="button" class="opt" data-o="1">The town's 27 registered Black electors voted to incorporate and elected an all-Black slate of officers, Joseph E. Boger as first mayor</button><button type="button" class="opt" data-o="2">The post office opened under an Eatonville name</button><button type="button" class="opt" data-o="3">The first ZORA! Festival was held</button><p class="feedback" hidden></p></div><div class="done-note" hidden></div><div class="cfu-key"><h4>Answer key</h4><ol><li><strong>Why did Eatonville's land become available to Black buyers in 1881?</strong> Correct answer: At Orlando realtor Joseph C. Clarke's urging, Union veteran Josiah Eaton sold 22 acres that were surveyed into 48 lots offered only to Black buyers, at a moment when prejudice was blocking Clarke's other sales. The chapter is plain that the founding was a real-estate transaction across the color line: Eaton sold, Clarke subdivided, and the lots were offered only to Black buyers under a temperance covenant.</li><li><strong>What happened on August 15, 1887?</strong> Correct answer: The town's 27 registered Black electors voted to incorporate and elected an all-Black slate of officers, Joseph E. Boger as first mayor. Peacemaking judge E. K. Foster supervised the vote and swore the officers in; the chapter notes the incorporation certified Black men voting and governing under Florida law in 1887.</li></ol></div></div><div class="chap-nav"><a href="#intro">&larr; Introduction</a><a href="#ch2">Next: 2. Building the Town &rarr;</a></div></section>
 <section class="chapter" id="ch2" data-label="2. Building the Town"><h2>2. Building the Town</h2>
 <p>Government came first, and it never left Black hands. The mayor-council government seated in 1887 has run the town continuously. The documented mayoral line runs from Boger (1887-1888) through Clarke (1889-1890, and again 1900-1912), John Hurston (1897-1899, and again 1912-1916), Matthew B. Brazell (1916-1920), and Columbus H. Crooms (1938-1963), down to the present council (mayors list compiled from Florida's Black Public Officials, 1867-1924, and later records, as carried in the town's reference summary). A 1907 photograph of the Eatonville city council and jail, a copy of which is held in the New York Public Library's digital collections, shows the young municipality's government at work.</p>
 <p>The town's three founding institutions, in the town history's own framing, were the church, the school, and the family. St. Lawrence A.M.E. dated to 1881, before the town itself (BlackPast). Macedonia Missionary Baptist Church became the town's largest congregation; in 1902 the Reverend John Hurston, Zora Neale Hurston's father, was called as its minister (Hurston biographies based on Robert Hemenway's research). A post office opened in 1889 and closed in 1918 (U.S. Postal Service postmaster records, as cited in the town's reference summary).</p>
 <p>The school was the Hungerford. The Robert Hungerford Normal and Industrial School was Eatonville's boarding school for Black students, modeled on Booker T. Washington's Tuskegee Institute and run by Tuskegee graduates Russell C. Calhoun and his wife Mary (Eatonville Master Plan, 2025; ASALH conference scholarship, 2023). The school was named for Dr. Robert Hungerford, a white physician in Maitland who had taught local Black men to read and write; after his death, his family gave land for the school (Eatonville Master Plan). The sources disagree on the founding year, giving 1889, 1897, and 1899 in different accounts; the disagreement is recorded as conflict 5 and is not resolved here. What is documented is the school's scale and reach: more than 100 boarding students by 1927, day students from Eatonville, night classes for adults, a curriculum running from English, Latin, and algebra to industrial arts, agriculture, bookkeeping, and home economics, a campus with dormitories, a chapel, a dining hall, a dairy, and gardens, and cash donations from across the country, including $400 from Booker T. Washington himself (town reference summary of the school's record, citing Clyde W. Hall, 2005).</p>
 <p>The town also had a press and a pitch. The Eatonville Speaker, the town newspaper, printed an invitation in 1889 that doubles as the town's founding advertisement: "Colored People of the United States! Solve the Great Race Problem by Securing a Home in Eatonville, Florida, a Negro City Governed by Negroes." The same article described a thriving community of 200 to 300 people, all colored, with not a white family in the whole city, and it recounted a near-lynching in Sanford, nineteen miles away, in the same breath (Eatonville Speaker, 1889, as quoted in the town history). Lots in the town's own advertising went for $35 in cash or $50 on time (Florida Trend, "The Town That Freedom Built"). The first mayor, Boger, also edited a newspaper, the Florida Watchman (Florida's Black Public Officials, 1867-1924).</p>
-<p>The economy underneath was citrus and craft. The settlers had come as grove labor and builders; Clarke himself farmed, and a period photograph shows J. E. Clark's pineapple farm in Eatonville. The census arc shows how small the town stayed for how long: 125 people in 1900, 108 in 1910, 125 in 1920, 136 in 1930, then 857 in 1960 and 2,024 in 1970, as the Orlando area grew around it (U.S. Decennial Census; the sourced table skips 1940 and 1950, a gap flagged in the Research log).</p><div class="recall"><strong>Quick recall.</strong> Before you move on, say it back without scrolling up: which people, places, or decisions from this chapter matter most, and why? Then glance back and check yourself.</div><div class="chap-nav"><a href="#ch1">&larr; 1. Founding</a><a href="#ch3">Next: 3. Peak Years &rarr;</a></div></section>
+<p>The economy underneath was citrus and craft. The settlers had come as grove labor and builders; Clarke himself farmed, and a period photograph shows J. E. Clark's pineapple farm in Eatonville. The census arc shows how small the town stayed for how long: 125 people in 1900, 108 in 1910, 125 in 1920, 136 in 1930, then 857 in 1960 and 2,024 in 1970, as the Orlando area grew around it (U.S. Decennial Census; the sourced table skips 1940 and 1950, a gap flagged in the Research log).</p><div class="timeline"><h3>Timeline: the story at a glance</h3><div class="tl-item"><span class="tl-year">1881</span><span class="tl-text">Joseph C. Clarke persuades Josiah Eaton to sell 22 acres; the land is cut into 48 lots offered only to Black buyers, and St. Lawrence AME is founded</span></div><div class="tl-item"><span class="tl-year">1884</span><span class="tl-text">The settlement is renamed Eatonville</span></div><div class="tl-item"><span class="tl-year">1887</span><span class="tl-text">Eatonville incorporates on August 15; 27 registered Black electors vote it in and elect an all-Black slate, Joseph E. Boger as first mayor</span></div><div class="tl-item"><span class="tl-year">1889</span><span class="tl-text">The post office opens; the Eatonville Speaker advertises "a Negro City Governed by Negroes"</span></div><div class="tl-item"><span class="tl-year">1894</span><span class="tl-text">The Hurston family arrives; Zora Neale Hurston is three years old</span></div><div class="tl-item"><span class="tl-year">1902</span><span class="tl-text">John Hurston is called as pastor of Macedonia Missionary Baptist Church</span></div><div class="tl-item"><span class="tl-year">1935</span><span class="tl-text">Hurston publishes Mules and Men, her folklore collection rooted in the town</span></div><div class="tl-item"><span class="tl-year">1937</span><span class="tl-text">Their Eyes Were Watching God is published</span></div><div class="tl-item"><span class="tl-year">1950</span><span class="tl-text">The county takes control of the Hungerford campus (1950 to 1951) under an education deed restriction</span></div><div class="tl-item"><span class="tl-year">1987</span><span class="tl-text">The Association to Preserve the Eatonville Community (P.E.C.) is organized against the Kennedy Boulevard widening</span></div><div class="tl-item"><span class="tl-year">1990</span><span class="tl-text">The first ZORA! Festival is held and the Zora Neale Hurston National Museum of Fine Arts opens</span></div><div class="tl-item"><span class="tl-year">1998</span><span class="tl-text">The Eatonville Historic District is listed on the National Register (February 3)</span></div><div class="tl-item"><span class="tl-year">2009</span><span class="tl-text">Hungerford Preparatory closes; the school buildings are later demolished</span></div><div class="tl-item"><span class="tl-year">2024</span><span class="tl-text">The National Trust names Eatonville one of America's 11 Most Endangered Historic Places (May 1)</span></div><div class="tl-item"><span class="tl-year">2026</span><span class="tl-text">The Orange County School Board votes to sell the Hungerford land to Dr. Phillips Charities (January 13)</span></div></div><div class="recall"><strong>Quick recall.</strong> Before you move on, say it back without scrolling up: which people, places, or decisions from this chapter matter most, and why? Then glance back and check yourself.</div><div class="cfu" data-chapter="ch2"><h3>Check for understanding</h3><p class="cfu-intro">Answer every question correctly to unlock the next chapter. A wrong answer is fine: re-read the chapter and try again.</p><div class="cfu-q" data-q="0"><p class="qtext">What kind of institution was the Hungerford school?</p><button type="button" class="opt" data-o="0">A one-room county elementary school</button><button type="button" class="opt" data-o="1">A private boarding school modeled on Tuskegee, which by 1927 housed more than 100 boarding students alongside day and night students</button><button type="button" class="opt" data-o="2">A seminary for training ministers only</button><button type="button" class="opt" data-o="3">A Rosenwald elementary school for the town's children</button><p class="feedback" hidden></p></div><div class="cfu-q" data-q="1"><p class="qtext">How did the Eatonville Speaker advertise the town in 1889?</p><button type="button" class="opt" data-o="0">"The Town That Freedom Built"</button><button type="button" class="opt" data-o="1">"a Negro City Governed by Negroes"</button><button type="button" class="opt" data-o="2">"the richest Negro street in the world"</button><button type="button" class="opt" data-o="3">"the most enterprising Negro town in the United States"</button><p class="feedback" hidden></p></div><div class="done-note" hidden></div><div class="cfu-key"><h4>Answer key</h4><ol><li><strong>What kind of institution was the Hungerford school?</strong> Correct answer: A private boarding school modeled on Tuskegee, which by 1927 housed more than 100 boarding students alongside day and night students. Russell C. Calhoun and his wife Mary, Tuskegee graduates, ran Hungerford on the Tuskegee model: academic and industrial courses, a working campus, and service to a region, not just a town.</li><li><strong>How did the Eatonville Speaker advertise the town in 1889?</strong> Correct answer: "a Negro City Governed by Negroes". The 1889 advertisement in the town's own newspaper is quoted in the chapter as the founders writing their own description of what they had made.</li></ol></div></div><div class="chap-nav"><a href="#ch1">&larr; 1. Founding</a><a href="#ch3">Next: 3. Peak Years &rarr;</a></div></section>
 <section class="chapter" id="ch3" data-label="3. Peak Years"><h2>3. Peak Years</h2>
 <p>Eatonville's peak is cultural before it is demographic, and its name is Zora Neale Hurston. She was born on January 7, 1891, in Notasulga, Alabama, the fifth of eight children of John Hurston, a Baptist preacher and carpenter, and Lucy Ann Hurston, a schoolteacher. The family arrived in Eatonville in 1894, when Zora was three (Hurston biographies based on Hemenway). She grew up in a town where her father was mayor (elected 1897) and later the minister of its largest church, where every officer of the law and every teacher she knew was Black, and she said so for the rest of her life: she called Eatonville "home," sometimes claimed it as her birthplace outright, and described growing up there in her 1928 essay "How It Feels to Be Colored Me" (Florida Trend; Hurston biographies; see conflict 8 on her birth claims).</p>
 <p>The town she carried into print is documented book by book. Mules and Men (1935), her collection of African American folklore, drew on the tales and tellers of Eatonville (Florida History Network, Florida Memory feature). Their Eyes Were Watching God (1937), her best-known novel, opens and closes in Eatonville and gives the town's founding generation, including its portrait of a self-made Black mayor, to literature (Florida History Network). Her autobiography, Dust Tracks on a Road (1942), tells the Eatonville childhood directly, and she described the town for the Depression-era Federal Writers' Project's Florida guide (Florida History Network). Artist Jules Andre Smith painted Eatonville life in the 1930s and 1940s; twelve of those works are held by the Maitland Art Center in the adjacent town (town reference summary).</p>
 <p>The institutions peaked with her. The Hungerford campus grew to some 300 acres by 1950, almost 40 percent of the town's land, held in trust for the school (town reference summary of the land record, citing CBS News reporting, 2023). Club Eaton, on the town's main street, was a stop on the Chitlin' Circuit from at least 1950, hosting performers including B. B. King, Aretha Franklin, Ray Charles, Sam Cooke, the Platters, Duke Ellington, Ella Fitzgerald, Billie Holiday, and James Brown (Eatonville Master Plan, 2025; town reference summary, citing the Orlando Sentinel, August 13, 1987).</p>
-<p>The demographic peak came much later and much quieter: 2,432 people in the 2000 census, the high point of the decennial series (U.S. Decennial Census).</p><div class="recall"><strong>Quick recall.</strong> Before you move on, say it back without scrolling up: which people, places, or decisions from this chapter matter most, and why? Then glance back and check yourself.</div><div class="chap-nav"><a href="#ch2">&larr; 2. Building the Town</a><a href="#ch4">Next: 4. The Turning Point &rarr;</a></div></section>
+<p>The demographic peak came much later and much quieter: 2,432 people in the 2000 census, the high point of the decennial series (U.S. Decennial Census).</p><div class="recall"><strong>Quick recall.</strong> Before you move on, say it back without scrolling up: which people, places, or decisions from this chapter matter most, and why? Then glance back and check yourself.</div><div class="cfu" data-chapter="ch3"><h3>Check for understanding</h3><p class="cfu-intro">Answer every question correctly to unlock the next chapter. A wrong answer is fine: re-read the chapter and try again.</p><div class="cfu-q" data-q="0"><p class="qtext">Which statement about Zora Neale Hurston and Eatonville is accurate?</p><button type="button" class="opt" data-o="0">She was born in Eatonville in 1891</button><button type="button" class="opt" data-o="1">She was born in Notasulga, Alabama, on January 7, 1891, and arrived in Eatonville in 1894 at age three; the town became the raw material for Mules and Men (1935) and Their Eyes Were Watching God (1937)</button><button type="button" class="opt" data-o="2">She moved to Eatonville as an adult to research folklore</button><button type="button" class="opt" data-o="3">She served as the town's mayor in the 1930s</button><p class="feedback" hidden></p></div><div class="cfu-q" data-q="1"><p class="qtext">What was Eatonville's demographic peak, and when?</p><button type="button" class="opt" data-o="0">824 residents at statehood in 1907</button><button type="button" class="opt" data-o="1">2,432 residents in the 2000 census, the highest modern count before two decades of drift downward</button><button type="button" class="opt" data-o="2">About 4,000 in the 1911 booster years</button><button type="button" class="opt" data-o="3">The town has never been counted by the census</button><p class="feedback" hidden></p></div><div class="done-note" hidden></div><div class="cfu-key"><h4>Answer key</h4><ol><li><strong>Which statement about Zora Neale Hurston and Eatonville is accurate?</strong> Correct answer: She was born in Notasulga, Alabama, on January 7, 1891, and arrived in Eatonville in 1894 at age three; the town became the raw material for Mules and Men (1935) and Their Eyes Were Watching God (1937). The chapter corrects the compressed version: Alabama-born, Eatonville-raised from age three, and the town's talk, church, and school became the substance of her major work.</li><li><strong>What was Eatonville's demographic peak, and when?</strong> Correct answer: 2,432 residents in the 2000 census, the highest modern count before two decades of drift downward. The decennial series in Section 9 peaks at 2,432 in 2000; later counts settle near 2,300, which the chapter frames as community stability rather than growth.</li></ol></div></div><div class="chap-nav"><a href="#ch2">&larr; 2. Building the Town</a><a href="#ch4">Next: 4. The Turning Point &rarr;</a></div></section>
 <section class="chapter" id="ch4" data-label="4. The Turning Point"><h2>4. The Turning Point</h2>
 <p>Eatonville was never destroyed, and its turning points are fights over land and road rather than a single catastrophe. There are three, and the dossier keeps them separate.</p>
 <p>The first was slow: the loss of the Hungerford. The school had been privately funded for half a century; in 1950-1951 the Orange County Public Schools took control and purchased the campus land from its trust for about $16,000, with the stipulation that it be used for the education of Black children (town reference summary of the land record; CBS News, 2023; see conflict 7 on the 1950 versus 1951 dating). The school ran on for decades as a county institution, finally as Robert Hungerford Preparatory High School, Orange County's first all-magnet school of choice, and closed in 2009 (Central Florida Public Media, January 2026; Orlando Sentinel history of the school; see conflict 7 on a source giving 2010). The empty buildings were demolished by the school district during the COVID pandemic (Central Florida Public Media, 2026). What remained was the land: roughly 100 acres of the original campus, appraised in 2019 at $20 million, sitting at the town's gateway (town reference summary of the land record).</p>
 <p>The second turning point was a road. In the late 1980s, Orange County proposed widening Kennedy Boulevard, the town's two-lane main street, into a five-lane highway through the middle of Eatonville. Residents organized the Association to Preserve the Eatonville Community (P.E.C.) in 1987 to fight it, under the leadership of N. Y. Nathiri, on the argument that the road would bust the community apart (UCF Public History; Florida Historical Society, Florida Frontiers). The widening was cancelled. The fight's second product outlasted it: as a public-awareness campaign, P.E.C. presented the first Zora Neale Hurston Festival of the Arts and Humanities in 1990, drawing some 10,000 people to the little town, with Alice Walker, who had done more than anyone to restore Hurston's reputation, as the inaugural banquet speaker (Florida Historical Society; Color Magazine festival history).</p>
-<p>The third turning point is economic thinness, documented rather than dramatic. As of 2023, Eatonville had no gas station, no supermarket, and no pharmacy, only a Family Dollar, and a median household income of about $27,000 (CBS News Sunday Morning, March 19, 2023). Interstate 4 passes through the town limits without an exit (town reference summary). The town that freedom built has kept its government and its name for almost 140 years while the wealth of metropolitan Orlando accumulated on every side of it.</p><div class="recall"><strong>Quick recall.</strong> Before you move on, say it back without scrolling up: which people, places, or decisions from this chapter matter most, and why? Then glance back and check yourself.</div><div class="chap-nav"><a href="#ch3">&larr; 3. Peak Years</a><a href="#ch5">Next: 5. Survival, Decline, or Destruction &rarr;</a></div></section>
+<p>The third turning point is economic thinness, documented rather than dramatic. As of 2023, Eatonville had no gas station, no supermarket, and no pharmacy, only a Family Dollar, and a median household income of about $27,000 (CBS News Sunday Morning, March 19, 2023). Interstate 4 passes through the town limits without an exit (town reference summary). The town that freedom built has kept its government and its name for almost 140 years while the wealth of metropolitan Orlando accumulated on every side of it.</p><div class="recall"><strong>Quick recall.</strong> Before you move on, say it back without scrolling up: which people, places, or decisions from this chapter matter most, and why? Then glance back and check yourself.</div><div class="cfu" data-chapter="ch4"><h3>Check for understanding</h3><p class="cfu-intro">Answer every question correctly to unlock the next chapter. A wrong answer is fine: re-read the chapter and try again.</p><div class="cfu-q" data-q="0"><p class="qtext">Why was the fight over widening Kennedy Boulevard important in causing the ZORA! Festival?</p><button type="button" class="opt" data-o="0">The festival was the county's apology for the widening</button><button type="button" class="opt" data-o="1">Residents organized P.E.C. in 1987 against a five-lane widening meant to erase the historic corridor; the widening was cancelled, and the festival was launched in 1990 as the winning side's awareness campaign</button><button type="button" class="opt" data-o="2">The widening was completed and the festival marks its route</button><button type="button" class="opt" data-o="3">Alice Walker proposed the festival at a town council meeting in 1980</button><p class="feedback" hidden></p></div><div class="cfu-q" data-q="1"><p class="qtext">What is the Hungerford land's history in one line?</p><button type="button" class="opt" data-o="0">It was sold to developers in 1887 and built over</button><button type="button" class="opt" data-o="1">The county took the campus in 1950 to 1951 for about $16,000 under a deed restriction for education; the school closed in 2009, the buildings were demolished, and about 100 acres of restricted land remain</button><button type="button" class="opt" data-o="2">It is still operated by Tuskegee graduates</button><button type="button" class="opt" data-o="3">It became the site of the Zora Neale Hurston museum</button><p class="feedback" hidden></p></div><div class="done-note" hidden></div><div class="cfu-key"><h4>Answer key</h4><ol><li><strong>Why was the fight over widening Kennedy Boulevard important in causing the ZORA! Festival?</strong> Correct answer: Residents organized P.E.C. in 1987 against a five-lane widening meant to erase the historic corridor; the widening was cancelled, and the festival was launched in 1990 as the winning side's awareness campaign. The chapter calls the festival a defensive weapon that outlived the fight: organized against the road in 1987, cancelled road, first festival in 1990, Hurston reframed from local memory to the town's public argument.</li><li><strong>What is the Hungerford land's history in one line?</strong> Correct answer: The county took the campus in 1950 to 1951 for about $16,000 under a deed restriction for education; the school closed in 2009, the buildings were demolished, and about 100 acres of restricted land remain. The chapter traces the tract from private Black boarding school to county hands under trust terms, to a closed school and a vacant, deed-restricted parcel at the town's edge.</li></ol></div></div><div class="chap-nav"><a href="#ch3">&larr; 3. Peak Years</a><a href="#ch5">Next: 5. Survival, Decline, or Destruction &rarr;</a></div></section>
 <section class="chapter" id="ch5" data-label="5. Survival, Decline, or Destruction"><h2>5. Survival, Decline, or Destruction</h2>
 <p>Eatonville survived, and the record of its survival is specific.</p>
 <ul>
@@ -151,12 +192,12 @@ details.inline[open] > summary::after{content:" \2212"}
 <li>December 31, 2024: the court grants the School Board judgment on the pleadings, reasoning that with no pending sale there is no active case or controversy; P.E.C.'s lawsuit ends (P.E.C. complaint record; Central Florida Public Media describes the suit as thrown out in 2025, a dating variance noted in the complaint's own chronology).</li>
 <li>September 30, 2025: the School Board declares the property surplus and approves a memorandum of understanding with Dr. Phillips Charities, with Mayor Angie Gardner's support; part of the land is to be donated to the town for a new town center and town history center, with an advisory council of residents and council members (Central Florida Public Media, September 30, 2025; GrowthSpotter, September 23, 2025).</li>
 <li>January 13, 2026: the School Board votes unanimously to sell the property, now described as about 117 acres in two parcels, to Dr. Phillips Charities. The price is $14 million, with $1 million due upfront and up to $13 million forgiven as milestones are met: $5 million for a community greenspace and pavilion donated to the town, $5 million for an early learning center, $2.5 million for a community hub and health care facility, and $500,000 for a new town hall and history museum. The vote goes ahead despite dissent from the Eatonville Town Council and some residents (Central Florida Public Media, January 13, 2026; Fox 35 Orlando). Whether the sale has closed since the vote is not verified in this pass; see the Research log.</li>
-</ul><div class="recall"><strong>Quick recall.</strong> Before you move on, say it back without scrolling up: which people, places, or decisions from this chapter matter most, and why? Then glance back and check yourself.</div><div class="chap-nav"><a href="#ch4">&larr; 4. The Turning Point</a><a href="#ch6">Next: 6. The Town Today &rarr;</a></div></section>
+</ul><div class="recall"><strong>Quick recall.</strong> Before you move on, say it back without scrolling up: which people, places, or decisions from this chapter matter most, and why? Then glance back and check yourself.</div><div class="cfu" data-chapter="ch5"><h3>Check for understanding</h3><p class="cfu-intro">Answer every question correctly to unlock the next chapter. A wrong answer is fine: re-read the chapter and try again.</p><div class="cfu-q" data-q="0"><p class="qtext">What did the Eatonville Town Council do on February 7, 2023?</p><button type="button" class="opt" data-o="0">It approved the developer's rezoning of the Hungerford land</button><button type="button" class="opt" data-o="1">It rejected the developer's requested plan amendments and zoning changes for the Hungerford land, a decision P.E.C. later cited when it sued the School Board</button><button type="button" class="opt" data-o="2">It voted to sell the land to Dr. Phillips Charities</button><button type="button" class="opt" data-o="3">It dissolved the town government</button><p class="feedback" hidden></p></div><div class="cfu-q" data-q="1"><p class="qtext">What did the Orange County School Board vote on January 13, 2026?</p><button type="button" class="opt" data-o="0">To rebuild Hungerford Preparatory on the site</button><button type="button" class="opt" data-o="1">To sell about 117 acres to Dr. Phillips Charities for $14 million, with up to $13 million forgiven against community milestones; the chapter notes the closing itself is not verified in its sources</button><button type="button" class="opt" data-o="2">To return the land to the town without conditions</button><button type="button" class="opt" data-o="3">To list the land on the National Register</button><p class="feedback" hidden></p></div><div class="done-note" hidden></div><div class="cfu-key"><h4>Answer key</h4><ol><li><strong>What did the Eatonville Town Council do on February 7, 2023?</strong> Correct answer: It rejected the developer's requested plan amendments and zoning changes for the Hungerford land, a decision P.E.C. later cited when it sued the School Board. The chapter records the 2023 rejection as the town keeping its side of the argument, even as the School Board, which owns the land, moved toward its own disposition.</li><li><strong>What did the Orange County School Board vote on January 13, 2026?</strong> Correct answer: To sell about 117 acres to Dr. Phillips Charities for $14 million, with up to $13 million forgiven against community milestones; the chapter notes the closing itself is not verified in its sources. The vote is recorded with its terms and its caveat: a purchase-and-sale agreement approved, a closing not verified, and the land's future still argued from several sides.</li></ol></div></div><div class="chap-nav"><a href="#ch4">&larr; 4. The Turning Point</a><a href="#ch6">Next: 6. The Town Today &rarr;</a></div></section>
 <section class="chapter" id="ch6" data-label="6. The Town Today"><h2>6. The Town Today</h2>
 <p>A visitor today finds a small, working, majority-Black town of 2,349 people (2020 U.S. Census) on about 1.1 square miles, six miles north of downtown Orlando, still governed from its own town hall at 307 Kennedy Boulevard (Town of Eatonville; project outreach plan). The town's current mayor is Ruth "Ruthi" Critton, per the town's municipal listings as carried in current references (accessed October 2026).</p>
 <p>On Kennedy Boulevard, the main street the county once tried to widen: the Zora Neale Hurston National Museum of Fine Arts (opened 1990), exhibiting artists of African descent; the Moseley House Museum, built in 1888 and the town's second-oldest structure, the home of Jim and Matilda Clark Moseley: Matilda, "Miss Tillie," was Hurston's best friend, and the house, restored by 2000 and maintained by the Zeta Educational Thespian Association and Zeta Phi Beta Sorority, shows early Eatonville memorabilia (Eatonville Master Plan, 2025). A library bearing Hurston's name stands on the boulevard as well (opened January 2004 per the town's reference summary, 2006 per Florida History Network; see conflict 10). St. Lawrence A.M.E. Church, founded 1881, still serves the community (BlackPast), as does Macedonia Missionary Baptist, John Hurston's church. The 48-building Eatonville Historic District (National Register, 1998) holds the town's surviving fabric. The Hungerford campus is gone; its roughly 117 acres are vacant land awaiting the Dr. Phillips Charities development described in Section 5.</p>
 <p>The keeping organizations, with their roles: the Town of Eatonville itself (townofeatonville.org), the Association to Preserve the Eatonville Community (P.E.C.), which presents the ZORA! Festival and has led the preservation fight since 1987, the Zora Neale Hurston National Museum of Fine Arts, and the Eatonville Historic Preservation Board. The annual ZORA! Festival of the Arts and Humanities, presented by P.E.C. every winter since 1990, is the town's signature event; the 37th annual festival ran January 30 to February 1, 2026 (project outreach plan; zorafestival.org). At its height the festival has drawn crowds reported as high as 100,000 across its events (Florida Trend).</p>
-<p>The honest summary for a visitor: the government Zora's father served still sits, the churches still worship, the festival fills the town every winter, and the town's biggest piece of land, the school ground its children were educated on for more than a century, has just been sold out from under the school board fight of 2023-2026 into a charitable development whose promises (a town center, a history museum, an early learning center, affordable housing) are written into the price. Whether those promises are kept is the next chapter, and it is not yet written.</p><div class="recall"><strong>Quick recall.</strong> Before you move on, say it back without scrolling up: which people, places, or decisions from this chapter matter most, and why? Then glance back and check yourself.</div><div class="chap-nav"><a href="#ch5">&larr; 5. Survival, Decline, or Destruction</a><a href="#ch7">Next: 7. The Song &rarr;</a></div></section>
+<p>The honest summary for a visitor: the government Zora's father served still sits, the churches still worship, the festival fills the town every winter, and the town's biggest piece of land, the school ground its children were educated on for more than a century, has just been sold out from under the school board fight of 2023-2026 into a charitable development whose promises (a town center, a history museum, an early learning center, affordable housing) are written into the price. Whether those promises are kept is the next chapter, and it is not yet written.</p><div class="recall"><strong>Quick recall.</strong> Before you move on, say it back without scrolling up: which people, places, or decisions from this chapter matter most, and why? Then glance back and check yourself.</div><div class="cfu" data-chapter="ch6"><h3>Check for understanding</h3><p class="cfu-intro">Answer every question correctly to unlock the next chapter. A wrong answer is fine: re-read the chapter and try again.</p><div class="cfu-q" data-q="0"><p class="qtext">What does the chapter say about the Hurston museum and the Moseley House?</p><button type="button" class="opt" data-o="0">Both closed when Hungerford shut in 2009</button><button type="button" class="opt" data-o="1">The Zora Neale Hurston National Museum of Fine Arts opened in 1990 on Kennedy Boulevard, and the Moseley House (1888) is the town's second-oldest structure, home of Hurston's best friend Matilda Moseley</button><button type="button" class="opt" data-o="2">The museum is located in Orlando, not Eatonville</button><button type="button" class="opt" data-o="3">The Moseley House was demolished for the road widening</button><p class="feedback" hidden></p></div><div class="done-note" hidden></div><div class="cfu-key"><h4>Answer key</h4><ol><li><strong>What does the chapter say about the Hurston museum and the Moseley House?</strong> Correct answer: The Zora Neale Hurston National Museum of Fine Arts opened in 1990 on Kennedy Boulevard, and the Moseley House (1888) is the town's second-oldest structure, home of Hurston's best friend Matilda Moseley. The chapter places the museum on East Kennedy Boulevard in the historic district and the Moseley House on Calhoun Avenue, both visitable anchors of the town Hurston described.</li></ol></div></div><div class="chap-nav"><a href="#ch5">&larr; 5. Survival, Decline, or Destruction</a><a href="#ch7">Next: 7. The Song &rarr;</a></div></section>
 <section class="chapter" id="ch7" data-label="7. The Song"><h2>7. The Song</h2>
 <p>The song is "Eatonville, Florida." Live Suno, checked on 2026-10-26 in the browser pass, shows three versions, all titled "Eatonville, Florida," all 2:17 in the library list, and all tagged "Black Legacy Paradox": a STUDIO original created June 12, 2026, 12:50 AM, which is the version of record, and two V6 remasters created September 14, 2026, 8:55 PM. The lyrics are identical across the three versions. The local capture (suno-library-song-list-2026-10-15.md, listing the song among the "Original place-name songs (V4.5/STUDIO, no suffix)"; suno-duplicates-map.md, carrying "Eatonville, Florida (V4.5/STUDIO original)") shows no remaster; as the Sweet Auburn pilot warned, the local records proved stale here too, and the live record governs. Full metadata and the verbatim lyrics are archived at suno-lyrics-eatonville-2026-10-26.md. Two provenance facts from the same pass belong with the version record: the caption on the song's Suno page matches the Perplexity master thread's Eatonville answer, and the lyric itself is, word for word, the "Blueprint in the Pines" draft from the user's ChatGPT "OSINT Investigation Request" conversation of June 22, 2025 (both detailed in Section 9).</p>
 <p>The site blurb the song travels with: "Eatonville: incorporated 1887, one of the first self-governing all-Black towns in America; the hometown Zora Neale Hurston carried into literature" (town-blurbs-batch-1.md). The blurb's hedge, "one of the first," matches this dossier's careful position on the first-town claim (conflict 1); the project master list's stronger wording, "first incorporated Black municipality in the U.S.," does not survive the Brooklyn and Princeville dates and is not used in this dossier.</p>
@@ -173,7 +214,7 @@ details.inline[open] > summary::after{content:" \2212"}
 <li>The Bridge. "They ain't just build a town, they built a future. / Brick by brick, soul by soul. / This ain't forgotten land / It's legacy made whole" (the dash the display puts after "land" is omitted in this quotation; the archive carries the line verbatim). No factual claims. Its vocabulary is the town's own: Eatonville's motto is "The Town That Freedom Built" (Header), and the bridge is a spoken-word restatement of it.</li>
 <li>The Final Hook. New words, no new claims: "Truth we spill! / History's light! Still in sight! / Born with skill! / Free and Black! That's the fact!"</li>
 <li>What the shipped lyric avoided. The earlier draft in the same ChatGPT conversation, "Town That Freedom Echoed," carried errors the shipped lyric does not repeat: a founding built on "twenty-two acres" (Lawrence's purchase mistaken for the incorporation itself) and Hungerford closing in "twenty-ten" against the dossier's carried 2009. Those errors never shipped. The shipped lyric's own record problems are the two named above: the first-town overclaim and the twenty-seven-men compression.</li>
-</ul></details><div class="chap-nav"><a href="#ch6">&larr; 6. The Town Today</a><a href="#ch8">Next: 8. Primary Sources &rarr;</a></div></section>
+</ul></details><div class="cfu" data-chapter="ch7"><h3>Check for understanding</h3><p class="cfu-intro">Answer every question correctly to unlock the next chapter. A wrong answer is fine: re-read the chapter and try again.</p><div class="cfu-q" data-q="0"><p class="qtext">The lyric calls Eatonville "the first Black-incorporated town." What does the annotation say?</p><button type="button" class="opt" data-o="0">The claim is exact; no earlier example exists</button><button type="button" class="opt" data-o="1">It is an overclaim: Brooklyn, Illinois (1873) and Princeville, North Carolina (1885) predate it; the supported claim is among the first self-governing all-Black municipalities in the United States, continuously incorporated since 1887</button><button type="button" class="opt" data-o="2">The claim fails because Eatonville never incorporated</button><button type="button" class="opt" data-o="3">The annotation removes the line from the song</button><p class="feedback" hidden></p></div><div class="cfu-q" data-q="1"><p class="qtext">"Twenty-seven men bought land." What does the annotation say that line compresses?</p><button type="button" class="opt" data-o="0">Nothing; 27 men jointly bought the original tract</button><button type="button" class="opt" data-o="1">It merges the August 15, 1887 incorporation vote, at which 27 registered Black electors voted and elected officers, with the separate land purchases: Clarke's 22 acres from Eaton and a jurisdiction of 112 acres by incorporation</button><button type="button" class="opt" data-o="2">The 27 were the Hungerford trustees</button><button type="button" class="opt" data-o="3">The 27 refers to the town council of 1902</button><p class="feedback" hidden></p></div><div class="done-note" hidden></div><div class="cfu-key"><h4>Answer key</h4><ol><li><strong>The lyric calls Eatonville "the first Black-incorporated town." What does the annotation say?</strong> Correct answer: It is an overclaim: Brooklyn, Illinois (1873) and Princeville, North Carolina (1885) predate it; the supported claim is among the first self-governing all-Black municipalities in the United States, continuously incorporated since 1887. The annotation adjudicates the superlative with the counterexamples and keeps the narrower, documented claim; the correction is carried in print rather than by rewriting the master.</li><li><strong>"Twenty-seven men bought land." What does the annotation say that line compresses?</strong> Correct answer: It merges the August 15, 1887 incorporation vote, at which 27 registered Black electors voted and elected officers, with the separate land purchases: Clarke's 22 acres from Eaton and a jurisdiction of 112 acres by incorporation. The annotation untangles the compression: 27 electors casting a vote is one documented event, buying land is another, and the line blends them.</li></ol></div></div><div class="chap-nav"><a href="#ch6">&larr; 6. The Town Today</a><a href="#ch8">Next: 8. Primary Sources &rarr;</a></div></section>
 <details class="deep chapter" id="ch8" data-label="8. Primary Sources"><summary>8. Primary Sources</summary><div class="deep-body">
 <p>Public domain, licensed, or linked only. Nothing below is reproduced past its rights status.</p>
 <ul>
@@ -188,7 +229,7 @@ details.inline[open] > summary::after{content:" \2212"}
 <li>U.S. Decennial Census returns, Eatonville town, Florida, 1900-2020. Public domain.</li>
 <li>Complaint for Injunctive Relief and Declaratory Judgment, Association to Preserve the Eatonville Community v. School Board of Orange County, Case No. 2023-CA-005295-O (Fla. 9th Jud. Cir., filed March 24, 2023). Public court filing, link only. https://mccmeetingspublic.blob.core.usgovcloudapi.net/eatnvllefl-meet-f17f0e2c1dec4a78bf2d8a13dcd38264/ITEM-Attachment-001-ec47b3f03cba4c8fb8d99a695589b0bf.pdf</li>
 <li>CBS News Sunday Morning, "A Florida town, once settled by former slaves, now fights over 'sacred land'" (March 19, 2023). Copyrighted reporting, link only.</li>
-</ul></div></details><div class="chap-nav"><a href="#ch7">&larr; 7. The Song</a><a href="#ch9">Next: 9. Sources and Bibliography &rarr;</a></div>
+</ul><div class="cfu" data-chapter="ch8"><h3>Check for understanding</h3><p class="cfu-intro">Answer every question correctly to unlock the next chapter. A wrong answer is fine: re-read the chapter and try again.</p><div class="cfu-q" data-q="0"><p class="qtext">How are Hurston's books handled in this chapter's source list?</p><button type="button" class="opt" data-o="0">Quoted in full as public domain texts</button><button type="button" class="opt" data-o="1">Listed as primary literary sources (among them Mules and Men and Their Eyes Were Watching God) and noted as copyrighted, since Hurston died in 1960, so they are used as summary and brief quotation only</button><button type="button" class="opt" data-o="2">Excluded because fiction cannot be a source</button><button type="button" class="opt" data-o="3">Cited only through the festival's retellings</button><p class="feedback" hidden></p></div><div class="done-note" hidden></div><div class="cfu-key"><h4>Answer key</h4><ol><li><strong>How are Hurston's books handled in this chapter's source list?</strong> Correct answer: Listed as primary literary sources (among them Mules and Men and Their Eyes Were Watching God) and noted as copyrighted, since Hurston died in 1960, so they are used as summary and brief quotation only. The copyright and attribution notes state the handling rule plainly: copyrighted primary sources are summarized and briefly quoted, and photographs are linked, not reproduced.</li></ol></div></div></div></details><div class="chap-nav" data-for="ch8"><a href="#ch7">&larr; 7. The Song</a><a href="#ch9">Next: 9. Sources and Bibliography &rarr;</a></div>
 <details class="deep chapter" id="ch9" data-label="9. Sources and Bibliography"><summary>9. Sources and Bibliography</summary><div class="deep-body">
 <p>In protocol order.</p>
 <p>Perplexity library thread: checked live on 2026-10-26 in the browser pass (Perplexity Pro, signed in as Yamil Little). Exactly one Eatonville result across the searches run ("Eatonville" and "Eatonville Florida"): the master thread "Every city or state in America founded by a black man or woman" (https://www.perplexity.ai/search/1c272bba-00cb-42dd-b26a-ef8c34c6022f), which carries a dedicated Eatonville segment dated "Fri, Jun 12, 1:02 AM" as displayed, with no year shown. The segment's answer, as displayed: Eatonville, Florida, incorporated on August 15, 1887, just north of Orlando, is widely recognized as the oldest self-governing Black town in the United States, founded when 27 Black men voted to create their own municipality; established by formerly enslaved people who bought land from sympathetic white landowners, it became home to businesses, churches, schools like Hungerford, and writer Zora Neale Hurston, embodying Black autonomy and cultural pride. Against this dossier: the August 15, 1887 date agrees with the date carried here (the August 15 versus 18 variant is conflict 2), and the 27 voters, Hungerford, and Hurston all match the record. The one flag: "the oldest self-governing Black town in the United States" is the strong form of the first-town claim, the version conflict 1 narrows on the Brooklyn (1873) and Princeville (1885) dates. The Perplexity answer carries the un-narrowed version; it is evidence of how the claim circulates, not support for the broad form. The segment's sources are headed by the Town of Eatonville's own site (lead source domain townofeatonville, plus seven more behind a "15 sources" button; the full list was not expanded). The same answer text serves as the caption on the song's Suno page (see the Suno paragraph below and suno-lyrics-eatonville-2026-10-26.md).</p>
@@ -236,7 +277,7 @@ details.inline[open] > summary::after{content:" \2212"}
 <li>2020 population. 2,349 (U.S. Census; project outreach plan) versus 2,399 (Florida Backroads Travel). 2,349 carried; 2,399 appears in no census reporting and is treated as an error.</li>
 <li>Hungerford parcel size today. About 117 acres in two parcels (GrowthSpotter; Fox 35 Orlando) versus "more than 100 acres" (Central Florida Public Media) versus the 100-acre remnant of the 1951-era 300 acres described in the land record after court reductions (town reference summary). Carried as about 117 acres with the variance noted.</li>
 <li>End of the P.E.C. lawsuit. The complaint record shows the court granted the School Board judgment on the pleadings on December 31, 2024; Central Florida Public Media's January 2026 report says the lawsuit "was thrown out in 2025." The court date is carried; the variance is in the secondary reporting.</li>
-</ol></div></details><div class="chap-nav"><a href="#ch8">&larr; 8. Primary Sources</a><span></span></div></div></div>
+</ol><div class="cfu" data-chapter="ch9"><h3>Check for understanding</h3><p class="cfu-intro">Answer every question correctly to unlock the next chapter. A wrong answer is fine: re-read the chapter and try again.</p><div class="cfu-q" data-q="0"><p class="qtext">What flag does Section 9 raise about the Perplexity master thread's Eatonville segment?</p><button type="button" class="opt" data-o="0">It gives the wrong incorporation date</button><button type="button" class="opt" data-o="1">It carries the strong form of the first-town claim, "oldest self-governing Black town in the United States," which conflict 1 narrows; the dossier treats it as evidence of how the claim circulates, not as support for the broad form</button><button type="button" class="opt" data-o="2">It attributes the founding to the wrong Eaton</button><button type="button" class="opt" data-o="3">It omits the Hungerford school entirely</button><p class="feedback" hidden></p></div><div class="done-note" hidden></div><div class="cfu-key"><h4>Answer key</h4><ol><li><strong>What flag does Section 9 raise about the Perplexity master thread's Eatonville segment?</strong> Correct answer: It carries the strong form of the first-town claim, "oldest self-governing Black town in the United States," which conflict 1 narrows; the dossier treats it as evidence of how the claim circulates, not as support for the broad form. Section 9 agrees with the thread on the date, the 27 voters, Hungerford, and Hurston, and flags the one point where its language outruns the narrowed claim.</li></ol></div></div></div></details><div class="chap-nav" data-for="ch9"><a href="#ch8">&larr; 8. Primary Sources</a><span></span></div></div></div>
 <div class="doss-end"><p><strong>The five free samples:</strong> this dossier is one of the five pilot dossiers published free during the curriculum beta. Read the others on the <a href="../education.html">Education page</a>.</p></div>
 </div></section>
 <footer><div class="wrap">
@@ -244,12 +285,23 @@ details.inline[open] > summary::after{content:" \2212"}
 <p style="margin-top:12px">A creative universe built on the true history of America's Black towns -<br>one town, one song, one story at a time.</p>
 <p style="margin-top:14px; opacity:.6">&copy; 2026 All Black Towns. All rights reserved.</p>
 </div></footer>
+<script>window.ABT_CFU = {"chapters": {"intro": {"questions": [{"answer": 1, "explain": "The header records continuous incorporation: mayor-council government today, building permits and its own police department, under the motto \"The Town That Freedom Built.\""}]}, "ch1": {"questions": [{"answer": 1, "explain": "The chapter is plain that the founding was a real-estate transaction across the color line: Eaton sold, Clarke subdivided, and the lots were offered only to Black buyers under a temperance covenant."}, {"answer": 1, "explain": "Peacemaking judge E. K. Foster supervised the vote and swore the officers in; the chapter notes the incorporation certified Black men voting and governing under Florida law in 1887."}]}, "ch2": {"questions": [{"answer": 1, "explain": "Russell C. Calhoun and his wife Mary, Tuskegee graduates, ran Hungerford on the Tuskegee model: academic and industrial courses, a working campus, and service to a region, not just a town."}, {"answer": 1, "explain": "The 1889 advertisement in the town's own newspaper is quoted in the chapter as the founders writing their own description of what they had made."}]}, "ch3": {"questions": [{"answer": 1, "explain": "The chapter corrects the compressed version: Alabama-born, Eatonville-raised from age three, and the town's talk, church, and school became the substance of her major work."}, {"answer": 1, "explain": "The decennial series in Section 9 peaks at 2,432 in 2000; later counts settle near 2,300, which the chapter frames as community stability rather than growth."}]}, "ch4": {"questions": [{"answer": 1, "explain": "The chapter calls the festival a defensive weapon that outlived the fight: organized against the road in 1987, cancelled road, first festival in 1990, Hurston reframed from local memory to the town's public argument."}, {"answer": 1, "explain": "The chapter traces the tract from private Black boarding school to county hands under trust terms, to a closed school and a vacant, deed-restricted parcel at the town's edge."}]}, "ch5": {"questions": [{"answer": 1, "explain": "The chapter records the 2023 rejection as the town keeping its side of the argument, even as the School Board, which owns the land, moved toward its own disposition."}, {"answer": 1, "explain": "The vote is recorded with its terms and its caveat: a purchase-and-sale agreement approved, a closing not verified, and the land's future still argued from several sides."}]}, "ch6": {"questions": [{"answer": 1, "explain": "The chapter places the museum on East Kennedy Boulevard in the historic district and the Moseley House on Calhoun Avenue, both visitable anchors of the town Hurston described."}]}, "ch7": {"questions": [{"answer": 1, "explain": "The annotation adjudicates the superlative with the counterexamples and keeps the narrower, documented claim; the correction is carried in print rather than by rewriting the master."}, {"answer": 1, "explain": "The annotation untangles the compression: 27 electors casting a vote is one documented event, buying land is another, and the line blends them."}]}, "ch8": {"questions": [{"answer": 1, "explain": "The copyright and attribution notes state the handling rule plainly: copyrighted primary sources are summarized and briefly quoted, and photographs are linked, not reproduced."}]}, "ch9": {"questions": [{"answer": 1, "explain": "Section 9 agrees with the thread on the date, the 27 voters, Hungerford, and Hurston, and flags the one point where its language outruns the narrowed claim."}]}}};</script>
 
 <script>
 (function(){
   var KEY = 'abt-v2-eatonville-full';
+  var CFU = window.ABT_CFU || null;
   var state = {done: []};
-  try { state = JSON.parse(localStorage.getItem(KEY)) || state; } catch(e) {}
+  try {
+    var stored = JSON.parse(localStorage.getItem(KEY));
+    if (stored) { for (var k in stored) state[k] = stored[k]; }
+  } catch(e) {}
+  if (!state.done) state.done = [];
+  if (CFU) {
+    if (!state.cfu) state.cfu = {};
+    state.teacherUnlock = !!state.teacherUnlock;
+    if (!('current' in state)) state.current = null;
+  }
   var chapters = Array.prototype.slice.call(document.querySelectorAll('.chapter'));
   var railLinks = {};
   document.querySelectorAll('.rail a[data-ch]').forEach(function(a){ railLinks[a.getAttribute('data-ch')] = a; });
@@ -260,8 +312,89 @@ details.inline[open] > summary::after{content:" \2212"}
       if (a) { var t = a.querySelector('.tick'); if (t) t.textContent = state.done.indexOf(ch.id) >= 0 ? '\u2713' : ''; }
     });
   }
+  function cfuPassed(cid){
+    if (!CFU) return false;
+    var c = CFU.chapters[cid];
+    if (!c) return true;
+    var got = state.cfu[cid] || [];
+    return c.questions.every(function(q, i){ return got[i] === true; });
+  }
+  function isUnlocked(i){
+    if (!CFU) return true;
+    if (state.teacherUnlock) return true;
+    if (i <= 0) return true;
+    return cfuPassed(chapters[i - 1].id);
+  }
+  function chapterIndex(el){ return chapters.indexOf(el); }
+  var note = document.getElementById('lock-note');
+  function hideNote(){ if (note) note.style.display = 'none'; }
+  function showNote(target){
+    if (!note) return;
+    var label = target.getAttribute('data-label') || target.id;
+    note.innerHTML = '<strong>' + label + ' is locked for now.</strong> Answer the check for understanding questions at the end of the previous chapter to unlock it.';
+    note.style.display = 'block';
+    note.scrollIntoView({behavior: 'smooth', block: 'center'});
+  }
+  function paintLocks(){
+    if (!CFU) return;
+    document.querySelectorAll('a[href^="#"]').forEach(function(a){
+      var t = document.querySelector(a.getAttribute('href'));
+      if (t && t.classList.contains('chapter')) {
+        var locked = !isUnlocked(chapterIndex(t));
+        a.classList.toggle('locked', locked);
+        if (a.hasAttribute('data-ch')) {
+          var lk = a.querySelector('.lk');
+          if (locked && !lk) { lk = document.createElement('span'); lk.className = 'lk'; lk.textContent = '\uD83D\uDD12'; a.appendChild(lk); }
+          if (!locked && lk) lk.remove();
+        }
+      }
+    });
+  }
+  function setActive(id){
+    chapters.forEach(function(ch){
+      var a = railLinks[ch.id];
+      if (a) a.classList.toggle('active', ch.id === id);
+    });
+    var sheetLabel = document.getElementById('chapter-bar-label');
+    var target = document.getElementById(id);
+    if (sheetLabel && target) sheetLabel.textContent = target.getAttribute('data-label');
+  }
+  function showChapter(id, scroll){
+    var target = document.getElementById(id);
+    if (!target) return;
+    chapters.forEach(function(ch){
+      if (ch.id === id) {
+        ch.removeAttribute('hidden');
+        if (ch.tagName === 'DETAILS') ch.open = true;
+      } else {
+        ch.setAttribute('hidden', '');
+      }
+    });
+    document.querySelectorAll('.chap-nav[data-for]').forEach(function(n){
+      if (n.getAttribute('data-for') === id) n.removeAttribute('hidden');
+      else n.setAttribute('hidden', '');
+    });
+    state.current = id; save();
+    setActive(id);
+    hideNote();
+    if (scroll !== false) {
+      var layout = document.querySelector('.layout');
+      if (layout) {
+        var y = layout.getBoundingClientRect().top + window.pageYOffset - 84;
+        window.scrollTo(0, Math.max(0, y));
+      }
+    }
+  }
   var chip = document.getElementById('resume-chip');
-  if (chip && state.done.length) {
+  if (chip && CFU) {
+    var passedCount = chapters.filter(function(c){ return cfuPassed(c.id); }).length;
+    var nextU = null;
+    chapters.forEach(function(c, i){ if (!nextU && isUnlocked(i) && !cfuPassed(c.id)) nextU = c; });
+    if (passedCount > 0 && nextU) {
+      chip.style.display = 'block';
+      chip.innerHTML = 'Welcome back. You left off at <strong>' + nextU.getAttribute('data-label') + '</strong>. <a href="#' + nextU.id + '">Continue there \u2192</a>';
+    }
+  } else if (chip && state.done.length) {
     var next = chapters.filter(function(c){ return state.done.indexOf(c.id) < 0; })[0];
     if (next) {
       var label = next.getAttribute('data-label');
@@ -269,41 +402,65 @@ details.inline[open] > summary::after{content:" \2212"}
       chip.innerHTML = 'Welcome back. You left off at <strong>' + label + '</strong>. <a href="#' + next.id + '">Continue there \u2192</a>';
     }
   }
-  paintTicks();
-  var bar = document.getElementById('progress-bar');
-  var active = null;
-  var spy = new IntersectionObserver(function(entries){
-    entries.forEach(function(en){
-      if (en.isIntersecting) {
-        if (active && railLinks[active]) railLinks[active].classList.remove('active');
-        active = en.target.id;
-        if (railLinks[active]) railLinks[active].classList.add('active');
-        var sheetLabel = document.getElementById('chapter-bar-label');
-        if (sheetLabel) sheetLabel.textContent = en.target.getAttribute('data-label');
-      }
-      var rect = en.target.getBoundingClientRect();
-      if (rect.bottom < window.innerHeight * 0.55 && state.done.indexOf(en.target.id) < 0) {
-        state.done.push(en.target.id); save(); paintTicks();
-      }
+  if (CFU) {
+    chapters.forEach(function(ch){
+      if (cfuPassed(ch.id) && state.done.indexOf(ch.id) < 0) state.done.push(ch.id);
     });
-  }, {rootMargin: '-30% 0px -55% 0px'});
-  chapters.forEach(function(ch){ spy.observe(ch); });
+    save();
+  }
+  paintTicks();
+  paintLocks();
+  var bar = document.getElementById('progress-bar');
+  if (!CFU) {
+    var active = null;
+    var spy = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if (en.isIntersecting) {
+          if (active && railLinks[active]) railLinks[active].classList.remove('active');
+          active = en.target.id;
+          if (railLinks[active]) railLinks[active].classList.add('active');
+          var sheetLabel = document.getElementById('chapter-bar-label');
+          if (sheetLabel) sheetLabel.textContent = en.target.getAttribute('data-label');
+        }
+        var rect = en.target.getBoundingClientRect();
+        if (rect.bottom < window.innerHeight * 0.55 && state.done.indexOf(en.target.id) < 0) {
+          state.done.push(en.target.id); save(); paintTicks();
+        }
+      });
+    }, {rootMargin: '-30% 0px -55% 0px'});
+    chapters.forEach(function(ch){ spy.observe(ch); });
+  }
   window.addEventListener('scroll', function(){
     var h = document.documentElement;
     var max = h.scrollHeight - h.clientHeight;
     if (bar && max > 0) bar.style.width = (h.scrollTop / max * 100) + '%';
   }, {passive: true});
   document.querySelectorAll('a[href^="#"]').forEach(function(a){
-    a.addEventListener('click', function(){
+    a.addEventListener('click', function(ev){
       var t = document.querySelector(a.getAttribute('href'));
-      if (t && t.tagName === 'DETAILS') t.open = true;
       var sheet = document.getElementById('chapter-sheet');
       if (sheet) sheet.classList.remove('open');
+      if (CFU && t && t.classList.contains('chapter')) {
+        ev.preventDefault();
+        if (isUnlocked(chapterIndex(t))) showChapter(t.id);
+        else showNote(t);
+        return;
+      }
+      if (t && t.tagName === 'DETAILS') t.open = true;
     });
   });
   var tp = document.getElementById('teacher-panel');
+  var tc = document.getElementById('teacher-controls');
   var tbtn = document.getElementById('teach-btn');
-  if (tbtn && tp) tbtn.addEventListener('click', function(){ tp.style.display = tp.style.display === 'block' ? 'none' : 'block'; if (tp.style.display === 'block') tp.scrollIntoView({behavior:'smooth', block:'start'}); });
+  if (tbtn && (tp || tc)) tbtn.addEventListener('click', function(){
+    var opened = null;
+    [tp, tc].forEach(function(el){
+      if (!el) return;
+      el.style.display = el.style.display === 'block' ? 'none' : 'block';
+      if (el.style.display === 'block') opened = el;
+    });
+    if (opened) opened.scrollIntoView({behavior:'smooth', block:'start'});
+  });
   var ex = document.getElementById('expand-all');
   if (ex) ex.addEventListener('click', function(){
     var dets = document.querySelectorAll('details');
@@ -314,7 +471,111 @@ details.inline[open] > summary::after{content:" \2212"}
   var sheetBtn = document.getElementById('chapter-sheet-btn');
   var sheet = document.getElementById('chapter-sheet');
   if (sheetBtn && sheet) sheetBtn.addEventListener('click', function(){ sheet.classList.toggle('open'); });
-  window.addEventListener('beforeprint', function(){ document.querySelectorAll('details').forEach(function(d){ d.open = true; }); });
+  if (CFU) {
+    function markCorrect(qEl, cid, qi){
+      var q = CFU.chapters[cid].questions[qi];
+      qEl.querySelectorAll('.opt').forEach(function(b){
+        b.disabled = true;
+        if (+b.getAttribute('data-o') === q.answer) b.classList.add('picked-right');
+      });
+      var fb = qEl.querySelector('.feedback');
+      fb.hidden = false; fb.className = 'feedback good'; fb.textContent = q.explain;
+    }
+    function refreshDone(block, cid){
+      var dn = block.querySelector('.done-note');
+      if (!dn) return;
+      if (cfuPassed(cid)) {
+        var idx = -1;
+        chapters.forEach(function(c, i){ if (c.id === cid) idx = i; });
+        dn.hidden = false;
+        dn.textContent = (idx === chapters.length - 1)
+          ? 'Chapter complete. That was the final chapter of this dossier.'
+          : 'Chapter complete. The next chapter is now unlocked.';
+      } else {
+        dn.hidden = true;
+      }
+    }
+    document.querySelectorAll('.cfu').forEach(function(block){
+      var cid = block.getAttribute('data-chapter');
+      var got = state.cfu[cid] || [];
+      block.querySelectorAll('.cfu-q').forEach(function(qEl){
+        var qi = +qEl.getAttribute('data-q');
+        if (got[qi]) markCorrect(qEl, cid, qi);
+      });
+      refreshDone(block, cid);
+    });
+    document.querySelectorAll('.cfu .opt').forEach(function(btn){
+      btn.addEventListener('click', function(){
+        var qEl = btn.closest('.cfu-q');
+        var block = btn.closest('.cfu');
+        var cid = block.getAttribute('data-chapter');
+        var qi = +qEl.getAttribute('data-q');
+        var oi = +btn.getAttribute('data-o');
+        var q = CFU.chapters[cid].questions[qi];
+        if (!state.cfu[cid]) state.cfu[cid] = [];
+        if (state.cfu[cid][qi]) return;
+        var fb = qEl.querySelector('.feedback');
+        if (oi === q.answer) {
+          state.cfu[cid][qi] = true;
+          if (cfuPassed(cid) && state.done.indexOf(cid) < 0) state.done.push(cid);
+          save();
+          markCorrect(qEl, cid, qi);
+          paintTicks(); paintLocks();
+          refreshDone(block, cid);
+        } else {
+          btn.classList.add('picked-wrong');
+          btn.disabled = true;
+          fb.hidden = false; fb.className = 'feedback try';
+          fb.textContent = 'Not quite. Re-read this chapter and try again: the answer is in the text above.';
+        }
+      });
+    });
+    var uc = document.getElementById('unlock-all');
+    if (uc) {
+      uc.checked = !!state.teacherUnlock;
+      uc.addEventListener('change', function(){ state.teacherUnlock = uc.checked; save(); paintLocks(); });
+    }
+    var rp = document.getElementById('reset-progress');
+    if (rp) rp.addEventListener('click', function(){
+      if (window.confirm('Reset all reading progress and check-for-understanding answers on this device?')) {
+        try { localStorage.removeItem(KEY); } catch(e) {}
+        location.reload();
+      }
+    });
+    var startId = null;
+    if (state.current) {
+      var cur = document.getElementById(state.current);
+      if (cur && isUnlocked(chapterIndex(cur))) startId = state.current;
+    }
+    if (!startId) {
+      var firstOpen = null;
+      chapters.forEach(function(c, i){ if (!firstOpen && isUnlocked(i) && !cfuPassed(c.id)) firstOpen = c; });
+      startId = firstOpen ? firstOpen.id : chapters[chapters.length - 1].id;
+    }
+    showChapter(startId, false);
+  }
+  var hiddenBeforePrint = [];
+  window.addEventListener('beforeprint', function(){
+    document.querySelectorAll('details').forEach(function(d){ d.open = true; });
+    if (CFU) {
+      hiddenBeforePrint = [];
+      chapters.forEach(function(ch){
+        if (ch.hasAttribute('hidden')) { hiddenBeforePrint.push(ch.id); ch.removeAttribute('hidden'); }
+      });
+      document.querySelectorAll('.chap-nav[data-for]').forEach(function(n){ n.removeAttribute('hidden'); });
+    }
+  });
+  window.addEventListener('afterprint', function(){
+    if (CFU) {
+      hiddenBeforePrint.forEach(function(id){
+        var el = document.getElementById(id);
+        if (el && id !== state.current) el.setAttribute('hidden', '');
+      });
+      document.querySelectorAll('.chap-nav[data-for]').forEach(function(n){
+        if (n.getAttribute('data-for') !== state.current) n.setAttribute('hidden', '');
+      });
+    }
+  });
 })();
 </script>
 </body></html>
