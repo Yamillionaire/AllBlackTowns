@@ -414,5 +414,14 @@
   "lon": 110.0304,
   "about": "Kampung Afrika, Purworejo, Indonesia. African soldiers recruited in the Gold Coast served the Dutch army from 1831. Their veteran families founded this Africa Village community in Purworejo. A historic district.",
   "source": "Peer-reviewed research by Ineke van Kessel (African and Asian Studies, 2007) on the Belanda Hitam settlements; Wikipedia (Purworejo) for coordinates."
+ },
+ {
+  "about": "Nanny Town was Queen Nanny's Windward Maroon stronghold in Jamaica's Blue Mountains, a guerrilla refuge later abandoned; its successor community is Moore Town. Nanny led its Maroon fighters through years of guerrilla war.",
+  "country": "Jamaica",
+  "lat": 18.0595736,
+  "lon": -76.5076572,
+  "song": "Queen Nanny's Code",
+  "source": "All Black Towns main catalog (towns.json) and town-coords.json; Nanny Town is the one town carried on both the U.S. and international maps, with its song Queen Nanny's Code.",
+  "town": "Nanny Town"
  }
 ]

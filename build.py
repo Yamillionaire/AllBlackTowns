@@ -26,7 +26,7 @@ HEAD = """<!DOCTYPE html>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=20261026-logo2">
+<link rel="stylesheet" href="styles.css?v=20261026-beta">
 <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
@@ -49,11 +49,12 @@ FOOT = """
 <div class="rule" style="margin:0 auto 26px"></div>
 <h2>Hear every town's song first.</h2>
 <p>Join the list for new releases, town histories, and the stories behind the music. One email when it matters - never noise.</p>
-<form class="nl-form" action="https://formsubmit.co/REPLACE_WITH_YOUR_EMAIL" method="POST">
+<form class="nl-form" action="https://formsubmit.co/info@allblacktowns.com" method="POST">
 <input type="email" name="email" placeholder="Your email address" required>
 <input type="hidden" name="_subject" value="New All Black Towns subscriber">
 <button class="btn" type="submit">Join the list</button>
 </form>
+<p class="nl-status" role="status" style="min-height:1.2em;margin-top:10px"></p>
 <p class="nl-note">Free forever. Unsubscribe anytime.</p>
 </div></section>
 <footer><div class="wrap">
@@ -82,6 +83,22 @@ FOOT = """
   if ('IntersectionObserver' in window && !RM) {
     var io2 = new IntersectionObserver(function(es){ es.forEach(function(en){ if (en.isIntersecting) { countUp(en.target); io2.unobserve(en.target); } }); }, {threshold: .4});
     nums.forEach(function(n){ io2.observe(n); });
+  }
+  var nlForm = document.querySelector('.nl-form');
+  if (nlForm) {
+    nlForm.addEventListener('submit', function(ev){
+      ev.preventDefault();
+      var status = document.querySelector('.nl-status');
+      var email = nlForm.querySelector('input[name="email"]').value;
+      if (status) status.textContent = 'Joining...';
+      fetch('https://formsubmit.co/ajax/info@allblacktowns.com', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json', 'Accept': 'application/json'},
+        body: JSON.stringify({email: email, _subject: 'New All Black Towns subscriber'})
+      }).then(function(r){ if (!r.ok) throw new Error('send failed'); return r.json(); })
+        .then(function(){ if (status) status.textContent = 'You are on the list. Watch your inbox - the next town is coming.'; nlForm.reset(); })
+        .catch(function(){ if (status) status.textContent = 'That did not go through. Please try again, or write to us at info@allblacktowns.com.'; });
+    });
   }
 })();
 </script>
@@ -144,14 +161,18 @@ index_body = f"""
 
 # ---------- TOWNS ----------
 state_opts = "\n".join(f'<option value="{esc(s)}">{esc(s)}</option>' for s in states)
-town_data = json.dumps([{"town": t["town"], "state": t["state"],
+def slugify_town(town, state):
+    return re.sub(r"[^a-z0-9]+", "-", f"{town}-{state}".lower()).strip("-")
+
+
+town_data = json.dumps([{"town": t["town"], "state": t["state"], "slug": slugify_town(t["town"], t["state"]),
                          "song": t["song"], "about": t["about"]} for t in towns])
 
 towns_body = f"""
 <section class="block"><div class="wrap">
 <div class="rule"></div>
 <h2 class="section-title">The towns</h2>
-<p class="section-sub">{len(towns)} historic Black towns, districts, and settlements - each with its own song. Search by name or filter by state.</p>
+<p class="section-sub">{len(towns)} historic Black towns, districts, and settlements - each with its own song. Search by name or filter by state. Tap any town to open its page.</p>
 <div class="tools">
 <input id="q" type="text" placeholder="Search towns…" oninput="filterTowns()">
 <select id="st" onchange="filterTowns()"><option value="">All states</option>{state_opts}</select>
@@ -171,7 +192,7 @@ const grid = document.getElementById('grid');
 const count = document.getElementById('count');
 function card(t, i) {{
   const about = t.about ? `<p>${{t.about.substring(0, 240)}}${{t.about.length > 240 ? '…' : ''}}</p>` : '';
-  return `<div class="town-card" style="--i:${{Math.min(i || 0, 10)}}"><h3>${{t.town}}</h3><div class="state">${{t.state}}</div>${{about}}<div class="song">♪ ${{t.song}}</div></div>`;
+  return `<a class="town-card" href="towns/${{t.slug}}.html" style="--i:${{Math.min(i || 0, 10)}}"><h3>${{t.town}}</h3><div class="state">${{t.state}}</div>${{about}}<div class="song">♪ ${{t.song}}</div></a>`;
 }}
 function filterTowns() {{
   const q = document.getElementById('q').value.toLowerCase();
@@ -273,13 +294,13 @@ education_body = """
 <section class="block alt"><div class="wrap">
 <div class="rule"></div>
 <h2 class="section-title">The pilot collection</h2>
-<p class="section-sub">Five towns, five complete dossiers - the first set, finished and verified against the sources.</p>
+<p class="section-sub">Five towns, five complete dossiers - the first set, finished and verified against the sources. The curriculum is in beta: all five open in full, free, and Sweet Auburn carries the pilot lesson plan. Tap a town to read.</p>
 <div class="town-grid">
-<div class="town-card"><h3>Sweet Auburn</h3><div class="state">Atlanta, Georgia</div><p>The historic Black business district once called the richest Negro street in the world - and the home of the pilot lesson plan.</p></div>
-<div class="town-card"><h3>Boley</h3><div class="state">Oklahoma</div><p>One of the largest and most famous all-Black towns of the West, founded in 1903 and still an incorporated town today.</p></div>
-<div class="town-card"><h3>Nicodemus</h3><div class="state">Kansas</div><p>Founded in 1877 by Black settlers from Kentucky; the oldest surviving all-Black town west of the Mississippi, now a National Historic Site.</p></div>
-<div class="town-card"><h3>Eatonville</h3><div class="state">Florida</div><p>Incorporated in 1887, among the first self-governing all-Black towns in America - and the hometown of Zora Neale Hurston.</p></div>
-<div class="town-card"><h3>Rosewood</h3><div class="state">Florida</div><p>A thriving town destroyed by racial violence in 1923. Its dossier keeps the full record of what was lost.</p></div>
+<a class="town-card" href="dossiers/sweet-auburn.html"><h3>Sweet Auburn</h3><div class="state">Atlanta, Georgia</div><p>The historic Black business district once called the richest Negro street in the world - and the home of the pilot lesson plan.</p><span class="sample-link">Read the full sample dossier &rarr;</span></a>
+<a class="town-card" href="dossiers/boley.html"><h3>Boley</h3><div class="state">Oklahoma</div><p>One of the largest and most famous all-Black towns of the West, founded in 1903 and still an incorporated town today.</p><span class="sample-link">Read the full dossier &rarr;</span></a>
+<a class="town-card" href="dossiers/nicodemus.html"><h3>Nicodemus</h3><div class="state">Kansas</div><p>Founded in 1877 by Black settlers from Kentucky; the oldest surviving all-Black town west of the Mississippi, now a National Historic Site.</p><span class="sample-link">Read the full dossier &rarr;</span></a>
+<a class="town-card" href="dossiers/eatonville.html"><h3>Eatonville</h3><div class="state">Florida</div><p>Incorporated in 1887, among the first self-governing all-Black towns in America - and the hometown of Zora Neale Hurston.</p><span class="sample-link">Read the full dossier &rarr;</span></a>
+<a class="town-card" href="dossiers/rosewood.html"><h3>Rosewood</h3><div class="state">Florida</div><p>A thriving town destroyed by racial violence in 1923. Its dossier keeps the full record of what was lost.</p><span class="sample-link">Read the full dossier &rarr;</span></a>
 </div>
 </div></section>
 
@@ -301,23 +322,16 @@ try:
     for t in towns:
         k = f"{t['town']}|{t['state']}"
         if k in coords:
-            pins.append({"town": t["town"], "state": t["state"], "song": t["song"],
+            pins.append({"town": t["town"], "state": t["state"], "slug": slugify_town(t["town"], t["state"]), "song": t["song"],
                          "about": (t["about"] or "")[:180], "lat": coords[k][0], "lon": coords[k][1]})
     pin_data = json.dumps(pins)
     intl = []
     try:
         for e in json.load(open(f"{SITE}/international-towns.json")):
             intl.append({"town": e["town"], "country": e["country"], "about": e["about"],
-                         "lat": e["lat"], "lon": e["lon"], "song": ""})
+                         "lat": e["lat"], "lon": e["lon"], "song": e.get("song", "")})
     except FileNotFoundError:
         pass
-    for t in towns:
-        if t["town"] == "Nanny Town":
-            k = f"{t['town']}|{t['state']}"
-            if k in coords:
-                intl.append({"town": t["town"], "country": t["state"],
-                             "about": (t["about"] or "")[:235],
-                             "lat": coords[k][0], "lon": coords[k][1], "song": t["song"]})
     intl_data = json.dumps(intl)
     map_body = f"""
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
@@ -341,7 +355,7 @@ const dot = L.divIcon({{ className: 'town-dot-wrap', html: '<span class="town-do
 PINS.forEach(p => {{
   const m = L.marker([p.lat, p.lon], {{ icon: dot }});
   const about = p.about ? `<p>${{p.about}}...</p>` : '';
-  m.bindPopup(`<div class="pop"><h3>${{p.town}}</h3><div class="pstate">${{p.state}}</div>${{about}}<div class="psong">\u266a ${{p.song}}</div></div>`);
+  m.bindPopup(`<div class="pop"><h3>${{p.town}}</h3><div class="pstate">${{p.state}}</div>${{about}}<div class="psong">\u266a ${{p.song}}</div><p style="margin-top:8px"><a href="towns/${{p.slug}}.html">Open the town page</a></p></div>`);
   cluster.addLayer(m);
 }});
 map.addLayer(cluster);
@@ -349,7 +363,7 @@ map.addLayer(cluster);
 <section class="block"><div class="wrap">
 <div class="rule"></div>
 <h2 class="section-title">The international Black towns map</h2>
-<p class="section-sub">The story does not stop at the border. Wherever colonialism carried Black people (the Caribbean, the Virgin Islands, the Americas, and the ports of Europe), they did what they did here: fought for ground and built towns of their own. And in Africa itself, communities broke colonial control and governed themselves: freed people's towns that became capitals, maroon towns and refuges, and a town where a liberation republic was declared. Maroon republics, quilombos, palenques, Garifuna towns, and free Black settlements, each pinned where it stood or still stands. The songs have not reached these towns yet; the record starts here.</p>
+<p class="section-sub">The story does not stop at the border. Wherever colonialism carried Black people (the Caribbean, the Virgin Islands, the Americas, and the ports of Europe), they did what they did here: fought for ground and built towns of their own. And in Africa itself, communities broke colonial control and governed themselves: freed people's towns that became capitals, maroon towns and refuges, and a town where a liberation republic was declared. Maroon republics, quilombos, palenques, Garifuna towns, and free Black settlements, each pinned where it stood or still stands. One of these towns already has its song: Nanny Town, Jamaica, the only town that stands on both maps.</p>
 <div id="worldmap" class="townmap" data-rv></div>
 <p class="map-note">{len(intl)} places on this map. Entries the record supports only as a district or a territory are labeled as such: the record stays honest. Map data &copy; OpenStreetMap contributors.</p>
 </div></section>
