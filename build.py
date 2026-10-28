@@ -28,7 +28,7 @@ HEAD = """<!DOCTYPE html>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css?v=20261026-beta">
 <script>document.documentElement.classList.add('js');</script>
-</head>
+{ld}</head>
 <body>
 <div class="logo-bg" aria-hidden="true"></div>
 <nav><div class="wrap nav-inner">
@@ -105,8 +105,8 @@ FOOT = """
 </body></html>
 """
 
-def page(active, title, desc, body):
-    h = HEAD.format(title=title, desc=desc,
+def page(active, title, desc, body, ld=""):
+    h = HEAD.format(title=title, desc=desc, ld=ld,
                     h="active" if active == "h" else "",
                     t="active" if active == "t" else "",
                     mp="active" if active == "mp" else "",
@@ -122,6 +122,23 @@ def page(active, title, desc, body):
 
 def esc(s):
     return html.escape(s or "")
+
+# ---------- GEO (JSON-LD structured data, 2026-10-28) ----------
+# These blocks were first hand-applied to the built pages on 2026-10-28; they
+# live in the templates now so a rebuild can never wipe them. Formatting is
+# json.dumps(indent=2, ensure_ascii=False) to match the shipped pages exactly.
+SITE_URL = "https://www.allblacktowns.com"
+CANONICAL = ("All Black Towns documents 120 historic Black towns in the United States: "
+             "where each town is, how it was founded, what happened to it, and the original "
+             "song written for it. The site carries a page for every town, an interactive map, "
+             "in-depth research dossiers with lessons for teachers, and a growing international "
+             "map of Black towns beyond the United States. It is an education and preservation "
+             "project by The Elements of Hip Hop.")
+
+def ld_script(obj):
+    """A JSON-LD block plus its trailing newline, or the slot stays empty."""
+    return ('<script type="application/ld+json">\n'
+            + json.dumps(obj, indent=2, ensure_ascii=False) + '\n</script>\n')
 
 # ---------- INDEX ----------
 cards = "\n".join(
@@ -279,6 +296,12 @@ about_body = """
 <p>The project is personal. Little's grandparents came from Alabama, and the towns in these songs are the kind of places his own family's story runs through. All Black Towns is his way of keeping the record alive: researched from the sources, written town by town, and sung back into memory.</p>
 </div></div></section>
 """
+
+# The canonical paragraph added 2026-10-28: it closes the "About the project"
+# prose, after "This is history you can hear."
+about_body = about_body.replace(
+    "<p>This is history you can hear.</p>",
+    "<p>This is history you can hear.</p>\n<p>" + CANONICAL + "</p>")
 
 # ---------- EDUCATION ----------
 education_body = """
@@ -473,11 +496,45 @@ document.getElementById('shareForm').addEventListener('submit', async function (
 </div></section>
 """
 
+# ---------- GEO blocks for the pages below ----------
+# ItemList is generated from the same towns data the towns page renders, so
+# the schema can never drift from the list it describes.
+index_ld = ld_script({
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "All Black Towns",
+    "url": SITE_URL + "/",
+    "description": CANONICAL,
+})
+towns_ld = ld_script({
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Towns - All Black Towns",
+    "description": "Explore the historic Black towns honored by the All Black Towns music project.",
+    "url": SITE_URL + "/towns.html",
+    "mainEntity": {
+        "@type": "ItemList",
+        "numberOfItems": len(towns),
+        "itemListElement": [
+            {"@type": "ListItem", "position": i + 1, "name": t["town"],
+             "url": f"{SITE_URL}/towns/{slugify_town(t['town'], t['state'])}.html"}
+            for i, t in enumerate(towns)
+        ],
+    },
+})
+map_ld = ld_script({
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Map - All Black Towns",
+    "description": "An interactive map of the historic Black towns honored by All Black Towns.",
+    "url": SITE_URL + "/map.html",
+})
+
 pages = {
     "index.html": page("h", "Home",
-        "All Black Towns - a creative universe built on the true history of America's Black towns, told first in song.", index_body),
+        "All Black Towns - a creative universe built on the true history of America's Black towns, told first in song.", index_body, ld=index_ld),
     "towns.html": page("t", "Towns",
-        "Explore the historic Black towns honored by the All Black Towns music project.", towns_body),
+        "Explore the historic Black towns honored by the All Black Towns music project.", towns_body, ld=towns_ld),
     "music.html": page("m", "Music",
         "The All Black Towns song catalog - original songs honoring historic Black towns.", music_body),
     "about.html": page("a", "About",
@@ -489,7 +546,7 @@ pages = {
 }
 if map_body:
     pages["map.html"] = page("mp", "Map",
-        "An interactive map of the historic Black towns honored by All Black Towns.", map_body)
+        "An interactive map of the historic Black towns honored by All Black Towns.", map_body, ld=map_ld)
 for name, content in pages.items():
     open(f"{SITE}/{name}", "w").write(content)
     print(f"Wrote {name} ({len(content)//1024} KB)")
