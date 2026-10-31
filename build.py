@@ -38,6 +38,7 @@ HEAD = """<!DOCTYPE html>
 <a href="towns.html" class="{t}">Towns</a>
 <a href="map.html" class="{mp}">Map</a>
 <a href="music.html" class="{m}">Music</a>
+<a href="news.html" class="{n}">News</a>
 <a href="education.html" class="{ed}">Education</a>
 <a href="about.html" class="{a}">About</a>
 <a href="share.html" class="{sh}">Share a Town</a>
@@ -111,6 +112,7 @@ def page(active, title, desc, body, ld=""):
                     t="active" if active == "t" else "",
                     mp="active" if active == "mp" else "",
                     m="active" if active == "m" else "",
+                    n="active" if active == "n" else "",
                     ed="active" if active == "ed" else "",
                     a="active" if active == "a" else "",
                     sh="active" if active == "sh" else "")

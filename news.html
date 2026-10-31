@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Black News - All Black Towns</title>
+<meta name="description" content="Black News from All Black Towns: stories about Black people in America and across the African diaspora, summarized in our own words with links to the original sources. Updated daily; nothing ever falls off the archive.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=20261026-beta">
+<script>document.documentElement.classList.add('js');</script>
+<style>
+.news-tabs { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 14px; }
+.news-tab {
+  padding: 12px 30px; border-radius: 999px; cursor: pointer;
+  background: transparent; color: var(--gold-soft); border: 1px solid var(--gold);
+  font-family: 'Inter', system-ui, sans-serif; font-weight: 700; font-size: 0.98rem; letter-spacing: 0.04em;
+  transition: background .15s ease, color .15s ease;
+}
+.news-tab:hover { background: rgba(201,162,39,0.12); }
+.news-tab.active { background: var(--gold); color: var(--ink); }
+.news-cats { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 16px; }
+.news-cat {
+  padding: 7px 16px; border-radius: 999px; cursor: pointer;
+  background: transparent; color: var(--cream-dim); border: 1px solid var(--line);
+  font-family: 'Inter', system-ui, sans-serif; font-weight: 600; font-size: 0.82rem; letter-spacing: 0.03em;
+  transition: background .15s ease, color .15s ease, border-color .15s ease;
+}
+.news-cat:hover { border-color: var(--gold); color: var(--gold-soft); }
+.news-cat.active { background: var(--gold); color: var(--ink); border-color: var(--gold); }
+.news-cat .n { opacity: 0.75; font-weight: 400; }
+.news-window { color: var(--cream-dim); font-size: 0.92rem; margin-bottom: 34px; }
+.news-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(320px, 100%), 1fr)); gap: 22px; }
+.news-card {
+  background: var(--ink-soft); border: 1px solid var(--line); border-radius: 14px;
+  padding: 26px; display: flex; flex-direction: column;
+  transition: transform .15s ease, border-color .15s ease;
+}
+.news-card:hover { transform: translateY(-4px); border-color: var(--gold); }
+.news-meta { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 12px; }
+.news-chip {
+  font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.14em;
+  color: var(--gold); border: 1px solid var(--line); border-radius: 999px; padding: 4px 10px;
+}
+.news-chip.date { color: var(--cream-dim); }
+.news-card h3 { font-size: 1.18rem; line-height: 1.35; margin-bottom: 10px; }
+.news-card h3 a { color: var(--cream); text-decoration: none; }
+.news-card h3 a:hover { color: var(--gold-soft); }
+.news-card p { color: var(--cream-dim); font-size: 0.94rem; flex: 1; }
+.news-source { margin-top: 16px; font-size: 0.84rem; color: var(--cream-dim); }
+.news-source a { font-weight: 600; }
+.news-empty { color: var(--cream-dim); font-size: 1rem; padding: 30px 0; }
+</style>
+</head>
+<body>
+<div class="logo-bg" aria-hidden="true"></div>
+<nav><div class="wrap nav-inner">
+<a class="brand" href="index.html"><img class="brand-logo" src="logo-nav.jpg" alt="All Black Towns logo">All <span>Black</span> Towns</a>
+<div class="nav-links">
+<a href="index.html" class="">Home</a>
+<a href="towns.html" class="">Towns</a>
+<a href="map.html" class="">Map</a>
+<a href="music.html" class="">Music</a>
+<a href="news.html" class="active">News</a>
+<a href="education.html" class="">Education</a>
+<a href="about.html" class="">About</a>
+<a href="share.html" class="">Share a Town</a>
+</div></div></nav>
+
+<header class="hero"><div class="wrap">
+<div class="kicker">Black News &middot; America and the diaspora</div>
+<h1>The record,<br>kept <em>daily.</em></h1>
+<p class="lede">Stories about Black people in the United States and of African descent around the world: preservation wins, Black institutions, business, health, policy, and culture. Every story is summarized in our own words and linked to its source. The page shows the last 30 days; the full archive is kept forever and nothing ever falls off.</p>
+</div></header>
+
+<section class="block" style="padding-top:20px"><div class="wrap">
+<div class="rule"></div>
+<h2 class="section-title">Black News</h2>
+<p class="section-sub">Two feeds, one record. America covers Black life in the United States. International covers Black people of African descent across the world: Africa, the Caribbean, the UK and Europe, Canada, Latin America, and the wider diaspora. Filter either feed by category: politics, business, technology, science, health, education, culture, sports, heritage, and more.</p>
+
+<div class="news-tabs" role="tablist" aria-label="News region">
+<button class="news-tab active" id="tab-america" role="tab" aria-selected="true" data-tab="america">America</button>
+<button class="news-tab" id="tab-international" role="tab" aria-selected="false" data-tab="international">International</button>
+</div>
+<div class="news-cats" id="news-cats" role="group" aria-label="Filter by category"></div>
+<p class="news-window" id="news-window">Loading the latest stories...</p>
+
+<div class="news-grid" id="news-grid" role="tabpanel" aria-live="polite"></div>
+<p class="news-empty" id="news-empty" hidden>No stories in this window yet. The archive keeps every story we have ever carried.</p>
+
+<p style="margin-top:40px; color:var(--cream-dim); font-size:0.92rem">Summaries are written by All Black Towns in our own words. Follow the source link on each card for the full story. Older stories stay in the permanent Black News archive, labeled by date and category.</p>
+</div></section>
+
+<footer><div class="wrap">
+<a class="brand" href="index.html"><img class="brand-logo" src="logo-nav.jpg" alt="All Black Towns logo">All <span>Black</span> Towns</a>
+<p style="margin-top:12px">A creative universe built on the true history of America's Black towns -<br>one town, one song, one story at a time.</p>
+<p style="margin-top:14px; opacity:.6">&copy; 2026 All Black Towns. All rights reserved.</p>
+</div></footer>
+
+<script>
+(function(){
+  var grid = document.getElementById('news-grid');
+  var emptyMsg = document.getElementById('news-empty');
+  var windowLine = document.getElementById('news-window');
+  var catsRow = document.getElementById('news-cats');
+  var tabs = document.querySelectorAll('.news-tab');
+  var DATA = null;
+  var currentTab = 'america';
+  var currentCat = 'All';
+
+  var MONTHS = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+  function fmtDate(iso){
+    var p = iso.split('-');
+    return MONTHS[parseInt(p[1],10)-1] + ' ' + parseInt(p[2],10) + ', ' + p[0];
+  }
+  function esc(s){
+    return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  }
+  function inWindow(story, data){
+    var days = data.window_days || 30;
+    var ref = new Date(data.updated + 'T00:00:00Z');
+    var d = new Date(story.date + 'T00:00:00Z');
+    var diff = (ref - d) / 86400000;
+    return diff >= 0 && diff < days;
+  }
+  function card(story){
+    var chips = '<span class="news-chip">' + esc(story.category) + '</span>' +
+      '<span class="news-chip date">' + esc(fmtDate(story.date)) + '</span>';
+    if (story.country) chips += '<span class="news-chip">' + esc(story.country) + '</span>';
+    return '<article class="news-card">' +
+      '<div class="news-meta">' + chips + '</div>' +
+      '<h3><a href="' + esc(story.url) + '" target="_blank" rel="noopener">' + esc(story.headline) + '</a></h3>' +
+      '<p>' + esc(story.summary) + '</p>' +
+      '<div class="news-source">Source: ' + esc(story.source) + ' &middot; <a href="' + esc(story.url) + '" target="_blank" rel="noopener">Read the full story</a></div>' +
+      '</article>';
+  }
+  function tabStories(){
+    return DATA.stories.filter(function(s){ return s.tab === currentTab && inWindow(s, DATA); });
+  }
+  function buildCats(){
+    var counts = {};
+    tabStories().forEach(function(s){ counts[s.category] = (counts[s.category] || 0) + 1; });
+    var order = DATA.categories || [];
+    var present = order.filter(function(c){ return counts[c]; });
+    Object.keys(counts).forEach(function(c){ if (present.indexOf(c) === -1) present.push(c); });
+    var total = tabStories().length;
+    var html = '<button class="news-cat' + (currentCat === 'All' ? ' active' : '') + '" data-cat="All">All <span class="n">' + total + '</span></button>';
+    present.forEach(function(c){
+      html += '<button class="news-cat' + (currentCat === c ? ' active' : '') + '" data-cat="' + esc(c) + '">' + esc(c) + ' <span class="n">' + counts[c] + '</span></button>';
+    });
+    catsRow.innerHTML = html;
+    catsRow.querySelectorAll('.news-cat').forEach(function(btn){
+      btn.addEventListener('click', function(){
+        currentCat = btn.getAttribute('data-cat');
+        buildCats();
+        render();
+      });
+    });
+  }
+  function render(){
+    if (!DATA) return;
+    var list = tabStories().filter(function(s){ return currentCat === 'All' || s.category === currentCat; });
+    list.sort(function(a,b){ return a.date < b.date ? 1 : (a.date > b.date ? -1 : 0); });
+    grid.innerHTML = list.map(card).join('');
+    emptyMsg.hidden = list.length > 0;
+    var label = currentTab === 'america' ? 'America' : 'International';
+    var catNote = currentCat === 'All' ? '' : ' in ' + currentCat;
+    windowLine.textContent = 'Showing the last ' + (DATA.window_days || 30) + ' days, updated ' + fmtDate(DATA.updated) + ': ' + list.length + (list.length === 1 ? ' story' : ' stories') + ' in ' + label + catNote + '. Older stories live in the permanent archive.';
+  }
+  tabs.forEach(function(btn){
+    btn.addEventListener('click', function(){
+      tabs.forEach(function(b){ b.classList.remove('active'); b.setAttribute('aria-selected','false'); });
+      btn.classList.add('active'); btn.setAttribute('aria-selected','true');
+      currentTab = btn.getAttribute('data-tab');
+      currentCat = 'All';
+      buildCats();
+      render();
+    });
+  });
+  fetch('news-stories.json')
+    .then(function(r){ if (!r.ok) throw new Error('load failed'); return r.json(); })
+    .then(function(data){ DATA = data; buildCats(); render(); })
+    .catch(function(){
+      windowLine.textContent = 'The news feed could not be loaded just now. Please check back shortly.';
+    });
+})();
+</script>
+</body>
+</html>
