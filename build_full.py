@@ -79,6 +79,12 @@ for slug, fname, place in TOWNS:
             html = inject_after_first_h2(html, video_embed_html(
                 "Ijhn3a-7RBg",
                 "Survival, Decline, or Destruction: Rosewood, Chapter 5 (Educational Version)"))
+        if slug == "rosewood" and h.startswith("6."):
+            # Chapter 6 educational video (All Black Towns channel, unlisted),
+            # embedded at the top of the chapter it teaches.
+            html = inject_after_first_h2(html, video_embed_html(
+                "_TR7bPv6h3I",
+                "The Town Today: Rosewood, Chapter 6 (Educational Version)"))
         if h.startswith(("8.", "9.")):
             kind = "details"
         recall = kind == "open" and n not in ("7",)
