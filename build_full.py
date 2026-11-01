@@ -103,6 +103,12 @@ for slug, fname, place in TOWNS:
             html = inject_after_first_h2(html, video_embed_html(
                 "GIGJRU60ybw",
                 "Building the Town: Nicodemus, Chapter 2 (Educational Version)"))
+        if slug == "nicodemus" and h.startswith("3."):
+            # Chapter 3 educational video (All Black Towns channel, unlisted),
+            # embedded at the top of the chapter it teaches.
+            html = inject_after_first_h2(html, video_embed_html(
+                "sDM6K53XYvE",
+                "Peak Years: Nicodemus, Chapter 3 (Educational Version)"))
         if h.startswith(("8.", "9.")):
             kind = "details"
         recall = kind == "open" and n not in ("7",)
