@@ -95,32 +95,38 @@ for slug, fname, place in TOWNS:
             # Chapter 1 educational video (All Black Towns channel, unlisted),
             # embedded at the top of the chapter it teaches.
             html = inject_after_first_h2(html, video_embed_html(
-                "f_D2q0xAA48",
+                "DEixA9FSS5I",
                 "Founding: Nicodemus, Chapter 1 (Educational Version)"))
         if slug == "nicodemus" and h.startswith("2."):
             # Chapter 2 educational video (All Black Towns channel, unlisted),
             # embedded at the top of the chapter it teaches.
             html = inject_after_first_h2(html, video_embed_html(
-                "GIGJRU60ybw",
+                "2Gui_yxL7VM",
                 "Building the Town: Nicodemus, Chapter 2 (Educational Version)"))
         if slug == "nicodemus" and h.startswith("3."):
             # Chapter 3 educational video (All Black Towns channel, unlisted),
             # embedded at the top of the chapter it teaches.
             html = inject_after_first_h2(html, video_embed_html(
-                "sDM6K53XYvE",
+                "NeefZsbI1NE",
                 "Peak Years: Nicodemus, Chapter 3 (Educational Version)"))
         if slug == "nicodemus" and h.startswith("4."):
             # Chapter 4 educational video (All Black Towns channel, unlisted),
             # embedded at the top of the chapter it teaches.
             html = inject_after_first_h2(html, video_embed_html(
-                "-Y8124xZmCA",
+                "x-jrsgS_gnU",
                 "The Turning Point: Nicodemus, Chapter 4 (Educational Version)"))
         if slug == "nicodemus" and h.startswith("5."):
             # Chapter 5 educational video (All Black Towns channel, unlisted),
             # embedded at the top of the chapter it teaches.
             html = inject_after_first_h2(html, video_embed_html(
-                "c-aCdxNoZYk",
+                "8IuuuEmdeus",
                 "Survival, Decline, or Destruction: Nicodemus, Chapter 5 (Educational Version)"))
+        if slug == "nicodemus" and h.startswith("6."):
+            # Chapter 6 educational video (All Black Towns channel, unlisted),
+            # embedded at the top of the chapter it teaches.
+            html = inject_after_first_h2(html, video_embed_html(
+                "mfGHkxetMvE",
+                "The Town Today: Nicodemus, Chapter 6 (Educational Version)"))
         if h.startswith(("8.", "9.")):
             kind = "details"
         recall = kind == "open" and n not in ("7",)
