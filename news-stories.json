@@ -4,6 +4,139 @@
  "stories": [
   {
    "tab": "america",
+   "date": "2026-11-03",
+   "category": "Politics and Policy",
+   "source": "HBCU News",
+   "headline": "Ahead of Historic Midterms, HBCUs Are Building a Civic Infrastructure to Last",
+   "url": "https://hbcunews.com/2026/11/03/ahead-of-historic-midterms-hbcus-are-building-a-civic-infrastructure-to-last/",
+   "summary": "Student organizers backed by the Andrew Goodman Foundation have built lasting voter-mobilization networks across HBCU campuses in the South ahead of the November 3 midterms, from Southern University’s Second Line to the Polls in Baton Rouge to poll-monitor training at Jackson State and marches at Texas Southern and North Carolina A&T. The work pairs registration drives and rides to the polls with training that organizers say will outlast this election cycle."
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-03",
+   "category": "Education",
+   "source": "HBCU News",
+   "headline": "Kinsey Marching 100 Gift: FAMU Gets $2M Matching Challenge",
+   "url": "https://hbcunews.com/2026/11/03/kinsey-marching-100-gift-famu-gets-2m-matching-challenge/",
+   "summary": "Drs. Bernard and Shirley Pooler Kinsey have committed $2 million to Florida A&M’s Marching 100, announced during homecoming, structured as $1.5 million for an endowed scholarship and operations fund plus $500,000 for immediate priorities. The gift launches a 36-month matching challenge that began October 24 and aims to inspire another $2 million from alumni and supporters, with no minimum gift to take part."
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-03",
+   "category": "Entertainment",
+   "source": "Black Enterprise",
+   "headline": "'The Breakfast Club' and 'Native Land Pod' Team Up to Bring Politics to the People on Election Night",
+   "url": "https://www.blackenterprise.com/breakfast-club-native-land-pod-politics-election-night/",
+   "summary": "The Breakfast Club and Native Land Pod are joining forces for The People’s Election Night, a four-hour live broadcast from 8 p.m. to midnight ET on November 3 breaking down the 2026 midterms. Angela Rye, Bakari Sellers and Andrew Gillum join Charlamagne tha God, DJ Envy and guests including Fat Joe, Nick Cannon and Ed Gordon, with backing from The Root, iHeartMedia, Blavity and REVOLT and a combined reach organizers put at more than 20 million subscribers."
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-03",
+   "category": "Politics and Policy",
+   "source": "The Source",
+   "headline": "Black Voter Turnout Surges Across the South as 2026 Midterms Approach, Putting GOP on Notice",
+   "url": "https://thesource.com/2026/11/03/black-voter-turnout-surges-across-the-south-as-2026-midterms-approach-putting-gop-on-notice/",
+   "summary": "Early-voting figures show Black voters across the South, from North Carolina and Georgia to Florida and Louisiana, casting ballots at rates above the broader electorate ahead of the November 3 midterms, with more than 160,000 additional ballots compared with the same point in 2022. Organizers and strategists link the surge in part to fights over redistricting maps that critics say dilute Black voting power."
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-03",
+   "category": "Politics and Policy",
+   "source": "BusinessDay",
+   "country": "Africa",
+   "headline": "From Nigeria to Ethiopia, Seven Candidates With African Ancestry Eye US Congress",
+   "url": "https://businessday.ng/africa/article/from-nigeria-to-ethiopia-seven-candidates-with-african-ancestry-eye-us-congress/?amp",
+   "summary": "Seven candidates with roots in Nigeria, Ghana, Egypt, Ethiopia, Eritrea, Liberia and Somalia are seeking seats in the U.S. Congress in the midterms, in what is expected to be the most expensive midterm cycle in U.S. history at over $11 billion in ad spending. First-time candidates Adrian Boafo, Melat Kiros and Ndidiamaka Okpareke join Senate hopeful Abdul El-Sayed, while incumbents Ilhan Omar, Joe Neguse and Gabe Amo seek re-election."
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-03",
+   "category": "Sports",
+   "source": "Chale News (reporting MyJoyOnline)",
+   "country": "Ghana",
+   "headline": "Gold Fields Pledges $500,000 to Ghana's Black Challenge Amputee Football Team",
+   "url": "https://chale.news/gold-fields-pledges-500-000-to-ghanas-amputee-football-team/",
+   "summary": "Gold Fields Ghana has committed $500,000 over two years to the Black Challenge, Ghana’s amputee national football team, as they prepare for the 2026 Amputee Football World Cup in San Juan de los Lagos, Mexico from November 13 to 22. The pledge sits inside a wider $5 million Gold Fields sponsorship agreement with the Ghana Football Association, and France’s ambassador to Ghana also promised logistics support for the team, who face Angola, Colombia and Iraq in Group D."
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-03",
+   "category": "Community",
+   "source": "CTV Africa",
+   "country": "The Gambia",
+   "headline": "NHRC and TANGO Engage Gambians in Diaspora on National Development and Reform Agenda",
+   "url": "https://ctvafrica.com/nhrc-tango-engage-gambians-in-diaspora-on-national-development-and-reform-agenda/",
+   "summary": "The Gambia’s National Human Rights Commission and the Association of Non-Governmental Organisations convened a diaspora engagement on October 31 at the Sir Dawda Kairaba Jawara International Conference Centre in Banjul, backed by the EU and UNDP. Panels covered governance, transitional justice, security sector reform, investment and electoral participation, with officials stressing that Gambians abroad should help shape the reform agenda through their remittances, skills and networks."
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-03",
+   "category": "Business",
+   "source": "Radio Nigeria (FRCN)",
+   "country": "Nigeria",
+   "headline": "Nigeria and China Sign $30 Million Agreement on Grassroots Development Projects",
+   "url": "https://radionigeria.gov.ng/2026/11/03/nigeria-china-sign-30m-agreement-on-grassroots-development-projects/",
+   "summary": "Nigeria and China have signed a 200 million yuan (about $30 million) grant agreement in Abuja to fund community-focused development projects under China’s Small but Beautiful initiative and Nigeria’s Renewed Hope Ward Development Plan. Ambassador Yu Dunhai noted that 2026 marks 55 years of diplomatic relations, with bilateral trade reaching $18 billion in the first half of the year and Nigerian exports to China up 80 percent under a zero-tariff policy."
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-03",
+   "category": "Justice",
+   "source": "Reuters",
+   "country": "Nigeria",
+   "headline": "Attackers Ambush Police Convoy in Nigeria's Zamfara State, Killing at Least Eight",
+   "url": "https://www.reuters.com/world/africa/attackers-ambush-police-nigerias-zamfara-killing-least-eight-officials-say-2026-11-03/",
+   "summary": "Attackers ambushed a police convoy near Gidan-Giye village in Nigeria’s northwestern Zamfara state on Tuesday, killing at least eight security personnel: five police officers and three members of the state-backed Community Protection Guard. Police said the attackers fired on a bus carrying the team, seized five AK-47 rifles and abducted some officers, while seven others were rescued and two wounded officers were taken for treatment."
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-03",
+   "category": "Business",
+   "source": "Scottish Business News",
+   "country": "United Kingdom",
+   "headline": "Edinburgh Heat-Protection Tech Firm Draconite Wins £25,000 at KPMG's Black Entrepreneurs' Awards",
+   "url": "https://scottishbusinessnews.net/scottish-heat-protection-technology-business-wins-25000-at-kpmgs-black-entrepreneurs-awards/",
+   "summary": "Edinburgh-based Draconite, founded by inventor Dr Alisha Fuller-Armah, was named Most Promising Small Business at KPMG UK’s Black Entrepreneurs’ Awards, winning £25,000 for its heat-protection material with applications in aerospace, defence, electric vehicles and construction. Four winners were chosen from 12 finalists and more than 140 entrants, including Creative Nature, BEAME and the Black British Initiative, and all finalists join a 12-month acceleration programme."
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-02",
+   "category": "Education",
+   "source": "HBCU News",
+   "headline": "Morgan State Breaks Enrollment Record at 12,119 Students While Pursuing a Historic Public HBCU Medical School",
+   "url": "https://hbcunews.com/2026/11/02/morgan-state-university-breaks-enrollment-record-pursues-historic-hbcu-medical-school/",
+   "summary": "Morgan State University has passed 12,000 students for the first time, reporting 12,119 students for fall 2026, up 5 percent in its sixth straight enrollment record and making it the nation’s third-largest HBCU, with Black male enrollment up 10.3 percent to 3,613. The Baltimore university is also developing its own nonprofit M.D. program, backed by a $1.75 million Robert Wood Johnson Foundation grant, which would be the first medical school operated by a public HBCU."
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-02",
+   "category": "Technology",
+   "source": "AfroTech",
+   "headline": "Alabama A&M Student Wins Grand Prize for Internably, a Networking Platform for Student Interns",
+   "url": "https://afrotech.com/alabama-hbcu-student-awarded-grand-prize-for-networking-platform",
+   "summary": "Bryson Hannah, a 21-year-old Alabama A&M mechanical engineering student, won the grand prize at the 2026 HBCU Business Pitch Competition during Magic City Classic week for Internably, his platform connecting student interns by city, company and university. Hannah received $4,000 plus $1,000 in earlier-round funding to develop the app ahead of a November iOS launch, in a competition that drew 51 teams from ten Alabama HBCUs pitching for a share of $20,000."
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-02",
+   "category": "Education",
+   "source": "EIN Presswire",
+   "headline": "UMES Opens Applications for First Doctor of Veterinary Medicine Program at a Public HBCU",
+   "url": "https://foodsafety.einnews.com/pr_news/953957050/umes-opens-applications-for-first-doctor-of-veterinary-medicine-program-at-a-public-hbcu",
+   "summary": "The University of Maryland Eastern Shore has opened applications for the inaugural class of its Doctor of Veterinary Medicine program, Maryland’s first in-state veterinary school and the first at a public HBCU, with the three-year program set to begin in summer 2027. The school notes that just 1.6 percent of U.S. veterinarians were Black in 2025, and applications are due January 15, 2027."
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-02",
+   "category": "Sports",
+   "source": "Ghana Sports News",
+   "country": "Ghana",
+   "headline": "Ghana Rugby Eagles Women Arrive in Kenya Ahead of 2026 Africa Women's Sevens",
+   "url": "https://www.ghsportsnews.com/ghana-rugby-eagles-women-arrive-in-kenya-ahead-of-2026-africa-womens-sevens/",
+   "summary": "Ghana’s women’s rugby sevens team, the Rugby Eagles, have arrived in Nairobi for the 2026 Africa Women’s Sevens on November 7-8 at the RFUEA Grounds, where 11 nations will compete for continental honours and a World Rugby SVNS 3 qualification spot. Ghana, ranked seventh in Africa, are drawn in Pool B with hosts Kenya, Tunisia and Egypt."
+  },
+  {
+   "tab": "america",
    "category": "Politics and Policy",
    "date": "2026-11-02",
    "headline": "Black Congressman Shomari Figures Runs Strongly in Gerrymandered Alabama District",
@@ -532,7 +665,7 @@
    "summary": "Week 8 of the HBCU football season shook up both major conferences: Bethune-Cookman beat top-ranked Jackson State 24-21 on a touchdown pass with 40 seconds left, Howard won at Morgan State on an 87-yard interception return in overtime, and Texas Southern walked off Southern with a 46-yard field goal at its 99th homecoming."
   }
  ],
- "updated": "2026-11-02",
+ "updated": "2026-11-03",
  "window_days": 30,
  "categories": [
   "Politics and Policy",
