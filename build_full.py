@@ -53,37 +53,37 @@ for slug, fname, place in TOWNS:
             # Chapter 1 educational video (All Black Towns channel, unlisted),
             # embedded at the top of the chapter it teaches.
             html = inject_after_first_h2(html, video_embed_html(
-                "6r-q8tZsEGU",
+                "DRXp57eSAd4",
                 "Founding: Rosewood, Chapter 1 (Educational Version)"))
         if slug == "rosewood" and h.startswith("2."):
             # Chapter 2 educational video (All Black Towns channel, unlisted),
             # embedded at the top of the chapter it teaches.
             html = inject_after_first_h2(html, video_embed_html(
-                "Jqe9b0-F91s",
+                "20kwv6sK9JA",
                 "Building the Town: Rosewood, Chapter 2 (Educational Version)"))
         if slug == "rosewood" and h.startswith("3."):
             # Chapter 3 educational video (All Black Towns channel, unlisted),
             # embedded at the top of the chapter it teaches.
             html = inject_after_first_h2(html, video_embed_html(
-                "BXNHpRvKSnE",
+                "vmy-pkQL548",
                 "Peak Years: Rosewood, Chapter 3 (Educational Version)"))
         if slug == "rosewood" and h.startswith("4."):
             # Chapter 4 educational video (All Black Towns channel, unlisted),
             # embedded at the top of the chapter it teaches.
             html = inject_after_first_h2(html, video_embed_html(
-                "PMAkZFX8zBw",
+                "aCqoMiL-UMs",
                 "The Turning Point: Rosewood, Chapter 4 (Educational Version)"))
         if slug == "rosewood" and h.startswith("5."):
             # Chapter 5 educational video (All Black Towns channel, unlisted),
             # embedded at the top of the chapter it teaches.
             html = inject_after_first_h2(html, video_embed_html(
-                "Ijhn3a-7RBg",
+                "8bUT_rDiIOI",
                 "Survival, Decline, or Destruction: Rosewood, Chapter 5 (Educational Version)"))
         if slug == "rosewood" and h.startswith("6."):
             # Chapter 6 educational video (All Black Towns channel, unlisted),
             # embedded at the top of the chapter it teaches.
             html = inject_after_first_h2(html, video_embed_html(
-                "_TR7bPv6h3I",
+                "I-YY4fwwd68",
                 "The Town Today: Rosewood, Chapter 6 (Educational Version)"))
         if slug == "rosewood" and h.startswith("7."):
             # Sing-along music video (All Black Towns channel, unlisted),
