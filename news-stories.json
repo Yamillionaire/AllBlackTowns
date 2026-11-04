@@ -4,6 +4,149 @@
  "stories": [
   {
    "tab": "america",
+   "date": "2026-11-04",
+   "category": "Politics and Policy",
+   "source": "HBCU News",
+   "headline": "Tuesday's Elections Bring Historic First for Black Governors",
+   "url": "https://hbcunews.com/2026/11/04/tuesdays-elections-bring-historic-first-for-black-governors/",
+   "summary": "For the first time in U.S. history, multiple elected Black governors will serve at the same time: Wes Moore won re-election in Maryland, Byron Donalds became Florida's first Black governor, Keisha Lance Bottoms won in Georgia, and David Crowley won in Wisconsin, making four Black governors chosen on one night. Only three Black governors had ever been elected before, and none served simultaneously, while Nevada's Aaron Ford race was still undecided."
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-04",
+   "category": "Politics and Policy",
+   "source": "HBCU News",
+   "headline": "Letitia Plummer Harris County Judge: Spelman Alum Wins",
+   "url": "https://hbcunews.com/2026/11/04/letitia-plummer-harris-county-judge-spelman-alum-wins/",
+   "summary": "Spelman College alumna and former Houston City Council member Letitia Plummer defeated Orlando Sanchez with about 62 percent of the vote to become the first African American elected to lead Harris County, Texas's most populous county, and the first Muslim to hold the post. As county judge she will lead the Commissioners Court, which oversees the budget, roads, flood control and public health for nearly 5 million people, succeeding Lina Hidalgo in January."
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-04",
+   "category": "Politics and Policy",
+   "source": "HBCU News",
+   "headline": "HBCU Students March to the Polls on Election Day",
+   "url": "https://hbcunews.com/2026/11/04/hbcu-students-march-to-the-polls-on-election-day/",
+   "summary": "HBCU students marched and rallied on Election Day from Mississippi to North Carolina and Maryland, with Jackson State, North Carolina A&T, Norfolk State and Morgan State students among those turning out after weeks of organizing. North Carolina A&T students walked about 45 minutes to vote after no campus early-voting sites were approved, Jackson State's Blackout Rally carried demands in the Nolan Wells case, and the Vote HBCU program registered more than 800 students at 10 HBCUs in under a month."
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-04",
+   "category": "Sports",
+   "source": "Lindy's Sports",
+   "headline": "Candace Parker Launches HBCU Sports Media Fellowship",
+   "url": "https://lindyssports.com/nba/candace-parker-hbcu-sports-media-fellowship",
+   "summary": "WNBA legend Candace Parker has partnered with EICOP, the organization behind HBCU in LA, to launch the Candace Parker Sports and Media Fellowship for current HBCU students pursuing careers in sports, media and broadcasting. Selected fellows will spend next summer in paid internships in Los Angeles, New York or Atlanta, with housing assistance, mentorship, professional development and direct access to industry professionals, and applications are open now."
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-04",
+   "category": "Politics and Policy",
+   "source": "RWG Blog News",
+   "headline": "Four Nigerian-Americans Emerge Victorious in U.S. Midterm Elections",
+   "url": "https://www.rwgblognews.com/2026/11/four-nigerian-americans-emerge.html",
+   "summary": "Four Nigerian-Americans won their races in the November 3 U.S. midterm elections: Will Jawando, Junior Ezeonu, Oye Owolewa and Carol Kazeem, across local government and state legislative contests in Maryland, Texas, Washington, DC and Pennsylvania. A fifth Nigerian-American candidate, Segun Adeyina, was still awaiting a result as counting continued, and the wins were held up as a milestone for Nigerian diaspora participation in American public life.",
+   "country": "Nigeria"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-04",
+   "category": "Business",
+   "source": "Billionaires.Africa",
+   "headline": "Billionaire Dangote Plans Undersea Fuel Pipeline to Ghana",
+   "url": "https://www.billionaires.africa/2026/11/04/nigerian-billionaire-aliko-dangote-plans-undersea-fuel-pipeline-from-nigeria-to-ghana/",
+   "summary": "Aliko Dangote's group plans an undersea pipeline to carry petrol and other refined fuels from its Lekki refinery in Lagos via Apapa, past Benin and Lome in Togo, to Takoradi or Tema in Ghana, broadly following the West African Gas Pipeline route, with construction to begin in 2028 and cost and capacity not yet disclosed. Kenya is separately reviving its long-stalled Turkana to Lamu crude pipeline to supply the refinery Dangote is building on its coast.",
+   "country": "Nigeria"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-04",
+   "category": "Technology",
+   "source": "Okay News",
+   "headline": "Google Plans Nigeria AI Teacher Training for 2027",
+   "url": "https://www.okaynews.com/google-nigeria-ai-teacher-training-2027/",
+   "summary": "Google announced on November 4 that its free AI Educator Series teacher training, starting in South Africa, will expand to Nigeria, Kenya and Ghana in 2027, though no Nigerian start date or registration details were given. Separately, Google DeepMind and the non-profit Fab AI will develop Gemma-based lesson-planning, assessment and teacher-coaching tools in Kenya, Ghana and South Africa, funded by Google.org and the Gates Foundation, aiming first to support up to 500 teachers and 15,000 students.",
+   "country": "Nigeria"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-04",
+   "category": "Sports",
+   "source": "SportsWorldGhana",
+   "headline": "Black Stars Shortlisted for CAF Men's National Team of the Year Award",
+   "url": "https://sportsworldghana.com/black-stars-shortlisted-for-caf-mens-national-team-of-the-year-award/",
+   "summary": "Ghana's Black Stars have been shortlisted for the CAF Men's National Team of the Year award after collecting four points in a World Cup group with England, Croatia and Panama and reaching the Round of 16, their first knockout appearance since 2010, before losing 1-0 to Colombia. The 10-team shortlist covers every African nation that played at the 2026 World Cup, and the winners will be unveiled on December 7 in Lagos, Nigeria.",
+   "country": "Ghana"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-04",
+   "category": "Sports",
+   "source": "Sifa FM",
+   "headline": "Rising Lionesses Stun Australia to Secure Historic Youth Olympic Gold",
+   "url": "https://sifafm.co.ke/rising-lionesses-stun-australia-to-secure-historic-youth-olympic-gold/",
+   "summary": "Kenya's women's rugby sevens team, the Rising Lionesses, beat Australia 17-12 in sudden-death extra time to win gold at the Dakar 2026 Youth Olympic Games, coming back from 12-5 down with tries from captain Zain Hido and Josephine Kerubo before Michelle Chemtai scored the winner. It is Kenya's first gold of the Dakar Games and the first time an African nation has won rugby sevens gold at either the Olympic or Youth Olympic Games.",
+   "country": "Kenya"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-04",
+   "category": "Money",
+   "source": "Reuters",
+   "headline": "Ghana Inflation Rises Less Than Expected in October",
+   "url": "https://www.reuters.com/world/africa/ghana-inflation-rises-less-than-expected-october-2026-11-04/",
+   "summary": "Ghana's annual inflation rose for a third straight month to 5.5 percent in October, up from 5.2 percent in September, but came in below the 6.2 percent economists expected and stayed under the central bank's 8 percent target band. Government statistician Alhassan Iddrisu said non-food inflation of 7.9 percent drove roughly three-quarters of the increase, while food inflation eased to 2.8 percent.",
+   "country": "Ghana"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-04",
+   "category": "Health",
+   "source": "Moradio FM News",
+   "headline": "Kenya Discharges Five Ebola Patients After Negative Tests",
+   "url": "https://news.moradiofm.co.ke/index.php/2026/11/04/kenya-discharges-five-ebola-patients-after-negative-tests/",
+   "summary": "Kenya's Ministry of Health has discharged five Ebola patients after they tested negative and showed no symptoms, while two other patients remain in hospital receiving supportive care. The ministry also released 46 people who had been quarantined as contacts of the country's first confirmed case, and Kenya has reported no new infections in the past two weeks, though surveillance continues after an outbreak that began with a traveller from the Democratic Republic of Congo via Uganda.",
+   "country": "Kenya"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-04",
+   "category": "Culture and Arts",
+   "source": "Octagon News",
+   "headline": "Sterling Bank, Ake Festival Put Africa at the Centre of AI Debate",
+   "url": "https://www.octagonagentsofdevelopmentdirectory.com.ng/article/sterling-bank-ak-festival-put-africa-at-the-centre-of-SteJm",
+   "summary": "Sterling Bank has renewed its partnership with the Ake Arts and Book Festival, which returns to Lagos on November 19 to 21 for its 14th edition under the theme Native Intelligence, examining how African knowledge passed down for generations relates to the AI systems now shaping daily life. Founder Lola Shoneyin said a machine knows only what it has been fed and has not been fed much of Africa, framing the festival as a debate over whose intelligence the future is built on.",
+   "country": "Nigeria"
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-03",
+   "category": "Technology",
+   "source": "AfroTech",
+   "headline": "BET President Louis Carr Explains Its Strategy for Staying at the Forefront of Technology and the Creator Economy at AFROTECH 2026",
+   "url": "https://afrotech.com/louis-carr-tech-creators-afrotech-conference",
+   "summary": "At the AFROTECH Conference's 10th anniversary edition in Houston, BET president Louis Carr, who has been with the company 39 years and became president in December 2025, described how BET uses AI to enhance rather than replace its work, from BET Awards seating and memorial segments to identifying top Black creator influencers. He set out a creator-economy strategy built on social platforms, live events and a YouTube pre-show aimed at younger audiences who do not normally watch linear television."
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-03",
+   "category": "Business",
+   "source": "AfroTech",
+   "headline": "Chasity Monroe Named CEO of The Mane Choice, Will Champion Efforts in 'Groundbreaking Hair Growth Technology'",
+   "url": "https://afrotech.com/chasity-monroe-named-ceo-of-the-mane-choice",
+   "summary": "Florida A&M alumna Chasity Monroe, who founded Pink Noire, described as Memphis's only Black-owned beauty supply store, has been appointed CEO of natural hair care brand The Mane Choice. She will lead a brand refresh, retail expansion across Target, Walmart, Sally Beauty and Amazon, and new 2027 product lines including wellness regimens and hair growth technology the company is pursuing a patent for, and she was honored at FAMU homecoming as its inaugural Rattler CEO."
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-03",
+   "category": "Entertainment",
+   "source": "HBCU Gameday",
+   "headline": "STARZ Backs HBCU Film Festival at Howard University With Hollywood Opportunities",
+   "url": "https://hbcugameday.com/2026/11/03/starz-backs-hbcu-film-festival-at-howard-university-with-hollywood-opportunities/",
+   "summary": "STARZ will serve as the inaugural presenting sponsor of the fourth annual HBCU First LOOK Film & TV Festival at Howard University on November 5 to 7, under the theme How to Be the Next. Founded by Howard alumna Sheila Eldridge, the festival drew more than 450 entries to its 2026 Film Challenge, whose winners will share $8,500 plus an internship opportunity, and 12 Howard students are helping produce this year's event."
+  },
+  {
+   "tab": "america",
    "date": "2026-11-03",
    "category": "Politics and Policy",
    "source": "HBCU News",
@@ -665,7 +808,7 @@
    "summary": "Week 8 of the HBCU football season shook up both major conferences: Bethune-Cookman beat top-ranked Jackson State 24-21 on a touchdown pass with 40 seconds left, Howard won at Morgan State on an 87-yard interception return in overtime, and Texas Southern walked off Southern with a 46-yard field goal at its 99th homecoming."
   }
  ],
- "updated": "2026-11-03",
+ "updated": "2026-11-04",
  "window_days": 30,
  "categories": [
   "Politics and Policy",
