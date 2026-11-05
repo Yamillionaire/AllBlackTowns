@@ -523,13 +523,13 @@
           {
             "q": "What is Boley's signature gathering?",
             "options": [
-              "The Boley Rodeo and Bar-B-Que Festival, held each Memorial Day weekend and billed as the nation's oldest African American community-based rodeo",
+              "The Boley Rodeo and Bar-B-Que Festival, held each Memorial Day weekend and called by the Oklahoma Historical Society the nation's oldest African American community-based rodeo",
               "An annual reenactment of the 1932 bank robbery",
               "The Oklahoma Black Towns reunion in Oklahoma City",
               "A Booker T. Washington birthday pageant each January"
             ],
             "answer": 0,
-            "explain": "The rodeo, run since 1961 by the Boley Chamber of Commerce, is the town's signature gathering and its most legible claim on the present tense."
+            "explain": "The rodeo is the town's signature gathering: a tradition the town dates to its founding in 1903, formalized as the modern championship rodeo in 1961, and called by the Oklahoma Historical Society the nation's oldest African American community-based rodeo."
           }
         ]
       },
