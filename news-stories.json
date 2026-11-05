@@ -4,6 +4,139 @@
  "stories": [
   {
    "tab": "america",
+   "date": "2026-11-05",
+   "category": "Sports",
+   "source": "HBCU News",
+   "headline": "Doug Williams Up for Pro Football Hall of Fame",
+   "url": "https://hbcunews.com/2026/11/05/doug-williams-up-for-pro-football-hall-of-fame/",
+   "summary": "Grambling State legend Doug Williams has been named one of five remaining candidates in the contributor category for the Pro Football Hall of Fame's Class of 2027, alongside Robert Kraft, Virginia McCaskey, John Wooten and Ralph Hay. Williams was the first Black quarterback drafted in the first round and the first to start and win a Super Bowl, and a subcommittee meets November 17 to advance one of the five to the full selection committee."
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-05",
+   "category": "Sports",
+   "source": "HBCU News",
+   "headline": "Coco Gauff Donates Another $150,000 to UNCF, Taking Her Total Contribution to $250,000 for HBCU Students",
+   "url": "https://hbcunews.com/2026/11/05/coco-gauff-donates-another-150000-to-uncf-taking-her-total-contribution-to-250000-for-hbcu-students/",
+   "summary": "Tennis star Coco Gauff has donated another $150,000 to the United Negro College Fund, bringing her total giving to UNCF to $250,000 for scholarships supporting HBCU student athletes who compete in tennis. The Coco Gauff Scholarship Program has already helped 10 student athletes at six institutions, including Alabama A&M, Clark Atlanta, Howard, Livingstone and Tuskegee, and UNCF has not yet announced the next application window."
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-05",
+   "category": "Technology",
+   "source": "Business News This Week",
+   "headline": "AfroTech 2026 Kicks Off 10th Anniversary Celebration in Houston, Bringing Together Leaders in AI, Technology, Business and Entrepreneurship",
+   "url": "https://businessnewsthisweek.com/business/afrotech-2026-kicks-off-10th-anniversary-celebration-in-houston-bringing-together-leaders-in-ai-technology-business-and-entrepreneurship/",
+   "summary": "AfroTech 2026 has officially kicked off in Houston, marking the conference's 10th anniversary with a week of programming for entrepreneurs, executives, technology professionals, creators and investors. Day one featured an AI Edge Training Summit, a Human Centered AI for Leaders Summit and Idea Hour pitch sessions with Rachel Rodgers and Arlan Hamilton, and the conference runs through Friday, November 6 with programming on healthcare innovation, policy, smart cities and the creator economy."
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-05",
+   "category": "Politics and Policy",
+   "source": "Bona",
+   "headline": "DA Claims Historic Milestone as Black Voter Support Surpasses 1 Million",
+   "url": "https://www.bona.co.za/mzansi-matters/da-claims-historic-milestone-as-black-voter-support-surpasses-1-million/",
+   "summary": "South Africa's Democratic Alliance says more than one million Black South Africans voted for it in the 2026 local government elections, a first in the party's history, putting it ahead of the Economic Freedom Fighters among Black voters on its internal modelling and parallel vote tabulation. Federal Council first deputy chair Ashor Sarupen said the party forecast about 15 percent support in Gauteng townships and 10 percent in Cape Town townships plus gains in rural KwaZulu-Natal and the Eastern Cape, while noting the figures still await certification by the Electoral Commission of South Africa.",
+   "country": "South Africa"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-05",
+   "category": "Politics and Policy",
+   "source": "The Telegraph Nigeria",
+   "headline": "Court Sacks Mark-Led ADC Leadership, Nullifies Atiku's Candidacy",
+   "url": "https://telegraph.ng/news/2026/11/05/court-sacks-mark-led-adc-leadership-nullifies-atikus-candidacy/",
+   "summary": "Nigeria's Federal High Court in Abuja has nullified the African Democratic Congress leadership led by former Senate President David Mark, invalidating its decisions including the primary that made former Vice-President Atiku Abubakar the party's presidential candidate for the 2027 elections. Justice Peter Lifu ruled the caretaker committee's emergence violated the ADC constitution and electoral law, voided all of the party's 2027 nominations, and directed INEC not to recognise decisions of the disputed leadership; the party says it will appeal.",
+   "country": "Nigeria"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-05",
+   "category": "Sports",
+   "source": "THISDAY",
+   "headline": "History Made! Nigeria's Flamingos Reach First-Ever FIFA U-17 World Cup Final",
+   "url": "https://thisday.com.ng/history-made-nigerias-flamingos-reach-first-ever-fifa-u-17-world-cup-final/",
+   "summary": "Nigeria's Flamingos beat Brazil 3-1 in Morocco on November 4 to reach the FIFA U-17 Women's World Cup final for the first time, becoming the first African nation to reach the tournament's final and improving on their third place finish in 2022. Queen Joseph opened the scoring in the 56th minute and Awawu Bashiru added goals in the 71st and 80th minutes before Brazil's late consolation, and Nigeria will face Japan in the final on Saturday, November 7 in Rabat.",
+   "country": "Nigeria"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-05",
+   "category": "Culture and Arts",
+   "source": "Firm News",
+   "headline": "ECOWAS Holds Regional Meetings in Ghana to Strengthen Copyright Protection, Recover Cultural Heritage",
+   "url": "https://firmnews.ng/2026/11/05/ecowas-holds-regional-meetings-in-ghana-to-strengthen-copyright-protection-recover-cultural-heritage/",
+   "summary": "ECOWAS has held regional meetings in Accra, Ghana from November 3 to 5 on strengthening copyright protection for creators and recovering West Africa's cultural heritage, opened by Ghana's Minister for Tourism, Culture and the Creative Arts, Abla Dzifa Gomashie. Experts validated a study on private copying remuneration across member states, and the regional committee on repatriation worked on the 2027-2031 action plan for returning cultural property to its countries of origin, with UEMOA and WIPO also taking part.",
+   "country": "Ghana"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-05",
+   "category": "Health",
+   "source": "KEMRI",
+   "headline": "Inaugural Women's Health Ecosystem Forum Seeks to Advance African-Led Research and Innovation",
+   "url": "https://www.kemri.go.ke/inaugural-womens-health-ecosystem-forum-seeks-to-advance-african-led-research-and-innovation/",
+   "summary": "The inaugural Women's Health Ecosystem Forum has run in Kenya from November 2 to 5, convened by the LEA-WH Fellowship with the Kenya Medical Research Institute and the U.S. National Academy of Medicine to turn African-led women's health research into products, investment and practical solutions. KEMRI leaders said conditions such as endometriosis, menstrual disorders and menopause remain under-researched and underfunded, and the fellowship's first cohort brings together researchers and innovators from nine African countries, funded by the Gates Foundation.",
+   "country": "Kenya"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-05",
+   "category": "Money",
+   "source": "Reuters",
+   "headline": "Africa FX: Ugandan and Nigerian Currencies on Front Foot",
+   "url": "https://www.reuters.com/world/africa/africa-fx-ugandan-nigerian-currencies-front-foot-2026-11-05/",
+   "summary": "Traders expect Uganda's and Nigeria's currencies to strengthen against the dollar in the coming week while Ghana's cedi and Kenya's shilling stay little changed and Zambia's kwacha weakens, according to Reuters' weekly Africa FX survey. Nigeria's naira was quoted at 1,346 on the official market as global risk sentiment improved after the U.S. midterm elections, Ghana's cedi traded at 11.67 to the dollar, and Kenya's shilling held at 129.85 to 130.05 per dollar.",
+   "country": "Africa"
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-04",
+   "category": "Politics and Policy",
+   "source": "HBCU Buzz",
+   "headline": "FAMU's Oliver Gilbert Wins Florida's 24th District, Heading to Washington to Succeed Frederica Wilson",
+   "url": "https://hbcubuzz.com/107969/oliver-gilbert-congress/",
+   "summary": "Florida A&M alumnus and Miami-Dade County commissioner Oliver Gilbert won Florida's 24th Congressional District on Tuesday night, defeating Republican Te Mayonna Brown to succeed retiring Rep. Frederica Wilson, a Fisk University graduate who had endorsed him. Gilbert, a former mayor of Miami Gardens, Florida's largest majority-Black city, won the decisive August Democratic primary with about 34 percent against state Sen. Shevrin Jones and will be sworn in when the new Congress convenes in January."
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-04",
+   "category": "Politics and Policy",
+   "source": "NPR Illinois (KUNR)",
+   "headline": "Nevada Attorney General Aaron Ford Beats Republican Incumbent for Governor",
+   "url": "https://www.nprillinois.org/2026-11-04/nevada-attorney-general-aaron-ford-beats-republican-incumbent-for-governor",
+   "summary": "Nevada Attorney General Aaron Ford unseated Republican Gov. Joe Lombardo in one of the country's most competitive governor's races, according to an Associated Press race call, resolving the one Black governor's race left undecided on election night. Ford, previously Nevada's first Black Senate majority leader and attorney general, will become the first Black governor of a state west of the Mississippi River, and he has pledged to revive bills Lombardo vetoed, including limits on corporate home buying and state adoption of Medicaid negotiated drug prices."
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-04",
+   "category": "Sports",
+   "source": "Prairie View A&M University Athletics",
+   "headline": "Prairie View A&M's Eric Zachery Named Semifinalist for Aeneas Williams Award",
+   "url": "https://pvpanthers.com/news/2026/11/4/football-pv.aspx",
+   "summary": "Prairie View A&M junior defensive back Eric Zachery has been named one of 10 semifinalists for the 2026 Aeneas Williams Award, which honors the top defensive back in Division I HBCU football. The Dallas native has recorded 39 tackles, four pass breakups and 2.5 tackles for loss through nine games, and he is one of eight SWAC players on the semifinalist list, with three finalists to be announced December 1 and the winner on December 10."
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-04",
+   "category": "Education",
+   "source": "The Journal of Blacks in Higher Education",
+   "headline": "Higher Education Gifts or Grants of Interest to African Americans",
+   "url": "https://jbhe.com/2026/11/higher-education-gifts-or-grants-of-interest-to-african-americans-127/",
+   "summary": "The Journal of Blacks in Higher Education's latest grants roundup includes a $496,376 National Science Foundation award to Winston-Salem State University faculty to build teaching units on AI cybersecurity attacks, an $893,779 NSF grant joining Southern University and Grambling State to study the health effects of tire-wear pollution, and a $1.2 million federal TRIO grant for Elizabeth City State University to serve 850 adults a year across seven North Carolina counties. Coppin State University received $1,185,000 to prepare 20 special education teachers, and Tuskegee University received $595,217 to modernize its biology and chemistry teaching laboratories."
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-04",
+   "category": "Technology",
+   "source": "Helium Health",
+   "headline": "Helium Health Awarded Google.org Funding to Deploy Clinical AI for Maternal Healthcare",
+   "url": "https://heliumhealth.com/helium-health-awarded-google-org-funding-to-deploy-clinical-ai-for-maternal-healthcare/",
+   "summary": "Nigerian health technology company Helium Health has received a $2.5 million Google.org grant, as the only Nigerian organisation among 15 global recipients of the $30 million Google.org Impact Challenge: AI for Government Innovation, to deploy clinical AI into primary maternal healthcare. Its HeliumMum programme uses AI to help pregnant women identify risks early and connect with providers using electronic medical records and clinical decision support across Lagos, Delta, Kano and Oyo states, with Lagos as the launch base, aiming to reach an additional 1.9 million women over three years.",
+   "country": "Nigeria"
+  },
+  {
+   "tab": "america",
    "date": "2026-11-04",
    "category": "Politics and Policy",
    "source": "HBCU News",
@@ -808,7 +941,7 @@
    "summary": "Week 8 of the HBCU football season shook up both major conferences: Bethune-Cookman beat top-ranked Jackson State 24-21 on a touchdown pass with 40 seconds left, Howard won at Morgan State on an 87-yard interception return in overtime, and Texas Southern walked off Southern with a 46-yard field goal at its 99th homecoming."
   }
  ],
- "updated": "2026-11-04",
+ "updated": "2026-11-05",
  "window_days": 30,
  "categories": [
   "Politics and Policy",
