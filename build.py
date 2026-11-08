@@ -350,12 +350,22 @@ try:
     # file, so deleting them there (the Marshalltown mechanism) would strip
     # the pin from Nanny Town's own page too.
     MAP_EXCLUDE = {"Nanny Town|Jamaica"}
+    # Approximate placements (user ruling, 2026-11-08): for these towns the
+    # record documents a vicinity but no exact site, so the pin popup carries
+    # the approximate-placement basis instead of the town blurb. The pin marks
+    # the documented vicinity only and must never read as an exact site.
+    APPROX_PIN_ABOUT = {
+        "Marshalltown|Oklahoma": ("Creek Freedmen settlement in Indian Territory. "
+                                  "This pin is approximate: it marks the documented vicinity near Muskogee, "
+                                  "between the Arkansas and Verdigris rivers (Oklahoma Historical Society); "
+                                  "the settlement's exact site is not recorded."),
+    }
     pins = []
     for t in towns:
         k = f"{t['town']}|{t['state']}"
         if k in coords and k not in MAP_EXCLUDE:
             pins.append({"town": t["town"], "state": t["state"], "slug": slugify_town(t["town"], t["state"]), "song": t["song"],
-                         "about": (t["about"] or "")[:180], "lat": coords[k][0], "lon": coords[k][1]})
+                         "about": APPROX_PIN_ABOUT.get(k, (t["about"] or "")[:180]), "lat": coords[k][0], "lon": coords[k][1]})
     pin_data = json.dumps(pins)
     intl = []
     try:
