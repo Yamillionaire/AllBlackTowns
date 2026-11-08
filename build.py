@@ -343,13 +343,15 @@ education_body = """
 map_body = ""
 try:
     coords = json.load(open(f"{SITE}/town-coords.json"))
-    # Kept off the U.S. map by the owner's direction (2026-10-28): Nanny Town
-    # stays in the catalog (towns.json) but appears only on the international
-    # map below. Its coordinates stay in town-coords.json on purpose: the town
-    # pages (build_towns.py) draw each town's own location pin from the same
-    # file, so deleting them there (the Marshalltown mechanism) would strip
-    # the pin from Nanny Town's own page too.
-    MAP_EXCLUDE = {"Nanny Town|Jamaica"}
+    # Nanny Town, Jamaica was kept off the U.S. map by the owner's direction
+    # of 2026-10-28 (MAP_EXCLUDE below held it, so it appeared only on the
+    # international map). That rule was SUPERSEDED by the owner's direction
+    # of 2026-11-08: every catalog town is placed on the main map, so the
+    # headline truthfully reads "120 of 120 towns are placed". Nanny Town now
+    # appears on BOTH maps (it stays on the international map too). Its
+    # coordinates stay in town-coords.json: the town pages (build_towns.py)
+    # draw each town's own location pin from the same file.
+    MAP_EXCLUDE = set()
     # Approximate placements (user ruling, 2026-11-08): for these towns the
     # record documents a vicinity but no exact site, so the pin popup carries
     # the approximate-placement basis instead of the town blurb. The pin marks
@@ -401,6 +403,7 @@ PINS.forEach(p => {{
   cluster.addLayer(m);
 }});
 map.addLayer(cluster);
+map.fitBounds(cluster.getBounds().pad(0.08));
 </script>
 <section class="block"><div class="wrap">
 <div class="rule"></div>
