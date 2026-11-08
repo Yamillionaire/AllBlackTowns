@@ -4,6 +4,140 @@
  "stories": [
   {
    "tab": "america",
+   "date": "2026-11-08",
+   "category": "Community",
+   "source": "HBCU Gameday",
+   "headline": "HBCU on-campus shooting leaves one dead, three shot following homecoming",
+   "url": "https://hbcugameday.com/2026/11/08/hbcu-on-campus-shooting-leaves-one-dead-three-shot-following-homecoming/",
+   "summary": "Two separate shootings on the Winston-Salem State University campus on Saturday night, during the HBCU's homecoming weekend, left one person dead and three others shot, Winston-Salem police said. Police received the first call at about 9:45 p.m. on November 7, Forsyth County EMS took three victims to hospital, and investigators had not released the dead person's identity, said whether any victim was a student, or whether the two incidents were connected."
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-08",
+   "category": "Politics and Policy",
+   "source": "The Denver Focal (Focal News)",
+   "headline": "Bacon Wins Speaker Bid, Making History as Colorado's First Black Woman to Lead House",
+   "url": "https://focalnews.org/denver-co/politics/bacon-wins-speaker-bid-making-history-as-colorados-first-black-woman-to-lead-house",
+   "summary": "State Rep. Jennifer Bacon of Denver has won her Democratic colleagues' backing to become the next speaker of the Colorado House, making her the first Black woman to lead the chamber. Bacon, the assistant majority leader, defeated Rep. Andrew Boesenecker in the caucus vote and will lead a chamber where Democrats hold 49 of 65 seats after the midterms."
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-08",
+   "category": "Sports",
+   "source": "USA TODAY",
+   "headline": "Coco Gauff vs Jessica Pegula headlines WTA Finals opening day: Draw, format, everything to know",
+   "url": "https://www.usatoday.com/story/sports/tennis/2026/11/08/wta-finals-indian-wells-format-schedule-prize-money/92628583007/",
+   "summary": "The 2026 WTA Finals open on Sunday, November 8 at Indian Wells with Coco Gauff facing Jessica Pegula in the headline match of day one, the pair tied 5-5 in their head-to-head with Gauff winning both meetings this year, at Wimbledon and in the Cincinnati final. Defending champion and world No. 1 Elena Rybakina has withdrawn for an undisclosed medical reason and is replaced by Marta Kostyuk, and the eight-player round-robin event runs to November 15 with a $10 million prize pool."
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-08",
+   "category": "Sports",
+   "source": "HBCU Sports",
+   "headline": "Brawl overshadows Arkansas-Pine Bluff’s 35-32 comeback win over Grambling",
+   "url": "https://hbcusports.com/2026/11/08/brawl-overshadows-uapbs-35-32-comeback-win-at-grambling/",
+   "summary": "Arkansas-Pine Bluff's 35-32 comeback win at Grambling State on Saturday was overshadowed by a postgame brawl between players from both teams that took several minutes to bring under control. Grambling apologised the same night, said those involved would face disciplinary action, and UAPB coach Alonzo Hampton called the incident embarrassing; on the field, the Golden Lions rallied from 25-21 down in the fourth quarter behind Jaylen Jennings' touchdown run and DaeDae Allen's 76-yard punt-return score to stay in the SWAC West race at 6-3."
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-08",
+   "category": "Politics and Policy",
+   "source": "Newsday",
+   "headline": "2026 Election Results Winners and Losers: Catastrophe for the ANC and EFF and good news for the DA, ActionSA, VF Plus, and PA",
+   "url": "https://newsday.co.za/south-africa/36362/2026-election-results-winners-and-losers-catastrophe-for-the-anc-and-eff-and-good-news-for-the-da-actionsa-vf-plus-and-pa/",
+   "summary": "South Africa's ANC has recorded its worst local election result since 1994, falling to 30.76 percent with 99.95 percent of voting districts counted, down 15 points on 2021, a result secretary-general Fikile Mbalula called catastrophic for the movement. The DA took 24.64 percent, Jacob Zuma's MK Party 9.76 percent and the EFF 6.22 percent, while ActionSA was the biggest gainer at 5.67 percent, and with the DA holding an outright majority only in Cape Town, coalition talks will decide most big-city governments.",
+   "country": "South Africa"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-08",
+   "category": "Sports",
+   "source": "Scrummage Africa",
+   "headline": "Uganda Lady Cranes win 2026 Africa Women's 7s to qualify SVNs 3",
+   "url": "https://scrummage.co.ke/2026/11/08/uganda-win-africa-womens-7s/",
+   "summary": "Uganda's Lady Cranes won their first Africa Women's Sevens title with a 33-0 win over Tunisia in the final at Nairobi's RFUEA Grounds, Lydia Namabiro scoring a hat-trick, and qualified for World Rugby's SVNS 3 in Dubai in December. Hosts Kenya took third place with a 27-7 bronze-final win over Zimbabwe after losing their semi-final to Uganda, and Zambia beat South Africa for the second time in the tournament to finish fifth.",
+   "country": "Uganda"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-08",
+   "category": "Sports",
+   "source": "Capital FM",
+   "headline": "Kenya’s Rising Lionesses to receive handsome reward after historic gold at Dakar Olympics",
+   "url": "https://capitalfm.africa/kenyas-rising-lionesses-to-receive-handsome-reward-after-historic-gold-at-dakar-youth-olympics/",
+   "summary": "Kenya's junior women's rugby sevens team, the Rising Lionesses, will each receive Ksh 250,000 in reward for winning gold at the Dakar Youth Olympic Games, Sports Principal Secretary Elijah Mwangi announced at a dinner for the team on Saturday night. The side's 17-12 win over Australia made them Kenya's first team sport to win an Olympic gold medal, and Mwangi urged the Kenya Rugby Union to build the squad toward the World Rugby Series and a World Cup.",
+   "country": "Kenya"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-08",
+   "category": "Justice",
+   "source": "Capital FM",
+   "headline": "Police seize 454kg of suspected methamphetamine worth Sh3.6bn in Kwale",
+   "url": "https://capitalfm.africa/police-seize-454kg-of-suspected-methamphetamine-worth-sh3-6bn-in-kwale/",
+   "summary": "Kenyan police have seized 454 kilogrammes of suspected methamphetamine valued at about Sh3.6 billion in Kwale County and arrested three foreign nationals, two Tanzanians and a Ugandan woman, in a multi-agency operation against a suspected international drug trafficking network. The National Anti-Narcotics Bureau Coast Region led the operation with Tanzanian agencies after Tanzania arrested 45-year-old Saleh Khamis on November 5 and handed him to Kenyan officers at the Lunga Lunga-Horohoro border, and investigations into the drugs' source and destination are continuing.",
+   "country": "Kenya"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-08",
+   "category": "Business",
+   "source": "HapaKenya",
+   "headline": "Kenya's Dr. Jackson Bett sworn in to AfCFTA dispute settlement appellate body",
+   "url": "https://hapakenya.com/2026/11/08/kenyas-dr-jackson-bett-sworn-in-to-afcfta-dispute-settlement-appellate-body/",
+   "summary": "Dr Jackson Bett of Kenya has been sworn in as a member of the Appellate Body of the African Continental Free Trade Area's Dispute Settlement Body, with AfCFTA Secretary-General Wamkele Mene administering the oath at the secretariat in Accra, Ghana. The appointment helps operationalise the legal machinery for resolving cross-border trade disputes across the AfCFTA market of more than 1.3 billion people, as member states move to eliminate tariffs on 90 percent of tariff lines.",
+   "country": "Kenya"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-08",
+   "category": "Justice",
+   "source": "News Theme GH",
+   "headline": "Mahama Allocates GH¢100 Million to Complete Nsawam Prison Remand Block in 2027",
+   "url": "https://newsthemegh.com/mahama-allocates-gh%C2%A2100-million-to-complete-nsawam-prison-remand-block-in-2027/",
+   "summary": "President John Dramani Mahama has announced a GH¢100 million allocation in Ghana's 2027 budget to complete the abandoned remand block at Nsawam Medium Security Prison, so that prisoners awaiting trial are held separately from convicted inmates. Mahama, who disclosed the commitment at an Assemblies of God induction ceremony in Accra on Saturday, said construction began under his previous administration and was abandoned after it left office, and that remand prisoners have not been convicted and should not be treated as though they had been.",
+   "country": "Ghana"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-08",
+   "category": "Obituaries",
+   "source": "GyeNyame News",
+   "headline": "Kofi Wayo: The Life and Political Journey of Ghana’s Outspoken Politician",
+   "url": "https://gyenyamenews.com/2026/11/08/kofi-wayo-the-life-and-political-journey-of-ghanas-outspoken-politician/",
+   "summary": "Charles Eric Kofi Wayo, the outspoken Ghanaian politician and businessman known as Chuck, has died aged 71 at the Nyaho Medical Centre in Accra after a short illness, his family has confirmed. Wayo rose to prominence contesting the Ayawaso East seat for the NPP in 2000, later founded the United Renaissance Party in 2006 and served on the Energy Commission board before retiring from active politics in 2017 to support rural farmers; funeral arrangements have not yet been announced.",
+   "country": "Ghana"
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-07",
+   "category": "Sports",
+   "source": "HBCU Sports",
+   "headline": "North Carolina Central rallies for wild win at Norfolk State to remain unbeaten in MEAC play",
+   "url": "https://hbcusports.com/2026/11/07/north-carolina-central-rallies-for-wild-win-at-norfolk-state-to-remain-unbeaten-in-meac-play/",
+   "summary": "North Carolina Central rallied to beat Norfolk State 29-28 on Saturday, Joshua Jones hitting Mehki Wall for a 26-yard touchdown with 27 seconds left after Norfolk State fumbled the ball back when it only needed to run out the clock. The win kept the Eagles unbeaten in the MEAC at 3-0 and set up a first-place showdown with South Carolina State, while Jones threw for three touchdowns and ran for another and Gino Addison rushed for 174 yards."
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-07",
+   "category": "Technology",
+   "source": "Business News This Week",
+   "headline": "AFROTECH™ 2026 SPOTLIGHTS TECHNOLOGY, POLICY AND INNOVATION DURING THIRD DAY IN HOUSTON",
+   "url": "https://businessnewsthisweek.com/business/afrotech-2026-spotlights-technology-policy-and-innovation-during-third-day-in-houston/",
+   "summary": "AfroTech 2026's programming in Houston spotlighted the intersection of technology, policy, healthcare and business as the conference marked its 10th anniversary, including its inaugural Executive Policy Breakfast on technology's impact on civic engagement and Smart Cities sessions on clean energy and civic innovation. The highlights also covered the HealthStack healthcare programme, with clinical AI and digital health sessions, the Authors Pavilion with Roy Wood Jr., Robin Givhan and Tareasa Johnson, and a Legacy Dinner honouring the Future 50 in partnership with Black Enterprise."
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-07",
+   "category": "Sports",
+   "source": "The Sun Nigeria",
+   "headline": "2026 U-17 WWC: Flamingos beat Japan 2-1 to win historic World Cup title",
+   "url": "https://thesun.ng/2026-u-17-wwc-flamingos-beat-japan-2-1-to-win-historic-world-cup-title/",
+   "summary": "Nigeria's Flamingos beat Japan 2-1 in Saturday's final at the Mohammed VI Football Complex in Rabat to win the FIFA U-17 Women's World Cup for the first time, becoming the first African country to lift the trophy. The title capped a turnaround from an opening 2-1 defeat to Poland, after which Nigeria beat Puerto Rico, defending champions North Korea, Mexico, Venezuela and Brazil to reach the final.",
+   "country": "Nigeria"
+  },
+  {
+   "tab": "america",
    "date": "2026-11-07",
    "category": "Education",
    "source": "HBCU.news",
@@ -88,6 +222,24 @@
    "url": "https://capitalfm.africa/us-advances-investment-push-in-dr-congo-eyes-critical-minerals-transport-infrastructure/",
    "summary": "The United States and the Democratic Republic of Congo have advanced plans to expand American investment under their Strategic Partnership Agreement at the second Joint Steering Committee meeting in Paris, with critical minerals, hydropower and regional transport as the focus. A joint statement said the US International Development Finance Corporation briefed the meeting on its growing DRC investment pipeline amid rising private-sector interest in the country's Strategic Asset Reserve, and the two sides recognised the Lobito Corridor concession agreement as a milestone and discussed next steps for the Grand Inga hydropower project.",
    "country": "DR Congo"
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-06",
+   "category": "Education",
+   "source": "The Journal of Blacks in Higher Education",
+   "headline": "Ten HBCUs Receive More Than $97 Million in Combined Federal Defense Funding",
+   "url": "https://jbhe.com/2026/11/ten-hbcus-receive-over-97-million-in-combined-federal-funding-to-achieve-r1-status/",
+   "summary": "Ten HBCUs will share more than $97 million in federal Defense Department funding for STEM research, in an award aimed at helping more of the schools reach R1 status, the highest research classification, currently held among HBCUs only by Howard University. Florida A&M, North Carolina A&T and Morgan State each received $10 million, with Clark Atlanta, Delaware State, the University of the District of Columbia, Fayetteville State, Prairie View A&M and Texas Southern each receiving between $9.78 million and $9.99 million and Jackson State $7.57 million."
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-06",
+   "category": "Technology",
+   "source": "ESSENCE",
+   "headline": "RECAP: AfroTech Turns 10: Inside The Conversations And Experiences Shaping The Future Of Black Innovation",
+   "url": "https://www.essence.com/awards-events/recap-afrotech-turns-10/",
+   "summary": "ESSENCE's recap of AfroTech's 10th anniversary conference in Houston found Black innovation moving from breaking in to shaping what comes next, with artificial intelligence the defining theme, from Microsoft's House of Black TechXcellence and GitHub Copilot sessions to a Policy Breakfast held the morning after the midterms. The recap also highlighted the Authors Stage, LinkedIn and Verizon activations, and conference programming on ownership, access and who benefits from technological change."
   },
   {
    "tab": "america",
@@ -1235,7 +1387,7 @@
    "summary": "Week 8 of the HBCU football season shook up both major conferences: Bethune-Cookman beat top-ranked Jackson State 24-21 on a touchdown pass with 40 seconds left, Howard won at Morgan State on an 87-yard interception return in overtime, and Texas Southern walked off Southern with a 46-yard field goal at its 99th homecoming."
   }
  ],
- "updated": "2026-11-07",
+ "updated": "2026-11-08",
  "window_days": 30,
  "categories": [
   "Politics and Policy",
