@@ -4,6 +4,158 @@
  "stories": [
   {
    "tab": "america",
+   "date": "2026-11-09",
+   "category": "Politics and Policy",
+   "source": "JBizNews",
+   "headline": "Jeffries Backs Hegseth Impeachment Resolution, Plans Tuesday Democratic Discussion",
+   "url": "https://jbiznews.com/jeffries-backs-hegseth-impeachment-resolution-plans-tuesday-democratic-discussion/",
+   "summary": "House Democratic Leader Hakeem Jeffries said on Sunday he would support a resolution to impeach Defense Secretary Pete Hegseth, telling ABC's This Week he was a hard yes on the measure Republican Rep. Thomas Massie intends to introduce, and expected strong Democratic backing when the party discusses it on Tuesday morning. Jeffries accused Hegseth of abusing his power and undermining national security through the Iran war, allegations the report notes were his charges in the interview, not findings it established."
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-09",
+   "category": "Politics and Policy",
+   "source": "The Atlanta Focal (Focal News)",
+   "headline": "Fulton County Board to Certify Midterm Results Monday Afternoon",
+   "url": "https://focalnews.org/atlanta-ga/politics/fulton-county-board-to-certify-midterm-results-monday-afternoon",
+   "summary": "The Fulton County Board of Registration and Elections meets at 3 p.m. on Monday to certify the midterm results, the legally required local step that locks in the county tallies before they go to the state, in a county where certification has carried outsized political weight since 2020. The vote follows a statewide Democratic wave in which Governor-elect Keisha Lance Bottoms, a former Atlanta mayor, is set to become the first Black woman governor in American history, and Democrats also secured a Georgia House majority for the first time since 2004."
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-09",
+   "category": "Culture and Arts",
+   "source": "HBCU News",
+   "headline": "A Different World’s Jasmine Guy named Fall commencement speaker at Grambling State",
+   "url": "https://hbcunews.com/2026/11/09/a-different-worlds-jasmine-guy-named-fall-commencement-speaker-at-grambling-state/",
+   "summary": "Grambling State University has named award-winning actress Jasmine Guy, best known as Whitley Gilbert on A Different World, to deliver the keynote address at its fall commencement on December 4, 2026, at the Fredrick C. Hobdy Assembly Center. Guy, who has reprised the role for the new Netflix A Different World sequel and grew up near Morehouse College in Atlanta, was welcomed by President Martin Lemelle Jr. as an example of excellence whose work has shaped HBCU culture for generations."
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-09",
+   "category": "Sports",
+   "source": "theScore",
+   "headline": "Gauff opens WTA Finals with win over Pegula at Indian Wells",
+   "url": "https://www.thescore.com/wta/news/3649661/gauff-opens-wta-finals-with-win-over-pegula-at-indian-wells",
+   "summary": "Coco Gauff beat fellow American Jessica Pegula 6-4, 6-7 (5), 6-2 in her opening match of the 2026 WTA Finals at Indian Wells on Sunday, improving to 6-5 in their head-to-head after two hours and 39 minutes in her first match in over a month. Gauff, the No. 4 seed and 2024 champion, recovered after Pegula rallied from 5-1 down in the second set and saved a match point to force a tiebreak, and she next faces No. 8 seed Linda Noskova, who beat alternate Marta Kostyuk, the late substitute for withdrawn world No. 1 Elena Rybakina."
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-09",
+   "category": "Sports",
+   "source": "TheNigerian",
+   "headline": "Nigeria win historic Youth Olympics 100m golds",
+   "url": "https://thenigeriannews.com/2026/11/09/nigeria-win-historic-youth-olympics-100m-golds/",
+   "summary": "Nigeria made history at the Dakar 2026 Youth Olympic Games on Sunday, becoming the first country to win both 100m titles at the same edition, as Gift Bright took the men's final in a personal best of 10.28 seconds ahead of China's Hangyu Zhang and Poland's Szymon Dolega, and Rosemary Chigozie Nwankwo won the women's final in 11.16 seconds ahead of the UAE's Arwa Ali and Qatar's Dana Salem. Bright is the first Nigerian man to win the Youth Olympic 100m title and Nwankwo the third Nigerian woman, after Josephine Omaka in 2010 and Rosemary Chukwuma in 2018, and the two golds opened Nigeria's medal account at the Games, which run to November 13.",
+   "country": "Nigeria"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-09",
+   "category": "Sports",
+   "source": "TheNigerian",
+   "headline": "Flamingos arrive in Abuja after historic U-17 World Cup triumph",
+   "url": "https://thenigeriannews.com/2026/11/09/flamingos-arrive-in-abuja-after-historic-u-17-world-cup-triumph/",
+   "summary": "Nigeria's Flamingos arrived in Abuja on Monday morning after winning the FIFA U-17 Women's World Cup in Morocco, the team's maiden title and the first by an African side, secured with a 2-1 final win over Japan on Saturday through goals from Awawu Bashiru and Oluebube Umejiaku. President Bola Tinubu congratulated the squad, coach Hakeem Busari, the Nigeria Football Federation and the National Sports Commission, saying the victory would inspire young Nigerian girls, while Busari credited the campaign to development, character and tactical discipline.",
+   "country": "Nigeria"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-09",
+   "category": "Business",
+   "source": "Reuters",
+   "headline": "South African telco MTN's service revenue rises over 17% as Nigeria recovers",
+   "url": "https://www.reuters.com/world/africa/south-african-telco-mtns-service-revenue-rises-over-17-nigeria-recovers-2026-11-09/",
+   "summary": "South Africa's MTN Group, Africa's biggest telecoms operator, said on Monday its service revenue rose more than 17 percent in constant-currency terms in the nine months to September 30, helped by a recovery in Nigeria and continued strong performance in Ghana, with third-quarter service revenue up 16.6 percent and group service revenue of 176.2 billion rand (about $10.68 billion). MTN said it expects full-year fintech revenue growth to stay below its medium-term target range after disruptions to its Airtime Advance business in Nigeria, although it expects that service to recover to pre-suspension levels by the end of the year.",
+   "country": "South Africa"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-09",
+   "category": "Politics and Policy",
+   "source": "BusinessDay",
+   "headline": "South Africa’s ANC suffers worst local election defeat as coalition talks begin",
+   "url": "https://businessday.ng/africa/article/south-africas-anc-suffers-worst-local-election-defeat-as-coalition-talks-begin/",
+   "summary": "South Africa's ANC faces difficult coalition negotiations after its worst local election result since the end of apartheid, falling to 30.76 percent of the national vote from 45.59 percent in 2021, behind which the DA took 24.64 percent, the MK Party 9.76 percent and the EFF 6.22 percent, leaving the number of municipalities needing coalition agreements more than doubled. Parties have 14 days to form municipal councils, with Johannesburg the biggest test, where the DA won about 35 percent to the ANC's 20 percent and Helen Zille could become mayor if her party secures coalition support, while the DA retained an outright majority only in Cape Town.",
+   "country": "South Africa"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-09",
+   "category": "Technology",
+   "source": "Capital FM",
+   "headline": "TikTok removes 750,000 videos in Kenya over content violations",
+   "url": "https://capitalfm.africa/tiktok-removes-750000-videos-in-kenya-over-content-violations/",
+   "summary": "TikTok removed 750,185 videos in Kenya for violating its community guidelines in the second quarter of 2026, its Q2 enforcement report said, with 99.8 percent taken down before users reported them and 93.8 percent within 24 hours of posting, alongside 80,640 interrupted LIVE sessions and more than 46,000 removed accounts suspected to belong to children under 13. Nearly 11,000 of the Kenyan removals were under its edited-media and AI-generated content policies, and globally the platform removed about 188.3 million videos in the quarter, 97.4 percent of them through automated systems.",
+   "country": "Kenya"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-09",
+   "category": "Politics and Policy",
+   "source": "Capital FM",
+   "headline": "Kenya condoles with Poland after Krakow shooting kills six, injures 16",
+   "url": "https://capitalfm.africa/kenya-condoles-with-poland-after-krakow-shooting-kills-six-injures-16/",
+   "summary": "Kenya has conveyed its condolences to Poland after a shooting at Krakow's Main Market Square on Saturday killed six people and injured 16, including two police officers, with Foreign Affairs Principal Secretary Korir Sing'Oei expressing Kenya's solidarity with the Polish people as the country mourns. Polish prosecutors have opened an investigation into the attack as a suspected terrorist offence, police shot the gunman within minutes and he remained in critical condition in hospital, and investigators recovered 11 firearms in searches at the scene and the suspect's home.",
+   "country": "Kenya"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-09",
+   "category": "Science",
+   "source": "NIHR School for Primary Care Research (SPCR)",
+   "headline": "SPCR Project Shortlisted for Black Research Consortium Award",
+   "url": "https://spcr.nihr.ac.uk/news/spcr-project-black-research-consortium-award/",
+   "summary": "A project led by the NIHR School for Primary Care Research, with researchers from the Universities of Keele, Nottingham and Manchester, has been shortlisted for the University Initiative Award at the inaugural Black Research Consortium Awards 2026, with the winners to be announced in Liverpool later this month. The Black in Primary Care Research Leadership Project examined how systemic inequalities, racism and inequitable academic practices create barriers to career progression for researchers of Black heritage, and identified practical steps including proactive leadership, tailored career support and greater visibility of Black role models.",
+   "country": "United Kingdom"
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-08",
+   "category": "Entertainment",
+   "source": "HBCU Gameday",
+   "headline": "HBCU Band Records Music for Muhammad Ali Biopic Trailer",
+   "url": "https://hbcugameday.com/2026/11/08/hbcu-band-muhammad-ali-biopic-trailer/",
+   "summary": "Virginia State University's Trojan Explosion Marching Band recorded the music for the official promotional trailer of The Greatest, Prime Video's eight-part biographical drama about Muhammad Ali, working on campus in Ettrick with trailer composer Mic Ferrante under band director Dr. Taylor Whitehead. The series, executive produced by Michael B. Jordan, Shawn 'Jay-Z' Carter and Ali's widow Lonnie Ali and starring Jaalen Best as the young Ali, is now streaming all eight episodes, giving the HBCU band and VSU's music production students a credit on a major entertainment campaign."
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-08",
+   "category": "Sports",
+   "source": "HBCU Sports",
+   "headline": "Benedict secures SIAC Championship clash with Kentucky State",
+   "url": "https://hbcusports.com/2026/11/07/benedict-secures-siac-championship-clash-with-kentucky-state/",
+   "summary": "Benedict beat Central State 45-38 to reach the SIAC championship game for the fourth time in five seasons, closing the regular season 9-1 on a six-game winning streak behind quarterback Jett Peddy's 265 passing yards, two touchdowns and 46 rushing yards. The Tigers led 38-14 at half-time, held off a 17-point third-quarter Marauders rally, and sealed the win when an unsportsmanlike penalty on a late punt kept the ball in their hands; they will face Kentucky State, 34-10 winners over Morehouse, in the first SIAC final with no team from Georgia or Alabama."
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-08",
+   "category": "Sports",
+   "source": "HBCU Gameday",
+   "headline": "JCSU Football Sets Up CIAA Championship Rematch",
+   "url": "https://hbcugameday.com/2026/11/07/jcsu-football-ciaa-championship-rematch/",
+   "summary": "Johnson C. Smith beat Livingstone 27-14 in Saturday's Commemorative Classic to return to the CIAA championship game, setting up a November 14 rematch in Durham with No. 1 seed Virginia Union, the team JCSU beat a year ago to end a 56-year title drought. Fabian Duncan rushed for 148 yards and two touchdowns on 37 carries as the Golden Bulls, the No. 2 seed at 7-1 in conference play, built a 20-0 lead through three quarters against the oldest rivalry in Black college football."
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-08",
+   "category": "Justice",
+   "source": "Louisiana First News (WGHP)",
+   "headline": "2 dead, 3 hurt, 2 charged in separate shootings in North Carolina, police say",
+   "url": "https://www.louisianafirstnews.com/home/2-dead-3-hurt-2-charged-in-separate-shootings-in-north-carolina-police-say/",
+   "summary": "Winston-Salem police have charged 20-year-old Ziyaire Antonyo Spinks with murder, assault with a deadly weapon with intent to kill inflicting serious injury, and felony possession of a firearm on educational property in the first of two shootings on the Winston-Salem State University campus during homecoming, in which 19-year-old Peyton Izaia Patterson was killed and a 22-year-old woman was wounded and later released from hospital. Spinks, who was given no bond, and 18-year-old Cequan Warren Brower, charged with affray, were neither of them WSSU students, police said the first shooting followed a fight, and no arrests had been made in the second shooting, at Victory Circle and Cromartie Street, which left two more people in hospital."
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-08",
+   "category": "Business",
+   "source": "Accra Street Journal",
+   "headline": "Mahama Unveils $9 Billion New Economy Plan Targeting Jobs And Volta Infrastructure",
+   "url": "https://accrastreetjournal.com/2026/11/08/mahama-unveils-9-billion-new-economy-plan-targeting-jobs-and-volta-infrastructure/",
+   "summary": "President John Dramani Mahama says Ghana will invest more than $9 billion in job-creating sectors between 2027 and 2030 under a New Economy programme targeting textiles, garments, commercial agriculture, hospitality and tourism, with the details to be set out in the 2027 budget that Finance Minister Cassiel Ato Forson presents this week. Announced at the Hogbetsotso Festival, the plan includes a 200-acre light industrial zone at Keta for textile and garment production, commissioned through Ghana Exim Bank and expected to create 3,000 jobs initially and up to 10,000 at full operation, alongside coastal protection funding and progress on the proposed Keta Port.",
+   "country": "Ghana"
+  },
+  {
+   "tab": "america",
    "date": "2026-11-08",
    "category": "Community",
    "source": "HBCU Gameday",
@@ -1387,7 +1539,7 @@
    "summary": "Week 8 of the HBCU football season shook up both major conferences: Bethune-Cookman beat top-ranked Jackson State 24-21 on a touchdown pass with 40 seconds left, Howard won at Morgan State on an 87-yard interception return in overtime, and Texas Southern walked off Southern with a 46-yard field goal at its 99th homecoming."
   }
  ],
- "updated": "2026-11-08",
+ "updated": "2026-11-09",
  "window_days": 30,
  "categories": [
   "Politics and Policy",
