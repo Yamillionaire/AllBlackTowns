@@ -4,6 +4,158 @@
  "stories": [
   {
    "tab": "america",
+   "date": "2026-11-10",
+   "category": "Sports",
+   "source": "HBCU News",
+   "headline": "Virginia Union-Johnson C. Smith set for CIAA Championship rematch",
+   "url": "https://hbcunews.com/2026/11/10/virginia-union-johnson-c-smith-set-for-ciaa-championship-rematch/",
+   "summary": "Virginia Union beat in-state rival Virginia State 36-14 in the final week of the CIAA regular season to reach its fourth straight CIAA championship game, a new school record for consecutive title-game appearances, behind RJ Rosales's 211 passing yards and four total touchdowns and Ramon Brown's 111 rushing yards. The Panthers will meet Johnson C. Smith in a rematch of last year's final, which the Golden Bulls won 45-21, after JCSU closed its regular season with a 27-14 Commemorative Classic win over Livingstone."
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-10",
+   "category": "Community",
+   "source": "HBCU News",
+   "headline": "‘Our neighbors at Winston-Salem State’: Colleges extend support in wake of WSSU shootings",
+   "url": "https://hbcunews.com/2026/11/10/our-neighbors-at-winston-salem-state-colleges-extend-support-in-wake-of-wssu-shootings/",
+   "summary": "Colleges across North Carolina and the wider HBCU community have sent condolences and support to Winston-Salem State University after two shootings on campus during homecoming weekend, thirty minutes apart, left one man dead and three other people injured and prompted a four-hour lockdown. Wake Forest, North Carolina Central and Elizabeth City State were among those issuing statements, while WSSU cancelled classes on Monday and kept extra law enforcement on campus."
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-10",
+   "category": "Education",
+   "source": "HBCU News",
+   "headline": "Howard University Students Selected for Harvard Du Bois Scholars Program and Encourage HBCU Peers to Apply",
+   "url": "https://hbcunews.com/2026/11/10/howard-university-students-selected-for-harvard-du-bois-scholars-program-and-encourage-hbcu-peers-to-apply/",
+   "summary": "Howard University students who spent the summer as research fellows in Harvard University's Du Bois Scholars Program are urging students at Howard and other participating HBCUs to apply as the program's latest application cycle opens this month. Thirteen of the 29 fellows in the program's third cohort were Howard students, working with Harvard faculty mentors in a scheme supported by Harvard and its Legacy of Slavery Initiative that connects students from research-focused HBCUs with Harvard mentors."
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-10",
+   "category": "History and Heritage",
+   "source": "Greenville Online",
+   "headline": "Greenville City Council votes to buy former Black history museum site",
+   "url": "https://www.greenvilleonline.com/story/news/local/2026/11/10/greenville-to-buy-former-cultural-exchange-center/92694262007/",
+   "summary": "Greenville's City Council voted unanimously on November 9 to buy the downtown property at 700 Arlington Avenue that once housed the Greenville Cultural Exchange Center, the African American history museum founded in 1987 by civil rights activist Ruth Ann Butler, who died in January 2025. The city plans to preserve the site as a historic property using $579,500 in state funding and $270,500 in city funds, after about 50 community members, including Butler's family, urged councillors to protect her collection and legacy."
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-10",
+   "category": "Technology",
+   "source": "Capital FM",
+   "headline": "Kenya launches sovereign cybersecurity centre as digital threats mount",
+   "url": "https://capitalfm.africa/kenya-launches-sovereign-cybersecurity-centre-as-digital-threats-mount/",
+   "summary": "Kenya has launched the SecureKE Sovereign Security Operations Centre at Konza Technopolis to provide shared cybersecurity services, including continuous monitoring, AI-supported threat detection and coordinated incident response, to government institutions and private organisations. ICT Principal Secretary John Tanui said Kenya recorded about 4.56 billion cyber threat events between October and December 2025 and reported banking cyber-fraud losses of about Sh1.9 billion in 2025, making cybersecurity a national security and economic priority.",
+   "country": "Kenya"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-10",
+   "category": "Environment",
+   "source": "Capital FM",
+   "headline": "Kenya joins 79 countries in global children and climate declaration",
+   "url": "https://capitalfm.africa/kenya-joins-79-countries-in-global-children-and-climate-declaration/",
+   "summary": "Kenya has become the 80th country to sign the Intergovernmental Declaration on Children, Youth and Climate Action, committing to put children's rights, needs and voices at the centre of its climate response, in a signing completed on November 5 by Environment Cabinet Secretary Deborah Barasa alongside UNICEF's Kenya representative. About 12 million of Kenya's 24.6 million children face moderate to very high climate risks, including floods and droughts that disrupt water, health, nutrition and schooling, and Kenya says it will press the declaration's priorities at COP31 in Antalya.",
+   "country": "Kenya"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-10",
+   "category": "Justice",
+   "source": "Capital FM",
+   "headline": "Five workers, two NPRs killed in suspected Al-Shabaab ambush in Mandera",
+   "url": "https://capitalfm.africa/five-workers-two-nprs-killed-in-suspected-al-shabaab-ambush-in-mandera/",
+   "summary": "Eight people, five road construction workers, two National Police Reservists and a driver, were killed on Tuesday morning in a suspected Al-Shabaab ambush on a security vehicle escorting a Kenya Rural Roads Authority engineering team along the Arabia-Lafey road in Mandera County. Mandera Governor Mohamed Adan Khalif condemned the attack, which happened about eight kilometres south of Arabia Police Station, and a multi-agency team was sent to pursue the attackers amid renewed security concerns along the Kenya-Somalia border.",
+   "country": "Kenya"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-10",
+   "category": "Politics and Policy",
+   "source": "Capital FM",
+   "headline": "Kenya to close Switzerland embassy in diplomatic footprint shake-up",
+   "url": "https://capitalfm.africa/kenya-to-close-switzerland-embassy-in-diplomatic-footprint-shake-up/",
+   "summary": "Kenya will permanently close its embassy in Bern, Switzerland, with consular services ending on November 30, 2026, as part of what Foreign Affairs Principal Secretary Korir Sing'Oei called an ongoing rationalisation of Kenya's diplomatic footprint, closing some missions and opening others in line with strategic priorities. Kenyans in Switzerland with documents ready have been told to collect them before the closure, while Kenya has recently opened a mission in Rabat and approved new missions in Vatican City, Copenhagen and Hanoi and a consulate general in Guangzhou.",
+   "country": "Kenya"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-10",
+   "category": "Money",
+   "source": "Reuters",
+   "headline": "Nigeria proposes regional bond market reforms to spur cross-border investments",
+   "url": "https://www.reuters.com/world/africa/nigeria-proposes-regional-bond-market-reforms-spur-cross-border-investments-2026-11-10/",
+   "summary": "Nigeria is proposing regional capital market reforms to let investors trade bonds more easily across West Africa and unlock long-term funding for infrastructure, Finance Minister Taiwo Oyedele told an S&P Global Ratings Africa Summit in Lagos on Tuesday. The plan, covering Nigeria, Ghana and eight CFA franc countries, includes a regional passport for issuers, a unified investor identification system, linked trading and settlement in local currencies, a regional local-currency bond index and a credit enhancement facility, with Nigeria targeting investment-grade ratings within three years and a capital market worth at least $1 trillion under its 10-year plan.",
+   "country": "Nigeria"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-10",
+   "category": "Business",
+   "source": "Moneyweb (Bloomberg)",
+   "headline": "Absa to complete African banking expansion within next two years",
+   "url": "https://www.moneyweb.co.za/news/companies-and-deals/absa-to-complete-african-banking-expansion-within-next-two-years/",
+   "summary": "South Africa's Absa Group, the country's third-biggest bank, plans to complete the reorganisation of its rest-of-Africa business within the next two years as it diversifies earnings away from South Africa, Kenya and Ghana, which produced more than 80 percent of profit in the six months to June. Africa Regions executive Charles Russon said Absa is converting its Nigeria representative office into a merchant bank, opening a new office in Angola, has integrated the Standard Chartered wealth and retail unit it bought in Uganda in 2025, and still intends to raise its Kenyan holding toward 85 percent by 2028.",
+   "country": "South Africa"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-10",
+   "category": "Community",
+   "source": "Capital FM",
+   "headline": "Ruto launches Sh1.3bn Bonchari road, unveils Sh22bn roads plan",
+   "url": "https://capitalfm.africa/ruto-launches-sh1-3bn-bonchari-road-unveils-sh22bn-roads-plan/",
+   "summary": "President William Ruto has launched a Sh1.3 billion road project, the Kenyoro-Riana-Kerina road in Bonchari Constituency, and announced Sh22 billion for road construction and rehabilitation across Kisii and Nyamira counties during his four-day development tour of the Gusii region. He also launched a Sh1.7 billion Last Mile Connectivity programme to connect 25,000 more households in the two counties and promised an upgraded Suneka Airstrip, subsidised farm inputs and better market access for farmers.",
+   "country": "Kenya"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-10",
+   "category": "Business",
+   "source": "Capital FM",
+   "headline": "Kenya ports urged to invest in green fuel infrastructure to tap emerging shipping business",
+   "url": "https://capitalfm.africa/kenya-ports-urged-to-invest-in-green-fuel-infrastructure-to-tap-emerging-shipping-business/",
+   "summary": "Kenya's ports at Mombasa and Lamu could become regional green bunkering hubs if the country invests in infrastructure for alternative marine fuels, the World Shipping Council has said, as shipping shifts toward cleaner energy. Its environment and climate vice president Simon Bergulf said about 1,300 vessels in the council's liner membership can already run on alternative fuels, and that Kenya could use its renewable energy capacity and agricultural and urban waste feedstocks to produce cleaner fuels, creating work across energy, agriculture and maritime sectors.",
+   "country": "Kenya"
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-09",
+   "category": "Politics and Policy",
+   "source": "CNN",
+   "headline": "‘Where is Cindy Hyde-Smith?’: In a nail-biter Senate race, the incumbent stays out of view in Mississippi",
+   "url": "https://www.cnn.com/2026/11/09/politics/mississippi-senate-hyde-smith-colom-campaign?cid=external-feeds_iluminar_meta",
+   "summary": "Democrat Scott Colom now leads Republican Senator Cindy Hyde-Smith by about 2,500 votes in Mississippi's still-uncalled Senate race, CNN reported, in a contest that could come down to thousands of provisional ballots and would make Colom Mississippi's first Democratic senator in nearly four decades and its first Black senator since Reconstruction if he wins. Colom has held at least eight public events since Election Day, while Hyde-Smith has not been seen publicly since election night, communicating mainly through social media and declining reporters' questions in the Capitol on Monday."
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-09",
+   "category": "Sports",
+   "source": "HBCU Gameday",
+   "headline": "Black College Football Poll has a new No. 1 team, again",
+   "url": "https://hbcugameday.com/2026/11/09/black-college-football-poll-has-a-new-no-1-team-again/",
+   "summary": "South Carolina State is the new No. 1 in the Week 10 Black College Football Poll for Division I, climbing from No. 2 with 438 points and 21 of 22 first-place votes after its 35-28 win over Howard, while Benedict held the Division II lead by just four points over Virginia Union, 324 to 320. Prairie View A&M made the biggest Division I jump, from No. 6 to No. 3 after beating previously top-ranked Alabama A&M, and championship weekend pits Benedict against Kentucky State for the SIAC title and Virginia Union against Johnson C. Smith for the CIAA title."
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-09",
+   "category": "Business",
+   "source": "AfroTech",
+   "headline": "General Partners Kobie Fuller And Monique Idlett Share What They Believe Is 'Backable' In Today's Age",
+   "url": "https://afrotech.com/general-partners-kobie-fuller-and-monique-idlett-share-what-they-believe-is-backable-in-todays-age",
+   "summary": "Venture capitalists Kobie Fuller of Upfront Ventures and Monique Idlett of Reign Ventures told the AFROTECH Conference's Product and Innovation Stage that what counts as backable has tightened, with Fuller warning that application-layer products without technical depth are now a tough category for capital. Idlett said her firm has never chased trends and backs category creators, judging pre-seed companies on product-market fit, founder-team fit, a market of at least $1 billion and whether founders are earning their leadership titles every day."
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-09",
+   "category": "Business",
+   "source": "AfroTech",
+   "headline": "12PM Studios Founder Jeneé Naylor Breaks Down Her Strategy After Making Millions Off Of Sunglasses",
+   "url": "https://afrotech.com/12pm-studios-founder-jenee-naylor-breaks-down-strategy-for-sunglasses-brand",
+   "summary": "Fashion creator Jeneé Naylor told the AFROTECH Conference how she built luxury eyewear brand 12PM Studios, launched in July 2025 with her husband Joshua Prieto as chief financial officer, after finding no legitimate reason for designer sunglasses markups of up to $1,000. She raised $275,000 in investor funding rather than bootstrapping, generated $400,000 in revenue within two weeks of launching, and said the brand was on course for $2 million in its first year, with her focus on raising quality rather than planning an exit."
+  },
+  {
+   "tab": "america",
    "date": "2026-11-09",
    "category": "Politics and Policy",
    "source": "JBizNews",
@@ -1539,7 +1691,7 @@
    "summary": "Week 8 of the HBCU football season shook up both major conferences: Bethune-Cookman beat top-ranked Jackson State 24-21 on a touchdown pass with 40 seconds left, Howard won at Morgan State on an 87-yard interception return in overtime, and Texas Southern walked off Southern with a 46-yard field goal at its 99th homecoming."
   }
  ],
- "updated": "2026-11-09",
+ "updated": "2026-11-10",
  "window_days": 30,
  "categories": [
   "Politics and Policy",
