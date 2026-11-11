@@ -580,7 +580,7 @@
         "title": "9. Sources and Bibliography",
         "questions": [
           {
-            "q": "What did the Perplexity library search establish about Boley?",
+            "q": "What did the research library search establish about Boley?",
             "options": [
               "It produced Boley-specific facts not found anywhere else",
               "Boley appears only as list mentions inside two broader town threads; the library added no Boley-specific dated facts, and the audit caught one misfiling under Boley's name",
@@ -588,7 +588,7 @@
               "It held the only copy of the Boley Progress"
             ],
             "answer": 1,
-            "explain": "The dossier states the gap plainly: Boley's dated facts come from Washington, the Oklahoma Historical Society, and NPS records, not from the Perplexity library."
+            "explain": "The dossier states the gap plainly: Boley's dated facts come from Washington, the Oklahoma Historical Society, and NPS records, not from the research library."
           }
         ]
       }
@@ -1160,7 +1160,7 @@
         "title": "9. Sources and Bibliography",
         "questions": [
           {
-            "q": "What flag does Section 9 raise about the Perplexity master thread's Eatonville segment?",
+            "q": "What flag does Section 9 raise about the master research thread's Eatonville segment?",
             "options": [
               "It gives the wrong incorporation date",
               "It carries the strong form of the first-town claim, \"oldest self-governing Black town in the United States,\" which conflict 1 narrows; the dossier treats it as evidence of how the claim circulates, not as support for the broad form",
