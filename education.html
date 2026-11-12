@@ -39,6 +39,53 @@
 <div class="rule"></div>
 <h2 class="section-title" data-rv>The pilot collection</h2>
 <p class="section-sub" data-rv>Five towns, five complete dossiers - the first set, finished and verified against the sources. The curriculum is in beta: all five open in full, free, and Sweet Auburn carries the pilot lesson plan. Tap a town to read.</p>
+<!-- town-search:start -->
+<style>
+.town-search{margin:0 0 34px}
+.town-search label{display:block;text-transform:uppercase;letter-spacing:.32em;font-size:.78rem;color:var(--gold);margin-bottom:12px;font-weight:600}
+.town-search input{width:100%;max-width:520px;background:var(--ink-soft);border:1px solid var(--line);border-radius:14px;padding:14px 18px;color:var(--cream);font-family:Inter,sans-serif;font-size:1rem}
+.town-search input::placeholder{color:var(--cream-dim)}
+.town-search input:focus{outline:2px solid var(--gold);outline-offset:2px}
+.town-search .town-search-none{color:var(--cream-dim);margin-top:16px;font-size:1.05rem}
+</style>
+<div class="town-search">
+<label for="town-search-input">Search the towns</label>
+<input type="search" id="town-search-input" placeholder="Search towns by name or state" aria-label="Search towns by name or state" autocomplete="off">
+<p class="town-search-none" id="town-search-none" role="status" hidden>No towns match your search.</p>
+</div>
+<script>
+(function(){
+  var input = document.getElementById('town-search-input');
+  var noneMsg = document.getElementById('town-search-none');
+  if (!input || !noneMsg) return;
+  var grids = Array.prototype.slice.call(document.querySelectorAll('.town-grid'));
+  function cardText(card){
+    var name = card.querySelector('h3');
+    var state = card.querySelector('.state');
+    return ((name ? name.textContent : '') + ' ' + (state ? state.textContent : '')).toLowerCase();
+  }
+  function applyFilter(){
+    var q = input.value.trim().toLowerCase();
+    var anyVisible = false;
+    grids.forEach(function(grid){
+      var heading = grid.previousElementSibling;
+      var visibleInGrid = 0;
+      Array.prototype.forEach.call(grid.querySelectorAll('.town-card'), function(card){
+        var show = !q || cardText(card).indexOf(q) !== -1;
+        card.style.display = show ? '' : 'none';
+        if (show) visibleInGrid++;
+      });
+      var gridShow = !q || visibleInGrid > 0;
+      grid.style.display = gridShow ? '' : 'none';
+      if (heading) heading.style.display = gridShow ? '' : 'none';
+      if (visibleInGrid > 0) anyVisible = true;
+    });
+    noneMsg.hidden = !(q && !anyVisible);
+  }
+  input.addEventListener('input', applyFilter);
+})();
+</script>
+<!-- town-search:end -->
 <h3 class="kicker">Pilot Five</h3>
 <div class="town-grid">
 <a class="town-card" href="dossiers/sweet-auburn.html"><h3>Sweet Auburn</h3><div class="state">Atlanta, Georgia</div><p>The historic Black business district once called the richest Negro street in the world - and the home of the pilot lesson plan.</p><span class="sample-link">Read the full sample dossier &rarr;</span></a>
