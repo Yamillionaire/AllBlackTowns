@@ -4,6 +4,158 @@
  "stories": [
   {
    "tab": "america",
+   "date": "2026-11-13",
+   "category": "Education",
+   "source": "HBCU News",
+   "headline": "More Employers, More Opportunities: Fall Career Fair Connects 766 Students With 89 Partners",
+   "url": "https://hbcunews.com/2026/11/13/more-employers-more-opportunities-fall-career-fair-connects-766-students-with-89-partners/",
+   "summary": "Bowie State University's Fall 2026 Career and Internship Fair connected 766 students and alumni with recruiters from 89 organisations, including Enterprise Mobility, Motorola, Under Armour and WSSC, at the Martin Luther King, Jr. Center on November 4. Hosted by the Engage Center for Experiential Learning and Career Readiness, the fair is part of year-round support that includes resume help, interview preparation and one-on-one career appointments."
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-13",
+   "category": "Sports",
+   "source": "HBCU Gameday",
+   "headline": "HBCU football league's gamble could have NCAA implications",
+   "url": "https://hbcugameday.com/2026/11/12/hbcu-football-leagues-gamble-could-have-ncaa-implications/",
+   "summary": "The CIAA will make history on Friday night, November 13, when Fayetteville State and Virginia State meet in the inaugural Friday Night Blitz at Durham County Memorial Stadium, a third-versus-fourth-place game added to championship weekend with major NCAA Division II playoff implications. Both teams enter 7-3 overall and 6-2 in the CIAA, with Fayetteville State ranked seventh and Virginia State ninth in Super Region 1, from which eight teams reach the playoffs."
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-13",
+   "category": "Technology",
+   "source": "TechCabal",
+   "headline": "Lagos-based AI-powered entertainment company, Vibe Jungle Limited, secures $400,000",
+   "url": "https://techcabal.com/2026/11/13/lagos-based-ai-powered-entertainment-company-vibe-jungle-limited-secures-400000/",
+   "summary": "Lagos-based AI entertainment company Vibe Jungle Limited has reportedly secured $400,000 in founder-led investment, TechCabal reports. Founded in 2023 by chief executive Keziah Aboribo, the company offers a catalogue of pre-cleared music for independent artists and Nollywood productions and is developing an AI-powered platform for video generation and music production, currently in internal testing ahead of a public launch with subscription plans.",
+   "country": "Nigeria"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-13",
+   "category": "Business",
+   "source": "Disrupt Africa",
+   "headline": "8 Nigerian startups bag $4k each at FMYD, Cascador youth founders pitch day",
+   "url": "https://disruptafrica.com/2026/11/13/8-nigerian-startups-bag-4k-each-at-fmyd-cascador-youth-founders-pitch-day/",
+   "summary": "Eight Nigerian startups have each won 5 million naira, about $4,000, in non-dilutive funding at the pitch day of the Founders Programme run by the Federal Ministry of Youth Development through the Nigerian Youth Academy and Cascador. The pilot drew more than 19,000 applications, with 17 founders from 13 states completing a four-week accelerator; the winners are SewPro, Biuda, Sparklean Station Nigeria, Backel Food Services, Shellify, Rekool Access Technology, Agrosavvy Consult and Craft Planet.",
+   "country": "Nigeria"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-13",
+   "category": "Business",
+   "source": "Billionaires.Africa",
+   "headline": "Billionaire Dangote raises Africa investment target to $70bn",
+   "url": "https://www.billionaires.africa/2026/11/13/nigerian-billionaire-aliko-dangote-raises-his-africa-investment-target-to-70-billion/",
+   "summary": "Aliko Dangote, Africa's richest man, has raised his group's planned investment across the continent to $70 billion, $10 billion more than the $60 billion figure he gave on November 4, and says he is considering a 10,000-megawatt power programme that could include Nigeria. Dangote Industries has not said where the power plants would be built, how they would be financed or when they would start, and its announced projects across Africa already add up to more than $35 billion.",
+   "country": "Nigeria"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-13",
+   "category": "Money",
+   "source": "Ghana News Online",
+   "headline": "2027 Budget: Government allocates GH¢389bn for spending, GH¢30bn for New Economy programme",
+   "url": "https://ghananewss.com/2027-budget-government-allocates-gh%C2%A2389bn-for-spending-gh%C2%A230bn-for-new-economy-programme/",
+   "summary": "Finance Minister Dr Cassiel Ato Forson has presented Ghana's 2027 Budget to Parliament, a 389.2 billion cedi spending plan that introduces no new taxes and commits 30 billion cedis to the first year of a four-year, $10 billion New Economy Programme. The budget projects revenue and grants of 323.4 billion cedis, targets growth of at least 5.2 percent in 2027, and announces early redemption of 29 billion cedis in Domestic Debt Exchange Programme bonds due in February 2027.",
+   "country": "Ghana"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-13",
+   "category": "Politics and Policy",
+   "source": "African News Agency",
+   "headline": "Left-wing parties reject ANC coalition with DA, dismiss claims they would return if Ramaphosa resigns",
+   "url": "https://africannewsagency.com/left-wing-parties-reject-anc-coalition-with-da-dismiss-claims-they-would-return-if-ramaphosa-resigns/",
+   "summary": "South Africa's Conference of the Left, including the SACP, EFF, MK Party and Afrika Mayibuye Movement, has warned it will not support ANC-led coalitions with the DA in hung municipalities and has dismissed claims its parties would return to the ANC if President Cyril Ramaphosa resigns. Speaking in Boksburg on Thursday, the grouping, which says it secured just over 20 percent of the vote in the 2026 local elections, also called for the DA and Freedom Front Plus to be removed from the Government of National Unity.",
+   "country": "South Africa"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-13",
+   "category": "Community",
+   "source": "SRN News (Reuters)",
+   "headline": "Six people dead near Kenya's capital after building collapses - Citizen TV",
+   "url": "https://srnnews.com/six-people-dead-near-kenyas-capital-after-building-collapses-citizen-tv/",
+   "summary": "Six people have died after the top floor of a building under construction collapsed on Friday in the Syokimau area southeast of Nairobi, Reuters reports, with five people taken to Imara Daima Hospital. Police disaster chief Duncan Ochieng said all 405 workers on site had been accounted for and the site was closed afterwards, in the latest of 24 building collapses recorded in Kenya in 2026 as of October, more than in any other year this decade.",
+   "country": "Kenya"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-13",
+   "category": "Politics and Policy",
+   "source": "Prime 9ja Online",
+   "headline": "ECOWAS appoints Akufo-Addo to lead Nigeria observer mission",
+   "url": "https://www.prime9ja.com.ng/2026/11/ecowas-appoints-akufo-addo-to-lead.html",
+   "summary": "Former Ghanaian President Nana Addo Dankwa Akufo-Addo will lead 200 ECOWAS observers to monitor Nigeria's presidential and National Assembly elections on January 16, 2027, his office confirmed in a statement dated November 12. The delegation will bring together diplomats, election administrators and representatives of regional institutions and civil society, constituted under ECOWAS's 2001 Supplementary Protocol on Democracy and Good Governance.",
+   "country": "Nigeria"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-13",
+   "category": "Politics and Policy",
+   "source": "Tukio",
+   "headline": "Mudavadi, Mbadi Meet Kenyan Professionals in Ghana During AU Mission",
+   "url": "https://tukio.co.ke/mudavadi-mbadi-meet-kenyan-professionals-in-ghana-during-au-mission/",
+   "summary": "Prime Cabinet Secretary Musalia Mudavadi and Treasury Cabinet Secretary John Mbadi have met Kenyan professionals and businesspeople living in Ghana on Friday, November 13, on the sidelines of the 27th Extraordinary Session of the African Union Executive Council in Accra. The session focuses on sustainable financing of the African Union and its Peace Fund, with Kenya pushing reforms, championed by President William Ruto as AU Champion for Institutional Reform, to reduce the bloc's reliance on external funding.",
+   "country": "Kenya"
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-12",
+   "category": "Sports",
+   "source": "Norfolk State University Athletics",
+   "headline": "Spartans Fall to No. 4 Duke at Echols Hall",
+   "url": "https://nsuspartans.com/news/2026/11/12/womens-basketball-spartans-fall-to-no-4-duke-at-echols-hall.aspx",
+   "summary": "No. 4 Duke scored the first 10 points and beat Norfolk State 85-23 on Thursday night in front of 1,982 fans at Joseph G. Echols Memorial Hall, becoming the first ACC program to play the Spartans at Echols Hall. Toby Fournier led Duke, now 3-0, with 20 points, while Alexis Davis led Norfolk State, now 1-3, with five points and six rebounds, and the Spartans next face Hampton in the Battle of the Bay on Saturday."
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-12",
+   "category": "Sports",
+   "source": "NBC Sports",
+   "headline": "Pegula outlasts Noskova in 3 sets at WTA Finals, knocking out Gauff",
+   "url": "https://www.nbcsports.com/tennis/news/pegula-outlasts-noskova-in-3-sets-at-wta-finals-knocking-out-gauff",
+   "summary": "Jessica Pegula saved a match point and won the final three games to beat Linda Noskova 7-6 (2), 4-6, 7-5 on Thursday night at Indian Wells and reach the WTA Finals semifinals, a result that knocked out Coco Gauff. Earlier, Gauff had rallied from 5-1 down in the second set to beat Marta Kostyuk 6-4, 7-5 despite serving problems and treatment for a stiff back, finishing Group 1 at 2-1 alongside Pegula and Noskova but missing the last four."
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-12",
+   "category": "Business",
+   "source": "EBONY",
+   "headline": "Hanifa Is Back: Anifa Mvuemba on 15 Years in Fashion, Rebuilding Her Brand and What Comes Next",
+   "url": "https://www.ebony.com/hanifa-is-back-anifa-mvuemba-on-15-years-in-fashion-rebuilding-her-brand-and-what-comes-next/",
+   "summary": "Fifteen years after founding Hanifa, designer Anifa Mvuemba is relaunching the independent Black-owned luxury label with a new collection after stepping away from normal operations earlier this year amid public criticism and customer frustrations, following the birth of her second child. Mvuemba told EBONY the brand has added an external customer service team, new manufacturing partners, a third-party logistics provider and a direct purchase model, as she rebuilds the business around longevity and customer trust."
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-12",
+   "category": "Technology",
+   "source": "AfroTech",
+   "headline": "CAA And Ogilvy's New AI Platform Could Clone Celebrities To Create Advertisements",
+   "url": "https://afrotech.com/caa-and-ogilvy-launch-echo-ai-platform-for-celebrity-ads",
+   "summary": "Creative Artists Agency and Ogilvy have launched ECHO, an AI advertising platform built on the CAA Vault, which captures, stores and licenses celebrities' likenesses, voices and intellectual property with their consent. AfroTech reports, citing The Hollywood Reporter, that the companies estimate ECHO could cut production costs by as much as 75 percent and turn a shoot producing eight to 10 assets into 30 to 50 pieces of content, with every advertisement requiring the featured celebrity's approval and carrying an AI watermark."
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-12",
+   "category": "Entertainment",
+   "source": "Montserrat Daily News (EIN Presswire)",
+   "headline": "P-Valley Stars Nicco Annan and Shannon Thornton Headline HBCU First LOOK Film & TV Festival Presented by STARZ",
+   "url": "https://www.montserratdailynews.com/article/956040856-p-valley-stars-nicco-annan-and-shannon-thornton-headline-hbcu-first-look-film-tv-festival-presented-by-starz",
+   "summary": "The 4th Annual HBCU First LOOK Film & TV Festival, presented by STARZ, turned Howard University into a three-day masterclass from November 5 to 7 under the theme How to Be the Next, headlined by P-Valley stars Nicco Annan and Shannon Thornton. The festival's 2026 Film Challenge drew more than 450 submissions, with Florida A&M's Jada Davis winning the $5,000 grand prize for Rooted in Resilience: Black Farmer Perspectives on Land, Loss, and Legacy, and Howard's Mya Delgado and Coppin State's Christian Sutton also winning awards."
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-12",
+   "category": "Sports",
+   "source": "HBCU Sports",
+   "headline": "HBCU Chris-tal ball Week 11: two conference champs to be decided, but will there be a third?",
+   "url": "https://hbcusports.com/2026/11/11/hbcu-chris-tal-ball-week-11-two-conference-champs-to-be-decided-but-will-there-be-a-third/",
+   "summary": "Week 11 of the HBCU football season will crown the CIAA and SIAC champions on Saturday, November 14, with Virginia Union facing Johnson C. Smith in Durham and Kentucky State visiting Benedict, while North Carolina Central's visit to South Carolina State could effectively decide the MEAC race. HBCU Sports' predictions favour South Carolina State, Virginia Union and Benedict in those title contests, with Jackson State also tipped to win at Alabama State in the SWAC."
+  },
+  {
+   "tab": "america",
    "date": "2026-11-12",
    "category": "Politics and Policy",
    "source": "HBCU News",
@@ -1995,7 +2147,7 @@
    "summary": "Week 8 of the HBCU football season shook up both major conferences: Bethune-Cookman beat top-ranked Jackson State 24-21 on a touchdown pass with 40 seconds left, Howard won at Morgan State on an 87-yard interception return in overtime, and Texas Southern walked off Southern with a 46-yard field goal at its 99th homecoming."
   }
  ],
- "updated": "2026-11-12",
+ "updated": "2026-11-13",
  "window_days": 30,
  "categories": [
   "Politics and Policy",
