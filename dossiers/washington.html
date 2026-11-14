@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Washington, Louisiana - Town Dossier - All Black Towns</title>
+<meta name="description" content="The Washington, Louisiana town dossier: Washington, Louisiana.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css?v=20261026-beta">
+<style>
+.dossier h2{font-family:'Playfair Display',serif;font-size:1.55rem;margin:36px 0 12px;color:#f5efe0}
+.dossier h3{font-size:1.15rem;margin:24px 0 8px;color:#e3c76a}
+.dossier p{margin:0 0 14px;line-height:1.68}
+.dossier ul,.dossier ol{margin:0 0 16px 24px;line-height:1.62}
+.dossier li{margin-bottom:7px}
+.facts{background:#1a1712;border:1px solid rgba(201,162,39,.22);border-left:5px solid #c9a227;border-radius:8px;padding:20px 24px 8px;margin:10px 0 14px;color:#f5efe0}
+.facts h2{color:#e3c76a;margin-top:0}
+.beta-banner{background:#1a1712;border:1px solid rgba(201,162,39,.22);border-radius:8px;padding:16px 20px;margin:0 0 26px;line-height:1.55;color:#f5efe0}
+.doss-end{background:#1a1712;border:1px solid rgba(201,162,39,.22);border-radius:8px;padding:20px 24px 8px;margin:34px 0 10px;color:#f5efe0}
+.backlink{display:inline-block;margin:0 0 18px;font-weight:600}
+#progress-bar{position:fixed;top:0;left:0;height:3px;background:#c9a227;width:0;z-index:999}
+.orient{background:#1a1712;border:1px solid #c9a227;color:#f5efe0;border-radius:10px;padding:24px 26px;margin:0 0 22px}
+.orient .meta{font-size:.92rem;letter-spacing:.04em;text-transform:uppercase;color:#e3c76a;margin-bottom:10px}
+.orient .eq{font-family:'Playfair Display',serif;font-size:1.3rem;line-height:1.45;margin:0 0 10px}
+.orient p{line-height:1.6;margin:0 0 14px}
+.orient .fork{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
+.orient .fork a,.orient .fork button{background:#c9a227;color:#0e0c09;border:0;border-radius:6px;padding:10px 16px;font-weight:700;cursor:pointer;text-decoration:none;font-size:.95rem}
+.orient .fork button.ghost{background:transparent;color:#f5efe0;border:1px solid #c9a227}
+#resume-chip{display:none;background:rgba(201,162,39,.14);border:1px solid rgba(201,162,39,.22);color:#f5efe0;border-radius:6px;padding:10px 14px;margin-top:14px;font-size:.95rem}
+#teacher-panel{display:none;background:#1a1712;border:1px solid rgba(201,162,39,.22);border-left:5px solid #c9a227;border-radius:8px;padding:18px 22px 6px;margin:0 0 22px;line-height:1.6;color:#f5efe0}
+.layout{display:grid;grid-template-columns:230px 1fr;gap:34px;align-items:start}
+.rail{position:sticky;top:88px;font-size:.93rem}
+.rail h4{font-size:.78rem;letter-spacing:.09em;text-transform:uppercase;color:#c9a227;margin:0 0 10px}
+.rail a{display:block;padding:7px 10px 7px 12px;color:#d8cdb4;text-decoration:none;border-left:3px solid rgba(201,162,39,.22);line-height:1.35}
+.rail a.active{border-left-color:#c9a227;background:rgba(201,162,39,.12);color:#f5efe0;font-weight:700}
+.rail a .tick{display:inline-block;width:1.1em;color:#c9a227;font-weight:700}
+.rail .rail-tools{margin-top:14px}
+.rail .rail-tools button{background:none;border:1px solid #c9a227;color:#e3c76a;border-radius:6px;padding:6px 10px;cursor:pointer;font-size:.85rem}
+#chapter-bar{display:none}
+.chapter{scroll-margin-top:92px}
+details.deep{scroll-margin-top:92px}
+.chapter > h2{border-bottom:2px solid rgba(201,162,39,.22);padding-bottom:8px}
+.video-embed{margin:22px 0 26px;background:#1a1712;border:1px solid rgba(201,162,39,.22);border-radius:8px;padding:14px 14px 10px}
+.video-embed .video-frame{position:relative;padding-top:56.25%}
+.video-embed iframe{position:absolute;inset:0;width:100%;height:100%;border:0;border-radius:4px}
+.video-embed figcaption{margin-top:10px;color:#e3c76a;font-weight:600;line-height:1.45}
+.recall{background:rgba(201,162,39,.10);border:1px solid rgba(201,162,39,.22);border-radius:8px;padding:14px 18px;margin:20px 0 6px;line-height:1.55;font-size:.97rem;color:#f5efe0}
+.recall strong{color:#e3c76a}
+.chap-nav{display:flex;justify-content:space-between;gap:12px;margin:22px 0 4px;font-weight:600}
+.chap-nav a{color:#e3c76a}
+details.deep{border:1px solid rgba(201,162,39,.22);border-radius:8px;background:#1a1712;margin:26px 0 10px}
+details.deep > summary{font-family:'Playfair Display',serif;font-size:1.3rem;color:#f5efe0;cursor:pointer;padding:16px 20px;list-style:none}
+details.deep > summary::-webkit-details-marker{display:none}
+details.deep > summary::after{content:"+";float:right;color:#c9a227;font-weight:700}
+details.deep[open] > summary::after{content:"\2212"}
+details.deep .deep-body{padding:0 20px 8px}
+details.inline{margin:14px 0}
+details.inline > summary{cursor:pointer;font-weight:700;color:#e3c76a;list-style:none}
+details.inline > summary::-webkit-details-marker{display:none}
+details.inline > summary::after{content:" +";color:#c9a227}
+details.inline[open] > summary::after{content:" \2212"}
+.chapter[hidden]{display:none}
+.cfu{border:1px solid rgba(201,162,39,.22);border-left:5px solid #c9a227;background:rgba(201,162,39,.07);border-radius:8px;padding:16px 20px 10px;margin:26px 0 8px;color:#f5efe0}
+.cfu h3{font-family:'Playfair Display',serif;font-size:1.25rem;margin:0 0 6px;color:#e3c76a}
+.cfu .cfu-intro{color:#d8cdb4;font-size:.95rem;margin:0 0 6px;line-height:1.55}
+.cfu-q{margin:14px 0 6px}
+.cfu-q .qtext{font-weight:700;margin:0 0 8px;line-height:1.5}
+.cfu .opt{display:block;width:100%;text-align:left;background:rgba(245,239,224,.05);border:1px solid rgba(201,162,39,.35);color:#f5efe0;border-radius:6px;padding:9px 12px;margin:6px 0;font:inherit;font-size:.97rem;line-height:1.45;cursor:pointer}
+.cfu .opt:hover{border-color:#c9a227}
+.cfu .opt.picked-right{border-color:#8fbf6a;background:rgba(143,191,106,.16)}
+.cfu .opt.picked-wrong{border-color:#c96a4a;background:rgba(201,106,74,.13);opacity:.8}
+.cfu .opt[disabled]{cursor:default}
+.cfu .feedback{font-size:.95rem;line-height:1.55;margin:8px 0 2px}
+.cfu .feedback.good{color:#c4e2a6}
+.cfu .feedback.try{color:#eec39b}
+.cfu .done-note{margin:12px 0 6px;padding:10px 14px;border:1px dashed #c9a227;border-radius:6px;color:#e3c76a;font-size:.97rem}
+.cfu-key{display:none}
+.rail a.locked{opacity:.48}
+.rail a .lk{float:right;font-size:.8rem}
+#chapter-sheet a.locked{opacity:.55}
+.chap-nav a.locked{opacity:.5}
+#lock-note{background:rgba(201,162,39,.12);border:1px solid #c9a227;border-radius:8px;color:#f5efe0;padding:12px 16px;margin:0 0 18px;line-height:1.55}
+#teacher-controls{display:none;background:#1a1712;border:1px solid rgba(201,162,39,.22);border-left:5px solid #c9a227;border-radius:8px;padding:16px 22px 12px;margin:0 0 22px;line-height:1.6;color:#f5efe0}
+#teacher-controls h3{margin:0 0 6px;font-family:'Playfair Display',serif;color:#e3c76a}
+#teacher-controls p{color:#d8cdb4;font-size:.95rem;margin:0 0 10px}
+#teacher-controls .row{display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+#teacher-controls label{font-size:.97rem;cursor:pointer}
+#teacher-controls button{background:none;border:1px solid #c9a227;color:#e3c76a;border-radius:6px;padding:7px 14px;font:inherit;font-size:.9rem;cursor:pointer}
+.timeline{border-left:2px solid #c9a227;margin:28px 0 10px 4px;padding:2px 0 2px 22px}
+.timeline h3{font-family:'Playfair Display',serif;color:#e3c76a;font-size:1.25rem;margin:0 0 14px}
+.tl-item{position:relative;margin:0 0 13px;line-height:1.5}
+.tl-item::before{content:"";position:absolute;left:-27.5px;top:7px;width:9px;height:9px;border-radius:50%;background:#c9a227}
+.tl-year{font-family:'Playfair Display',serif;font-weight:700;color:#e3c76a;margin-right:9px}
+.tl-text{color:#f5efe0;font-size:.98rem}
+.orient .map-link{margin-top:12px}
+.orient .map-link a{color:#e3c76a;font-weight:600}
+@media (max-width:900px){
+  .layout{grid-template-columns:1fr}
+  .rail{display:none}
+  #chapter-bar{display:flex;position:sticky;top:0;z-index:60;background:#1a1712;border:1px solid rgba(201,162,39,.22);color:#f5efe0;padding:10px 14px;border-radius:6px;justify-content:space-between;align-items:center;margin-bottom:16px}
+  #chapter-bar button{background:#c9a227;color:#0e0c09;border:0;border-radius:5px;padding:6px 12px;font-weight:700;cursor:pointer}
+  #chapter-sheet{display:none;background:#1a1712;border:1px solid rgba(201,162,39,.22);border-radius:8px;padding:10px 16px;margin:-8px 0 16px}
+  #chapter-sheet.open{display:block}
+  #chapter-sheet a{display:block;padding:8px 4px;color:#d8cdb4;text-decoration:none;border-bottom:1px solid rgba(201,162,39,.22)}
+}
+@media print{
+  #progress-bar,.rail,#chapter-bar,#chapter-sheet,.orient .fork,.recall,.chap-nav,.backlink,nav,footer{display:none !important}
+  .layout{grid-template-columns:1fr}
+  .chapter[hidden]{display:block !important}
+  #lock-note,#teacher-controls,.cfu .feedback{display:none !important}
+  .cfu-key{display:block !important}
+  .cfu .opt{display:block;width:100%;background:none;border:0;color:#000;text-align:left;padding:2px 0}
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Washington, Louisiana - Town Dossier - All Black Towns",
+  "description": "The Washington, Louisiana town dossier: Washington, Louisiana.",
+  "url": "https://www.allblacktowns.com/dossiers/washington.html"
+}
+</script>
+</head>
+<body>
+<div class="logo-bg" aria-hidden="true"></div>
+<nav><div class="wrap nav-inner">
+<a class="brand" href="../index.html"><img class="brand-logo" src="../logo-nav.jpg" alt="All Black Towns logo">All <span>Black</span> Towns</a>
+<div class="nav-links">
+<a href="../index.html">Home</a>
+<a href="../towns.html">Towns</a>
+<a href="../map.html">Map</a>
+<a href="../music.html">Music</a>
+<a href="../education.html" class="active">Education</a>
+<a href="../about.html">About</a>
+<a href="../share.html">Share a Town</a>
+</div></div></nav>
+<section class="block"><div class="wrap">
+<a class="backlink" href="../education.html">&larr; Back to Education</a>
+<div class="rule"></div>
+<div id="progress-bar"></div>
+<h2 class="section-title">Washington, Louisiana - Town Dossier</h2>
+<p class="kicker layer-badge">The Complete Curriculum</p>
+<div class="beta-banner"><strong>Dossier published with its chapters.</strong> This is the Washington, Louisiana dossier, published on the Education page with its educational chapters as they are created: Chapter 1, Founding, is the first chapter video to join the page, and each further chapter video is added here as it is completed.</div>
+<div class="orient"><div class="meta">About 16 min read &middot; 3 chapters &middot; More chapters to come</div><p>This dossier follows Washington, Louisiana in order: beginning with its song, then how it was founded, with the remaining chapters added as they are completed. Work through it one chapter at a time: a short check for understanding at the end of each chapter unlocks the next, and the contents rail maps where you are.</p><div class="fork"><a href="#intro">Start reading</a><button type="button" id="teach-btn">Teach this town</button><button type="button" class="ghost" onclick="window.print()">Print / save PDF</button></div><p class="map-link"><a href="../map.html">Find Washington on the map</a></p><div id="resume-chip"></div></div>
+<div id="teacher-controls"><h3>Teacher controls</h3><p>For classroom use on this device. Unlocking opens every chapter for this reader; resetting clears the saved progress and check-for-understanding answers stored on this device.</p><div class="row"><label><input type="checkbox" id="unlock-all"> Unlock all chapters (teacher)</label><button type="button" id="reset-progress">Reset progress</button></div></div>
+<div class="facts"><h2>Key Facts Box</h2>
+<ul>
+<li>Founded: 1764, carried as a CLOSEST ESTIMATE and as a TOWN-ORIGIN anchor. Basis: Washington was founded as the Post of Opelousas in 1764 as a French trading post; the post later became known as Church Landing; the town was incorporated under the current name Washington in 1835 (Wikipedia, "Washington, Louisiana"; National Register nomination for the Washington Historic District, National Park Service). ANCHOR FLAG, stated plainly: 1764 marks the town's origin as a French trading post. It does NOT mark a Black founding. The catalog community's documented presence is post-Civil War Black landowners, on the project's basis.</li>
+<li>Founded by: no single founder is established in the sources consulted. The 1764 act was institutional, not personal: France established the Opelousas Post slightly north of the contemporary city of Opelousas, near present-day Washington. The Black community of the town and parish has no single founder in the record either: it is documented as a population, free people of color in the parish before the Civil War and Black residents, landowners, students, and church members in and around the town across the nineteenth century, rather than as one founding person or family.</li>
+<li>Incorporated: 1835, under the current name Washington (Wikipedia, "Washington, Louisiana").</li>
+<li>Peak population: 1,528 in the 1910 U.S. Census, the highest figure in the decennial series consulted, which runs from 536 in 1860 to 742 in 2020 (U.S. Decennial Census figures as tabulated in Wikipedia, "Washington, Louisiana").</li>
+<li>Population today: 742 in the 2020 U.S. Census, with 382 households and 212 families, and a racial composition of 410 Black or African American residents (55.26 percent, non-Hispanic) (U.S. Census Bureau figures as tabulated in Wikipedia, "Washington, Louisiana").</li>
+<li>Known for: the largest inland port between New Orleans and St. Louis for much of the nineteenth century; the head of steam packet navigation up Bayou Courtableau, with 91 steam packets in the Courtableau trade in 1860 (National Register nomination); the Grimble Bell School, the earliest African American school in St. Landry Parish, opened in the 1830s for the children of free people of color and forced closed by white vigilantes in 1860; the September 13, 1868 meeting in Washington, one of the documented steps into the Opelousas Massacre; and a historic district listed in the National Register on November 15, 1978 that covers about 80 percent of the town and about 260 nineteenth and early twentieth century structures.</li>
+<li>The song: "Washington, Louisiana." Its full lyrics are printed in The Song chapter of this dossier, transcribed from the finished master recording and checked line by line against it.</li>
+</ul></div>
+<div id="lock-note" style="display:none"></div>
+<div id="chapter-bar"><span id="chapter-bar-label">Introduction</span><button type="button" id="chapter-sheet-btn">Contents</button></div><div id="chapter-sheet"><a href="#intro">Introduction</a><a href="#ch7">The Song</a><a href="#ch1">1. Founding</a></div>
+<div class="layout"><aside class="rail"><h4>Chapters</h4><a href="#intro" data-ch="intro"><span class="tick"></span>Introduction</a><a href="#ch7" data-ch="ch7"><span class="tick"></span>The Song</a><a href="#ch1" data-ch="ch1"><span class="tick"></span>1. Founding</a><div class="rail-tools"><button type="button" id="expand-all">Expand all sections</button></div></aside><div class="dossier">
+<section class="chapter" id="intro" data-label="Introduction"><h2>Introduction</h2>
+<ul>
+<li>Town name, State: Washington, Louisiana</li>
+<li>Parish: St. Landry Parish</li>
+<li>Status: still incorporated and inhabited. The town remains governed, with a mayor and council, and it is not a ghost town.</li>
+<li>Dossier version: draft v0.1, 2026-11-09</li>
+</ul>
+<p>Washington is a real, still inhabited town in St. Landry Parish, Louisiana, on Bayou Courtableau, a few miles north of Opelousas, the parish seat. It was not founded as an all-Black town. Its place in this collection rests on a different, documented record: a very old river town, founded as a colonial trading post, in a parish that held one of the largest free populations of color in rural Louisiana before the Civil War, with the parish's earliest African American school inside the town, with a Black majority in the modern census counts, and with post-Civil War Black landownership and commerce carried in the project's record. The founding year carried for this town is 1764, as a closest estimate and a town-origin anchor: it marks the town's beginning as the Post of Opelousas, a French trading post, later called Church Landing. It does not mark a Black founding.</p>
+<p>A note on care: Washington's record includes enslavement in its parish from the 1740s, the forced closing of a Black school by vigilantes in 1860, wartime seizure of supplies, and a central Washington role in the events that led into the Opelousas Massacre of September 28, 1868, one of the bloodiest massacres of the Reconstruction era. This dossier follows the curriculum trauma-informed rule throughout: documented fact first, restrained language, no spectacle.</p>
+<div class="timeline"><h3>Timeline: the story at a glance</h3><div class="tl-item"><span class="tl-year">Early 1740s</span><span class="tl-text">Jean Joseph LeKintrek and Joseph Blainpain, in partnership to trade with the Opelousa Indians, come into the Opelousas country; they bring three enslaved Africans, the first to live in the area on the parish history's account. This is parish history, not town founding: Black presence in this country begins in the record as enslaved presence (Wikipedia, "St. Landry Parish, Louisiana").</span></div><div class="tl-item"><span class="tl-year">1764</span><span class="tl-text">France establishes the Opelousas Post slightly north of the contemporary city of Opelousas, near present-day Washington. Washington is founded as the Post of Opelousas, a French trading post. The project carries 1764 as a closest estimate and a town-origin anchor; it does not mark a Black founding (Wikipedia, "Washington, Louisiana"; "St. Landry Parish, Louisiana").</span></div><div class="tl-item"><span class="tl-year">1822</span><span class="tl-text">the post becomes known as Church Landing, the name tied to the first church at the landing on Bayou Courtableau (Wikipedia, "Washington, Louisiana").</span></div><div class="tl-item"><span class="tl-year">1830s</span><span class="tl-text">the Grimble Bell School is established in Washington as a private school for African American students, the earliest African American school in St. Landry Parish; at its peak it enrolls up to 125 students (Wikipedia, "Grimble Bell School").</span></div><div class="tl-item"><span class="tl-year">1835</span><span class="tl-text">Washington is incorporated under its current name (Wikipedia, "Washington, Louisiana").</span></div><div class="tl-item"><span class="tl-year">1860</span><span class="tl-text">white vigilantes force the Grimble Bell School closed. In the same year, an 1860 tabulation counts 91 steam packets operating in the Bayou Courtableau trade, and the U.S. Census counts 536 people in Washington (Wikipedia, "Grimble Bell School"; National Register nomination; U.S. Decennial Census).</span></div><div class="tl-item"><span class="tl-year">September 13, 1868</span><span class="tl-text">Republicans hold a meeting in Washington; the Seymour Knights, the local chapter of the Knights of the White Camellia, line the streets armed, and a misfired rifle nearly causes a riot before the meeting ends peacefully. Fifteen days later, on September 28, 1868, the violence reaches Opelousas in the Opelousas Massacre (Wikipedia, "Opelousas massacre"; Smithsonian Magazine, September 28, 2018).</span></div><div class="tl-item"><span class="tl-year">1877</span><span class="tl-text">a tabulation of goods shipped from Washington to New Orleans records 30,000 bales of cotton, 32,000 sacks of cotton seed, 3,000 hogsheads of sugar, and 15,000 head of cattle (National Register nomination, 1877 tabulation).</span></div><div class="tl-item"><span class="tl-year">May 1900</span><span class="tl-text">the Warren, the last Courtableau steamer, leaves Washington (St. Landry Parish History mural plaque text; Town of Washington newsletter, February 2023).</span></div><div class="tl-item"><span class="tl-year">1910</span><span class="tl-text">the U.S. Census counts 1,528 people in Washington, the highest count in the decennial series consulted (U.S. Decennial Census).</span></div><div class="tl-item"><span class="tl-year">November 15, 1978</span><span class="tl-text">the Washington Historic District is added to the National Register of Historic Places, covering about 210 acres, about 80 percent of the town, and about 260 historic structures (National Register nomination; Wikipedia).</span></div><div class="tl-item"><span class="tl-year">2020</span><span class="tl-text">the U.S. Census counts 742 people in Washington, 55.26 percent of them Black or African American (U.S. Census Bureau).</span></div></div><div class="cfu" data-chapter="intro"><h3>Check for understanding</h3><p class="cfu-intro">Answer every question correctly to unlock the next chapter. A wrong answer is fine: re-read the chapter and try again.</p><div class="cfu-q" data-q="0"><p class="qtext">What is Washington, Louisiana today?</p><button type="button" class="opt" data-o="0">A ghost town preserved as a historic site</button><button type="button" class="opt" data-o="1">A still incorporated and inhabited town in St. Landry Parish, governed by a mayor and council</button><button type="button" class="opt" data-o="2">An unincorporated landing with no resident population</button><button type="button" class="opt" data-o="3">A neighborhood inside the city of Opelousas</button><p class="feedback" hidden></p></div><div class="done-note" hidden></div><div class="cfu-key"><h4>Answer key</h4><ol><li><strong>What is Washington, Louisiana today?</strong> Correct answer: A still incorporated and inhabited town in St. Landry Parish, governed by a mayor and council. The header records Washington as still incorporated and inhabited: the 2020 U.S. Census counts 742 people in the town, 55.26 percent of them Black or African American.</li></ol></div></div><div class="chap-nav"><span></span><a href="#ch7">Next: The Song &rarr;</a></div></section>
+<section class="chapter" id="ch7" data-label="The Song"><h2>The Song</h2><p class="song-blurb">Washington is a St. Landry Parish steamboat town where Black landowners kept farms and river landings near Bayou Courtableau after the Civil War. It remains a key site of Black landownership and commerce in bayou country.</p><div class="song-lyrics"><h3>Lyrics</h3>
+<h4>Verse 1</h4><p class="lyric-stanza">Bayou whispers millions, steamboat ledgers in the gray,<br>
+Washington's still breathing what the history won't say.<br>
+Opelousas current, carry secrets to the cell,<br>
+Black architects built the port, now the waters tell.<br>
+1720 people, that's the transaction, native treaty,<br>
+Slave muscle, dude, let you drag your steamboat,<br>
+Engines rumble like the truth, coming home,<br>
+Quarter blow, Bayou deep, ship the Southern Long,<br>
+Grimble Bell doors swing wide, depression, kids inside,<br>
+White terror, close the books, fear they couldn't hide.<br>
+Church Landing, candles flicker, immaculate let us glow,<br>
+Black longshoremen build the wealth while the credits don't show.<br>
+Port post steady, New Orleans westbound freight,<br>
+Every bell got ancestors woven in the wake.<br>
+Creole minds bend destiny under oil and land flame,<br>
+Mother Mary time power, that's the Washington name.</p><h4>Hook</h4><p class="lyric-stanza">Rose up where the current meets the Mississippi plain,<br>
+Black bear rock holding everything, feel the strength.<br>
+Washington's soul, why you keep the rhythm right?<br>
+Steamboat spirits say we still in this fight.<br>
+Flames never died where the bloodline ignite,<br>
+Port City heartbeat, thump thump, every night.<br>
+Washington Post, water got a story to share,<br>
+Shackles to steam, power floating through the air.<br>
+Every dock plank holding memories somewhere,<br>
+Preach loud, stand tall, we still here.</p><h4>Verse 2</h4><p class="lyric-stanza">Sixty-three, General Banks land, audit the whole town,<br>
+Blue coats confiscate, reparations upside down.<br>
+Reconstruction morning, ballot boxes finally open wide,<br>
+Seymour Knights, night riders answer with the genocide.<br>
+Quarter thousand souls, maybe more, nobody kept exact score,<br>
+White Camellia painted crimson at the crack of dawn's door.<br>
+Final whistle screaming, 1900 steam age deceased,<br>
+Railroad repossessed the future, commerce ceased, population<br>
+Hemorrhaging, but Creole bloodline stayed.<br>
+Weathered timber homes lean, every nail got something to say,<br>
+Poverty moving, gradual head counting decline,<br>
+Elder voices on the gallery stitching up the timeline.<br>
+Visitors chase nostalgia, skip the actual price,<br>
+Black sweat equity under every beam splice.<br>
+Washington ain't silent, just strategic with the plan,<br>
+Bayou balance, the accounts, whole world understand.<br>
+Burn down the schoolhouse, bullet in the ballot box,<br>
+Steamboats abandon us, left a paradox.<br>
+But the water still remember every drop of work,<br>
+Every molecule a witness, Louisiana berserk.</p><h4>Hook</h4><p class="lyric-stanza">Washington's soul, why you keep the rhythm right?<br>
+Steamboat spirits say we still in this fight.<br>
+Flames never died where the bloodline ignite,<br>
+Port City heartbeat, thump thump, every night.<br>
+Washington Post, water got a story to share,<br>
+Shackles to steam, power floating through the air.<br>
+Every dock plank holding memories somewhere,<br>
+Preach loud, stand tall, we still here.</p><h4>Verse 3</h4><p class="lyric-stanza">Grimble kids holding hope like chalk dust in they fists,<br>
+Klan torched the building, but couldn't burn the list.<br>
+Steamboat bass notes calling names across the century,<br>
+Every atrocity, circle back to a win in the end.<br>
+Bayou current cleanse the stone where the violence was,<br>
+Creole porches still standing just because.<br>
+Railroads throw the commas, numbers looking grim,<br>
+Black Washington steady, saying we already did this, slim.<br>
+Washington's soul, let the value amplify the sound,<br>
+For the dock workers loading under terror all around,<br>
+For the Grimble spirits learning how to stand their ground,<br>
+Black port infinite, call the road profane.<br>
+Washington hum, Washington breed the proof,<br>
+Opelousas trading posts to the future truth,<br>
+Every broken chain echo where the water moves,<br>
+While you testify clear, we ascend, we groove, we prove.</p>
+</div>
+<p>The lyrics above are printed from the finished master recording of "Washington, Louisiana," transcribed from the audio and checked line by line against it. The lyrics are human-written; the music and arrangement are the project's own.</p>
+<div class="recall"><strong>Quick recall.</strong> Before you move on, say it back without scrolling up: which people, places, or decisions from this chapter matter most, and why? Then glance back and check yourself.</div><div class="cfu" data-chapter="ch7"><h3>Check for understanding</h3><p class="cfu-intro">Answer every question correctly to unlock the next chapter. A wrong answer is fine: re-read the chapter and try again.</p><div class="cfu-q" data-q="0"><p class="qtext">Which waterway made Washington a steamboat town?</p><button type="button" class="opt" data-o="0">The Mississippi River</button><button type="button" class="opt" data-o="1">Bayou Courtableau</button><button type="button" class="opt" data-o="2">Bayou Lafourche</button><button type="button" class="opt" data-o="3">The Atchafalaya River</button><p class="feedback" hidden></p></div><div class="done-note" hidden></div><div class="cfu-key"><h4>Answer key</h4><ol><li><strong>Which waterway made Washington a steamboat town?</strong> Correct answer: Bayou Courtableau. Washington stands on Bayou Courtableau and was the head of steam packet navigation up the bayou; an 1860 tabulation counts 91 steam packets in the Courtableau trade (National Register nomination).</li></ol></div></div><div class="chap-nav"><a href="#intro">&larr; Introduction</a><a href="#ch1">Next: 1. Founding &rarr;</a></div></section>
+<section class="chapter" id="ch1" data-label="1. Founding"><h2>1. Founding</h2><!-- TYuSsJ-EQNs: substitute the Unlisted YouTube video ID for "Founding: Washington, Chapter 1 (Educational Version)" before this page is pushed. --><figure class="video-embed"><div class="video-frame"><iframe src="https://www.youtube.com/embed/TYuSsJ-EQNs" title="Founding: Washington, Chapter 1 (Educational Version)" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><figcaption>Watch: Founding: Washington, Chapter 1 (Educational Version)</figcaption></figure>
+<p>Washington was not founded once. It was founded in layers: a colonial trading post, a church landing, a steamboat port town, and only in 1835 a municipality under the name Washington. This chapter keeps the layers separate, because the record does.</p>
+<p>The deepest layer in the sources consulted is human presence and trade before any post. The parish history records that Jean Joseph LeKintrek and Joseph Blainpain, in partnership to trade with the Opelousa Indians, came into the Opelousas country in the early 1740s and brought three enslaved Africans, the first to live in the area on that account (Wikipedia, "St. Landry Parish, Louisiana"). Two things must be said plainly about that entry. First, it is parish history, not town history: it places enslaved Africans in the Opelousas country a generation before the 1764 post, and it does not place them in a town that did not yet exist in that form. Second, it establishes the moral ground of the whole dossier: from the first dated record consulted, Black presence in this country is present as enslaved presence, brought by traders. The free Black community that later fills this record, the planters, the school, the church, grew in the same country against that beginning. Neither fact cancels the other, and the curriculum teaches both.</p>
+<p>The post itself is dated 1764 in the records the project relies on. Washington was founded as the Post of Opelousas in 1764 as a French trading post (Wikipedia, "Washington, Louisiana"). The parish history states the same institutional act from the other side: in 1764 France established the Opelousas Post slightly north of the contemporary city of Opelousas, near present-day Washington (Wikipedia, "St. Landry Parish, Louisiana"). The project carries 1764 as a closest estimate, on exactly this basis, and flags the number everywhere it appears: 1764 is a town-origin anchor. It does not mark a Black founding.</p>
+<p>Between the post and the town sits the church. Priests traveled by boat to the community to hold Mass beginning in the 1750s, coming and going for years without a church building, until the first church stood at the landing, named in Spanish for the Immaculate Conception of the Post of Opelousas. A church at the landing is what gave the place its second name, Church Landing, and the parish that became Immaculate Conception began here before it was later moved to Opelousas. The name sequence, on the combined record, is therefore: Post of Opelousas (1764, carried), Church Landing (the name tied to the first church, dated as a name to 1822 in the Wikipedia town history), and Washington (incorporation, 1835). Wikipedia states the sequence in one sentence: founded as the Post of Opelousas in 1764, the post later became known as Church Landing in 1822, and in 1835 the town was incorporated under the current name (Wikipedia, "Washington, Louisiana").</p>
+<p>Land, in the founding sense, Washington never had a Black founding purchase to record, and this dossier says so rather than reaching for one. There is no townsite purchase by Black founders, no homestead colony, no allotment, and no Exoduster migration in any source consulted.</p>
+<p>The land story that is documented runs the other way, and it belongs in this chapter because it is the ground the Black community stood on: fertile parish land well suited to agriculture and cattle raising, a bayou route to New Orleans cleared by subscription in the 1790s, and plantations whose produce made the port (National Register nomination). Inside that plantation country, free people of color in St. Landry Parish held land and wealth on a scale the record singles out: outside New Orleans, St. Landry and Natchitoches Parishes had the largest numbers of free people of color, and French-speaking free people of color lived in rural areas especially in St. Landry, Natchitoches, Pointe Coupee, and St. Martin Parishes (64 Parishes, "Free People of Color"). The founding chapter therefore ends where the evidence ends: the post is 1764 on the carried estimate, the Black community's presence in the parish is documented from the colonial period forward, and a Washington-specific Black founding act is not established.</p>
+<div class="recall"><strong>Quick recall.</strong> Before you move on, say it back without scrolling up: which people, places, or decisions from this chapter matter most, and why? Then glance back and check yourself.</div><div class="cfu" data-chapter="ch1"><h3>Check for understanding</h3><p class="cfu-intro">Answer every question correctly to unlock the next chapter. A wrong answer is fine: re-read the chapter and try again.</p><div class="cfu-q" data-q="0"><p class="qtext">What does the founding year 1764 mark for Washington?</p><button type="button" class="opt" data-o="0">A Black founding purchase of the townsite</button><button type="button" class="opt" data-o="1">The town's origin as the Post of Opelousas, a French trading post: a closest estimate and a town-origin anchor, not a Black founding</button><button type="button" class="opt" data-o="2">The year Washington was incorporated under its current name</button><button type="button" class="opt" data-o="3">The year the first steamboat reached the town</button><p class="feedback" hidden></p></div><div class="cfu-q" data-q="1"><p class="qtext">What name sequence does the record give Washington?</p><button type="button" class="opt" data-o="0">Washington from the beginning, renamed once in 1900</button><button type="button" class="opt" data-o="1">Church Landing first, then the Post of Opelousas, then Washington</button><button type="button" class="opt" data-o="2">Post of Opelousas, then Church Landing, then Washington, incorporated under that name in 1835</button><button type="button" class="opt" data-o="3">Opelousas, then Washington, then Church Landing</button><p class="feedback" hidden></p></div><div class="done-note" hidden></div><div class="cfu-key"><h4>Answer key</h4><ol><li><strong>What does the founding year 1764 mark for Washington?</strong> Correct answer: The town's origin as the Post of Opelousas, a French trading post: a closest estimate and a town-origin anchor, not a Black founding. Washington was founded as the Post of Opelousas in 1764 as a French trading post, and France established the post near present-day Washington the same year. No Black founding purchase stands in the record.</li><li><strong>What name sequence does the record give Washington?</strong> Correct answer: Post of Opelousas, then Church Landing, then Washington, incorporated under that name in 1835. Founded as the Post of Opelousas in 1764, the post later became known as Church Landing, and in 1835 the town was incorporated under the current name Washington.</li></ol></div></div><div class="chap-nav"><a href="#ch7">&larr; The Song</a><span></span></div></section>
+</div></div>
+<div class="doss-end"><p><strong>More dossiers:</strong> the five pilot dossiers and the growing set of town dossiers published with their chapters are open on the <a href="../education.html">Education page</a>.</p></div>
+</div></section>
+<footer><div class="wrap">
+<a class="brand" href="../index.html"><img class="brand-logo" src="../logo-nav.jpg" alt="All Black Towns logo">All <span>Black</span> Towns</a>
+<p style="margin-top:12px">A creative universe built on the true history of America's Black towns -<br>one town, one song, one story at a time.</p>
+<p style="margin-top:14px; opacity:.6">&copy; 2026 All Black Towns. All rights reserved.</p>
+</div></footer>
+<script>window.ABT_CFU = {"chapters": {"intro": {"questions": [{"answer": 1, "explain": "The header records Washington as still incorporated and inhabited: the 2020 U.S. Census counts 742 people in the town, 55.26 percent of them Black or African American."}]}, "ch7": {"questions": [{"answer": 1, "explain": "Washington stands on Bayou Courtableau and was the head of steam packet navigation up the bayou; an 1860 tabulation counts 91 steam packets in the Courtableau trade (National Register nomination)."}]}, "ch1": {"questions": [{"answer": 1, "explain": "Washington was founded as the Post of Opelousas in 1764 as a French trading post, and France established the post near present-day Washington the same year. No Black founding purchase stands in the record."}, {"answer": 2, "explain": "Founded as the Post of Opelousas in 1764, the post later became known as Church Landing, and in 1835 the town was incorporated under the current name Washington."}]}}};</script>
+
+<script>
+(function(){
+  var KEY = 'abt-v2-washington-full';
+  var CFU = window.ABT_CFU || null;
+  var state = {done: []};
+  try {
+    var stored = JSON.parse(localStorage.getItem(KEY));
+    if (stored) { for (var k in stored) state[k] = stored[k]; }
+  } catch(e) {}
+  if (!state.done) state.done = [];
+  if (CFU) {
+    if (!state.cfu) state.cfu = {};
+    state.teacherUnlock = !!state.teacherUnlock;
+    if (!('current' in state)) state.current = null;
+  }
+  var chapters = Array.prototype.slice.call(document.querySelectorAll('.chapter'));
+  var railLinks = {};
+  document.querySelectorAll('.rail a[data-ch]').forEach(function(a){ railLinks[a.getAttribute('data-ch')] = a; });
+  function save(){ try { localStorage.setItem(KEY, JSON.stringify(state)); } catch(e) {} }
+  function paintTicks(){
+    chapters.forEach(function(ch){
+      var a = railLinks[ch.id];
+      if (a) { var t = a.querySelector('.tick'); if (t) t.textContent = state.done.indexOf(ch.id) >= 0 ? '\u2713' : ''; }
+    });
+  }
+  function cfuPassed(cid){
+    if (!CFU) return false;
+    var c = CFU.chapters[cid];
+    if (!c) return true;
+    var got = state.cfu[cid] || [];
+    return c.questions.every(function(q, i){ return got[i] === true; });
+  }
+  function isUnlocked(i){
+    if (!CFU) return true;
+    if (state.teacherUnlock) return true;
+    if (i <= 0) return true;
+    return cfuPassed(chapters[i - 1].id);
+  }
+  function chapterIndex(el){ return chapters.indexOf(el); }
+  var note = document.getElementById('lock-note');
+  function hideNote(){ if (note) note.style.display = 'none'; }
+  function showNote(target){
+    if (!note) return;
+    var label = target.getAttribute('data-label') || target.id;
+    note.innerHTML = '<strong>' + label + ' is locked for now.</strong> Answer the check for understanding questions at the end of the previous chapter to unlock it.';
+    note.style.display = 'block';
+    note.scrollIntoView({behavior: 'smooth', block: 'center'});
+  }
+  function paintLocks(){
+    if (!CFU) return;
+    document.querySelectorAll('a[href^="#"]').forEach(function(a){
+      var t = document.querySelector(a.getAttribute('href'));
+      if (t && t.classList.contains('chapter')) {
+        var locked = !isUnlocked(chapterIndex(t));
+        a.classList.toggle('locked', locked);
+        if (a.hasAttribute('data-ch')) {
+          var lk = a.querySelector('.lk');
+          if (locked && !lk) { lk = document.createElement('span'); lk.className = 'lk'; lk.textContent = '\uD83D\uDD12'; a.appendChild(lk); }
+          if (!locked && lk) lk.remove();
+        }
+      }
+    });
+  }
+  function setActive(id){
+    chapters.forEach(function(ch){
+      var a = railLinks[ch.id];
+      if (a) a.classList.toggle('active', ch.id === id);
+    });
+    var sheetLabel = document.getElementById('chapter-bar-label');
+    var target = document.getElementById(id);
+    if (sheetLabel && target) sheetLabel.textContent = target.getAttribute('data-label');
+  }
+  function showChapter(id, scroll){
+    var target = document.getElementById(id);
+    if (!target) return;
+    chapters.forEach(function(ch){
+      if (ch.id === id) {
+        ch.removeAttribute('hidden');
+        if (ch.tagName === 'DETAILS') ch.open = true;
+      } else {
+        ch.setAttribute('hidden', '');
+      }
+    });
+    document.querySelectorAll('.chap-nav[data-for]').forEach(function(n){
+      if (n.getAttribute('data-for') === id) n.removeAttribute('hidden');
+      else n.setAttribute('hidden', '');
+    });
+    state.current = id; save();
+    setActive(id);
+    hideNote();
+    if (scroll !== false) {
+      var layout = document.querySelector('.layout');
+      if (layout) {
+        var y = layout.getBoundingClientRect().top + window.pageYOffset - 84;
+        window.scrollTo(0, Math.max(0, y));
+      }
+    }
+  }
+  var chip = document.getElementById('resume-chip');
+  if (chip && CFU) {
+    var passedCount = chapters.filter(function(c){ return cfuPassed(c.id); }).length;
+    var nextU = null;
+    chapters.forEach(function(c, i){ if (!nextU && isUnlocked(i) && !cfuPassed(c.id)) nextU = c; });
+    if (passedCount > 0 && nextU) {
+      chip.style.display = 'block';
+      chip.innerHTML = 'Welcome back. You left off at <strong>' + nextU.getAttribute('data-label') + '</strong>. <a href="#' + nextU.id + '">Continue there \u2192</a>';
+    }
+  } else if (chip && state.done.length) {
+    var next = chapters.filter(function(c){ return state.done.indexOf(c.id) < 0; })[0];
+    if (next) {
+      var label = next.getAttribute('data-label');
+      chip.style.display = 'block';
+      chip.innerHTML = 'Welcome back. You left off at <strong>' + label + '</strong>. <a href="#' + next.id + '">Continue there \u2192</a>';
+    }
+  }
+  if (CFU) {
+    chapters.forEach(function(ch){
+      if (cfuPassed(ch.id) && state.done.indexOf(ch.id) < 0) state.done.push(ch.id);
+    });
+    save();
+  }
+  paintTicks();
+  paintLocks();
+  var bar = document.getElementById('progress-bar');
+  if (!CFU) {
+    var active = null;
+    var spy = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if (en.isIntersecting) {
+          if (active && railLinks[active]) railLinks[active].classList.remove('active');
+          active = en.target.id;
+          if (railLinks[active]) railLinks[active].classList.add('active');
+          var sheetLabel = document.getElementById('chapter-bar-label');
+          if (sheetLabel) sheetLabel.textContent = en.target.getAttribute('data-label');
+        }
+        var rect = en.target.getBoundingClientRect();
+        if (rect.bottom < window.innerHeight * 0.55 && state.done.indexOf(en.target.id) < 0) {
+          state.done.push(en.target.id); save(); paintTicks();
+        }
+      });
+    }, {rootMargin: '-30% 0px -55% 0px'});
+    chapters.forEach(function(ch){ spy.observe(ch); });
+  }
+  window.addEventListener('scroll', function(){
+    var h = document.documentElement;
+    var max = h.scrollHeight - h.clientHeight;
+    if (bar && max > 0) bar.style.width = (h.scrollTop / max * 100) + '%';
+  }, {passive: true});
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){
+    a.addEventListener('click', function(ev){
+      var t = document.querySelector(a.getAttribute('href'));
+      var sheet = document.getElementById('chapter-sheet');
+      if (sheet) sheet.classList.remove('open');
+      if (CFU && t && t.classList.contains('chapter')) {
+        ev.preventDefault();
+        if (isUnlocked(chapterIndex(t))) showChapter(t.id);
+        else showNote(t);
+        return;
+      }
+      if (t && t.tagName === 'DETAILS') t.open = true;
+    });
+  });
+  var tp = document.getElementById('teacher-panel');
+  var tc = document.getElementById('teacher-controls');
+  var tbtn = document.getElementById('teach-btn');
+  if (tbtn && (tp || tc)) tbtn.addEventListener('click', function(){
+    var opened = null;
+    [tp, tc].forEach(function(el){
+      if (!el) return;
+      el.style.display = el.style.display === 'block' ? 'none' : 'block';
+      if (el.style.display === 'block') opened = el;
+    });
+    if (opened) opened.scrollIntoView({behavior:'smooth', block:'start'});
+  });
+  var ex = document.getElementById('expand-all');
+  if (ex) ex.addEventListener('click', function(){
+    var dets = document.querySelectorAll('details');
+    var anyClosed = Array.prototype.some.call(dets, function(d){ return !d.open; });
+    dets.forEach(function(d){ d.open = anyClosed; });
+    ex.textContent = anyClosed ? 'Collapse all sections' : 'Expand all sections';
+  });
+  var sheetBtn = document.getElementById('chapter-sheet-btn');
+  var sheet = document.getElementById('chapter-sheet');
+  if (sheetBtn && sheet) sheetBtn.addEventListener('click', function(){ sheet.classList.toggle('open'); });
+  if (CFU) {
+    function markCorrect(qEl, cid, qi){
+      var q = CFU.chapters[cid].questions[qi];
+      qEl.querySelectorAll('.opt').forEach(function(b){
+        b.disabled = true;
+        if (+b.getAttribute('data-o') === q.answer) b.classList.add('picked-right');
+      });
+      var fb = qEl.querySelector('.feedback');
+      fb.hidden = false; fb.className = 'feedback good'; fb.textContent = q.explain;
+    }
+    function refreshDone(block, cid){
+      var dn = block.querySelector('.done-note');
+      if (!dn) return;
+      if (cfuPassed(cid)) {
+        var idx = -1;
+        chapters.forEach(function(c, i){ if (c.id === cid) idx = i; });
+        dn.hidden = false;
+        dn.textContent = (idx === chapters.length - 1)
+          ? 'Chapter complete. That was the final chapter of this dossier.'
+          : 'Chapter complete. The next chapter is now unlocked.';
+      } else {
+        dn.hidden = true;
+      }
+    }
+    document.querySelectorAll('.cfu').forEach(function(block){
+      var cid = block.getAttribute('data-chapter');
+      var got = state.cfu[cid] || [];
+      block.querySelectorAll('.cfu-q').forEach(function(qEl){
+        var qi = +qEl.getAttribute('data-q');
+        if (got[qi]) markCorrect(qEl, cid, qi);
+      });
+      refreshDone(block, cid);
+    });
+    document.querySelectorAll('.cfu .opt').forEach(function(btn){
+      btn.addEventListener('click', function(){
+        var qEl = btn.closest('.cfu-q');
+        var block = btn.closest('.cfu');
+        var cid = block.getAttribute('data-chapter');
+        var qi = +qEl.getAttribute('data-q');
+        var oi = +btn.getAttribute('data-o');
+        var q = CFU.chapters[cid].questions[qi];
+        if (!state.cfu[cid]) state.cfu[cid] = [];
+        if (state.cfu[cid][qi]) return;
+        var fb = qEl.querySelector('.feedback');
+        if (oi === q.answer) {
+          state.cfu[cid][qi] = true;
+          if (cfuPassed(cid) && state.done.indexOf(cid) < 0) state.done.push(cid);
+          save();
+          markCorrect(qEl, cid, qi);
+          paintTicks(); paintLocks();
+          refreshDone(block, cid);
+        } else {
+          btn.classList.add('picked-wrong');
+          btn.disabled = true;
+          fb.hidden = false; fb.className = 'feedback try';
+          fb.textContent = 'Not quite. Re-read this chapter and try again: the answer is in the text above.';
+        }
+      });
+    });
+    var uc = document.getElementById('unlock-all');
+    if (uc) {
+      uc.checked = !!state.teacherUnlock;
+      uc.addEventListener('change', function(){ state.teacherUnlock = uc.checked; save(); paintLocks(); });
+    }
+    var rp = document.getElementById('reset-progress');
+    if (rp) rp.addEventListener('click', function(){
+      if (window.confirm('Reset all reading progress and check-for-understanding answers on this device?')) {
+        try { localStorage.removeItem(KEY); } catch(e) {}
+        location.reload();
+      }
+    });
+    var startId = null;
+    if (state.current) {
+      var cur = document.getElementById(state.current);
+      if (cur && isUnlocked(chapterIndex(cur))) startId = state.current;
+    }
+    if (!startId) {
+      var firstOpen = null;
+      chapters.forEach(function(c, i){ if (!firstOpen && isUnlocked(i) && !cfuPassed(c.id)) firstOpen = c; });
+      startId = firstOpen ? firstOpen.id : chapters[chapters.length - 1].id;
+    }
+    showChapter(startId, false);
+  }
+  var hiddenBeforePrint = [];
+  window.addEventListener('beforeprint', function(){
+    document.querySelectorAll('details').forEach(function(d){ d.open = true; });
+    if (CFU) {
+      hiddenBeforePrint = [];
+      chapters.forEach(function(ch){
+        if (ch.hasAttribute('hidden')) { hiddenBeforePrint.push(ch.id); ch.removeAttribute('hidden'); }
+      });
+      document.querySelectorAll('.chap-nav[data-for]').forEach(function(n){ n.removeAttribute('hidden'); });
+    }
+  });
+  window.addEventListener('afterprint', function(){
+    if (CFU) {
+      hiddenBeforePrint.forEach(function(id){
+        var el = document.getElementById(id);
+        if (el && id !== state.current) el.setAttribute('hidden', '');
+      });
+      document.querySelectorAll('.chap-nav[data-for]').forEach(function(n){
+        if (n.getAttribute('data-for') !== state.current) n.setAttribute('hidden', '');
+      });
+    }
+  });
+})();
+</script>
+</body></html>
