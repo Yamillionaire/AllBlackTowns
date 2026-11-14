@@ -4,6 +4,158 @@
  "stories": [
   {
    "tab": "america",
+   "date": "2026-11-14",
+   "category": "Sports",
+   "source": "TennisWorldUSA",
+   "headline": "Coco Gauff is youngest player since Maria Sharapova to have 40+ top-10 wins",
+   "url": "https://www.tennisworldusa.org/tennis/news/WTA_Tennis/171476/coco-gauff-is-youngest-player-since-maria-sharapova-to-have-40-top10-wins/",
+   "summary": "Coco Gauff's 6-4, 7-5 win over Marta Kostyuk in her WTA Finals group finale made her the youngest player since Maria Sharapova in 2009 to reach 40 career wins over top-10 opponents, OptaAce figures show. Gauff, 22 and ranked No. 4, rallied from 5-1 down in the second set, saving three set points and winning the last six games, but still missed the semifinals despite a 2-1 group record after Jessica Pegula beat Linda Noskova."
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-14",
+   "category": "Sports",
+   "source": "SI.com",
+   "headline": "CIAA Friday Night Blitz: Fayetteville State Overcomes 21-Point Deficit, Defeats Virginia State",
+   "url": "https://www.si.com/college/hbcu/football/ciaa-friday-night-blitz-fayetteville-state-defeats-virginia-state-2026",
+   "summary": "Fayetteville State erased a 21-point deficit to beat Virginia State 31-29 in the CIAA's inaugural Friday Night Blitz at Durham County Memorial Stadium, John Hernandez-Vargas kicking the winning 30-yard field goal with 1:47 left before Virginia State missed a 29-yarder as time expired. The Broncos, now 8-3 with six straight wins, outgained the Trojans 406-370 and strengthened their NCAA Division II playoff case, while Virginia State fell to 7-4 with a third straight loss."
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-14",
+   "category": "Health",
+   "source": "The Legacy Newspaper",
+   "headline": "New NAACP Report Warns AI Could Deepen Health Disparities in Black Communities",
+   "url": "https://www.legacynewspaper.com/new-naacp-report-warns-ai-could-deepen-health-disparities-in-black-communities/",
+   "summary": "A new NAACP and Sanofi report, AI Fluency is a Challenge on Both Sides of the Exam Room, released at AfroTech 2026 as the third ACE Your Health StoryMap, warns that healthcare deserts, broadband gaps and distrust could stop Black Americans benefiting from AI in medicine. Drawing on input from nearly 23,000 community members, it notes that one in three Americans lives in a healthcare desert, about 3.8 million Black Americans lack a home broadband subscription, and nearly two-thirds of Black adults see racial bias as a major problem in healthcare."
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-14",
+   "category": "Community",
+   "source": "Global Culture Review (EIN Presswire)",
+   "headline": "NEW YORK CITY LANDMARKS SHINE PINK AND BLUE AS JACK AND JILL CELEBRATES THE NEXT GENERATION OF BLACK LEADERS",
+   "url": "https://www.globalculturereview.com/article/956577897-new-york-city-landmarks-shine-pink-and-blue-as-jack-and-jill-celebrates-the-next-generation-of-black-leaders",
+   "summary": "Four New York City buildings, including One World Trade Center, were to light up in pink and blue on November 13-14 as Jack and Jill of America marked its Eastern Region Metropolitan Cluster Area Work Day under the theme Empowered Women, Empowering Generations. Nearly 1,000 mothers, youth and leaders were expected for the two-day gathering, whose Metropolitan Chapter, founded in 1939, has awarded 24 four-year college scholarships since 2020 and provides winter essentials to about 800 New Yorkers a year."
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-14",
+   "category": "Sports",
+   "source": "Pause and Ponder News",
+   "headline": "AFCON qualifiers: Salah scores twice as Egypt hit Malawi for five; Libya stun Tunisia and Kenya hold South Africa",
+   "url": "https://www.pauseandpondernews.com/news/afcon-2027-qualifiers-egypt-5-0-malawi-morocco-5-1-niger-libya-stun-tunisia.html",
+   "summary": "Mohamed Salah scored twice as Egypt beat Malawi 5-0 in Cairo in the AFCON 2027 qualifiers, while Libya stunned Tunisia 2-0, Morocco thrashed Niger 5-1 and Nigeria beat Tanzania 3-1 in Uyo. Kenya held South Africa 2-2 through Ryan Ogam's stoppage-time equaliser, and Ghana won an AFCON qualifier for the first time since November 2023, beating Somalia 2-0, with the return games set for Tuesday.",
+   "country": "Egypt"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-14",
+   "category": "Business",
+   "source": "Brand Icon Image",
+   "headline": "Dangote in Talks with Ghana Over 500,000-Tonne Cocoa Processing Deal",
+   "url": "https://www.brandiconimage.com/2026/11/dangote-in-talks-with-ghana-over-500000.html",
+   "summary": "Nigerian billionaire Aliko Dangote is in talks with Ghana over a proposed deal to process 500,000 metric tonnes of cocoa locally, Finance Minister Dr Cassiel Ato Forson told Joy News, saying Dangote had contacted him and President John Dramani Mahama directly. No terms have been finalised or signed, and the proposal would support Ghana's target of processing at least 50 percent of its cocoa domestically by 2028 and 100 percent by 2030.",
+   "country": "Ghana"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-14",
+   "category": "Technology",
+   "source": "Capital FM",
+   "headline": "Young African innovators develop digital tools to track blood supplies,predict shortages",
+   "url": "https://capitalfm.africa/young-african-innovators-develop-digital-tools-to-track-blood-suppliespredict-shortages/",
+   "summary": "Young innovators from five African countries showcased digital tools to track blood supplies and predict shortages at the Terumo BCT Africa Hackathon 2026 at Strathmore University in Nairobi on November 13. Team Relay, of Kenyan and Nigerian innovators, won the $5,000 top prize for HemoGrid, which helps hospitals find available blood stocks and coordinate transfers, while Kenya's Medibora was second with Providus, a forecasting system usable by dashboard, USSD and SMS, though the prototypes are not yet ready for nationwide use.",
+   "country": "Kenya"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-14",
+   "category": "Sports",
+   "source": "ICC",
+   "headline": "Proteas unveil playing XI for opening Bangladesh Test",
+   "url": "https://www.icc-cricket.com/tournaments/world-test-championship/news/proteas-unveil-playing-xi-for-opening-bangladesh-test",
+   "summary": "South Africa have named their playing XI for the first World Test Championship Test against Bangladesh, starting Sunday in Johannesburg, making two changes to the side that beat Australia. Zubayr Hamza returns at No. 3 for the first time since February 2024 and Dane Paterson joins a pace attack led by Kagiso Rabada, while captain Temba Bavuma leads a side now top of the Test rankings, with the second Test in Centurion from November 23.",
+   "country": "South Africa"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-14",
+   "category": "Politics and Policy",
+   "source": "Nairobi News",
+   "headline": "Ruto, Cabinet Secretaries Make Fresh Government Appointments",
+   "url": "https://nairobinews.co.ke/ruto-cabinet-secretaries-make-fresh-government-appointments/",
+   "summary": "President William Ruto and several Cabinet Secretaries have made a fresh round of appointments and reappointments to Kenyan government institutions and state agencies in a Gazette Notice dated November 13, 2026. Ruto appointed Dr Geoffrey Odundo as Chancellor of Machakos University for five years, while other appointments covered bodies including the Kenya Institute for Public Policy Research and Analysis, the Private Security Regulatory Authority and the Kenya Forest Service, mostly for three-year terms.",
+   "country": "Kenya"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-14",
+   "category": "Justice",
+   "source": "UAN World",
+   "headline": "South African court clears Phala Phala committee to choose a new evidence leader",
+   "url": "https://www.uanworld.com/story/za-section-89-evidence-leader-process-2026",
+   "summary": "The Western Cape High Court has dismissed two applications challenging Parliament's withdrawal of advocate Thandazani Madonsela SC as chief evidence leader for the Section 89 inquiry into President Cyril Ramaphosa, leaving the committee free to choose another appointment. The November 13 judgment, which made no costs order, addressed only the appointment process and not the underlying Phala Phala allegations, and committee chair Makashule Gana says the committee will meet next week to consider a new evidence leader.",
+   "country": "South Africa"
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-13",
+   "category": "Education",
+   "source": "HBCU News",
+   "headline": "Crankstart awards Morgan State University $800,000 to expand reentry scholarships for adult learners",
+   "url": "https://hbcunews.com/2026/11/13/crankstart-awards-morgan-state-university-800000-to-expand-reentry-scholarships-for-adult-learners-2/",
+   "summary": "Morgan State University's Center for Continuing and Professional Studies has received an $800,000 Crankstart Foundation grant to continue reentry scholarships for nontraditional adult learners pursuing their first bachelor's degrees. The four-year award, effective September 1, 2026 through August 31, 2030, extends a partnership running since 2016 that has brought Morgan nearly $2.4 million in scholarship support for returning students, in a state where about 600,000 working-age adults have college credits but no degree."
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-13",
+   "category": "Health",
+   "source": "BusinessWire",
+   "headline": "Wellcome Care Group Marks Successful Launch of Behavioral Health Platform for HBCU Students at AfroTech 2026",
+   "url": "https://www.businesswire.com/news/home/20261113836320/en/Wellcome-Care-Group-Marks-Successful-Launch-of-Behavioral-Health-Platform-for-HBCU-Students-at-AfroTech-2026",
+   "summary": "Wellcome Care Group has launched Wellcome, a digital behavioral health platform connecting HBCU students with licensed clinicians who understand their culture, identity and lived experience, debuting it at AfroTech Conference 2026 in Houston from November 3 to 6. Founded by Jack A. Brown, the platform offers virtual therapy, substance use counseling and care coordination, supported by Wellma, an AI navigation assistant, and began recruiting Black and Brown clinicians at the conference."
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-13",
+   "category": "Technology",
+   "source": "AfroTech",
+   "headline": "Meet Emma, The Black Woman AI Persona Raising Questions About Race, Identity, And Digital Blackface",
+   "url": "https://afrotech.com/emma-ai-persona-sparks-questions-about-black-representation",
+   "summary": "Nuance Labs introduced Emma on November 9, a real-time AI persona presented as a Black woman who converses face to face using facial expressions, gestures and conversational cues, built over 18 months on the company's Nuplex 1.0 audiovisual model. AfroTech reports that Emma's face and voice were licensed from a real actress, but a team video does not visibly identify any Black team members, raising questions about representation, digital Blackface and who shapes AI identities."
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-13",
+   "category": "Business",
+   "source": "AfroTech",
+   "headline": "After 340% Growth Without Outside Ownership, Mifland’s Founder Is Planning The Brand’s First Permanent Store In NYC",
+   "url": "https://afrotech.com/mifland-growth-and-first-permanent-nyc-store-planned",
+   "summary": "Nigerian-American designer Tobi Egberongbe has grown his independent fashion brand Mifland by 340 percent since the pandemic without giving up ownership, selling more than 200,000 products to over 61,000 customers, AfroTech reports. After sold-out pop-ups in New York and Atlanta and collaborations with Nike, the Atlanta Falcons and Sperry, the handcrafted leather goods label, worn organically by LeBron James and Jalen Hurts, is now planning its first permanent store in New York."
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-13",
+   "category": "Technology",
+   "source": "TechMoran",
+   "headline": "Kenya’s Satlyt Among 10 Startups Joining Google’s Applied AI Lab",
+   "url": "https://techmoran.com/2026/11/13/kenyas-satlyt-among-10-african-startups-selected-for-googles-inaugural-applied-ai-lab/",
+   "summary": "Kenya's Satlyt, which recently raised $8 million for software that turns satellites into virtual AI data centers processing data in orbit, is among 10 startups chosen for Google's inaugural Africa Applied AI Lab, announced on November 11 from thousands of applications across more than 45 countries. The cohort, which also includes Nigeria's Intron, Termii and Vendy, Uganda's Crane AI Labs and Senegal's Tolbi, will work with Google engineers on Gemini and Gemma models ahead of a December demo day in Accra.",
+   "country": "Kenya"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-13",
+   "category": "Politics and Policy",
+   "source": "Nsem360",
+   "headline": "“Ghana’s money should buy Ghana’s rice”: Finance minister wants public kitchens tied to local farms by law",
+   "url": "https://nsem360.com/2026/11/13/ghanas-money-should-buy-ghanas-rice-finance-minister-wants-public-kitchens-tied-to-local-farms-by-law/",
+   "summary": "Ghana's Finance Minister Dr Cassiel Ato Forson says the government will amend the Public Procurement Act so institutions spending public money on food must buy from Ghanaian farms, with locally grown rice at a minimum for schoolchildren and uniformed services. Forson told the Citi Breakfast Show on November 13 that the School Feeding Programme and Free Senior High School feeding together spend about GH¢6 billion a year, a market he wants local growers to be able to count on, with sanctions for institutions that ignore the rule.",
+   "country": "Ghana"
+  },
+  {
+   "tab": "america",
    "date": "2026-11-13",
    "category": "Education",
    "source": "HBCU News",
@@ -2147,7 +2299,7 @@
    "summary": "Week 8 of the HBCU football season shook up both major conferences: Bethune-Cookman beat top-ranked Jackson State 24-21 on a touchdown pass with 40 seconds left, Howard won at Morgan State on an 87-yard interception return in overtime, and Texas Southern walked off Southern with a 46-yard field goal at its 99th homecoming."
   }
  ],
- "updated": "2026-11-13",
+ "updated": "2026-11-14",
  "window_days": 30,
  "categories": [
   "Politics and Policy",
