@@ -4,6 +4,130 @@
  "stories": [
   {
    "tab": "america",
+   "date": "2026-11-15",
+   "category": "Sports",
+   "source": "SIAC",
+   "headline": "Benedict Stages Historic Second-Half Rally To Win SIAC Championship",
+   "url": "https://thesiac.com/news/2026/11/15/football-benedict-stages-historic-second-half-rally-to-win-siac-championship.aspx",
+   "summary": "Benedict rallied from 38-14 down in the third quarter to beat Kentucky State 52-45 in overtime in Columbia and win the 2026 SIAC Championship, Demetris McKelvey catching a 25-yard touchdown on the first play of overtime before the Tigers held the Thorobreds scoreless on their possession. Benedict, 10-1 and the No. 1 team in Super Region II, earned the SIAC's automatic NCAA Division II playoff bid, while Kentucky State fell to 8-3 and is expected to take an at-large place."
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-15",
+   "category": "Politics and Policy",
+   "source": "HBCU News",
+   "headline": "Spelman's Roz Brewer and Tyler Perry Join Georgia Governor-Elect's Transition Team",
+   "url": "https://spelman.hbcu.news/story/spelmans-roz-brewer-and-tyler-perry-will-help-a-rattler-buil?mode=listen",
+   "summary": "Spelman College alumna and Fortune 500 executive Roz Brewer and Atlanta entertainment mogul Tyler Perry have been tapped to serve on Georgia Governor-elect Keisha Lance Bottoms' transition team, bringing corporate and creative-industry experience to the planning for the incoming administration. Their roles were not detailed in the report, which frames the appointments as an example of HBCU graduates shaping policy and priorities at the highest levels of state government."
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-15",
+   "category": "Sports",
+   "source": "DataDrivenHBCU",
+   "headline": "Week 11 HBCU Football Recap: Prairie View Wins as Time Expires, Alabama State Upsets Jackson State, and Both SWAC Races Flip",
+   "url": "https://datadrivenhbcu.com/2026/11/15/week-11-hbcu-football-recap-swac-caa-ovc-2026/",
+   "summary": "Week 11 flipped both SWAC races: Ethan Eddins kicked a 43-yard field goal as time expired to give Prairie View A&M a 13-10 win at Arkansas-Pine Bluff and sole possession of the West lead, while Alabama State beat Jackson State 20-13 on an end-zone interception with six seconds left, handing East control to Alabama A&M after its 35-6 win over Texas Southern. Southern, Grambling State, Florida A&M, North Carolina A&T and Tennessee State also won on a Saturday that left both divisions to be settled on November 21."
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-15",
+   "category": "Sports",
+   "source": "Kick Off",
+   "headline": "Michael Olunga looking to break Kenya scoring record against South Africa",
+   "url": "https://www.kickoff.com/world-news/african-football/michael-olunga-looking-to-break-kenya-scoring-record-against-south-africa",
+   "summary": "Kenya striker Michael Olunga can become his country's outright all-time top scorer if he scores against South Africa on Tuesday, after his goal in Friday's 2-2 AFCON 2027 qualifying draw with Bafana Bafana took him to 35 international goals, equalling William Ouma's record. Harambee Stars coach Benni McCarthy praised the veteran, who has just returned from a long injury layoff, for his pressing and for converting a penalty against goalkeeper Ronwen Williams.",
+   "country": "Kenya"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-15",
+   "category": "Technology",
+   "source": "SAnews",
+   "headline": "Working Visit: President Ramaphosa arrives in California",
+   "url": "https://www.sanews.gov.za/south-africa/working-visit-president-ramaphosa-arrives-california",
+   "summary": "President Cyril Ramaphosa arrived in California on Saturday, November 14 to lead a multi-stakeholder South African delegation on a Silicon Valley working visit aimed at strengthening the country's artificial intelligence capabilities and attracting investment. The programme, centred on a South Africa AI Opportunity gathering under the theme Building the African AI Economy, covers frontier AI, robotics, data infrastructure and cloud computing, with the Presidency saying the visit will inform South Africa's approach to developing, adopting and applying the technology.",
+   "country": "South Africa"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-15",
+   "category": "Business",
+   "source": "BusinessDay",
+   "headline": "Dangote Refinery drives Nigeria’s £1bn refined fuel exports to UK",
+   "url": "https://businessday.ng/energy/oilandgas/article/dangote-refinery-drives-nigerias-1bn-refined-fuel-exports-to-uk/",
+   "summary": "Britain bought £1.02 billion of refined petroleum products from Nigeria in the 12 months to June 2026, more than double the year before and 53.5 percent of all UK goods imports from Nigeria, according to the UK government's latest Trade and Investment Factsheet published on November 6. BusinessDay attributes the shift, in which refined fuel overtook crude oil as Nigeria's leading petroleum export to Britain, to the 650,000-barrel-per-day Dangote Petroleum Refinery in Lagos widening its presence in international fuel markets.",
+   "country": "Nigeria"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-15",
+   "category": "Sports",
+   "source": "Concacaf",
+   "headline": "Jamaica Defeats Mexico in Nations League Quarterfinals First Leg",
+   "url": "https://www.concacaf.com/competitions/nations-league/news/jamaica-defeats-mexico-in-nations-league-quarterfinals-first-leg",
+   "summary": "Jamaica beat defending champion Mexico 3-2 at the National Stadium in Kingston on Saturday in the first leg of their Concacaf Nations League quarterfinal, scoring three goals against Mexico for the first time in the Reggae Boyz's history. A Jesús Gallardo own goal, Renaldo Cephas's strike just after halftime and Richard King's penalty put Jamaica 3-0 up before late goals from Gilberto Mora and Julián Quiñones cut the deficit, with the second leg set for Tuesday in Monterrey.",
+   "country": "Jamaica"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-15",
+   "category": "Culture and Arts",
+   "source": "Tringlobe News",
+   "headline": "Jamaica Bids Farewell to Lieutenant Stitchie, a Pioneer in Dancehall and Gospel",
+   "url": "https://tringlobe.news/?p=7722",
+   "summary": "Jamaica said farewell to dancehall and gospel artiste Lieutenant Stitchie at a thanksgiving service in St Andrew on Saturday, November 14, the veteran deejay best known for his 1986 hit Wear Yuh Size having died at Kingston Public Hospital on September 28. A former schoolteacher from Spanish Town's sound-system scene who became a born-again Christian in 1997 and took his delivery into gospel reggae, Stitchie received the Order of Distinction in 2021, and tributes at the Louise Bennett Garden Theatre came from his daughter Johanna Laing, fellow artistes Papa San and Carlene Davis, and Culture Minister Olivia Grange.",
+   "country": "Jamaica"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-15",
+   "category": "Justice",
+   "source": "ChannelOne News",
+   "headline": "Ghana risks political capture by drug cartels if narcotics menace persists – Kutin",
+   "url": "https://channelonenewsonline.com/2026/11/15/ghana-risks-political-capture-by-drug-cartels-if-narcotics-menace-persists-kutin/",
+   "summary": "Security analyst Emmanuel Kutin warned on Channel One TV's The Big Issue on Saturday that drug trafficking cartels could infiltrate Ghana's political parties and eventually influence who becomes president if the country does not confront the growing narcotics trade, pointing to Guinea-Bissau as the path to avoid. His comments followed Spanish authorities' November 11 seizure of 2.6 tonnes of cocaine concealed in a coconut shipment from Ghana, and he urged parties to treat narcotics as a national security issue, tighten political financing, and avoid labelling Ghana a cocaine economy.",
+   "country": "Ghana"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-15",
+   "category": "Culture and Arts",
+   "source": "JAM Radio News",
+   "headline": "Melissa Sigodo wins Global Majority Impact Award for journalism",
+   "url": "https://jamradio.uk/news/2026/11/15/melissa-sigodo-global-majority-impact-award-journalism",
+   "summary": "Journalist Melissa Sigodo, founder of The Community Reporter, received a Global Majority Impact Award for journalism at the inaugural ceremony in Basildon on Saturday, November 14, recognising a year of reporting on policing, healthcare and Black communities across Britain. Her publication's work included prompting West Midlands Police to reopen an investigation into a racist image reported by Leah-Ruth Daniel, covering the campaign to restore a dedicated sickle cell emergency unit at the Royal London Hospital, and a four-part Windrush compensation series following one couple's five-year fight for redress.",
+   "country": "United Kingdom"
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-14",
+   "category": "Sports",
+   "source": "Virginia Union University Athletics",
+   "headline": "VUU WINS CIAA FOOTBALL CHAMPIONSHIP",
+   "url": "https://vuusports.com/news/2026/11/14/football-vuu-wins-ciaa-football-championship.aspx",
+   "summary": "Virginia Union beat Johnson C. Smith 15-14 in Durham on Saturday to win the 2026 CIAA Football Championship, game MVP Ramon Brown sprinting 69 yards for the winning touchdown with 12:37 left after Gage Miller's three first-half field goals had kept the Panthers close. The title is Virginia Union's second in three years and its first 10-win season since 1991, and it carries the CIAA's automatic NCAA Division II playoff berth, with the Panthers' opponent to be named in Sunday's selection show."
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-14",
+   "category": "Sports",
+   "source": "South Carolina State University Athletics",
+   "headline": "THREE-PEAT CHAMPIONS! SC State Captures 21st MEAC Football Title With 38-24 Victory Over NC Central",
+   "url": "https://www.scsuathletics.com/news/2026/11/14/three-peat-champions-sc-state-captures-21st-meac-football-title-with-38-24-victory-over-nc-central.aspx",
+   "summary": "South Carolina State beat North Carolina Central 38-24 in Orangeburg on Saturday to capture its 21st MEAC football championship and its third straight title under head coach Chennis Berry, breaking a 24-24 halftime tie with a 14-point third quarter while holding the Eagles scoreless in the second half. Keely Watson threw three touchdown passes and Malaqhi Jones caught two scores for the Bulldogs, who finished 4-0 in the MEAC at 9-2 overall and earned the conference's berth in the Cricket Celebration Bowl in Atlanta."
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-14",
+   "category": "Education",
+   "source": "HBCU News",
+   "headline": "Dr. Glenda Baskin Glover Urges Congress to Strengthen Morrill Act Funding for HBCUs",
+   "url": "https://tstate.hbcu.news/story/dr-glenda-baskin-glover-says-the-next-congress-should-focus-?mode=listen",
+   "summary": "Tennessee State University President Dr Glenda Baskin Glover is pressing Congress to strengthen Morrill Act funding for historically Black land-grant universities, arguing that the dual system created by the Second Morrill Act of 1890 has never reached funding parity with predominantly white peers. Glover, who has led Tennessee State since 2013 and focused on recovering decades of missing state funding, says closing the gap requires deliberate federal action on appropriations, not just individual institutional efforts."
+  },
+  {
+   "tab": "america",
    "date": "2026-11-14",
    "category": "Sports",
    "source": "TennisWorldUSA",
@@ -97,6 +221,34 @@
    "url": "https://www.uanworld.com/story/za-section-89-evidence-leader-process-2026",
    "summary": "The Western Cape High Court has dismissed two applications challenging Parliament's withdrawal of advocate Thandazani Madonsela SC as chief evidence leader for the Section 89 inquiry into President Cyril Ramaphosa, leaving the committee free to choose another appointment. The November 13 judgment, which made no costs order, addressed only the appointment process and not the underlying Phala Phala allegations, and committee chair Makashule Gana says the committee will meet next week to consider a new evidence leader.",
    "country": "South Africa"
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-13",
+   "category": "Technology",
+   "source": "Inc.",
+   "headline": "AfroTech's Growth Shows the Power of Black Tech Talent",
+   "url": "https://www.inc.com/sophie-meharenna/afrotech-started-with-650-people-now-its-bringing-35000-together-to-shape-the-future-of-tech/91435714",
+   "summary": "Inc. traces AfroTech's growth from a planned 400-person San Francisco gathering in 2016, which drew more than 650, to last week's 10th anniversary conference in Houston, which brought together more than 35,000 people and over 300 speakers. Blavity founder Morgan DeBaun told the magazine the conference, newsroom, recruiting platform and year-round AfroTech Insider membership were each built by starting over as the work evolved, with this year's edition emphasising hands-on AI learning and a new HealthStack programme for clinicians."
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-13",
+   "category": "Technology",
+   "source": "HBCU News",
+   "headline": "Microsoft 365 Outage: What Campuses Should Know",
+   "url": "https://alcorn.hbcu.news/story/microsoft-365-global-outage-campus-technology-readiness-2026",
+   "summary": "A Microsoft 365 outage that began on Thursday, November 12 entered a second day on Friday, disrupting Outlook, Teams, Copilot and other services worldwide, with Reuters reporting 138,058 Downdetector reports at the peak and Microsoft linking the problem to infrastructure supporting Exchange Online while reporting improving availability. HBCU News notes Microsoft's incident notices listed Microsoft 365 Education services as potentially affected, while establishing no outage at any specific HBCU, and frames the episode as a prompt for campuses to review backup communication plans for financial aid, faculty and student-services messages."
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-13",
+   "category": "Technology",
+   "source": "Dealroom News",
+   "headline": "Kenya's Farmerlifeline wins $50K Smart Africa AI farming grant",
+   "url": "https://dealroom.co/news/172499-kenya-s-farmerlifeline-wins-50k-smart-africa-ai-farming-grant/",
+   "summary": "Kenya-based Farmerlifeline Technologies has won the third edition of Smart Africa's Innovate Africa Challenge, securing a $50,000 implementation grant for its artificial intelligence solution for climate-smart agriculture, against 11 finalist teams from Ghana, Kenya, Malawi, Rwanda and Uganda. Its solar-powered AI cameras monitor crops in the field, detect pests and diseases early and send farmers SMS treatment recommendations in local languages, and the team will deploy the system over the next six months after a finalist bootcamp in Kigali, in a competition run with the FAO and Norad support.",
+   "country": "Kenya"
   },
   {
    "tab": "america",
@@ -2299,7 +2451,7 @@
    "summary": "Week 8 of the HBCU football season shook up both major conferences: Bethune-Cookman beat top-ranked Jackson State 24-21 on a touchdown pass with 40 seconds left, Howard won at Morgan State on an 87-yard interception return in overtime, and Texas Southern walked off Southern with a 46-yard field goal at its 99th homecoming."
   }
  ],
- "updated": "2026-11-14",
+ "updated": "2026-11-15",
  "window_days": 30,
  "categories": [
   "Politics and Policy",
