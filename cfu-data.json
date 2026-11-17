@@ -247,26 +247,26 @@
         "title": "7. The Song",
         "questions": [
           {
-            "q": "The song's intro credits Dobbs with the street being the \"richest.\" What does the annotation say is the accurate record?",
+            "q": "In Verse 1, what path does the song trace for Alonzo Herndon?",
             "options": [
-              "Dobbs coined both the name \"Sweet Auburn\" and the \"richest\" line",
-              "Dobbs coined the name \"Sweet Auburn\"; the \"richest\" wording is Fortune magazine's, from 1956",
-              "Fortune coined the name and Dobbs wrote the \"richest\" line",
-              "Neither attribution can be checked against any source"
+              "From the railroad to the mayor's office",
+              "From slavery, to barbering, to Atlanta Life",
+              "From farming to the radio station",
+              "From the ministry to the bank"
             ],
             "answer": 1,
-            "explain": "The annotation calls the intro line a merge of two attributions: Dobbs coined \"Sweet Auburn,\" Fortune printed the \"richest\" wording in 1956, and verse 2 assigns each correctly."
+            "explain": "Verse 1 sings the path in one line: 'Herndon from slavery, barber clip to Atlanta Life.'"
           },
           {
-            "q": "The lyric runs \"1906 riots scatter seeds\" together with \"Wheat Street flip to Auburn.\" What does the annotation say about that sequence?",
+            "q": "In the chorus, what does the song say built the Black city lights?",
             "options": [
-              "Both events happened in 1906, so the line is exact",
-              "The renaming dates to 1893 and Black businesses stood on the street by 1900, so the song compresses the sequence rather than stating the chronology",
-              "The renaming never actually happened",
-              "The riot happened in 1893, the year of the renaming"
+              "Highways and suburbs",
+              "Churches and banks",
+              "Riots and gentrifiers",
+              "Radio waves and newspapers"
             ],
             "answer": 1,
-            "explain": "The massacre did concentrate Black business on the avenue, but the renaming was 1893 and businesses were present by 1900; the annotation names the line a compression, not the chronology."
+            "explain": "The chorus answers it directly: 'Churches and banks built the Black city lights.'"
           }
         ]
       },
@@ -537,26 +537,26 @@
         "title": "7. The Song",
         "questions": [
           {
-            "q": "The lyric names a \"Farmers and Teachers State Bank.\" What does the annotation say?",
+            "q": "What year does the song open with for Boley's founding?",
             "options": [
-              "The name is accurate and appears in the bank's charter",
-              "No such institution appears in any source; the documented name is the Farmers and Merchants Bank, and the lyric line is flagged as an uncorrected error left in the shipped record",
-              "The name was the bank's name after 1932",
-              "The bank was renamed by the town council in 1921"
+              "1907",
+              "1903",
+              "1921",
+              "1889"
             ],
             "answer": 1,
-            "explain": "Section 2 documents the Farmers and Merchants Bank; the annotation marks the lyric's bank name as an error and carries the correction rather than silently rewriting the record."
+            "explain": "The intro and Verse 1 both date it: 'Oklahoma, 1903' and '1903, where the dream begin.'"
           },
           {
-            "q": "Which decline cause in the song is NOT supported by the dossier's record?",
+            "q": "In Verse 2, what does the song say happened after the train left?",
             "options": [
-              "Collapsed farm prices",
-              "Dried-up oil",
-              "The railroad's abandonment in 1939",
-              "The Great Depression"
+              "The town dissolved within a year",
+              "The town never dissolved; it turned deeper, tighter, and evolved",
+              "Everyone moved away to Tulsa",
+              "The banks closed and the town was abandoned"
             ],
             "answer": 1,
-            "explain": "The annotation marks \"dried-up oil\" poetic but not documented; Sections 4 and 5 record the farm economy's collapse, the Depression, and the 1939 rail abandonment."
+            "explain": "Verse 2: 'The train left, but we never dissolved, / We just turned deeper, tighter, evolved.'"
           }
         ]
       },
@@ -823,26 +823,26 @@
         "title": "7. The Song",
         "questions": [
           {
-            "q": "The annotation flags the lyric \"Prayin' with the Osage.\" Why?",
+            "q": "In the hook, what does the song say the founders built their dreams from?",
             "options": [
-              "The Osage are documented as the town's founders",
-              "No source in the dossier mentions the Osage in connection with Nicodemus; the documented help was Kansas Pacific relief supplies shipped free in 1878 to 1879, so the line is carried as unverified",
-              "The line misdates the first winter",
-              "The Osage objected to the song in writing"
+              "Brick and limestone",
+              "Dirt, with no maps, just song",
+              "Railroad money and cattle",
+              "A government land grant office"
             ],
             "answer": 1,
-            "explain": "Under the dossier's rule that religious and descriptive color cannot be presented as history without a source, the Osage line is flagged rather than repeated as fact."
+            "explain": "The hook: 'Built dreams from dirt, no maps, just song.'"
           },
           {
-            "q": "The song says \"we flipped Graham County.\" What does the annotation say actually happened?",
+            "q": "In Verse 1, what were the first homes built from?",
             "options": [
-              "Black voters held every county office by 1882",
-              "Specific offices were won inside a majority-white county (convention delegate, county clerk, justices of the peace, state auditor), and the 1880 county-seat vote was lost to Millbrook, so the phrase overstates a real record",
-              "The county was never contested at any level",
-              "The phrase refers to a land purchase, not politics"
+              "Brick",
+              "Sod",
+              "Limestone blocks",
+              "Railroad ties"
             ],
             "answer": 1,
-            "explain": "The annotation keeps the achievements and corrects the scale: real offices won, a real county-seat loss, inside a county whose population was majority white."
+            "explain": "Verse 1: 'No bricks, just guts, sod homes and faith.'"
           }
         ]
       },
@@ -1117,26 +1117,26 @@
         "title": "7. The Song",
         "questions": [
           {
-            "q": "The lyric calls Eatonville \"the first Black-incorporated town.\" What does the annotation say?",
+            "q": "In Verse 1, what year does the song give for Eatonville's founding moment?",
             "options": [
-              "The claim is exact; no earlier example exists",
-              "It is an overclaim: Brooklyn, Illinois (1873) and Princeville, North Carolina (1885) predate it; the supported claim is among the first self-governing all-Black municipalities in the United States, continuously incorporated since 1887",
-              "The claim fails because Eatonville never incorporated",
-              "The annotation removes the line from the song"
+              "1873",
+              "1887",
+              "1885",
+              "1904"
             ],
             "answer": 1,
-            "explain": "The annotation adjudicates the superlative with the counterexamples and keeps the narrower, documented claim; the correction is carried in print rather than by rewriting the master."
+            "explain": "Verse 1 opens: 'In eighteen eighty-seven, freedom struck a chord.'"
           },
           {
-            "q": "\"Twenty-seven men bought land.\" What does the annotation say that line compresses?",
+            "q": "Which school does Verse 2 name?",
             "options": [
-              "Nothing; 27 men jointly bought the original tract",
-              "It merges the August 15, 1887 incorporation vote, at which 27 registered Black electors voted and elected officers, with the separate land purchases: Clarke's 22 acres from Eaton and a jurisdiction of 112 acres by incorporation",
-              "The 27 were the Hungerford trustees",
-              "The 27 refers to the town council of 1902"
+              "The Moseley School",
+              "The Hungerford School",
+              "Morris Brown College",
+              "Tuskegee Institute"
             ],
             "answer": 1,
-            "explain": "The annotation untangles the compression: 27 electors casting a vote is one documented event, buying land is another, and the line blends them."
+            "explain": "Verse 2: 'While the Hungerford School taught hearts of gold.'"
           }
         ]
       },
@@ -1396,26 +1396,26 @@
         "title": "7. The Song",
         "questions": [
           {
-            "q": "How does the annotation characterize the Rosewood song?",
+            "q": "In the chorus, what does the song say is hidden in the leaves?",
             "options": [
-              "A detailed chronicle naming the victims and dates",
-              "An elegy, not a chronicle: it names no person, gives no date, and states no death toll, so nothing in it can conflict with the record",
-              "A protest song demanding prosecution of the mob",
-              "A summary of the 1994 claims bill"
+              "The ashes",
+              "The fruit",
+              "The paper trails",
+              "The photographs"
             ],
             "answer": 1,
-            "explain": "The annotation says the song mourns the silence around Rosewood rather than attempting its history, and is therefore treated as an elegy on its own terms."
+            "explain": "The chorus repeats it: 'Rosewood, the fruit hidden in the leaves.'"
           },
           {
-            "q": "The lyric \"Families scattered, erased from the map\" matches which documented fact?",
+            "q": "Where does the song say the truth was pressed and hidden?",
             "options": [
-              "Survivors rebuilt together elsewhere in Levy County",
-              "Survivors left by train and on foot, settled in Gainesville, Tampa, Jacksonville, and elsewhere, and never returned to live in Rosewood",
-              "The state removed Rosewood from its maps in 1924",
-              "The families moved as one group to Tulsa"
+              "In a Tallahassee ledger",
+              "In the family bible, hidden from the sun",
+              "Under the church floor",
+              "In a sealed courthouse file"
             ],
             "answer": 1,
-            "explain": "Section 5 documents the permanent dispersal the line describes: evacuation by the Bryce brothers' train, shelter at the Wright house, and no return."
+            "explain": "The line runs: 'Truth pressed in the family bible, hidden from the sun.'"
           }
         ]
       },
