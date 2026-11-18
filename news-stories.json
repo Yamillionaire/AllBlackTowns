@@ -4,6 +4,177 @@
  "stories": [
   {
    "tab": "america",
+   "date": "2026-11-18",
+   "category": "Health",
+   "source": "HBCU News",
+   "headline": "Jeffries endorses lowering Medicare age, adding benefits and universal coverage for kids",
+   "url": "https://hbcunews.com/2026/11/18/jeffries-endorses-lowering-medicare-age-adding-benefits-and-universal-coverage-for-kids/",
+   "summary": "House Minority Leader Hakeem Jeffries, the favourite to become speaker on January 3, said on Tuesday that Democrats should use their new House and Senate majorities to lower the Medicare eligibility age, add dental, vision and hearing benefits, and provide universal health coverage for children. The agenda goes beyond his pre-election plan to undo Medicaid cuts and restore Affordable Care Act tax credits, and Senator Bernie Sanders said it essentially matches the first year of his Medicare for All proposal, including an eligibility age of 55."
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-18",
+   "category": "Technology",
+   "source": "HBCU News",
+   "headline": "HBCU Grad Expands Opportunities For Young Athletes",
+   "url": "https://hbcunews.com/2026/11/18/hbcu-grad-expands-opportunities-for-young-athletes/",
+   "summary": "Lincoln University graduate and former professional basketball player Antonio DePina founded Scoutz in 2024 to connect high school athletes with college coaches and professional teams, combining AI matching with evaluations from experienced scouts. The platform supports about 15,000 athletes, says 400 have advanced to college or professional competition across 15 countries, and has just raised $600,000 in pre-seed funding led by Delaware Seed, taking its total funding to $1 million as it plans to expand from basketball into volleyball, soccer and football."
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-18",
+   "category": "Science",
+   "source": "HBCU News",
+   "headline": "Tuskegee University Opens the Center for Genomics and Health Disparity Research",
+   "url": "https://hbcunews.com/2026/11/18/tuskegee-university-opens-the-center-for-genomics-and-health-disparity-research/",
+   "summary": "Tuskegee University has opened its new Center for Genomics and Health Disparity Research, a 9,600-square-foot facility with molecular and genomics laboratories, research and office space, and computational infrastructure for data analysis. Scientists at the Alabama HBCU will use computational biology, bioinformatics and AI tools to study diseases that disproportionately affect underserved populations and to train the next generation of researchers, dean Channa Prakash said."
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-18",
+   "category": "Technology",
+   "source": "HBCU News",
+   "headline": "Dr. Helen Fischle Brings a Global Perspective and Innovative Technology to Social Work Education",
+   "url": "https://hbcunews.com/2026/11/18/dr-helen-fischle-brings-a-global-perspective-and-innovative-technology-to-social-work-education/",
+   "summary": "Alabama A&M University social work professor Dr Helen Fischle, who grew up in Reading, England, to Jamaican parents and studied at Oakwood University, has been selected to serve on the Council on Social Work Education's inaugural Advisory Board on AI and Technology. Fischle coordinates AAMU's Bachelor of Social Work program and its child welfare simulation lab, which uses AI, virtual reality and mixed reality to train students, and the board will guide how emerging technologies are incorporated into social work education and research."
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-18",
+   "category": "Education",
+   "source": "HBCU News",
+   "headline": "SC State counseling student awarded $9,000 HBCU scholarship",
+   "url": "https://hbcunews.com/2026/11/18/sc-state-counseling-student-awarded-9000-hbcu-scholarship/",
+   "summary": "South Carolina State University graduate student Desia Ryant, an Orangeburg native pursuing a Master of Education in counselor education, has received a $9,000 scholarship through the HBCU LEAP Mentoring Program for 2026-27. The Pre-Career Footsteps Mentoring Corps award, housed in the HBCU Center for Excellence in Behavioral Health at Clark Atlanta University, recognises students preparing for careers in behavioral health and counseling, and Ryant, also a seventh-grade teacher, will give behavioral health presentations and work with a mentor during the year."
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-18",
+   "category": "Education",
+   "source": "InnerCity News",
+   "headline": "From College Dreams to Real Opportunities: Mettle Entertainment & Fixing Fathers, Inc., Takes Students to HBCU College Fair in NYC",
+   "url": "https://theinnercitynews.com/from-college-dreams-to-real-opportunities-mettle-entertainment-fixing-fathers-inc-takes-students-to-hbcu-college-fair-in-nyc/",
+   "summary": "Connecticut students travelled to New York City for the Malcolm Bernard HBCU College Fair on a trip organised by Fixing Fathers, Inc. and Mettle Entertainment Group, and several returned with scholarship offers and on-the-spot college admissions. The students also received information on financial aid, academic programs and campus life, and the organisers gave away more than $200 in cash prizes during the journey."
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-18",
+   "category": "Politics and Policy",
+   "source": "National Urban League",
+   "headline": "Historic Census Undercount of Black Americans Robs Communities of Billions in Funding and Fair Political Representation",
+   "url": "https://NUL.org/index.php/news/historic-census-undercount-of-black-americans-robs-communities",
+   "summary": "The National Urban League is calling for congressional hearings after warning that the 2020 Census undercount of Black Americans could cost Black communities billions of dollars in federal funding and the equivalent of almost three House seats. President and CEO Marc H. Morial said an independent analysis found about 2 million Black Americans went uncounted, with the undercount of Black children up to ten times worse than in 2010, affecting the distribution of about $1.5 trillion across 316 federal programs over the decade."
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-18",
+   "category": "Money",
+   "source": "Reuters",
+   "headline": "South Africa inflation accelerates to 5.2% y/y in October, as expected",
+   "url": "https://www.reuters.com/world/africa/south-africa-inflation-accelerates-52-yy-october-expected-2026-11-18/",
+   "summary": "South Africa's headline consumer inflation rose to 5.2 percent year on year in October from 4.5 percent in September, in line with economists' forecasts, after a sharp increase in domestic petrol and diesel prices. Month on month, inflation was 0.7 percent, up from 0.4 percent in September, with the statistics agency's data underlining the country's exposure to global energy prices because it imports most of its fuel.",
+   "country": "South Africa"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-18",
+   "category": "Business",
+   "source": "Reuters",
+   "headline": "Uganda plans to reach financial close of $2.97 billion rail project in Jan 2027",
+   "url": "https://www.reuters.com/world/africa/uganda-plans-reach-financial-close-297-billion-rail-project-jan-2027-2026-11-18/",
+   "summary": "Uganda expects to reach financial close in January 2027 on its €2.70 billion ($2.97 billion) Standard Gauge Railway, Works and Transport Minister Fred Byamukama told lawmakers on Tuesday. The 272-kilometre line, to be built by Turkey's Yapi Merkezi under a 2024 contract, will connect landlocked Uganda to Kenya's railway to the port of Mombasa, and the government also plans early work on a further 1,425 kilometres of extensions toward South Sudan, DR Congo and Rwanda, with the Islamic Development Bank having approved €650.75 million.",
+   "country": "Uganda"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-18",
+   "category": "Politics and Policy",
+   "source": "Reuters",
+   "headline": "Ethiopia and Eritrea amass forces along border, heightening war fears, sources say",
+   "url": "https://www.reuters.com/world/africa/ethiopia-eritrea-amass-forces-along-border-heightening-war-fears-sources-say-2026-11-18/",
+   "summary": "Ethiopia and Eritrea have massed forces along their shared border, according to conflict monitors ACLED and the International Crisis Group and sources tied to Tigray militias, raising fears of a direct war between the former rivals. ACLED reported artillery exchanges and clashes near Badme since last week as Ethiopia's army moved against Tigrayan rebels near the border, though a pro-government militia source disputed that the two armies had clashed, and Eritrea's information minister dismissed Ethiopian claims as propaganda.",
+   "country": "Ethiopia"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-18",
+   "category": "Sports",
+   "source": "Reuters",
+   "headline": "South Africa to probe treatment of Olympic champion Smith after her defection",
+   "url": "https://www.reuters.com/sports/south-africa-probe-treatment-olympic-champion-smith-after-her-defection-2026-11-18/",
+   "summary": "South Africa's sports minister Gayton McKenzie has ordered an inquiry into the treatment of Olympic swimming champion Tatjana Smith, the country's most decorated Olympian with four medals, after she announced she will represent the Netherlands in future. McKenzie apologised to Smith, whose $35,000 in 2023 World Championships prize money was withheld for 12 months, and asked the South African Sports Confederation and Olympic Committee to investigate Swimming South Africa.",
+   "country": "South Africa"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-18",
+   "category": "Politics and Policy",
+   "source": "BBC News",
+   "headline": "Falcon 6X: Why Ghana is facing backlash over new $60m presidential jet",
+   "url": "https://bbcbreakingnews.pages.dev/news/articles/ck792dez8dp3o",
+   "summary": "Ghana's government has defended taking delivery of a new $60 million French-made Dassault Falcon 6X presidential jet, delivered to the Ghana Air Force on Monday, amid opposition and public criticism over its cost during a cost-of-living squeeze. Parliament approved the purchase last December as part of a military aviation modernisation that also includes four Airbus helicopters; ministers say an improving economy makes it affordable and that it replaces a 16-year-old Falcon 900EX with recurring maintenance problems, while opposition MP Samuel Abu Jinapor questioned the government's priorities and consistency.",
+   "country": "Ghana"
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-17",
+   "category": "Sports",
+   "source": "Louisiana First News",
+   "headline": "Two Southern University esports players advance to national title games",
+   "url": "https://www.louisianafirstnews.com/news/two-southern-university-esports-players-advance-to-national-title-games/",
+   "summary": "Southern University esports players Jaeveon Jordan and Issac Williamson have swept their semifinal opponents to reach the PlayVS College League Fall National Championship Finals in College Football 27, Jordan in Division I and Williamson in Division II. Coach Christopher Turner, director of SU EDGE, called having finalists in both divisions a monumental achievement for HBCU esports, noting research showing Black student-athletes are just 1.3 percent of collegiate esports competitors nationwide; the finals are scheduled for the week of November 30."
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-17",
+   "category": "Community",
+   "source": "HBCU News",
+   "headline": "Morehouse and Spelman's sibling exchange forges lasting bonds between freshmen men and women",
+   "url": "https://hbcunews.com/2026/11/17/morehouse-and-spelmans-sibling-exchange-forges-lasting-bonds-between-freshmen-men-and-women/",
+   "summary": "For more than 40 years, Morehouse College and Spelman College's annual sibling exchange has paired incoming freshmen across the two Atlanta HBCUs, a SpelHouse tradition organised by the schools' student government associations and orientation leaders. Students and alumni say the pairings, made as freshmen line up and cross paths in Morehouse's King Chapel, often become lifelong bonds and support networks that carry through college and into professional life."
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-17",
+   "category": "Sports",
+   "source": "Reuters",
+   "headline": "Atletico Madrid forward Lookman out with high-grade knee sprain",
+   "url": "https://www.reuters.com/sports/soccer/atletico-madrid-forward-lookman-out-with-high-grade-knee-sprain-2026-11-17/",
+   "summary": "Atletico Madrid forward Ademola Lookman suffered a high-grade knee sprain while on international duty with Nigeria, the LaLiga club said on Tuesday, with no recovery timeline given. Nigeria's medical staff had initially called the injury a minor sprain sustained during the Super Eagles' 3-1 Africa Cup of Nations qualifying win over Tanzania on Friday; the 29-year-old, who joined Atletico from Atalanta in February, will undergo physiotherapy and rehabilitation.",
+   "country": "Nigeria"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-17",
+   "category": "Justice",
+   "source": "Reuters",
+   "headline": "Nigeria arrests eight in cocaine gang routing drugs to Europe via Sahara",
+   "url": "https://www.reuters.com/world/africa/nigeria-arrests-eight-cocaine-gang-routing-drugs-europe-via-sahara-2026-11-17/",
+   "summary": "Nigeria's National Drug Law Enforcement Agency says it has dismantled a transnational syndicate that smuggled cocaine from Lagos through Kano and across the Sahara via Niger and Libya to Europe, arresting eight suspected couriers. The suspects, arrested in Lagos and Kano in late October, excreted a total of 634 pellets weighing 13.795 kilograms in custody and told investigators they planned to travel by road to Europe, the agency said.",
+   "country": "Nigeria"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-17",
+   "category": "Business",
+   "source": "Reuters",
+   "headline": "AngloGold Ashanti to invest about $2.5 billion in Colombia copper mine",
+   "url": "https://www.reuters.com/world/africa/anglogold-ashanti-invest-about-25-billion-colombia-copper-mine-2026-11-17/",
+   "summary": "South African miner AngloGold Ashanti plans to invest about $2.5 billion in the Quebradona copper project in Colombia's Antioquia department, conditional on environmental permits, corporate affairs manager Stewart Bailey said at a government event in New York on Tuesday. The mine is expected to produce 80,000 metric tons a year and generate about $1.5 billion a year in exports, with construction due to begin in 2028 once permits are obtained.",
+   "country": "South Africa"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-17",
+   "category": "Politics and Policy",
+   "source": "Flashinfong",
+   "headline": "All 36 States Approve State Police Bill",
+   "url": "https://www.flashinfong.com/state-police-all-36-state-assemblies-approve-constitutional-amendment-as-bill-heads-to-tinubu-for-assent/",
+   "summary": "All 36 Nigerian state Houses of Assembly have approved a constitutional amendment to create state police services alongside a federal police service, Clerk to the National Assembly Kamoru Ogunlana announced on Monday, clearing the way for the bill to go to President Bola Tinubu for assent. The unanimous backing exceeds the 24 states required for a constitutional amendment; states would then need their own laws, funding and recruitment before any state force could operate.",
+   "country": "Nigeria"
+  },
+  {
+   "tab": "america",
    "date": "2026-11-17",
    "category": "Education",
    "source": "HBCU News",
@@ -2755,7 +2926,7 @@
    "summary": "Week 8 of the HBCU football season shook up both major conferences: Bethune-Cookman beat top-ranked Jackson State 24-21 on a touchdown pass with 40 seconds left, Howard won at Morgan State on an 87-yard interception return in overtime, and Texas Southern walked off Southern with a 46-yard field goal at its 99th homecoming."
   }
  ],
- "updated": "2026-11-17",
+ "updated": "2026-11-18",
  "window_days": 30,
  "categories": [
   "Politics and Policy",
