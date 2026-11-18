@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mossville, Louisiana - Town Dossier - All Black Towns</title>
+<meta name="description" content="The Mossville, Louisiana town dossier: Mossville, Louisiana.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css?v=20261026-beta">
+<style>
+.dossier h2{font-family:'Playfair Display',serif;font-size:1.55rem;margin:36px 0 12px;color:#f5efe0}
+.dossier h3{font-size:1.15rem;margin:24px 0 8px;color:#e3c76a}
+.dossier p{margin:0 0 14px;line-height:1.68}
+.dossier ul,.dossier ol{margin:0 0 16px 24px;line-height:1.62}
+.dossier li{margin-bottom:7px}
+.facts{background:#1a1712;border:1px solid rgba(201,162,39,.22);border-left:5px solid #c9a227;border-radius:8px;padding:20px 24px 8px;margin:10px 0 14px;color:#f5efe0}
+.facts h2{color:#e3c76a;margin-top:0}
+.beta-banner{background:#1a1712;border:1px solid rgba(201,162,39,.22);border-radius:8px;padding:16px 20px;margin:0 0 26px;line-height:1.55;color:#f5efe0}
+.doss-end{background:#1a1712;border:1px solid rgba(201,162,39,.22);border-radius:8px;padding:20px 24px 8px;margin:34px 0 10px;color:#f5efe0}
+.backlink{display:inline-block;margin:0 0 18px;font-weight:600}
+#progress-bar{position:fixed;top:0;left:0;height:3px;background:#c9a227;width:0;z-index:999}
+.orient{background:#1a1712;border:1px solid #c9a227;color:#f5efe0;border-radius:10px;padding:24px 26px;margin:0 0 22px}
+.orient .meta{font-size:.92rem;letter-spacing:.04em;text-transform:uppercase;color:#e3c76a;margin-bottom:10px}
+.orient .eq{font-family:'Playfair Display',serif;font-size:1.3rem;line-height:1.45;margin:0 0 10px}
+.orient p{line-height:1.6;margin:0 0 14px}
+.orient .fork{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
+.orient .fork a,.orient .fork button{background:#c9a227;color:#0e0c09;border:0;border-radius:6px;padding:10px 16px;font-weight:700;cursor:pointer;text-decoration:none;font-size:.95rem}
+.orient .fork button.ghost{background:transparent;color:#f5efe0;border:1px solid #c9a227}
+#resume-chip{display:none;background:rgba(201,162,39,.14);border:1px solid rgba(201,162,39,.22);color:#f5efe0;border-radius:6px;padding:10px 14px;margin-top:14px;font-size:.95rem}
+#teacher-panel{display:none;background:#1a1712;border:1px solid rgba(201,162,39,.22);border-left:5px solid #c9a227;border-radius:8px;padding:18px 22px 6px;margin:0 0 22px;line-height:1.6;color:#f5efe0}
+.layout{display:grid;grid-template-columns:230px 1fr;gap:34px;align-items:start}
+.rail{position:sticky;top:88px;font-size:.93rem}
+.rail h4{font-size:.78rem;letter-spacing:.09em;text-transform:uppercase;color:#c9a227;margin:0 0 10px}
+.rail a{display:block;padding:7px 10px 7px 12px;color:#d8cdb4;text-decoration:none;border-left:3px solid rgba(201,162,39,.22);line-height:1.35}
+.rail a.active{border-left-color:#c9a227;background:rgba(201,162,39,.12);color:#f5efe0;font-weight:700}
+.rail a .tick{display:inline-block;width:1.1em;color:#c9a227;font-weight:700}
+.rail .rail-tools{margin-top:14px}
+.rail .rail-tools button{background:none;border:1px solid #c9a227;color:#e3c76a;border-radius:6px;padding:6px 10px;cursor:pointer;font-size:.85rem}
+#chapter-bar{display:none}
+.chapter{scroll-margin-top:92px}
+details.deep{scroll-margin-top:92px}
+.chapter > h2{border-bottom:2px solid rgba(201,162,39,.22);padding-bottom:8px}
+.video-embed{margin:22px 0 26px;background:#1a1712;border:1px solid rgba(201,162,39,.22);border-radius:8px;padding:14px 14px 10px}
+.video-embed .video-frame{position:relative;padding-top:56.25%}
+.video-embed iframe{position:absolute;inset:0;width:100%;height:100%;border:0;border-radius:4px}
+.video-embed figcaption{margin-top:10px;color:#e3c76a;font-weight:600;line-height:1.45}
+.recall{background:rgba(201,162,39,.10);border:1px solid rgba(201,162,39,.22);border-radius:8px;padding:14px 18px;margin:20px 0 6px;line-height:1.55;font-size:.97rem;color:#f5efe0}
+.recall strong{color:#e3c76a}
+.chap-nav{display:flex;justify-content:space-between;gap:12px;margin:22px 0 4px;font-weight:600}
+.chap-nav a{color:#e3c76a}
+details.deep{border:1px solid rgba(201,162,39,.22);border-radius:8px;background:#1a1712;margin:26px 0 10px}
+details.deep > summary{font-family:'Playfair Display',serif;font-size:1.3rem;color:#f5efe0;cursor:pointer;padding:16px 20px;list-style:none}
+details.deep > summary::-webkit-details-marker{display:none}
+details.deep > summary::after{content:"+";float:right;color:#c9a227;font-weight:700}
+details.deep[open] > summary::after{content:"\2212"}
+details.deep .deep-body{padding:0 20px 8px}
+details.inline{margin:14px 0}
+details.inline > summary{cursor:pointer;font-weight:700;color:#e3c76a;list-style:none}
+details.inline > summary::-webkit-details-marker{display:none}
+details.inline > summary::after{content:" +";color:#c9a227}
+details.inline[open] > summary::after{content:" \2212"}
+.chapter[hidden]{display:none}
+.cfu{border:1px solid rgba(201,162,39,.22);border-left:5px solid #c9a227;background:rgba(201,162,39,.07);border-radius:8px;padding:16px 20px 10px;margin:26px 0 8px;color:#f5efe0}
+.cfu h3{font-family:'Playfair Display',serif;font-size:1.25rem;margin:0 0 6px;color:#e3c76a}
+.cfu .cfu-intro{color:#d8cdb4;font-size:.95rem;margin:0 0 6px;line-height:1.55}
+.cfu-q{margin:14px 0 6px}
+.cfu-q .qtext{font-weight:700;margin:0 0 8px;line-height:1.5}
+.cfu .opt{display:block;width:100%;text-align:left;background:rgba(245,239,224,.05);border:1px solid rgba(201,162,39,.35);color:#f5efe0;border-radius:6px;padding:9px 12px;margin:6px 0;font:inherit;font-size:.97rem;line-height:1.45;cursor:pointer}
+.cfu .opt:hover{border-color:#c9a227}
+.cfu .opt.picked-right{border-color:#8fbf6a;background:rgba(143,191,106,.16)}
+.cfu .opt.picked-wrong{border-color:#c96a4a;background:rgba(201,106,74,.13);opacity:.8}
+.cfu .opt[disabled]{cursor:default}
+.cfu .feedback{font-size:.95rem;line-height:1.55;margin:8px 0 2px}
+.cfu .feedback.good{color:#c4e2a6}
+.cfu .feedback.try{color:#eec39b}
+.cfu .done-note{margin:12px 0 6px;padding:10px 14px;border:1px dashed #c9a227;border-radius:6px;color:#e3c76a;font-size:.97rem}
+.cfu-key{display:none}
+.rail a.locked{opacity:.48}
+.rail a .lk{float:right;font-size:.8rem}
+#chapter-sheet a.locked{opacity:.55}
+.chap-nav a.locked{opacity:.5}
+#lock-note{background:rgba(201,162,39,.12);border:1px solid #c9a227;border-radius:8px;color:#f5efe0;padding:12px 16px;margin:0 0 18px;line-height:1.55}
+#teacher-controls{display:none;background:#1a1712;border:1px solid rgba(201,162,39,.22);border-left:5px solid #c9a227;border-radius:8px;padding:16px 22px 12px;margin:0 0 22px;line-height:1.6;color:#f5efe0}
+#teacher-controls h3{margin:0 0 6px;font-family:'Playfair Display',serif;color:#e3c76a}
+#teacher-controls p{color:#d8cdb4;font-size:.95rem;margin:0 0 10px}
+#teacher-controls .row{display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+#teacher-controls label{font-size:.97rem;cursor:pointer}
+#teacher-controls button{background:none;border:1px solid #c9a227;color:#e3c76a;border-radius:6px;padding:7px 14px;font:inherit;font-size:.9rem;cursor:pointer}
+.timeline{border-left:2px solid #c9a227;margin:28px 0 10px 4px;padding:2px 0 2px 22px}
+.timeline h3{font-family:'Playfair Display',serif;color:#e3c76a;font-size:1.25rem;margin:0 0 14px}
+.tl-item{position:relative;margin:0 0 13px;line-height:1.5}
+.tl-item::before{content:"";position:absolute;left:-27.5px;top:7px;width:9px;height:9px;border-radius:50%;background:#c9a227}
+.tl-year{font-family:'Playfair Display',serif;font-weight:700;color:#e3c76a;margin-right:9px}
+.tl-text{color:#f5efe0;font-size:.98rem}
+.orient .map-link{margin-top:12px}
+.orient .map-link a{color:#e3c76a;font-weight:600}
+@media (max-width:900px){
+  .layout{grid-template-columns:1fr}
+  .rail{display:none}
+  #chapter-bar{display:flex;position:sticky;top:0;z-index:60;background:#1a1712;border:1px solid rgba(201,162,39,.22);color:#f5efe0;padding:10px 14px;border-radius:6px;justify-content:space-between;align-items:center;margin-bottom:16px}
+  #chapter-bar button{background:#c9a227;color:#0e0c09;border:0;border-radius:5px;padding:6px 12px;font-weight:700;cursor:pointer}
+  #chapter-sheet{display:none;background:#1a1712;border:1px solid rgba(201,162,39,.22);border-radius:8px;padding:10px 16px;margin:-8px 0 16px}
+  #chapter-sheet.open{display:block}
+  #chapter-sheet a{display:block;padding:8px 4px;color:#d8cdb4;text-decoration:none;border-bottom:1px solid rgba(201,162,39,.22)}
+}
+@media print{
+  #progress-bar,.rail,#chapter-bar,#chapter-sheet,.orient .fork,.recall,.chap-nav,.backlink,nav,footer{display:none !important}
+  .layout{grid-template-columns:1fr}
+  .chapter[hidden]{display:block !important}
+  #lock-note,#teacher-controls,.cfu .feedback{display:none !important}
+  .cfu-key{display:block !important}
+  .cfu .opt{display:block;width:100%;background:none;border:0;color:#000;text-align:left;padding:2px 0}
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Mossville, Louisiana - Town Dossier - All Black Towns",
+  "description": "The Mossville, Louisiana town dossier: Mossville, Louisiana.",
+  "url": "https://www.allblacktowns.com/dossiers/mossville.html"
+}
+</script>
+<!-- abt-access:start -->
+<style>
+.abt-cover{position:absolute;inset:0;z-index:3;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:7px;background:rgba(14,12,9,.94);border-radius:4px;padding:16px;color:#f5efe0;overflow:auto}
+.abt-cover-title{font-family:'Playfair Display',serif;font-size:1.12rem;margin:0;color:#f5efe0}
+.abt-cover-line{margin:0;line-height:1.5;font-size:.95rem;max-width:430px;color:#d8cdb4}
+.abt-gate-form{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;max-width:460px;width:100%;margin:2px 0 0}
+.abt-gate-form input{flex:1;min-width:190px;background:#0e0c09;border:1px solid rgba(201,162,39,.45);border-radius:6px;padding:10px 13px;color:#f5efe0;font-family:Inter,sans-serif;font-size:.95rem}
+.abt-gate-form input:focus{outline:none;border-color:#c9a227}
+.abt-gate-form button{background:#c9a227;color:#0e0c09;border:0;border-radius:6px;padding:10px 16px;font-weight:700;cursor:pointer;font-size:.95rem;font-family:Inter,sans-serif}
+.abt-cover .abt-status{margin:0;min-height:1.1em;font-size:.9rem;color:#e3c76a}
+.abt-lock-note{background:#1a1712;border:1px solid rgba(201,162,39,.22);border-left:5px solid #c9a227;border-radius:8px;padding:18px 22px;margin:18px 0 6px;color:#f5efe0;line-height:1.6}
+.abt-lock-note h3{font-family:'Playfair Display',serif;margin:0 0 8px;font-size:1.2rem;color:#f5efe0}
+.abt-lock-note p{margin:0 0 10px}
+.abt-lock-note a{display:inline-block;background:#c9a227;color:#0e0c09;border-radius:6px;padding:9px 15px;font-weight:700;text-decoration:none;font-size:.92rem}
+html.abt-unlocked .abt-cover{display:none}
+</style>
+<!-- abt-access:end -->
+<!-- abt-access-lock:start -->
+<style>
+.abt-lock-card{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:7px;background:rgba(14,12,9,.94);border:1px solid rgba(201,162,39,.22);border-radius:8px;padding:34px 18px;color:#f5efe0;margin:6px 0 18px}
+</style>
+<!-- abt-access-lock:end -->
+<!-- abt-cc-gate:start -->
+<style>
+.abt-cc-gate-panel{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:7px;background:#1a1712;border:1px solid rgba(201,162,39,.22);border-left:5px solid #c9a227;border-radius:8px;padding:26px 22px;margin:18px 0;color:#f5efe0}
+.abt-cc-gate-form{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;max-width:460px;width:100%;margin:2px 0 0}
+.abt-cc-gate-form input{flex:1;min-width:190px;background:#0e0c09;border:1px solid rgba(201,162,39,.45);border-radius:6px;padding:10px 13px;color:#f5efe0;font-family:Inter,sans-serif;font-size:.95rem}
+.abt-cc-gate-form input:focus{outline:none;border-color:#c9a227}
+.abt-cc-gate-form button{background:#c9a227;color:#0e0c09;border:0;border-radius:6px;padding:10px 16px;font-weight:700;cursor:pointer;font-size:.95rem;font-family:Inter,sans-serif}
+.abt-cc-title{font-family:'Playfair Display',serif;font-size:1.12rem;margin:0;color:#f5efe0}
+.abt-cc-line{margin:0;line-height:1.5;font-size:.95rem;max-width:430px;color:#d8cdb4}
+.abt-cc-status{margin:0;min-height:1.1em;font-size:.9rem;color:#e3c76a}
+html.abt-cc-unlocked .abt-cc-gate-panel{display:none}
+html:not(.abt-cc-unlocked) .dossier section.chapter:not(#intro):not(#ch7){display:none!important}
+</style>
+<script>try{if(localStorage.getItem('abtCurriculumUnlocked')==='1'){document.documentElement.classList.add('abt-cc-unlocked');}}catch(e){}</script>
+<!-- abt-cc-gate:end -->
+
+
+</head>
+<body>
+<div class="logo-bg" aria-hidden="true"></div>
+<nav><div class="wrap nav-inner">
+<a class="brand" href="../index.html"><img class="brand-logo" src="../logo-nav.jpg" alt="All Black Towns logo">All <span>Black</span> Towns</a>
+<div class="nav-links">
+<a href="../index.html">Home</a>
+<a href="../towns.html">Towns</a>
+<a href="../map.html">Map</a>
+<a href="../music.html">Music</a>
+<a href="../education.html" class="active">Education</a>
+<a href="../about.html">About</a>
+<a href="../share.html">Share a Town</a>
+</div></div></nav>
+<section class="block"><div class="wrap">
+<a class="backlink" href="../education.html">&larr; Back to Education</a>
+<div class="rule"></div>
+<div id="progress-bar"></div>
+<h2 class="section-title">Mossville, Louisiana - Town Dossier</h2>
+<p class="kicker layer-badge">The Complete Curriculum</p>
+<div class="beta-banner"><strong>Dossier published with its chapters.</strong> This is the Mossville, Louisiana dossier, published on the Education page with its educational chapters as they are created: each chapter video is added here as it is completed.</div>
+<div class="orient"><div class="meta">About 12 min read &middot; 8 chapters &middot; More chapters to come</div><p>This dossier follows Mossville, Louisiana in order: beginning with its song, then how it was founded, with the remaining chapters added as they are completed. Work through it one chapter at a time: a short check for understanding at the end of each chapter unlocks the next, and the contents rail maps where you are.</p><div class="fork"><a href="#intro">Start reading</a><button type="button" id="teach-btn">Teach this town</button><button type="button" class="ghost" onclick="window.print()">Print / save PDF</button></div><p class="map-link"><a href="../map.html">Find Mossville on the map</a></p><div id="resume-chip"></div></div>
+<div id="teacher-controls"><h3>Teacher controls</h3><p>For classroom use on this device. Unlocking opens every chapter for this reader; resetting clears the saved progress and check-for-understanding answers stored on this device.</p><div class="row"><label><input type="checkbox" id="unlock-all"> Unlock all chapters (teacher)</label><button type="button" id="reset-progress">Reset progress</button></div></div>
+<div class="facts"><h2>Key Facts Box</h2>
+<ul>
+<li>Founded: 1793, carried as Documented in the project record. Jim Moss led twelve Black families onto squatter's-rights land on the Calcasieu Prairie, west of present-day Lake Charles (DistroKid release plan, 2026-11-09; site page; Suno archive summary).</li>
+<li>Founded by: Jim Moss, a Black man who had come out of slavery into freedom, with twelve Black families. The founding families remembered by name are the Mosses, the Perkinses, the Braxtons, and the Rigmaidens (LSU T. Harry Williams Center, Ambrose abstract, Collection 4700.2466).</li>
+<li>Incorporated: never incorporated (Wikipedia, &quot;Mossville, Louisiana&quot;). Mossville is an unincorporated community in Calcasieu Parish and is not a census designated place.</li>
+<li>Peak population: not established as a census figure; Mossville was never separately enumerated. The documented household point is at least 375 households through 2008 (University Network for Human Rights, 2021); reporting in 2014 to 2015 put the community at about 500 residents (Mother Jones, 2014).</li>
+<li>Population today: not established as an exact figure. Fewer than 250 people were living in Mossville in early 2016 (Chemical and Engineering News, March 21, 2016), and nearly all residents have since relocated under the Sasol buyout; advocacy by remaining residents continues (EarthRights International, November 2025).</li>
+<li>Known for: one of the oldest free Black communities in the Louisiana Purchase territory and, in the University Network for Human Rights wording, &quot;one of the earliest pre-Civil War settlements of free Black people in the South&quot; (University Network for Human Rights, November 2021); a self-sustaining farming community that survived slavery, the Civil War, and Jim Crow; and, since the mid twentieth century, a landmark environmental justice case.</li>
+<li>The song: &quot;Ashes in the Bayou: The Mossville Testament.&quot; Its full lyrics are not printed in this dossier yet: the lyric text is not in the project's archive, and the gap is recorded rather than filled with invented text.</li>
+</ul></div>
+<div id="lock-note" style="display:none"></div>
+<div id="chapter-bar"><span id="chapter-bar-label">Introduction</span><button type="button" id="chapter-sheet-btn">Contents</button></div><div id="chapter-sheet"><a href="#intro">Introduction</a><a href="#ch7">The Song</a><a href="#ch1">1. Founding</a><a href="#ch2">2. Building the Town</a><a href="#ch3">3. People and Peak Years</a><a href="#ch4">4. The Turning Point</a><a href="#ch5">5. Rebuilding, Decline, and Survival</a><a href="#ch6">6. The Town Today</a></div>
+<div class="layout"><aside class="rail"><h4>Chapters</h4><a href="#intro" data-ch="intro"><span class="tick"></span>Introduction</a><a href="#ch7" data-ch="ch7"><span class="tick"></span>The Song</a><a href="#ch1" data-ch="ch1"><span class="tick"></span>1. Founding</a><a href="#ch2" data-ch="ch2"><span class="tick"></span>2. Building the Town</a><a href="#ch3" data-ch="ch3"><span class="tick"></span>3. People and Peak Years</a><a href="#ch4" data-ch="ch4"><span class="tick"></span>4. The Turning Point</a><a href="#ch5" data-ch="ch5"><span class="tick"></span>5. Rebuilding, Decline, and Survival</a><a href="#ch6" data-ch="ch6"><span class="tick"></span>6. The Town Today</a></aside><div class="dossier">
+<section class="chapter" id="intro" data-label="Introduction"><h2>Introduction</h2>
+<ul>
+<li>Town name, State: Mossville, Louisiana</li>
+<li>County: Calcasieu Parish</li>
+<li>Status: unincorporated community, historic site in active displacement. Mossville was never incorporated and is not a census designated place (Wikipedia, &quot;Mossville, Louisiana&quot;).</li>
+<li>Dossier version: draft v0.2, 2026-11-18</li>
+</ul>
+<p>Mossville is a living community in the middle of displacement, not only a historic site. Meet Mossville first as the self-sustaining town of its founding generations, and only then as the fenceline community of its later record.</p>
+<p>Mossville was settled by formerly enslaved and free Black people in the late eighteenth century, in the Calcasieu Prairie country of southwest Louisiana, on a bend of the Houston River in the bayous west of what became Lake Charles. The project record carries its founding in 1793: Jim Moss, a Black man who had come out of slavery into freedom, led twelve Black families onto the land, taken up by squatter's rights: a family that lived on the ground and improved it, clearing, planting, and building, could make that ground its own. The founding families are remembered by name: the Mosses, the Perkinses, the Braxtons, and the Rigmaidens.</p>
+<p>The settlement predates the Louisiana Purchase of 1803, and predates Calcasieu Parish by more than fifty years. The University Network for Human Rights calls it &quot;one of the earliest pre-Civil War settlements of free Black people in the South.&quot; Its first generations lived from the land and the water, farming, fishing, and hunting: a self-sustaining community that survived slavery, the Civil War, and Jim Crow on its own ground.</p>
+<div class="timeline"><h3>Timeline: the story at a glance</h3><div class="tl-item"><span class="tl-year">1793</span><span class="tl-text">Jim Moss leads twelve Black families onto squatter's-rights land on the Calcasieu Prairie, west of present-day Lake Charles: the founding this dossier and the project carry (project record, Documented: DistroKid release plan, 2026-11-09; site page; Suno archive summary).</span></div><div class="tl-item"><span class="tl-year">1803</span><span class="tl-text">the Louisiana Purchase transfers the territory to the United States. Mossville was already there; the settlement also predates Imperial Calcasieu Parish by more than fifty years (Wikipedia, &quot;Mossville, Louisiana&quot;).</span></div><div class="tl-item"><span class="tl-year">After the Civil War</span><span class="tl-text">settlers, mostly from nearby farms, take up the land, grow crops, and raise cattle, and the community grows on farming, fishing, and hunting (Wikipedia, &quot;Mossville, Louisiana&quot;; Johnson, 2019).</span></div><div class="tl-item"><span class="tl-year">1866</span><span class="tl-text">Mount Zion Baptist Church is founded in Mossville by Griffin Braxton, a formerly enslaved man (LSU T. Harry Williams Center abstract, Collection 4700.2553).</span></div><div class="tl-item"><span class="tl-year">Early 1900s</span><span class="tl-text">the Locke-Moore Company builds a sawmill; lumbering becomes the major local industry and is later joined by sugar refinement. By then Mossville is self-sustaining, with its own general stores and post office (Wikipedia, &quot;Mossville, Louisiana&quot;; Johnson, 2019).</span></div><div class="tl-item"><span class="tl-year">1934 or 1936</span><span class="tl-text">the first chemical plant arrives in the area, Olin (Kelsey, 2022; LSU T. Harry Williams Center, Ambrose abstract).</span></div><div class="tl-item"><span class="tl-year">1950s</span><span class="tl-text">Mossville gets its own high school, the only Black high school in its area; Black students from Westlake are bused to Mossville (Chemical and Engineering News, 2016).</span></div><div class="tl-item"><span class="tl-year">1969 to 1970</span><span class="tl-text">Mossville High School closes as a high school under integration; its students and teachers transfer to Westlake High School and Sulphur High School (LSU oral histories, Collections 4700.2574 and 4700.2503).</span></div><div class="tl-item"><span class="tl-year">1998</span><span class="tl-text">Mossville Environmental Action Now (MEAN) is organized by local residents (Wikipedia, &quot;Mossville, Louisiana&quot;).</span></div><div class="tl-item"><span class="tl-year">2012 to 2013</span><span class="tl-text">Sasol announces plans to expand its Louisiana complex and opens the Voluntary Property Purchase Program (VPPP) for a section of Mossville (University Network for Human Rights, 2021).</span></div><div class="tl-item"><span class="tl-year">2015</span><span class="tl-text">the Mossville History Project begins, a collaboration of the Imperial Calcasieu Museum and LSU's T. Harry Williams Center for Oral History, recording Mossville as buyouts transform it (LSU Libraries, Mossville Exhibit).</span></div><div class="tl-item"><span class="tl-year">By 2017</span><span class="tl-text">the majority of Mossville residents have relocated due to property buyouts (LSU Libraries, Mossville Exhibit).</span></div><div class="tl-item"><span class="tl-year">2019</span><span class="tl-text">the documentary Mossville: When Great Trees Fall, following resident Stacey Ryan among others, plays festivals and is later broadcast nationally on PBS (Wikipedia, &quot;Mossville, Louisiana&quot;).</span></div><div class="tl-item"><span class="tl-year">November 2021</span><span class="tl-text">the University Network for Human Rights publishes its two-year investigation of the Sasol buyout (University Network for Human Rights, 2021).</span></div><div class="tl-item"><span class="tl-year">May 2025</span><span class="tl-text">Sasol again refuses to negotiate with Mossville community members, in EarthRights International's account (EarthRights International, November 14, 2025).</span></div></div>
+<div class="cfu" data-chapter="intro"><h3>Check for understanding</h3><p class="cfu-intro">Answer every question correctly to unlock the next chapter. A wrong answer is fine: re-read the chapter and try again.</p><div class="cfu-q" data-q="0"><p class="qtext">What is Mossville, Louisiana today?</p><button type="button" class="opt" data-o="0">An incorporated city in Calcasieu Parish governed by a mayor and council</button><button type="button" class="opt" data-o="1">An unincorporated historic Black community, nearly all of whose residents relocated under the Sasol buyout, with advocacy continuing</button><button type="button" class="opt" data-o="2">A restored living-history village with year-round residents</button><button type="button" class="opt" data-o="3">A neighborhood inside the city of Lake Charles</button><p class="feedback" hidden></p></div><div class="done-note" hidden></div><div class="cfu-key"><h4>Answer key</h4><ol><li><strong>What is Mossville, Louisiana today?</strong> Correct answer: An unincorporated historic Black community, nearly all of whose residents relocated under the Sasol buyout, with advocacy continuing. Mossville was never incorporated. Nearly all of its residents relocated under Sasol's Voluntary Property Purchase Program after 2013; remaining residents and property owners, organized in Concerned Citizens of Mossville (2021), continue to seek a negotiated fair buyout (EarthRights International, November 2025).</li></ol></div></div><div class="chap-nav"><span></span><a href="#ch7">Next: The Song &rarr;</a></div></section>
+<section class="chapter" id="ch7" data-label="The Song"><h2>The Song</h2><p class="song-blurb">Mossville is one of the oldest free Black communities in the Louisiana Purchase territory: a Calcasieu Parish town founded in 1793 by Jim Moss and twelve Black families on squatter's-rights land west of present-day Lake Charles, sustained for generations by farming, fishing, and hunting on the Calcasieu Prairie.</p><div class="chap-nav"><a href="#intro">&larr; Introduction</a><a href="#ch1">Next: 1. Founding &rarr;</a></div></section>
+<div class="abt-lock-note"><h3>The Complete Curriculum</h3><p>The song on this page is free for everyone, always. The chapters below are the members' layer: the full record, town by town. Membership opens soon, and the list hears about it first.</p><a href="../education.html#newsletter">Join the list</a></div><!-- /abt-access:lock-note --><!-- abt-cc-gate:panel --><div class="abt-cc-gate-panel"><svg class="abt-lock" viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path fill="#c9a227" d="M12 2a5 5 0 0 0-5 5v3H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2h-1V7a5 5 0 0 0-5-5zm-3 8V7a3 3 0 1 1 6 0v3H9z"/></svg><p class="abt-cc-title">The Complete Curriculum</p><p class="abt-cc-line">The chapters of this town are part of The Complete Curriculum, the paid All Black Towns program, opening soon. Enter your email address to see the chapters and join the list. We will write to this address the moment membership opens. The song on this page stays free for everyone.</p><form class="abt-cc-gate-form" novalidate><input type="email" name="email" placeholder="Your email address" autocomplete="email" aria-label="Your email address" required><button type="submit">Continue</button></form><p class="abt-cc-status" role="status"></p></div><!-- /abt-cc-gate:panel --><section class="chapter" id="ch1" data-label="1. Founding" data-abt-locked="1"><h2>1. Founding</h2><figure class="video-embed"><div class="video-frame"><iframe src="https://www.youtube.com/embed/q9ksrniZEAM" title="Mossville, Louisiana | Chapter 1: Founding (Educational Version)" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><figcaption>Watch: Mossville, Louisiana | Chapter 1: Founding (Educational Version)</figcaption></figure></section>
+<section class="chapter" id="ch2" data-label="2. Building the Town" data-abt-locked="1"><h2>2. Building the Town</h2><div class="abt-lock-card"><svg class="abt-lock" viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path fill="#c9a227" d="M12 2a5 5 0 0 0-5 5v3H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2h-1V7a5 5 0 0 0-5-5zm-3 8V7a3 3 0 1 1 6 0v3H9z"/></svg><p class="abt-cover-title">Members' chapter</p><p class="abt-cover-line">This chapter is part of The Complete Curriculum, the paid program. Membership opening soon. The song on this page stays free for everyone.</p></div></section>
+<section class="chapter" id="ch3" data-label="3. People and Peak Years" data-abt-locked="1"><h2>3. People and Peak Years</h2><div class="abt-lock-card"><svg class="abt-lock" viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path fill="#c9a227" d="M12 2a5 5 0 0 0-5 5v3H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2h-1V7a5 5 0 0 0-5-5zm-3 8V7a3 3 0 1 1 6 0v3H9z"/></svg><p class="abt-cover-title">Members' chapter</p><p class="abt-cover-line">This chapter is part of The Complete Curriculum, the paid program. Membership opening soon. The song on this page stays free for everyone.</p></div></section>
+<section class="chapter" id="ch4" data-label="4. The Turning Point" data-abt-locked="1"><h2>4. The Turning Point</h2><div class="abt-lock-card"><svg class="abt-lock" viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path fill="#c9a227" d="M12 2a5 5 0 0 0-5 5v3H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2h-1V7a5 5 0 0 0-5-5zm-3 8V7a3 3 0 1 1 6 0v3H9z"/></svg><p class="abt-cover-title">Members' chapter</p><p class="abt-cover-line">This chapter is part of The Complete Curriculum, the paid program. Membership opening soon. The song on this page stays free for everyone.</p></div></section>
+<section class="chapter" id="ch5" data-label="5. Rebuilding, Decline, and Survival" data-abt-locked="1"><h2>5. Rebuilding, Decline, and Survival</h2><div class="abt-lock-card"><svg class="abt-lock" viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path fill="#c9a227" d="M12 2a5 5 0 0 0-5 5v3H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2h-1V7a5 5 0 0 0-5-5zm-3 8V7a3 3 0 1 1 6 0v3H9z"/></svg><p class="abt-cover-title">Members' chapter</p><p class="abt-cover-line">This chapter is part of The Complete Curriculum, the paid program. Membership opening soon. The song on this page stays free for everyone.</p></div></section>
+<section class="chapter" id="ch6" data-label="6. The Town Today" data-abt-locked="1"><h2>6. The Town Today</h2><div class="abt-lock-card"><svg class="abt-lock" viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path fill="#c9a227" d="M12 2a5 5 0 0 0-5 5v3H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2h-1V7a5 5 0 0 0-5-5zm-3 8V7a3 3 0 1 1 6 0v3H9z"/></svg><p class="abt-cover-title">Members' chapter</p><p class="abt-cover-line">This chapter is part of The Complete Curriculum, the paid program. Membership opening soon. The song on this page stays free for everyone.</p></div></section>
+</div></div>
+<div class="doss-end"><p><strong>More dossiers:</strong> the five pilot dossiers and the growing set of town dossiers published with their chapters are open on the <a href="../education.html">Education page</a>.</p></div>
+</div></section>
+<footer><div class="wrap">
+<a class="brand" href="../index.html"><img class="brand-logo" src="../logo-nav.jpg" alt="All Black Towns logo">All <span>Black</span> Towns</a>
+<p style="margin-top:12px">A creative universe built on the true history of America's Black towns -<br>one town, one song, one story at a time.</p>
+<p style="margin-top:14px; opacity:.6">&copy; 2026 All Black Towns. All rights reserved.</p>
+</div></footer>
+<script>window.ABT_CFU = {"chapters": {"intro": {"questions": [{"answer": 1, "explain": "Mossville was never incorporated. Nearly all of its residents relocated under Sasol\u2019s Voluntary Property Purchase Program after 2013; remaining residents and property owners, organized in Concerned Citizens of Mossville (2021), continue to seek a negotiated fair buyout (EarthRights International, November 2025)."}]}, "ch1": {"questions": [{"answer": 1, "explain": "The land was taken up by squatter\u2019s rights: a family that lived on the ground and improved it \u2014 clearing, planting, and building \u2014 could make that ground its own (project record; Wikipedia, \"Mossville, Louisiana\")."}, {"answer": 2, "explain": "In 1793, Jim Moss led twelve Black families onto the land on the Calcasieu Prairie (project record, Documented: DistroKid release plan, 2026-11-09)."}]}}};</script>
+
+<script>
+(function(){
+  var KEY = 'abt-v2-mossville-full';
+  var CFU = window.ABT_CFU || null;
+  var state = {done: []};
+  try {
+    var stored = JSON.parse(localStorage.getItem(KEY));
+    if (stored) { for (var k in stored) state[k] = stored[k]; }
+  } catch(e) {}
+  if (!state.done) state.done = [];
+  if (CFU) {
+    if (!state.cfu) state.cfu = {};
+    state.teacherUnlock = !!state.teacherUnlock;
+    if (!('current' in state)) state.current = null;
+  }
+  var chapters = Array.prototype.slice.call(document.querySelectorAll('.chapter'));
+  var railLinks = {};
+  document.querySelectorAll('.rail a[data-ch]').forEach(function(a){ railLinks[a.getAttribute('data-ch')] = a; });
+  function save(){ try { localStorage.setItem(KEY, JSON.stringify(state)); } catch(e) {} }
+  function paintTicks(){
+    chapters.forEach(function(ch){
+      var a = railLinks[ch.id];
+      if (a) { var t = a.querySelector('.tick'); if (t) t.textContent = state.done.indexOf(ch.id) >= 0 ? '\u2713' : ''; }
+    });
+  }
+  function cfuPassed(cid){
+    if (!CFU) return false;
+    var c = CFU.chapters[cid];
+    if (!c) return true;
+    var got = state.cfu[cid] || [];
+    return c.questions.every(function(q, i){ return got[i] === true; });
+  }
+  function isUnlocked(i){
+    if (!CFU) return true;
+    if (state.teacherUnlock) return true;
+    if (i <= 0) return true;
+    return cfuPassed(chapters[i - 1].id);
+  }
+  function chapterIndex(el){ return chapters.indexOf(el); }
+  var note = document.getElementById('lock-note');
+  function hideNote(){ if (note) note.style.display = 'none'; }
+  function showNote(target){
+    if (!note) return;
+    var label = target.getAttribute('data-label') || target.id;
+    note.innerHTML = '<strong>' + label + ' is locked for now.</strong> Answer the check for understanding questions at the end of the previous chapter to unlock it.';
+    note.style.display = 'block';
+    note.scrollIntoView({behavior: 'smooth', block: 'center'});
+  }
+  function paintLocks(){
+    if (!CFU) return;
+    document.querySelectorAll('a[href^="#"]').forEach(function(a){
+      var t = document.querySelector(a.getAttribute('href'));
+      if (t && t.classList.contains('chapter')) {
+        var locked = !isUnlocked(chapterIndex(t));
+        a.classList.toggle('locked', locked);
+        if (a.hasAttribute('data-ch')) {
+          var lk = a.querySelector('.lk');
+          if (locked && !lk) { lk = document.createElement('span'); lk.className = 'lk'; lk.textContent = '\uD83D\uDD12'; a.appendChild(lk); }
+          if (!locked && lk) lk.remove();
+        }
+      }
+    });
+  }
+  function setActive(id){
+    chapters.forEach(function(ch){
+      var a = railLinks[ch.id];
+      if (a) a.classList.toggle('active', ch.id === id);
+    });
+    var sheetLabel = document.getElementById('chapter-bar-label');
+    var target = document.getElementById(id);
+    if (sheetLabel && target) sheetLabel.textContent = target.getAttribute('data-label');
+  }
+  function showChapter(id, scroll){
+    var target = document.getElementById(id);
+    if (!target) return;
+    chapters.forEach(function(ch){
+      if (ch.id === id) {
+        ch.removeAttribute('hidden');
+        if (ch.tagName === 'DETAILS') ch.open = true;
+      } else {
+        ch.setAttribute('hidden', '');
+      }
+    });
+    document.querySelectorAll('.chap-nav[data-for]').forEach(function(n){
+      if (n.getAttribute('data-for') === id) n.removeAttribute('hidden');
+      else n.setAttribute('hidden', '');
+    });
+    state.current = id; save();
+    setActive(id);
+    hideNote();
+    if (scroll !== false) {
+      var layout = document.querySelector('.layout');
+      if (layout) {
+        var y = layout.getBoundingClientRect().top + window.pageYOffset - 84;
+        window.scrollTo(0, Math.max(0, y));
+      }
+    }
+  }
+  var chip = document.getElementById('resume-chip');
+  if (chip && CFU) {
+    var passedCount = chapters.filter(function(c){ return cfuPassed(c.id); }).length;
+    var nextU = null;
+    chapters.forEach(function(c, i){ if (!nextU && isUnlocked(i) && !cfuPassed(c.id)) nextU = c; });
+    if (passedCount > 0 && nextU) {
+      chip.style.display = 'block';
+      chip.innerHTML = 'Welcome back. You left off at <strong>' + nextU.getAttribute('data-label') + '</strong>. <a href="#' + nextU.id + '">Continue there \u2192</a>';
+    }
+  } else if (chip && state.done.length) {
+    var next = chapters.filter(function(c){ return state.done.indexOf(c.id) < 0; })[0];
+    if (next) {
+      var label = next.getAttribute('data-label');
+      chip.style.display = 'block';
+      chip.innerHTML = 'Welcome back. You left off at <strong>' + label + '</strong>. <a href="#' + next.id + '">Continue there \u2192</a>';
+    }
+  }
+  if (CFU) {
+    chapters.forEach(function(ch){
+      if (cfuPassed(ch.id) && state.done.indexOf(ch.id) < 0) state.done.push(ch.id);
+    });
+    save();
+  }
+  paintTicks();
+  paintLocks();
+  var bar = document.getElementById('progress-bar');
+  if (!CFU) {
+    var active = null;
+    var spy = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if (en.isIntersecting) {
+          if (active && railLinks[active]) railLinks[active].classList.remove('active');
+          active = en.target.id;
+          if (railLinks[active]) railLinks[active].classList.add('active');
+          var sheetLabel = document.getElementById('chapter-bar-label');
+          if (sheetLabel) sheetLabel.textContent = en.target.getAttribute('data-label');
+        }
+        var rect = en.target.getBoundingClientRect();
+        if (rect.bottom < window.innerHeight * 0.55 && state.done.indexOf(en.target.id) < 0) {
+          state.done.push(en.target.id); save(); paintTicks();
+        }
+      });
+    }, {rootMargin: '-30% 0px -55% 0px'});
+    chapters.forEach(function(ch){ spy.observe(ch); });
+  }
+  window.addEventListener('scroll', function(){
+    var h = document.documentElement;
+    var max = h.scrollHeight - h.clientHeight;
+    if (bar && max > 0) bar.style.width = (h.scrollTop / max * 100) + '%';
+  }, {passive: true});
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){
+    a.addEventListener('click', function(ev){
+      var t = document.querySelector(a.getAttribute('href'));
+      var sheet = document.getElementById('chapter-sheet');
+      if (sheet) sheet.classList.remove('open');
+      if (CFU && t && t.classList.contains('chapter')) {
+        ev.preventDefault();
+        if (isUnlocked(chapterIndex(t))) showChapter(t.id);
+        else showNote(t);
+        return;
+      }
+      if (t && t.tagName === 'DETAILS') t.open = true;
+    });
+  });
+  var tp = document.getElementById('teacher-panel');
+  var tc = document.getElementById('teacher-controls');
+  var tbtn = document.getElementById('teach-btn');
+  if (tbtn && (tp || tc)) tbtn.addEventListener('click', function(){
+    var opened = null;
+    [tp, tc].forEach(function(el){
+      if (!el) return;
+      el.style.display = el.style.display === 'block' ? 'none' : 'block';
+      if (el.style.display === 'block') opened = el;
+    });
+    if (opened) opened.scrollIntoView({behavior:'smooth', block:'start'});
+  });
+  var ex = document.getElementById('expand-all');
+  if (ex) ex.addEventListener('click', function(){
+    var dets = document.querySelectorAll('details');
+    var anyClosed = Array.prototype.some.call(dets, function(d){ return !d.open; });
+    dets.forEach(function(d){ d.open = anyClosed; });
+    ex.textContent = anyClosed ? 'Collapse all sections' : 'Expand all sections';
+  });
+  var sheetBtn = document.getElementById('chapter-sheet-btn');
+  var sheet = document.getElementById('chapter-sheet');
+  if (sheetBtn && sheet) sheetBtn.addEventListener('click', function(){ sheet.classList.toggle('open'); });
+  if (CFU) {
+    function markCorrect(qEl, cid, qi){
+      var q = CFU.chapters[cid].questions[qi];
+      qEl.querySelectorAll('.opt').forEach(function(b){
+        b.disabled = true;
+        if (+b.getAttribute('data-o') === q.answer) b.classList.add('picked-right');
+      });
+      var fb = qEl.querySelector('.feedback');
+      fb.hidden = false; fb.className = 'feedback good'; fb.textContent = q.explain;
+    }
+    function refreshDone(block, cid){
+      var dn = block.querySelector('.done-note');
+      if (!dn) return;
+      if (cfuPassed(cid)) {
+        var idx = -1;
+        chapters.forEach(function(c, i){ if (c.id === cid) idx = i; });
+        dn.hidden = false;
+        dn.textContent = (idx === chapters.length - 1)
+          ? 'Chapter complete. That was the final chapter of this dossier.'
+          : 'Chapter complete. The next chapter is now unlocked.';
+      } else {
+        dn.hidden = true;
+      }
+    }
+    document.querySelectorAll('.cfu').forEach(function(block){
+      var cid = block.getAttribute('data-chapter');
+      var got = state.cfu[cid] || [];
+      block.querySelectorAll('.cfu-q').forEach(function(qEl){
+        var qi = +qEl.getAttribute('data-q');
+        if (got[qi]) markCorrect(qEl, cid, qi);
+      });
+      refreshDone(block, cid);
+    });
+    document.querySelectorAll('.cfu .opt').forEach(function(btn){
+      btn.addEventListener('click', function(){
+        var qEl = btn.closest('.cfu-q');
+        var block = btn.closest('.cfu');
+        var cid = block.getAttribute('data-chapter');
+        var qi = +qEl.getAttribute('data-q');
+        var oi = +btn.getAttribute('data-o');
+        var q = CFU.chapters[cid].questions[qi];
+        if (!state.cfu[cid]) state.cfu[cid] = [];
+        if (state.cfu[cid][qi]) return;
+        var fb = qEl.querySelector('.feedback');
+        if (oi === q.answer) {
+          state.cfu[cid][qi] = true;
+          if (cfuPassed(cid) && state.done.indexOf(cid) < 0) state.done.push(cid);
+          save();
+          markCorrect(qEl, cid, qi);
+          paintTicks(); paintLocks();
+          refreshDone(block, cid);
+        } else {
+          btn.classList.add('picked-wrong');
+          btn.disabled = true;
+          fb.hidden = false; fb.className = 'feedback try';
+          fb.textContent = 'Not quite. Re-read this chapter and try again: the answer is in the text above.';
+        }
+      });
+    });
+    var uc = document.getElementById('unlock-all');
+    if (uc) {
+      uc.checked = !!state.teacherUnlock;
+      uc.addEventListener('change', function(){ state.teacherUnlock = uc.checked; save(); paintLocks(); });
+    }
+    var rp = document.getElementById('reset-progress');
+    if (rp) rp.addEventListener('click', function(){
+      if (window.confirm('Reset all reading progress and check-for-understanding answers on this device?')) {
+        try { localStorage.removeItem(KEY); } catch(e) {}
+        location.reload();
+      }
+    });
+    var startId = null;
+    if (state.current) {
+      var cur = document.getElementById(state.current);
+      if (cur && isUnlocked(chapterIndex(cur))) startId = state.current;
+    }
+    if (!startId) {
+      var firstOpen = null;
+      chapters.forEach(function(c, i){ if (!firstOpen && isUnlocked(i) && !cfuPassed(c.id)) firstOpen = c; });
+      startId = firstOpen ? firstOpen.id : chapters[chapters.length - 1].id;
+    }
+    showChapter(startId, false);
+  }
+  var hiddenBeforePrint = [];
+  window.addEventListener('beforeprint', function(){
+    document.querySelectorAll('details').forEach(function(d){ d.open = true; });
+    if (CFU) {
+      hiddenBeforePrint = [];
+      chapters.forEach(function(ch){
+        if (ch.hasAttribute('hidden')) { hiddenBeforePrint.push(ch.id); ch.removeAttribute('hidden'); }
+      });
+      document.querySelectorAll('.chap-nav[data-for]').forEach(function(n){ n.removeAttribute('hidden'); });
+    }
+  });
+  window.addEventListener('afterprint', function(){
+    if (CFU) {
+      hiddenBeforePrint.forEach(function(id){
+        var el = document.getElementById(id);
+        if (el && id !== state.current) el.setAttribute('hidden', '');
+      });
+      document.querySelectorAll('.chap-nav[data-for]').forEach(function(n){
+        if (n.getAttribute('data-for') !== state.current) n.setAttribute('hidden', '');
+      });
+    }
+  });
+})();
+</script>
+
+<!-- abt-cc-gate:script -->
+<script>
+(function(){
+  var KEY = 'abtCurriculumUnlocked';
+  function unlock(){ document.documentElement.classList.add('abt-cc-unlocked'); }
+  try { if (localStorage.getItem(KEY) === '1') unlock(); } catch(e) {}
+  document.addEventListener('DOMContentLoaded', function(){
+    var forms = document.querySelectorAll('.abt-cc-gate-form');
+    Array.prototype.forEach.call(forms, function(form){
+      form.addEventListener('submit', function(ev){
+        ev.preventDefault();
+        var input = form.querySelector('input[type="email"]');
+        var status = form.parentNode.querySelector('.abt-cc-status');
+        var email = (input && input.value ? input.value : '').trim();
+        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { if (status) status.textContent = 'Please enter a valid email address.'; return; }
+        if (status) status.textContent = 'One moment...';
+        fetch('https://formsubmit.co/ajax/info@allblacktowns.com', {method: 'POST', headers: {'Content-Type': 'application/json', 'Accept': 'application/json'}, body: JSON.stringify({email: email, _subject: 'All Black Towns Complete Curriculum signup', _autoresponse: 'Thank you for signing up with All Black Towns. The Complete Curriculum is the paid program that carries the full chapter curriculum for towns like Fort Mose, Washington, and Parting Ways, and it is opening soon. The song on every town page stays free for everyone. We will write to this address the moment membership opens.'})}).catch(function(){});
+        try { localStorage.setItem(KEY, '1'); } catch(e) {}
+        unlock();
+      });
+    });
+  });
+})();
+</script>
+<!-- /abt-cc-gate:script -->
+</body></html>
