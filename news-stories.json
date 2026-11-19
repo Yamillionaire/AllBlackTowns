@@ -4,6 +4,177 @@
  "stories": [
   {
    "tab": "america",
+   "date": "2026-11-19",
+   "category": "History and Heritage",
+   "source": "HBCU News",
+   "headline": "Alabama’s 14 HBCUs to receive top civil rights honor named for iconic Birmingham activist",
+   "url": "https://hbcunews.com/2026/11/19/alabamas-14-hbcus-to-receive-top-civil-rights-honor-named-for-iconic-birmingham-activist/",
+   "summary": "For the first time in 24 years, the Birmingham Civil Rights Institute's highest honour will go not to an individual but to all 14 of Alabama's HBCUs, which will collectively receive the 2026 Fred L. Shuttlesworth Human Rights Award. BCRI president and CEO Deborah Bowie said the institutions embody Shuttlesworth's values of dignity and challenging injustice, and they will be recognised at the institute's 34th anniversary celebration on December 1."
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-19",
+   "category": "Health",
+   "source": "HBCU News",
+   "headline": "NC Central Trains Doulas to Support Black Mothers in Rural North Carolina",
+   "url": "https://hbcunews.com/2026/11/19/nc-central-trains-doulas-to-support-black-mothers-in-rural-north-carolina/",
+   "summary": "North Carolina Central University's Community-Based Birth Doula Training Program, launched in December 2025 through its Rural Health Hub in Enfield, recruits women from rural northeastern counties to support mothers in their own communities. The work responds to stark disparities: Black women in North Carolina were 1.7 times as likely as white women to die from pregnancy-related causes from 2018 to 2021, and a state review judged nearly nine in 10 such deaths preventable."
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-19",
+   "category": "Education",
+   "source": "The Journal of Blacks in Higher Education",
+   "headline": "Five African Americans Named Rhodes Scholars",
+   "url": "https://jbhe.com/2026/11/five-african-americans-named-rhodes-scholars-2026/",
+   "summary": "Five of the 32 American Rhodes Scholars announced by the Rhodes Trust are African Americans: MIT senior Arianna G. Doss, Yale senior Richard O. George, George Washington senior Bryson A. Handy, Princeton senior Mya M. Koffie, and Prairie View A&M senior Kailynn M. Weaver, the first Rhodes Scholar from that HBCU. The five will join a cohort of just over 100 scholars worldwide for graduate study at Oxford, with scholarships covering all expenses for two or three years."
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-19",
+   "category": "Politics and Policy",
+   "source": "PR.com",
+   "headline": "Black Women’s Roundtable Unveils Its First 100 Days Federal Policy Agenda Priorities & Congratulates Congressman Hakeem Jeffries on Historic House Speaker Nomination",
+   "url": "https://www.pr.com/press-release/984886",
+   "summary": "Following the House Democratic Caucus's nomination of Hakeem Jeffries for speaker, the Black Women's Roundtable has released seven priorities for the first 100 days of the 120th Congress, covering the social safety net, cost of living, health care, jobs and wages, voting rights, gun violence, and combating racism. The priorities, led by NCBCP president and CEO Melanie L. Campbell and informed by a poll of 1,000 registered Black women voters, urge Congress to turn representation into results when it convenes in January 2027."
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-19",
+   "category": "Technology",
+   "source": "Black Enterprise",
+   "headline": "Terrance Hedgepeth Helps Small Businesses Get AI-Ready",
+   "url": "https://www.blackenterprise.com/terrance-hedgepeth-small-businesses-ai-ready/",
+   "summary": "Technology entrepreneur Terrance Hedgepeth is helping small and midsize businesses prepare for artificial intelligence through Designer Technologies, the IT consulting company he founded in 2017 and resumed full-time in 2026, with a focus on cybersecurity, network infrastructure and AI readiness. Black Enterprise, citing AfroTech, notes the work is especially significant for Black-owned and other minority-owned businesses without dedicated technology teams, and Hedgepeth stresses building a reliable foundation before investing in AI, offering a complimentary readiness assessment."
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-19",
+   "category": "Politics and Policy",
+   "source": "Reuters",
+   "headline": "With foreign aid slashed, Africa must 'own its own future', billionaire Ibrahim says",
+   "url": "https://www.reuters.com/world/africa/with-foreign-aid-slashed-africa-must-own-its-own-future-billionaire-ibrahim-says-2026-11-19/",
+   "summary": "British-Sudanese billionaire Mo Ibrahim has told Reuters that African governments should treat the slump in foreign aid as a chance to own their own future, by closing tax loopholes, tackling capital flight and investing more domestic resources in services such as health and education. His foundation's 2026 governance index found a slight improvement in overall governance over the past decade despite deteriorating security and rule of law, while global aid plunged 23.1 percent in 2025 and Africa loses an estimated $90 billion a year through capital flight.",
+   "country": "Africa"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-19",
+   "category": "Health",
+   "source": "Reuters",
+   "headline": "Nigeria's Tinubu asks parliament to decriminalise attempted suicide",
+   "url": "https://www.reuters.com/world/africa/nigerias-tinubu-asks-parliament-decriminalise-attempted-suicide-2026-11-19/",
+   "summary": "Nigerian President Bola Tinubu has asked parliament to decriminalise attempted suicide and provide support for survivors, treating suicide attempts as a mental health issue rather than a criminal offence. Attempted suicide is currently punishable by a fine, up to a year in jail, or both under Nigeria's criminal and penal codes; the bill would require rehabilitation services and wider access to mental health care if passed.",
+   "country": "Nigeria"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-19",
+   "category": "Money",
+   "source": "Reuters",
+   "headline": "South Africa central bank maintains policy rate in close call",
+   "url": "https://www.reuters.com/world/africa/south-africa-central-bank-maintains-policy-rate-close-call-2026-11-19/",
+   "summary": "South Africa's central bank kept its key policy rate unchanged at 7.25 percent on Thursday in a close call, with four Monetary Policy Committee members voting to hold and three favouring a 25-basis-point increase. Governor Lesetja Kganyago said policy was tight enough after two hikes this year, even as inflation rose to 5.2 percent year on year last month, its highest in about two and a half years and above the bank's 3 percent target.",
+   "country": "South Africa"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-19",
+   "category": "Politics and Policy",
+   "source": "Reuters",
+   "headline": "South Africa's ANC and partners near coalition deal to sideline poll-topping DA in Johannesburg",
+   "url": "https://www.reuters.com/world/africa/south-africas-anc-partners-near-coalition-deal-sideline-poll-topping-da-2026-11-19/",
+   "summary": "The African National Congress and smaller rivals are closing in on a coalition deal to govern Johannesburg, sidelining the Democratic Alliance despite the DA's first-place finish in this month's local elections with 35 percent of the vote, ahead of the ANC at 20 percent and ActionSA at 16 percent. The potential coalition, covering Gauteng province, would include the ANC, ActionSA, the Economic Freedom Fighters and uMkhonto weSizwe, with final meetings set for Friday, an ANC spokesperson said.",
+   "country": "South Africa"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-19",
+   "category": "Sports",
+   "source": "Reuters",
+   "headline": "South Africa captain Bavuma to miss second test with calf injury",
+   "url": "https://www.reuters.com/sports/cricket/south-africa-captain-bavuma-miss-second-test-with-calf-injury-2026-11-19/",
+   "summary": "South Africa captain Temba Bavuma has been ruled out of the second test against Bangladesh with a calf injury he sustained batting in the first test, and will miss Monday's match at Centurion as he begins rehabilitation. Bavuma praised his side's ruthlessness in their nine-wicket win at the Wanderers on Thursday, and said it was too early to say whether he will be ready for the one-day internationals against Bangladesh.",
+   "country": "South Africa"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-19",
+   "category": "Sports",
+   "source": "Reuters",
+   "headline": "South Africa seal nine-wicket win over Bangladesh in first test",
+   "url": "https://www.reuters.com/sports/cricket/south-africa-seal-nine-wicket-win-over-bangladesh-first-test-2026-11-19/",
+   "summary": "South Africa wrapped up a nine-wicket victory over Bangladesh in the first test at the Wanderers on Thursday to lead the two-match series and stay on course for the World Test Championship final in London next year. Needing just 12 runs after dismissing Bangladesh for 168 in their second innings, with Simon Harmer taking six wickets and Kagiso Rabada three, South Africa have now won 16 of their last 18 tests and sit top of the test rankings.",
+   "country": "South Africa"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-19",
+   "category": "Business",
+   "source": "Reuters",
+   "headline": "Kenya chooses US consortium to develop Mrima Hill critical minerals project",
+   "url": "https://www.reuters.com/world/africa/kenya-chooses-us-consortium-to-develop-mrima-hill-critical-minerals-project-2026-11-19/",
+   "summary": "Kenya has chosen the Frontier Minerals consortium, which includes American rare earths startup ReElement Technologies and U.S.-based Bunker Hill Silver Corp, to develop the Mrima Hill critical minerals deposit in southeastern Kenya. The mining ministry says preliminary indicators suggest tens of billions of dollars' worth of rare earth minerals plus niobium at the site, a key U.S. target for minerals used in defence and electronics; the winner must now engage the local community and obtain prospecting licences.",
+   "country": "Kenya"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-19",
+   "category": "Community",
+   "source": "Reuters",
+   "headline": "Dozens missing as migrant boat capsizes off Senegal coast, NGO says",
+   "url": "https://www.reuters.com/world/dozens-missing-migrant-boat-capsizes-off-senegal-coast-ngo-says-2026-11-19/",
+   "summary": "Dozens of people were missing on Thursday after a boat carrying migrants bound for Europe capsized off Yenne, south of Dakar, according to local NGO Action for Human Rights and Friendship, whose president Adama Mbengue said a survivor reported about 50 people aboard. The sinking is the latest on the dangerous West Africa route, where the UN refugee agency says nearly 8,200 migrants reached the Canary Islands in the first 12 days of November and nearly 600 people have been reported dead or missing in 2026.",
+   "country": "Senegal"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-19",
+   "category": "Politics and Policy",
+   "source": "Reuters",
+   "headline": "Senegal president implements 2026 budget changes by decree amid impasse with parliament",
+   "url": "https://www.reuters.com/world/africa/senegal-president-implements-2026-budget-changes-by-decree-amid-impasse-with-2026-11-19/",
+   "summary": "Senegal's President Bassirou Diomaye Faye will implement the revised 2026 budget by decree, his office said on Thursday, as an impasse with parliament threatens a new International Monetary Fund support programme. The standoff stems from a dispute between Faye and his former prime minister Ousmane Sonko, now head of the National Assembly, whose Pastef party controls the assembly and opposes both the revised 2026 budget, rejected on November 3, and the 2027 budget bill voted against on Wednesday.",
+   "country": "Senegal"
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-18",
+   "category": "Politics and Policy",
+   "source": "Word In Black",
+   "headline": "Jeffries is One Vote Away From History. Now Comes the Hard Part.",
+   "url": "https://wordinblack.com/2026/11/jeffries-is-one-vote-away-from-history-now-comes-the-hard-part/",
+   "summary": "Hakeem Jeffries won the Democratic nomination for House speaker on Wednesday with 251 votes against 11 opponents in a closed-door caucus ballot, putting the Brooklyn representative one formal House vote away from becoming the first Black American to lead the House when the new Congress convenes on January 3. Word In Black reports that Jeffries, 56, must now hold together a caucus split between progressives demanding wholesale change and centrists focused on affordability and health care, while Congressional Black Caucus and NAACP voices press for results beyond the symbolism."
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-18",
+   "category": "Business",
+   "source": "Black Enterprise",
+   "headline": "Kickstarter CEO Everette Taylor Named Endowed Chair At Howard University",
+   "url": "https://www.blackenterprise.com/kickstarter-ceo-everette-taylor-named-endowed-chair-at-howard-university/",
+   "summary": "Kickstarter CEO Everette Taylor has been appointed the John H. Johnson Endowed Chair and Professor of Entrepreneurship at Howard University, effective January 4, 2027, in the Cathy Hughes School of Communications. Announced November 17, the role will have Taylor, Kickstarter's CEO since 2022, lead three to six workshops a year, build a lecture series and advise students through Howard's Innovation Hub, honouring Johnson Publishing founder John H. Johnson."
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-18",
+   "category": "Business",
+   "source": "Black Enterprise",
+   "headline": "Lisa Osborne Ross to Become the Next President and CEO of The Executive Leadership Council",
+   "url": "https://www.blackenterprise.com/lisa-osborne-ross-to-become-the-next-president-and-ceo-of-the-executive-leadership-council/",
+   "summary": "The Executive Leadership Council has named Lisa Osborne Ross, former U.S. CEO of Edelman, as its next president and CEO effective January 15, 2027, succeeding Michael C. Hyter, who has led the organisation since March 2021. Ross, an ELC member with more than 30 years across corporate, government and nonprofit leadership, takes over as the preeminent organisation for advancing Black executives in global business marks its 40th anniversary."
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-18",
+   "category": "Sports",
+   "source": "Hampton University Athletics",
+   "headline": "Cam Sturdifen Invited to Play in 2027 Allstate HBCU Legacy Bowl",
+   "url": "https://hamptonpirates.com:443/news/2026/11/18/football-cam-sturdifen-invited-to-play-in-2027-allstate-hbcu-legacy-bowl",
+   "summary": "Hampton University safety Cam Sturdifen has been invited to play in the 2027 Allstate HBCU Legacy Bowl, scheduled for February 27, 2027 at Center Parc Stadium in Atlanta and broadcast on NFL Network. The fifth-year standout from Richmond leads the Pirates with 90 tackles, including 56 solo stops, plus three interceptions, two forced fumbles and two recoveries, and will start his 24th consecutive game when Hampton closes the season at Stony Brook on Saturday."
+  },
+  {
+   "tab": "america",
    "date": "2026-11-18",
    "category": "Health",
    "source": "HBCU News",
@@ -2926,7 +3097,7 @@
    "summary": "Week 8 of the HBCU football season shook up both major conferences: Bethune-Cookman beat top-ranked Jackson State 24-21 on a touchdown pass with 40 seconds left, Howard won at Morgan State on an 87-yard interception return in overtime, and Texas Southern walked off Southern with a 46-yard field goal at its 99th homecoming."
   }
  ],
- "updated": "2026-11-18",
+ "updated": "2026-11-19",
  "window_days": 30,
  "categories": [
   "Politics and Policy",
