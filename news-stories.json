@@ -4,6 +4,158 @@
  "stories": [
   {
    "tab": "america",
+   "date": "2026-11-20",
+   "category": "Education",
+   "source": "HBCU News",
+   "headline": "Peralta Colleges joins effort to bring historically Black college to Oakland",
+   "url": "https://hbcunews.com/2026/11/20/peralta-colleges-joins-effort-to-bring-historically-black-college-to-oakland/",
+   "summary": "The Peralta Colleges Board of Trustees has unanimously approved a memorandum of understanding with the Oakland HBCU Initiative to explore bringing a historically Black college campus to Oakland, which would be the first HBCU undergraduate presence on the West Coast. A feasibility study released this month estimates a satellite campus, where students could start at a Peralta community college and finish an HBCU degree locally, could add 1,760 Black professionals a year in Oakland and $158 million in annual local spending."
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-20",
+   "category": "Technology",
+   "source": "HBCU News",
+   "headline": "HBCU Students Secure $15K For App Helping Gen Z Build Financial Literacy",
+   "url": "https://hbcunews.com/2026/11/20/hbcu-students-secure-15k-for-app-helping-gen-z-build-financial-literacy/",
+   "summary": "Three University of Arkansas at Pine Bluff students, David Adedeji, Nicholas Nettey and Angel Yuzya, have won $15,000 and the top prize at the inaugural Future of XYZ HBCU Innovation Challenge for Brix, a financial coaching app for first-generation and first-year students. Built during AfroTech week in Houston against teams from more than 30 HBCUs, Brix helps students manage financial aid refunds and first paychecks and practise investing with simulated money."
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-20",
+   "category": "Justice",
+   "source": "HBCU News",
+   "headline": "St. Louis advocates challenge HBCU funding gaps",
+   "url": "https://hbcunews.com/2026/11/20/st-louis-advocates-challenge-hbcu-funding-gaps/",
+   "summary": "Five St. Louis advocates behind the 1890 Project are suing Missouri over what federal figures put at a $361.6 million funding gap for Lincoln University, the state's 1890 land-grant HBCU, between 1987 and 2020. Their October 7 lawsuit, filed for seven current and former Lincoln students, seeks about $549 million for a court-supervised remedial fund, and the group says it is negotiating with other 1890 institutions and treats litigation as a last resort."
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-20",
+   "category": "Science",
+   "source": "HBCU News",
+   "headline": "SC State launching first HBCU vet and animal science bachelor's in SC",
+   "url": "https://hbcunews.com/2026/11/20/sc-state-launching-first-hbcu-vet-and-animal-science-bachelors-in-sc/",
+   "summary": "South Carolina State University has state approval to reopen its bachelor's degree in animal and veterinary sciences, closed in 1971 after 75 years, with pre-veterinary and industry pathways and hands-on lab and farm training. If national accreditation follows, SC State would be South Carolina's first HBCU offering the degree, in a profession where Black people are about 1.3 percent of veterinary professionals, backed by more than $26 million invested in Nance Hall and its research farm."
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-20",
+   "category": "Politics and Policy",
+   "source": "HBCU News",
+   "headline": "‘HBCUs Create Leaders’: America’s First Black Woman Governor is Florida A&M Alum",
+   "url": "https://hbcunews.com/2026/11/20/hbcus-create-leaders-americas-first-black-woman-governor-is-florida-am-alum/",
+   "summary": "Georgia Governor-elect Keisha Lance Bottoms, a Florida A&M graduate, became the first Black woman elected governor in U.S. history on November 3, and HBCU leaders say her win, built on healthcare, housing, safety, schools and free community and technical college tuition, is proof of what HBCUs produce. UNCF president Michael Lomax predicted a surge in HBCU applications, saying HBCUs create leaders, while FAMU president Marva Johnson called Bottoms an example of leadership grounded in courage and service."
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-20",
+   "category": "Health",
+   "source": "EIN Presswire",
+   "headline": "NCDHHS Office of Rural Health Celebrates National Rural Health Day, Honors NC's 'Community Star' Recipient",
+   "url": "https://www.usagriculturepost.com/article/957840125-ncdhhs-office-of-rural-health-celebrates-national-rural-health-day-honors-nc-s-community-star-recipient",
+   "summary": "Eva Clayton, who in 1992 became the first Black member of Congress from North Carolina since George Henry White in 1898, has been named North Carolina's Community Star for 2026 by the state health department's Office of Rural Health for National Rural Health Day. Clayton, who later served with the UN Food and Agriculture Organization, continues rural health advocacy through the Green Rural Redevelopment Organization and the Eva Clayton Rural Food Institute she founded."
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-20",
+   "category": "Business",
+   "source": "Reuters",
+   "headline": "Angola to pay $180 million for 10% of De Beers, Endiama CEO says",
+   "url": "https://www.reuters.com/world/africa/angola-pay-180-million-10-de-beers-endiama-ceo-says-2026-11-20/",
+   "summary": "Angola will pay about $180 million for a 10 percent stake in De Beers, state diamond miner Endiama's CEO José Manuel Augusto Ganga Júnior said on Friday, joining Namibia and Botswana, already a 15 percent shareholder, among the diamond giant's new owners. He was speaking after Endiama commissioned Angola's first gold refinery in Luanda, able to process 25 kilograms a day, and said the De Beers stake still made sense despite slumping gem prices.",
+   "country": "Angola"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-20",
+   "category": "Business",
+   "source": "Reuters",
+   "headline": "Retailer Mr Price's NKD deal boosts sales, but higher finance costs weigh on profit",
+   "url": "https://www.reuters.com/world/africa/retailer-mr-prices-nkd-deal-boosts-sales-higher-finance-costs-weigh-profit-2026-11-20/",
+   "summary": "South African retailer Mr Price reported a 2.2 percent rise in half-year earnings on Friday, as finance costs from its acquisition of German discount retailer NKD jumped 145 percent to 1 billion rand and weighed on growth. Group retail sales rose 41.8 percent to 25.3 billion rand with NKD contributing 6.9 billion, while Africa sales grew 3.1 percent to 18.4 billion rand on 101 new stores, and the group declared an interim dividend of 329.5 cents per share.",
+   "country": "South Africa"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-20",
+   "category": "Money",
+   "source": "Reuters",
+   "headline": "South African rand near one-year low with coalition talks in focus",
+   "url": "https://www.reuters.com/world/africa/south-african-rand-near-one-year-low-with-coalition-talks-focus-2026-11-20/",
+   "summary": "The South African rand touched a one-year low in early trade on Friday, trading at 17.56 to the dollar, as uncertainty over coalition talks after local elections combined with a stronger dollar and a hawkish split in Thursday's central bank decision to hold rates. Investors are watching whether the ANC and its partners can deliver stable governance in Johannesburg, with the benchmark 2035 government bond steady at a yield of 8.635 percent.",
+   "country": "South Africa"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-20",
+   "category": "Sports",
+   "source": "Reuters",
+   "headline": "South Africa make lock change for Ireland match",
+   "url": "https://www.reuters.com/sports/south-africa-make-lock-change-ireland-match-2026-11-20/",
+   "summary": "South Africa have been forced into a second-row change for Saturday's Nations Championship clash with Ireland in Dublin, with Franco Mostert, earning his 88th cap, replacing Ruan Nortje after Nortje picked up a training niggle. Coach Rassie Erasmus, serving a six-match ban, will not be allowed into the stadium but worked with the team in the build-up, SA Rugby said.",
+   "country": "South Africa"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-20",
+   "category": "Sports",
+   "source": "Reuters",
+   "headline": "Markram to lead S Africa in second test against Bangladesh as T20, ODI squads named",
+   "url": "https://www.reuters.com/sports/cricket/markram-lead-s-africa-second-test-against-bangladesh-t20-odi-squads-named-2026-11-20/",
+   "summary": "Aiden Markram will captain South Africa in Monday's second test against Bangladesh at Centurion, with injured captain Temba Bavuma replaced in the squad by Senuran Muthusamy and Tony de Zorzi likely to come into the playing XI. Cricket South Africa also named its ODI squad, captained by Keshav Maharaj with Lungi Ngidi returning from injury, and a Twenty20 squad led by Bjorn Fortuin for the December series against Bangladesh.",
+   "country": "South Africa"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-20",
+   "category": "Sports",
+   "source": "Reuters",
+   "headline": "Battered Boks and All Black battle for place in Nations Championship final",
+   "url": "https://www.reuters.com/sports/rugby-battered-boks-all-black-battle-place-nations-championship-final-2026-11-20/",
+   "summary": "South Africa and New Zealand, the world's top two rugby teams, both need wins on Saturday to reach the Nations Championship final on November 29 after surprise defeats last weekend, France beating the Springboks 21-19 and Wales ending a 73-year wait to beat the All Blacks. The All Blacks lead the southern standings by one point, so a bonus-point win over England at Twickenham would put them in the final and close the door on South Africa, who face Ireland in Dublin.",
+   "country": "South Africa"
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-19",
+   "category": "Education",
+   "source": "HBCU News",
+   "headline": "HBCU-style Denver high school Robert F. Smith STEAM Academy to close after split board vote",
+   "url": "https://hbcunews.com/2026/11/19/hbcu-style-denver-high-school-robert-f-smith-steam-academy-to-close-after-split-board-vote/",
+   "summary": "Denver's school board has voted 4-2 to close the Robert F. Smith STEAM Academy at the end of the school year, the HBCU-modeled high school founded by Black parents and coaches in 2021 that now enrolls just 24 students. Board members who voted no sought a pause over teacher concessions, but Superintendent Alex Marrero said the district was done negotiating and that per-pupil funding made the school financially unsustainable."
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-19",
+   "category": "Sports",
+   "source": "The Hype Magazine",
+   "headline": "Stephen A. Smith Brings HBCU Basketball to BET",
+   "url": "https://www.thehypemagazine.com/2026/11/19/stephen-a-smith-hbcu-basketball-bet/",
+   "summary": "Stephen A. Smith's Straight Shooter Media is teaming up with Skydance's BET to telecast HBCU basketball, Variety reported on November 19, in a partnership Smith is building with Entertainment Tonight co-host Kevin Frazier. Smith, a Winston-Salem State alumnus and former HBCU player, has framed the venture as job creation for Black talent and producers as well as games, with Howard's schedule listing six BET broadcasts starting December 3 against Grambling State."
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-19",
+   "category": "Technology",
+   "source": "GIS Barbados",
+   "headline": "National Digital Literacy Strategy Set To Be Launched",
+   "url": "https://gisbarbados.gov.bb/blog/national-digital-literacy-strategy-set-to-be-launched/",
+   "summary": "Barbados will launch DigiForward, its national digital literacy initiative from the Ministry of Technological and Vocational Training, on Friday, November 20, aiming to close the country's digital skills gap with a whole-of-society approach. The programme targets small businesses, hospitality workers, seniors, job seekers and people pursuing technical careers such as coding and artificial intelligence, upskilling the current workforce while empowering the general public.",
+   "country": "Barbados"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-19",
+   "category": "Obituaries",
+   "source": "CARICOM",
+   "headline": "CONDOLENCE MESSAGE | Passing of Ambassador Nigel Barrow",
+   "url": "https://caricom.org/condolence-message-passing-of-ambassador-nigel-barrow/",
+   "summary": "CARICOM has mourned Ambassador Nigel Ainsley Barrow of Barbados, calling him a distinguished public servant and a dedicated proponent of regional integration. As chair of the Inter-Governmental Task Force whose work produced the Revised Treaty of Chaguaramas, Barrow laid the legal foundation for the CARICOM Single Market and Economy, and CARICOM extended condolences to his family, colleagues and friends, and to the Government and people of Barbados.",
+   "country": "Barbados"
+  },
+  {
+   "tab": "america",
    "date": "2026-11-19",
    "category": "History and Heritage",
    "source": "HBCU News",
@@ -136,6 +288,25 @@
    "url": "https://www.reuters.com/world/africa/senegal-president-implements-2026-budget-changes-by-decree-amid-impasse-with-2026-11-19/",
    "summary": "Senegal's President Bassirou Diomaye Faye will implement the revised 2026 budget by decree, his office said on Thursday, as an impasse with parliament threatens a new International Monetary Fund support programme. The standoff stems from a dispute between Faye and his former prime minister Ousmane Sonko, now head of the National Assembly, whose Pastef party controls the assembly and opposes both the revised 2026 budget, rejected on November 3, and the 2027 budget bill voted against on Wednesday.",
    "country": "Senegal"
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-18",
+   "category": "Sports",
+   "source": "ClutchPoints",
+   "headline": "A'ja Wilson donates pairs of A'Two's to this HBCU hoops program",
+   "url": "https://clutchpoints.com/hbcu/aja-wilson-donates-pairs-of-atwos-to-this-hbcu-hoops-program",
+   "summary": "Las Vegas Aces star A'ja Wilson has surprised Tennessee State University's women's basketball team with customized pairs of her signature Nike A'Two sneakers, which the Lady Tigers personalised through Nike By You. The gift, captured in a video shared by Just Women's Hoops, extends Wilson's support for HBCU programs after she gave her A'One shoes to Benedict College, her father's alma mater, in January."
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-18",
+   "category": "Politics and Policy",
+   "source": "Jamaica Inquirer",
+   "headline": "MP Brown Burke suspended from Parliament for six sittings, after late-night motion approved",
+   "url": "https://jamaicainquirer.com/mp-brown-burke-suspended-from-parliament-for-six-sittings-after-late-night-motion-approved/",
+   "summary": "Jamaica's Opposition MP Dr Angela Brown Burke has been suspended from the House of Representatives for six sittings after a late-night motion by Leader of Government Business Floyd Green was approved just before midnight. The motion accused the South West St Andrew MP of inappropriate conduct in the chamber, including standing in the aisle and obstructing Speaker Juliet Holness, allegations Brown Burke defended herself against as Opposition MPs challenged the motion's fairness.",
+   "country": "Jamaica"
   },
   {
    "tab": "america",
@@ -3097,7 +3268,7 @@
    "summary": "Week 8 of the HBCU football season shook up both major conferences: Bethune-Cookman beat top-ranked Jackson State 24-21 on a touchdown pass with 40 seconds left, Howard won at Morgan State on an 87-yard interception return in overtime, and Texas Southern walked off Southern with a 46-yard field goal at its 99th homecoming."
   }
  ],
- "updated": "2026-11-19",
+ "updated": "2026-11-20",
  "window_days": 30,
  "categories": [
   "Politics and Policy",
