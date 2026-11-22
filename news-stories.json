@@ -3,6 +3,141 @@
  "feed": "All Black Towns - Black News",
  "stories": [
   {
+   "tab": "international",
+   "date": "2026-11-22",
+   "category": "Community",
+   "source": "Reuters",
+   "headline": "Death toll from Nigeria boat accident rises to 24",
+   "url": "https://www.reuters.com/world/africa/death-toll-nigeria-boat-accident-rises-24-2026-11-22/",
+   "summary": "At least 24 people have died after a crowded boat carrying passengers to a funeral capsized in southern Nigeria on Friday, the National Emergency Management Agency said, with 24 bodies recovered and 24 survivors rescued as search and rescue work continued on Saturday. The boat was travelling from Ayama to the Ukubie community in Bayelsa State for a burial ceremony when it went down; police had earlier put the toll at four and cited a mechanical failure, and Bayelsa governor Douye Diri visited the scene and ordered an investigation.",
+   "country": "Nigeria"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-22",
+   "category": "Sports",
+   "source": "Reuters",
+   "headline": "South Africa make two changes for second test against Bangladesh",
+   "url": "https://www.reuters.com/sports/cricket/south-africa-make-two-changes-second-test-against-bangladesh-2026-11-22/",
+   "summary": "South Africa have made two changes for the second and final test against Bangladesh in Centurion on Monday, bringing in batter Tony de Zorzi and fast bowler Anrich Nortje as they look to close out the series. De Zorzi replaces regular captain Temba Bavuma, who has a calf injury, with Aiden Markram again standing in as skipper, while Nortje comes in for Dane Paterson; South Africa won the first test by nine wickets and sit top of the World Test Championship table as defending champions.",
+   "country": "South Africa"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-22",
+   "category": "Education",
+   "source": "Chale News",
+   "headline": "UMaT's First Ghanaian Female Valedictorian: Anna Hannah Ansah",
+   "url": "https://chale.news/anna-hannah-ansah-becomes-umats-first-ghanaian-female-valedictorian/",
+   "summary": "Anna Hannah Ansah has become the University of Mines and Technology's first Ghanaian female valedictorian, graduating in Petroleum Engineering with a Cumulative Weighted Average of 91.02 percent and collecting six awards at the university's 19th Congregation in Tarkwa. The Wesley Girls' High School alumna took honours including the Gold Fields Ghana Award for Overall Best Graduating Student, and is completing her national service at the Ghana National Petroleum Corporation in Tema.",
+   "country": "Ghana"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-22",
+   "category": "Community",
+   "source": "Lesotho NewsDesk",
+   "headline": "Lesotho Sends 63 Young Basotho to the 2026 YouthConnekt Africa Summit in Rwanda",
+   "url": "https://lesotho.co.ls/2026/11/lesotho-sends-63-young-basotho-to-the-2026-youthconnekt-africa-summit-in-rwanda/",
+   "summary": "Lesotho has flagged off 63 young innovators and entrepreneurs to represent the country at the YouthConnekt Africa Summit in Kigali, Rwanda, from November 25 to 27, the largest delegation from a single country in the summit's history. Prime Minister Ntsokoane Samuel Matekane handed over the national flag at the send-off in Maseru, describing young Basotho as the country's greatest national asset, with the delegation backed by the SEBABATSO youth empowerment initiative.",
+   "country": "Lesotho"
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-21",
+   "category": "Justice",
+   "source": "USA TODAY",
+   "headline": "Former Jackson Mayor Chokwe Antar Lumumba sentenced in FBI bribery case",
+   "url": "https://www.usatoday.com/story/news/politics/2026/11/21/chokwe-antar-lumumba-sentenced/92897007007/",
+   "summary": "Former Jackson, Mississippi mayor Chokwe Antar Lumumba has been sentenced to 37 months in federal prison, the last of three officials sentenced in an FBI undercover bribery sting built around a proposed downtown hotel. Judge Daniel P. Jordan III also ordered one year of supervised release and the forfeiture of the $50,000 Lumumba took from undercover agents posing as developers in exchange for moving a bidding deadline; Lumumba, who served as mayor from 2017 to 2025 and pleaded guilty to conspiracy in July, is to report to prison on January 4, 2027."
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-21",
+   "category": "Sports",
+   "source": "HBCU Gameday",
+   "headline": "Prairie View wins division will host SWAC Championship",
+   "url": "https://hbcugameday.com/2026/11/21/prairie-view-wins-division-will-host-swac-championship/",
+   "summary": "Prairie View A&M beat Alabama State 45-10 in Montgomery on Saturday to win its second straight SWAC West Division title, its fifth win in a row after a shaky October, and home-field advantage for the SWAC Championship Game. The Panthers will host Alabama A&M, which clinched the East with a 51-19 win over Mississippi Valley State, on December 5 at Panther Stadium, with the winner advancing to face MEAC champion South Carolina State in the Celebration Bowl on December 12."
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-21",
+   "category": "Sports",
+   "source": "HBCU Gameday",
+   "headline": "HBCUs swept out of opening round of NCAA Playoffs",
+   "url": "https://hbcugameday.com/2026/11/21/hbcus-swept-out-of-opening-round-of-ncaa-playoffs/",
+   "summary": "All six HBCU football programs in the NCAA Division II playoff field lost their first-round games on Saturday, ending a historic postseason in which the SIAC placed a record four teams and the CIAA two. Top seed Benedict fell 38-3 at home to Newberry, Kentucky State lost 42-14 to Carson-Newman, Edward Waters lost 56-26 at Valdosta State in its playoff debut, Central State lost 42-23 to UNC Pembroke in its first appearance since 1986, Virginia Union lost 31-14 to California (PA) and Fayetteville State lost 34-13 to Kutztown."
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-21",
+   "category": "Sports",
+   "source": "Florida A&M Athletics",
+   "headline": "FAMU Takes the Florida Classic from BCU",
+   "url": "https://famuathletics.com/news/2026/11/21/football-famu-takes-the-florida-classic-from-bcu.aspx",
+   "summary": "Florida A&M beat Bethune-Cookman 27-14 in the Florida Classic at Camping World Stadium in Orlando on Saturday, in front of 51,345 fans, to reclaim the rivalry trophy. Freshman quarterback Armond Parker ran for 105 yards and a touchdown, threw for another score and was named the game's Most Valuable Player, while the Rattlers' defense forced five turnovers and held the Wildcats without an offensive touchdown until late in the fourth quarter."
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-21",
+   "category": "Sports",
+   "source": "BVM Sports",
+   "headline": "Tigers Handle Tougaloo to Close Homestand, 96-60",
+   "url": "https://bvmsports.com/2026/11/21/tigers-handle-tougaloo-to-close-homestand-96-60/",
+   "summary": "Stillman College's men's basketball team never trailed in a 96-60 win over Tougaloo College in Tuscaloosa on Saturday, closing out the East/West HBCU Athletic Conference Pod at Birthright Alumni Hall. LaMarcus Crawford led the Tigers with 22 points on 8-for-10 shooting, A'Dreline Robinson added 17 points, 11 assists and four steals, and Michael Kinnard scored 16 as Stillman opened the game with a 10-2 run and built a 23-4 lead inside six minutes."
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-21",
+   "category": "Sports",
+   "source": "Ghana Football Association",
+   "headline": "Black Challenge stun defending champions Turkey to storm historic World Cup Final",
+   "url": "https://www.ghanafa.org/black-challenge-stun-defending-champions-turkey-to-storm-historic-world-cup-final?amp=1",
+   "summary": "Ghana's Black Challenge amputee football team have reached the Amputee Football World Cup final for the first time, eliminating defending champions Turkey 4-3 on penalties after a 1-1 draw following extra time in Mexico. Mubarik Mohammed scored in extra time to take his tournament tally to seven goals before converting again in the shootout, and Ghana will face Morocco, who came back to beat Brazil 2-1, in an all-African final in San Juan de los Lagos on Sunday.",
+   "country": "Ghana"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-21",
+   "category": "Politics and Policy",
+   "source": "IPP Media",
+   "headline": "Samia: New constitution ready by 2028/29",
+   "url": "https://ippmedia.co.tz/the-guardian/news/read/samia-new-constitution-ready-by-202829-2026-11-21-081619",
+   "summary": "Tanzania should have a new or revised constitution by 2028 or 2029, President Samia Suluhu Hassan has said, as her government prepares to establish a Reconciliation Commission to gather views ahead of the reform process. Speaking to senior police officers in Moshi on November 20, Samia said nominations were being sought from religious leaders, political parties and civil society groups to serve on the commission, which will identify the areas of the constitution that need to change.",
+   "country": "Tanzania"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-21",
+   "category": "Technology",
+   "source": "Fica News",
+   "headline": "Kenya flags off eight ICT students for Huawei training in China",
+   "url": "https://ficanews.com/a/kenya-flags-off-eight-ict-students-for-huawei-training-in-china",
+   "summary": "Kenya has flagged off eight university students for Huawei's Seeds for the Future 2026 programme in Shenzhen and Dongguan, China, up from five students sent in 2025. The fully funded training at Huawei's research and development facilities covers artificial intelligence, 5G and 6G networks, cloud computing and digital power, and Principal Secretary Korir Sing'Oei linked the cohort to the government's Digital Superhighway agenda and its push to connect education to skills and jobs.",
+   "country": "Kenya"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-21",
+   "category": "Health",
+   "source": "APO Group",
+   "headline": "Kenya: PS Oluga Explores Opportunities for AI in Healthcare Delivery",
+   "url": "https://www.africa-newsroom.com/press/kenya-ps-oluga-explores-opportunities-for-ai-in-healthcare-delivery?lang=en",
+   "summary": "Kenya's Principal Secretary for Medical Services, Dr Ouma Oluga, has hosted Anthropic's global health team lead Anne Stake in Nairobi to explore using artificial intelligence to strengthen healthcare delivery. The talks, distributed by APO Group on behalf of the Ministry of Health, covered AI support for clinical decision-making, disease surveillance and diagnostic efficiency under Kenya's national AI in Health Strategy, with an emphasis on data sovereignty, security and responsible use.",
+   "country": "Kenya"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-21",
+   "category": "Technology",
+   "source": "Winneba News",
+   "headline": "GTEC Urges University of Mines and Technology to Lead Technological Fight Against Galamsey",
+   "url": "https://winnebanews.com/2026/11/21/gtec-urges-university-of-mines-and-technology-to-lead-technological-fight-against-galamsey/",
+   "summary": "Ghana's Tertiary Education Commission has challenged the University of Mines and Technology in Tarkwa to lead the development of technological solutions to illegal small-scale mining, known as galamsey. Director-General Professor Abdullah Jinapor told the university's 19th Congregation that enforcement alone cannot win the fight, urging research into mercury-free gold recovery, land reclamation technology and digital monitoring systems, with collaboration across academia, government, mining companies and affected communities.",
+   "country": "Ghana"
+  },
+  {
    "tab": "america",
    "date": "2026-11-21",
    "category": "Politics and Policy",
@@ -86,6 +221,24 @@
    "url": "https://phillyyardyvibes.com/jabbem-damion-coombs-jamaica-beach-access/",
    "summary": "Damion Coombs of the Jamaica Beach Birthright Environmental Movement has called Prime Minister Andrew Holness's pledge of at least two free public beaches per parish, with 10 beaches upgraded, ludicrous, arguing all of Jamaica's coastline is a birthright, not a limited privilege. JaBBEM, which says less than one percent of the coastline remains freely accessible, is demanding repeal of the colonial-era Beach Control Act of 1956, withdrawal of the proposed Beach Access and Management Policy, and a law declaring the entire coastline a public common.",
    "country": "Jamaica"
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-20",
+   "category": "Sports",
+   "source": "USA TODAY",
+   "headline": "James Harden erupts for 51 to pass Kobe Bryant on 50-point games list",
+   "url": "https://www.usatoday.com/story/sports/nba/2026/11/20/james-harden-cavaliers-pacers-50-point-games-kobe-bryant/92891409007/",
+   "summary": "James Harden scored 51 points on Friday night to lead the Cleveland Cavaliers past the Indiana Pacers 128-119 in an NBA Cup game, his 26th career 50-point game. The 37-year-old's performance moved him past Kobe Bryant into third place on the all-time list for 50-point games, behind only Michael Jordan with 31 and Wilt Chamberlain with 118, and was his highest-scoring game of the season."
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-20",
+   "category": "Sports",
+   "source": "HBCU Gameday",
+   "headline": "HBCU women's basketball: Alabama A&M makes history with UAB upset",
+   "url": "https://hbcugameday.com/2026/11/20/hbcu-womens-basketball-alabama-am-makes-history-with-uab-upset/",
+   "summary": "Alabama A&M's women's basketball team beat UAB 66-53 in Huntsville for the first win over the Blazers in program history, handing the previously unbeaten team its first loss of the season. The Bulldogs outscored UAB 23-9 in the third quarter and held them to 27.1 percent shooting, with Alisha Murray scoring 15 points with five rebounds and six steals, Janessa Kelley adding 14 points and Aniya Palmer recording a double-double."
   },
   {
    "tab": "america",
@@ -3439,7 +3592,7 @@
    "summary": "Week 8 of the HBCU football season shook up both major conferences: Bethune-Cookman beat top-ranked Jackson State 24-21 on a touchdown pass with 40 seconds left, Howard won at Morgan State on an 87-yard interception return in overtime, and Texas Southern walked off Southern with a 46-yard field goal at its 99th homecoming."
   }
  ],
- "updated": "2026-11-21",
+ "updated": "2026-11-22",
  "window_days": 30,
  "categories": [
   "Politics and Policy",
