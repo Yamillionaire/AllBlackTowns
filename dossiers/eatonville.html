@@ -139,7 +139,7 @@ details.inline[open] > summary::after{content:" \2212"}
 .abt-lock-note a{display:inline-block;background:#c9a227;color:#0e0c09;border-radius:6px;padding:9px 15px;font-weight:700;text-decoration:none;font-size:.92rem}
 html.abt-unlocked .abt-cover{display:none}
 </style>
-<script>try{if(localStorage.getItem('abtSamplesUnlocked')==='1'){document.documentElement.classList.add('abt-unlocked');}}catch(e){}</script>
+<script>try{if(localStorage.getItem('abtSamplesUnlocked')==='1'||localStorage.getItem('abtCurriculumUnlocked')==='1'){document.documentElement.classList.add('abt-unlocked');}}catch(e){}</script>
 <!-- abt-access:end -->
 <!-- abt-access-gate:start -->
 <style>
@@ -367,11 +367,15 @@ Free and Black! That's the fact!</p></div><div class="cfu" data-chapter="ch7"><h
     var got = state.cfu[cid] || [];
     return c.questions.every(function(q, i){ return got[i] === true; });
   }
+  function emailUnlocked(){
+    try { return localStorage.getItem('abtSamplesUnlocked') === '1' || localStorage.getItem('abtCurriculumUnlocked') === '1'; } catch(e) { return false; }
+  }
   function isUnlocked(i){
     if (!CFU) return true;
     if (state.teacherUnlock) return true;
     if (i <= 0) return true;
-    return cfuPassed(chapters[i - 1].id);
+    if (chapters[i] && chapters[i].id === 'ch7') return true;
+    return emailUnlocked();
   }
   function chapterIndex(el){ return chapters.indexOf(el); }
   var note = document.getElementById('lock-note');
@@ -379,7 +383,7 @@ Free and Black! That's the fact!</p></div><div class="cfu" data-chapter="ch7"><h
   function showNote(target){
     if (!note) return;
     var label = target.getAttribute('data-label') || target.id;
-    note.innerHTML = '<strong>' + label + ' is locked for now.</strong> Answer the check for understanding questions at the end of the previous chapter to unlock it.';
+    note.innerHTML = '<strong>' + label + ' is locked for now.</strong> Enter your email address in the sign-up panel on this page to unlock the chapters.';
     note.style.display = 'block';
     note.scrollIntoView({behavior: 'smooth', block: 'center'});
   }
@@ -458,6 +462,9 @@ Free and Black! That's the fact!</p></div><div class="cfu" data-chapter="ch7"><h
   }
   paintTicks();
   paintLocks();
+  if (window.MutationObserver) {
+    new MutationObserver(function(){ paintLocks(); }).observe(document.documentElement, {attributes: true, attributeFilter: ['class']});
+  }
   var bar = document.getElementById('progress-bar');
   if (!CFU) {
     var active = null;
@@ -538,7 +545,7 @@ Free and Black! That's the fact!</p></div><div class="cfu" data-chapter="ch7"><h
         dn.hidden = false;
         dn.textContent = (idx === chapters.length - 1)
           ? 'Chapter complete. That was the final chapter of this dossier.'
-          : 'Chapter complete. The next chapter is now unlocked.';
+          : 'Chapter complete.';
       } else {
         dn.hidden = true;
       }
@@ -632,7 +639,7 @@ Free and Black! That's the fact!</p></div><div class="cfu" data-chapter="ch7"><h
 (function(){
   var KEY = 'abtSamplesUnlocked';
   function unlock(){ document.documentElement.classList.add('abt-unlocked'); }
-  try { if (localStorage.getItem(KEY) === '1') unlock(); } catch(e) {}
+  try { if (localStorage.getItem(KEY) === '1' || localStorage.getItem('abtCurriculumUnlocked') === '1') unlock(); } catch(e) {}
   document.addEventListener('DOMContentLoaded', function(){
     var forms = document.querySelectorAll('.abt-gate-form');
     Array.prototype.forEach.call(forms, function(form){
@@ -645,6 +652,7 @@ Free and Black! That's the fact!</p></div><div class="cfu" data-chapter="ch7"><h
         if (status) status.textContent = 'Opening the chapters...';
         fetch('https://formsubmit.co/ajax/info@allblacktowns.com', {method: 'POST', headers: {'Content-Type': 'application/json', 'Accept': 'application/json'}, body: JSON.stringify({email: email, _subject: 'All Black Towns sample chapters unlock'})}).catch(function(){});
         try { localStorage.setItem(KEY, '1'); } catch(e) {}
+        try { localStorage.setItem('abtCurriculumUnlocked', '1'); } catch(e) {}
         unlock();
       });
     });

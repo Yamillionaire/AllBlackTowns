@@ -158,7 +158,7 @@ html.abt-unlocked .abt-cover{display:none}
 html.abt-cc-unlocked .abt-cc-gate-panel{display:none}
 html:not(.abt-cc-unlocked) .dossier section.chapter:not(#intro):not(#ch7){display:none!important}
 </style>
-<script>try{if(localStorage.getItem('abtCurriculumUnlocked')==='1'){document.documentElement.classList.add('abt-cc-unlocked');}}catch(e){}</script>
+<script>try{if(localStorage.getItem('abtCurriculumUnlocked')==='1'||localStorage.getItem('abtSamplesUnlocked')==='1'){document.documentElement.classList.add('abt-cc-unlocked');}}catch(e){}</script>
 <!-- abt-cc-gate:end -->
 
 
@@ -270,11 +270,15 @@ html:not(.abt-cc-unlocked) .dossier section.chapter:not(#intro):not(#ch7){displa
     var got = state.cfu[cid] || [];
     return c.questions.every(function(q, i){ return got[i] === true; });
   }
+  function emailUnlocked(){
+    try { return localStorage.getItem('abtSamplesUnlocked') === '1' || localStorage.getItem('abtCurriculumUnlocked') === '1'; } catch(e) { return false; }
+  }
   function isUnlocked(i){
     if (!CFU) return true;
     if (state.teacherUnlock) return true;
     if (i <= 0) return true;
-    return cfuPassed(chapters[i - 1].id);
+    if (chapters[i] && chapters[i].id === 'ch7') return true;
+    return emailUnlocked();
   }
   function chapterIndex(el){ return chapters.indexOf(el); }
   var note = document.getElementById('lock-note');
@@ -282,7 +286,7 @@ html:not(.abt-cc-unlocked) .dossier section.chapter:not(#intro):not(#ch7){displa
   function showNote(target){
     if (!note) return;
     var label = target.getAttribute('data-label') || target.id;
-    note.innerHTML = '<strong>' + label + ' is locked for now.</strong> Answer the check for understanding questions at the end of the previous chapter to unlock it.';
+    note.innerHTML = '<strong>' + label + ' is locked for now.</strong> Enter your email address in the sign-up panel on this page to unlock the chapters.';
     note.style.display = 'block';
     note.scrollIntoView({behavior: 'smooth', block: 'center'});
   }
@@ -361,6 +365,9 @@ html:not(.abt-cc-unlocked) .dossier section.chapter:not(#intro):not(#ch7){displa
   }
   paintTicks();
   paintLocks();
+  if (window.MutationObserver) {
+    new MutationObserver(function(){ paintLocks(); }).observe(document.documentElement, {attributes: true, attributeFilter: ['class']});
+  }
   var bar = document.getElementById('progress-bar');
   if (!CFU) {
     var active = null;
@@ -441,7 +448,7 @@ html:not(.abt-cc-unlocked) .dossier section.chapter:not(#intro):not(#ch7){displa
         dn.hidden = false;
         dn.textContent = (idx === chapters.length - 1)
           ? 'Chapter complete. That was the final chapter of this dossier.'
-          : 'Chapter complete. The next chapter is now unlocked.';
+          : 'Chapter complete.';
       } else {
         dn.hidden = true;
       }
@@ -535,7 +542,7 @@ html:not(.abt-cc-unlocked) .dossier section.chapter:not(#intro):not(#ch7){displa
 (function(){
   var KEY = 'abtCurriculumUnlocked';
   function unlock(){ document.documentElement.classList.add('abt-cc-unlocked'); }
-  try { if (localStorage.getItem(KEY) === '1') unlock(); } catch(e) {}
+  try { if (localStorage.getItem(KEY) === '1' || localStorage.getItem('abtSamplesUnlocked') === '1') unlock(); } catch(e) {}
   document.addEventListener('DOMContentLoaded', function(){
     var forms = document.querySelectorAll('.abt-cc-gate-form');
     Array.prototype.forEach.call(forms, function(form){
@@ -548,6 +555,7 @@ html:not(.abt-cc-unlocked) .dossier section.chapter:not(#intro):not(#ch7){displa
         if (status) status.textContent = 'One moment...';
         fetch('https://formsubmit.co/ajax/info@allblacktowns.com', {method: 'POST', headers: {'Content-Type': 'application/json', 'Accept': 'application/json'}, body: JSON.stringify({email: email, _subject: 'All Black Towns Complete Curriculum signup', _autoresponse: 'Thank you for signing up with All Black Towns. The Complete Curriculum is the paid program that carries the full chapter curriculum for towns like Fort Mose, Washington, and Parting Ways, and it is opening soon. The song on every town page stays free for everyone. We will write to this address the moment membership opens.'})}).catch(function(){});
         try { localStorage.setItem(KEY, '1'); } catch(e) {}
+        try { localStorage.setItem('abtSamplesUnlocked', '1'); } catch(e) {}
         unlock();
       });
     });

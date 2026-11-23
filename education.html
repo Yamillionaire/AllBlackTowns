@@ -167,7 +167,7 @@
         headers: {'Content-Type': 'application/json', 'Accept': 'application/json'},
         body: JSON.stringify({email: email, _subject: 'New All Black Towns subscriber'})
       }).then(function(r){ if (!r.ok) throw new Error('send failed'); return r.json(); })
-        .then(function(){ if (status) status.textContent = 'You are on the list. Watch your inbox - the next town is coming.'; nlForm.reset(); })
+        .then(function(){ try { localStorage.setItem('abtCurriculumUnlocked', '1'); localStorage.setItem('abtSamplesUnlocked', '1'); } catch(e) {} if (status) status.textContent = 'You are on the list. Watch your inbox - the next town is coming.'; nlForm.reset(); })
         .catch(function(){ if (status) status.textContent = 'That did not go through. Please try again, or write to us at info@allblacktowns.com.'; });
     });
   }
@@ -218,6 +218,7 @@
     if (status) status.textContent = 'One moment...';
     fetch('https://formsubmit.co/ajax/info@allblacktowns.com', {method: 'POST', headers: {'Content-Type': 'application/json', 'Accept': 'application/json'}, body: JSON.stringify({email: email, _subject: 'All Black Towns Complete Curriculum signup', _autoresponse: 'Thank you for signing up with All Black Towns. The Complete Curriculum is the paid program that carries the full chapter curriculum for towns like Fort Mose, Washington, and Parting Ways, and it is opening soon. The song on every town page stays free for everyone. We will write to this address the moment membership opens.'})}).catch(function(){});
     try { localStorage.setItem(KEY, '1'); } catch(e) {}
+    try { localStorage.setItem('abtSamplesUnlocked', '1'); } catch(e) {}
     var dest = pending; closeGate(); if (dest) window.location.href = dest;
   });
 })();
