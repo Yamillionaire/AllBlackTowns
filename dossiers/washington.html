@@ -309,6 +309,7 @@ While you testify clear, we ascend, we groove, we prove.</p>
     if (stored) { for (var k in stored) state[k] = stored[k]; }
   } catch(e) {}
   if (!state.done) state.done = [];
+  if (CFU) state.done = state.done.filter(function(id){ return Object.prototype.hasOwnProperty.call(CFU.chapters, id); });
   if (CFU) {
     if (!state.cfu) state.cfu = {};
     state.teacherUnlock = !!state.teacherUnlock;
@@ -327,7 +328,7 @@ While you testify clear, we ascend, we groove, we prove.</p>
   function cfuPassed(cid){
     if (!CFU) return false;
     var c = CFU.chapters[cid];
-    if (!c) return true;
+    if (!c) return false;
     var got = state.cfu[cid] || [];
     return c.questions.every(function(q, i){ return got[i] === true; });
   }
