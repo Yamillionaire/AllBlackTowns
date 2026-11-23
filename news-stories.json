@@ -3,6 +3,141 @@
  "feed": "All Black Towns - Black News",
  "stories": [
   {
+   "tab": "america",
+   "date": "2026-11-23",
+   "category": "Technology",
+   "source": "Black Enterprise",
+   "headline": "Major Banks Warn Customers Could Be Liable For AI Mistakes",
+   "url": "https://www.blackenterprise.com/major-banks-ai-agents-mistakes/",
+   "summary": "Major U.S. banks including JPMorgan Chase, Citi and Ally are warning customers that they could be held financially responsible for mistakes made by AI agents they let access their accounts, Black Enterprise reports. Citi has updated its online user agreement to say customers who authorize third-party AI agents are responsible for activity conducted through those tools, and the banks are also warning against sharing passwords and security codes with AI platforms, though the warnings do not override federal consumer protection laws."
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-23",
+   "category": "Politics and Policy",
+   "source": "Reuters",
+   "headline": "Zambia opposition leader charged with attempting to overthrow government",
+   "url": "https://www.reuters.com/world/africa/zambia-opposition-leader-charged-with-attempting-overthrow-government-2026-11-23/",
+   "summary": "Zambian opposition leader Brian Mundubile and more than a dozen associates have been charged with trying to overthrow the government and committed to the High Court to stand trial for treason, according to a charge sheet read in court on Monday. Mundubile and his running mate Makebi Zulu, who say the August presidential election was rigged, are accused of plotting between April and August and of funding military training in Russia for five people; Mundubile says he is innocent and the charges are politically motivated, and the trial is expected early next year.",
+   "country": "Zambia"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-23",
+   "category": "Health",
+   "source": "Reuters",
+   "headline": "Fields of graves: Hidden deaths reveal scale of Ebola disaster",
+   "url": "https://www.reuters.com/investigations/fields-graves-hidden-deaths-reveal-scale-ebola-disaster-2026-11-23/",
+   "summary": "A Reuters investigation using satellite imagery of cemeteries in Bunia, eastern Congo, estimates the Ebola outbreak's true toll is far above official figures: by early November the city's excess deaths topped 1,000, more than 50 percent higher than the official Ebola tally of 707, in an outbreak that has infected more than 11,500 people and killed over 5,500 nationwide. Africa CDC's head of emergency response called the findings broadly plausible, while Congo's health ministry did not respond to requests for comment.",
+   "country": "DR Congo"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-23",
+   "category": "Business",
+   "source": "Reuters",
+   "headline": "Congo halts cobalt exports again to tackle oversupply, support prices, industry regulator says",
+   "url": "https://www.reuters.com/world/africa/congo-halts-cobalt-exports-again-tackle-oversupply-support-prices-industry-2026-11-23/",
+   "summary": "The Democratic Republic of Congo will suspend all cobalt exports from November 30 until further notice, its strategic minerals regulator ARECOMS said on Monday, in a second halt since April 2025 aimed at tackling oversupply, weak prices and rising inventories. The suspension covers industrial and artisanal production alike, and ARECOMS says the pause will be used to adjust its quota system, with a review four months after it takes effect and no automatic resumption.",
+   "country": "DR Congo"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-23",
+   "category": "Business",
+   "source": "Reuters",
+   "headline": "Coca-Cola HBC makes JSE debut as CCBA deal nears completion",
+   "url": "https://www.reuters.com/world/africa/coca-cola-hbc-makes-jse-debut-ccba-deal-nears-completion-2026-11-23/",
+   "summary": "Coca-Cola HBC shares began trading on the Johannesburg Stock Exchange on Monday in one of the largest inward listings in recent years, days before the bottler completes its acquisition of a 75 percent controlling stake in Coca-Cola Beverages Africa, the continent's largest Coca-Cola bottler. The Swiss-based company, already listed in London and Athens with a market value of about 341 billion rand, opened at 996 rand; after the deal closes on November 27 it will account for about two-thirds of Coca-Cola system volumes in Africa.",
+   "country": "South Africa"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-23",
+   "category": "Sports",
+   "source": "Reuters",
+   "headline": "CAS to release Senegal Africa Cup of Nations title appeal decision on Tuesday",
+   "url": "https://www.reuters.com/sports/soccer/cas-release-senegal-africa-cup-nations-title-appeal-decision-tuesday-2026-11-23/",
+   "summary": "The Court of Arbitration for Sport will announce on Tuesday its decision on Senegal's appeal against being stripped of this year's Africa Cup of Nations title, the court said on Monday. Senegal beat hosts Morocco 1-0 after extra time in January's final but were later ruled to have forfeited the match by walking off the pitch in protest at a late penalty, with CAF awarding Morocco a 3-0 win; Senegal argue the referee's decision to complete the match was final.",
+   "country": "Senegal"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-23",
+   "category": "Sports",
+   "source": "Reuters",
+   "headline": "Springboks make seven changes for Nations Championship final",
+   "url": "https://www.reuters.com/sports/springboks-make-seven-changes-nations-championship-final-2026-11-23/",
+   "summary": "South Africa have made seven changes and one positional swap for Sunday's Nations Championship final against France at Twickenham, with DR Congo-born loose-forward Emmanuel Tshituka in line for a debut off the bench. Sacha Feinberg-Mngomezulu moves to fullback for the injured Damian Willemse, Manie Libbok starts at flyhalf and captain Siya Kolisi again leads the back row; France beat the Springboks 21-19 in Paris earlier this month.",
+   "country": "South Africa"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-23",
+   "category": "Sports",
+   "source": "Reuters",
+   "headline": "South Africans Marx, Nche shortlisted for world player of the year award",
+   "url": "https://www.reuters.com/world/africa/south-africans-marx-nche-shortlisted-world-player-year-award-2026-11-23/",
+   "summary": "Springboks hooker Malcolm Marx, last year's winner, and prop Ox Nche have been named on the four-man shortlist for World Rugby's men's player of the year award, World Rugby said on Monday, with Nche bidding to become the first prop to win it. France winger Louis Bielle-Biarrey and New Zealand centre Jordie Barrett complete the list, South Africa's Paul de Villiers is shortlisted for breakthrough player of the year, and the winners will be announced during this weekend's Nations Championship Finals at Twickenham.",
+   "country": "South Africa"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-23",
+   "category": "Money",
+   "source": "Reuters",
+   "headline": "South African rand gains as commodity prices rise and dollar weakens",
+   "url": "https://www.reuters.com/world/africa/south-african-rand-gains-commodity-prices-rise-dollar-weakens-2026-11-23/",
+   "summary": "The South African rand strengthened about 0.9 percent on Monday to trade at 17.4325 against the dollar, helped by firmer commodity prices, with gold recovering from a 14-month low and platinum up 1.2 percent, and by a softer dollar. South Africa's benchmark 2035 government bond also firmed, its yield falling 7.5 basis points to 8.63 percent, as traders looked ahead to U.S. inflation data on Wednesday.",
+   "country": "South Africa"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-23",
+   "category": "Technology",
+   "source": "TechMoran",
+   "headline": "Launch Africa Leads $500,000 into AI Commerce Startup Khaime",
+   "url": "https://techmoran.com/2026/11/23/launch-africa-leads-500000-investment-in-ai-commerce-startup-khaime/",
+   "summary": "Launch Africa Ventures has led a $500,000 pre-seed investment in Khaime, an AI commerce startup founded by Gabriel Olokunwolu that lets merchants build AI-generated online stores, take payments in more than 120 currencies and automate customer conversations across WhatsApp, Instagram and Messenger. Khaime says it has attracted more than 5,000 merchants and that its AI sales assistant recovered 32.3 percent of abandoned carts in October; the startup has also been selected for the Visa Africa FinTech Accelerator.",
+   "country": "Africa"
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-22",
+   "category": "Sports",
+   "source": "theScore",
+   "headline": "Prescott accounts for 5 TDs as Cowboys roll to 51-30 victory over Titans",
+   "url": "https://www.thescore.com/nfl/news/3663255/prescott-accounts-for-5-t-ds-as-cowboys-roll-to-51-30-victory-over-titans",
+   "summary": "Dak Prescott threw four touchdown passes and ran for a fifth as Dallas beat Tennessee 51-30 in Arlington on Sunday, scoring touchdowns on its first six drives and on every possession before a closing kneel-down. Prescott finished 28 of 33 for 325 yards with a franchise-record-tying 19 straight completions, while CeeDee Lamb and George Pickens each topped 100 receiving yards and scored; Dallas improved to 5-6 and Tennessee fell to 1-9."
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-22",
+   "category": "Culture and Arts",
+   "source": "HBCU Gameday",
+   "headline": "HBCU Bands Honor Scott Colom at Soul Bowl",
+   "url": "https://hbcugameday.com/2026/11/22/soul-bowl-hbcu-bands-scott-colom/",
+   "summary": "Alcorn State's Sounds of Dyn-O-Mite and Jackson State's Sonic Boom of the South set aside their Soul Bowl band rivalry at halftime in Lorman to join forces and spell out the name of Senator-elect Scott Colom, the first Black Mississippian elected to the U.S. Senate by statewide popular vote. The tribute, less than two weeks after the Associated Press called Colom's win over incumbent Cindy Hyde-Smith, played out on the campus first led by Hiram Revels, the first Black U.S. senator."
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-22",
+   "category": "Obituaries",
+   "source": "Entertainment Weekly",
+   "headline": "Chadwick Boseman's father Leroy dies at 82",
+   "url": "https://ew.com/chadwick-boseman-father-leroy-dies-at-82-12272704",
+   "summary": "Leroy Boseman, father of the late Black Panther star Chadwick Boseman, has died at 82 after a brief illness, his family confirmed; he passed away on Thursday, November 19, in Belton, South Carolina, where he had worked in a textile factory and run an upholstery shop while raising three sons with his wife Carolyn, a nurse. The death comes six years after Chadwick's death at 43 and days before what would have been his 50th birthday."
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-22",
+   "category": "Sports",
+   "source": "Sports Illustrated",
+   "headline": "HBCU Football Coaching Tracker 2026",
+   "url": "https://www.si.com/college/hbcu/football/hbcu-football-coaching-tracker-2026",
+   "summary": "Five HBCU football programs have head coaching vacancies as of November 22, the HBCU Legends tracker reports, each led by an interim coach: Bethune-Cookman, the only Division I opening, where Alvin 'Shine' Wyatt stepped in for the Florida Classic, plus Tuskegee, Lane College and Fort Valley State in the SIAC and Lincoln University of Missouri in the GLVC. Stillman College, by contrast, has hired Teddy Keaton as coach and athletic director to restart a program idle since 2015."
+  },
+  {
    "tab": "international",
    "date": "2026-11-22",
    "category": "Community",
@@ -41,6 +176,24 @@
    "url": "https://lesotho.co.ls/2026/11/lesotho-sends-63-young-basotho-to-the-2026-youthconnekt-africa-summit-in-rwanda/",
    "summary": "Lesotho has flagged off 63 young innovators and entrepreneurs to represent the country at the YouthConnekt Africa Summit in Kigali, Rwanda, from November 25 to 27, the largest delegation from a single country in the summit's history. Prime Minister Ntsokoane Samuel Matekane handed over the national flag at the send-off in Maseru, describing young Basotho as the country's greatest national asset, with the delegation backed by the SEBABATSO youth empowerment initiative.",
    "country": "Lesotho"
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-21",
+   "category": "Sports",
+   "source": "South Carolina State University Athletics",
+   "headline": "SC State Closes Regular Season Unbeaten in MEAC Play With 26-16 Win Over Delaware State",
+   "url": "https://www.scsuathletics.com/news/2026/11/21/football-sc-state-closes-regular-season-unbeaten-in-meac-play-with-26-16-win-over-delaware-state.aspx",
+   "summary": "South Carolina State beat Delaware State 26-16 in Orangeburg to close the regular season 10-2 and a perfect 5-0 in the MEAC, the Bulldogs' third straight conference title and 21st overall. Tied 16-16 in the fourth quarter, SC State pulled away on a Jett Jackson field goal and a Josh Shaw touchdown run; quarterback Keely Watson threw the 100th touchdown pass of his career, and head coach Chennis Berry is now 15-0 in MEAC play ahead of the December 12 Celebration Bowl."
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-21",
+   "category": "History and Heritage",
+   "source": "USA TODAY",
+   "headline": "Navy won't rename Doris Miller aircraft carrier after Trump",
+   "url": "https://www.usatoday.com/story/news/nation/2026/11/21/navy-doris-miller-trump/92900814007/",
+   "summary": "The Navy has confirmed it will keep the name USS Doris Miller on the Ford-class carrier CVN-81, ending reports that it considered renaming the ship for President Donald Trump; a Navy statement on November 21 said there is no intention to change the name, and a keel-laying ceremony is set for December 5 at Newport News. Miller, the Pearl Harbor hero who would be the first African American and first enlisted sailor to have a carrier named for him, remains the subject of a family-backed push for a posthumous Medal of Honor."
   },
   {
    "tab": "america",
@@ -3592,7 +3745,7 @@
    "summary": "Week 8 of the HBCU football season shook up both major conferences: Bethune-Cookman beat top-ranked Jackson State 24-21 on a touchdown pass with 40 seconds left, Howard won at Morgan State on an 87-yard interception return in overtime, and Texas Southern walked off Southern with a 46-yard field goal at its 99th homecoming."
   }
  ],
- "updated": "2026-11-22",
+ "updated": "2026-11-23",
  "window_days": 30,
  "categories": [
   "Politics and Policy",
