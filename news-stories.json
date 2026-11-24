@@ -4,6 +4,149 @@
  "stories": [
   {
    "tab": "america",
+   "date": "2026-11-24",
+   "category": "Sports",
+   "source": "Reuters",
+   "headline": "Commanders rally past Bengals as last-minute drive produces winning FG",
+   "url": "https://www.reuters.com/sports/nfl/commanders-rally-past-bengals-last-minute-drive-produces-winning-fg--flm-2026-11-24/",
+   "summary": "Jayden Daniels led Washington 64 yards in 34 seconds with two throws to rookie Antonio Williams, setting up Drew Stevens' fifth field goal, a 26-yarder as time expired, in a 22-20 Monday night win over Cincinnati in Landover. Daniels threw for 289 yards and ran for 55, Williams had nine catches for 122 yards, and the Commanders improved to 4-5-1 while ending the Bengals' five-game winning streak and dropping them to 7-3."
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-24",
+   "category": "Sports",
+   "source": "Reuters",
+   "headline": "Moroccan federation reports incident to CAS during Senegal AFCON appeal, source says",
+   "url": "https://www.reuters.com/sports/soccer/moroccan-federation-reports-incident-cas-during-senegal-afcon-appeal-source-says-2026-11-24/",
+   "summary": "Morocco's football federation has reported an incident to the Court of Arbitration for Sport during Senegal's appeal over the Africa Cup of Nations title, ahead of a ruling due later on Tuesday, a source with direct knowledge told Reuters. The federation alleges Senegal Football Federation president Abdoulaye Fall spoke by phone on Sunday with one of the three arbitrators hearing the case; Reuters could not independently verify whether the call took place, and CAS was not immediately available for comment.",
+   "country": "Morocco"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-24",
+   "category": "Money",
+   "source": "Reuters",
+   "headline": "South African rand steady ahead of leading indicator data",
+   "url": "https://www.reuters.com/world/africa/south-african-rand-steady-ahead-leading-indicator-data-2026-11-24/",
+   "summary": "The South African rand was steady in early trade on Tuesday at 17.4125 to the dollar, little changed from its previous close of 17.41, as investors awaited the central bank's leading business cycle indicator for September. The Reserve Bank release covers vehicle sales, business confidence and money supply, markets are also awaiting U.S. PCE inflation data on Wednesday, and South Africa's benchmark 2035 government bond was flat with a yield of 8.65 percent.",
+   "country": "South Africa"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-24",
+   "category": "Business",
+   "source": "Reuters",
+   "headline": "South Africa's Pepkor warns port disruptions to weigh on festive trading",
+   "url": "https://www.reuters.com/world/africa/south-africas-pepkor-warns-port-disruptions-weigh-festive-trading-2026-11-24/",
+   "summary": "South African retailer Pepkor has warned that port disruptions and delayed inventory arrivals will weigh on near-term trading heading into Black Friday and the festive season, even as it reported a 9.7 percent rise in annual normalised headline earnings. Revenue rose 11.9 percent to 105.9 billion rand for the year ended September 30, normalised headline earnings per share climbed to 177.5 cents, and the Pep and Ackermans owner said its discount model gained more than 200 basis points of market share.",
+   "country": "South Africa"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-24",
+   "category": "Sports",
+   "source": "Reuters",
+   "headline": "Ackerman hits quickfire 150 as South Africa take 137-run lead",
+   "url": "https://www.reuters.com/sports/cricket/ackerman-hits-quickfire-150-south-africa-take-137-run-lead-2026-11-24/",
+   "summary": "South Africa opener Marques Ackerman raced to 150 off 138 balls with 27 boundaries to establish a 137-run lead over Bangladesh at lunch on day two of the second test at Centurion. Ackerman, trapped leg-before by Shoriful Islam, scored his second successive test century after 157 in last week's nine-wicket first test win, and South Africa reached 228-3 in reply to Bangladesh's 91 after resuming on 88-1.",
+   "country": "South Africa"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-24",
+   "category": "Sports",
+   "source": "African Newspage",
+   "headline": "FIFA President Says Nigeria Is Not Ready. ACG Says the Problem Is Not Nigeria. It Is the Model.",
+   "url": "https://www.africannewspage.net/2026/11/fifa-president-says-nigeria-is-not-ready-acg-says-the-problem-is-not-nigeria-it-is-the-model/",
+   "summary": "FIFA president Gianni Infantino told ARISE News in Abuja on November 23 that Nigeria could not host a World Cup today, citing inadequate stadiums, airports and transport, and African Collaborations Group founder Nicolas Pompigne-Mognard responded that the problem is the model, not Nigeria. ACG argues standalone football-only stadiums sit empty some 340 days a year and urges integrated sport and entertainment districts that generate revenue year-round, a direction backed by a new World Bank, IOC and AFD report on sport in Africa.",
+   "country": "Nigeria"
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-23",
+   "category": "Technology",
+   "source": "HBCU News",
+   "headline": "Drake State Partners With Blue Origin for New Opportunities in Space Manufacturing",
+   "url": "https://hbcunews.com/2026/11/23/drake-state-partners-with-blue-origin-for-new-opportunities-in-space-manufacturing/",
+   "summary": "Historically Black Drake State Community and Technical College in Huntsville, Alabama, has partnered with Blue Origin to prepare students for space manufacturing careers through ATLAS, a registered apprenticeship combining classroom instruction with hands-on training at Blue Origin facilities. A first cohort of 10 students began in October, earning full-time salaries and benefits from day one and a path to nationally recognised journey worker certifications in skills including CNC programming and quality systems."
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-23",
+   "category": "Sports",
+   "source": "Black Enterprise",
+   "headline": "NCAA Mandatory Coach Handshake Nixed After Dawn Staley-Geno Auriemma Clash",
+   "url": "https://www.blackenterprise.com/ncaa-coaches-handshakes-dawn-staley-geno-auriemma-clash/amp/",
+   "summary": "The NCAA is removing the mandatory pregame handshake for coaches in the women's basketball tournament, following the heated April Final Four exchange between South Carolina coach Dawn Staley and UConn coach Geno Auriemma, Black Enterprise reports. A Division I women's basketball committee memo distributed on Friday makes the handshake optional while still encouraging an informal greeting, and also ends mandatory media locker room access between the Sweet 16 and Elite Eight."
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-23",
+   "category": "Obituaries",
+   "source": "Black Enterprise",
+   "headline": "NFL Legend And ESPN Broadcaster Tom Jackson Dies At 75",
+   "url": "https://www.blackenterprise.com/nfl-legend-and-espn-broadcaster-tom-jackson-dies-at-75/",
+   "summary": "Former Denver Broncos linebacker and longtime ESPN analyst Tom Jackson has died at 75, his family confirmed to ESPN; he died on Friday, November 20, and Chris Berman announced the news on Sunday NFL Countdown, with no cause disclosed. Jackson played 14 seasons as a cornerstone of Denver's Orange Crush defence, earned three Pro Bowl selections, and then helped define ESPN's NFL coverage for nearly three decades alongside Berman on NFL Primetime and Sunday NFL Countdown."
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-23",
+   "category": "Sports",
+   "source": "Sports Illustrated",
+   "headline": "Texas Southern Fires Head Football Coach Cris Dishman",
+   "url": "https://www.si.com/college/hbcu/football/texas-southern-fires-head-football-coach-cris-dishman",
+   "summary": "Texas Southern is parting ways with head football coach Cris Dishman, athletic director Ashley Robinson confirmed, after the Tigers closed 2026 at 3-8 overall and 2-6 in the SWAC with a 42-17 loss to Arkansas-Pine Bluff. Dishman went 14-19 in three seasons, including the program's first winning season since 2000 in 2025, and the university said on November 23 that he will not return for 2027 and that a nationwide search will begin immediately."
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-23",
+   "category": "Politics and Policy",
+   "source": "Black Enterprise",
+   "headline": "Stacey Abrams Expands Mission Beyond Voting Rights",
+   "url": "https://www.blackenterprise.com/stacey-abrams-restructures-fair-fight/amp/",
+   "summary": "Stacey Abrams is restructuring Fair Fight, the voting rights organisation she founded in 2018, to wind down its voting-focused operations and unveil a new mission in 2027 focused on protecting democratic institutions, Black Enterprise reports, citing the Associated Press. Abrams said the shift reflects concerns over congressional redistricting and state government authority, and that the group will educate Americans on how state legislatures shape health care, education and spending, without abandoning voting rights advocacy."
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-23",
+   "category": "Business",
+   "source": "Editor and Publisher",
+   "headline": "Oprah Daily to close at year’s end; Winfrey offers departing staff $20,000",
+   "url": "https://www.editorandpublisher.com/stories/oprah-daily-to-close-at-years-end-winfrey-offers-departing-staff-20000,264618",
+   "summary": "Oprah Daily will close on December 31, ending Oprah Winfrey's 26-year publishing partnership with Hearst Magazines that began with O, The Oprah Magazine in 2000, Editor and Publisher reports. Winfrey will personally give $20,000 to more than two dozen affected employees, on top of Hearst severance, according to Axios reporting cited in the story; employees were notified of the closure on November 18."
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-23",
+   "category": "Sports",
+   "source": "Ghana Football Association",
+   "headline": "Ghana make history as Black Challenge beat Morocco to win 2026 Amputee Football World Cup in Mexico",
+   "url": "https://www.ghanafa.org/ghana-make-history-as-black-challenge-beat-morocco-to-win-2026-amputee-football-world-cup-in-mexico?amp=1",
+   "summary": "Ghana's Black Challenge have won the 2026 Amputee Football World Cup, beating Morocco 1-0 in Sunday's final in San Juan de los Lagos, Mexico, for the country's first world title in amputee football. Captain Richard Opentil scored the decisive goal in the 32nd minute, forward Mubarik Mohammed took the Golden Boot with seven goals, and Ghana became the second African nation to win the competition after Angola in 2018, having beaten defending champions Turkey on penalties in the semi-final.",
+   "country": "Ghana"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-23",
+   "category": "Technology",
+   "source": "TechMoran",
+   "headline": "Qualcomm Awards $75,000 to African Livestock AI Startup Qualikeeper as 2026 Accelerator Concludes",
+   "url": "https://techmoran.com/2026/11/23/qualcomm-awards-75000-to-african-livestock-ai-startup-qualikeeper-as-2026-accelerator-concludes/",
+   "summary": "Qualcomm has awarded a $75,000 equity-free grant to African agritech startup Qualikeeper Investments to expand StocKeeper, its AI-powered internet-of-things platform for monitoring livestock health, TechMoran reports. Qualikeeper won the 2026 Qualcomm for Good Social Impact Fund at the close of the fourth Make in Africa Startup Mentorship Program, beating nine other startups from nine African countries working on AI, edge computing and connected devices, and will also receive tailored technical assistance.",
+   "country": "Africa"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-23",
+   "category": "Entertainment",
+   "source": "Black Enterprise",
+   "headline": "'The Honorable' Shyne Will Always 'Rock The Bells' And Rep Belize",
+   "url": "https://www.blackenterprise.com/shyne-barrow-rock-bells-belize-parliament-2/amp/",
+   "summary": "Grammy-nominated rapper and former Belizean opposition leader Moses 'Shyne' Barrow is preparing to perform at LL Cool J's Rock the Bells Festival on November 29 in Newark while laying the groundwork for a new album, a 2027 memoir and a 2030 return to Belize's Parliament, Black Enterprise reports. Barrow, the only hip-hop artist elected to a national congress-level parliament, told the magazine there is no difference between Shyne the performer and Moses the parliamentarian, and that he brings the same energy to the legislature.",
+   "country": "Belize"
+  },
+  {
+   "tab": "america",
    "date": "2026-11-23",
    "category": "Technology",
    "source": "Black Enterprise",
@@ -100,6 +243,15 @@
    "url": "https://techmoran.com/2026/11/23/launch-africa-leads-500000-investment-in-ai-commerce-startup-khaime/",
    "summary": "Launch Africa Ventures has led a $500,000 pre-seed investment in Khaime, an AI commerce startup founded by Gabriel Olokunwolu that lets merchants build AI-generated online stores, take payments in more than 120 currencies and automate customer conversations across WhatsApp, Instagram and Messenger. Khaime says it has attracted more than 5,000 merchants and that its AI sales assistant recovered 32.3 percent of abandoned carts in October; the startup has also been selected for the Visa Africa FinTech Accelerator.",
    "country": "Africa"
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-22",
+   "category": "Sports",
+   "source": "HBCU Gameday",
+   "headline": "Michael Vick gets first conference win as Norfolk State completes four-game turnaround",
+   "url": "https://hbcugameday.com/2026/11/22/michael-vick-gets-first-conference-win-as-norfolk-state-completes-four-game-turnaround/",
+   "summary": "Michael Vick has his first conference win as Norfolk State head coach, as the Spartans beat Howard 35-7 in Saturday's season finale to close 2026 at 5-7, a four-game improvement on his 1-11 debut season. Norfolk State snapped a 10-game MEAC losing streak behind two fourth-quarter pick-sixes seven seconds apart, a career-high 183 rushing yards from Jalyn Daniels and 460 yards of total offence, for the program's highest win total since 2021."
   },
   {
    "tab": "america",
@@ -3734,18 +3886,9 @@
    "summary": "The California-based Haitian Bridge Alliance called on the US administration to stop deportations to Haiti and on the Senate to restore Temporary Protected Status for more than 300,000 Haitians. The group cited gang violence and mass displacement in Haiti, alongside the State Department's Level 4 do-not-travel warning for the country.",
    "tab": "international",
    "url": "https://johnacarroll.substack.com/p/keep-haitian-families-together-halt"
-  },
-  {
-   "tab": "america",
-   "category": "Sports",
-   "date": "2026-10-25",
-   "headline": "Bethune-Cookman Stuns No. 1 Jackson State in the Final Minute as HBCU Football Delivers a Week of Upsets",
-   "source": "Data Driven HBCU",
-   "url": "https://datadrivenhbcu.com/2026/10/25/week-8-hbcu-football-recap-bethune-cookman-stuns-no-1-jackson-state-howard-wins-in-overtime-and-texas-southern-walks-off/",
-   "summary": "Week 8 of the HBCU football season shook up both major conferences: Bethune-Cookman beat top-ranked Jackson State 24-21 on a touchdown pass with 40 seconds left, Howard won at Morgan State on an 87-yard interception return in overtime, and Texas Southern walked off Southern with a 46-yard field goal at its 99th homecoming."
   }
  ],
- "updated": "2026-11-23",
+ "updated": "2026-11-24",
  "window_days": 30,
  "categories": [
   "Politics and Policy",
