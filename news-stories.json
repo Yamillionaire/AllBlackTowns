@@ -4,6 +4,149 @@
  "stories": [
   {
    "tab": "america",
+   "date": "2026-11-25",
+   "category": "Sports",
+   "source": "Reuters",
+   "headline": "Celtics build 34-point lead then hold off Wizards",
+   "url": "https://www.reuters.com/sports/basketball/celtics-build-34-point-lead-then-hold-off-wizards--flm-2026-11-25/",
+   "summary": "Jayson Tatum scored 41 points with six rebounds and eight assists as Boston ended a four-game losing streak by beating Washington 131-116 in an NBA Cup game on Tuesday, Reuters reports. Boston built a 34-point first-half lead and led 80-49 at halftime before Washington cut the margin to five in the fourth quarter; Paul George added 28 points, Anthony Davis had 33 points and 13 rebounds for the Wizards, and Boston stayed unbeaten at 3-0 in Eastern Group C."
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-25",
+   "category": "Justice",
+   "source": "Reuters",
+   "headline": "Nigeria seizes more than $200 million of meth, arrests five Mexicans",
+   "url": "https://www.reuters.com/world/africa/nigeria-seizes-more-than-200-million-meth-arrests-five-mexicans-2026-11-25/",
+   "summary": "Nigeria's anti-drug agency said on Wednesday it had seized methamphetamine valued at $227 million and arrested five Mexican nationals in the southeastern state of Enugu, Reuters reports. Agency chief Mohamed Buba Marwa said a Nigerian national recruited the five to produce meth at an industrial complex in Enugu, where officers recovered 1.5 metric tons of meth, 6.7 tons of chemicals and industrial equipment; the agency says it has now dismantled four industrial-scale meth laboratories, all in the country's south.",
+   "country": "Nigeria"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-25",
+   "category": "Politics and Policy",
+   "source": "Reuters",
+   "headline": "South Africa's Ramaphosa wins court case to overturn 'Farmgate' panel report",
+   "url": "https://www.reuters.com/world/africa/south-africas-ramaphosa-wins-court-case-overturn-farmgate-panel-report-2026-11-25/",
+   "summary": "South African President Cyril Ramaphosa won a court bid on Wednesday to set aside a panel report that had found he may have violated the constitution over misconduct allegations linked to his 'Farmgate' scandal, Reuters reports. The ruling overturns the panel report at the centre of the long-running affair over money stolen from Ramaphosa's game farm.",
+   "country": "South Africa"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-25",
+   "category": "Money",
+   "source": "Reuters",
+   "headline": "South African rand eases, with US inflation data in focus",
+   "url": "https://www.reuters.com/world/africa/south-african-rand-eases-with-us-inflation-data-focus-2026-11-25/",
+   "summary": "The South African rand weakened on Wednesday to 17.6275 to the dollar, down about 0.5 percent from its previous close, as market participants awaited U.S. inflation figures that could signal the Federal Reserve's next moves, Reuters reports. The U.S. PCE index, the Fed's preferred inflation gauge, is the last key inflation release before the Fed's final 2026 meeting, and South Africa's benchmark 2035 government bond was steady with a yield of 8.66 percent.",
+   "country": "South Africa"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-25",
+   "category": "Money",
+   "source": "Reuters",
+   "headline": "Africa can borrow its way to lower debt burden, OECD and AU say",
+   "url": "https://www.reuters.com/world/africa/africa-can-borrow-its-way-lower-debt-burden-oecd-au-say-2026-11-25/",
+   "summary": "African countries could lower their debt burdens by borrowing more, provided the money funds projects that boost economic growth, the OECD and the African Union said in a joint report on Wednesday, Reuters reports. The report estimates $93 billion of debt-funded investment in productive assets over five years could raise annual growth by nearly a percentage point, create more than 10 million jobs and cut Africa's debt-to-GDP ratio by 14 percentage points, while warning that 23 of 38 assessed countries are at risk of debt distress.",
+   "country": "Africa"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-25",
+   "category": "Technology",
+   "source": "TechCabal",
+   "headline": "Nigerian cybersecurity startup Aeon extends pre-seed to $2 million",
+   "url": "https://techcabal.com/2026/11/25/aeon-extends-pre-seed-round-to-2-million/",
+   "summary": "Nigerian cybersecurity startup Aeon has extended its pre-seed round to $2 million to expand its engineering team and accelerate product development, TechCabal reports. Launch Africa Ventures and Octerra Capital joined existing backers including Terra Industries and Resilience17, the fund founded by Flutterwave co-founder Olugbenga Agboola; Aeon's AI-powered Aeon Console platform and Aeon Edge network device are aimed at African organisations facing AI-enabled cybercrime, which INTERPOL says now enables about 55 percent of reported cybercrimes on the continent.",
+   "country": "Nigeria"
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-24",
+   "category": "Culture and Arts",
+   "source": "Black Enterprise",
+   "headline": "Essence Festival Will Not Return To New Orleans In 2027",
+   "url": "https://www.blackenterprise.com/essence-festival-not-return-new-orleans-2027/",
+   "summary": "The Essence Festival of Culture will not return to New Orleans in 2027, ending a run of more than three decades, after Sundial Media Group and city officials failed to reach a new multiyear agreement following the expiration of the previous seven-year contract, Black Enterprise reports. The festival has generated an estimated $300 million in economic impact for the city; Mayor Helena Moreno said New Orleans will develop a new Black cultural celebration for the 2027 Fourth of July weekend, and Essence's next destination has not been announced."
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-24",
+   "category": "Sports",
+   "source": "Black Enterprise",
+   "headline": "Kwanza Jones, José E. Feliciano, Near Record $750M Deal To Buy LA Sparks",
+   "url": "https://www.blackenterprise.com/kwanza-jones-jose-e-feliciano-750m-deal-la-sparks/",
+   "summary": "Entrepreneur Kwanza Jones and her husband, investor José E. Feliciano, are in advanced negotiations to buy the Los Angeles Sparks for a reported $750 million, which would be the largest franchise sale in WNBA history, Black Enterprise reports, citing Sportico and NBC Sports. The price is about 25 times the Sparks' 2026 revenue and more than double the previous WNBA record of $300 million; the couple bought baseball's San Diego Padres for $3.9 billion in August, and the Sparks sale is not final and remains subject to league approval."
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-24",
+   "category": "Money",
+   "source": "Black Enterprise",
+   "headline": "Killer Mike's Greenwood Banking Program Shuts Down",
+   "url": "https://www.blackenterprise.com/killer-mikes-greenwood-banking-shuts-down/",
+   "summary": "Greenwood, the digital banking venture co-founded by Killer Mike, Andrew Young and Ryan Glover to expand banking access for Black and Latino communities, has shut down its banking program, Black Enterprise reports. The program ended on November 19 when Greenwood terminated its arrangement with Coastal Community Bank and closed all accounts; remaining balances will be returned by paper check by December 2, customers were asked to confirm mailing addresses by November 24, and a partnership with Ben Crump's DreamFi does not transfer accounts automatically."
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-24",
+   "category": "Entertainment",
+   "source": "Black Enterprise",
+   "headline": "'HBCU First LOOK' Awards $8.5K To Student Filmmakers",
+   "url": "https://www.blackenterprise.com/hbcu-first-look-awards-8-5k-to-student-filmmakers-while-building-career-connections/",
+   "summary": "Three student filmmakers shared $8,500 in awards at the fourth annual HBCU First LOOK Film & TV Festival at Howard University on November 5-7, which drew more than 450 submissions to its 2026 Film Challenge, Black Enterprise reports. Florida A&M's Jada Davis won the $5,000 grand prize for a documentary on Black landownership, Howard's Mya Delgado took $2,500 for the short 'Flowers,' and Coppin State's Christian Sutton earned $1,000 for 'My Alter Ego.'"
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-24",
+   "category": "Sports",
+   "source": "New York Post",
+   "headline": "Stephen A. Smith says Black NBA players have thanked him over white Lakers comments",
+   "url": "https://nypost.com/2026/11/24/sports/stephen-a-smith-black-nba-players-lakers-white-trio/",
+   "summary": "ESPN personality Stephen A. Smith said on his 'Straight Shooter' show on Tuesday that Black NBA players have privately thanked him for his comments questioning whether the league's Black stars would let the Los Angeles Lakers, led by white stars Luka Dončić, Austin Reaves and Walker Kessler, win a championship, the New York Post reports. Smith doubled down on the take despite the Lakers' 15-3 start, while former Celtics champion Kevin Garnett pushed back on him on their joint show."
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-24",
+   "category": "Culture and Arts",
+   "source": "North Carolina A&T State University",
+   "headline": "A&T Will Take on Southern in 2026 Red Lobster Band of the Year Finals",
+   "url": "https://www.ncat.edu/news/2026/11/red-lobster-band-finals.php",
+   "summary": "North Carolina A&T's Blue & Gold Marching Machine will face Southern University's Human Jukebox for the Division I national Red Lobster Band of the Year title on December 11 at Mercedes-Benz Stadium in Atlanta, as part of Celebration Bowl weekend, the university announced on November 24. A&T also announced a historic $5 million investment in the band's practice and support facilities, including a new practice field and facility modernisation, in the band's first year under interim director Aaron Campbell."
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-24",
+   "category": "Sports",
+   "source": "Reuters",
+   "headline": "CAS ruling in favour of Senegal reasserts that referee's decision is final",
+   "url": "https://www.reuters.com/sports/soccer/cas-ruling-favour-senegal-reasserts-that-referees-decision-is-final-2026-11-24/",
+   "summary": "The Court of Arbitration for Sport has upheld Senegal's appeal and reinstated them as Africa Cup of Nations winners, finding referee Jean-Jacques Ndala committed no error of law when he resumed January's final after Senegal's 14-minute walk-off protest, Reuters reports. CAF's Appeal Board had ruled Senegal forfeited the match to Morocco under article 82, but CAS secretary general Matthieu Reeb said the panel found the referee did not commit any error of law, reasserting that a referee's decision on facts of play is final.",
+   "country": "Senegal"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-24",
+   "category": "Politics and Policy",
+   "source": "Reuters",
+   "headline": "Nigeria's Tinubu asks lawmakers to trim 2026 budget spending",
+   "url": "https://www.reuters.com/world/africa/nigerias-tinubu-asks-lawmakers-trim-2026-budget-spending-2026-11-24/",
+   "summary": "Nigeria's President Bola Tinubu has asked parliament to cut 2026 federal budget spending to 65.2 trillion naira ($48 billion) from the 68.3 trillion naira lawmakers approved earlier this year, Reuters reports. In a letter seen by Reuters on Tuesday, Tinubu said the revised plan aligns with existing obligations and available resources and would keep the fiscal deficit unchanged at 5.64 percent of GDP; the finance minister is expected to present the 2027 budget next month.",
+   "country": "Nigeria"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-24",
+   "category": "Money",
+   "source": "Reuters",
+   "headline": "Nigeria's central bank maintains key rate to anchor inflation expectations",
+   "url": "https://www.reuters.com/world/africa/nigerias-central-bank-maintains-key-rate-anchor-inflation-expectations-2026-11-24/",
+   "summary": "Nigeria's central bank kept its monetary policy rate unchanged at 23 percent on Tuesday, Governor Olayemi Cardoso said, a decision the bank said would help anchor inflation expectations, Reuters reports. Six of seven economists polled by Reuters had expected the hold, which follows a surprise 350-basis-point cut in September; headline inflation eased to 14.06 percent year-on-year in October from 14.63 percent in September.",
+   "country": "Nigeria"
+  },
+  {
+   "tab": "america",
    "date": "2026-11-24",
    "category": "Sports",
    "source": "Reuters",
@@ -60,6 +203,15 @@
    "url": "https://www.africannewspage.net/2026/11/fifa-president-says-nigeria-is-not-ready-acg-says-the-problem-is-not-nigeria-it-is-the-model/",
    "summary": "FIFA president Gianni Infantino told ARISE News in Abuja on November 23 that Nigeria could not host a World Cup today, citing inadequate stadiums, airports and transport, and African Collaborations Group founder Nicolas Pompigne-Mognard responded that the problem is the model, not Nigeria. ACG argues standalone football-only stadiums sit empty some 340 days a year and urges integrated sport and entertainment districts that generate revenue year-round, a direction backed by a new World Bank, IOC and AFD report on sport in Africa.",
    "country": "Nigeria"
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-23",
+   "category": "Education",
+   "source": "Tuskegee University",
+   "headline": "Tuskegee University Global Campus Begins Accepting Students in January",
+   "url": "https://www.tuskegee.edu/news/Tuskegee-University-Global-Campus-Begins-Accepting-Students-in-January.html",
+   "summary": "Tuskegee University's new Global Campus will begin accepting students in January, expanding the HBCU's online reach with 7.5-week terms across fall, spring and summer designed for working adults, parents, veterans and learners for whom in-person study is cost-prohibitive, the university announced on November 23. Tuskegee already offers online degrees including a BS in Animal, Poultry, and Veterinary Sciences, an MS in Social Work and a Ph.D. in Integrative Public Policy and Development, with five new degree programs planned for Fall 2027."
   },
   {
    "tab": "america",
@@ -3820,75 +3972,9 @@
    "summary": "African leaders, scholars, faith leaders, and diaspora representatives gathered in Ekurhuleni from October 26 to 30 for the second Africa and African Diaspora Conference. With speakers including Thabo Mbeki and Ellen Johnson Sirleaf, the meeting aimed to turn shared history into practical cooperation on reparations, investment, and representation.",
    "tab": "international",
    "url": "https://cajglobal.com/africa-and-diaspora-unite-for-power/"
-  },
-  {
-   "category": "History and Heritage",
-   "date": "2026-10-26",
-   "headline": "Volunteers Restore Knoxville's Historic Mysterious Ten Cemetery",
-   "source": "WiseVoter (reporting the Knoxville News Sentinel)",
-   "summary": "Volunteers in Knoxville, Tennessee are restoring the historic Mysterious Ten Cemetery, a burial ground with graves dating to about 1900, with support from a Tennessee America 250 grant. A rededication ceremony was scheduled for October 31, 2026.",
-   "tab": "america",
-   "url": "https://wisevoter.com/world/us/tn/knoxville/2026/10/26/volunteers-restore-historic-knoxville-cemetery"
-  },
-  {
-   "category": "Business",
-   "date": "2026-10-26",
-   "headline": "Target Commits $500,000 to REVOLT's Bet on Black, Featuring HBCU Student Founders",
-   "source": "CoffiStop",
-   "summary": "Target committed $500,000 to season six of REVOLT's Bet on Black pitch series, which this year features only HBCU student founders. Every participating founder receives a share of the fund and keeps full ownership of their company.",
-   "tab": "america",
-   "url": "https://coffistop.com/target-commits-500k-to-bet-on-black-revolts-hbcu-biz-series/"
-  },
-  {
-   "category": "Business",
-   "date": "2026-10-26",
-   "headline": "ESSENCE Honors Four Leaders at Its Black Women in Business Luncheon",
-   "source": "ESSENCE",
-   "summary": "ESSENCE's Black Women in Business Luncheon honored Tamron Hall, Anifa Mvuemba, Ayiko Broyard, and Sarah Curtis Henry. The luncheon was held at Villa Lewaro, the Hudson Valley estate built by Madam C.J. Walker.",
-   "tab": "america",
-   "url": "https://www.essence.com/awards-events/essence-black-women-in-business-awards-luncheon-2026/"
-  },
-  {
-   "category": "Education",
-   "date": "2026-10-26",
-   "headline": "Bethune-Cookman University Secures Nearly $5.2 Million in Its First Federal Nursing Grants",
-   "source": "Black Enterprise",
-   "summary": "Bethune-Cookman University won $5,169,169 in its first-ever grants from the federal Health Resources and Services Administration, funding a nursing student success pathway and a program for working healthcare professionals. A separate $250,000 Florida appropriation will support dual-enrollment nursing credits for high school students.",
-   "tab": "america",
-   "url": "https://www.blackenterprise.com/bethune-cookman-university-secures-5-2m-historic-federal-nursing-grants/"
-  },
-  {
-   "category": "Culture and Arts",
-   "country": "United Kingdom",
-   "date": "2026-10-26",
-   "headline": "Camden Launches Its Biggest Black History Season Yet in London",
-   "source": "Camden Council News",
-   "summary": "The London Borough of Camden opened its Black History Season with its largest programme yet, spanning exhibitions, Caribbean cook-ups, and a Black Music and Rebellion event. The season celebrates Black British culture and history across the borough.",
-   "tab": "international",
-   "url": "https://news.camden.gov.uk/black-history-season-2026/"
-  },
-  {
-   "category": "Health",
-   "country": "United Kingdom",
-   "date": "2026-10-26",
-   "headline": "Black Patients in England Face Longer Delays at Every Stage of Breast Cancer Care",
-   "source": "Medical Xpress",
-   "summary": "A University of Surrey study of 86,564 patients found Black patients in England had 29 percent lower odds of being diagnosed through screening and 37 percent higher odds of emergency diagnosis, with about five days longer to treatment.",
-   "tab": "international",
-   "url": "https://medicalxpress.com/news/2026-10-black-patients-longer-breast-cancer.html"
-  },
-  {
-   "category": "Justice",
-   "country": "Haiti and the diaspora",
-   "date": "2026-10-26",
-   "headline": "Haitian Bridge Alliance Renews Call to Halt Deportations and Restore TPS for Haitians",
-   "source": "Jamaica Observer (Caribbean Media Corporation)",
-   "summary": "The California-based Haitian Bridge Alliance called on the US administration to stop deportations to Haiti and on the Senate to restore Temporary Protected Status for more than 300,000 Haitians. The group cited gang violence and mass displacement in Haiti, alongside the State Department's Level 4 do-not-travel warning for the country.",
-   "tab": "international",
-   "url": "https://johnacarroll.substack.com/p/keep-haitian-families-together-halt"
   }
  ],
- "updated": "2026-11-24",
+ "updated": "2026-11-25",
  "window_days": 30,
  "categories": [
   "Politics and Policy",
