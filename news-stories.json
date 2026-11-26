@@ -4,6 +4,140 @@
  "stories": [
   {
    "tab": "america",
+   "date": "2026-11-26",
+   "category": "Sports",
+   "source": "Reuters",
+   "headline": "NBA roundup: LeBron James' triple-double helps 76ers end Heat's win streak",
+   "url": "https://www.reuters.com/sports/nba-roundup-lebron-james-triple-double-helps-76ers-end-heats-win-streak--flm-2026-11-26/",
+   "summary": "LeBron James recorded his first triple-double as a Philadelphia 76er, with 25 points, 12 assists and 10 rebounds, as the 76ers beat the visiting Miami Heat 111-104 on Wednesday to snap Miami's seven-game winning streak, Reuters reports. Tyrese Maxey added 30 points for Philadelphia while Giannis Antetokounmpo had 32 points and 14 rebounds for Miami; elsewhere in NBA Cup play, the Knicks beat the Cavaliers 121-102 for a sixth straight win, the Grizzlies beat the Clippers 115-97, and the Warriors beat the Kings 129-110 behind De'Anthony Melton's 24 points, all from three-point range."
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-26",
+   "category": "Justice",
+   "source": "Reuters",
+   "headline": "Kenya breached constitution by allowing US-backed Ebola quarantine site, court says",
+   "url": "https://wtbx.com/2026/11/26/kenya-breached-constitution-in-building-us-backed-ebola-quarantine-site-court-says/",
+   "summary": "A Kenyan High Court ruled on Thursday that the government breached parts of the constitution by allowing construction of a U.S.-backed Ebola quarantine facility at Laikipia Air Base without public participation, Reuters reports. Judge Patricia Nyaundi said residents of Laikipia County had been denied a meaningful opportunity to know about or question the 50-bed facility, and the court ordered further work stopped until the government discloses details of its agreement with the United States; the project had sparked protests in which two young people died, and Kenya has reported no new Ebola case since October 19.",
+   "country": "Kenya"
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-25",
+   "category": "Technology",
+   "source": "AfroTech",
+   "headline": "AI/ML Engineer Dr. Syreeta Rios Created An AI-Powered Career And Project Platform For Black And Brown Women",
+   "url": "https://afrotech.com/dr-syreeta-rios-created-an-ai-powered-career-and-project-platform",
+   "summary": "AI and machine learning engineer Dr. Syreeta Rios has created Ascend AI, an AI-powered career and project management platform designed to help Black and brown women navigate corporate environments, AfroTech reports. Launched in June and demoed at the 2026 AFROTECH Conference, Ascend offers an AI advisor for workplace decisions and performance reviews, project and promotion tracking, quarterly career goals and a journal, drawing its dataset from Black-identified research and books by Black women leaders; membership is $19 a month, with an Employee Resource Group plan at $2,500 a year."
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-25",
+   "category": "Education",
+   "source": "HBCU News",
+   "headline": "Delaware State University Names Dr. Yah Williams Founding Director of the Center for Economic Mobility",
+   "url": "https://hbcunews.com/2026/11/25/delaware-state-university-names-dr-yah-williams-founding-director-of-the-center-for-economic-mobility/",
+   "summary": "Delaware State University has appointed Dr. Yahshikiah 'Yah' Williams as founding director of its new Center for Economic Mobility, the university-wide centre established this fall to put every student on a path to a good job, the university announced on November 24. Williams, currently assistant dean in the College of Business, where she built the executive mentoring program and the DEEP Day career event, takes up the role on November 30; the centre runs on the Braven platform with a sophomore-year career accelerator for all students, and 71 percent of its most recent Braven Fellows come from low-income households."
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-25",
+   "category": "Education",
+   "source": "HBCU News",
+   "headline": "Drake State Receives $20,000 Grant For Workforce Development Initiatives",
+   "url": "https://hbcunews.com/2026/11/25/drake-state-receives-20000-grant-for-workforce-development-initiatives/",
+   "summary": "Drake State Community and Technical College in Huntsville, Alabama, has been awarded a $20,000 grant from the Alabama HBCU Consortium to support workforce development initiatives that prepare students for high-demand careers, HBCU News reports. The grant, awarded at an MOU signing on campus, will help the historically Black college expand workforce training, industry-aligned credentials and career preparation programs connecting students with employers across North Alabama."
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-25",
+   "category": "Sports",
+   "source": "Howard University Athletics",
+   "headline": "Bison Trio Named to the 2026-27 HBCU All-Stars Watch List",
+   "url": "https://hubison.com/news/2026/11/25/mens-basketball-bison-trio-named-to-the-2026-27-hbcu-all-stars-watch-list.aspx",
+   "summary": "Three Howard University guards, Alex Cotton, Cam Gillus and Ose Okojie, have been named to the sixth annual HBCU All-Stars Watch List, HBCU All-Stars LLC announced on November 25. The watch list recognises the nation's top HBCU student-athletes from the MEAC, SWAC, CIAA and SIAC plus Hampton, North Carolina A&T and Tennessee State; the 2027 HBCU All-Star Game, showcasing 24 players, will be held on March 28, 2027 at the McCamish Pavilion in Atlanta."
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-25",
+   "category": "Sports",
+   "source": "Sports Illustrated",
+   "headline": "HBCU Football Transfer Portal: Announcements and Rumors, November 2026",
+   "url": "https://www.si.com/college/hbcu/football/hbcu-football-transfer-portal-announcements-november-2026",
+   "summary": "More than 20 HBCU football players across the MEAC, SWAC, CIAA and SIAC had announced plans to enter the NCAA transfer portal as of November 25, the HBCU Legends tracker reported by Sports Illustrated finds, as the 2026 season winds down. The group includes all-conference Morgan State offensive tackle Kelton Sparks, former FCS Freshman All-American Delaware State quarterback Marqui Adams and Texas Southern running back Athean Renfro Jr.; the single Division I transfer window runs January 4-13, 2027, with announcements so far reflecting intentions rather than official entries."
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-25",
+   "category": "Technology",
+   "source": "TechCabal",
+   "headline": "Amini wants to turn Africa's paper archives into data for AI",
+   "url": "https://techcabal.com/2026/11/25/amini-africa-paper-archives-data-ai/",
+   "summary": "Amini, a startup building sovereign AI infrastructure for governments in the Global South, has released Soma-1X Lite, an open-weight AI model that converts paper records into machine-readable data, TechCabal reports. The two-billion-parameter model processes about 15,000 pages an hour and recorded the lowest character error rate, 2.9 percent, among five models tested on 435 pages across ten African languages including Yoruba, Hausa, Swahili and Wolof; Amini, founded in 2022 by former Nvidia executive Kate Kallot, is working with Botswana's Ministry of Minerals and Energy to digitise decades of geological records, and has published the model's weights and evaluation code on Hugging Face.",
+   "country": "Africa"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-25",
+   "category": "Technology",
+   "source": "TechCabal",
+   "headline": "Four SA students build fintech to fix bursary pay problems",
+   "url": "https://techcabal.com/2026/11/25/sa-students-fintech-bursary-pay-problems/",
+   "summary": "Four South African university students, Brian Mbana, Aaron Matsemela, Cliff Kaela and Simanye Sobekwa, are building CampusFit, a fintech platform to help students access, manage and track their bursary allowances without the delays that leave many stranded, TechCabal reports. Born at a hackathon in East London, CampusFit plans instant peer-to-peer transfers, budgeting tools and a single dashboard linking a student's bank accounts; the founders have built a minimum viable product, expect to onboard students in the coming months, and are in the Genesis Block incubation cohort backed by FNB and the University of Cape Town Financial Innovation Hub.",
+   "country": "South Africa"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-25",
+   "category": "Obituaries",
+   "source": "Voice of Nigeria",
+   "headline": "Nollywood Legend Pete Edochie Dies At 79",
+   "url": "https://von.gov.ng/nollywood-legend-pete-edochie-dies-at-79/",
+   "summary": "Veteran Nigerian actor and retired broadcaster Chief Pete Edochie has died at 79, his family announced; he died at 12:30 a.m. on Wednesday, November 25, in Enugu after a protracted battle with prostate cancer, Voice of Nigeria reports. Edochie, who began in broadcasting in 1967, rose to prominence as Okonkwo in the 1987 Nigerian Television Authority adaptation of Chinua Achebe's Things Fall Apart and became one of Nollywood's most commanding screen figures; he held the national honour of Member of the Order of the Niger and is survived by his wife Josephine, children, siblings and other relations.",
+   "country": "Nigeria"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-25",
+   "category": "Sports",
+   "source": "CAF",
+   "headline": "Hakimi, Mané, Brahim Diaz, Saibari and Pape Gueye as named in final five for CAF Men's Player of the Year 2026",
+   "url": "https://www.cafonline.com/news/hakimi-mane-brahim-diaz-saibari-and-pape-gueye-as-named-in-final-five-for-caf-mens-player-of-the-year-2026/",
+   "summary": "CAF has unveiled the five finalists for the CAF Men's Player of the Year 2026 award: reigning holder Achraf Hakimi, Brahim Diaz and Ismael Saibari of Morocco, and Sadio Mané and Pape Gueye of Senegal, CAF announced. The shortlist, cut from ten nominees, reflects Senegal's triumph at AFCON Morocco 2025, where Mané was named Best Player and Gueye scored the extra-time winner in the final, and Morocco's run to the World Cup quarter-finals; the winner will be crowned at the CAF Awards in Lagos, Nigeria, on December 2.",
+   "country": "Africa"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-25",
+   "category": "Money",
+   "source": "BusinessDay",
+   "headline": "Banks get nod to sell $1m cash to BDCs as CBN targets gap in currency rate",
+   "url": "https://businessday.ng/news/article/banks-get-nod-to-sell-1m-cash-to-bdcs-as-cbn-targets-parallel-market/",
+   "summary": "The Central Bank of Nigeria has authorised banks to sell up to $1 million in cash to bureau de change operators, raising the supply of physical dollars in the retail foreign exchange market, BusinessDay reports. The policy, effective Wednesday, November 25, lets operators take their full allocation in cash, replacing an arrangement that capped cash withdrawals at 25 percent of the approved limit; the central bank notified lenders by email and will supply additional dollar notes where needed, a day after Governor Olayemi Cardoso attributed recent pressure on the naira to seasonal year-end demand.",
+   "country": "Nigeria"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-25",
+   "category": "Politics and Policy",
+   "source": "Reuters",
+   "headline": "Senegal parliament adopts resolution opposing president's decision to implement budget",
+   "url": "https://www.reuters.com/world/africa/senegal-parliament-adopts-resolution-opposing-presidents-decision-implement-2026-11-25/",
+   "summary": "Senegal's National Assembly on Wednesday adopted a resolution, by 128 votes to 9, denouncing President Bassirou Diomaye Faye's decision to implement a revised 2026 budget by decree after lawmakers rejected it, Reuters reports. The standoff, between Faye and his former prime minister Ousmane Sonko, whose Pastef party controls the Assembly, threatens a new $2.2 billion IMF support programme that underpins Senegal's plan to rework its debt burden; Pastef lawmakers argued the government had not provided sufficient transparency over public finances and the debt assumptions behind the revised budget.",
+   "country": "Senegal"
+  },
+  {
+   "tab": "international",
+   "date": "2026-11-25",
+   "category": "Money",
+   "source": "IT-Online",
+   "headline": "Flat October salaries reflect a tough year",
+   "url": "https://it-online.co.za/2026/11/25/flat-october-salaries-reflect-a-tough-year/",
+   "summary": "South African take-home pay stayed flat in October 2026, with the PayInc Net Salary Index, tracking about 2.1 million salary earners, unchanged at R21,680 and up only 1.8 percent on a year ago, IT-Online reports. In real terms the index fell to R20,094, 2.9 percent lower than a year ago, as headline inflation spiked to 5.2 percent on fuel price increases; economist Elize Kruger said average net salaries are down 2.3 percent in real terms year to date, likely the worst year since 2023, though easing fuel prices could restore some purchasing power in 2027.",
+   "country": "South Africa"
+  },
+  {
+   "tab": "america",
    "date": "2026-11-25",
    "category": "Sports",
    "source": "Reuters",
@@ -60,6 +194,24 @@
    "url": "https://techcabal.com/2026/11/25/aeon-extends-pre-seed-round-to-2-million/",
    "summary": "Nigerian cybersecurity startup Aeon has extended its pre-seed round to $2 million to expand its engineering team and accelerate product development, TechCabal reports. Launch Africa Ventures and Octerra Capital joined existing backers including Terra Industries and Resilience17, the fund founded by Flutterwave co-founder Olugbenga Agboola; Aeon's AI-powered Aeon Console platform and Aeon Edge network device are aimed at African organisations facing AI-enabled cybercrime, which INTERPOL says now enables about 55 percent of reported cybercrimes on the continent.",
    "country": "Nigeria"
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-24",
+   "category": "Culture and Arts",
+   "source": "Black Enterprise",
+   "headline": "Viola Davis Calls Out ‘George Floyd’ Musical As Playbill Apologizes For ‘Hateful’ Casting Notice",
+   "url": "https://www.blackenterprise.com/viola-davis-george-floyd-musical-playbill-apologizes/",
+   "summary": "Viola Davis has spoken out against a proposed George Floyd-inspired musical after a casting notice for the production appeared on Playbill's job board seeking singers and rappers, Black Enterprise reports. Playbill removed the listing and apologised unequivocally, calling it a hateful listing that had no place on its site and saying it is revising its approval processes; Busted Broadway, the company behind the project, defended it as cultural satire rather than mockery of Floyd, who was murdered by Minneapolis police officer Derek Chauvin in 2020."
+  },
+  {
+   "tab": "america",
+   "date": "2026-11-24",
+   "category": "Education",
+   "source": "HBCU News",
+   "headline": "Jackson State University to Layoff Eight Employees Due to Changes in Title III Funding",
+   "url": "https://hbcunews.com/2026/11/24/jackson-state-university-to-layoff-eight-employees-due-to-changes-in-title-iii-funding/",
+   "summary": "Jackson State University is eliminating eight positions, including staff in its division of institutional advancement, because of changes in how its federal Title III funding is allocated, HBCU News reports. The university, which received about $8.2 million in Title III funds in 2022 to support 21 projects through 2027, said the actions result from a compliance-driven reallocation of funds rather than a reduction or cancellation of federal support; the affected employees were told their roles end December 31 and were encouraged to apply for internal vacancies."
   },
   {
    "tab": "america",
@@ -3926,55 +4078,9 @@
    "summary": "Residents, school pupils, and community groups in Motherwell, Scotland marked Black History Month with music, art, drama, and an original songwriting session. North Lanarkshire Council recently passed a cross-party motion committing to properly recognize Black History Month each year.",
    "tab": "international",
    "url": "https://www.motherwell-today.co.uk/news/26679210.motherwell-event-celebrates-black-history-month-diversity/"
-  },
-  {
-   "category": "Health",
-   "date": "2026-10-27",
-   "headline": "Breast Cancer Gaps for Black Women Track Poverty and Social Conditions, Not Ancestry, Study Finds",
-   "source": "Medical Xpress",
-   "summary": "New research published in Cancer Research found that differences in breast cancer outcomes for Black women are tied to socioeconomic factors and poverty burden, including collagen architecture and immune response, rather than to ancestry itself.",
-   "tab": "america",
-   "url": "https://medicalxpress.com/news/2026-10-socioeconomic-factors-affect-outcomes-deadly.html"
-  },
-  {
-   "category": "Science",
-   "date": "2026-10-27",
-   "headline": "Black Adults in Disadvantaged Neighborhoods Less Likely to Be Diagnosed With AFib, Study Finds",
-   "source": "American College of Cardiology",
-   "summary": "A JAMA Network Open study of 504,876 greater Philadelphia residents found Black adults in disadvantaged neighborhoods were less likely than white adults to be diagnosed with atrial fibrillation, pointing to gaps in detection that can delay stroke prevention.",
-   "tab": "america",
-   "url": "https://www.acc.org/Latest-in-Cardiology/Journal-Scans/2026/10/27/15/01/Black-Adults-in-Disadvantaged-Neighborhoods"
-  },
-  {
-   "category": "Community",
-   "date": "2026-10-27",
-   "headline": "What We Need to Know: Midterms, Health Coverage, HBCU Homecoming, and the NBA Tip-Off",
-   "source": "Black America Web (Sybil Wilkes)",
-   "summary": "Sybil Wilkes's weekly roundup for Black families covers the November 3 midterm elections, breast cancer awareness and the higher mortality rate Black women face, open enrollment deadlines for Medicare and ACA plans, HBCU homecoming season, and the start of the NBA season.",
-   "tab": "america",
-   "url": "https://blackamericaweb.com/2026/10/27/midterms-health-coverage-hbcu-homecoming-and-the-nba-tip-offf/"
-  },
-  {
-   "tab": "america",
-   "category": "Technology",
-   "date": "2026-10-27",
-   "headline": "First Black Woman to Register a Drone Academy in Texas Builds a Path for Black Drone Entrepreneurs",
-   "source": "BlackNews.com",
-   "url": "https://blacknews.com/news/steffanie-rivers-first-black-woman-register-drone-academy-texas-wants-help-black-entrepreneurs-build-drone-businesses-nationwide/",
-   "summary": "Steffanie Rivers, founder and CEO of TCB Drones and the first Black woman to register a drone academy in Texas, has launched the Next Level Drone Accelerator to help certified pilots turn their skills into businesses. A licensing program in development would let qualified entrepreneurs open TCB Drones academies in their own cities, with Savannah, Georgia as the pilot market."
-  },
-  {
-   "category": "Community",
-   "country": "South Africa",
-   "date": "2026-10-27",
-   "headline": "Africa and African Diaspora Conference Meets in South Africa Under the Theme The Return to Africa",
-   "source": "CAJ News",
-   "summary": "African leaders, scholars, faith leaders, and diaspora representatives gathered in Ekurhuleni from October 26 to 30 for the second Africa and African Diaspora Conference. With speakers including Thabo Mbeki and Ellen Johnson Sirleaf, the meeting aimed to turn shared history into practical cooperation on reparations, investment, and representation.",
-   "tab": "international",
-   "url": "https://cajglobal.com/africa-and-diaspora-unite-for-power/"
   }
  ],
- "updated": "2026-11-25",
+ "updated": "2026-11-26",
  "window_days": 30,
  "categories": [
   "Politics and Policy",
